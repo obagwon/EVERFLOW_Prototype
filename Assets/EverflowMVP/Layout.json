@@ -1,0 +1,5374 @@
+{
+  "objects": [
+    {
+      "id": "World",
+      "parent": "",
+      "shape": "",
+      "position": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "scale": {
+        "x": 1,
+        "y": 1,
+        "z": 1
+      },
+      "rotation": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "material": "Stone",
+      "role": "",
+      "collider": false,
+      "trigger": false,
+      "kinematic": false,
+      "hidden": false,
+      "label": "World",
+      "stage": 0,
+      "kind": 0,
+      "acceptsPulse": false,
+      "requiresPower": false,
+      "alignmentConducts": false,
+      "supportOnlyWhenFrozen": false,
+      "supply": "",
+      "growthObject": "",
+      "handle": "",
+      "rideStart": "",
+      "rideEnd": "",
+      "rideVisual": "",
+      "destination": "",
+      "outputs": [],
+      "axis": {
+        "x": 1,
+        "y": 0,
+        "z": 0
+      },
+      "launchVelocity": {
+        "x": 0,
+        "y": 14,
+        "z": 7
+      },
+      "speed": 35.0,
+      "amplitude": 45.0,
+      "targetAngle": 0.0,
+      "tolerance": 10.0,
+      "initialAngle": 45.0,
+      "ropeLength": 7.0,
+      "checkpoint": false
+    },
+    {
+      "id": "Player",
+      "parent": "World",
+      "shape": "Capsule",
+      "position": {
+        "x": 0,
+        "y": 1.15,
+        "z": 0
+      },
+      "scale": {
+        "x": 1,
+        "y": 1,
+        "z": 1
+      },
+      "rotation": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "material": "Player",
+      "role": "player",
+      "collider": false,
+      "trigger": false,
+      "kinematic": false,
+      "hidden": false,
+      "label": "Player",
+      "stage": 0,
+      "kind": 0,
+      "acceptsPulse": false,
+      "requiresPower": false,
+      "alignmentConducts": false,
+      "supportOnlyWhenFrozen": false,
+      "supply": "",
+      "growthObject": "",
+      "handle": "",
+      "rideStart": "",
+      "rideEnd": "",
+      "rideVisual": "",
+      "destination": "",
+      "outputs": [],
+      "axis": {
+        "x": 1,
+        "y": 0,
+        "z": 0
+      },
+      "launchVelocity": {
+        "x": 0,
+        "y": 14,
+        "z": 7
+      },
+      "speed": 35.0,
+      "amplitude": 45.0,
+      "targetAngle": 0.0,
+      "tolerance": 10.0,
+      "initialAngle": 45.0,
+      "ropeLength": 7.0,
+      "checkpoint": false
+    },
+    {
+      "id": "Main Camera",
+      "parent": "World",
+      "shape": "",
+      "position": {
+        "x": 0,
+        "y": 5.94,
+        "z": -8.02
+      },
+      "scale": {
+        "x": 1,
+        "y": 1,
+        "z": 1
+      },
+      "rotation": {
+        "x": 27,
+        "y": 0,
+        "z": 0
+      },
+      "material": "Stone",
+      "role": "camera",
+      "collider": false,
+      "trigger": false,
+      "kinematic": false,
+      "hidden": false,
+      "label": "Main Camera",
+      "stage": 0,
+      "kind": 0,
+      "acceptsPulse": false,
+      "requiresPower": false,
+      "alignmentConducts": false,
+      "supportOnlyWhenFrozen": false,
+      "supply": "",
+      "growthObject": "",
+      "handle": "",
+      "rideStart": "",
+      "rideEnd": "",
+      "rideVisual": "",
+      "destination": "",
+      "outputs": [],
+      "axis": {
+        "x": 1,
+        "y": 0,
+        "z": 0
+      },
+      "launchVelocity": {
+        "x": 0,
+        "y": 14,
+        "z": 7
+      },
+      "speed": 35.0,
+      "amplitude": 45.0,
+      "targetAngle": 0.0,
+      "tolerance": 10.0,
+      "initialAngle": 45.0,
+      "ropeLength": 7.0,
+      "checkpoint": false
+    },
+    {
+      "id": "Directional Light",
+      "parent": "World",
+      "shape": "",
+      "position": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "scale": {
+        "x": 1,
+        "y": 1,
+        "z": 1
+      },
+      "rotation": {
+        "x": 45,
+        "y": -30,
+        "z": 0
+      },
+      "material": "Stone",
+      "role": "light",
+      "collider": false,
+      "trigger": false,
+      "kinematic": false,
+      "hidden": false,
+      "label": "Directional Light",
+      "stage": 0,
+      "kind": 0,
+      "acceptsPulse": false,
+      "requiresPower": false,
+      "alignmentConducts": false,
+      "supportOnlyWhenFrozen": false,
+      "supply": "",
+      "growthObject": "",
+      "handle": "",
+      "rideStart": "",
+      "rideEnd": "",
+      "rideVisual": "",
+      "destination": "",
+      "outputs": [],
+      "axis": {
+        "x": 1,
+        "y": 0,
+        "z": 0
+      },
+      "launchVelocity": {
+        "x": 0,
+        "y": 14,
+        "z": 7
+      },
+      "speed": 35.0,
+      "amplitude": 45.0,
+      "targetAngle": 0.0,
+      "tolerance": 10.0,
+      "initialAngle": 45.0,
+      "ropeLength": 7.0,
+      "checkpoint": false
+    },
+    {
+      "id": "Puzzle_01",
+      "parent": "World",
+      "shape": "",
+      "position": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "scale": {
+        "x": 1,
+        "y": 1,
+        "z": 1
+      },
+      "rotation": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "material": "Stone",
+      "role": "",
+      "collider": false,
+      "trigger": false,
+      "kinematic": false,
+      "hidden": false,
+      "label": "Puzzle_01",
+      "stage": 0,
+      "kind": 0,
+      "acceptsPulse": false,
+      "requiresPower": false,
+      "alignmentConducts": false,
+      "supportOnlyWhenFrozen": false,
+      "supply": "",
+      "growthObject": "",
+      "handle": "",
+      "rideStart": "",
+      "rideEnd": "",
+      "rideVisual": "",
+      "destination": "",
+      "outputs": [],
+      "axis": {
+        "x": 1,
+        "y": 0,
+        "z": 0
+      },
+      "launchVelocity": {
+        "x": 0,
+        "y": 14,
+        "z": 7
+      },
+      "speed": 35.0,
+      "amplitude": 45.0,
+      "targetAngle": 0.0,
+      "tolerance": 10.0,
+      "initialAngle": 45.0,
+      "ropeLength": 7.0,
+      "checkpoint": false
+    },
+    {
+      "id": "P1_Spawn",
+      "parent": "Puzzle_01",
+      "shape": "",
+      "position": {
+        "x": 0,
+        "y": 1.15,
+        "z": 0
+      },
+      "scale": {
+        "x": 1,
+        "y": 1,
+        "z": 1
+      },
+      "rotation": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "material": "Stone",
+      "role": "",
+      "collider": false,
+      "trigger": false,
+      "kinematic": false,
+      "hidden": false,
+      "label": "P1_Spawn",
+      "stage": 0,
+      "kind": 0,
+      "acceptsPulse": false,
+      "requiresPower": false,
+      "alignmentConducts": false,
+      "supportOnlyWhenFrozen": false,
+      "supply": "",
+      "growthObject": "",
+      "handle": "",
+      "rideStart": "",
+      "rideEnd": "",
+      "rideVisual": "",
+      "destination": "",
+      "outputs": [],
+      "axis": {
+        "x": 1,
+        "y": 0,
+        "z": 0
+      },
+      "launchVelocity": {
+        "x": 0,
+        "y": 14,
+        "z": 7
+      },
+      "speed": 35.0,
+      "amplitude": 45.0,
+      "targetAngle": 0.0,
+      "tolerance": 10.0,
+      "initialAngle": 45.0,
+      "ropeLength": 7.0,
+      "checkpoint": false
+    },
+    {
+      "id": "P1_Boundary_-1",
+      "parent": "Puzzle_01",
+      "shape": "Cube",
+      "position": {
+        "x": -6.7,
+        "y": 7.5,
+        "z": 22
+      },
+      "scale": {
+        "x": 0.4,
+        "y": 19,
+        "z": 60
+      },
+      "rotation": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "material": "Wall",
+      "role": "",
+      "collider": true,
+      "trigger": false,
+      "kinematic": false,
+      "hidden": false,
+      "label": "P1_Boundary_-1",
+      "stage": 0,
+      "kind": 0,
+      "acceptsPulse": false,
+      "requiresPower": false,
+      "alignmentConducts": false,
+      "supportOnlyWhenFrozen": false,
+      "supply": "",
+      "growthObject": "",
+      "handle": "",
+      "rideStart": "",
+      "rideEnd": "",
+      "rideVisual": "",
+      "destination": "",
+      "outputs": [],
+      "axis": {
+        "x": 1,
+        "y": 0,
+        "z": 0
+      },
+      "launchVelocity": {
+        "x": 0,
+        "y": 14,
+        "z": 7
+      },
+      "speed": 35.0,
+      "amplitude": 45.0,
+      "targetAngle": 0.0,
+      "tolerance": 10.0,
+      "initialAngle": 45.0,
+      "ropeLength": 7.0,
+      "checkpoint": false
+    },
+    {
+      "id": "P1_Boundary_1",
+      "parent": "Puzzle_01",
+      "shape": "Cube",
+      "position": {
+        "x": 6.7,
+        "y": 7.5,
+        "z": 22
+      },
+      "scale": {
+        "x": 0.4,
+        "y": 19,
+        "z": 60
+      },
+      "rotation": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "material": "Wall",
+      "role": "",
+      "collider": true,
+      "trigger": false,
+      "kinematic": false,
+      "hidden": false,
+      "label": "P1_Boundary_1",
+      "stage": 0,
+      "kind": 0,
+      "acceptsPulse": false,
+      "requiresPower": false,
+      "alignmentConducts": false,
+      "supportOnlyWhenFrozen": false,
+      "supply": "",
+      "growthObject": "",
+      "handle": "",
+      "rideStart": "",
+      "rideEnd": "",
+      "rideVisual": "",
+      "destination": "",
+      "outputs": [],
+      "axis": {
+        "x": 1,
+        "y": 0,
+        "z": 0
+      },
+      "launchVelocity": {
+        "x": 0,
+        "y": 14,
+        "z": 7
+      },
+      "speed": 35.0,
+      "amplitude": 45.0,
+      "targetAngle": 0.0,
+      "tolerance": 10.0,
+      "initialAngle": 45.0,
+      "ropeLength": 7.0,
+      "checkpoint": false
+    },
+    {
+      "id": "P1_Start",
+      "parent": "Puzzle_01",
+      "shape": "Cube",
+      "position": {
+        "x": 0,
+        "y": -0.5,
+        "z": 2
+      },
+      "scale": {
+        "x": 12,
+        "y": 1,
+        "z": 12
+      },
+      "rotation": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "material": "Floor",
+      "role": "",
+      "collider": true,
+      "trigger": false,
+      "kinematic": false,
+      "hidden": false,
+      "label": "P1_Start",
+      "stage": 0,
+      "kind": 0,
+      "acceptsPulse": false,
+      "requiresPower": false,
+      "alignmentConducts": false,
+      "supportOnlyWhenFrozen": false,
+      "supply": "",
+      "growthObject": "",
+      "handle": "",
+      "rideStart": "",
+      "rideEnd": "",
+      "rideVisual": "",
+      "destination": "",
+      "outputs": [],
+      "axis": {
+        "x": 1,
+        "y": 0,
+        "z": 0
+      },
+      "launchVelocity": {
+        "x": 0,
+        "y": 14,
+        "z": 7
+      },
+      "speed": 35.0,
+      "amplitude": 45.0,
+      "targetAngle": 0.0,
+      "tolerance": 10.0,
+      "initialAngle": 45.0,
+      "ropeLength": 7.0,
+      "checkpoint": false
+    },
+    {
+      "id": "P1_UpperLedge",
+      "parent": "Puzzle_01",
+      "shape": "Cube",
+      "position": {
+        "x": 0,
+        "y": 2.5,
+        "z": 13
+      },
+      "scale": {
+        "x": 12,
+        "y": 1,
+        "z": 6
+      },
+      "rotation": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "material": "Floor",
+      "role": "",
+      "collider": true,
+      "trigger": false,
+      "kinematic": false,
+      "hidden": false,
+      "label": "P1_UpperLedge",
+      "stage": 0,
+      "kind": 0,
+      "acceptsPulse": false,
+      "requiresPower": false,
+      "alignmentConducts": false,
+      "supportOnlyWhenFrozen": false,
+      "supply": "",
+      "growthObject": "",
+      "handle": "",
+      "rideStart": "",
+      "rideEnd": "",
+      "rideVisual": "",
+      "destination": "",
+      "outputs": [],
+      "axis": {
+        "x": 1,
+        "y": 0,
+        "z": 0
+      },
+      "launchVelocity": {
+        "x": 0,
+        "y": 14,
+        "z": 7
+      },
+      "speed": 35.0,
+      "amplitude": 45.0,
+      "targetAngle": 0.0,
+      "tolerance": 10.0,
+      "initialAngle": 45.0,
+      "ropeLength": 7.0,
+      "checkpoint": false
+    },
+    {
+      "id": "P1_Landing",
+      "parent": "Puzzle_01",
+      "shape": "Cube",
+      "position": {
+        "x": 0,
+        "y": 2.5,
+        "z": 33
+      },
+      "scale": {
+        "x": 12,
+        "y": 1,
+        "z": 12
+      },
+      "rotation": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "material": "Floor",
+      "role": "",
+      "collider": true,
+      "trigger": false,
+      "kinematic": false,
+      "hidden": false,
+      "label": "P1_Landing",
+      "stage": 0,
+      "kind": 0,
+      "acceptsPulse": false,
+      "requiresPower": false,
+      "alignmentConducts": false,
+      "supportOnlyWhenFrozen": false,
+      "supply": "",
+      "growthObject": "",
+      "handle": "",
+      "rideStart": "",
+      "rideEnd": "",
+      "rideVisual": "",
+      "destination": "",
+      "outputs": [],
+      "axis": {
+        "x": 1,
+        "y": 0,
+        "z": 0
+      },
+      "launchVelocity": {
+        "x": 0,
+        "y": 14,
+        "z": 7
+      },
+      "speed": 35.0,
+      "amplitude": 45.0,
+      "targetAngle": 0.0,
+      "tolerance": 10.0,
+      "initialAngle": 45.0,
+      "ropeLength": 7.0,
+      "checkpoint": false
+    },
+    {
+      "id": "P1_Flower",
+      "parent": "Puzzle_01",
+      "shape": "Cube",
+      "position": {
+        "x": 0,
+        "y": 0.25,
+        "z": 6
+      },
+      "scale": {
+        "x": 3,
+        "y": 0.5,
+        "z": 3
+      },
+      "rotation": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "material": "Stone",
+      "role": "node",
+      "collider": true,
+      "trigger": false,
+      "kinematic": false,
+      "hidden": false,
+      "label": "Flower: BLOOM then Space",
+      "stage": 0,
+      "kind": 1,
+      "acceptsPulse": false,
+      "requiresPower": false,
+      "alignmentConducts": false,
+      "supportOnlyWhenFrozen": false,
+      "supply": "",
+      "growthObject": "P1_FlowerBloom",
+      "handle": "",
+      "rideStart": "",
+      "rideEnd": "",
+      "rideVisual": "",
+      "destination": "",
+      "outputs": [],
+      "axis": {
+        "x": 1,
+        "y": 0,
+        "z": 0
+      },
+      "launchVelocity": {
+        "x": 0,
+        "y": 14,
+        "z": 7
+      },
+      "speed": 35.0,
+      "amplitude": 45.0,
+      "targetAngle": 0.0,
+      "tolerance": 10.0,
+      "initialAngle": 45.0,
+      "ropeLength": 7.0,
+      "checkpoint": false
+    },
+    {
+      "id": "P1_FlowerBloom",
+      "parent": "P1_Flower",
+      "shape": "Cube",
+      "position": {
+        "x": 0,
+        "y": 0.55,
+        "z": 0
+      },
+      "scale": {
+        "x": 1.2,
+        "y": 0.15,
+        "z": 1.2
+      },
+      "rotation": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "material": "Bloom",
+      "role": "",
+      "collider": false,
+      "trigger": false,
+      "kinematic": false,
+      "hidden": false,
+      "label": "P1_FlowerBloom",
+      "stage": 0,
+      "kind": 0,
+      "acceptsPulse": false,
+      "requiresPower": false,
+      "alignmentConducts": false,
+      "supportOnlyWhenFrozen": false,
+      "supply": "",
+      "growthObject": "",
+      "handle": "",
+      "rideStart": "",
+      "rideEnd": "",
+      "rideVisual": "",
+      "destination": "",
+      "outputs": [],
+      "axis": {
+        "x": 1,
+        "y": 0,
+        "z": 0
+      },
+      "launchVelocity": {
+        "x": 0,
+        "y": 14,
+        "z": 7
+      },
+      "speed": 35.0,
+      "amplitude": 45.0,
+      "targetAngle": 0.0,
+      "tolerance": 10.0,
+      "initialAngle": 45.0,
+      "ropeLength": 7.0,
+      "checkpoint": false
+    },
+    {
+      "id": "P1_Vine",
+      "parent": "Puzzle_01",
+      "shape": "Sphere",
+      "position": {
+        "x": 0,
+        "y": 11,
+        "z": 20
+      },
+      "scale": {
+        "x": 1,
+        "y": 1,
+        "z": 1
+      },
+      "rotation": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "material": "Stone",
+      "role": "node",
+      "collider": true,
+      "trigger": false,
+      "kinematic": false,
+      "hidden": false,
+      "label": "Vine: BLOOM then E at handle",
+      "stage": 0,
+      "kind": 2,
+      "acceptsPulse": false,
+      "requiresPower": false,
+      "alignmentConducts": false,
+      "supportOnlyWhenFrozen": false,
+      "supply": "",
+      "growthObject": "P1_Rope",
+      "handle": "P1_Handle",
+      "rideStart": "",
+      "rideEnd": "",
+      "rideVisual": "",
+      "destination": "",
+      "outputs": [],
+      "axis": {
+        "x": 1,
+        "y": 0,
+        "z": 0
+      },
+      "launchVelocity": {
+        "x": 0,
+        "y": 14,
+        "z": 7
+      },
+      "speed": 1.15,
+      "amplitude": 45.0,
+      "targetAngle": 0.0,
+      "tolerance": 10.0,
+      "initialAngle": 45.0,
+      "ropeLength": 7.0,
+      "checkpoint": false
+    },
+    {
+      "id": "P1_Rope",
+      "parent": "P1_Vine",
+      "shape": "Cylinder",
+      "position": {
+        "x": 0,
+        "y": -2.475,
+        "z": -2.475
+      },
+      "scale": {
+        "x": 0.15,
+        "y": 3.5,
+        "z": 0.15
+      },
+      "rotation": {
+        "x": -45,
+        "y": 0,
+        "z": 0
+      },
+      "material": "Bloom",
+      "role": "",
+      "collider": false,
+      "trigger": false,
+      "kinematic": false,
+      "hidden": false,
+      "label": "P1_Rope",
+      "stage": 0,
+      "kind": 0,
+      "acceptsPulse": false,
+      "requiresPower": false,
+      "alignmentConducts": false,
+      "supportOnlyWhenFrozen": false,
+      "supply": "",
+      "growthObject": "",
+      "handle": "",
+      "rideStart": "",
+      "rideEnd": "",
+      "rideVisual": "",
+      "destination": "",
+      "outputs": [],
+      "axis": {
+        "x": 1,
+        "y": 0,
+        "z": 0
+      },
+      "launchVelocity": {
+        "x": 0,
+        "y": 14,
+        "z": 7
+      },
+      "speed": 35.0,
+      "amplitude": 45.0,
+      "targetAngle": 0.0,
+      "tolerance": 10.0,
+      "initialAngle": 45.0,
+      "ropeLength": 7.0,
+      "checkpoint": false
+    },
+    {
+      "id": "P1_Handle",
+      "parent": "P1_Vine",
+      "shape": "Sphere",
+      "position": {
+        "x": 0,
+        "y": -4.95,
+        "z": -4.95
+      },
+      "scale": {
+        "x": 0.6,
+        "y": 0.6,
+        "z": 0.6
+      },
+      "rotation": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "material": "Bloom",
+      "role": "",
+      "collider": true,
+      "trigger": true,
+      "kinematic": false,
+      "hidden": false,
+      "label": "P1_Handle",
+      "stage": 0,
+      "kind": 0,
+      "acceptsPulse": false,
+      "requiresPower": false,
+      "alignmentConducts": false,
+      "supportOnlyWhenFrozen": false,
+      "supply": "",
+      "growthObject": "",
+      "handle": "",
+      "rideStart": "",
+      "rideEnd": "",
+      "rideVisual": "",
+      "destination": "",
+      "outputs": [],
+      "axis": {
+        "x": 1,
+        "y": 0,
+        "z": 0
+      },
+      "launchVelocity": {
+        "x": 0,
+        "y": 14,
+        "z": 7
+      },
+      "speed": 35.0,
+      "amplitude": 45.0,
+      "targetAngle": 0.0,
+      "tolerance": 10.0,
+      "initialAngle": 45.0,
+      "ropeLength": 7.0,
+      "checkpoint": false
+    },
+    {
+      "id": "P1_CheckpointSpawn",
+      "parent": "Puzzle_01",
+      "shape": "",
+      "position": {
+        "x": 0,
+        "y": 4.15,
+        "z": 13
+      },
+      "scale": {
+        "x": 1,
+        "y": 1,
+        "z": 1
+      },
+      "rotation": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "material": "Stone",
+      "role": "",
+      "collider": false,
+      "trigger": false,
+      "kinematic": false,
+      "hidden": false,
+      "label": "P1_CheckpointSpawn",
+      "stage": 0,
+      "kind": 0,
+      "acceptsPulse": false,
+      "requiresPower": false,
+      "alignmentConducts": false,
+      "supportOnlyWhenFrozen": false,
+      "supply": "",
+      "growthObject": "",
+      "handle": "",
+      "rideStart": "",
+      "rideEnd": "",
+      "rideVisual": "",
+      "destination": "",
+      "outputs": [],
+      "axis": {
+        "x": 1,
+        "y": 0,
+        "z": 0
+      },
+      "launchVelocity": {
+        "x": 0,
+        "y": 14,
+        "z": 7
+      },
+      "speed": 35.0,
+      "amplitude": 45.0,
+      "targetAngle": 0.0,
+      "tolerance": 10.0,
+      "initialAngle": 45.0,
+      "ropeLength": 7.0,
+      "checkpoint": false
+    },
+    {
+      "id": "P1_Checkpoint",
+      "parent": "Puzzle_01",
+      "shape": "Cube",
+      "position": {
+        "x": 0,
+        "y": 4.5,
+        "z": 13
+      },
+      "scale": {
+        "x": 10,
+        "y": 3,
+        "z": 2
+      },
+      "rotation": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "material": "Freeze",
+      "role": "zone",
+      "collider": true,
+      "trigger": true,
+      "kinematic": true,
+      "hidden": true,
+      "label": "P1_Checkpoint",
+      "stage": 0,
+      "kind": 0,
+      "acceptsPulse": false,
+      "requiresPower": false,
+      "alignmentConducts": false,
+      "supportOnlyWhenFrozen": false,
+      "supply": "",
+      "growthObject": "",
+      "handle": "",
+      "rideStart": "",
+      "rideEnd": "",
+      "rideVisual": "",
+      "destination": "P1_CheckpointSpawn",
+      "outputs": [],
+      "axis": {
+        "x": 1,
+        "y": 0,
+        "z": 0
+      },
+      "launchVelocity": {
+        "x": 0,
+        "y": 14,
+        "z": 7
+      },
+      "speed": 35.0,
+      "amplitude": 45.0,
+      "targetAngle": 0.0,
+      "tolerance": 10.0,
+      "initialAngle": 45.0,
+      "ropeLength": 7.0,
+      "checkpoint": true
+    },
+    {
+      "id": "P1_GoalPad",
+      "parent": "Puzzle_01",
+      "shape": "Cube",
+      "position": {
+        "x": 0,
+        "y": 3.05,
+        "z": 35
+      },
+      "scale": {
+        "x": 3,
+        "y": 0.1,
+        "z": 3
+      },
+      "rotation": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "material": "Goal",
+      "role": "",
+      "collider": false,
+      "trigger": false,
+      "kinematic": false,
+      "hidden": false,
+      "label": "P1_GoalPad",
+      "stage": 0,
+      "kind": 0,
+      "acceptsPulse": false,
+      "requiresPower": false,
+      "alignmentConducts": false,
+      "supportOnlyWhenFrozen": false,
+      "supply": "",
+      "growthObject": "",
+      "handle": "",
+      "rideStart": "",
+      "rideEnd": "",
+      "rideVisual": "",
+      "destination": "",
+      "outputs": [],
+      "axis": {
+        "x": 1,
+        "y": 0,
+        "z": 0
+      },
+      "launchVelocity": {
+        "x": 0,
+        "y": 14,
+        "z": 7
+      },
+      "speed": 35.0,
+      "amplitude": 45.0,
+      "targetAngle": 0.0,
+      "tolerance": 10.0,
+      "initialAngle": 45.0,
+      "ropeLength": 7.0,
+      "checkpoint": false
+    },
+    {
+      "id": "P1_Goal",
+      "parent": "Puzzle_01",
+      "shape": "Cube",
+      "position": {
+        "x": 0,
+        "y": 4.5,
+        "z": 35
+      },
+      "scale": {
+        "x": 3,
+        "y": 3,
+        "z": 3
+      },
+      "rotation": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "material": "Goal",
+      "role": "zone",
+      "collider": true,
+      "trigger": true,
+      "kinematic": true,
+      "hidden": true,
+      "label": "P1_Goal",
+      "stage": 0,
+      "kind": 0,
+      "acceptsPulse": false,
+      "requiresPower": false,
+      "alignmentConducts": false,
+      "supportOnlyWhenFrozen": false,
+      "supply": "",
+      "growthObject": "",
+      "handle": "",
+      "rideStart": "",
+      "rideEnd": "",
+      "rideVisual": "",
+      "destination": "",
+      "outputs": [],
+      "axis": {
+        "x": 1,
+        "y": 0,
+        "z": 0
+      },
+      "launchVelocity": {
+        "x": 0,
+        "y": 14,
+        "z": 7
+      },
+      "speed": 35.0,
+      "amplitude": 45.0,
+      "targetAngle": 0.0,
+      "tolerance": 10.0,
+      "initialAngle": 45.0,
+      "ropeLength": 7.0,
+      "checkpoint": false
+    },
+    {
+      "id": "Puzzle_02",
+      "parent": "World",
+      "shape": "",
+      "position": {
+        "x": 60,
+        "y": 0,
+        "z": 0
+      },
+      "scale": {
+        "x": 1,
+        "y": 1,
+        "z": 1
+      },
+      "rotation": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "material": "Stone",
+      "role": "",
+      "collider": false,
+      "trigger": false,
+      "kinematic": false,
+      "hidden": false,
+      "label": "Puzzle_02",
+      "stage": 0,
+      "kind": 0,
+      "acceptsPulse": false,
+      "requiresPower": false,
+      "alignmentConducts": false,
+      "supportOnlyWhenFrozen": false,
+      "supply": "",
+      "growthObject": "",
+      "handle": "",
+      "rideStart": "",
+      "rideEnd": "",
+      "rideVisual": "",
+      "destination": "",
+      "outputs": [],
+      "axis": {
+        "x": 1,
+        "y": 0,
+        "z": 0
+      },
+      "launchVelocity": {
+        "x": 0,
+        "y": 14,
+        "z": 7
+      },
+      "speed": 35.0,
+      "amplitude": 45.0,
+      "targetAngle": 0.0,
+      "tolerance": 10.0,
+      "initialAngle": 45.0,
+      "ropeLength": 7.0,
+      "checkpoint": false
+    },
+    {
+      "id": "P2_Spawn",
+      "parent": "Puzzle_02",
+      "shape": "",
+      "position": {
+        "x": 0,
+        "y": 1.15,
+        "z": 0
+      },
+      "scale": {
+        "x": 1,
+        "y": 1,
+        "z": 1
+      },
+      "rotation": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "material": "Stone",
+      "role": "",
+      "collider": false,
+      "trigger": false,
+      "kinematic": false,
+      "hidden": false,
+      "label": "P2_Spawn",
+      "stage": 0,
+      "kind": 0,
+      "acceptsPulse": false,
+      "requiresPower": false,
+      "alignmentConducts": false,
+      "supportOnlyWhenFrozen": false,
+      "supply": "",
+      "growthObject": "",
+      "handle": "",
+      "rideStart": "",
+      "rideEnd": "",
+      "rideVisual": "",
+      "destination": "",
+      "outputs": [],
+      "axis": {
+        "x": 1,
+        "y": 0,
+        "z": 0
+      },
+      "launchVelocity": {
+        "x": 0,
+        "y": 14,
+        "z": 7
+      },
+      "speed": 35.0,
+      "amplitude": 45.0,
+      "targetAngle": 0.0,
+      "tolerance": 10.0,
+      "initialAngle": 45.0,
+      "ropeLength": 7.0,
+      "checkpoint": false
+    },
+    {
+      "id": "P2_Boundary_-1",
+      "parent": "Puzzle_02",
+      "shape": "Cube",
+      "position": {
+        "x": -6.7,
+        "y": 7.5,
+        "z": 22
+      },
+      "scale": {
+        "x": 0.4,
+        "y": 19,
+        "z": 60
+      },
+      "rotation": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "material": "Wall",
+      "role": "",
+      "collider": true,
+      "trigger": false,
+      "kinematic": false,
+      "hidden": false,
+      "label": "P2_Boundary_-1",
+      "stage": 0,
+      "kind": 0,
+      "acceptsPulse": false,
+      "requiresPower": false,
+      "alignmentConducts": false,
+      "supportOnlyWhenFrozen": false,
+      "supply": "",
+      "growthObject": "",
+      "handle": "",
+      "rideStart": "",
+      "rideEnd": "",
+      "rideVisual": "",
+      "destination": "",
+      "outputs": [],
+      "axis": {
+        "x": 1,
+        "y": 0,
+        "z": 0
+      },
+      "launchVelocity": {
+        "x": 0,
+        "y": 14,
+        "z": 7
+      },
+      "speed": 35.0,
+      "amplitude": 45.0,
+      "targetAngle": 0.0,
+      "tolerance": 10.0,
+      "initialAngle": 45.0,
+      "ropeLength": 7.0,
+      "checkpoint": false
+    },
+    {
+      "id": "P2_Boundary_1",
+      "parent": "Puzzle_02",
+      "shape": "Cube",
+      "position": {
+        "x": 6.7,
+        "y": 7.5,
+        "z": 22
+      },
+      "scale": {
+        "x": 0.4,
+        "y": 19,
+        "z": 60
+      },
+      "rotation": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "material": "Wall",
+      "role": "",
+      "collider": true,
+      "trigger": false,
+      "kinematic": false,
+      "hidden": false,
+      "label": "P2_Boundary_1",
+      "stage": 0,
+      "kind": 0,
+      "acceptsPulse": false,
+      "requiresPower": false,
+      "alignmentConducts": false,
+      "supportOnlyWhenFrozen": false,
+      "supply": "",
+      "growthObject": "",
+      "handle": "",
+      "rideStart": "",
+      "rideEnd": "",
+      "rideVisual": "",
+      "destination": "",
+      "outputs": [],
+      "axis": {
+        "x": 1,
+        "y": 0,
+        "z": 0
+      },
+      "launchVelocity": {
+        "x": 0,
+        "y": 14,
+        "z": 7
+      },
+      "speed": 35.0,
+      "amplitude": 45.0,
+      "targetAngle": 0.0,
+      "tolerance": 10.0,
+      "initialAngle": 45.0,
+      "ropeLength": 7.0,
+      "checkpoint": false
+    },
+    {
+      "id": "P2_Start",
+      "parent": "Puzzle_02",
+      "shape": "Cube",
+      "position": {
+        "x": 0,
+        "y": -0.5,
+        "z": 0
+      },
+      "scale": {
+        "x": 12,
+        "y": 1,
+        "z": 10
+      },
+      "rotation": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "material": "Floor",
+      "role": "",
+      "collider": true,
+      "trigger": false,
+      "kinematic": false,
+      "hidden": false,
+      "label": "P2_Start",
+      "stage": 0,
+      "kind": 0,
+      "acceptsPulse": false,
+      "requiresPower": false,
+      "alignmentConducts": false,
+      "supportOnlyWhenFrozen": false,
+      "supply": "",
+      "growthObject": "",
+      "handle": "",
+      "rideStart": "",
+      "rideEnd": "",
+      "rideVisual": "",
+      "destination": "",
+      "outputs": [],
+      "axis": {
+        "x": 1,
+        "y": 0,
+        "z": 0
+      },
+      "launchVelocity": {
+        "x": 0,
+        "y": 14,
+        "z": 7
+      },
+      "speed": 35.0,
+      "amplitude": 45.0,
+      "targetAngle": 0.0,
+      "tolerance": 10.0,
+      "initialAngle": 45.0,
+      "ropeLength": 7.0,
+      "checkpoint": false
+    },
+    {
+      "id": "P2_Middle",
+      "parent": "Puzzle_02",
+      "shape": "Cube",
+      "position": {
+        "x": 0,
+        "y": 1.5,
+        "z": 13
+      },
+      "scale": {
+        "x": 12,
+        "y": 1,
+        "z": 4
+      },
+      "rotation": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "material": "Floor",
+      "role": "",
+      "collider": true,
+      "trigger": false,
+      "kinematic": false,
+      "hidden": false,
+      "label": "P2_Middle",
+      "stage": 0,
+      "kind": 0,
+      "acceptsPulse": false,
+      "requiresPower": false,
+      "alignmentConducts": false,
+      "supportOnlyWhenFrozen": false,
+      "supply": "",
+      "growthObject": "",
+      "handle": "",
+      "rideStart": "",
+      "rideEnd": "",
+      "rideVisual": "",
+      "destination": "",
+      "outputs": [],
+      "axis": {
+        "x": 1,
+        "y": 0,
+        "z": 0
+      },
+      "launchVelocity": {
+        "x": 0,
+        "y": 14,
+        "z": 7
+      },
+      "speed": 35.0,
+      "amplitude": 45.0,
+      "targetAngle": 0.0,
+      "tolerance": 10.0,
+      "initialAngle": 45.0,
+      "ropeLength": 7.0,
+      "checkpoint": false
+    },
+    {
+      "id": "P2_Landing",
+      "parent": "Puzzle_02",
+      "shape": "Cube",
+      "position": {
+        "x": 0,
+        "y": 1.5,
+        "z": 30
+      },
+      "scale": {
+        "x": 12,
+        "y": 1,
+        "z": 14
+      },
+      "rotation": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "material": "Floor",
+      "role": "",
+      "collider": true,
+      "trigger": false,
+      "kinematic": false,
+      "hidden": false,
+      "label": "P2_Landing",
+      "stage": 0,
+      "kind": 0,
+      "acceptsPulse": false,
+      "requiresPower": false,
+      "alignmentConducts": false,
+      "supportOnlyWhenFrozen": false,
+      "supply": "",
+      "growthObject": "",
+      "handle": "",
+      "rideStart": "",
+      "rideEnd": "",
+      "rideVisual": "",
+      "destination": "",
+      "outputs": [],
+      "axis": {
+        "x": 1,
+        "y": 0,
+        "z": 0
+      },
+      "launchVelocity": {
+        "x": 0,
+        "y": 14,
+        "z": 7
+      },
+      "speed": 35.0,
+      "amplitude": 45.0,
+      "targetAngle": 0.0,
+      "tolerance": 10.0,
+      "initialAngle": 45.0,
+      "ropeLength": 7.0,
+      "checkpoint": false
+    },
+    {
+      "id": "P2_FallingStone",
+      "parent": "Puzzle_02",
+      "shape": "Cube",
+      "position": {
+        "x": 0,
+        "y": 6,
+        "z": 8
+      },
+      "scale": {
+        "x": 4,
+        "y": 0.5,
+        "z": 4
+      },
+      "rotation": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "material": "Stone",
+      "role": "node",
+      "collider": true,
+      "trigger": true,
+      "kinematic": true,
+      "hidden": false,
+      "label": "Falling stone: freeze near blue markers",
+      "stage": 1,
+      "kind": 3,
+      "acceptsPulse": false,
+      "requiresPower": false,
+      "alignmentConducts": false,
+      "supportOnlyWhenFrozen": true,
+      "supply": "",
+      "growthObject": "",
+      "handle": "",
+      "rideStart": "",
+      "rideEnd": "",
+      "rideVisual": "",
+      "destination": "",
+      "outputs": [],
+      "axis": {
+        "x": 1,
+        "y": 0,
+        "z": 0
+      },
+      "launchVelocity": {
+        "x": 0,
+        "y": 14,
+        "z": 7
+      },
+      "speed": 0.16,
+      "amplitude": 7.0,
+      "targetAngle": 0.0,
+      "tolerance": 10.0,
+      "initialAngle": 45.0,
+      "ropeLength": 7.0,
+      "checkpoint": false
+    },
+    {
+      "id": "P2_HeightMark_-1",
+      "parent": "Puzzle_02",
+      "shape": "Cube",
+      "position": {
+        "x": -2.8,
+        "y": 1,
+        "z": 8
+      },
+      "scale": {
+        "x": 0.5,
+        "y": 0.15,
+        "z": 4
+      },
+      "rotation": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "material": "Freeze",
+      "role": "",
+      "collider": false,
+      "trigger": false,
+      "kinematic": false,
+      "hidden": false,
+      "label": "P2_HeightMark_-1",
+      "stage": 0,
+      "kind": 0,
+      "acceptsPulse": false,
+      "requiresPower": false,
+      "alignmentConducts": false,
+      "supportOnlyWhenFrozen": false,
+      "supply": "",
+      "growthObject": "",
+      "handle": "",
+      "rideStart": "",
+      "rideEnd": "",
+      "rideVisual": "",
+      "destination": "",
+      "outputs": [],
+      "axis": {
+        "x": 1,
+        "y": 0,
+        "z": 0
+      },
+      "launchVelocity": {
+        "x": 0,
+        "y": 14,
+        "z": 7
+      },
+      "speed": 35.0,
+      "amplitude": 45.0,
+      "targetAngle": 0.0,
+      "tolerance": 10.0,
+      "initialAngle": 45.0,
+      "ropeLength": 7.0,
+      "checkpoint": false
+    },
+    {
+      "id": "P2_HeightMark_1",
+      "parent": "Puzzle_02",
+      "shape": "Cube",
+      "position": {
+        "x": 2.8,
+        "y": 1,
+        "z": 8
+      },
+      "scale": {
+        "x": 0.5,
+        "y": 0.15,
+        "z": 4
+      },
+      "rotation": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "material": "Freeze",
+      "role": "",
+      "collider": false,
+      "trigger": false,
+      "kinematic": false,
+      "hidden": false,
+      "label": "P2_HeightMark_1",
+      "stage": 0,
+      "kind": 0,
+      "acceptsPulse": false,
+      "requiresPower": false,
+      "alignmentConducts": false,
+      "supportOnlyWhenFrozen": false,
+      "supply": "",
+      "growthObject": "",
+      "handle": "",
+      "rideStart": "",
+      "rideEnd": "",
+      "rideVisual": "",
+      "destination": "",
+      "outputs": [],
+      "axis": {
+        "x": 1,
+        "y": 0,
+        "z": 0
+      },
+      "launchVelocity": {
+        "x": 0,
+        "y": 14,
+        "z": 7
+      },
+      "speed": 35.0,
+      "amplitude": 45.0,
+      "targetAngle": 0.0,
+      "tolerance": 10.0,
+      "initialAngle": 45.0,
+      "ropeLength": 7.0,
+      "checkpoint": false
+    },
+    {
+      "id": "P2_Slate",
+      "parent": "Puzzle_02",
+      "shape": "Cube",
+      "position": {
+        "x": 0,
+        "y": 1.75,
+        "z": 19
+      },
+      "scale": {
+        "x": 3,
+        "y": 0.5,
+        "z": 8
+      },
+      "rotation": {
+        "x": 45,
+        "y": 0,
+        "z": 0
+      },
+      "material": "Stone",
+      "role": "node",
+      "collider": true,
+      "trigger": true,
+      "kinematic": true,
+      "hidden": false,
+      "label": "Slate: FREEZE near 0 degrees",
+      "stage": 1,
+      "kind": 4,
+      "acceptsPulse": false,
+      "requiresPower": false,
+      "alignmentConducts": false,
+      "supportOnlyWhenFrozen": true,
+      "supply": "",
+      "growthObject": "",
+      "handle": "",
+      "rideStart": "",
+      "rideEnd": "",
+      "rideVisual": "",
+      "destination": "",
+      "outputs": [],
+      "axis": {
+        "x": 1,
+        "y": 0,
+        "z": 0
+      },
+      "launchVelocity": {
+        "x": 0,
+        "y": 14,
+        "z": 7
+      },
+      "speed": 28.0,
+      "amplitude": 45.0,
+      "targetAngle": 0.0,
+      "tolerance": 9.0,
+      "initialAngle": 45.0,
+      "ropeLength": 7.0,
+      "checkpoint": false
+    },
+    {
+      "id": "P2_CheckpointSpawn",
+      "parent": "Puzzle_02",
+      "shape": "",
+      "position": {
+        "x": 0,
+        "y": 3.15,
+        "z": 13
+      },
+      "scale": {
+        "x": 1,
+        "y": 1,
+        "z": 1
+      },
+      "rotation": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "material": "Stone",
+      "role": "",
+      "collider": false,
+      "trigger": false,
+      "kinematic": false,
+      "hidden": false,
+      "label": "P2_CheckpointSpawn",
+      "stage": 0,
+      "kind": 0,
+      "acceptsPulse": false,
+      "requiresPower": false,
+      "alignmentConducts": false,
+      "supportOnlyWhenFrozen": false,
+      "supply": "",
+      "growthObject": "",
+      "handle": "",
+      "rideStart": "",
+      "rideEnd": "",
+      "rideVisual": "",
+      "destination": "",
+      "outputs": [],
+      "axis": {
+        "x": 1,
+        "y": 0,
+        "z": 0
+      },
+      "launchVelocity": {
+        "x": 0,
+        "y": 14,
+        "z": 7
+      },
+      "speed": 35.0,
+      "amplitude": 45.0,
+      "targetAngle": 0.0,
+      "tolerance": 10.0,
+      "initialAngle": 45.0,
+      "ropeLength": 7.0,
+      "checkpoint": false
+    },
+    {
+      "id": "P2_Checkpoint",
+      "parent": "Puzzle_02",
+      "shape": "Cube",
+      "position": {
+        "x": 0,
+        "y": 3.5,
+        "z": 13
+      },
+      "scale": {
+        "x": 10,
+        "y": 3,
+        "z": 2
+      },
+      "rotation": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "material": "Freeze",
+      "role": "zone",
+      "collider": true,
+      "trigger": true,
+      "kinematic": true,
+      "hidden": true,
+      "label": "P2_Checkpoint",
+      "stage": 1,
+      "kind": 0,
+      "acceptsPulse": false,
+      "requiresPower": false,
+      "alignmentConducts": false,
+      "supportOnlyWhenFrozen": false,
+      "supply": "",
+      "growthObject": "",
+      "handle": "",
+      "rideStart": "",
+      "rideEnd": "",
+      "rideVisual": "",
+      "destination": "P2_CheckpointSpawn",
+      "outputs": [],
+      "axis": {
+        "x": 1,
+        "y": 0,
+        "z": 0
+      },
+      "launchVelocity": {
+        "x": 0,
+        "y": 14,
+        "z": 7
+      },
+      "speed": 35.0,
+      "amplitude": 45.0,
+      "targetAngle": 0.0,
+      "tolerance": 10.0,
+      "initialAngle": 45.0,
+      "ropeLength": 7.0,
+      "checkpoint": true
+    },
+    {
+      "id": "P2_GoalPad",
+      "parent": "Puzzle_02",
+      "shape": "Cube",
+      "position": {
+        "x": 0,
+        "y": 2.05,
+        "z": 32
+      },
+      "scale": {
+        "x": 3,
+        "y": 0.1,
+        "z": 3
+      },
+      "rotation": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "material": "Goal",
+      "role": "",
+      "collider": false,
+      "trigger": false,
+      "kinematic": false,
+      "hidden": false,
+      "label": "P2_GoalPad",
+      "stage": 0,
+      "kind": 0,
+      "acceptsPulse": false,
+      "requiresPower": false,
+      "alignmentConducts": false,
+      "supportOnlyWhenFrozen": false,
+      "supply": "",
+      "growthObject": "",
+      "handle": "",
+      "rideStart": "",
+      "rideEnd": "",
+      "rideVisual": "",
+      "destination": "",
+      "outputs": [],
+      "axis": {
+        "x": 1,
+        "y": 0,
+        "z": 0
+      },
+      "launchVelocity": {
+        "x": 0,
+        "y": 14,
+        "z": 7
+      },
+      "speed": 35.0,
+      "amplitude": 45.0,
+      "targetAngle": 0.0,
+      "tolerance": 10.0,
+      "initialAngle": 45.0,
+      "ropeLength": 7.0,
+      "checkpoint": false
+    },
+    {
+      "id": "P2_Goal",
+      "parent": "Puzzle_02",
+      "shape": "Cube",
+      "position": {
+        "x": 0,
+        "y": 3.5,
+        "z": 32
+      },
+      "scale": {
+        "x": 3,
+        "y": 3,
+        "z": 3
+      },
+      "rotation": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "material": "Goal",
+      "role": "zone",
+      "collider": true,
+      "trigger": true,
+      "kinematic": true,
+      "hidden": true,
+      "label": "P2_Goal",
+      "stage": 1,
+      "kind": 0,
+      "acceptsPulse": false,
+      "requiresPower": false,
+      "alignmentConducts": false,
+      "supportOnlyWhenFrozen": false,
+      "supply": "",
+      "growthObject": "",
+      "handle": "",
+      "rideStart": "",
+      "rideEnd": "",
+      "rideVisual": "",
+      "destination": "",
+      "outputs": [],
+      "axis": {
+        "x": 1,
+        "y": 0,
+        "z": 0
+      },
+      "launchVelocity": {
+        "x": 0,
+        "y": 14,
+        "z": 7
+      },
+      "speed": 35.0,
+      "amplitude": 45.0,
+      "targetAngle": 0.0,
+      "tolerance": 10.0,
+      "initialAngle": 45.0,
+      "ropeLength": 7.0,
+      "checkpoint": false
+    },
+    {
+      "id": "Puzzle_03",
+      "parent": "World",
+      "shape": "",
+      "position": {
+        "x": 120,
+        "y": 0,
+        "z": 0
+      },
+      "scale": {
+        "x": 1,
+        "y": 1,
+        "z": 1
+      },
+      "rotation": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "material": "Stone",
+      "role": "",
+      "collider": false,
+      "trigger": false,
+      "kinematic": false,
+      "hidden": false,
+      "label": "Puzzle_03",
+      "stage": 0,
+      "kind": 0,
+      "acceptsPulse": false,
+      "requiresPower": false,
+      "alignmentConducts": false,
+      "supportOnlyWhenFrozen": false,
+      "supply": "",
+      "growthObject": "",
+      "handle": "",
+      "rideStart": "",
+      "rideEnd": "",
+      "rideVisual": "",
+      "destination": "",
+      "outputs": [],
+      "axis": {
+        "x": 1,
+        "y": 0,
+        "z": 0
+      },
+      "launchVelocity": {
+        "x": 0,
+        "y": 14,
+        "z": 7
+      },
+      "speed": 35.0,
+      "amplitude": 45.0,
+      "targetAngle": 0.0,
+      "tolerance": 10.0,
+      "initialAngle": 45.0,
+      "ropeLength": 7.0,
+      "checkpoint": false
+    },
+    {
+      "id": "P3_Spawn",
+      "parent": "Puzzle_03",
+      "shape": "",
+      "position": {
+        "x": 0,
+        "y": 1.15,
+        "z": 0
+      },
+      "scale": {
+        "x": 1,
+        "y": 1,
+        "z": 1
+      },
+      "rotation": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "material": "Stone",
+      "role": "",
+      "collider": false,
+      "trigger": false,
+      "kinematic": false,
+      "hidden": false,
+      "label": "P3_Spawn",
+      "stage": 0,
+      "kind": 0,
+      "acceptsPulse": false,
+      "requiresPower": false,
+      "alignmentConducts": false,
+      "supportOnlyWhenFrozen": false,
+      "supply": "",
+      "growthObject": "",
+      "handle": "",
+      "rideStart": "",
+      "rideEnd": "",
+      "rideVisual": "",
+      "destination": "",
+      "outputs": [],
+      "axis": {
+        "x": 1,
+        "y": 0,
+        "z": 0
+      },
+      "launchVelocity": {
+        "x": 0,
+        "y": 14,
+        "z": 7
+      },
+      "speed": 35.0,
+      "amplitude": 45.0,
+      "targetAngle": 0.0,
+      "tolerance": 10.0,
+      "initialAngle": 45.0,
+      "ropeLength": 7.0,
+      "checkpoint": false
+    },
+    {
+      "id": "P3_Boundary_-1",
+      "parent": "Puzzle_03",
+      "shape": "Cube",
+      "position": {
+        "x": -6.7,
+        "y": 7.5,
+        "z": 22
+      },
+      "scale": {
+        "x": 0.4,
+        "y": 19,
+        "z": 60
+      },
+      "rotation": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "material": "Wall",
+      "role": "",
+      "collider": true,
+      "trigger": false,
+      "kinematic": false,
+      "hidden": false,
+      "label": "P3_Boundary_-1",
+      "stage": 0,
+      "kind": 0,
+      "acceptsPulse": false,
+      "requiresPower": false,
+      "alignmentConducts": false,
+      "supportOnlyWhenFrozen": false,
+      "supply": "",
+      "growthObject": "",
+      "handle": "",
+      "rideStart": "",
+      "rideEnd": "",
+      "rideVisual": "",
+      "destination": "",
+      "outputs": [],
+      "axis": {
+        "x": 1,
+        "y": 0,
+        "z": 0
+      },
+      "launchVelocity": {
+        "x": 0,
+        "y": 14,
+        "z": 7
+      },
+      "speed": 35.0,
+      "amplitude": 45.0,
+      "targetAngle": 0.0,
+      "tolerance": 10.0,
+      "initialAngle": 45.0,
+      "ropeLength": 7.0,
+      "checkpoint": false
+    },
+    {
+      "id": "P3_Boundary_1",
+      "parent": "Puzzle_03",
+      "shape": "Cube",
+      "position": {
+        "x": 6.7,
+        "y": 7.5,
+        "z": 22
+      },
+      "scale": {
+        "x": 0.4,
+        "y": 19,
+        "z": 60
+      },
+      "rotation": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "material": "Wall",
+      "role": "",
+      "collider": true,
+      "trigger": false,
+      "kinematic": false,
+      "hidden": false,
+      "label": "P3_Boundary_1",
+      "stage": 0,
+      "kind": 0,
+      "acceptsPulse": false,
+      "requiresPower": false,
+      "alignmentConducts": false,
+      "supportOnlyWhenFrozen": false,
+      "supply": "",
+      "growthObject": "",
+      "handle": "",
+      "rideStart": "",
+      "rideEnd": "",
+      "rideVisual": "",
+      "destination": "",
+      "outputs": [],
+      "axis": {
+        "x": 1,
+        "y": 0,
+        "z": 0
+      },
+      "launchVelocity": {
+        "x": 0,
+        "y": 14,
+        "z": 7
+      },
+      "speed": 35.0,
+      "amplitude": 45.0,
+      "targetAngle": 0.0,
+      "tolerance": 10.0,
+      "initialAngle": 45.0,
+      "ropeLength": 7.0,
+      "checkpoint": false
+    },
+    {
+      "id": "P3_Start",
+      "parent": "Puzzle_03",
+      "shape": "Cube",
+      "position": {
+        "x": 0,
+        "y": -0.5,
+        "z": 2
+      },
+      "scale": {
+        "x": 12,
+        "y": 1,
+        "z": 12
+      },
+      "rotation": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "material": "Floor",
+      "role": "",
+      "collider": true,
+      "trigger": false,
+      "kinematic": false,
+      "hidden": false,
+      "label": "P3_Start",
+      "stage": 0,
+      "kind": 0,
+      "acceptsPulse": false,
+      "requiresPower": false,
+      "alignmentConducts": false,
+      "supportOnlyWhenFrozen": false,
+      "supply": "",
+      "growthObject": "",
+      "handle": "",
+      "rideStart": "",
+      "rideEnd": "",
+      "rideVisual": "",
+      "destination": "",
+      "outputs": [],
+      "axis": {
+        "x": 1,
+        "y": 0,
+        "z": 0
+      },
+      "launchVelocity": {
+        "x": 0,
+        "y": 14,
+        "z": 7
+      },
+      "speed": 35.0,
+      "amplitude": 45.0,
+      "targetAngle": 0.0,
+      "tolerance": 10.0,
+      "initialAngle": 45.0,
+      "ropeLength": 7.0,
+      "checkpoint": false
+    },
+    {
+      "id": "P3_Landing",
+      "parent": "Puzzle_03",
+      "shape": "Cube",
+      "position": {
+        "x": 0,
+        "y": -0.5,
+        "z": 31
+      },
+      "scale": {
+        "x": 12,
+        "y": 1,
+        "z": 14
+      },
+      "rotation": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "material": "Floor",
+      "role": "",
+      "collider": true,
+      "trigger": false,
+      "kinematic": false,
+      "hidden": false,
+      "label": "P3_Landing",
+      "stage": 0,
+      "kind": 0,
+      "acceptsPulse": false,
+      "requiresPower": false,
+      "alignmentConducts": false,
+      "supportOnlyWhenFrozen": false,
+      "supply": "",
+      "growthObject": "",
+      "handle": "",
+      "rideStart": "",
+      "rideEnd": "",
+      "rideVisual": "",
+      "destination": "",
+      "outputs": [],
+      "axis": {
+        "x": 1,
+        "y": 0,
+        "z": 0
+      },
+      "launchVelocity": {
+        "x": 0,
+        "y": 14,
+        "z": 7
+      },
+      "speed": 35.0,
+      "amplitude": 45.0,
+      "targetAngle": 0.0,
+      "tolerance": 10.0,
+      "initialAngle": 45.0,
+      "ropeLength": 7.0,
+      "checkpoint": false
+    },
+    {
+      "id": "P3_Machine",
+      "parent": "Puzzle_03",
+      "shape": "Cube",
+      "position": {
+        "x": 0,
+        "y": -0.25,
+        "z": 16
+      },
+      "scale": {
+        "x": 3,
+        "y": 0.5,
+        "z": 16
+      },
+      "rotation": {
+        "x": 0,
+        "y": 75,
+        "z": 0
+      },
+      "material": "Stone",
+      "role": "node",
+      "collider": true,
+      "trigger": true,
+      "kinematic": true,
+      "hidden": false,
+      "label": "Machine: PULSE then FREEZE at 0",
+      "stage": 2,
+      "kind": 4,
+      "acceptsPulse": true,
+      "requiresPower": true,
+      "alignmentConducts": false,
+      "supportOnlyWhenFrozen": true,
+      "supply": "",
+      "growthObject": "",
+      "handle": "",
+      "rideStart": "",
+      "rideEnd": "",
+      "rideVisual": "",
+      "destination": "",
+      "outputs": [],
+      "axis": {
+        "x": 0,
+        "y": 1,
+        "z": 0
+      },
+      "launchVelocity": {
+        "x": 0,
+        "y": 14,
+        "z": 7
+      },
+      "speed": -25.0,
+      "amplitude": 45.0,
+      "targetAngle": 0.0,
+      "tolerance": 8.0,
+      "initialAngle": 75.0,
+      "ropeLength": 7.0,
+      "checkpoint": false
+    },
+    {
+      "id": "P3_GoalPad",
+      "parent": "Puzzle_03",
+      "shape": "Cube",
+      "position": {
+        "x": 0,
+        "y": 0.05,
+        "z": 33
+      },
+      "scale": {
+        "x": 3,
+        "y": 0.1,
+        "z": 3
+      },
+      "rotation": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "material": "Goal",
+      "role": "",
+      "collider": false,
+      "trigger": false,
+      "kinematic": false,
+      "hidden": false,
+      "label": "P3_GoalPad",
+      "stage": 0,
+      "kind": 0,
+      "acceptsPulse": false,
+      "requiresPower": false,
+      "alignmentConducts": false,
+      "supportOnlyWhenFrozen": false,
+      "supply": "",
+      "growthObject": "",
+      "handle": "",
+      "rideStart": "",
+      "rideEnd": "",
+      "rideVisual": "",
+      "destination": "",
+      "outputs": [],
+      "axis": {
+        "x": 1,
+        "y": 0,
+        "z": 0
+      },
+      "launchVelocity": {
+        "x": 0,
+        "y": 14,
+        "z": 7
+      },
+      "speed": 35.0,
+      "amplitude": 45.0,
+      "targetAngle": 0.0,
+      "tolerance": 10.0,
+      "initialAngle": 45.0,
+      "ropeLength": 7.0,
+      "checkpoint": false
+    },
+    {
+      "id": "P3_Goal",
+      "parent": "Puzzle_03",
+      "shape": "Cube",
+      "position": {
+        "x": 0,
+        "y": 1.5,
+        "z": 33
+      },
+      "scale": {
+        "x": 3,
+        "y": 3,
+        "z": 3
+      },
+      "rotation": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "material": "Goal",
+      "role": "zone",
+      "collider": true,
+      "trigger": true,
+      "kinematic": true,
+      "hidden": true,
+      "label": "P3_Goal",
+      "stage": 2,
+      "kind": 0,
+      "acceptsPulse": false,
+      "requiresPower": false,
+      "alignmentConducts": false,
+      "supportOnlyWhenFrozen": false,
+      "supply": "",
+      "growthObject": "",
+      "handle": "",
+      "rideStart": "",
+      "rideEnd": "",
+      "rideVisual": "",
+      "destination": "",
+      "outputs": [],
+      "axis": {
+        "x": 1,
+        "y": 0,
+        "z": 0
+      },
+      "launchVelocity": {
+        "x": 0,
+        "y": 14,
+        "z": 7
+      },
+      "speed": 35.0,
+      "amplitude": 45.0,
+      "targetAngle": 0.0,
+      "tolerance": 10.0,
+      "initialAngle": 45.0,
+      "ropeLength": 7.0,
+      "checkpoint": false
+    },
+    {
+      "id": "Puzzle_04",
+      "parent": "World",
+      "shape": "",
+      "position": {
+        "x": 180,
+        "y": 0,
+        "z": 0
+      },
+      "scale": {
+        "x": 1,
+        "y": 1,
+        "z": 1
+      },
+      "rotation": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "material": "Stone",
+      "role": "",
+      "collider": false,
+      "trigger": false,
+      "kinematic": false,
+      "hidden": false,
+      "label": "Puzzle_04",
+      "stage": 0,
+      "kind": 0,
+      "acceptsPulse": false,
+      "requiresPower": false,
+      "alignmentConducts": false,
+      "supportOnlyWhenFrozen": false,
+      "supply": "",
+      "growthObject": "",
+      "handle": "",
+      "rideStart": "",
+      "rideEnd": "",
+      "rideVisual": "",
+      "destination": "",
+      "outputs": [],
+      "axis": {
+        "x": 1,
+        "y": 0,
+        "z": 0
+      },
+      "launchVelocity": {
+        "x": 0,
+        "y": 14,
+        "z": 7
+      },
+      "speed": 35.0,
+      "amplitude": 45.0,
+      "targetAngle": 0.0,
+      "tolerance": 10.0,
+      "initialAngle": 45.0,
+      "ropeLength": 7.0,
+      "checkpoint": false
+    },
+    {
+      "id": "P4_Spawn",
+      "parent": "Puzzle_04",
+      "shape": "",
+      "position": {
+        "x": 0,
+        "y": 7.15,
+        "z": 0
+      },
+      "scale": {
+        "x": 1,
+        "y": 1,
+        "z": 1
+      },
+      "rotation": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "material": "Stone",
+      "role": "",
+      "collider": false,
+      "trigger": false,
+      "kinematic": false,
+      "hidden": false,
+      "label": "P4_Spawn",
+      "stage": 0,
+      "kind": 0,
+      "acceptsPulse": false,
+      "requiresPower": false,
+      "alignmentConducts": false,
+      "supportOnlyWhenFrozen": false,
+      "supply": "",
+      "growthObject": "",
+      "handle": "",
+      "rideStart": "",
+      "rideEnd": "",
+      "rideVisual": "",
+      "destination": "",
+      "outputs": [],
+      "axis": {
+        "x": 1,
+        "y": 0,
+        "z": 0
+      },
+      "launchVelocity": {
+        "x": 0,
+        "y": 14,
+        "z": 7
+      },
+      "speed": 35.0,
+      "amplitude": 45.0,
+      "targetAngle": 0.0,
+      "tolerance": 10.0,
+      "initialAngle": 45.0,
+      "ropeLength": 7.0,
+      "checkpoint": false
+    },
+    {
+      "id": "P4_Boundary_-1",
+      "parent": "Puzzle_04",
+      "shape": "Cube",
+      "position": {
+        "x": -6.7,
+        "y": 7.5,
+        "z": 22
+      },
+      "scale": {
+        "x": 0.4,
+        "y": 19,
+        "z": 60
+      },
+      "rotation": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "material": "Wall",
+      "role": "",
+      "collider": true,
+      "trigger": false,
+      "kinematic": false,
+      "hidden": false,
+      "label": "P4_Boundary_-1",
+      "stage": 0,
+      "kind": 0,
+      "acceptsPulse": false,
+      "requiresPower": false,
+      "alignmentConducts": false,
+      "supportOnlyWhenFrozen": false,
+      "supply": "",
+      "growthObject": "",
+      "handle": "",
+      "rideStart": "",
+      "rideEnd": "",
+      "rideVisual": "",
+      "destination": "",
+      "outputs": [],
+      "axis": {
+        "x": 1,
+        "y": 0,
+        "z": 0
+      },
+      "launchVelocity": {
+        "x": 0,
+        "y": 14,
+        "z": 7
+      },
+      "speed": 35.0,
+      "amplitude": 45.0,
+      "targetAngle": 0.0,
+      "tolerance": 10.0,
+      "initialAngle": 45.0,
+      "ropeLength": 7.0,
+      "checkpoint": false
+    },
+    {
+      "id": "P4_Boundary_1",
+      "parent": "Puzzle_04",
+      "shape": "Cube",
+      "position": {
+        "x": 6.7,
+        "y": 7.5,
+        "z": 22
+      },
+      "scale": {
+        "x": 0.4,
+        "y": 19,
+        "z": 60
+      },
+      "rotation": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "material": "Wall",
+      "role": "",
+      "collider": true,
+      "trigger": false,
+      "kinematic": false,
+      "hidden": false,
+      "label": "P4_Boundary_1",
+      "stage": 0,
+      "kind": 0,
+      "acceptsPulse": false,
+      "requiresPower": false,
+      "alignmentConducts": false,
+      "supportOnlyWhenFrozen": false,
+      "supply": "",
+      "growthObject": "",
+      "handle": "",
+      "rideStart": "",
+      "rideEnd": "",
+      "rideVisual": "",
+      "destination": "",
+      "outputs": [],
+      "axis": {
+        "x": 1,
+        "y": 0,
+        "z": 0
+      },
+      "launchVelocity": {
+        "x": 0,
+        "y": 14,
+        "z": 7
+      },
+      "speed": 35.0,
+      "amplitude": 45.0,
+      "targetAngle": 0.0,
+      "tolerance": 10.0,
+      "initialAngle": 45.0,
+      "ropeLength": 7.0,
+      "checkpoint": false
+    },
+    {
+      "id": "P4_Start",
+      "parent": "Puzzle_04",
+      "shape": "Cube",
+      "position": {
+        "x": 0,
+        "y": 5.5,
+        "z": 0
+      },
+      "scale": {
+        "x": 12,
+        "y": 1,
+        "z": 12
+      },
+      "rotation": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "material": "Floor",
+      "role": "",
+      "collider": true,
+      "trigger": false,
+      "kinematic": false,
+      "hidden": false,
+      "label": "P4_Start",
+      "stage": 0,
+      "kind": 0,
+      "acceptsPulse": false,
+      "requiresPower": false,
+      "alignmentConducts": false,
+      "supportOnlyWhenFrozen": false,
+      "supply": "",
+      "growthObject": "",
+      "handle": "",
+      "rideStart": "",
+      "rideEnd": "",
+      "rideVisual": "",
+      "destination": "",
+      "outputs": [],
+      "axis": {
+        "x": 1,
+        "y": 0,
+        "z": 0
+      },
+      "launchVelocity": {
+        "x": 0,
+        "y": 14,
+        "z": 7
+      },
+      "speed": 35.0,
+      "amplitude": 45.0,
+      "targetAngle": 0.0,
+      "tolerance": 10.0,
+      "initialAngle": 45.0,
+      "ropeLength": 7.0,
+      "checkpoint": false
+    },
+    {
+      "id": "P4_Landing",
+      "parent": "Puzzle_04",
+      "shape": "Cube",
+      "position": {
+        "x": 0,
+        "y": 1.5,
+        "z": 38
+      },
+      "scale": {
+        "x": 12,
+        "y": 1,
+        "z": 12
+      },
+      "rotation": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "material": "Floor",
+      "role": "",
+      "collider": true,
+      "trigger": false,
+      "kinematic": false,
+      "hidden": false,
+      "label": "P4_Landing",
+      "stage": 0,
+      "kind": 0,
+      "acceptsPulse": false,
+      "requiresPower": false,
+      "alignmentConducts": false,
+      "supportOnlyWhenFrozen": false,
+      "supply": "",
+      "growthObject": "",
+      "handle": "",
+      "rideStart": "",
+      "rideEnd": "",
+      "rideVisual": "",
+      "destination": "",
+      "outputs": [],
+      "axis": {
+        "x": 1,
+        "y": 0,
+        "z": 0
+      },
+      "launchVelocity": {
+        "x": 0,
+        "y": 14,
+        "z": 7
+      },
+      "speed": 35.0,
+      "amplitude": 45.0,
+      "targetAngle": 0.0,
+      "tolerance": 10.0,
+      "initialAngle": 45.0,
+      "ropeLength": 7.0,
+      "checkpoint": false
+    },
+    {
+      "id": "P4_Sluice",
+      "parent": "Puzzle_04",
+      "shape": "Cube",
+      "position": {
+        "x": -3,
+        "y": 7,
+        "z": 2
+      },
+      "scale": {
+        "x": 1.4,
+        "y": 2,
+        "z": 1.4
+      },
+      "rotation": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "material": "Stone",
+      "role": "node",
+      "collider": true,
+      "trigger": false,
+      "kinematic": false,
+      "hidden": false,
+      "label": "Sluice: PULSE to fill",
+      "stage": 3,
+      "kind": 5,
+      "acceptsPulse": true,
+      "requiresPower": false,
+      "alignmentConducts": false,
+      "supportOnlyWhenFrozen": false,
+      "supply": "",
+      "growthObject": "",
+      "handle": "",
+      "rideStart": "",
+      "rideEnd": "",
+      "rideVisual": "",
+      "destination": "",
+      "outputs": [
+        "P4_Water"
+      ],
+      "axis": {
+        "x": 1,
+        "y": 0,
+        "z": 0
+      },
+      "launchVelocity": {
+        "x": 0,
+        "y": 14,
+        "z": 7
+      },
+      "speed": 35.0,
+      "amplitude": 45.0,
+      "targetAngle": 0.0,
+      "tolerance": 10.0,
+      "initialAngle": 45.0,
+      "ropeLength": 7.0,
+      "checkpoint": false
+    },
+    {
+      "id": "P4_Water",
+      "parent": "Puzzle_04",
+      "shape": "Cube",
+      "position": {
+        "x": 0,
+        "y": 4.1,
+        "z": 13
+      },
+      "scale": {
+        "x": 5,
+        "y": 0.4,
+        "z": 15.2
+      },
+      "rotation": {
+        "x": 16,
+        "y": 0,
+        "z": 0
+      },
+      "material": "Stone",
+      "role": "node",
+      "collider": true,
+      "trigger": true,
+      "kinematic": false,
+      "hidden": false,
+      "label": "Water: FREEZE then E at the leaf dock",
+      "stage": 3,
+      "kind": 6,
+      "acceptsPulse": false,
+      "requiresPower": false,
+      "alignmentConducts": false,
+      "supportOnlyWhenFrozen": false,
+      "supply": "P4_Sluice",
+      "growthObject": "",
+      "handle": "",
+      "rideStart": "P4_RideStart",
+      "rideEnd": "P4_RideEnd",
+      "rideVisual": "P4_Leaf",
+      "destination": "",
+      "outputs": [],
+      "axis": {
+        "x": 1,
+        "y": 0,
+        "z": 0
+      },
+      "launchVelocity": {
+        "x": 0,
+        "y": 14,
+        "z": 7
+      },
+      "speed": 35.0,
+      "amplitude": 45.0,
+      "targetAngle": 0.0,
+      "tolerance": 10.0,
+      "initialAngle": 45.0,
+      "ropeLength": 7.0,
+      "checkpoint": false
+    },
+    {
+      "id": "P4_RideStart",
+      "parent": "Puzzle_04",
+      "shape": "",
+      "position": {
+        "x": 0,
+        "y": 7.15,
+        "z": 5.5
+      },
+      "scale": {
+        "x": 1,
+        "y": 1,
+        "z": 1
+      },
+      "rotation": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "material": "Stone",
+      "role": "",
+      "collider": false,
+      "trigger": false,
+      "kinematic": false,
+      "hidden": false,
+      "label": "P4_RideStart",
+      "stage": 0,
+      "kind": 0,
+      "acceptsPulse": false,
+      "requiresPower": false,
+      "alignmentConducts": false,
+      "supportOnlyWhenFrozen": false,
+      "supply": "",
+      "growthObject": "",
+      "handle": "",
+      "rideStart": "",
+      "rideEnd": "",
+      "rideVisual": "",
+      "destination": "",
+      "outputs": [],
+      "axis": {
+        "x": 1,
+        "y": 0,
+        "z": 0
+      },
+      "launchVelocity": {
+        "x": 0,
+        "y": 14,
+        "z": 7
+      },
+      "speed": 35.0,
+      "amplitude": 45.0,
+      "targetAngle": 0.0,
+      "tolerance": 10.0,
+      "initialAngle": 45.0,
+      "ropeLength": 7.0,
+      "checkpoint": false
+    },
+    {
+      "id": "P4_RideEnd",
+      "parent": "Puzzle_04",
+      "shape": "",
+      "position": {
+        "x": 0,
+        "y": 3.25,
+        "z": 20.2
+      },
+      "scale": {
+        "x": 1,
+        "y": 1,
+        "z": 1
+      },
+      "rotation": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "material": "Stone",
+      "role": "",
+      "collider": false,
+      "trigger": false,
+      "kinematic": false,
+      "hidden": false,
+      "label": "P4_RideEnd",
+      "stage": 0,
+      "kind": 0,
+      "acceptsPulse": false,
+      "requiresPower": false,
+      "alignmentConducts": false,
+      "supportOnlyWhenFrozen": false,
+      "supply": "",
+      "growthObject": "",
+      "handle": "",
+      "rideStart": "",
+      "rideEnd": "",
+      "rideVisual": "",
+      "destination": "",
+      "outputs": [],
+      "axis": {
+        "x": 1,
+        "y": 0,
+        "z": 0
+      },
+      "launchVelocity": {
+        "x": 0,
+        "y": 14,
+        "z": 7
+      },
+      "speed": 35.0,
+      "amplitude": 45.0,
+      "targetAngle": 0.0,
+      "tolerance": 10.0,
+      "initialAngle": 45.0,
+      "ropeLength": 7.0,
+      "checkpoint": false
+    },
+    {
+      "id": "P4_Leaf",
+      "parent": "Puzzle_04",
+      "shape": "Cube",
+      "position": {
+        "x": 0,
+        "y": 6.1,
+        "z": 5.5
+      },
+      "scale": {
+        "x": 1.8,
+        "y": 0.2,
+        "z": 2.4
+      },
+      "rotation": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "material": "Bloom",
+      "role": "",
+      "collider": false,
+      "trigger": false,
+      "kinematic": false,
+      "hidden": false,
+      "label": "P4_Leaf",
+      "stage": 0,
+      "kind": 0,
+      "acceptsPulse": false,
+      "requiresPower": false,
+      "alignmentConducts": false,
+      "supportOnlyWhenFrozen": false,
+      "supply": "",
+      "growthObject": "",
+      "handle": "",
+      "rideStart": "",
+      "rideEnd": "",
+      "rideVisual": "",
+      "destination": "",
+      "outputs": [],
+      "axis": {
+        "x": 1,
+        "y": 0,
+        "z": 0
+      },
+      "launchVelocity": {
+        "x": 0,
+        "y": 14,
+        "z": 7
+      },
+      "speed": 35.0,
+      "amplitude": 45.0,
+      "targetAngle": 0.0,
+      "tolerance": 10.0,
+      "initialAngle": 45.0,
+      "ropeLength": 7.0,
+      "checkpoint": false
+    },
+    {
+      "id": "P4_GoalPad",
+      "parent": "Puzzle_04",
+      "shape": "Cube",
+      "position": {
+        "x": 0,
+        "y": 2.05,
+        "z": 39
+      },
+      "scale": {
+        "x": 3,
+        "y": 0.1,
+        "z": 3
+      },
+      "rotation": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "material": "Goal",
+      "role": "",
+      "collider": false,
+      "trigger": false,
+      "kinematic": false,
+      "hidden": false,
+      "label": "P4_GoalPad",
+      "stage": 0,
+      "kind": 0,
+      "acceptsPulse": false,
+      "requiresPower": false,
+      "alignmentConducts": false,
+      "supportOnlyWhenFrozen": false,
+      "supply": "",
+      "growthObject": "",
+      "handle": "",
+      "rideStart": "",
+      "rideEnd": "",
+      "rideVisual": "",
+      "destination": "",
+      "outputs": [],
+      "axis": {
+        "x": 1,
+        "y": 0,
+        "z": 0
+      },
+      "launchVelocity": {
+        "x": 0,
+        "y": 14,
+        "z": 7
+      },
+      "speed": 35.0,
+      "amplitude": 45.0,
+      "targetAngle": 0.0,
+      "tolerance": 10.0,
+      "initialAngle": 45.0,
+      "ropeLength": 7.0,
+      "checkpoint": false
+    },
+    {
+      "id": "P4_Goal",
+      "parent": "Puzzle_04",
+      "shape": "Cube",
+      "position": {
+        "x": 0,
+        "y": 3.5,
+        "z": 39
+      },
+      "scale": {
+        "x": 3,
+        "y": 3,
+        "z": 3
+      },
+      "rotation": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "material": "Goal",
+      "role": "zone",
+      "collider": true,
+      "trigger": true,
+      "kinematic": true,
+      "hidden": true,
+      "label": "P4_Goal",
+      "stage": 3,
+      "kind": 0,
+      "acceptsPulse": false,
+      "requiresPower": false,
+      "alignmentConducts": false,
+      "supportOnlyWhenFrozen": false,
+      "supply": "",
+      "growthObject": "",
+      "handle": "",
+      "rideStart": "",
+      "rideEnd": "",
+      "rideVisual": "",
+      "destination": "",
+      "outputs": [],
+      "axis": {
+        "x": 1,
+        "y": 0,
+        "z": 0
+      },
+      "launchVelocity": {
+        "x": 0,
+        "y": 14,
+        "z": 7
+      },
+      "speed": 35.0,
+      "amplitude": 45.0,
+      "targetAngle": 0.0,
+      "tolerance": 10.0,
+      "initialAngle": 45.0,
+      "ropeLength": 7.0,
+      "checkpoint": false
+    },
+    {
+      "id": "Puzzle_05",
+      "parent": "World",
+      "shape": "",
+      "position": {
+        "x": 240,
+        "y": 0,
+        "z": 0
+      },
+      "scale": {
+        "x": 1,
+        "y": 1,
+        "z": 1
+      },
+      "rotation": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "material": "Stone",
+      "role": "",
+      "collider": false,
+      "trigger": false,
+      "kinematic": false,
+      "hidden": false,
+      "label": "Puzzle_05",
+      "stage": 0,
+      "kind": 0,
+      "acceptsPulse": false,
+      "requiresPower": false,
+      "alignmentConducts": false,
+      "supportOnlyWhenFrozen": false,
+      "supply": "",
+      "growthObject": "",
+      "handle": "",
+      "rideStart": "",
+      "rideEnd": "",
+      "rideVisual": "",
+      "destination": "",
+      "outputs": [],
+      "axis": {
+        "x": 1,
+        "y": 0,
+        "z": 0
+      },
+      "launchVelocity": {
+        "x": 0,
+        "y": 14,
+        "z": 7
+      },
+      "speed": 35.0,
+      "amplitude": 45.0,
+      "targetAngle": 0.0,
+      "tolerance": 10.0,
+      "initialAngle": 45.0,
+      "ropeLength": 7.0,
+      "checkpoint": false
+    },
+    {
+      "id": "P5_Spawn",
+      "parent": "Puzzle_05",
+      "shape": "",
+      "position": {
+        "x": 0,
+        "y": 1.15,
+        "z": 0
+      },
+      "scale": {
+        "x": 1,
+        "y": 1,
+        "z": 1
+      },
+      "rotation": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "material": "Stone",
+      "role": "",
+      "collider": false,
+      "trigger": false,
+      "kinematic": false,
+      "hidden": false,
+      "label": "P5_Spawn",
+      "stage": 0,
+      "kind": 0,
+      "acceptsPulse": false,
+      "requiresPower": false,
+      "alignmentConducts": false,
+      "supportOnlyWhenFrozen": false,
+      "supply": "",
+      "growthObject": "",
+      "handle": "",
+      "rideStart": "",
+      "rideEnd": "",
+      "rideVisual": "",
+      "destination": "",
+      "outputs": [],
+      "axis": {
+        "x": 1,
+        "y": 0,
+        "z": 0
+      },
+      "launchVelocity": {
+        "x": 0,
+        "y": 14,
+        "z": 7
+      },
+      "speed": 35.0,
+      "amplitude": 45.0,
+      "targetAngle": 0.0,
+      "tolerance": 10.0,
+      "initialAngle": 45.0,
+      "ropeLength": 7.0,
+      "checkpoint": false
+    },
+    {
+      "id": "P5_Boundary_-1",
+      "parent": "Puzzle_05",
+      "shape": "Cube",
+      "position": {
+        "x": -6.7,
+        "y": 7.5,
+        "z": 22
+      },
+      "scale": {
+        "x": 0.4,
+        "y": 19,
+        "z": 60
+      },
+      "rotation": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "material": "Wall",
+      "role": "",
+      "collider": true,
+      "trigger": false,
+      "kinematic": false,
+      "hidden": false,
+      "label": "P5_Boundary_-1",
+      "stage": 0,
+      "kind": 0,
+      "acceptsPulse": false,
+      "requiresPower": false,
+      "alignmentConducts": false,
+      "supportOnlyWhenFrozen": false,
+      "supply": "",
+      "growthObject": "",
+      "handle": "",
+      "rideStart": "",
+      "rideEnd": "",
+      "rideVisual": "",
+      "destination": "",
+      "outputs": [],
+      "axis": {
+        "x": 1,
+        "y": 0,
+        "z": 0
+      },
+      "launchVelocity": {
+        "x": 0,
+        "y": 14,
+        "z": 7
+      },
+      "speed": 35.0,
+      "amplitude": 45.0,
+      "targetAngle": 0.0,
+      "tolerance": 10.0,
+      "initialAngle": 45.0,
+      "ropeLength": 7.0,
+      "checkpoint": false
+    },
+    {
+      "id": "P5_Boundary_1",
+      "parent": "Puzzle_05",
+      "shape": "Cube",
+      "position": {
+        "x": 6.7,
+        "y": 7.5,
+        "z": 22
+      },
+      "scale": {
+        "x": 0.4,
+        "y": 19,
+        "z": 60
+      },
+      "rotation": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "material": "Wall",
+      "role": "",
+      "collider": true,
+      "trigger": false,
+      "kinematic": false,
+      "hidden": false,
+      "label": "P5_Boundary_1",
+      "stage": 0,
+      "kind": 0,
+      "acceptsPulse": false,
+      "requiresPower": false,
+      "alignmentConducts": false,
+      "supportOnlyWhenFrozen": false,
+      "supply": "",
+      "growthObject": "",
+      "handle": "",
+      "rideStart": "",
+      "rideEnd": "",
+      "rideVisual": "",
+      "destination": "",
+      "outputs": [],
+      "axis": {
+        "x": 1,
+        "y": 0,
+        "z": 0
+      },
+      "launchVelocity": {
+        "x": 0,
+        "y": 14,
+        "z": 7
+      },
+      "speed": 35.0,
+      "amplitude": 45.0,
+      "targetAngle": 0.0,
+      "tolerance": 10.0,
+      "initialAngle": 45.0,
+      "ropeLength": 7.0,
+      "checkpoint": false
+    },
+    {
+      "id": "P5_Start",
+      "parent": "Puzzle_05",
+      "shape": "Cube",
+      "position": {
+        "x": 0,
+        "y": -0.5,
+        "z": 2
+      },
+      "scale": {
+        "x": 12,
+        "y": 1,
+        "z": 12
+      },
+      "rotation": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "material": "Floor",
+      "role": "",
+      "collider": true,
+      "trigger": false,
+      "kinematic": false,
+      "hidden": false,
+      "label": "P5_Start",
+      "stage": 0,
+      "kind": 0,
+      "acceptsPulse": false,
+      "requiresPower": false,
+      "alignmentConducts": false,
+      "supportOnlyWhenFrozen": false,
+      "supply": "",
+      "growthObject": "",
+      "handle": "",
+      "rideStart": "",
+      "rideEnd": "",
+      "rideVisual": "",
+      "destination": "",
+      "outputs": [],
+      "axis": {
+        "x": 1,
+        "y": 0,
+        "z": 0
+      },
+      "launchVelocity": {
+        "x": 0,
+        "y": 14,
+        "z": 7
+      },
+      "speed": 35.0,
+      "amplitude": 45.0,
+      "targetAngle": 0.0,
+      "tolerance": 10.0,
+      "initialAngle": 45.0,
+      "ropeLength": 7.0,
+      "checkpoint": false
+    },
+    {
+      "id": "P5_Landing",
+      "parent": "Puzzle_05",
+      "shape": "Cube",
+      "position": {
+        "x": 0,
+        "y": -0.5,
+        "z": 29
+      },
+      "scale": {
+        "x": 12,
+        "y": 1,
+        "z": 14
+      },
+      "rotation": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "material": "Floor",
+      "role": "",
+      "collider": true,
+      "trigger": false,
+      "kinematic": false,
+      "hidden": false,
+      "label": "P5_Landing",
+      "stage": 0,
+      "kind": 0,
+      "acceptsPulse": false,
+      "requiresPower": false,
+      "alignmentConducts": false,
+      "supportOnlyWhenFrozen": false,
+      "supply": "",
+      "growthObject": "",
+      "handle": "",
+      "rideStart": "",
+      "rideEnd": "",
+      "rideVisual": "",
+      "destination": "",
+      "outputs": [],
+      "axis": {
+        "x": 1,
+        "y": 0,
+        "z": 0
+      },
+      "launchVelocity": {
+        "x": 0,
+        "y": 14,
+        "z": 7
+      },
+      "speed": 35.0,
+      "amplitude": 45.0,
+      "targetAngle": 0.0,
+      "tolerance": 10.0,
+      "initialAngle": 45.0,
+      "ropeLength": 7.0,
+      "checkpoint": false
+    },
+    {
+      "id": "P5_Source",
+      "parent": "Puzzle_05",
+      "shape": "Cube",
+      "position": {
+        "x": -3,
+        "y": 1,
+        "z": 3
+      },
+      "scale": {
+        "x": 1.4,
+        "y": 2,
+        "z": 1.4
+      },
+      "rotation": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "material": "Stone",
+      "role": "node",
+      "collider": true,
+      "trigger": false,
+      "kinematic": false,
+      "hidden": false,
+      "label": "Source: PULSE",
+      "stage": 4,
+      "kind": 5,
+      "acceptsPulse": true,
+      "requiresPower": false,
+      "alignmentConducts": false,
+      "supportOnlyWhenFrozen": false,
+      "supply": "",
+      "growthObject": "",
+      "handle": "",
+      "rideStart": "",
+      "rideEnd": "",
+      "rideVisual": "",
+      "destination": "",
+      "outputs": [
+        "P5_Root"
+      ],
+      "axis": {
+        "x": 1,
+        "y": 0,
+        "z": 0
+      },
+      "launchVelocity": {
+        "x": 0,
+        "y": 14,
+        "z": 7
+      },
+      "speed": 35.0,
+      "amplitude": 45.0,
+      "targetAngle": 0.0,
+      "tolerance": 10.0,
+      "initialAngle": 45.0,
+      "ropeLength": 7.0,
+      "checkpoint": false
+    },
+    {
+      "id": "P5_Root",
+      "parent": "Puzzle_05",
+      "shape": "Cube",
+      "position": {
+        "x": 0,
+        "y": 0.4,
+        "z": 7
+      },
+      "scale": {
+        "x": 1,
+        "y": 0.8,
+        "z": 1
+      },
+      "rotation": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "material": "Stone",
+      "role": "node",
+      "collider": true,
+      "trigger": false,
+      "kinematic": false,
+      "hidden": false,
+      "label": "Root: BLOOM to bridge and conduct",
+      "stage": 4,
+      "kind": 0,
+      "acceptsPulse": false,
+      "requiresPower": false,
+      "alignmentConducts": false,
+      "supportOnlyWhenFrozen": false,
+      "supply": "",
+      "growthObject": "P5_RootBridge",
+      "handle": "",
+      "rideStart": "",
+      "rideEnd": "",
+      "rideVisual": "",
+      "destination": "",
+      "outputs": [
+        "P5_Door"
+      ],
+      "axis": {
+        "x": 1,
+        "y": 0,
+        "z": 0
+      },
+      "launchVelocity": {
+        "x": 0,
+        "y": 14,
+        "z": 7
+      },
+      "speed": 35.0,
+      "amplitude": 45.0,
+      "targetAngle": 0.0,
+      "tolerance": 10.0,
+      "initialAngle": 45.0,
+      "ropeLength": 7.0,
+      "checkpoint": false
+    },
+    {
+      "id": "P5_RootBridge",
+      "parent": "Puzzle_05",
+      "shape": "Cube",
+      "position": {
+        "x": 0,
+        "y": -0.2,
+        "z": 15
+      },
+      "scale": {
+        "x": 4,
+        "y": 0.4,
+        "z": 14
+      },
+      "rotation": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "material": "Bloom",
+      "role": "",
+      "collider": true,
+      "trigger": false,
+      "kinematic": false,
+      "hidden": false,
+      "label": "P5_RootBridge",
+      "stage": 0,
+      "kind": 0,
+      "acceptsPulse": false,
+      "requiresPower": false,
+      "alignmentConducts": false,
+      "supportOnlyWhenFrozen": false,
+      "supply": "",
+      "growthObject": "",
+      "handle": "",
+      "rideStart": "",
+      "rideEnd": "",
+      "rideVisual": "",
+      "destination": "",
+      "outputs": [],
+      "axis": {
+        "x": 1,
+        "y": 0,
+        "z": 0
+      },
+      "launchVelocity": {
+        "x": 0,
+        "y": 14,
+        "z": 7
+      },
+      "speed": 35.0,
+      "amplitude": 45.0,
+      "targetAngle": 0.0,
+      "tolerance": 10.0,
+      "initialAngle": 45.0,
+      "ropeLength": 7.0,
+      "checkpoint": false
+    },
+    {
+      "id": "P5_Door",
+      "parent": "Puzzle_05",
+      "shape": "Cube",
+      "position": {
+        "x": 0,
+        "y": 3,
+        "z": 29
+      },
+      "scale": {
+        "x": 12,
+        "y": 6,
+        "z": 1
+      },
+      "rotation": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "material": "Stone",
+      "role": "node",
+      "collider": true,
+      "trigger": false,
+      "kinematic": false,
+      "hidden": false,
+      "label": "Door: receives power through roots",
+      "stage": 4,
+      "kind": 7,
+      "acceptsPulse": false,
+      "requiresPower": false,
+      "alignmentConducts": false,
+      "supportOnlyWhenFrozen": false,
+      "supply": "",
+      "growthObject": "",
+      "handle": "",
+      "rideStart": "",
+      "rideEnd": "",
+      "rideVisual": "",
+      "destination": "",
+      "outputs": [],
+      "axis": {
+        "x": 1,
+        "y": 0,
+        "z": 0
+      },
+      "launchVelocity": {
+        "x": 0,
+        "y": 14,
+        "z": 7
+      },
+      "speed": 35.0,
+      "amplitude": 45.0,
+      "targetAngle": 0.0,
+      "tolerance": 10.0,
+      "initialAngle": 45.0,
+      "ropeLength": 7.0,
+      "checkpoint": false
+    },
+    {
+      "id": "P5_GoalPad",
+      "parent": "Puzzle_05",
+      "shape": "Cube",
+      "position": {
+        "x": 0,
+        "y": 0.05,
+        "z": 33
+      },
+      "scale": {
+        "x": 3,
+        "y": 0.1,
+        "z": 3
+      },
+      "rotation": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "material": "Goal",
+      "role": "",
+      "collider": false,
+      "trigger": false,
+      "kinematic": false,
+      "hidden": false,
+      "label": "P5_GoalPad",
+      "stage": 0,
+      "kind": 0,
+      "acceptsPulse": false,
+      "requiresPower": false,
+      "alignmentConducts": false,
+      "supportOnlyWhenFrozen": false,
+      "supply": "",
+      "growthObject": "",
+      "handle": "",
+      "rideStart": "",
+      "rideEnd": "",
+      "rideVisual": "",
+      "destination": "",
+      "outputs": [],
+      "axis": {
+        "x": 1,
+        "y": 0,
+        "z": 0
+      },
+      "launchVelocity": {
+        "x": 0,
+        "y": 14,
+        "z": 7
+      },
+      "speed": 35.0,
+      "amplitude": 45.0,
+      "targetAngle": 0.0,
+      "tolerance": 10.0,
+      "initialAngle": 45.0,
+      "ropeLength": 7.0,
+      "checkpoint": false
+    },
+    {
+      "id": "P5_Goal",
+      "parent": "Puzzle_05",
+      "shape": "Cube",
+      "position": {
+        "x": 0,
+        "y": 1.5,
+        "z": 33
+      },
+      "scale": {
+        "x": 3,
+        "y": 3,
+        "z": 3
+      },
+      "rotation": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "material": "Goal",
+      "role": "zone",
+      "collider": true,
+      "trigger": true,
+      "kinematic": true,
+      "hidden": true,
+      "label": "P5_Goal",
+      "stage": 4,
+      "kind": 0,
+      "acceptsPulse": false,
+      "requiresPower": false,
+      "alignmentConducts": false,
+      "supportOnlyWhenFrozen": false,
+      "supply": "",
+      "growthObject": "",
+      "handle": "",
+      "rideStart": "",
+      "rideEnd": "",
+      "rideVisual": "",
+      "destination": "",
+      "outputs": [],
+      "axis": {
+        "x": 1,
+        "y": 0,
+        "z": 0
+      },
+      "launchVelocity": {
+        "x": 0,
+        "y": 14,
+        "z": 7
+      },
+      "speed": 35.0,
+      "amplitude": 45.0,
+      "targetAngle": 0.0,
+      "tolerance": 10.0,
+      "initialAngle": 45.0,
+      "ropeLength": 7.0,
+      "checkpoint": false
+    },
+    {
+      "id": "Puzzle_06",
+      "parent": "World",
+      "shape": "",
+      "position": {
+        "x": 300,
+        "y": 0,
+        "z": 0
+      },
+      "scale": {
+        "x": 1,
+        "y": 1,
+        "z": 1
+      },
+      "rotation": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "material": "Stone",
+      "role": "",
+      "collider": false,
+      "trigger": false,
+      "kinematic": false,
+      "hidden": false,
+      "label": "Puzzle_06",
+      "stage": 0,
+      "kind": 0,
+      "acceptsPulse": false,
+      "requiresPower": false,
+      "alignmentConducts": false,
+      "supportOnlyWhenFrozen": false,
+      "supply": "",
+      "growthObject": "",
+      "handle": "",
+      "rideStart": "",
+      "rideEnd": "",
+      "rideVisual": "",
+      "destination": "",
+      "outputs": [],
+      "axis": {
+        "x": 1,
+        "y": 0,
+        "z": 0
+      },
+      "launchVelocity": {
+        "x": 0,
+        "y": 14,
+        "z": 7
+      },
+      "speed": 35.0,
+      "amplitude": 45.0,
+      "targetAngle": 0.0,
+      "tolerance": 10.0,
+      "initialAngle": 45.0,
+      "ropeLength": 7.0,
+      "checkpoint": false
+    },
+    {
+      "id": "P6_Spawn",
+      "parent": "Puzzle_06",
+      "shape": "",
+      "position": {
+        "x": 0,
+        "y": 1.15,
+        "z": 0
+      },
+      "scale": {
+        "x": 1,
+        "y": 1,
+        "z": 1
+      },
+      "rotation": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "material": "Stone",
+      "role": "",
+      "collider": false,
+      "trigger": false,
+      "kinematic": false,
+      "hidden": false,
+      "label": "P6_Spawn",
+      "stage": 0,
+      "kind": 0,
+      "acceptsPulse": false,
+      "requiresPower": false,
+      "alignmentConducts": false,
+      "supportOnlyWhenFrozen": false,
+      "supply": "",
+      "growthObject": "",
+      "handle": "",
+      "rideStart": "",
+      "rideEnd": "",
+      "rideVisual": "",
+      "destination": "",
+      "outputs": [],
+      "axis": {
+        "x": 1,
+        "y": 0,
+        "z": 0
+      },
+      "launchVelocity": {
+        "x": 0,
+        "y": 14,
+        "z": 7
+      },
+      "speed": 35.0,
+      "amplitude": 45.0,
+      "targetAngle": 0.0,
+      "tolerance": 10.0,
+      "initialAngle": 45.0,
+      "ropeLength": 7.0,
+      "checkpoint": false
+    },
+    {
+      "id": "P6_Boundary_-1",
+      "parent": "Puzzle_06",
+      "shape": "Cube",
+      "position": {
+        "x": -6.7,
+        "y": 7.5,
+        "z": 22
+      },
+      "scale": {
+        "x": 0.4,
+        "y": 19,
+        "z": 60
+      },
+      "rotation": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "material": "Wall",
+      "role": "",
+      "collider": true,
+      "trigger": false,
+      "kinematic": false,
+      "hidden": false,
+      "label": "P6_Boundary_-1",
+      "stage": 0,
+      "kind": 0,
+      "acceptsPulse": false,
+      "requiresPower": false,
+      "alignmentConducts": false,
+      "supportOnlyWhenFrozen": false,
+      "supply": "",
+      "growthObject": "",
+      "handle": "",
+      "rideStart": "",
+      "rideEnd": "",
+      "rideVisual": "",
+      "destination": "",
+      "outputs": [],
+      "axis": {
+        "x": 1,
+        "y": 0,
+        "z": 0
+      },
+      "launchVelocity": {
+        "x": 0,
+        "y": 14,
+        "z": 7
+      },
+      "speed": 35.0,
+      "amplitude": 45.0,
+      "targetAngle": 0.0,
+      "tolerance": 10.0,
+      "initialAngle": 45.0,
+      "ropeLength": 7.0,
+      "checkpoint": false
+    },
+    {
+      "id": "P6_Boundary_1",
+      "parent": "Puzzle_06",
+      "shape": "Cube",
+      "position": {
+        "x": 6.7,
+        "y": 7.5,
+        "z": 22
+      },
+      "scale": {
+        "x": 0.4,
+        "y": 19,
+        "z": 60
+      },
+      "rotation": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "material": "Wall",
+      "role": "",
+      "collider": true,
+      "trigger": false,
+      "kinematic": false,
+      "hidden": false,
+      "label": "P6_Boundary_1",
+      "stage": 0,
+      "kind": 0,
+      "acceptsPulse": false,
+      "requiresPower": false,
+      "alignmentConducts": false,
+      "supportOnlyWhenFrozen": false,
+      "supply": "",
+      "growthObject": "",
+      "handle": "",
+      "rideStart": "",
+      "rideEnd": "",
+      "rideVisual": "",
+      "destination": "",
+      "outputs": [],
+      "axis": {
+        "x": 1,
+        "y": 0,
+        "z": 0
+      },
+      "launchVelocity": {
+        "x": 0,
+        "y": 14,
+        "z": 7
+      },
+      "speed": 35.0,
+      "amplitude": 45.0,
+      "targetAngle": 0.0,
+      "tolerance": 10.0,
+      "initialAngle": 45.0,
+      "ropeLength": 7.0,
+      "checkpoint": false
+    },
+    {
+      "id": "P6_Start",
+      "parent": "Puzzle_06",
+      "shape": "Cube",
+      "position": {
+        "x": 0,
+        "y": -0.5,
+        "z": 2
+      },
+      "scale": {
+        "x": 12,
+        "y": 1,
+        "z": 12
+      },
+      "rotation": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "material": "Floor",
+      "role": "",
+      "collider": true,
+      "trigger": false,
+      "kinematic": false,
+      "hidden": false,
+      "label": "P6_Start",
+      "stage": 0,
+      "kind": 0,
+      "acceptsPulse": false,
+      "requiresPower": false,
+      "alignmentConducts": false,
+      "supportOnlyWhenFrozen": false,
+      "supply": "",
+      "growthObject": "",
+      "handle": "",
+      "rideStart": "",
+      "rideEnd": "",
+      "rideVisual": "",
+      "destination": "",
+      "outputs": [],
+      "axis": {
+        "x": 1,
+        "y": 0,
+        "z": 0
+      },
+      "launchVelocity": {
+        "x": 0,
+        "y": 14,
+        "z": 7
+      },
+      "speed": 35.0,
+      "amplitude": 45.0,
+      "targetAngle": 0.0,
+      "tolerance": 10.0,
+      "initialAngle": 45.0,
+      "ropeLength": 7.0,
+      "checkpoint": false
+    },
+    {
+      "id": "P6_Middle",
+      "parent": "Puzzle_06",
+      "shape": "Cube",
+      "position": {
+        "x": 0,
+        "y": -0.5,
+        "z": 21
+      },
+      "scale": {
+        "x": 12,
+        "y": 1,
+        "z": 6
+      },
+      "rotation": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "material": "Floor",
+      "role": "",
+      "collider": true,
+      "trigger": false,
+      "kinematic": false,
+      "hidden": false,
+      "label": "P6_Middle",
+      "stage": 0,
+      "kind": 0,
+      "acceptsPulse": false,
+      "requiresPower": false,
+      "alignmentConducts": false,
+      "supportOnlyWhenFrozen": false,
+      "supply": "",
+      "growthObject": "",
+      "handle": "",
+      "rideStart": "",
+      "rideEnd": "",
+      "rideVisual": "",
+      "destination": "",
+      "outputs": [],
+      "axis": {
+        "x": 1,
+        "y": 0,
+        "z": 0
+      },
+      "launchVelocity": {
+        "x": 0,
+        "y": 14,
+        "z": 7
+      },
+      "speed": 35.0,
+      "amplitude": 45.0,
+      "targetAngle": 0.0,
+      "tolerance": 10.0,
+      "initialAngle": 45.0,
+      "ropeLength": 7.0,
+      "checkpoint": false
+    },
+    {
+      "id": "P6_FinalPlatform",
+      "parent": "Puzzle_06",
+      "shape": "Cube",
+      "position": {
+        "x": 0,
+        "y": -0.5,
+        "z": 42
+      },
+      "scale": {
+        "x": 12,
+        "y": 1,
+        "z": 12
+      },
+      "rotation": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "material": "Floor",
+      "role": "",
+      "collider": true,
+      "trigger": false,
+      "kinematic": false,
+      "hidden": false,
+      "label": "P6_FinalPlatform",
+      "stage": 0,
+      "kind": 0,
+      "acceptsPulse": false,
+      "requiresPower": false,
+      "alignmentConducts": false,
+      "supportOnlyWhenFrozen": false,
+      "supply": "",
+      "growthObject": "",
+      "handle": "",
+      "rideStart": "",
+      "rideEnd": "",
+      "rideVisual": "",
+      "destination": "",
+      "outputs": [],
+      "axis": {
+        "x": 1,
+        "y": 0,
+        "z": 0
+      },
+      "launchVelocity": {
+        "x": 0,
+        "y": 14,
+        "z": 7
+      },
+      "speed": 35.0,
+      "amplitude": 45.0,
+      "targetAngle": 0.0,
+      "tolerance": 10.0,
+      "initialAngle": 45.0,
+      "ropeLength": 7.0,
+      "checkpoint": false
+    },
+    {
+      "id": "P6_Source",
+      "parent": "Puzzle_06",
+      "shape": "Cube",
+      "position": {
+        "x": -3,
+        "y": 1,
+        "z": 3
+      },
+      "scale": {
+        "x": 1.4,
+        "y": 2,
+        "z": 1.4
+      },
+      "rotation": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "material": "Stone",
+      "role": "node",
+      "collider": true,
+      "trigger": false,
+      "kinematic": false,
+      "hidden": false,
+      "label": "Ancient source: PULSE",
+      "stage": 5,
+      "kind": 5,
+      "acceptsPulse": true,
+      "requiresPower": false,
+      "alignmentConducts": false,
+      "supportOnlyWhenFrozen": false,
+      "supply": "",
+      "growthObject": "",
+      "handle": "",
+      "rideStart": "",
+      "rideEnd": "",
+      "rideVisual": "",
+      "destination": "",
+      "outputs": [
+        "P6_Root"
+      ],
+      "axis": {
+        "x": 1,
+        "y": 0,
+        "z": 0
+      },
+      "launchVelocity": {
+        "x": 0,
+        "y": 14,
+        "z": 7
+      },
+      "speed": 35.0,
+      "amplitude": 45.0,
+      "targetAngle": 0.0,
+      "tolerance": 10.0,
+      "initialAngle": 45.0,
+      "ropeLength": 7.0,
+      "checkpoint": false
+    },
+    {
+      "id": "P6_Root",
+      "parent": "Puzzle_06",
+      "shape": "Cube",
+      "position": {
+        "x": 0,
+        "y": 0.4,
+        "z": 7
+      },
+      "scale": {
+        "x": 1,
+        "y": 0.8,
+        "z": 1
+      },
+      "rotation": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "material": "Stone",
+      "role": "node",
+      "collider": true,
+      "trigger": false,
+      "kinematic": false,
+      "hidden": false,
+      "label": "Root: BLOOM connects source to rotor",
+      "stage": 5,
+      "kind": 0,
+      "acceptsPulse": false,
+      "requiresPower": false,
+      "alignmentConducts": false,
+      "supportOnlyWhenFrozen": false,
+      "supply": "",
+      "growthObject": "P6_RootBridge",
+      "handle": "",
+      "rideStart": "",
+      "rideEnd": "",
+      "rideVisual": "",
+      "destination": "",
+      "outputs": [
+        "P6_Rotor"
+      ],
+      "axis": {
+        "x": 1,
+        "y": 0,
+        "z": 0
+      },
+      "launchVelocity": {
+        "x": 0,
+        "y": 14,
+        "z": 7
+      },
+      "speed": 35.0,
+      "amplitude": 45.0,
+      "targetAngle": 0.0,
+      "tolerance": 10.0,
+      "initialAngle": 45.0,
+      "ropeLength": 7.0,
+      "checkpoint": false
+    },
+    {
+      "id": "P6_RootBridge",
+      "parent": "Puzzle_06",
+      "shape": "Cube",
+      "position": {
+        "x": 0,
+        "y": -0.2,
+        "z": 13
+      },
+      "scale": {
+        "x": 4,
+        "y": 0.4,
+        "z": 10
+      },
+      "rotation": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "material": "Bloom",
+      "role": "",
+      "collider": true,
+      "trigger": false,
+      "kinematic": false,
+      "hidden": false,
+      "label": "P6_RootBridge",
+      "stage": 0,
+      "kind": 0,
+      "acceptsPulse": false,
+      "requiresPower": false,
+      "alignmentConducts": false,
+      "supportOnlyWhenFrozen": false,
+      "supply": "",
+      "growthObject": "",
+      "handle": "",
+      "rideStart": "",
+      "rideEnd": "",
+      "rideVisual": "",
+      "destination": "",
+      "outputs": [],
+      "axis": {
+        "x": 1,
+        "y": 0,
+        "z": 0
+      },
+      "launchVelocity": {
+        "x": 0,
+        "y": 14,
+        "z": 7
+      },
+      "speed": 35.0,
+      "amplitude": 45.0,
+      "targetAngle": 0.0,
+      "tolerance": 10.0,
+      "initialAngle": 45.0,
+      "ropeLength": 7.0,
+      "checkpoint": false
+    },
+    {
+      "id": "P6_Rotor",
+      "parent": "Puzzle_06",
+      "shape": "Cube",
+      "position": {
+        "x": 0,
+        "y": -0.25,
+        "z": 30
+      },
+      "scale": {
+        "x": 3,
+        "y": 0.5,
+        "z": 12
+      },
+      "rotation": {
+        "x": 0,
+        "y": 75,
+        "z": 0
+      },
+      "material": "Stone",
+      "role": "node",
+      "collider": true,
+      "trigger": true,
+      "kinematic": true,
+      "hidden": false,
+      "label": "Powered connector: FREEZE at 0 degrees",
+      "stage": 5,
+      "kind": 4,
+      "acceptsPulse": false,
+      "requiresPower": true,
+      "alignmentConducts": true,
+      "supportOnlyWhenFrozen": true,
+      "supply": "",
+      "growthObject": "",
+      "handle": "",
+      "rideStart": "",
+      "rideEnd": "",
+      "rideVisual": "",
+      "destination": "",
+      "outputs": [
+        "P6_Core"
+      ],
+      "axis": {
+        "x": 0,
+        "y": 1,
+        "z": 0
+      },
+      "launchVelocity": {
+        "x": 0,
+        "y": 14,
+        "z": 7
+      },
+      "speed": -22.0,
+      "amplitude": 45.0,
+      "targetAngle": 0.0,
+      "tolerance": 8.0,
+      "initialAngle": 75.0,
+      "ropeLength": 7.0,
+      "checkpoint": false
+    },
+    {
+      "id": "P6_Core",
+      "parent": "Puzzle_06",
+      "shape": "Cube",
+      "position": {
+        "x": 0,
+        "y": 1.5,
+        "z": 42
+      },
+      "scale": {
+        "x": 1.6,
+        "y": 3,
+        "z": 1.6
+      },
+      "rotation": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "material": "Stone",
+      "role": "node",
+      "collider": true,
+      "trigger": false,
+      "kinematic": false,
+      "hidden": false,
+      "label": "Spring core: PULSE only after power arrives",
+      "stage": 5,
+      "kind": 8,
+      "acceptsPulse": false,
+      "requiresPower": false,
+      "alignmentConducts": false,
+      "supportOnlyWhenFrozen": false,
+      "supply": "",
+      "growthObject": "P6_RestoredSpring",
+      "handle": "",
+      "rideStart": "",
+      "rideEnd": "",
+      "rideVisual": "",
+      "destination": "",
+      "outputs": [],
+      "axis": {
+        "x": 1,
+        "y": 0,
+        "z": 0
+      },
+      "launchVelocity": {
+        "x": 0,
+        "y": 14,
+        "z": 7
+      },
+      "speed": 35.0,
+      "amplitude": 45.0,
+      "targetAngle": 0.0,
+      "tolerance": 10.0,
+      "initialAngle": 45.0,
+      "ropeLength": 7.0,
+      "checkpoint": false
+    },
+    {
+      "id": "P6_RestoredSpring",
+      "parent": "Puzzle_06",
+      "shape": "",
+      "position": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "scale": {
+        "x": 1,
+        "y": 1,
+        "z": 1
+      },
+      "rotation": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "material": "Stone",
+      "role": "",
+      "collider": false,
+      "trigger": false,
+      "kinematic": false,
+      "hidden": false,
+      "label": "P6_RestoredSpring",
+      "stage": 0,
+      "kind": 0,
+      "acceptsPulse": false,
+      "requiresPower": false,
+      "alignmentConducts": false,
+      "supportOnlyWhenFrozen": false,
+      "supply": "",
+      "growthObject": "",
+      "handle": "",
+      "rideStart": "",
+      "rideEnd": "",
+      "rideVisual": "",
+      "destination": "",
+      "outputs": [],
+      "axis": {
+        "x": 1,
+        "y": 0,
+        "z": 0
+      },
+      "launchVelocity": {
+        "x": 0,
+        "y": 14,
+        "z": 7
+      },
+      "speed": 35.0,
+      "amplitude": 45.0,
+      "targetAngle": 0.0,
+      "tolerance": 10.0,
+      "initialAngle": 45.0,
+      "ropeLength": 7.0,
+      "checkpoint": false
+    },
+    {
+      "id": "P6_RestoredTrunk",
+      "parent": "P6_RestoredSpring",
+      "shape": "Cylinder",
+      "position": {
+        "x": 0,
+        "y": 3.5,
+        "z": 44
+      },
+      "scale": {
+        "x": 0.6,
+        "y": 3.5,
+        "z": 0.6
+      },
+      "rotation": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "material": "Bloom",
+      "role": "",
+      "collider": false,
+      "trigger": false,
+      "kinematic": false,
+      "hidden": false,
+      "label": "P6_RestoredTrunk",
+      "stage": 0,
+      "kind": 0,
+      "acceptsPulse": false,
+      "requiresPower": false,
+      "alignmentConducts": false,
+      "supportOnlyWhenFrozen": false,
+      "supply": "",
+      "growthObject": "",
+      "handle": "",
+      "rideStart": "",
+      "rideEnd": "",
+      "rideVisual": "",
+      "destination": "",
+      "outputs": [],
+      "axis": {
+        "x": 1,
+        "y": 0,
+        "z": 0
+      },
+      "launchVelocity": {
+        "x": 0,
+        "y": 14,
+        "z": 7
+      },
+      "speed": 35.0,
+      "amplitude": 45.0,
+      "targetAngle": 0.0,
+      "tolerance": 10.0,
+      "initialAngle": 45.0,
+      "ropeLength": 7.0,
+      "checkpoint": false
+    },
+    {
+      "id": "P6_RestoredCanopy",
+      "parent": "P6_RestoredSpring",
+      "shape": "Sphere",
+      "position": {
+        "x": 0,
+        "y": 8,
+        "z": 44
+      },
+      "scale": {
+        "x": 5,
+        "y": 3,
+        "z": 5
+      },
+      "rotation": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "material": "Bloom",
+      "role": "",
+      "collider": false,
+      "trigger": false,
+      "kinematic": false,
+      "hidden": false,
+      "label": "P6_RestoredCanopy",
+      "stage": 0,
+      "kind": 0,
+      "acceptsPulse": false,
+      "requiresPower": false,
+      "alignmentConducts": false,
+      "supportOnlyWhenFrozen": false,
+      "supply": "",
+      "growthObject": "",
+      "handle": "",
+      "rideStart": "",
+      "rideEnd": "",
+      "rideVisual": "",
+      "destination": "",
+      "outputs": [],
+      "axis": {
+        "x": 1,
+        "y": 0,
+        "z": 0
+      },
+      "launchVelocity": {
+        "x": 0,
+        "y": 14,
+        "z": 7
+      },
+      "speed": 35.0,
+      "amplitude": 45.0,
+      "targetAngle": 0.0,
+      "tolerance": 10.0,
+      "initialAngle": 45.0,
+      "ropeLength": 7.0,
+      "checkpoint": false
+    },
+    {
+      "id": "P6_Flow_-1",
+      "parent": "P6_RestoredSpring",
+      "shape": "Cube",
+      "position": {
+        "x": -2,
+        "y": 0.05,
+        "z": 41
+      },
+      "scale": {
+        "x": 1,
+        "y": 0.1,
+        "z": 10
+      },
+      "rotation": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "material": "Freeze",
+      "role": "",
+      "collider": false,
+      "trigger": false,
+      "kinematic": false,
+      "hidden": false,
+      "label": "P6_Flow_-1",
+      "stage": 0,
+      "kind": 0,
+      "acceptsPulse": false,
+      "requiresPower": false,
+      "alignmentConducts": false,
+      "supportOnlyWhenFrozen": false,
+      "supply": "",
+      "growthObject": "",
+      "handle": "",
+      "rideStart": "",
+      "rideEnd": "",
+      "rideVisual": "",
+      "destination": "",
+      "outputs": [],
+      "axis": {
+        "x": 1,
+        "y": 0,
+        "z": 0
+      },
+      "launchVelocity": {
+        "x": 0,
+        "y": 14,
+        "z": 7
+      },
+      "speed": 35.0,
+      "amplitude": 45.0,
+      "targetAngle": 0.0,
+      "tolerance": 10.0,
+      "initialAngle": 45.0,
+      "ropeLength": 7.0,
+      "checkpoint": false
+    },
+    {
+      "id": "P6_Flow_0",
+      "parent": "P6_RestoredSpring",
+      "shape": "Cube",
+      "position": {
+        "x": 0,
+        "y": 0.05,
+        "z": 41
+      },
+      "scale": {
+        "x": 1,
+        "y": 0.1,
+        "z": 10
+      },
+      "rotation": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "material": "Freeze",
+      "role": "",
+      "collider": false,
+      "trigger": false,
+      "kinematic": false,
+      "hidden": false,
+      "label": "P6_Flow_0",
+      "stage": 0,
+      "kind": 0,
+      "acceptsPulse": false,
+      "requiresPower": false,
+      "alignmentConducts": false,
+      "supportOnlyWhenFrozen": false,
+      "supply": "",
+      "growthObject": "",
+      "handle": "",
+      "rideStart": "",
+      "rideEnd": "",
+      "rideVisual": "",
+      "destination": "",
+      "outputs": [],
+      "axis": {
+        "x": 1,
+        "y": 0,
+        "z": 0
+      },
+      "launchVelocity": {
+        "x": 0,
+        "y": 14,
+        "z": 7
+      },
+      "speed": 35.0,
+      "amplitude": 45.0,
+      "targetAngle": 0.0,
+      "tolerance": 10.0,
+      "initialAngle": 45.0,
+      "ropeLength": 7.0,
+      "checkpoint": false
+    },
+    {
+      "id": "P6_Flow_1",
+      "parent": "P6_RestoredSpring",
+      "shape": "Cube",
+      "position": {
+        "x": 2,
+        "y": 0.05,
+        "z": 41
+      },
+      "scale": {
+        "x": 1,
+        "y": 0.1,
+        "z": 10
+      },
+      "rotation": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "material": "Freeze",
+      "role": "",
+      "collider": false,
+      "trigger": false,
+      "kinematic": false,
+      "hidden": false,
+      "label": "P6_Flow_1",
+      "stage": 0,
+      "kind": 0,
+      "acceptsPulse": false,
+      "requiresPower": false,
+      "alignmentConducts": false,
+      "supportOnlyWhenFrozen": false,
+      "supply": "",
+      "growthObject": "",
+      "handle": "",
+      "rideStart": "",
+      "rideEnd": "",
+      "rideVisual": "",
+      "destination": "",
+      "outputs": [],
+      "axis": {
+        "x": 1,
+        "y": 0,
+        "z": 0
+      },
+      "launchVelocity": {
+        "x": 0,
+        "y": 14,
+        "z": 7
+      },
+      "speed": 35.0,
+      "amplitude": 45.0,
+      "targetAngle": 0.0,
+      "tolerance": 10.0,
+      "initialAngle": 45.0,
+      "ropeLength": 7.0,
+      "checkpoint": false
+    },
+    {
+      "id": "P6_CheckpointSpawn",
+      "parent": "Puzzle_06",
+      "shape": "",
+      "position": {
+        "x": 0,
+        "y": 1.15,
+        "z": 21
+      },
+      "scale": {
+        "x": 1,
+        "y": 1,
+        "z": 1
+      },
+      "rotation": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "material": "Stone",
+      "role": "",
+      "collider": false,
+      "trigger": false,
+      "kinematic": false,
+      "hidden": false,
+      "label": "P6_CheckpointSpawn",
+      "stage": 0,
+      "kind": 0,
+      "acceptsPulse": false,
+      "requiresPower": false,
+      "alignmentConducts": false,
+      "supportOnlyWhenFrozen": false,
+      "supply": "",
+      "growthObject": "",
+      "handle": "",
+      "rideStart": "",
+      "rideEnd": "",
+      "rideVisual": "",
+      "destination": "",
+      "outputs": [],
+      "axis": {
+        "x": 1,
+        "y": 0,
+        "z": 0
+      },
+      "launchVelocity": {
+        "x": 0,
+        "y": 14,
+        "z": 7
+      },
+      "speed": 35.0,
+      "amplitude": 45.0,
+      "targetAngle": 0.0,
+      "tolerance": 10.0,
+      "initialAngle": 45.0,
+      "ropeLength": 7.0,
+      "checkpoint": false
+    },
+    {
+      "id": "P6_Checkpoint",
+      "parent": "Puzzle_06",
+      "shape": "Cube",
+      "position": {
+        "x": 0,
+        "y": 1.5,
+        "z": 21
+      },
+      "scale": {
+        "x": 10,
+        "y": 3,
+        "z": 2
+      },
+      "rotation": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "material": "Freeze",
+      "role": "zone",
+      "collider": true,
+      "trigger": true,
+      "kinematic": true,
+      "hidden": true,
+      "label": "P6_Checkpoint",
+      "stage": 5,
+      "kind": 0,
+      "acceptsPulse": false,
+      "requiresPower": false,
+      "alignmentConducts": false,
+      "supportOnlyWhenFrozen": false,
+      "supply": "",
+      "growthObject": "",
+      "handle": "",
+      "rideStart": "",
+      "rideEnd": "",
+      "rideVisual": "",
+      "destination": "P6_CheckpointSpawn",
+      "outputs": [],
+      "axis": {
+        "x": 1,
+        "y": 0,
+        "z": 0
+      },
+      "launchVelocity": {
+        "x": 0,
+        "y": 14,
+        "z": 7
+      },
+      "speed": 35.0,
+      "amplitude": 45.0,
+      "targetAngle": 0.0,
+      "tolerance": 10.0,
+      "initialAngle": 45.0,
+      "ropeLength": 7.0,
+      "checkpoint": true
+    },
+    {
+      "id": "P6_GoalPad",
+      "parent": "Puzzle_06",
+      "shape": "Cube",
+      "position": {
+        "x": 0,
+        "y": 0.05,
+        "z": 46
+      },
+      "scale": {
+        "x": 3,
+        "y": 0.1,
+        "z": 3
+      },
+      "rotation": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "material": "Goal",
+      "role": "",
+      "collider": false,
+      "trigger": false,
+      "kinematic": false,
+      "hidden": false,
+      "label": "P6_GoalPad",
+      "stage": 0,
+      "kind": 0,
+      "acceptsPulse": false,
+      "requiresPower": false,
+      "alignmentConducts": false,
+      "supportOnlyWhenFrozen": false,
+      "supply": "",
+      "growthObject": "",
+      "handle": "",
+      "rideStart": "",
+      "rideEnd": "",
+      "rideVisual": "",
+      "destination": "",
+      "outputs": [],
+      "axis": {
+        "x": 1,
+        "y": 0,
+        "z": 0
+      },
+      "launchVelocity": {
+        "x": 0,
+        "y": 14,
+        "z": 7
+      },
+      "speed": 35.0,
+      "amplitude": 45.0,
+      "targetAngle": 0.0,
+      "tolerance": 10.0,
+      "initialAngle": 45.0,
+      "ropeLength": 7.0,
+      "checkpoint": false
+    },
+    {
+      "id": "P6_Goal",
+      "parent": "Puzzle_06",
+      "shape": "Cube",
+      "position": {
+        "x": 0,
+        "y": 1.5,
+        "z": 46
+      },
+      "scale": {
+        "x": 3,
+        "y": 3,
+        "z": 3
+      },
+      "rotation": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "material": "Goal",
+      "role": "zone",
+      "collider": true,
+      "trigger": true,
+      "kinematic": true,
+      "hidden": true,
+      "label": "P6_Goal",
+      "stage": 5,
+      "kind": 0,
+      "acceptsPulse": false,
+      "requiresPower": false,
+      "alignmentConducts": false,
+      "supportOnlyWhenFrozen": false,
+      "supply": "",
+      "growthObject": "",
+      "handle": "",
+      "rideStart": "",
+      "rideEnd": "",
+      "rideVisual": "",
+      "destination": "",
+      "outputs": [],
+      "axis": {
+        "x": 1,
+        "y": 0,
+        "z": 0
+      },
+      "launchVelocity": {
+        "x": 0,
+        "y": 14,
+        "z": 7
+      },
+      "speed": 35.0,
+      "amplitude": 45.0,
+      "targetAngle": 0.0,
+      "tolerance": 10.0,
+      "initialAngle": 45.0,
+      "ropeLength": 7.0,
+      "checkpoint": false
+    }
+  ],
+  "stages": [
+    {
+      "title": "Bloom: flower and vine",
+      "hint": "BLOOM the flower; stand on it and Space. BLOOM the vine; E near its handle; Space to release forward.",
+      "spawn": "P1_Spawn",
+      "nodes": [
+        "P1_Flower",
+        "P1_Vine"
+      ],
+      "requirements": [
+        "P1_Flower",
+        "P1_Vine"
+      ]
+    },
+    {
+      "title": "Freeze: falling stone and slate",
+      "hint": "FREEZE the falling stone near the low blue mark; jump to the ledge. Freeze the slate near 0 degrees.",
+      "spawn": "P2_Spawn",
+      "nodes": [
+        "P2_FallingStone",
+        "P2_Slate"
+      ],
+      "requirements": [
+        "P2_Slate"
+      ]
+    },
+    {
+      "title": "Pulse + Freeze: machine bridge",
+      "hint": "PULSE the machine to rotate it. FREEZE near 0 degrees, then cross the cyan bridge.",
+      "spawn": "P3_Spawn",
+      "nodes": [
+        "P3_Machine"
+      ],
+      "requirements": [
+        "P3_Machine"
+      ]
+    },
+    {
+      "title": "Pulse + Freeze: ice ski jump",
+      "hint": "PULSE the sluice, FREEZE the water, then E beside the leaf. Steer with A/D; launch at the ramp end.",
+      "spawn": "P4_Spawn",
+      "nodes": [
+        "P4_Sluice",
+        "P4_Water"
+      ],
+      "requirements": [
+        "P4_Water"
+      ]
+    },
+    {
+      "title": "Bloom + Pulse: living conductor",
+      "hint": "BLOOM the root bridge. PULSE the source. Power must travel through the grown root to open the far door.",
+      "spawn": "P5_Spawn",
+      "nodes": [
+        "P5_Source",
+        "P5_Root",
+        "P5_Door"
+      ],
+      "requirements": [
+        "P5_Root",
+        "P5_Door"
+      ]
+    },
+    {
+      "title": "The spring: three abilities together",
+      "hint": "BLOOM the roots, PULSE the source, FREEZE the powered rotor at 0 degrees. Cross and PULSE the central core.",
+      "spawn": "P6_Spawn",
+      "nodes": [
+        "P6_Source",
+        "P6_Root",
+        "P6_Rotor",
+        "P6_Core"
+      ],
+      "requirements": [
+        "P6_Root",
+        "P6_Rotor",
+        "P6_Core"
+      ]
+    }
+  ]
+}
