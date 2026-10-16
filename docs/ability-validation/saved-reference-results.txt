@@ -1,0 +1,4 @@
+PASS Ability repair twice preserves scene and prefab bytes.
+PASS Exactly one explicit receiver link per node collider.
+PASS Gameplay camera/player/world instance references agree.
+PASS One slide query trigger separate from physical surface support.

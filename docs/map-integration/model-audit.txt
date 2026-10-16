@@ -1,0 +1,638 @@
+ROOT Main Camera pos=(6.000, 25.800, -59.370) rot=(0.000, 0.000, 0.000) scale=(1.000, 1.000, 1.000)
+   pos=(6.000, 25.800, -59.370) rot=(0.00, 0.00, 0.00) scale=(1.000, 1.000, 1.000)
+ROOT Directional Light pos=(0.000, 3.000, 0.000) rot=(50.000, 330.000, 0.000) scale=(1.000, 1.000, 1.000)
+   pos=(0.000, 3.000, 0.000) rot=(50.00, 330.00, 0.00) scale=(1.000, 1.000, 1.000)
+ROOT EF_Terrain pos=(9.450, 0.000, -3.142) rot=(0.000, 0.000, 0.000) scale=(1.000, 1.000, 1.000)
+   pos=(9.450, 0.000, -3.142) rot=(0.00, 0.00, 0.00) scale=(1.000, 1.000, 1.000)
+  Terrain pos=(9.450, 0.000, -3.142) rot=(0.00, 0.00, 0.00) scale=(1.000, 1.000, 1.000)
+  Terrain/T_Stairs pos=(-8.550, 10.000, 1.858) rot=(0.00, 0.00, 0.00) scale=(1.000, 1.000, 1.000) BOUNDS center=(-3.800, 5.500, 1.858) size=(9.520, 19.000, 4.000) mats=EF_Stone_MAT:Universal Render Pipeline/Lit
+  Terrain/T_Terrain pos=(9.450, 0.000, -3.142) rot=(0.00, 0.00, 0.00) scale=(1.000, 1.000, 1.000) BOUNDS center=(17.450, 16.420, -15.142) size=(140.000, 39.519, 124.000) mats=EF_Ground_MAT:Universal Render Pipeline/Lit,EF_Rock_MAT:Universal Render Pipeline/Lit,EF_Bed_MAT:Universal Render Pipeline/Lit
+ROOT P6_ChannelRepair pos=(9.450, 0.000, -3.142) rot=(0.000, 0.000, 0.000) scale=(1.000, 1.000, 1.000)
+   pos=(9.450, 0.000, -3.142) rot=(0.00, 0.00, 0.00) scale=(1.000, 1.000, 1.000)
+  P6_Waterwheel pos=(9.450, 0.000, -3.142) rot=(0.00, 0.00, 0.00) scale=(1.000, 1.000, 1.000)
+  P6_Waterwheel/SM_Channel_Piece_P6_01 pos=(8.486, 15.383, -22.216) rot=(8.29, 256.50, 357.77) scale=(1.000, 1.000, 1.000) BOUNDS center=(8.441, 15.680, -22.215) size=(1.961, 0.884, 2.564) mats=EF_Stone_MAT:Universal Render Pipeline/Lit
+  P6_Waterwheel/SM_Channel_Piece_P6_02 pos=(9.061, 15.368, -19.613) rot=(13.49, 253.27, 358.17) scale=(1.000, 1.000, 1.000) BOUNDS center=(8.991, 15.660, -19.624) size=(2.089, 0.981, 2.620) mats=EF_Stone_MAT:Universal Render Pipeline/Lit
+  P6_Waterwheel/SM_Channel_Piece_P6_03 pos=(8.492, 15.337, -17.339) rot=(21.89, 285.79, 2.63) scale=(1.000, 1.000, 1.000) BOUNDS center=(8.380, 15.615, -17.322) size=(2.060, 1.176, 2.609) mats=EF_Stone_MAT:Universal Render Pipeline/Lit
+  P6_Waterwheel/SM_Channel_Piece_P6_04 pos=(8.755, 15.311, -15.327) rot=(348.42, 250.45, 3.25) scale=(1.000, 1.000, 1.000) BOUNDS center=(8.818, 15.604, -15.323) size=(2.161, 0.996, 2.640) mats=EF_Stone_MAT:Universal Render Pipeline/Lit
+  P6_Waterwheel/SM_Root_P6_01 pos=(9.450, 15.083, -22.292) rot=(0.00, 0.00, 0.00) scale=(1.000, 0.020, 1.000) BOUNDS center=(9.441, 15.113, -22.335) size=(1.108, 0.077, 0.814) mats=EF_Root_MAT:Universal Render Pipeline/Lit
+  P6_Waterwheel/SM_Root_P6_02 pos=(9.450, 15.068, -19.992) rot=(0.00, 0.00, 0.00) scale=(1.000, 0.020, 1.000) BOUNDS center=(9.453, 15.097, -20.069) size=(0.861, 0.076, 0.881) mats=EF_Root_MAT:Universal Render Pipeline/Lit
+  P6_Waterwheel/SM_Root_P6_03 pos=(9.450, 15.037, -17.692) rot=(0.00, 0.00, 0.00) scale=(1.000, 0.020, 1.000) BOUNDS center=(9.386, 15.067, -17.740) size=(0.982, 0.077, 0.891) mats=EF_Root_MAT:Universal Render Pipeline/Lit
+  P6_Waterwheel/SM_Root_P6_04 pos=(9.450, 15.011, -15.392) rot=(0.00, 0.00, 0.00) scale=(1.000, 0.020, 1.000) BOUNDS center=(9.450, 15.041, -15.323) size=(0.856, 0.078, 1.034) mats=EF_Root_MAT:Universal Render Pipeline/Lit
+ROOT Restore_P1 pos=(9.450, 0.000, -3.142) rot=(0.000, 0.000, 0.000) scale=(1.000, 1.000, 1.000)
+   pos=(9.450, 0.000, -3.142) rot=(0.00, 0.00, 0.00) scale=(1.000, 1.000, 1.000)
+  Restore pos=(9.450, 0.000, -3.142) rot=(0.00, 0.00, 0.00) scale=(1.000, 1.000, 1.000)
+  Restore/Restore_P1 pos=(9.450, 0.000, -3.142) rot=(0.00, 0.00, 0.00) scale=(1.000, 1.000, 1.000)
+  Restore/Restore_P1/R1_FlowerBush_01 pos=(32.450, 2.332, 33.858) rot=(0.00, 13.52, 0.00) scale=(0.550, 0.300, 0.550) BOUNDS center=(32.443, 2.535, 33.930) size=(1.516, 0.412, 1.493) mats=EF_Leaf_MAT:Universal Render Pipeline/Lit,EF_FlowerCenter_MAT:Universal Render Pipeline/Lit,EF_Petal_MAT:Universal Render Pipeline/Lit
+  Restore/Restore_P1/R1_FlowerBush_02 pos=(22.450, 0.052, 34.858) rot=(0.00, 39.84, 0.00) scale=(0.550, 0.300, 0.550) BOUNDS center=(22.451, 0.280, 34.926) size=(1.699, 0.464, 1.699) mats=EF_Leaf_MAT:Universal Render Pipeline/Lit,EF_FlowerCenter_MAT:Universal Render Pipeline/Lit,EF_Petal_MAT:Universal Render Pipeline/Lit
+  Restore/Restore_P1/R1_FlowerBush_03 pos=(31.950, -0.012, 27.358) rot=(0.00, 72.99, 0.00) scale=(0.550, 0.300, 0.550) BOUNDS center=(31.971, 0.151, 27.374) size=(1.572, 0.335, 1.606) mats=EF_Leaf_MAT:Universal Render Pipeline/Lit,EF_FlowerCenter_MAT:Universal Render Pipeline/Lit,EF_Petal_MAT:Universal Render Pipeline/Lit
+  Restore/Restore_P1/R1_FlowerBush_04 pos=(21.950, 0.058, 27.358) rot=(0.00, 274.62, 0.00) scale=(0.550, 0.300, 0.550) BOUNDS center=(21.961, 0.250, 27.352) size=(1.410, 0.394, 1.386) mats=EF_Leaf_MAT:Universal Render Pipeline/Lit,EF_FlowerCenter_MAT:Universal Render Pipeline/Lit,EF_Petal_MAT:Universal Render Pipeline/Lit
+  Restore/Restore_P1/R1_FlowerBush_05 pos=(29.450, 4.505, 36.358) rot=(0.00, 7.10, 0.00) scale=(0.550, 0.300, 0.550) BOUNDS center=(29.444, 4.715, 36.346) size=(1.441, 0.429, 1.456) mats=EF_Leaf_MAT:Universal Render Pipeline/Lit,EF_FlowerCenter_MAT:Universal Render Pipeline/Lit,EF_Petal_MAT:Universal Render Pipeline/Lit
+  Restore/Restore_P1/R1_FlowerBush_06 pos=(33.450, 2.939, 22.858) rot=(0.00, 278.37, 0.00) scale=(0.550, 0.300, 0.550) BOUNDS center=(33.452, 3.141, 22.851) size=(1.475, 0.413, 1.481) mats=EF_Leaf_MAT:Universal Render Pipeline/Lit,EF_FlowerCenter_MAT:Universal Render Pipeline/Lit,EF_Petal_MAT:Universal Render Pipeline/Lit
+  Restore/Restore_P1/R1_FlowerBush_07 pos=(21.950, 2.915, 22.358) rot=(0.00, 331.97, 0.00) scale=(0.550, 0.300, 0.550) BOUNDS center=(21.944, 3.147, 22.373) size=(1.727, 0.472, 1.709) mats=EF_Leaf_MAT:Universal Render Pipeline/Lit,EF_FlowerCenter_MAT:Universal Render Pipeline/Lit,EF_Petal_MAT:Universal Render Pipeline/Lit
+  Restore/Restore_P1/R1_FlowStem_01 pos=(24.450, 0.132, 27.858) rot=(0.00, 0.00, 0.00) scale=(0.000, 0.000, 0.000) BOUNDS center=(24.450, 0.132, 27.858) size=(0.000, 0.000, 0.000) mats=EF_Leaf_MAT:Universal Render Pipeline/Lit
+  Restore/Restore_P1/R1_FlowStem_02 pos=(25.950, 0.117, 26.258) rot=(0.00, 0.00, 0.00) scale=(0.000, 0.000, 0.000) BOUNDS center=(25.950, 0.117, 26.258) size=(0.000, 0.000, 0.000) mats=EF_Leaf_MAT:Universal Render Pipeline/Lit
+  Restore/Restore_P1/R1_FlowStem_03 pos=(26.950, 0.942, 25.258) rot=(0.00, 0.00, 0.00) scale=(0.000, 0.000, 0.000) BOUNDS center=(26.950, 0.942, 25.258) size=(0.000, 0.000, 0.000) mats=EF_Leaf_MAT:Universal Render Pipeline/Lit
+  Restore/Restore_P1/R1_FlowStem_04 pos=(27.950, 3.149, 24.258) rot=(0.00, 0.00, 0.00) scale=(0.000, 0.000, 0.000) BOUNDS center=(27.950, 3.149, 24.258) size=(0.000, 0.000, 0.000) mats=EF_Leaf_MAT:Universal Render Pipeline/Lit
+  Restore/Restore_P1/R1_FlowStem_05 pos=(30.450, 3.121, 21.858) rot=(0.00, 0.00, 0.00) scale=(0.000, 0.000, 0.000) BOUNDS center=(30.450, 3.121, 21.858) size=(0.000, 0.000, 0.000) mats=EF_Leaf_MAT:Universal Render Pipeline/Lit
+ROOT Restore_P2 pos=(9.450, 0.000, -3.142) rot=(0.000, 0.000, 0.000) scale=(1.000, 1.000, 1.000)
+   pos=(9.450, 0.000, -3.142) rot=(0.00, 0.00, 0.00) scale=(1.000, 1.000, 1.000)
+  Restore pos=(9.450, 0.000, -3.142) rot=(0.00, 0.00, 0.00) scale=(1.000, 1.000, 1.000)
+  Restore/Restore_P2 pos=(9.450, 0.000, -3.142) rot=(0.00, 0.00, 0.00) scale=(1.000, 1.000, 1.000)
+  Restore/Restore_P2/R2_MarkFlower_01 pos=(57.050, 4.500, 7.858) rot=(0.00, 0.00, 0.00) scale=(0.000, 0.000, 0.000) BOUNDS center=(57.050, 4.500, 7.858) size=(0.000, 0.000, 0.000) mats=EF_Leaf_MAT:Universal Render Pipeline/Lit,EF_FlowerCenter_MAT:Universal Render Pipeline/Lit,EF_Petal_MAT:Universal Render Pipeline/Lit
+  Restore/Restore_P2/R2_MarkFlower_02 pos=(57.050, 5.700, 2.858) rot=(0.00, 320.00, 0.00) scale=(0.000, 0.000, 0.000) BOUNDS center=(57.050, 5.700, 2.858) size=(0.000, 0.000, 0.000) mats=EF_Leaf_MAT:Universal Render Pipeline/Lit,EF_FlowerCenter_MAT:Universal Render Pipeline/Lit,EF_Petal_MAT:Universal Render Pipeline/Lit
+  Restore/Restore_P2/R2_MarkFlower_03 pos=(57.050, 6.900, -2.142) rot=(0.00, 280.00, 0.00) scale=(0.000, 0.000, 0.000) BOUNDS center=(57.050, 6.900, -2.142) size=(0.000, 0.000, 0.000) mats=EF_Leaf_MAT:Universal Render Pipeline/Lit,EF_FlowerCenter_MAT:Universal Render Pipeline/Lit,EF_Petal_MAT:Universal Render Pipeline/Lit
+  Restore/Restore_P2/R2_Moss_01 pos=(56.450, 2.969, 21.858) rot=(0.00, 183.89, 0.00) scale=(0.000, 0.000, 0.000) BOUNDS center=(56.450, 2.969, 21.858) size=(0.000, 0.000, 0.000) mats=EF_Moss_MAT:Universal Render Pipeline/Lit
+  Restore/Restore_P2/R2_Moss_02 pos=(50.450, 3.119, 15.858) rot=(0.00, 62.62, 0.00) scale=(0.000, 0.000, 0.000) BOUNDS center=(50.450, 3.119, 15.858) size=(0.000, 0.000, 0.000) mats=EF_Moss_MAT:Universal Render Pipeline/Lit
+  Restore/Restore_P2/R2_Moss_03 pos=(55.450, 7.550, -8.142) rot=(0.00, 271.83, 0.00) scale=(0.000, 0.000, 0.000) BOUNDS center=(55.450, 7.550, -8.142) size=(0.000, 0.000, 0.000) mats=EF_Moss_MAT:Universal Render Pipeline/Lit
+  Restore/Restore_P2/R2_Moss_04 pos=(50.450, 7.437, -21.142) rot=(0.00, 52.09, 0.00) scale=(0.000, 0.000, 0.000) BOUNDS center=(50.450, 7.437, -21.142) size=(0.000, 0.000, 0.000) mats=EF_Moss_MAT:Universal Render Pipeline/Lit
+  Restore/Restore_P2/R2_Moss_05 pos=(56.450, 7.488, -25.142) rot=(0.00, 56.64, 0.00) scale=(0.000, 0.000, 0.000) BOUNDS center=(56.450, 7.488, -25.142) size=(0.000, 0.000, 0.000) mats=EF_Moss_MAT:Universal Render Pipeline/Lit
+  Restore/Restore_P2/R2_Moss_06 pos=(49.450, 7.497, -41.142) rot=(0.00, 25.26, 0.00) scale=(0.000, 0.000, 0.000) BOUNDS center=(49.450, 7.497, -41.142) size=(0.000, 0.000, 0.000) mats=EF_Moss_MAT:Universal Render Pipeline/Lit
+  Restore/Restore_P2/R2_Moss_07 pos=(57.450, 7.472, -47.142) rot=(0.00, 110.44, 0.00) scale=(0.000, 0.000, 0.000) BOUNDS center=(57.450, 7.472, -47.142) size=(0.000, 0.000, 0.000) mats=EF_Moss_MAT:Universal Render Pipeline/Lit
+  Restore/Restore_P2/R2_SlateFlower_01 pos=(50.950, 7.442, -27.642) rot=(0.00, 131.21, 0.00) scale=(0.550, 0.300, 0.550) BOUNDS center=(50.967, 7.654, -27.632) size=(1.836, 0.432, 1.833) mats=EF_Leaf_MAT:Universal Render Pipeline/Lit,EF_FlowerCenter_MAT:Universal Render Pipeline/Lit,EF_Petal_MAT:Universal Render Pipeline/Lit
+  Restore/Restore_P2/R2_SlateFlower_02 pos=(55.950, 7.481, -27.642) rot=(0.00, 235.83, 0.00) scale=(0.550, 0.300, 0.550) BOUNDS center=(55.943, 7.702, -27.677) size=(1.736, 0.450, 1.739) mats=EF_Leaf_MAT:Universal Render Pipeline/Lit,EF_FlowerCenter_MAT:Universal Render Pipeline/Lit,EF_Petal_MAT:Universal Render Pipeline/Lit
+  Restore/Restore_P2/R2_SlateFlower_03 pos=(50.950, 7.463, -39.642) rot=(0.00, 233.80, 0.00) scale=(0.550, 0.300, 0.550) BOUNDS center=(50.930, 7.694, -39.696) size=(1.780, 0.467, 1.774) mats=EF_Leaf_MAT:Universal Render Pipeline/Lit,EF_FlowerCenter_MAT:Universal Render Pipeline/Lit,EF_Petal_MAT:Universal Render Pipeline/Lit
+  Restore/Restore_P2/R2_SlateFlower_04 pos=(55.950, 7.397, -39.642) rot=(0.00, 110.37, 0.00) scale=(0.550, 0.300, 0.550) BOUNDS center=(55.977, 7.605, -39.640) size=(1.626, 0.422, 1.607) mats=EF_Leaf_MAT:Universal Render Pipeline/Lit,EF_FlowerCenter_MAT:Universal Render Pipeline/Lit,EF_Petal_MAT:Universal Render Pipeline/Lit
+ROOT Restore_P4 pos=(9.450, 0.000, -3.142) rot=(0.000, 0.000, 0.000) scale=(1.000, 1.000, 1.000)
+   pos=(9.450, 0.000, -3.142) rot=(0.00, 0.00, 0.00) scale=(1.000, 1.000, 1.000)
+  Restore pos=(9.450, 0.000, -3.142) rot=(0.00, 0.00, 0.00) scale=(1.000, 1.000, 1.000)
+  Restore/Restore_P4 pos=(9.450, 0.000, -3.142) rot=(0.00, 0.00, 0.00) scale=(1.000, 1.000, 1.000)
+  Restore/Restore_P4/R4_Waterfall pos=(-19.150, 11.689, -9.099) rot=(0.00, 0.00, 0.00) scale=(0.000, 0.000, 0.000) BOUNDS center=(-19.150, 11.689, -9.099) size=(0.000, 0.000, 0.000) mats=EF_Water_MAT:Universal Render Pipeline/Lit
+ROOT Restore_P5 pos=(9.450, 0.000, -3.142) rot=(0.000, 0.000, 0.000) scale=(1.000, 1.000, 1.000)
+   pos=(9.450, 0.000, -3.142) rot=(0.00, 0.00, 0.00) scale=(1.000, 1.000, 1.000)
+  Restore pos=(9.450, 0.000, -3.142) rot=(0.00, 0.00, 0.00) scale=(1.000, 1.000, 1.000)
+  Restore/Restore_P5 pos=(9.450, 0.000, -3.142) rot=(0.00, 0.00, 0.00) scale=(1.000, 1.000, 1.000)
+  Restore/Restore_P5/R5_StairFlower_01 pos=(-11.150, 8.043, -1.342) rot=(0.00, 319.07, 0.00) scale=(0.550, 0.300, 0.550) BOUNDS center=(-11.196, 8.268, -1.376) size=(1.809, 0.461, 1.825) mats=EF_Leaf_MAT:Universal Render Pipeline/Lit,EF_FlowerCenter_MAT:Universal Render Pipeline/Lit,EF_Petal_MAT:Universal Render Pipeline/Lit
+  Restore/Restore_P5/R5_StairFlower_02 pos=(-11.150, 9.965, 5.058) rot=(0.00, 320.46, 0.00) scale=(0.550, 0.300, 0.550) BOUNDS center=(-11.160, 10.128, 5.055) size=(1.839, 0.335, 1.844) mats=EF_Leaf_MAT:Universal Render Pipeline/Lit,EF_FlowerCenter_MAT:Universal Render Pipeline/Lit,EF_Petal_MAT:Universal Render Pipeline/Lit
+  Restore/Restore_P5/R5_StairFlower_03 pos=(1.850, 15.113, -1.542) rot=(0.00, 64.01, 0.00) scale=(0.550, 0.300, 0.550) BOUNDS center=(1.812, 15.282, -1.505) size=(1.700, 0.349, 1.658) mats=EF_Leaf_MAT:Universal Render Pipeline/Lit,EF_FlowerCenter_MAT:Universal Render Pipeline/Lit,EF_Petal_MAT:Universal Render Pipeline/Lit
+  Restore/Restore_P5/R5_StairFlower_04 pos=(1.850, 15.093, 4.858) rot=(0.00, 133.51, 0.00) scale=(0.550, 0.300, 0.550) BOUNDS center=(1.883, 15.290, 4.867) size=(1.807, 0.404, 1.805) mats=EF_Leaf_MAT:Universal Render Pipeline/Lit,EF_FlowerCenter_MAT:Universal Render Pipeline/Lit,EF_Petal_MAT:Universal Render Pipeline/Lit
+  Restore/Restore_P5/R5_StairMoss_01 pos=(-8.075, 10.510, 1.858) rot=(0.00, 0.00, 0.00) scale=(0.000, 0.000, 0.000) BOUNDS center=(-8.075, 10.510, 1.858) size=(0.000, 0.000, 0.000) mats=EF_Moss_MAT:Universal Render Pipeline/Lit
+  Restore/Restore_P5/R5_StairMoss_02 pos=(-7.125, 11.010, 1.858) rot=(0.00, 0.00, 0.00) scale=(0.000, 0.000, 0.000) BOUNDS center=(-7.125, 11.010, 1.858) size=(0.000, 0.000, 0.000) mats=EF_Moss_MAT:Universal Render Pipeline/Lit
+  Restore/Restore_P5/R5_StairMoss_03 pos=(-6.175, 11.510, 1.858) rot=(0.00, 0.00, 0.00) scale=(0.000, 0.000, 0.000) BOUNDS center=(-6.175, 11.510, 1.858) size=(0.000, 0.000, 0.000) mats=EF_Moss_MAT:Universal Render Pipeline/Lit
+  Restore/Restore_P5/R5_StairMoss_04 pos=(-5.225, 12.010, 1.858) rot=(0.00, 0.00, 0.00) scale=(0.000, 0.000, 0.000) BOUNDS center=(-5.225, 12.010, 1.858) size=(0.000, 0.000, 0.000) mats=EF_Moss_MAT:Universal Render Pipeline/Lit
+  Restore/Restore_P5/R5_StairMoss_05 pos=(-4.275, 12.510, 1.858) rot=(0.00, 0.00, 0.00) scale=(0.000, 0.000, 0.000) BOUNDS center=(-4.275, 12.510, 1.858) size=(0.000, 0.000, 0.000) mats=EF_Moss_MAT:Universal Render Pipeline/Lit
+  Restore/Restore_P5/R5_StairMoss_06 pos=(-3.325, 13.010, 1.858) rot=(0.00, 0.00, 0.00) scale=(0.000, 0.000, 0.000) BOUNDS center=(-3.325, 13.010, 1.858) size=(0.000, 0.000, 0.000) mats=EF_Moss_MAT:Universal Render Pipeline/Lit
+  Restore/Restore_P5/R5_StairMoss_07 pos=(-2.375, 13.510, 1.858) rot=(0.00, 0.00, 0.00) scale=(0.000, 0.000, 0.000) BOUNDS center=(-2.375, 13.510, 1.858) size=(0.000, 0.000, 0.000) mats=EF_Moss_MAT:Universal Render Pipeline/Lit
+  Restore/Restore_P5/R5_StairMoss_08 pos=(-1.425, 14.010, 1.858) rot=(0.00, 0.00, 0.00) scale=(0.000, 0.000, 0.000) BOUNDS center=(-1.425, 14.010, 1.858) size=(0.000, 0.000, 0.000) mats=EF_Moss_MAT:Universal Render Pipeline/Lit
+  Restore/Restore_P5/R5_StairMoss_09 pos=(-0.475, 14.510, 1.858) rot=(0.00, 0.00, 0.00) scale=(0.000, 0.000, 0.000) BOUNDS center=(-0.475, 14.510, 1.858) size=(0.000, 0.000, 0.000) mats=EF_Moss_MAT:Universal Render Pipeline/Lit
+  Restore/Restore_P5/R5_StairMoss_10 pos=(0.475, 15.010, 1.858) rot=(0.00, 0.00, 0.00) scale=(0.000, 0.000, 0.000) BOUNDS center=(0.475, 15.010, 1.858) size=(0.000, 0.000, 0.000) mats=EF_Moss_MAT:Universal Render Pipeline/Lit
+ROOT Restore_P6 pos=(9.450, 0.000, -3.142) rot=(0.000, 0.000, 0.000) scale=(1.000, 1.000, 1.000)
+   pos=(9.450, 0.000, -3.142) rot=(0.00, 0.00, 0.00) scale=(1.000, 1.000, 1.000)
+  Restore pos=(9.450, 0.000, -3.142) rot=(0.00, 0.00, 0.00) scale=(1.000, 1.000, 1.000)
+  Restore/Restore_P6 pos=(9.450, 0.000, -3.142) rot=(0.00, 0.00, 0.00) scale=(1.000, 1.000, 1.000)
+  Restore/Restore_P6/R6_Runnel_Front pos=(9.450, 15.064, 1.858) rot=(0.00, 90.00, 0.00) scale=(1.000, 1.000, 1.000)
+  Restore/Restore_P6/R6_Runnel_Front/R6_Runnel_Front_Bed pos=(9.450, 15.064, 1.858) rot=(0.00, 90.00, 0.00) scale=(1.000, 1.000, 1.000) BOUNDS center=(9.450, 15.094, 4.658) size=(1.000, 0.300, 5.600) mats=EF_Stone_MAT:Universal Render Pipeline/Lit
+  Restore/Restore_P6/R6_Runnel_Front/R6_Runnel_Front_Water pos=(9.450, 15.064, 1.858) rot=(0.00, 90.00, 0.00) scale=(0.000, 1.000, 1.000) BOUNDS center=(9.450, 15.164, 1.858) size=(0.600, 0.000, 0.000) mats=EF_Water_MAT:Universal Render Pipeline/Lit
+  Restore/Restore_P6/R6_Runnel_Left pos=(11.250, 14.914, -5.142) rot=(0.00, 180.00, 0.00) scale=(1.000, 1.000, 1.000)
+  Restore/Restore_P6/R6_Runnel_Left/R6_Runnel_Left_Bed pos=(11.250, 14.914, -5.142) rot=(0.00, 180.00, 0.00) scale=(1.000, 1.000, 1.000) BOUNDS center=(17.150, 14.944, -5.142) size=(11.800, 0.300, 1.000) mats=EF_Stone_MAT:Universal Render Pipeline/Lit
+  Restore/Restore_P6/R6_Runnel_Left/R6_Runnel_Left_Water pos=(11.250, 14.914, -5.142) rot=(0.00, 180.00, 0.00) scale=(0.000, 1.000, 1.000) BOUNDS center=(11.250, 15.014, -5.142) size=(0.000, 0.000, 0.600) mats=EF_Water_MAT:Universal Render Pipeline/Lit
+  Restore/Restore_P6/R6_Runnel_Right pos=(7.650, 15.060, -5.142) rot=(0.00, 0.00, 0.00) scale=(1.000, 1.000, 1.000)
+  Restore/Restore_P6/R6_Runnel_Right/R6_Runnel_Right_Bed pos=(7.650, 15.060, -5.142) rot=(0.00, 0.00, 0.00) scale=(1.000, 1.000, 1.000) BOUNDS center=(1.750, 15.090, -5.142) size=(11.800, 0.300, 1.000) mats=EF_Stone_MAT:Universal Render Pipeline/Lit
+  Restore/Restore_P6/R6_Runnel_Right/R6_Runnel_Right_Water pos=(7.650, 15.060, -5.142) rot=(0.00, 0.00, 0.00) scale=(0.000, 1.000, 1.000) BOUNDS center=(7.650, 15.160, -5.142) size=(0.000, 0.000, 0.600) mats=EF_Water_MAT:Universal Render Pipeline/Lit
+  Restore/Restore_P6/R6_Waterfall_Front pos=(9.450, 15.164, 7.458) rot=(0.00, 0.00, 0.00) scale=(0.000, 0.000, 0.000) BOUNDS center=(9.450, 15.164, 7.458) size=(0.000, 0.000, 0.000) mats=EF_Water_MAT:Universal Render Pipeline/Lit
+  Restore/Restore_P6/R6_Waterfall_Left pos=(23.050, 15.014, -5.142) rot=(0.00, 90.00, 0.00) scale=(0.000, 0.000, 0.000) BOUNDS center=(23.050, 15.014, -5.142) size=(0.000, 0.000, 0.000) mats=EF_Water_MAT:Universal Render Pipeline/Lit
+  Restore/Restore_P6/R6_Waterfall_Right pos=(-4.150, 15.160, -5.142) rot=(0.00, 270.00, 0.00) scale=(0.000, 0.000, 0.000) BOUNDS center=(-4.150, 15.160, -5.142) size=(0.000, 0.000, 0.000) mats=EF_Water_MAT:Universal Render Pipeline/Lit
+ROOT SM_Channel_Outlet_P6 pos=(9.450, 0.000, -3.142) rot=(0.000, 0.000, 0.000) scale=(1.000, 1.000, 1.000)
+   pos=(9.450, 0.000, -3.142) rot=(0.00, 0.00, 0.00) scale=(1.000, 1.000, 1.000)
+  P6_Waterwheel pos=(9.450, 0.000, -3.142) rot=(0.00, 0.00, 0.00) scale=(1.000, 1.000, 1.000)
+  P6_Waterwheel/SM_Channel_Outlet_P6 pos=(9.450, 18.400, -24.242) rot=(0.00, 270.00, 0.00) scale=(1.000, 1.000, 1.000) BOUNDS center=(9.450, 18.700, -24.242) size=(1.400, 0.600, 1.600) mats=EF_Stone_MAT:Universal Render Pipeline/Lit
+ROOT SM_Channel_Swing_P6 pos=(9.450, 0.000, -3.142) rot=(0.000, 0.000, 0.000) scale=(1.000, 1.000, 1.000)
+   pos=(9.450, 0.000, -3.142) rot=(0.00, 0.00, 0.00) scale=(1.000, 1.000, 1.000)
+  P6_Waterwheel pos=(9.450, 0.000, -3.142) rot=(0.00, 0.00, 0.00) scale=(1.000, 1.000, 1.000)
+  P6_Waterwheel/SM_Channel_Swing_P6 pos=(9.450, 18.400, -11.342) rot=(0.00, 270.00, 0.00) scale=(1.000, 1.000, 1.000) BOUNDS center=(9.450, 18.550, -11.342) size=(1.400, 0.900, 5.800) mats=EF_Stone_MAT:Universal Render Pipeline/Lit
+ROOT SM_Channel_SwingPillar_P6 pos=(9.450, 0.000, -3.142) rot=(0.000, 0.000, 0.000) scale=(1.000, 1.000, 1.000)
+   pos=(9.450, 0.000, -3.142) rot=(0.00, 0.00, 0.00) scale=(1.000, 1.000, 1.000)
+  P6_Waterwheel pos=(9.450, 0.000, -3.142) rot=(0.00, 0.00, 0.00) scale=(1.000, 1.000, 1.000)
+  P6_Waterwheel/SM_Channel_SwingPillar_P6 pos=(9.450, 0.000, -11.342) rot=(0.00, 0.00, 0.00) scale=(1.000, 1.000, 1.000) BOUNDS center=(9.450, 16.265, -11.342) size=(0.779, 3.669, 0.900) mats=EF_Stone_MAT:Universal Render Pipeline/Lit
+ROOT SM_Door_P5 pos=(9.450, 0.000, -3.142) rot=(0.000, 0.000, 0.000) scale=(1.000, 1.000, 1.000)
+   pos=(9.450, 0.000, -3.142) rot=(0.00, 0.00, 0.00) scale=(1.000, 1.000, 1.000)
+  P5_DoorPower pos=(9.450, 0.000, -3.142) rot=(0.00, 0.00, 0.00) scale=(1.000, 1.000, 1.000)
+  P5_DoorPower/SM_Door_P5 pos=(-9.150, 10.016, 1.858) rot=(0.00, 270.00, 0.00) scale=(1.000, 1.000, 1.000)
+  P5_DoorPower/SM_Door_P5/SM_Door_P5_Frame pos=(-9.150, 10.016, 1.858) rot=(0.00, 270.00, 0.00) scale=(1.000, 1.000, 1.000) BOUNDS center=(-9.150, 13.216, 1.858) size=(1.300, 6.400, 7.400) mats=EF_Stone_MAT:Universal Render Pipeline/Lit
+  P5_DoorPower/SM_Door_P5/SM_Door_P5_Leaf_L pos=(-9.150, 10.016, 4.358) rot=(0.00, 270.00, 0.00) scale=(1.000, 1.000, 1.000) BOUNDS center=(-9.150, 12.516, 3.128) size=(0.400, 5.000, 2.460) mats=EF_Wood_MAT:Universal Render Pipeline/Lit
+  P5_DoorPower/SM_Door_P5/SM_Door_P5_Leaf_R pos=(-9.150, 10.016, -0.642) rot=(0.00, 270.00, 0.00) scale=(1.000, 1.000, 1.000) BOUNDS center=(-9.150, 12.516, 0.588) size=(0.400, 5.000, 2.460) mats=EF_Wood_MAT:Universal Render Pipeline/Lit
+ROOT SM_FallingDebris_01 pos=(9.450, 0.000, -3.142) rot=(0.000, 0.000, 0.000) scale=(1.000, 1.000, 1.000)
+   pos=(9.450, 0.000, -3.142) rot=(0.00, 0.00, 0.00) scale=(1.000, 1.000, 1.000)
+  P2_DebrisSlate pos=(9.450, 0.000, -3.142) rot=(0.00, 0.00, 0.00) scale=(1.000, 1.000, 1.000)
+  P2_DebrisSlate/SM_FallingDebris_01 pos=(53.450, 3.950, 7.858) rot=(0.00, 0.00, 0.00) scale=(1.000, 1.000, 1.000) BOUNDS center=(53.392, 3.903, 7.921) size=(4.298, 0.595, 4.340) mats=EF_Stone_MAT:Universal Render Pipeline/Lit
+ROOT SM_FallingDebris_02 pos=(9.450, 0.000, -3.142) rot=(0.000, 0.000, 0.000) scale=(1.000, 1.000, 1.000)
+   pos=(9.450, 0.000, -3.142) rot=(0.00, 0.00, 0.00) scale=(1.000, 1.000, 1.000)
+  P2_DebrisSlate pos=(9.450, 0.000, -3.142) rot=(0.00, 0.00, 0.00) scale=(1.000, 1.000, 1.000)
+  P2_DebrisSlate/SM_FallingDebris_02 pos=(53.450, 5.150, 2.858) rot=(0.00, 0.00, 0.00) scale=(1.000, 1.000, 1.000) BOUNDS center=(53.478, 5.102, 2.832) size=(4.441, 0.595, 4.281) mats=EF_Stone_MAT:Universal Render Pipeline/Lit
+ROOT SM_FallingDebris_03 pos=(9.450, 0.000, -3.142) rot=(0.000, 0.000, 0.000) scale=(1.000, 1.000, 1.000)
+   pos=(9.450, 0.000, -3.142) rot=(0.00, 0.00, 0.00) scale=(1.000, 1.000, 1.000)
+  P2_DebrisSlate pos=(9.450, 0.000, -3.142) rot=(0.00, 0.00, 0.00) scale=(1.000, 1.000, 1.000)
+  P2_DebrisSlate/SM_FallingDebris_03 pos=(53.450, 6.350, -2.142) rot=(0.00, 0.00, 0.00) scale=(1.000, 1.000, 1.000) BOUNDS center=(53.380, 6.338, -2.127) size=(4.259, 0.525, 4.411) mats=EF_Stone_MAT:Universal Render Pipeline/Lit
+ROOT SM_FlowerJumpPad pos=(9.450, 0.000, -3.142) rot=(0.000, 0.000, 0.000) scale=(1.000, 1.000, 1.000)
+   pos=(9.450, 0.000, -3.142) rot=(0.00, 0.00, 0.00) scale=(1.000, 1.000, 1.000)
+  P1_FlowerVine pos=(9.450, 0.000, -3.142) rot=(0.00, 0.00, 0.00) scale=(1.000, 1.000, 1.000)
+  P1_FlowerVine/SM_FlowerJumpPad pos=(27.450, -0.007, 28.858) rot=(0.00, 340.00, 0.00) scale=(1.000, 1.000, 1.000)
+  P1_FlowerVine/SM_FlowerJumpPad/FlowerJumpPad_Stem_01 pos=(27.450, -0.007, 28.858) rot=(12.00, 340.00, 0.00) scale=(1.000, 1.000, 1.000) BOUNDS center=(27.437, 0.183, 28.896) size=(1.177, 0.641, 1.495) mats=EF_Leaf_MAT:Universal Render Pipeline/Lit
+  P1_FlowerVine/SM_FlowerJumpPad/FlowerJumpPad_Stem_01/FlowerJumpPad_Stem_02 pos=(27.433, 0.238, 28.907) rot=(34.00, 340.00, 0.00) scale=(1.000, 1.000, 1.000) BOUNDS center=(27.406, 0.354, 28.981) size=(0.350, 0.383, 0.437) mats=EF_Leaf_MAT:Universal Render Pipeline/Lit
+  P1_FlowerVine/SM_FlowerJumpPad/FlowerJumpPad_Stem_01/FlowerJumpPad_Stem_02/FlowerJumpPad_Stem_03 pos=(27.385, 0.445, 29.038) rot=(62.00, 340.00, 0.00) scale=(1.000, 1.000, 1.000) BOUNDS center=(27.342, 0.511, 29.155) size=(0.318, 0.343, 0.409) mats=EF_Leaf_MAT:Universal Render Pipeline/Lit
+  P1_FlowerVine/SM_FlowerJumpPad/FlowerJumpPad_Stem_01/FlowerJumpPad_Stem_02/FlowerJumpPad_Stem_03/FlowerJumpPad_Head pos=(27.309, 0.562, 29.246) rot=(62.00, 340.00, 0.00) scale=(0.800, 0.800, 0.800)
+  P1_FlowerVine/SM_FlowerJumpPad/FlowerJumpPad_Stem_01/FlowerJumpPad_Stem_02/FlowerJumpPad_Stem_03/FlowerJumpPad_Head/FlowerJumpPad_Dome pos=(27.309, 0.562, 29.246) rot=(62.00, 340.00, 0.00) scale=(0.800, 0.800, 0.800) BOUNDS center=(27.246, 0.661, 29.420) size=(1.085, 0.931, 1.009) mats=EF_FlowerCenter_MAT:Universal Render Pipeline/Lit
+  P1_FlowerVine/SM_FlowerJumpPad/FlowerJumpPad_Stem_01/FlowerJumpPad_Stem_02/FlowerJumpPad_Stem_03/FlowerJumpPad_Head/FlowerJumpPad_Petal_01 pos=(27.233, 0.282, 29.454) rot=(344.00, 340.00, 0.00) scale=(0.800, 0.800, 0.800) BOUNDS center=(27.106, 0.509, 29.804) size=(0.673, 0.493, 0.964) mats=EF_Petal_MAT:Universal Render Pipeline/Lit
+  P1_FlowerVine/SM_FlowerJumpPad/FlowerJumpPad_Stem_01/FlowerJumpPad_Stem_02/FlowerJumpPad_Stem_03/FlowerJumpPad_Head/FlowerJumpPad_Petal_02 pos=(27.050, 0.341, 29.354) rot=(341.90, 332.61, 326.91) scale=(0.800, 0.800, 0.800) BOUNDS center=(26.936, 0.564, 29.711) size=(0.795, 0.682, 0.926) mats=EF_Petal_MAT:Universal Render Pipeline/Lit
+  P1_FlowerVine/SM_FlowerJumpPad/FlowerJumpPad_Stem_01/FlowerJumpPad_Stem_02/FlowerJumpPad_Stem_03/FlowerJumpPad_Head/FlowerJumpPad_Petal_03 pos=(26.958, 0.496, 29.232) rot=(336.27, 327.53, 293.46) scale=(0.800, 0.800, 0.800) BOUNDS center=(26.851, 0.708, 29.598) size=(0.701, 0.769, 0.953) mats=EF_Petal_MAT:Universal Render Pipeline/Lit
+  P1_FlowerVine/SM_FlowerJumpPad/FlowerJumpPad_Stem_01/FlowerJumpPad_Stem_02/FlowerJumpPad_Stem_03/FlowerJumpPad_Head/FlowerJumpPad_Petal_04 pos=(26.993, 0.688, 29.137) rot=(328.94, 326.65, 258.60) scale=(0.800, 0.800, 0.800) BOUNDS center=(26.883, 0.886, 29.509) size=(0.778, 0.811, 0.895) mats=EF_Petal_MAT:Universal Render Pipeline/Lit
+  P1_FlowerVine/SM_FlowerJumpPad/FlowerJumpPad_Stem_01/FlowerJumpPad_Stem_02/FlowerJumpPad_Stem_03/FlowerJumpPad_Head/FlowerJumpPad_Petal_05 pos=(27.141, 0.844, 29.103) rot=(322.57, 331.15, 220.81) scale=(0.800, 0.800, 0.800) BOUNDS center=(27.021, 1.030, 29.478) size=(0.755, 0.879, 0.786) mats=EF_Petal_MAT:Universal Render Pipeline/Lit
+  P1_FlowerVine/SM_FlowerJumpPad/FlowerJumpPad_Stem_01/FlowerJumpPad_Stem_02/FlowerJumpPad_Stem_03/FlowerJumpPad_Head/FlowerJumpPad_Petal_06 pos=(27.346, 0.903, 29.144) rot=(320.00, 340.00, 180.00) scale=(0.800, 0.800, 0.800) BOUNDS center=(27.211, 1.085, 29.516) size=(0.651, 0.748, 0.904) mats=EF_Petal_MAT:Universal Render Pipeline/Lit
+  P1_FlowerVine/SM_FlowerJumpPad/FlowerJumpPad_Stem_01/FlowerJumpPad_Stem_02/FlowerJumpPad_Stem_03/FlowerJumpPad_Head/FlowerJumpPad_Petal_07 pos=(27.530, 0.844, 29.244) rot=(322.57, 348.85, 139.19) scale=(0.800, 0.800, 0.800) BOUNDS center=(27.381, 1.030, 29.609) size=(0.590, 0.879, 0.955) mats=EF_Petal_MAT:Universal Render Pipeline/Lit
+  P1_FlowerVine/SM_FlowerJumpPad/FlowerJumpPad_Stem_01/FlowerJumpPad_Stem_02/FlowerJumpPad_Stem_03/FlowerJumpPad_Head/FlowerJumpPad_Petal_08 pos=(27.622, 0.688, 29.366) rot=(328.94, 353.35, 101.40) scale=(0.800, 0.800, 0.800) BOUNDS center=(27.466, 0.886, 29.721) size=(0.405, 0.811, 0.926) mats=EF_Petal_MAT:Universal Render Pipeline/Lit
+  P1_FlowerVine/SM_FlowerJumpPad/FlowerJumpPad_Stem_01/FlowerJumpPad_Stem_02/FlowerJumpPad_Stem_03/FlowerJumpPad_Head/FlowerJumpPad_Petal_09 pos=(27.587, 0.496, 29.461) rot=(336.27, 352.47, 66.54) scale=(0.800, 0.800, 0.800) BOUNDS center=(27.434, 0.708, 29.810) size=(0.517, 0.769, 0.962) mats=EF_Petal_MAT:Universal Render Pipeline/Lit
+  P1_FlowerVine/SM_FlowerJumpPad/FlowerJumpPad_Stem_01/FlowerJumpPad_Stem_02/FlowerJumpPad_Stem_03/FlowerJumpPad_Head/FlowerJumpPad_Petal_10 pos=(27.439, 0.341, 29.495) rot=(341.90, 347.39, 33.09) scale=(0.800, 0.800, 0.800) BOUNDS center=(27.296, 0.564, 29.842) size=(0.641, 0.682, 0.887) mats=EF_Petal_MAT:Universal Render Pipeline/Lit
+  P1_FlowerVine/SM_FlowerJumpPad/FlowerJumpPad_Stem_01/FlowerJumpPad_Stem_02/FlowerJumpPad_Stem_03/FlowerJumpPad_Head/FlowerJumpPad_Sepal pos=(27.309, 0.562, 29.246) rot=(62.00, 340.00, 0.00) scale=(0.800, 0.800, 0.800) BOUNDS center=(27.338, 0.517, 29.166) size=(0.998, 0.833, 0.869) mats=EF_Leaf_MAT:Universal Render Pipeline/Lit
+ROOT SM_HeightMark_01 pos=(9.450, 0.000, -3.142) rot=(0.000, 0.000, 0.000) scale=(1.000, 1.000, 1.000)
+   pos=(9.450, 0.000, -3.142) rot=(0.00, 0.00, 0.00) scale=(1.000, 1.000, 1.000)
+  P2_DebrisSlate pos=(9.450, 0.000, -3.142) rot=(0.00, 0.00, 0.00) scale=(1.000, 1.000, 1.000)
+  P2_DebrisSlate/SM_HeightMark_01 pos=(57.050, 0.000, 7.858) rot=(0.00, 0.00, 0.00) scale=(1.000, 1.000, 1.000) BOUNDS center=(57.002, 0.565, 7.830) size=(0.820, 7.885, 0.703) mats=EF_Rock_MAT:Universal Render Pipeline/Lit
+  P2_DebrisSlate/SM_HeightMark_01/SM_HeightMark_01_Band pos=(57.050, 0.000, 7.858) rot=(0.00, 0.00, 0.00) scale=(1.000, 1.000, 1.000) BOUNDS center=(57.050, 4.200, 7.858) size=(1.000, 0.160, 0.866) mats=EF_Mark_MAT:Universal Render Pipeline/Lit
+ROOT SM_HeightMark_02 pos=(9.450, 0.000, -3.142) rot=(0.000, 0.000, 0.000) scale=(1.000, 1.000, 1.000)
+   pos=(9.450, 0.000, -3.142) rot=(0.00, 0.00, 0.00) scale=(1.000, 1.000, 1.000)
+  P2_DebrisSlate pos=(9.450, 0.000, -3.142) rot=(0.00, 0.00, 0.00) scale=(1.000, 1.000, 1.000)
+  P2_DebrisSlate/SM_HeightMark_02 pos=(57.050, 0.000, 2.858) rot=(0.00, 0.00, 0.00) scale=(1.000, 1.000, 1.000) BOUNDS center=(57.027, 1.083, 2.832) size=(0.770, 9.247, 0.708) mats=EF_Rock_MAT:Universal Render Pipeline/Lit
+  P2_DebrisSlate/SM_HeightMark_02/SM_HeightMark_02_Band pos=(57.050, 0.000, 2.858) rot=(0.00, 0.00, 0.00) scale=(1.000, 1.000, 1.000) BOUNDS center=(57.050, 5.400, 2.858) size=(1.000, 0.160, 0.866) mats=EF_Mark_MAT:Universal Render Pipeline/Lit
+ROOT SM_HeightMark_03 pos=(9.450, 0.000, -3.142) rot=(0.000, 0.000, 0.000) scale=(1.000, 1.000, 1.000)
+   pos=(9.450, 0.000, -3.142) rot=(0.00, 0.00, 0.00) scale=(1.000, 1.000, 1.000)
+  P2_DebrisSlate pos=(9.450, 0.000, -3.142) rot=(0.00, 0.00, 0.00) scale=(1.000, 1.000, 1.000)
+  P2_DebrisSlate/SM_HeightMark_03 pos=(57.050, 0.000, -2.142) rot=(0.00, 0.00, 0.00) scale=(1.000, 1.000, 1.000) BOUNDS center=(57.026, 2.968, -2.158) size=(0.771, 7.880, 0.728) mats=EF_Rock_MAT:Universal Render Pipeline/Lit
+  P2_DebrisSlate/SM_HeightMark_03/SM_HeightMark_03_Band pos=(57.050, 0.000, -2.142) rot=(0.00, 0.00, 0.00) scale=(1.000, 1.000, 1.000) BOUNDS center=(57.050, 6.600, -2.142) size=(1.000, 0.160, 0.866) mats=EF_Mark_MAT:Universal Render Pipeline/Lit
+ROOT SM_IceSlide pos=(9.450, 0.000, -3.142) rot=(0.000, 0.000, 0.000) scale=(1.000, 1.000, 1.000)
+   pos=(9.450, 0.000, -3.142) rot=(0.00, 0.00, 0.00) scale=(1.000, 1.000, 1.000)
+  P4_IceSlide pos=(9.450, 0.000, -3.142) rot=(0.00, 0.00, 0.00) scale=(1.000, 1.000, 1.000)
+  P4_IceSlide/SM_IceSlide pos=(-14.550, 24.000, -47.142) rot=(0.00, 0.00, 0.00) scale=(1.000, 1.000, 1.000)
+  P4_IceSlide/SM_IceSlide/IceSlide_Surface pos=(-14.550, 24.000, -47.142) rot=(0.00, 0.00, 0.00) scale=(1.000, 1.000, 1.000) BOUNDS center=(-14.550, 17.848, -28.111) size=(5.000, 12.361, 38.042) mats=EF_Water_MAT:Universal Render Pipeline/Lit
+  P4_IceSlide/SM_IceSlide/SM_IceSlide_Channel pos=(-14.550, 24.000, -47.142) rot=(0.00, 0.00, 0.00) scale=(1.000, 1.000, 1.000) BOUNDS center=(-14.550, 17.820, -28.121) size=(6.000, 13.122, 38.289) mats=EF_Stone_MAT:Universal Render Pipeline/Lit
+  P4_IceSlide/SM_IceSlide/SM_IceSlide_Pillar_01 pos=(-14.550, 24.000, -47.142) rot=(0.00, 0.00, 0.00) scale=(1.000, 1.000, 1.000) BOUNDS center=(-14.550, 8.168, -35.729) size=(1.559, 23.448, 1.800) mats=EF_Rock_MAT:Universal Render Pipeline/Lit
+  P4_IceSlide/SM_IceSlide/SM_IceSlide_Pillar_02 pos=(-14.550, 24.000, -47.142) rot=(0.00, 0.00, 0.00) scale=(1.000, 1.000, 1.000) BOUNDS center=(-14.550, 6.017, -22.414) size=(1.559, 19.098, 1.800) mats=EF_Rock_MAT:Universal Render Pipeline/Lit
+ROOT SM_PowerSource_P3 pos=(9.450, 0.000, -3.142) rot=(0.000, 0.000, 0.000) scale=(1.000, 1.000, 1.000)
+   pos=(9.450, 0.000, -3.142) rot=(0.00, 0.00, 0.00) scale=(1.000, 1.000, 1.000)
+  P3_RotatingBridge pos=(9.450, 0.000, -3.142) rot=(0.00, 0.00, 0.00) scale=(1.000, 1.000, 1.000)
+  P3_RotatingBridge/SM_PowerSource_P3 pos=(57.450, 7.481, -49.642) rot=(0.00, 0.00, 0.00) scale=(1.000, 1.000, 1.000)
+  P3_RotatingBridge/SM_PowerSource_P3/SM_PowerSource_P3_Base pos=(57.450, 7.481, -49.642) rot=(0.00, 0.00, 0.00) scale=(1.000, 1.000, 1.000) BOUNDS center=(57.450, 7.841, -49.642) size=(1.500, 0.720, 1.299) mats=EF_Stone_MAT:Universal Render Pipeline/Lit
+  P3_RotatingBridge/SM_PowerSource_P3/SM_PowerSource_P3_Crystal pos=(57.450, 8.831, -49.642) rot=(0.00, 0.00, 0.00) scale=(1.000, 1.000, 1.000) BOUNDS center=(57.450, 8.831, -49.642) size=(1.000, 1.350, 1.000) mats=EF_Crystal_MAT:Universal Render Pipeline/Lit
+ROOT SM_PowerSource_P4 pos=(9.450, 0.000, -3.142) rot=(0.000, 0.000, 0.000) scale=(1.000, 1.000, 1.000)
+   pos=(9.450, 0.000, -3.142) rot=(0.00, 0.00, 0.00) scale=(1.000, 1.000, 1.000)
+  P4_IceSlide pos=(9.450, 0.000, -3.142) rot=(0.00, 0.00, 0.00) scale=(1.000, 1.000, 1.000)
+  P4_IceSlide/SM_PowerSource_P4 pos=(-10.550, 24.146, -54.142) rot=(0.00, 0.00, 0.00) scale=(1.000, 1.000, 1.000)
+  P4_IceSlide/SM_PowerSource_P4/SM_PowerSource_P4_Base pos=(-10.550, 24.146, -54.142) rot=(0.00, 0.00, 0.00) scale=(1.000, 1.000, 1.000) BOUNDS center=(-10.550, 24.506, -54.142) size=(1.500, 0.720, 1.299) mats=EF_Stone_MAT:Universal Render Pipeline/Lit
+  P4_IceSlide/SM_PowerSource_P4/SM_PowerSource_P4_Crystal pos=(-10.550, 25.496, -54.142) rot=(0.00, 0.00, 0.00) scale=(1.000, 1.000, 1.000) BOUNDS center=(-10.550, 25.496, -54.142) size=(1.000, 1.350, 1.000) mats=EF_Crystal_MAT:Universal Render Pipeline/Lit
+ROOT SM_PowerSource_P5 pos=(9.450, 0.000, -3.142) rot=(0.000, 0.000, 0.000) scale=(1.000, 1.000, 1.000)
+   pos=(9.450, 0.000, -3.142) rot=(0.00, 0.00, 0.00) scale=(1.000, 1.000, 1.000)
+  P5_DoorPower pos=(9.450, 0.000, -3.142) rot=(0.00, 0.00, 0.00) scale=(1.000, 1.000, 1.000)
+  P5_DoorPower/SM_PowerSource_P5 pos=(-0.550, 5.972, 20.858) rot=(0.00, 0.00, 0.00) scale=(1.000, 1.000, 1.000)
+  P5_DoorPower/SM_PowerSource_P5/SM_PowerSource_P5_Base pos=(-0.550, 5.972, 20.858) rot=(0.00, 0.00, 0.00) scale=(1.000, 1.000, 1.000) BOUNDS center=(-0.550, 6.332, 20.858) size=(1.500, 0.720, 1.299) mats=EF_Stone_MAT:Universal Render Pipeline/Lit
+  P5_DoorPower/SM_PowerSource_P5/SM_PowerSource_P5_Crystal pos=(-0.550, 7.322, 20.858) rot=(0.00, 0.00, 0.00) scale=(1.000, 1.000, 1.000) BOUNDS center=(-0.550, 7.322, 20.858) size=(1.000, 1.350, 1.000) mats=EF_Crystal_MAT:Universal Render Pipeline/Lit
+ROOT SM_PowerSource_P6 pos=(9.450, 0.000, -3.142) rot=(0.000, 0.000, 0.000) scale=(1.000, 1.000, 1.000)
+   pos=(9.450, 0.000, -3.142) rot=(0.00, 0.00, 0.00) scale=(1.000, 1.000, 1.000)
+  P6_Waterwheel pos=(9.450, 0.000, -3.142) rot=(0.00, 0.00, 0.00) scale=(1.000, 1.000, 1.000)
+  P6_Waterwheel/SM_PowerSource_P6 pos=(12.128, 15.086, -26.586) rot=(0.00, 0.00, 0.00) scale=(1.000, 1.000, 1.000)
+  P6_Waterwheel/SM_PowerSource_P6/SM_PowerSource_P6_Base pos=(12.128, 15.086, -26.586) rot=(0.00, 0.00, 0.00) scale=(1.000, 1.000, 1.000) BOUNDS center=(12.128, 15.446, -26.586) size=(1.500, 0.720, 1.299) mats=EF_Stone_MAT:Universal Render Pipeline/Lit
+  P6_Waterwheel/SM_PowerSource_P6/SM_PowerSource_P6_Crystal pos=(12.128, 16.436, -26.586) rot=(0.00, 0.00, 0.00) scale=(1.000, 1.000, 1.000) BOUNDS center=(12.128, 16.436, -26.586) size=(1.000, 1.350, 1.000) mats=EF_Crystal_MAT:Universal Render Pipeline/Lit
+ROOT SM_Reservoir_P4 pos=(9.450, 0.000, -3.142) rot=(0.000, 0.000, 0.000) scale=(1.000, 1.000, 1.000)
+   pos=(9.450, 0.000, -3.142) rot=(0.00, 0.00, 0.00) scale=(1.000, 1.000, 1.000)
+  P4_IceSlide pos=(9.450, 0.000, -3.142) rot=(0.00, 0.00, 0.00) scale=(1.000, 1.000, 1.000)
+  P4_IceSlide/SM_Reservoir_P4 pos=(-16.050, 24.046, -48.942) rot=(0.00, 0.00, 0.00) scale=(1.000, 1.000, 1.000) BOUNDS center=(-16.050, 24.496, -48.942) size=(9.800, 0.900, 2.600) mats=EF_Stone_MAT:Universal Render Pipeline/Lit
+ROOT SM_RideLeaf pos=(9.450, 0.000, -3.142) rot=(0.000, 0.000, 0.000) scale=(1.000, 1.000, 1.000)
+   pos=(9.450, 0.000, -3.142) rot=(0.00, 0.00, 0.00) scale=(1.000, 1.000, 1.000)
+  P4_IceSlide pos=(9.450, 0.000, -3.142) rot=(0.00, 0.00, 0.00) scale=(1.000, 1.000, 1.000)
+  P4_IceSlide/SM_RideLeaf pos=(-9.950, 24.196, -50.142) rot=(0.00, 335.00, 0.00) scale=(1.000, 1.000, 1.000) BOUNDS center=(-9.950, 24.273, -50.142) size=(2.566, 0.154, 2.899) mats=EF_Leaf_MAT:Universal Render Pipeline/Lit
+ROOT SM_RotatingBridge pos=(9.450, 0.000, -3.142) rot=(0.000, 0.000, 0.000) scale=(1.000, 1.000, 1.000)
+   pos=(9.450, 0.000, -3.142) rot=(0.00, 0.00, 0.00) scale=(1.000, 1.000, 1.000)
+  P3_RotatingBridge pos=(9.450, 0.000, -3.142) rot=(0.00, 0.00, 0.00) scale=(1.000, 1.000, 1.000)
+  P3_RotatingBridge/SM_RotatingBridge pos=(38.150, 7.250, -45.142) rot=(0.00, 0.00, 0.00) scale=(1.000, 1.000, 1.000) BOUNDS center=(38.135, 6.925, -45.148) size=(16.750, 1.150, 3.202) mats=EF_Stone_MAT:Universal Render Pipeline/Lit
+ROOT SM_SideChannel pos=(9.450, 0.000, -3.142) rot=(0.000, 0.000, 0.000) scale=(1.000, 1.000, 1.000)
+   pos=(9.450, 0.000, -3.142) rot=(0.00, 0.00, 0.00) scale=(1.000, 1.000, 1.000)
+  P4_IceSlide pos=(9.450, 0.000, -3.142) rot=(0.00, 0.00, 0.00) scale=(1.000, 1.000, 1.000)
+  P4_IceSlide/SM_SideChannel pos=(-19.150, 24.000, -47.142) rot=(0.00, 0.00, 0.00) scale=(1.000, 1.000, 1.000)
+  P4_IceSlide/SM_SideChannel/SideChannel_Water pos=(-19.150, 24.000, -47.142) rot=(0.00, 0.00, 0.00) scale=(1.000, 1.000, 1.000) BOUNDS center=(-19.150, 17.848, -28.111) size=(2.000, 12.361, 38.042) mats=EF_Water_MAT:Universal Render Pipeline/Lit
+  P4_IceSlide/SM_SideChannel/SM_SideChannel_Channel pos=(-19.150, 24.000, -47.142) rot=(0.00, 0.00, 0.00) scale=(1.000, 1.000, 1.000) BOUNDS center=(-19.150, 17.820, -28.121) size=(2.800, 13.122, 38.289) mats=EF_Stone_MAT:Universal Render Pipeline/Lit
+  P4_IceSlide/SM_SideChannel/SM_SideChannel_Pillar_01 pos=(-19.150, 24.000, -47.142) rot=(0.00, 0.00, 0.00) scale=(1.000, 1.000, 1.000) BOUNDS center=(-19.150, 8.164, -35.729) size=(1.559, 23.456, 1.800) mats=EF_Rock_MAT:Universal Render Pipeline/Lit
+  P4_IceSlide/SM_SideChannel/SM_SideChannel_Pillar_02 pos=(-19.150, 24.000, -47.142) rot=(0.00, 0.00, 0.00) scale=(1.000, 1.000, 1.000) BOUNDS center=(-19.150, 6.034, -22.414) size=(1.559, 19.063, 1.800) mats=EF_Rock_MAT:Universal Render Pipeline/Lit
+ROOT SM_Slate pos=(9.450, 0.000, -3.142) rot=(0.000, 0.000, 0.000) scale=(1.000, 1.000, 1.000)
+   pos=(9.450, 0.000, -3.142) rot=(0.00, 0.00, 0.00) scale=(1.000, 1.000, 1.000)
+  P2_DebrisSlate pos=(9.450, 0.000, -3.142) rot=(0.00, 0.00, 0.00) scale=(1.000, 1.000, 1.000)
+  P2_DebrisSlate/SM_Slate pos=(53.450, 7.250, -34.392) rot=(0.00, 0.00, 0.00) scale=(1.000, 1.000, 1.000) BOUNDS center=(53.459, 7.204, -34.404) size=(3.281, 0.593, 9.173) mats=EF_Stone_MAT:Universal Render Pipeline/Lit
+ROOT SM_SluiceTower_P6 pos=(9.450, 0.000, -3.142) rot=(0.000, 0.000, 0.000) scale=(1.000, 1.000, 1.000)
+   pos=(9.450, 0.000, -3.142) rot=(0.00, 0.00, 0.00) scale=(1.000, 1.000, 1.000)
+  P6_Waterwheel pos=(9.450, 0.000, -3.142) rot=(0.00, 0.00, 0.00) scale=(1.000, 1.000, 1.000)
+  P6_Waterwheel/SM_SluiceTower_P6 pos=(9.450, 15.000, -26.342) rot=(0.00, 0.00, 0.00) scale=(1.000, 1.000, 1.000) BOUNDS center=(9.450, 16.450, -26.342) size=(2.600, 3.900, 2.600) mats=EF_Stone_MAT:Universal Render Pipeline/Lit
+ROOT SM_ValleyWater pos=(9.450, 0.000, -3.142) rot=(0.000, 0.000, 0.000) scale=(1.000, 1.000, 1.000)
+   pos=(9.450, 0.000, -3.142) rot=(0.00, 0.00, 0.00) scale=(1.000, 1.000, 1.000)
+  Terrain pos=(9.450, 0.000, -3.142) rot=(0.00, 0.00, 0.00) scale=(1.000, 1.000, 1.000)
+  Terrain/SM_ValleyWater pos=(17.450, -2.200, -15.142) rot=(0.00, 0.00, 0.00) scale=(1.000, 1.000, 1.000) BOUNDS center=(17.450, -2.200, -15.142) size=(140.000, 0.000, 124.000) mats=EF_Water_MAT:Universal Render Pipeline/Lit
+ROOT SM_Vine pos=(9.450, 0.000, -3.142) rot=(0.000, 0.000, 0.000) scale=(1.000, 1.000, 1.000)
+   pos=(9.450, 0.000, -3.142) rot=(0.00, 0.00, 0.00) scale=(1.000, 1.000, 1.000)
+  P1_FlowerVine pos=(9.450, 0.000, -3.142) rot=(0.00, 0.00, 0.00) scale=(1.000, 1.000, 1.000)
+  P1_FlowerVine/SM_Vine pos=(40.450, 11.000, 19.858) rot=(0.00, 0.00, 0.00) scale=(1.000, 1.000, 1.000)
+  P1_FlowerVine/SM_Vine/Vine_Rope pos=(40.450, 11.000, 19.858) rot=(0.00, 0.00, 0.00) scale=(1.000, 0.020, 1.000) BOUNDS center=(40.380, 10.930, 19.868) size=(0.437, 0.141, 0.577) mats=EF_Leaf_MAT:Universal Render Pipeline/Lit
+  P1_FlowerVine/SM_Vine/Vine_Rope/Vine_Handle pos=(40.450, 10.860, 19.858) rot=(0.00, 0.00, 0.00) scale=(0.000, 0.000, 0.000) BOUNDS center=(40.450, 10.860, 19.858) size=(0.000, 0.000, 0.000) mats=EF_Leaf_MAT:Universal Render Pipeline/Lit
+  P1_FlowerVine/SM_Vine/Vine_Rope/Vine_Leaf_01 pos=(40.400, 10.968, 19.908) rot=(330.00, 320.00, 0.00) scale=(0.000, 0.000, 0.000) BOUNDS center=(40.400, 10.968, 19.908) size=(0.000, 0.000, 0.000) mats=EF_Leaf_MAT:Universal Render Pipeline/Lit
+  P1_FlowerVine/SM_Vine/Vine_Rope/Vine_Leaf_02 pos=(40.400, 10.936, 19.908) rot=(330.00, 230.00, 0.00) scale=(0.000, 0.000, 0.000) BOUNDS center=(40.400, 10.936, 19.908) size=(0.000, 0.000, 0.000) mats=EF_Leaf_MAT:Universal Render Pipeline/Lit
+  P1_FlowerVine/SM_Vine/Vine_Rope/Vine_Leaf_03 pos=(40.400, 10.904, 19.908) rot=(330.00, 140.00, 0.00) scale=(0.000, 0.000, 0.000) BOUNDS center=(40.400, 10.904, 19.908) size=(0.000, 0.000, 0.000) mats=EF_Leaf_MAT:Universal Render Pipeline/Lit
+  P1_FlowerVine/SM_Vine/Vine_Rope/Vine_Leaf_04 pos=(40.400, 10.880, 19.908) rot=(330.00, 50.00, 0.00) scale=(0.000, 0.000, 0.000) BOUNDS center=(40.400, 10.880, 19.908) size=(0.000, 0.000, 0.000) mats=EF_Leaf_MAT:Universal Render Pipeline/Lit
+ROOT SM_VineRoot_P5 pos=(9.450, 0.000, -3.142) rot=(0.000, 0.000, 0.000) scale=(1.000, 1.000, 1.000)
+   pos=(9.450, 0.000, -3.142) rot=(0.00, 0.00, 0.00) scale=(1.000, 1.000, 1.000)
+  P5_DoorPower pos=(9.450, 0.000, -3.142) rot=(0.00, 0.00, 0.00) scale=(1.000, 1.000, 1.000)
+  P5_DoorPower/SM_VineRoot_P5 pos=(-9.850, 9.967, 5.458) rot=(0.00, 0.00, 0.00) scale=(1.000, 1.000, 1.000) BOUNDS center=(-9.887, 10.246, 5.421) size=(1.132, 0.946, 1.056) mats=EF_Root_MAT:Universal Render Pipeline/Lit
+ROOT SM_VineTree pos=(9.450, 0.000, -3.142) rot=(0.000, 0.000, 0.000) scale=(1.000, 1.000, 1.000)
+   pos=(9.450, 0.000, -3.142) rot=(0.00, 0.00, 0.00) scale=(1.000, 1.000, 1.000)
+  P1_FlowerVine pos=(9.450, 0.000, -3.142) rot=(0.00, 0.00, 0.00) scale=(1.000, 1.000, 1.000)
+  P1_FlowerVine/SM_VineTree pos=(9.450, 0.000, -3.142) rot=(0.00, 0.00, 0.00) scale=(1.000, 1.000, 1.000) BOUNDS center=(36.968, 6.989, 19.440) size=(8.589, 9.033, 1.263) mats=EF_Wood_MAT:Universal Render Pipeline/Lit
+ROOT SM_VineWire_P5 pos=(9.450, 0.000, -3.142) rot=(0.000, 0.000, 0.000) scale=(1.000, 1.000, 1.000)
+   pos=(9.450, 0.000, -3.142) rot=(0.00, 0.00, 0.00) scale=(1.000, 1.000, 1.000)
+  P5_DoorPower pos=(9.450, 0.000, -3.142) rot=(0.00, 0.00, 0.00) scale=(1.000, 1.000, 1.000)
+  P5_DoorPower/SM_VineWire_P5 pos=(-9.850, 10.167, 5.458) rot=(12.56, 30.33, 0.00) scale=(1.000, 1.000, 1.000)
+  P5_DoorPower/SM_VineWire_P5/SM_VineWire_P5_Stem pos=(-9.850, 10.167, 5.458) rot=(12.56, 30.33, 0.00) scale=(1.000, 1.000, 0.020) BOUNDS center=(-9.825, 9.357, 5.442) size=(0.945, 1.911, 0.979) mats=EF_Leaf_MAT:Universal Render Pipeline/Lit
+  P5_DoorPower/SM_VineWire_P5/SM_VineWire_P5_Stem/SM_VineWire_P5_Leaf_01 pos=(-9.873, 9.855, 5.419) rot=(336.08, 3.71, 353.17) scale=(0.000, 0.000, 0.000) BOUNDS center=(-9.873, 9.855, 5.419) size=(0.000, 0.000, 0.000) mats=EF_Leaf_MAT:Universal Render Pipeline/Lit
+  P5_DoorPower/SM_VineWire_P5/SM_VineWire_P5_Stem/SM_VineWire_P5_Leaf_02 pos=(-9.902, 9.436, 5.368) rot=(314.43, 246.14, 351.06) scale=(0.000, 0.000, 0.000) BOUNDS center=(-9.902, 9.436, 5.368) size=(0.000, 0.000, 0.000) mats=EF_Leaf_MAT:Universal Render Pipeline/Lit
+  P5_DoorPower/SM_VineWire_P5/SM_VineWire_P5_Stem/SM_VineWire_P5_Leaf_03 pos=(-9.925, 9.081, 5.330) rot=(336.08, 3.71, 353.17) scale=(0.000, 0.000, 0.000) BOUNDS center=(-9.925, 9.081, 5.330) size=(0.000, 0.000, 0.000) mats=EF_Leaf_MAT:Universal Render Pipeline/Lit
+  P5_DoorPower/SM_VineWire_P5/SM_VineWire_P5_Stem/SM_VineWire_P5_Leaf_04 pos=(-9.937, 8.824, 5.310) rot=(314.43, 246.14, 351.06) scale=(0.000, 0.000, 0.000) BOUNDS center=(-9.937, 8.824, 5.310) size=(0.000, 0.000, 0.000) mats=EF_Leaf_MAT:Universal Render Pipeline/Lit
+  P5_DoorPower/SM_VineWire_P5/SM_VineWire_P5_Stem/SM_VineWire_P5_Leaf_05 pos=(-9.935, 8.685, 5.313) rot=(336.08, 3.71, 353.17) scale=(0.000, 0.000, 0.000) BOUNDS center=(-9.935, 8.685, 5.313) size=(0.000, 0.000, 0.000) mats=EF_Leaf_MAT:Universal Render Pipeline/Lit
+  P5_DoorPower/SM_VineWire_P5/SM_VineWire_P5_Stem/SM_VineWire_P5_Leaf_06 pos=(-9.918, 8.678, 5.341) rot=(314.43, 246.14, 351.06) scale=(0.000, 0.000, 0.000) BOUNDS center=(-9.918, 8.678, 5.341) size=(0.000, 0.000, 0.000) mats=EF_Leaf_MAT:Universal Render Pipeline/Lit
+  P5_DoorPower/SM_VineWire_P5/SM_VineWire_P5_Stem/SM_VineWire_P5_Leaf_07 pos=(-9.887, 8.802, 5.394) rot=(336.08, 3.71, 353.17) scale=(0.000, 0.000, 0.000) BOUNDS center=(-9.887, 8.802, 5.394) size=(0.000, 0.000, 0.000) mats=EF_Leaf_MAT:Universal Render Pipeline/Lit
+  P5_DoorPower/SM_VineWire_P5/SM_VineWire_P5_Stem/SM_VineWire_P5_Leaf_08 pos=(-9.842, 9.045, 5.471) rot=(314.43, 246.14, 351.06) scale=(0.000, 0.000, 0.000) BOUNDS center=(-9.842, 9.045, 5.471) size=(0.000, 0.000, 0.000) mats=EF_Leaf_MAT:Universal Render Pipeline/Lit
+  P5_DoorPower/SM_VineWire_P5/SM_VineWire_P5_Stem/SM_VineWire_P5_Leaf_09 pos=(-9.787, 9.384, 5.566) rot=(336.08, 3.71, 353.17) scale=(0.000, 0.000, 0.000) BOUNDS center=(-9.787, 9.384, 5.566) size=(0.000, 0.000, 0.000) mats=EF_Leaf_MAT:Universal Render Pipeline/Lit
+  P5_DoorPower/SM_VineWire_P5/SM_VineWire_P5_Stem/SM_VineWire_P5_Leaf_10 pos=(-9.724, 9.789, 5.673) rot=(314.43, 246.14, 351.06) scale=(0.000, 0.000, 0.000) BOUNDS center=(-9.724, 9.789, 5.673) size=(0.000, 0.000, 0.000) mats=EF_Leaf_MAT:Universal Render Pipeline/Lit
+ROOT SM_WaterGate_P4 pos=(9.450, 0.000, -3.142) rot=(0.000, 0.000, 0.000) scale=(1.000, 1.000, 1.000)
+   pos=(9.450, 0.000, -3.142) rot=(0.00, 0.00, 0.00) scale=(1.000, 1.000, 1.000)
+  P4_IceSlide pos=(9.450, 0.000, -3.142) rot=(0.00, 0.00, 0.00) scale=(1.000, 1.000, 1.000)
+  P4_IceSlide/SM_WaterGate_P4 pos=(-16.050, 24.000, -46.742) rot=(0.00, 0.00, 0.00) scale=(1.000, 1.000, 1.000)
+  P4_IceSlide/SM_WaterGate_P4/SM_WaterGate_P4_Crank pos=(-16.050, 27.000, -46.742) rot=(0.00, 0.00, 0.00) scale=(1.000, 1.000, 1.000) BOUNDS center=(-16.050, 26.770, -46.742) size=(0.760, 0.540, 0.760) mats=EF_Metal_MAT:Universal Render Pipeline/Lit
+  P4_IceSlide/SM_WaterGate_P4/SM_WaterGate_P4_Frame pos=(-16.050, 24.000, -46.742) rot=(0.00, 0.00, 0.00) scale=(1.000, 1.000, 1.000) BOUNDS center=(-16.050, 25.480, -46.742) size=(9.500, 2.960, 0.600) mats=EF_Wood_MAT:Universal Render Pipeline/Lit
+  P4_IceSlide/SM_WaterGate_P4/SM_WaterGate_P4_Gate pos=(-16.050, 24.000, -46.742) rot=(0.00, 0.00, 0.00) scale=(1.000, 1.000, 1.000) BOUNDS center=(-16.050, 24.650, -46.742) size=(8.600, 1.300, 0.160) mats=EF_Metal_MAT:Universal Render Pipeline/Lit
+ROOT SM_WaterGate_P6 pos=(9.450, 0.000, -3.142) rot=(0.000, 0.000, 0.000) scale=(1.000, 1.000, 1.000)
+   pos=(9.450, 0.000, -3.142) rot=(0.00, 0.00, 0.00) scale=(1.000, 1.000, 1.000)
+  P6_Waterwheel pos=(9.450, 0.000, -3.142) rot=(0.00, 0.00, 0.00) scale=(1.000, 1.000, 1.000)
+  P6_Waterwheel/SM_WaterGate_P6 pos=(9.450, 18.400, -26.342) rot=(0.00, 0.00, 0.00) scale=(1.000, 1.000, 1.000)
+  P6_Waterwheel/SM_WaterGate_P6/SM_WaterGate_P6_Crank pos=(9.450, 21.400, -26.342) rot=(0.00, 0.00, 0.00) scale=(1.000, 1.000, 1.000) BOUNDS center=(9.450, 21.170, -26.342) size=(0.760, 0.540, 0.760) mats=EF_Metal_MAT:Universal Render Pipeline/Lit
+  P6_Waterwheel/SM_WaterGate_P6/SM_WaterGate_P6_Frame pos=(9.450, 18.400, -26.342) rot=(0.00, 0.00, 0.00) scale=(1.000, 1.000, 1.000) BOUNDS center=(9.450, 19.880, -26.342) size=(1.800, 2.960, 0.600) mats=EF_Wood_MAT:Universal Render Pipeline/Lit
+  P6_Waterwheel/SM_WaterGate_P6/SM_WaterGate_P6_Gate pos=(9.450, 18.400, -26.342) rot=(0.00, 0.00, 0.00) scale=(1.000, 1.000, 1.000) BOUNDS center=(9.450, 19.050, -26.342) size=(0.900, 1.300, 0.160) mats=EF_Metal_MAT:Universal Render Pipeline/Lit
+ROOT SM_Waterwheel pos=(9.450, 0.000, -3.142) rot=(0.000, 0.000, 0.000) scale=(1.000, 1.000, 1.000)
+   pos=(9.450, 0.000, -3.142) rot=(0.00, 0.00, 0.00) scale=(1.000, 1.000, 1.000)
+  P6_Waterwheel pos=(9.450, 0.000, -3.142) rot=(0.00, 0.00, 0.00) scale=(1.000, 1.000, 1.000)
+  P6_Waterwheel/SM_Waterwheel pos=(9.450, 15.000, -3.142) rot=(0.00, 270.00, 0.00) scale=(1.000, 1.000, 1.000)
+  P6_Waterwheel/SM_Waterwheel/SM_Waterwheel_Body pos=(9.450, 15.000, -3.142) rot=(0.00, 270.00, 0.00) scale=(1.000, 1.000, 1.000) BOUNDS center=(9.450, 17.800, -3.142) size=(3.600, 5.700, 9.450) mats=EF_Wood_MAT:Universal Render Pipeline/Lit
+  P6_Waterwheel/SM_Waterwheel/SM_Waterwheel_Wheel pos=(9.450, 20.400, -3.142) rot=(0.00, 270.00, 0.00) scale=(1.000, 1.000, 1.000) BOUNDS center=(9.450, 20.400, -3.142) size=(3.600, 9.884, 9.884) mats=EF_Wood_MAT:Universal Render Pipeline/Lit
+ASSET Assets/map_ver1/fbx\EF_Terrain.fbx scale=1 fileScale=0.01 colliders=True animationType=Generic
+ASSET Assets/map_ver1/fbx\P6_ChannelRepair.fbx scale=1 fileScale=0.01 colliders=False animationType=Generic
+  CLIP Take 001 fps=24 length=4.958333 keys=40 loop=False
+    P6_Waterwheel/SM_Channel_Piece_P6_01 Transform m_LocalRotation.x
+    P6_Waterwheel/SM_Channel_Piece_P6_01 Transform m_LocalRotation.y
+    P6_Waterwheel/SM_Channel_Piece_P6_01 Transform m_LocalRotation.z
+    P6_Waterwheel/SM_Channel_Piece_P6_01 Transform m_LocalRotation.w
+    P6_Waterwheel/SM_Channel_Piece_P6_02 Transform m_LocalRotation.x
+    P6_Waterwheel/SM_Channel_Piece_P6_02 Transform m_LocalRotation.y
+    P6_Waterwheel/SM_Channel_Piece_P6_02 Transform m_LocalRotation.z
+    P6_Waterwheel/SM_Channel_Piece_P6_02 Transform m_LocalRotation.w
+    P6_Waterwheel/SM_Channel_Piece_P6_03 Transform m_LocalRotation.x
+    P6_Waterwheel/SM_Channel_Piece_P6_03 Transform m_LocalRotation.y
+    P6_Waterwheel/SM_Channel_Piece_P6_03 Transform m_LocalRotation.z
+    P6_Waterwheel/SM_Channel_Piece_P6_03 Transform m_LocalRotation.w
+    P6_Waterwheel/SM_Channel_Piece_P6_04 Transform m_LocalRotation.x
+    P6_Waterwheel/SM_Channel_Piece_P6_04 Transform m_LocalRotation.y
+    P6_Waterwheel/SM_Channel_Piece_P6_04 Transform m_LocalRotation.z
+    P6_Waterwheel/SM_Channel_Piece_P6_04 Transform m_LocalRotation.w
+    P6_Waterwheel/SM_Channel_Piece_P6_01 Transform m_LocalPosition.x
+    P6_Waterwheel/SM_Channel_Piece_P6_01 Transform m_LocalPosition.y
+    P6_Waterwheel/SM_Channel_Piece_P6_01 Transform m_LocalPosition.z
+    P6_Waterwheel/SM_Channel_Piece_P6_02 Transform m_LocalPosition.x
+    P6_Waterwheel/SM_Channel_Piece_P6_02 Transform m_LocalPosition.y
+    P6_Waterwheel/SM_Channel_Piece_P6_02 Transform m_LocalPosition.z
+    P6_Waterwheel/SM_Channel_Piece_P6_03 Transform m_LocalPosition.x
+    P6_Waterwheel/SM_Channel_Piece_P6_03 Transform m_LocalPosition.y
+    P6_Waterwheel/SM_Channel_Piece_P6_03 Transform m_LocalPosition.z
+    P6_Waterwheel/SM_Channel_Piece_P6_04 Transform m_LocalPosition.x
+    P6_Waterwheel/SM_Channel_Piece_P6_04 Transform m_LocalPosition.y
+    P6_Waterwheel/SM_Channel_Piece_P6_04 Transform m_LocalPosition.z
+    P6_Waterwheel/SM_Root_P6_01 Transform m_LocalScale.x
+    P6_Waterwheel/SM_Root_P6_01 Transform m_LocalScale.y
+    P6_Waterwheel/SM_Root_P6_01 Transform m_LocalScale.z
+    P6_Waterwheel/SM_Root_P6_02 Transform m_LocalScale.x
+    P6_Waterwheel/SM_Root_P6_02 Transform m_LocalScale.y
+    P6_Waterwheel/SM_Root_P6_02 Transform m_LocalScale.z
+    P6_Waterwheel/SM_Root_P6_03 Transform m_LocalScale.x
+    P6_Waterwheel/SM_Root_P6_03 Transform m_LocalScale.y
+    P6_Waterwheel/SM_Root_P6_03 Transform m_LocalScale.z
+    P6_Waterwheel/SM_Root_P6_04 Transform m_LocalScale.x
+    P6_Waterwheel/SM_Root_P6_04 Transform m_LocalScale.y
+    P6_Waterwheel/SM_Root_P6_04 Transform m_LocalScale.z
+ASSET Assets/map_ver1/fbx\Restore_P1.fbx scale=1 fileScale=0.01 colliders=False animationType=Generic
+  CLIP Take 001 fps=24 length=4.958333 keys=36 loop=False
+    Restore/Restore_P1/R1_FlowerBush_01 Transform m_LocalScale.x
+    Restore/Restore_P1/R1_FlowerBush_01 Transform m_LocalScale.y
+    Restore/Restore_P1/R1_FlowerBush_01 Transform m_LocalScale.z
+    Restore/Restore_P1/R1_FlowerBush_02 Transform m_LocalScale.x
+    Restore/Restore_P1/R1_FlowerBush_02 Transform m_LocalScale.y
+    Restore/Restore_P1/R1_FlowerBush_02 Transform m_LocalScale.z
+    Restore/Restore_P1/R1_FlowerBush_03 Transform m_LocalScale.x
+    Restore/Restore_P1/R1_FlowerBush_03 Transform m_LocalScale.y
+    Restore/Restore_P1/R1_FlowerBush_03 Transform m_LocalScale.z
+    Restore/Restore_P1/R1_FlowerBush_04 Transform m_LocalScale.x
+    Restore/Restore_P1/R1_FlowerBush_04 Transform m_LocalScale.y
+    Restore/Restore_P1/R1_FlowerBush_04 Transform m_LocalScale.z
+    Restore/Restore_P1/R1_FlowerBush_05 Transform m_LocalScale.x
+    Restore/Restore_P1/R1_FlowerBush_05 Transform m_LocalScale.y
+    Restore/Restore_P1/R1_FlowerBush_05 Transform m_LocalScale.z
+    Restore/Restore_P1/R1_FlowerBush_06 Transform m_LocalScale.x
+    Restore/Restore_P1/R1_FlowerBush_06 Transform m_LocalScale.y
+    Restore/Restore_P1/R1_FlowerBush_06 Transform m_LocalScale.z
+    Restore/Restore_P1/R1_FlowerBush_07 Transform m_LocalScale.x
+    Restore/Restore_P1/R1_FlowerBush_07 Transform m_LocalScale.y
+    Restore/Restore_P1/R1_FlowerBush_07 Transform m_LocalScale.z
+    Restore/Restore_P1/R1_FlowStem_01 Transform m_LocalScale.x
+    Restore/Restore_P1/R1_FlowStem_01 Transform m_LocalScale.y
+    Restore/Restore_P1/R1_FlowStem_01 Transform m_LocalScale.z
+    Restore/Restore_P1/R1_FlowStem_02 Transform m_LocalScale.x
+    Restore/Restore_P1/R1_FlowStem_02 Transform m_LocalScale.y
+    Restore/Restore_P1/R1_FlowStem_02 Transform m_LocalScale.z
+    Restore/Restore_P1/R1_FlowStem_03 Transform m_LocalScale.x
+    Restore/Restore_P1/R1_FlowStem_03 Transform m_LocalScale.y
+    Restore/Restore_P1/R1_FlowStem_03 Transform m_LocalScale.z
+    Restore/Restore_P1/R1_FlowStem_04 Transform m_LocalScale.x
+    Restore/Restore_P1/R1_FlowStem_04 Transform m_LocalScale.y
+    Restore/Restore_P1/R1_FlowStem_04 Transform m_LocalScale.z
+    Restore/Restore_P1/R1_FlowStem_05 Transform m_LocalScale.x
+    Restore/Restore_P1/R1_FlowStem_05 Transform m_LocalScale.y
+    Restore/Restore_P1/R1_FlowStem_05 Transform m_LocalScale.z
+ASSET Assets/map_ver1/fbx\Restore_P2.fbx scale=1 fileScale=0.01 colliders=False animationType=Generic
+  CLIP Take 001 fps=24 length=4.958333 keys=42 loop=False
+    Restore/Restore_P2/R2_Moss_01 Transform m_LocalScale.x
+    Restore/Restore_P2/R2_Moss_01 Transform m_LocalScale.y
+    Restore/Restore_P2/R2_Moss_01 Transform m_LocalScale.z
+    Restore/Restore_P2/R2_Moss_02 Transform m_LocalScale.x
+    Restore/Restore_P2/R2_Moss_02 Transform m_LocalScale.y
+    Restore/Restore_P2/R2_Moss_02 Transform m_LocalScale.z
+    Restore/Restore_P2/R2_Moss_03 Transform m_LocalScale.x
+    Restore/Restore_P2/R2_Moss_03 Transform m_LocalScale.y
+    Restore/Restore_P2/R2_Moss_03 Transform m_LocalScale.z
+    Restore/Restore_P2/R2_Moss_04 Transform m_LocalScale.x
+    Restore/Restore_P2/R2_Moss_04 Transform m_LocalScale.y
+    Restore/Restore_P2/R2_Moss_04 Transform m_LocalScale.z
+    Restore/Restore_P2/R2_Moss_05 Transform m_LocalScale.x
+    Restore/Restore_P2/R2_Moss_05 Transform m_LocalScale.y
+    Restore/Restore_P2/R2_Moss_05 Transform m_LocalScale.z
+    Restore/Restore_P2/R2_Moss_06 Transform m_LocalScale.x
+    Restore/Restore_P2/R2_Moss_06 Transform m_LocalScale.y
+    Restore/Restore_P2/R2_Moss_06 Transform m_LocalScale.z
+    Restore/Restore_P2/R2_Moss_07 Transform m_LocalScale.x
+    Restore/Restore_P2/R2_Moss_07 Transform m_LocalScale.y
+    Restore/Restore_P2/R2_Moss_07 Transform m_LocalScale.z
+    Restore/Restore_P2/R2_MarkFlower_01 Transform m_LocalScale.x
+    Restore/Restore_P2/R2_MarkFlower_01 Transform m_LocalScale.y
+    Restore/Restore_P2/R2_MarkFlower_01 Transform m_LocalScale.z
+    Restore/Restore_P2/R2_MarkFlower_02 Transform m_LocalScale.x
+    Restore/Restore_P2/R2_MarkFlower_02 Transform m_LocalScale.y
+    Restore/Restore_P2/R2_MarkFlower_02 Transform m_LocalScale.z
+    Restore/Restore_P2/R2_MarkFlower_03 Transform m_LocalScale.x
+    Restore/Restore_P2/R2_MarkFlower_03 Transform m_LocalScale.y
+    Restore/Restore_P2/R2_MarkFlower_03 Transform m_LocalScale.z
+    Restore/Restore_P2/R2_SlateFlower_01 Transform m_LocalScale.x
+    Restore/Restore_P2/R2_SlateFlower_01 Transform m_LocalScale.y
+    Restore/Restore_P2/R2_SlateFlower_01 Transform m_LocalScale.z
+    Restore/Restore_P2/R2_SlateFlower_02 Transform m_LocalScale.x
+    Restore/Restore_P2/R2_SlateFlower_02 Transform m_LocalScale.y
+    Restore/Restore_P2/R2_SlateFlower_02 Transform m_LocalScale.z
+    Restore/Restore_P2/R2_SlateFlower_03 Transform m_LocalScale.x
+    Restore/Restore_P2/R2_SlateFlower_03 Transform m_LocalScale.y
+    Restore/Restore_P2/R2_SlateFlower_03 Transform m_LocalScale.z
+    Restore/Restore_P2/R2_SlateFlower_04 Transform m_LocalScale.x
+    Restore/Restore_P2/R2_SlateFlower_04 Transform m_LocalScale.y
+    Restore/Restore_P2/R2_SlateFlower_04 Transform m_LocalScale.z
+ASSET Assets/map_ver1/fbx\Restore_P4.fbx scale=1 fileScale=0.01 colliders=False animationType=Generic
+  CLIP Take 001 fps=24 length=4.958333 keys=3 loop=False
+    Restore/Restore_P4/R4_Waterfall Transform m_LocalScale.x
+    Restore/Restore_P4/R4_Waterfall Transform m_LocalScale.y
+    Restore/Restore_P4/R4_Waterfall Transform m_LocalScale.z
+ASSET Assets/map_ver1/fbx\Restore_P5.fbx scale=1 fileScale=0.01 colliders=False animationType=Generic
+  CLIP Take 001 fps=24 length=4.958333 keys=42 loop=False
+    Restore/Restore_P5/R5_StairMoss_01 Transform m_LocalScale.x
+    Restore/Restore_P5/R5_StairMoss_01 Transform m_LocalScale.y
+    Restore/Restore_P5/R5_StairMoss_01 Transform m_LocalScale.z
+    Restore/Restore_P5/R5_StairMoss_02 Transform m_LocalScale.x
+    Restore/Restore_P5/R5_StairMoss_02 Transform m_LocalScale.y
+    Restore/Restore_P5/R5_StairMoss_02 Transform m_LocalScale.z
+    Restore/Restore_P5/R5_StairMoss_03 Transform m_LocalScale.x
+    Restore/Restore_P5/R5_StairMoss_03 Transform m_LocalScale.y
+    Restore/Restore_P5/R5_StairMoss_03 Transform m_LocalScale.z
+    Restore/Restore_P5/R5_StairMoss_04 Transform m_LocalScale.x
+    Restore/Restore_P5/R5_StairMoss_04 Transform m_LocalScale.y
+    Restore/Restore_P5/R5_StairMoss_04 Transform m_LocalScale.z
+    Restore/Restore_P5/R5_StairMoss_05 Transform m_LocalScale.x
+    Restore/Restore_P5/R5_StairMoss_05 Transform m_LocalScale.y
+    Restore/Restore_P5/R5_StairMoss_05 Transform m_LocalScale.z
+    Restore/Restore_P5/R5_StairMoss_06 Transform m_LocalScale.x
+    Restore/Restore_P5/R5_StairMoss_06 Transform m_LocalScale.y
+    Restore/Restore_P5/R5_StairMoss_06 Transform m_LocalScale.z
+    Restore/Restore_P5/R5_StairMoss_07 Transform m_LocalScale.x
+    Restore/Restore_P5/R5_StairMoss_07 Transform m_LocalScale.y
+    Restore/Restore_P5/R5_StairMoss_07 Transform m_LocalScale.z
+    Restore/Restore_P5/R5_StairMoss_08 Transform m_LocalScale.x
+    Restore/Restore_P5/R5_StairMoss_08 Transform m_LocalScale.y
+    Restore/Restore_P5/R5_StairMoss_08 Transform m_LocalScale.z
+    Restore/Restore_P5/R5_StairMoss_09 Transform m_LocalScale.x
+    Restore/Restore_P5/R5_StairMoss_09 Transform m_LocalScale.y
+    Restore/Restore_P5/R5_StairMoss_09 Transform m_LocalScale.z
+    Restore/Restore_P5/R5_StairMoss_10 Transform m_LocalScale.x
+    Restore/Restore_P5/R5_StairMoss_10 Transform m_LocalScale.y
+    Restore/Restore_P5/R5_StairMoss_10 Transform m_LocalScale.z
+    Restore/Restore_P5/R5_StairFlower_01 Transform m_LocalScale.x
+    Restore/Restore_P5/R5_StairFlower_01 Transform m_LocalScale.y
+    Restore/Restore_P5/R5_StairFlower_01 Transform m_LocalScale.z
+    Restore/Restore_P5/R5_StairFlower_02 Transform m_LocalScale.x
+    Restore/Restore_P5/R5_StairFlower_02 Transform m_LocalScale.y
+    Restore/Restore_P5/R5_StairFlower_02 Transform m_LocalScale.z
+    Restore/Restore_P5/R5_StairFlower_03 Transform m_LocalScale.x
+    Restore/Restore_P5/R5_StairFlower_03 Transform m_LocalScale.y
+    Restore/Restore_P5/R5_StairFlower_03 Transform m_LocalScale.z
+    Restore/Restore_P5/R5_StairFlower_04 Transform m_LocalScale.x
+    Restore/Restore_P5/R5_StairFlower_04 Transform m_LocalScale.y
+    Restore/Restore_P5/R5_StairFlower_04 Transform m_LocalScale.z
+ASSET Assets/map_ver1/fbx\Restore_P6.fbx scale=1 fileScale=0.01 colliders=False animationType=Generic
+  CLIP Take 001 fps=24 length=4.958333 keys=18 loop=False
+    Restore/Restore_P6/R6_Runnel_Left/R6_Runnel_Left_Water Transform m_LocalScale.x
+    Restore/Restore_P6/R6_Runnel_Left/R6_Runnel_Left_Water Transform m_LocalScale.y
+    Restore/Restore_P6/R6_Runnel_Left/R6_Runnel_Left_Water Transform m_LocalScale.z
+    Restore/Restore_P6/R6_Waterfall_Left Transform m_LocalScale.x
+    Restore/Restore_P6/R6_Waterfall_Left Transform m_LocalScale.y
+    Restore/Restore_P6/R6_Waterfall_Left Transform m_LocalScale.z
+    Restore/Restore_P6/R6_Runnel_Right/R6_Runnel_Right_Water Transform m_LocalScale.x
+    Restore/Restore_P6/R6_Runnel_Right/R6_Runnel_Right_Water Transform m_LocalScale.y
+    Restore/Restore_P6/R6_Runnel_Right/R6_Runnel_Right_Water Transform m_LocalScale.z
+    Restore/Restore_P6/R6_Waterfall_Right Transform m_LocalScale.x
+    Restore/Restore_P6/R6_Waterfall_Right Transform m_LocalScale.y
+    Restore/Restore_P6/R6_Waterfall_Right Transform m_LocalScale.z
+    Restore/Restore_P6/R6_Runnel_Front/R6_Runnel_Front_Water Transform m_LocalScale.x
+    Restore/Restore_P6/R6_Runnel_Front/R6_Runnel_Front_Water Transform m_LocalScale.y
+    Restore/Restore_P6/R6_Runnel_Front/R6_Runnel_Front_Water Transform m_LocalScale.z
+    Restore/Restore_P6/R6_Waterfall_Front Transform m_LocalScale.x
+    Restore/Restore_P6/R6_Waterfall_Front Transform m_LocalScale.y
+    Restore/Restore_P6/R6_Waterfall_Front Transform m_LocalScale.z
+ASSET Assets/map_ver1/fbx\SM_Channel_Outlet_P6.fbx scale=1 fileScale=0.01 colliders=False animationType=Generic
+ASSET Assets/map_ver1/fbx\SM_Channel_Swing_P6.fbx scale=1 fileScale=0.01 colliders=False animationType=Generic
+ASSET Assets/map_ver1/fbx\SM_Channel_SwingPillar_P6.fbx scale=1 fileScale=0.01 colliders=False animationType=Generic
+ASSET Assets/map_ver1/fbx\SM_Door_P5.fbx scale=1 fileScale=0.01 colliders=False animationType=Generic
+  CLIP Take 001 fps=24 length=4.958333 keys=8 loop=False
+    P5_DoorPower/SM_Door_P5/SM_Door_P5_Leaf_L Transform m_LocalRotation.x
+    P5_DoorPower/SM_Door_P5/SM_Door_P5_Leaf_L Transform m_LocalRotation.y
+    P5_DoorPower/SM_Door_P5/SM_Door_P5_Leaf_L Transform m_LocalRotation.z
+    P5_DoorPower/SM_Door_P5/SM_Door_P5_Leaf_L Transform m_LocalRotation.w
+    P5_DoorPower/SM_Door_P5/SM_Door_P5_Leaf_R Transform m_LocalRotation.x
+    P5_DoorPower/SM_Door_P5/SM_Door_P5_Leaf_R Transform m_LocalRotation.y
+    P5_DoorPower/SM_Door_P5/SM_Door_P5_Leaf_R Transform m_LocalRotation.z
+    P5_DoorPower/SM_Door_P5/SM_Door_P5_Leaf_R Transform m_LocalRotation.w
+ASSET Assets/map_ver1/fbx\SM_FallingDebris_01.fbx scale=1 fileScale=0.01 colliders=False animationType=Generic
+ASSET Assets/map_ver1/fbx\SM_FallingDebris_02.fbx scale=1 fileScale=0.01 colliders=False animationType=Generic
+ASSET Assets/map_ver1/fbx\SM_FallingDebris_03.fbx scale=1 fileScale=0.01 colliders=False animationType=Generic
+ASSET Assets/map_ver1/fbx\SM_FlowerJumpPad.fbx scale=1 fileScale=0.01 colliders=False animationType=Generic
+  CLIP Take 001 fps=24 length=4.958333 keys=55 loop=False
+    P1_FlowerVine/SM_FlowerJumpPad/FlowerJumpPad_Stem_01 Transform m_LocalRotation.x
+    P1_FlowerVine/SM_FlowerJumpPad/FlowerJumpPad_Stem_01 Transform m_LocalRotation.y
+    P1_FlowerVine/SM_FlowerJumpPad/FlowerJumpPad_Stem_01 Transform m_LocalRotation.z
+    P1_FlowerVine/SM_FlowerJumpPad/FlowerJumpPad_Stem_01 Transform m_LocalRotation.w
+    P1_FlowerVine/SM_FlowerJumpPad/FlowerJumpPad_Stem_01/FlowerJumpPad_Stem_02 Transform m_LocalRotation.x
+    P1_FlowerVine/SM_FlowerJumpPad/FlowerJumpPad_Stem_01/FlowerJumpPad_Stem_02 Transform m_LocalRotation.y
+    P1_FlowerVine/SM_FlowerJumpPad/FlowerJumpPad_Stem_01/FlowerJumpPad_Stem_02 Transform m_LocalRotation.z
+    P1_FlowerVine/SM_FlowerJumpPad/FlowerJumpPad_Stem_01/FlowerJumpPad_Stem_02 Transform m_LocalRotation.w
+    P1_FlowerVine/SM_FlowerJumpPad/FlowerJumpPad_Stem_01/FlowerJumpPad_Stem_02/FlowerJumpPad_Stem_03 Transform m_LocalRotation.x
+    P1_FlowerVine/SM_FlowerJumpPad/FlowerJumpPad_Stem_01/FlowerJumpPad_Stem_02/FlowerJumpPad_Stem_03 Transform m_LocalRotation.y
+    P1_FlowerVine/SM_FlowerJumpPad/FlowerJumpPad_Stem_01/FlowerJumpPad_Stem_02/FlowerJumpPad_Stem_03 Transform m_LocalRotation.z
+    P1_FlowerVine/SM_FlowerJumpPad/FlowerJumpPad_Stem_01/FlowerJumpPad_Stem_02/FlowerJumpPad_Stem_03 Transform m_LocalRotation.w
+    P1_FlowerVine/SM_FlowerJumpPad/FlowerJumpPad_Stem_01/FlowerJumpPad_Stem_02/FlowerJumpPad_Stem_03/FlowerJumpPad_Head/FlowerJumpPad_Petal_01 Transform m_LocalRotation.x
+    P1_FlowerVine/SM_FlowerJumpPad/FlowerJumpPad_Stem_01/FlowerJumpPad_Stem_02/FlowerJumpPad_Stem_03/FlowerJumpPad_Head/FlowerJumpPad_Petal_01 Transform m_LocalRotation.y
+    P1_FlowerVine/SM_FlowerJumpPad/FlowerJumpPad_Stem_01/FlowerJumpPad_Stem_02/FlowerJumpPad_Stem_03/FlowerJumpPad_Head/FlowerJumpPad_Petal_01 Transform m_LocalRotation.z
+    P1_FlowerVine/SM_FlowerJumpPad/FlowerJumpPad_Stem_01/FlowerJumpPad_Stem_02/FlowerJumpPad_Stem_03/FlowerJumpPad_Head/FlowerJumpPad_Petal_01 Transform m_LocalRotation.w
+    P1_FlowerVine/SM_FlowerJumpPad/FlowerJumpPad_Stem_01/FlowerJumpPad_Stem_02/FlowerJumpPad_Stem_03/FlowerJumpPad_Head/FlowerJumpPad_Petal_02 Transform m_LocalRotation.x
+    P1_FlowerVine/SM_FlowerJumpPad/FlowerJumpPad_Stem_01/FlowerJumpPad_Stem_02/FlowerJumpPad_Stem_03/FlowerJumpPad_Head/FlowerJumpPad_Petal_02 Transform m_LocalRotation.y
+    P1_FlowerVine/SM_FlowerJumpPad/FlowerJumpPad_Stem_01/FlowerJumpPad_Stem_02/FlowerJumpPad_Stem_03/FlowerJumpPad_Head/FlowerJumpPad_Petal_02 Transform m_LocalRotation.z
+    P1_FlowerVine/SM_FlowerJumpPad/FlowerJumpPad_Stem_01/FlowerJumpPad_Stem_02/FlowerJumpPad_Stem_03/FlowerJumpPad_Head/FlowerJumpPad_Petal_02 Transform m_LocalRotation.w
+    P1_FlowerVine/SM_FlowerJumpPad/FlowerJumpPad_Stem_01/FlowerJumpPad_Stem_02/FlowerJumpPad_Stem_03/FlowerJumpPad_Head/FlowerJumpPad_Petal_03 Transform m_LocalRotation.x
+    P1_FlowerVine/SM_FlowerJumpPad/FlowerJumpPad_Stem_01/FlowerJumpPad_Stem_02/FlowerJumpPad_Stem_03/FlowerJumpPad_Head/FlowerJumpPad_Petal_03 Transform m_LocalRotation.y
+    P1_FlowerVine/SM_FlowerJumpPad/FlowerJumpPad_Stem_01/FlowerJumpPad_Stem_02/FlowerJumpPad_Stem_03/FlowerJumpPad_Head/FlowerJumpPad_Petal_03 Transform m_LocalRotation.z
+    P1_FlowerVine/SM_FlowerJumpPad/FlowerJumpPad_Stem_01/FlowerJumpPad_Stem_02/FlowerJumpPad_Stem_03/FlowerJumpPad_Head/FlowerJumpPad_Petal_03 Transform m_LocalRotation.w
+    P1_FlowerVine/SM_FlowerJumpPad/FlowerJumpPad_Stem_01/FlowerJumpPad_Stem_02/FlowerJumpPad_Stem_03/FlowerJumpPad_Head/FlowerJumpPad_Petal_04 Transform m_LocalRotation.x
+    P1_FlowerVine/SM_FlowerJumpPad/FlowerJumpPad_Stem_01/FlowerJumpPad_Stem_02/FlowerJumpPad_Stem_03/FlowerJumpPad_Head/FlowerJumpPad_Petal_04 Transform m_LocalRotation.y
+    P1_FlowerVine/SM_FlowerJumpPad/FlowerJumpPad_Stem_01/FlowerJumpPad_Stem_02/FlowerJumpPad_Stem_03/FlowerJumpPad_Head/FlowerJumpPad_Petal_04 Transform m_LocalRotation.z
+    P1_FlowerVine/SM_FlowerJumpPad/FlowerJumpPad_Stem_01/FlowerJumpPad_Stem_02/FlowerJumpPad_Stem_03/FlowerJumpPad_Head/FlowerJumpPad_Petal_04 Transform m_LocalRotation.w
+    P1_FlowerVine/SM_FlowerJumpPad/FlowerJumpPad_Stem_01/FlowerJumpPad_Stem_02/FlowerJumpPad_Stem_03/FlowerJumpPad_Head/FlowerJumpPad_Petal_05 Transform m_LocalRotation.x
+    P1_FlowerVine/SM_FlowerJumpPad/FlowerJumpPad_Stem_01/FlowerJumpPad_Stem_02/FlowerJumpPad_Stem_03/FlowerJumpPad_Head/FlowerJumpPad_Petal_05 Transform m_LocalRotation.y
+    P1_FlowerVine/SM_FlowerJumpPad/FlowerJumpPad_Stem_01/FlowerJumpPad_Stem_02/FlowerJumpPad_Stem_03/FlowerJumpPad_Head/FlowerJumpPad_Petal_05 Transform m_LocalRotation.z
+    P1_FlowerVine/SM_FlowerJumpPad/FlowerJumpPad_Stem_01/FlowerJumpPad_Stem_02/FlowerJumpPad_Stem_03/FlowerJumpPad_Head/FlowerJumpPad_Petal_05 Transform m_LocalRotation.w
+    P1_FlowerVine/SM_FlowerJumpPad/FlowerJumpPad_Stem_01/FlowerJumpPad_Stem_02/FlowerJumpPad_Stem_03/FlowerJumpPad_Head/FlowerJumpPad_Petal_06 Transform m_LocalRotation.x
+    P1_FlowerVine/SM_FlowerJumpPad/FlowerJumpPad_Stem_01/FlowerJumpPad_Stem_02/FlowerJumpPad_Stem_03/FlowerJumpPad_Head/FlowerJumpPad_Petal_06 Transform m_LocalRotation.y
+    P1_FlowerVine/SM_FlowerJumpPad/FlowerJumpPad_Stem_01/FlowerJumpPad_Stem_02/FlowerJumpPad_Stem_03/FlowerJumpPad_Head/FlowerJumpPad_Petal_06 Transform m_LocalRotation.z
+    P1_FlowerVine/SM_FlowerJumpPad/FlowerJumpPad_Stem_01/FlowerJumpPad_Stem_02/FlowerJumpPad_Stem_03/FlowerJumpPad_Head/FlowerJumpPad_Petal_06 Transform m_LocalRotation.w
+    P1_FlowerVine/SM_FlowerJumpPad/FlowerJumpPad_Stem_01/FlowerJumpPad_Stem_02/FlowerJumpPad_Stem_03/FlowerJumpPad_Head/FlowerJumpPad_Petal_07 Transform m_LocalRotation.x
+    P1_FlowerVine/SM_FlowerJumpPad/FlowerJumpPad_Stem_01/FlowerJumpPad_Stem_02/FlowerJumpPad_Stem_03/FlowerJumpPad_Head/FlowerJumpPad_Petal_07 Transform m_LocalRotation.y
+    P1_FlowerVine/SM_FlowerJumpPad/FlowerJumpPad_Stem_01/FlowerJumpPad_Stem_02/FlowerJumpPad_Stem_03/FlowerJumpPad_Head/FlowerJumpPad_Petal_07 Transform m_LocalRotation.z
+    P1_FlowerVine/SM_FlowerJumpPad/FlowerJumpPad_Stem_01/FlowerJumpPad_Stem_02/FlowerJumpPad_Stem_03/FlowerJumpPad_Head/FlowerJumpPad_Petal_07 Transform m_LocalRotation.w
+    P1_FlowerVine/SM_FlowerJumpPad/FlowerJumpPad_Stem_01/FlowerJumpPad_Stem_02/FlowerJumpPad_Stem_03/FlowerJumpPad_Head/FlowerJumpPad_Petal_08 Transform m_LocalRotation.x
+    P1_FlowerVine/SM_FlowerJumpPad/FlowerJumpPad_Stem_01/FlowerJumpPad_Stem_02/FlowerJumpPad_Stem_03/FlowerJumpPad_Head/FlowerJumpPad_Petal_08 Transform m_LocalRotation.y
+    P1_FlowerVine/SM_FlowerJumpPad/FlowerJumpPad_Stem_01/FlowerJumpPad_Stem_02/FlowerJumpPad_Stem_03/FlowerJumpPad_Head/FlowerJumpPad_Petal_08 Transform m_LocalRotation.z
+    P1_FlowerVine/SM_FlowerJumpPad/FlowerJumpPad_Stem_01/FlowerJumpPad_Stem_02/FlowerJumpPad_Stem_03/FlowerJumpPad_Head/FlowerJumpPad_Petal_08 Transform m_LocalRotation.w
+    P1_FlowerVine/SM_FlowerJumpPad/FlowerJumpPad_Stem_01/FlowerJumpPad_Stem_02/FlowerJumpPad_Stem_03/FlowerJumpPad_Head/FlowerJumpPad_Petal_09 Transform m_LocalRotation.x
+    P1_FlowerVine/SM_FlowerJumpPad/FlowerJumpPad_Stem_01/FlowerJumpPad_Stem_02/FlowerJumpPad_Stem_03/FlowerJumpPad_Head/FlowerJumpPad_Petal_09 Transform m_LocalRotation.y
+    P1_FlowerVine/SM_FlowerJumpPad/FlowerJumpPad_Stem_01/FlowerJumpPad_Stem_02/FlowerJumpPad_Stem_03/FlowerJumpPad_Head/FlowerJumpPad_Petal_09 Transform m_LocalRotation.z
+    P1_FlowerVine/SM_FlowerJumpPad/FlowerJumpPad_Stem_01/FlowerJumpPad_Stem_02/FlowerJumpPad_Stem_03/FlowerJumpPad_Head/FlowerJumpPad_Petal_09 Transform m_LocalRotation.w
+    P1_FlowerVine/SM_FlowerJumpPad/FlowerJumpPad_Stem_01/FlowerJumpPad_Stem_02/FlowerJumpPad_Stem_03/FlowerJumpPad_Head/FlowerJumpPad_Petal_10 Transform m_LocalRotation.x
+    P1_FlowerVine/SM_FlowerJumpPad/FlowerJumpPad_Stem_01/FlowerJumpPad_Stem_02/FlowerJumpPad_Stem_03/FlowerJumpPad_Head/FlowerJumpPad_Petal_10 Transform m_LocalRotation.y
+    P1_FlowerVine/SM_FlowerJumpPad/FlowerJumpPad_Stem_01/FlowerJumpPad_Stem_02/FlowerJumpPad_Stem_03/FlowerJumpPad_Head/FlowerJumpPad_Petal_10 Transform m_LocalRotation.z
+    P1_FlowerVine/SM_FlowerJumpPad/FlowerJumpPad_Stem_01/FlowerJumpPad_Stem_02/FlowerJumpPad_Stem_03/FlowerJumpPad_Head/FlowerJumpPad_Petal_10 Transform m_LocalRotation.w
+    P1_FlowerVine/SM_FlowerJumpPad/FlowerJumpPad_Stem_01/FlowerJumpPad_Stem_02/FlowerJumpPad_Stem_03/FlowerJumpPad_Head Transform m_LocalScale.x
+    P1_FlowerVine/SM_FlowerJumpPad/FlowerJumpPad_Stem_01/FlowerJumpPad_Stem_02/FlowerJumpPad_Stem_03/FlowerJumpPad_Head Transform m_LocalScale.y
+    P1_FlowerVine/SM_FlowerJumpPad/FlowerJumpPad_Stem_01/FlowerJumpPad_Stem_02/FlowerJumpPad_Stem_03/FlowerJumpPad_Head Transform m_LocalScale.z
+ASSET Assets/map_ver1/fbx\SM_HeightMark_01.fbx scale=1 fileScale=0.01 colliders=False animationType=Generic
+ASSET Assets/map_ver1/fbx\SM_HeightMark_02.fbx scale=1 fileScale=0.01 colliders=False animationType=Generic
+ASSET Assets/map_ver1/fbx\SM_HeightMark_03.fbx scale=1 fileScale=0.01 colliders=False animationType=Generic
+ASSET Assets/map_ver1/fbx\SM_IceSlide.fbx scale=1 fileScale=0.01 colliders=False animationType=Generic
+ASSET Assets/map_ver1/fbx\SM_PowerSource_P3.fbx scale=1 fileScale=0.01 colliders=False animationType=Generic
+ASSET Assets/map_ver1/fbx\SM_PowerSource_P4.fbx scale=1 fileScale=0.01 colliders=False animationType=Generic
+ASSET Assets/map_ver1/fbx\SM_PowerSource_P5.fbx scale=1 fileScale=0.01 colliders=False animationType=Generic
+ASSET Assets/map_ver1/fbx\SM_PowerSource_P6.fbx scale=1 fileScale=0.01 colliders=False animationType=Generic
+ASSET Assets/map_ver1/fbx\SM_Reservoir_P4.fbx scale=1 fileScale=0.01 colliders=False animationType=Generic
+ASSET Assets/map_ver1/fbx\SM_RideLeaf.fbx scale=1 fileScale=0.01 colliders=False animationType=Generic
+ASSET Assets/map_ver1/fbx\SM_RotatingBridge.fbx scale=1 fileScale=0.01 colliders=False animationType=Generic
+ASSET Assets/map_ver1/fbx\SM_SideChannel.fbx scale=1 fileScale=0.01 colliders=False animationType=Generic
+ASSET Assets/map_ver1/fbx\SM_Slate.fbx scale=1 fileScale=0.01 colliders=False animationType=Generic
+ASSET Assets/map_ver1/fbx\SM_SluiceTower_P6.fbx scale=1 fileScale=0.01 colliders=False animationType=Generic
+ASSET Assets/map_ver1/fbx\SM_ValleyWater.fbx scale=1 fileScale=0.01 colliders=False animationType=Generic
+  CLIP Take 001 fps=24 length=4.958333 keys=3 loop=False
+    Terrain/SM_ValleyWater Transform m_LocalPosition.x
+    Terrain/SM_ValleyWater Transform m_LocalPosition.y
+    Terrain/SM_ValleyWater Transform m_LocalPosition.z
+ASSET Assets/map_ver1/fbx\SM_Vine.fbx scale=1 fileScale=0.01 colliders=False animationType=Generic
+  CLIP Take 001 fps=24 length=4.958333 keys=18 loop=False
+    P1_FlowerVine/SM_Vine/Vine_Rope Transform m_LocalScale.x
+    P1_FlowerVine/SM_Vine/Vine_Rope Transform m_LocalScale.y
+    P1_FlowerVine/SM_Vine/Vine_Rope Transform m_LocalScale.z
+    P1_FlowerVine/SM_Vine/Vine_Rope/Vine_Handle Transform m_LocalScale.x
+    P1_FlowerVine/SM_Vine/Vine_Rope/Vine_Handle Transform m_LocalScale.y
+    P1_FlowerVine/SM_Vine/Vine_Rope/Vine_Handle Transform m_LocalScale.z
+    P1_FlowerVine/SM_Vine/Vine_Rope/Vine_Leaf_01 Transform m_LocalScale.x
+    P1_FlowerVine/SM_Vine/Vine_Rope/Vine_Leaf_01 Transform m_LocalScale.y
+    P1_FlowerVine/SM_Vine/Vine_Rope/Vine_Leaf_01 Transform m_LocalScale.z
+    P1_FlowerVine/SM_Vine/Vine_Rope/Vine_Leaf_02 Transform m_LocalScale.x
+    P1_FlowerVine/SM_Vine/Vine_Rope/Vine_Leaf_02 Transform m_LocalScale.y
+    P1_FlowerVine/SM_Vine/Vine_Rope/Vine_Leaf_02 Transform m_LocalScale.z
+    P1_FlowerVine/SM_Vine/Vine_Rope/Vine_Leaf_03 Transform m_LocalScale.x
+    P1_FlowerVine/SM_Vine/Vine_Rope/Vine_Leaf_03 Transform m_LocalScale.y
+    P1_FlowerVine/SM_Vine/Vine_Rope/Vine_Leaf_03 Transform m_LocalScale.z
+    P1_FlowerVine/SM_Vine/Vine_Rope/Vine_Leaf_04 Transform m_LocalScale.x
+    P1_FlowerVine/SM_Vine/Vine_Rope/Vine_Leaf_04 Transform m_LocalScale.y
+    P1_FlowerVine/SM_Vine/Vine_Rope/Vine_Leaf_04 Transform m_LocalScale.z
+ASSET Assets/map_ver1/fbx\SM_VineRoot_P5.fbx scale=1 fileScale=0.01 colliders=False animationType=Generic
+ASSET Assets/map_ver1/fbx\SM_VineTree.fbx scale=1 fileScale=0.01 colliders=False animationType=Generic
+ASSET Assets/map_ver1/fbx\SM_VineWire_P5.fbx scale=1 fileScale=0.01 colliders=False animationType=Generic
+  CLIP Take 001 fps=24 length=4.958333 keys=33 loop=False
+    P5_DoorPower/SM_VineWire_P5/SM_VineWire_P5_Stem Transform m_LocalScale.x
+    P5_DoorPower/SM_VineWire_P5/SM_VineWire_P5_Stem Transform m_LocalScale.y
+    P5_DoorPower/SM_VineWire_P5/SM_VineWire_P5_Stem Transform m_LocalScale.z
+    P5_DoorPower/SM_VineWire_P5/SM_VineWire_P5_Stem/SM_VineWire_P5_Leaf_01 Transform m_LocalScale.x
+    P5_DoorPower/SM_VineWire_P5/SM_VineWire_P5_Stem/SM_VineWire_P5_Leaf_01 Transform m_LocalScale.y
+    P5_DoorPower/SM_VineWire_P5/SM_VineWire_P5_Stem/SM_VineWire_P5_Leaf_01 Transform m_LocalScale.z
+    P5_DoorPower/SM_VineWire_P5/SM_VineWire_P5_Stem/SM_VineWire_P5_Leaf_02 Transform m_LocalScale.x
+    P5_DoorPower/SM_VineWire_P5/SM_VineWire_P5_Stem/SM_VineWire_P5_Leaf_02 Transform m_LocalScale.y
+    P5_DoorPower/SM_VineWire_P5/SM_VineWire_P5_Stem/SM_VineWire_P5_Leaf_02 Transform m_LocalScale.z
+    P5_DoorPower/SM_VineWire_P5/SM_VineWire_P5_Stem/SM_VineWire_P5_Leaf_03 Transform m_LocalScale.x
+    P5_DoorPower/SM_VineWire_P5/SM_VineWire_P5_Stem/SM_VineWire_P5_Leaf_03 Transform m_LocalScale.y
+    P5_DoorPower/SM_VineWire_P5/SM_VineWire_P5_Stem/SM_VineWire_P5_Leaf_03 Transform m_LocalScale.z
+    P5_DoorPower/SM_VineWire_P5/SM_VineWire_P5_Stem/SM_VineWire_P5_Leaf_04 Transform m_LocalScale.x
+    P5_DoorPower/SM_VineWire_P5/SM_VineWire_P5_Stem/SM_VineWire_P5_Leaf_04 Transform m_LocalScale.y
+    P5_DoorPower/SM_VineWire_P5/SM_VineWire_P5_Stem/SM_VineWire_P5_Leaf_04 Transform m_LocalScale.z
+    P5_DoorPower/SM_VineWire_P5/SM_VineWire_P5_Stem/SM_VineWire_P5_Leaf_05 Transform m_LocalScale.x
+    P5_DoorPower/SM_VineWire_P5/SM_VineWire_P5_Stem/SM_VineWire_P5_Leaf_05 Transform m_LocalScale.y
+    P5_DoorPower/SM_VineWire_P5/SM_VineWire_P5_Stem/SM_VineWire_P5_Leaf_05 Transform m_LocalScale.z
+    P5_DoorPower/SM_VineWire_P5/SM_VineWire_P5_Stem/SM_VineWire_P5_Leaf_06 Transform m_LocalScale.x
+    P5_DoorPower/SM_VineWire_P5/SM_VineWire_P5_Stem/SM_VineWire_P5_Leaf_06 Transform m_LocalScale.y
+    P5_DoorPower/SM_VineWire_P5/SM_VineWire_P5_Stem/SM_VineWire_P5_Leaf_06 Transform m_LocalScale.z
+    P5_DoorPower/SM_VineWire_P5/SM_VineWire_P5_Stem/SM_VineWire_P5_Leaf_07 Transform m_LocalScale.x
+    P5_DoorPower/SM_VineWire_P5/SM_VineWire_P5_Stem/SM_VineWire_P5_Leaf_07 Transform m_LocalScale.y
+    P5_DoorPower/SM_VineWire_P5/SM_VineWire_P5_Stem/SM_VineWire_P5_Leaf_07 Transform m_LocalScale.z
+    P5_DoorPower/SM_VineWire_P5/SM_VineWire_P5_Stem/SM_VineWire_P5_Leaf_08 Transform m_LocalScale.x
+    P5_DoorPower/SM_VineWire_P5/SM_VineWire_P5_Stem/SM_VineWire_P5_Leaf_08 Transform m_LocalScale.y
+    P5_DoorPower/SM_VineWire_P5/SM_VineWire_P5_Stem/SM_VineWire_P5_Leaf_08 Transform m_LocalScale.z
+    P5_DoorPower/SM_VineWire_P5/SM_VineWire_P5_Stem/SM_VineWire_P5_Leaf_09 Transform m_LocalScale.x
+    P5_DoorPower/SM_VineWire_P5/SM_VineWire_P5_Stem/SM_VineWire_P5_Leaf_09 Transform m_LocalScale.y
+    P5_DoorPower/SM_VineWire_P5/SM_VineWire_P5_Stem/SM_VineWire_P5_Leaf_09 Transform m_LocalScale.z
+    P5_DoorPower/SM_VineWire_P5/SM_VineWire_P5_Stem/SM_VineWire_P5_Leaf_10 Transform m_LocalScale.x
+    P5_DoorPower/SM_VineWire_P5/SM_VineWire_P5_Stem/SM_VineWire_P5_Leaf_10 Transform m_LocalScale.y
+    P5_DoorPower/SM_VineWire_P5/SM_VineWire_P5_Stem/SM_VineWire_P5_Leaf_10 Transform m_LocalScale.z
+ASSET Assets/map_ver1/fbx\SM_WaterGate_P4.fbx scale=1 fileScale=0.01 colliders=False animationType=Generic
+  CLIP Take 001 fps=24 length=4.958333 keys=7 loop=False
+    P4_IceSlide/SM_WaterGate_P4/SM_WaterGate_P4_Crank Transform m_LocalRotation.x
+    P4_IceSlide/SM_WaterGate_P4/SM_WaterGate_P4_Crank Transform m_LocalRotation.y
+    P4_IceSlide/SM_WaterGate_P4/SM_WaterGate_P4_Crank Transform m_LocalRotation.z
+    P4_IceSlide/SM_WaterGate_P4/SM_WaterGate_P4_Crank Transform m_LocalRotation.w
+    P4_IceSlide/SM_WaterGate_P4/SM_WaterGate_P4_Gate Transform m_LocalPosition.x
+    P4_IceSlide/SM_WaterGate_P4/SM_WaterGate_P4_Gate Transform m_LocalPosition.y
+    P4_IceSlide/SM_WaterGate_P4/SM_WaterGate_P4_Gate Transform m_LocalPosition.z
+ASSET Assets/map_ver1/fbx\SM_WaterGate_P6.fbx scale=1 fileScale=0.01 colliders=False animationType=Generic
+  CLIP Take 001 fps=24 length=4.958333 keys=7 loop=False
+    P6_Waterwheel/SM_WaterGate_P6/SM_WaterGate_P6_Crank Transform m_LocalRotation.x
+    P6_Waterwheel/SM_WaterGate_P6/SM_WaterGate_P6_Crank Transform m_LocalRotation.y
+    P6_Waterwheel/SM_WaterGate_P6/SM_WaterGate_P6_Crank Transform m_LocalRotation.z
+    P6_Waterwheel/SM_WaterGate_P6/SM_WaterGate_P6_Crank Transform m_LocalRotation.w
+    P6_Waterwheel/SM_WaterGate_P6/SM_WaterGate_P6_Gate Transform m_LocalPosition.x
+    P6_Waterwheel/SM_WaterGate_P6/SM_WaterGate_P6_Gate Transform m_LocalPosition.y
+    P6_Waterwheel/SM_WaterGate_P6/SM_WaterGate_P6_Gate Transform m_LocalPosition.z
+ASSET Assets/map_ver1/fbx\SM_Waterwheel.fbx scale=1 fileScale=0.01 colliders=False animationType=Generic

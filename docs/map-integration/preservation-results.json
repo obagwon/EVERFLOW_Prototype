@@ -1,0 +1,12 @@
+{
+  "kind": "Static file/hash and scene serialization checks; not Unity runtime verification",
+  "individual_fbx_count": 37,
+  "original_model_instance_count": 37,
+  "baseline_file_count": 83,
+  "changed_baseline_files": [
+    "Assets/Scenes/Everflow_Map.unity"
+  ],
+  "unexpected_preserved_asset_changes": [],
+  "original_model_transform_override_errors": [],
+  "pass": true
+}

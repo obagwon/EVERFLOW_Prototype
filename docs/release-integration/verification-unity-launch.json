@@ -1,0 +1,19 @@
+{
+  "command": [
+    "C:/Program Files/Unity/Hub/Editor/6000.3.21f1/Editor/Unity.exe",
+    "-batchmode",
+    "-nographics",
+    "-quit",
+    "-projectPath",
+    "C:\\Users\\vzd12\\EVERFLOW_Prototype",
+    "-executeMethod",
+    "EverflowMVP.Editor.EFReleaseIntegrationVerification.Run",
+    "-logFile",
+    "C:\\Users\\vzd12\\EVERFLOW_Prototype\\docs\\release-integration\\verification-unity.log"
+  ],
+  "pid": 19960,
+  "timeout_seconds": 90,
+  "timed_out": true,
+  "exit_code": 1,
+  "elapsed_seconds": 90.08
+}

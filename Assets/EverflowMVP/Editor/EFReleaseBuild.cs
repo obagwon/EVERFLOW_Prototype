@@ -1,6 +1,5 @@
 using System;
 using System.IO;
-using System.Linq;
 using UnityEditor;
 using UnityEditor.Build;
 using UnityEditor.Build.Profile;
@@ -141,10 +140,15 @@ namespace EverflowMVP.Editor
         public int callbackOrder => -1000;
         public void OnPreprocessBuild(BuildReport report)
         {
-            var scenes = EditorBuildSettings.scenes.Where(s => s.enabled).Select(s => s.path).ToArray();
-            if (scenes.Length < 2 || scenes[0] != EFReleaseSetup.TitleScene || scenes[1] != EFTitleScreen.GameplayScene ||
-                !File.Exists(EFReleaseSetup.TitleScene) || !File.Exists(EFTitleScreen.GameplayScene))
-                throw new BuildFailedException("Run Tools > EVERFLOW > Release > 1. Set Up Title and Windows Settings. Title and original gameplay must be the first two enabled scenes.");
+            try
+            {
+                EFReleaseSetup.ValidateBuildScenes(EditorBuildSettings.scenes);
+                EFReleaseSetup.ValidateScenes();
+            }
+            catch (InvalidOperationException exception)
+            {
+                throw new BuildFailedException(exception.Message);
+            }
         }
     }
 }

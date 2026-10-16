@@ -1,0 +1,26 @@
+ M Assets/EverflowMVP/Editor/EFReleaseSetup.cs
+ M Assets/EverflowMVP/Runtime/EFTitleScreen.cs
+ M Assets/EverflowMVP/Scenes/Everflow_Title.unity
+ M Packages/manifest.json
+ M Packages/packages-lock.json
+ M ProjectSettings/EditorBuildSettings.asset
+ M ProjectSettings/ProjectSettings.asset
+?? Assets/EverflowGraybox.meta
+?? Assets/EverflowGraybox/
+?? Assets/EverflowMap.meta
+?? Assets/EverflowMap/
+?? Assets/Resources.meta
+?? Assets/Scenes/Everflow_Map.unity
+?? Assets/Scenes/Everflow_Map.unity.meta
+?? Assets/Scenes/Everflow_World_Graybox.unity
+?? Assets/Scenes/Everflow_World_Graybox.unity.meta
+?? Assets/icon.meta
+?? Assets/icon/
+?? Assets/logo/EVERFLOW_main.png
+?? Assets/logo/EVERFLOW_main.png.meta
+?? Assets/logo/EVERFLOW_start_button.png
+?? Assets/logo/EVERFLOW_start_button.png.meta
+?? Assets/map_ver1.meta
+?? Assets/map_ver1/
+?? docs/
+?? tools/

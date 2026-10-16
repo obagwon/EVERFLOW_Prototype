@@ -1,0 +1,45 @@
+PASS: actual saved settings (Title/Map/MVP enabled) accepted
+PASS: source entries and order preserved in memory
+PASS: duplicate title/map coalesced to enabled first two
+PASS: utility order retained disabled
+PASS: constructed release list accepted
+PASS: repeat list construction 1
+PASS: repeat list construction 2
+PASS: repeat list construction 3
+PASS: repeat list construction 4
+PASS: repeat list construction 5
+PASS: repeat list construction 6
+PASS: repeat list construction 7
+PASS: repeat list construction 8
+PASS: repeat list construction 9
+PASS: repeat list construction 10
+PASS: empty input gets Title/Map
+PASS: empty build list rejected
+PASS: missing map rejected
+PASS: reversed scenes rejected
+PASS: legacy substitution rejected
+PASS: disabled title rejected
+PASS: duplicate enabled title rejected
+PASS: duplicate enabled map rejected
+PASS: disabled prefix and enabled utility accepted
+PASS: patch increment
+PASS: no patch rollover
+PASS: candidate embedded during Succeeded
+PASS: result preserved Succeeded
+PASS: final version Succeeded
+PASS: single success commit Succeeded
+PASS: candidate embedded during Failed
+PASS: result preserved Failed
+PASS: final version Failed
+PASS: single success commit Failed
+PASS: candidate embedded during Cancelled
+PASS: result preserved Cancelled
+PASS: final version Cancelled
+PASS: single success commit Cancelled
+PASS: candidate embedded during Unknown
+PASS: result preserved Unknown
+PASS: final version Unknown
+PASS: single success commit Unknown
+PASS: thrown build rollback
+PASS: thrown commit rollback
+TOTAL PASS: 44

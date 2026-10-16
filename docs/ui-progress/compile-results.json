@@ -1,0 +1,23 @@
+{
+  "kind": "Roslyn compilation against installed Unity 6000.3.21f1/project DLLs; not Unity import or a player build",
+  "results": [
+    {
+      "mode": "runtime-editor",
+      "scripts": 33,
+      "exit_code": 0,
+      "diagnostics": ""
+    },
+    {
+      "mode": "editor",
+      "scripts": 23,
+      "exit_code": 0,
+      "diagnostics": ""
+    },
+    {
+      "mode": "runtime-player",
+      "scripts": 33,
+      "exit_code": 0,
+      "diagnostics": ""
+    }
+  ]
+}

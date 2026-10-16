@@ -1,0 +1,52 @@
+Saved scene collider audit, before runtime initialization.
+P1 SM_FlowerJumpPad Flower interactive=True motion=SM_FlowerJumpPad
+  FlowerJumpPad_Dome: enabled=False, active=True, trigger=False, layer=0, center=(27.31, 0.56, 29.25), size=(0.00, 0.00, 0.00), receiver=SM_FlowerJumpPad
+  Ability target: enabled=True, active=True, trigger=True, layer=0, center=(27.45, 0.69, 28.86), size=(2.50, 2.50, 2.50), receiver=SM_FlowerJumpPad
+P1 SM_Vine Vine interactive=True motion=SM_Vine
+  Ability target: enabled=True, active=True, trigger=True, layer=0, center=(40.45, 6.50, 19.86), size=(2.00, 5.00, 2.00), receiver=SM_Vine
+P2 SM_Slate Slate interactive=True motion=SM_Slate
+  SM_Slate: enabled=True, active=True, trigger=False, layer=0, center=(53.46, 7.20, -34.40), size=(3.28, 0.59, 9.17), receiver=SM_Slate
+P2 SM_FallingDebris_03 Debris interactive=True motion=SM_FallingDebris_03
+  SM_FallingDebris_03: enabled=False, active=True, trigger=False, layer=0, center=(53.45, 6.35, -2.14), size=(0.00, 0.00, 0.00), receiver=SM_FallingDebris_03
+  Ability target: enabled=True, active=True, trigger=True, layer=0, center=(53.45, 6.35, -2.14), size=(4.00, 1.00, 4.00), receiver=SM_FallingDebris_03
+P2 SM_FallingDebris_01 Debris interactive=True motion=SM_FallingDebris_01
+  SM_FallingDebris_01: enabled=False, active=True, trigger=False, layer=0, center=(53.45, 3.95, 7.86), size=(0.00, 0.00, 0.00), receiver=SM_FallingDebris_01
+  Ability target: enabled=True, active=True, trigger=True, layer=0, center=(53.45, 3.95, 7.86), size=(4.00, 1.00, 4.00), receiver=SM_FallingDebris_01
+P2 SM_FallingDebris_02 Debris interactive=True motion=SM_FallingDebris_02
+  SM_FallingDebris_02: enabled=False, active=True, trigger=False, layer=0, center=(53.45, 5.15, 2.86), size=(0.00, 0.00, 0.00), receiver=SM_FallingDebris_02
+  Ability target: enabled=True, active=True, trigger=True, layer=0, center=(53.45, 5.15, 2.86), size=(4.00, 1.00, 4.00), receiver=SM_FallingDebris_02
+P3 SM_RotatingBridge Bridge interactive=True motion=SM_RotatingBridge
+  SM_RotatingBridge: enabled=True, active=True, trigger=False, layer=0, center=(38.14, 6.93, -45.15), size=(16.75, 1.15, 3.20), receiver=SM_RotatingBridge
+P3 SM_PowerSource_P3 Source interactive=True motion=SM_PowerSource_P3
+  SM_PowerSource_P3_Base: enabled=True, active=True, trigger=False, layer=0, center=(57.45, 7.84, -49.64), size=(1.50, 0.72, 1.30), receiver=SM_PowerSource_P3
+  SM_PowerSource_P3_Crystal: enabled=True, active=True, trigger=False, layer=0, center=(57.45, 8.83, -49.64), size=(1.00, 1.35, 1.00), receiver=SM_PowerSource_P3
+P4 SM_PowerSource_P4 Source interactive=True motion=SM_PowerSource_P4
+  SM_PowerSource_P4_Base: enabled=True, active=True, trigger=False, layer=0, center=(-10.55, 24.51, -54.14), size=(1.50, 0.72, 1.30), receiver=SM_PowerSource_P4
+  SM_PowerSource_P4_Crystal: enabled=True, active=True, trigger=False, layer=0, center=(-10.55, 25.50, -54.14), size=(1.00, 1.35, 1.00), receiver=SM_PowerSource_P4
+P4 SM_WaterGate_P4 Gate interactive=False motion=SM_WaterGate_P4
+  SM_WaterGate_P4_Crank: enabled=True, active=True, trigger=False, layer=0, center=(-16.05, 26.77, -46.74), size=(0.76, 0.54, 0.76), receiver=SM_WaterGate_P4
+  SM_WaterGate_P4_Frame: enabled=True, active=True, trigger=False, layer=0, center=(-16.05, 25.48, -46.74), size=(9.50, 2.96, 0.60), receiver=SM_WaterGate_P4
+  SM_WaterGate_P4_Gate: enabled=True, active=True, trigger=False, layer=0, center=(-16.05, 24.65, -46.74), size=(8.60, 1.30, 0.16), receiver=SM_WaterGate_P4
+P4 SM_IceSlide Water interactive=True motion=SM_IceSlide
+  IceSlide_Surface: enabled=True, active=True, trigger=False, layer=0, center=(-14.55, 17.85, -28.11), size=(5.00, 12.36, 38.04), receiver=SM_IceSlide
+  SM_IceSlide_Channel: enabled=True, active=True, trigger=False, layer=0, center=(-14.55, 17.82, -28.12), size=(6.00, 13.12, 38.29), receiver=SM_IceSlide
+  SM_IceSlide_Pillar_01: enabled=True, active=True, trigger=False, layer=0, center=(-14.55, 8.17, -35.73), size=(1.56, 23.45, 1.80), receiver=SM_IceSlide
+  SM_IceSlide_Pillar_02: enabled=True, active=True, trigger=False, layer=0, center=(-14.55, 6.02, -22.41), size=(1.56, 19.10, 1.80), receiver=SM_IceSlide
+P5 SM_VineRoot_P5 Root interactive=True motion=SM_VineRoot_P5
+  SM_VineRoot_P5: enabled=True, active=True, trigger=False, layer=0, center=(-9.89, 10.25, 5.42), size=(1.13, 0.95, 1.06), receiver=SM_VineRoot_P5
+  Ability target: enabled=True, active=True, trigger=True, layer=0, center=(-9.85, 10.27, 5.46), size=(1.70, 1.50, 1.70), receiver=SM_VineRoot_P5
+P5 SM_Door_P5 Door interactive=False motion=SM_Door_P5
+  SM_Door_P5_Frame: enabled=True, active=True, trigger=False, layer=0, center=(-9.15, 13.22, 1.86), size=(1.30, 6.40, 7.40), receiver=SM_Door_P5
+  SM_Door_P5_Leaf_L: enabled=True, active=True, trigger=False, layer=0, center=(-9.15, 12.52, 3.13), size=(0.40, 5.00, 2.46), receiver=SM_Door_P5
+  SM_Door_P5_Leaf_R: enabled=True, active=True, trigger=False, layer=0, center=(-9.15, 12.52, 0.59), size=(0.40, 5.00, 2.46), receiver=SM_Door_P5
+P6 P6_ChannelRepair Repair interactive=True motion=P6_ChannelRepair
+  Ability target: enabled=True, active=True, trigger=True, layer=0, center=(9.45, 16.10, -22.14), size=(3.00, 3.00, 9.00), receiver=P6_ChannelRepair
+P6 SM_PowerSource_P6 Source interactive=True motion=SM_PowerSource_P6
+  SM_PowerSource_P6_Base: enabled=True, active=True, trigger=False, layer=0, center=(12.13, 15.45, -26.59), size=(1.50, 0.72, 1.30), receiver=SM_PowerSource_P6
+  SM_PowerSource_P6_Crystal: enabled=True, active=True, trigger=False, layer=0, center=(12.13, 16.44, -26.59), size=(1.00, 1.35, 1.00), receiver=SM_PowerSource_P6
+P6 SM_Channel_Swing_P6 Slate interactive=True motion=SM_Channel_Swing_P6
+  SM_Channel_Swing_P6: enabled=True, active=True, trigger=False, layer=0, center=(9.45, 18.55, -11.34), size=(1.40, 0.90, 5.80), receiver=SM_Channel_Swing_P6
+P6 SM_WaterGate_P6 Gate interactive=False motion=SM_WaterGate_P6
+  SM_WaterGate_P6_Crank: enabled=True, active=True, trigger=False, layer=0, center=(9.45, 21.17, -26.34), size=(0.76, 0.54, 0.76), receiver=SM_WaterGate_P6
+  SM_WaterGate_P6_Frame: enabled=True, active=True, trigger=False, layer=0, center=(9.45, 19.88, -26.34), size=(1.80, 2.96, 0.60), receiver=SM_WaterGate_P6
+  SM_WaterGate_P6_Gate: enabled=True, active=True, trigger=False, layer=0, center=(9.45, 19.05, -26.34), size=(0.90, 1.30, 0.16), receiver=SM_WaterGate_P6

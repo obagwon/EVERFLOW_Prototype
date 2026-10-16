@@ -1,0 +1,226 @@
+PASS Every original map object/component remains present
+PASS Only five marker component lists, HUD parent children, P5 arrival pose/size changed in original map objects
+PASS Every original prefab instance block, including FBX root transforms, remains byte-identical after newline normalization
+PASS title: every local serialized reference resolves (326 refs); missing=[]
+PASS title: parent/child ownership 735874439 -> 247730190
+PASS title: parent/child ownership 735874439 -> 9000000005
+PASS title: parent/child ownership 877238436 -> 1166014747
+PASS title: parent/child ownership 1325455071 -> 2067178196
+PASS title: parent/child ownership 1325455071 -> 9000000002
+PASS title: parent/child ownership 1325455071 -> 877238436
+PASS title: parent/child ownership 9000000002 -> 1544790733
+PASS title: parent/child ownership 9000000002 -> 735874439
+PASS title: no duplicate file IDs
+PASS map: every local serialized reference resolves (2908 refs); missing=[]
+PASS map: parent/child ownership 1361118013 -> 667932647
+PASS map: parent/child ownership 1361118013 -> 1497115279
+PASS map: parent/child ownership 1361118013 -> 337482449
+PASS map: parent/child ownership 1361118013 -> 535078459
+PASS map: parent/child ownership 1361118013 -> 2094029749
+PASS map: parent/child ownership 1361118013 -> 689737228
+PASS map: parent/child ownership 1361118013 -> 1763466708
+PASS map: parent/child ownership 1361118013 -> 2009678487
+PASS map: parent/child ownership 1361118013 -> 46391227
+PASS map: parent/child ownership 1361118013 -> 191877655
+PASS map: parent/child ownership 1361118013 -> 2052792845
+PASS map: parent/child ownership 1361118013 -> 886395293
+PASS map: parent/child ownership 1361118013 -> 1230967736
+PASS map: parent/child ownership 1361118013 -> 969005412
+PASS map: parent/child ownership 1361118013 -> 2067115162
+PASS map: parent/child ownership 1361118013 -> 1804782765
+PASS map: parent/child ownership 1361118013 -> 1454693200
+PASS map: parent/child ownership 1361118013 -> 228827790
+PASS map: parent/child ownership 1361118013 -> 1299062452
+PASS map: parent/child ownership 1361118013 -> 842673586
+PASS map: parent/child ownership 1361118013 -> 1251209542
+PASS map: parent/child ownership 1361118013 -> 1500718710
+PASS map: parent/child ownership 1361118013 -> 2082794304
+PASS map: parent/child ownership 1361118013 -> 1966539065
+PASS map: parent/child ownership 1361118013 -> 596406332
+PASS map: parent/child ownership 1361118013 -> 1617875442
+PASS map: parent/child ownership 1361118013 -> 446071509
+PASS map: parent/child ownership 1361118013 -> 69884155
+PASS map: parent/child ownership 1361118013 -> 1568920652
+PASS map: parent/child ownership 1361118013 -> 1699998262
+PASS map: parent/child ownership 1361118013 -> 488661076
+PASS map: parent/child ownership 1361118013 -> 1858897381
+PASS map: parent/child ownership 1361118013 -> 9000000007
+PASS map: parent/child ownership 9000000007 -> 9000000012
+PASS map: parent/child ownership 9000000012 -> 9000000014
+PASS map: parent/child ownership 9000000012 -> 9000000018
+PASS map: parent/child ownership 9000000012 -> 9000000038
+PASS map: parent/child ownership 9000000012 -> 9000000043
+PASS map: parent/child ownership 9000000012 -> 9000000063
+PASS map: parent/child ownership 9000000012 -> 9000000068
+PASS map: parent/child ownership 9000000012 -> 9000000088
+PASS map: parent/child ownership 9000000018 -> 9000000020
+PASS map: parent/child ownership 9000000018 -> 9000000024
+PASS map: parent/child ownership 9000000018 -> 9000000029
+PASS map: parent/child ownership 9000000018 -> 9000000034
+PASS map: parent/child ownership 9000000043 -> 9000000045
+PASS map: parent/child ownership 9000000043 -> 9000000049
+PASS map: parent/child ownership 9000000043 -> 9000000054
+PASS map: parent/child ownership 9000000043 -> 9000000059
+PASS map: parent/child ownership 9000000068 -> 9000000070
+PASS map: parent/child ownership 9000000068 -> 9000000074
+PASS map: parent/child ownership 9000000068 -> 9000000079
+PASS map: parent/child ownership 9000000068 -> 9000000084
+PASS map: no duplicate file IDs
+PASS title: every MonoBehaviour script GUID resolves
+PASS map: every MonoBehaviour script GUID resolves
+PASS Assets\icon\bloom_icon.png: single sprite, alpha, no mipmaps or NPOT distortion
+PASS Assets\icon\bloom_icon.png: directly referenced by saved build scene
+PASS Assets\icon\freeze_icon.png: single sprite, alpha, no mipmaps or NPOT distortion
+PASS Assets\icon\freeze_icon.png: directly referenced by saved build scene
+PASS Assets\icon\pulse_icon.png: single sprite, alpha, no mipmaps or NPOT distortion
+PASS Assets\icon\pulse_icon.png: directly referenced by saved build scene
+PASS Assets\logo\EVERFLOW_main.png: single sprite, alpha, no mipmaps or NPOT distortion
+PASS Assets\logo\EVERFLOW_main.png: directly referenced by saved build scene
+PASS Assets\logo\EVERFLOW_start_button.png: single sprite, alpha, no mipmaps or NPOT distortion
+PASS Assets\logo\EVERFLOW_start_button.png: directly referenced by saved build scene
+PASS One FitInParent main image composition
+PASS Title background < main image/button composition < existing version label order
+PASS Old button text hidden; no repeated start text
+PASS Original actual button callback preserved, feedback targets artwork
+PASS Background/main/artwork do not consume button input
+PASS Button artwork centered inside hit rectangle
+PASS Exactly one saved gameplay HUD; none in title
+PASS Exactly five passage components
+PASS HUD graphic 9000000016 has no raycast target
+PASS HUD graphic 9000000022 has no raycast target
+PASS HUD graphic 9000000026 has no raycast target
+PASS HUD graphic 9000000031 has no raycast target
+PASS HUD graphic 9000000036 has no raycast target
+PASS HUD graphic 9000000040 has no raycast target
+PASS HUD graphic 9000000047 has no raycast target
+PASS HUD graphic 9000000051 has no raycast target
+PASS HUD graphic 9000000056 has no raycast target
+PASS HUD graphic 9000000061 has no raycast target
+PASS HUD graphic 9000000065 has no raycast target
+PASS HUD graphic 9000000072 has no raycast target
+PASS HUD graphic 9000000076 has no raycast target
+PASS HUD graphic 9000000081 has no raycast target
+PASS HUD graphic 9000000086 has no raycast target
+PASS HUD graphic 9000000090 has no raycast target
+PASS HUD group cannot block clicks
+PASS All exact Korean description strings serialized
+PASS P1: actual spawn/near-side approach is outside the passage volume
+PASS P1: authored/previously tested far-side landing lies inside passage volume
+PASS P1: nearby lower-level XZ position rejected by height
+PASS P2: actual spawn/near-side approach is outside the passage volume
+PASS P2: authored/previously tested far-side landing lies inside passage volume
+PASS P2: nearby lower-level XZ position rejected by height
+PASS P3: actual spawn/near-side approach is outside the passage volume
+PASS P3: authored/previously tested far-side landing lies inside passage volume
+PASS P3: nearby lower-level XZ position rejected by height
+PASS P4: actual spawn/near-side approach is outside the passage volume
+PASS P4: authored/previously tested far-side landing lies inside passage volume
+PASS P4: nearby lower-level XZ position rejected by height
+PASS P5: actual spawn/near-side approach is outside the passage volume
+PASS P5: authored/previously tested far-side landing lies inside passage volume
+PASS P5: nearby lower-level XZ position rejected by height
+PASS P1/P2: passage volumes do not overlap
+PASS P1/P3: passage volumes do not overlap
+PASS P1/P4: passage volumes do not overlap
+PASS P1/P5: passage volumes do not overlap
+PASS P2/P3: passage volumes do not overlap
+PASS P2/P4: passage volumes do not overlap
+PASS P2/P5: passage volumes do not overlap
+PASS P3/P4: passage volumes do not overlap
+PASS P3/P5: passage volumes do not overlap
+PASS P4/P5: passage volumes do not overlap
+PASS Wider P5 volume preserves original near-side boundary at terrain x=-15.5; door is at x=-18.6
+PASS 1920x1080: title image/button rect 1544790733 within screen
+PASS 1920x1080: title image/button rect 735874439 within screen
+PASS 1920x1080: title image/button rect 9000000005 within screen
+PASS 1920x1080: HUD rect 9000000012 within screen
+PASS 1920x1080: HUD rect 9000000014 within screen
+PASS 1920x1080: HUD rect 9000000018 within screen
+PASS 1920x1080: HUD rect 9000000020 within screen
+PASS 1920x1080: HUD rect 9000000024 within screen
+PASS 1920x1080: HUD rect 9000000029 within screen
+PASS 1920x1080: HUD rect 9000000034 within screen
+PASS 1920x1080: HUD rect 9000000038 within screen
+PASS 1920x1080: HUD rect 9000000043 within screen
+PASS 1920x1080: HUD rect 9000000045 within screen
+PASS 1920x1080: HUD rect 9000000049 within screen
+PASS 1920x1080: HUD rect 9000000054 within screen
+PASS 1920x1080: HUD rect 9000000059 within screen
+PASS 1920x1080: HUD rect 9000000063 within screen
+PASS 1920x1080: HUD rect 9000000068 within screen
+PASS 1920x1080: HUD rect 9000000070 within screen
+PASS 1920x1080: HUD rect 9000000074 within screen
+PASS 1920x1080: HUD rect 9000000079 within screen
+PASS 1920x1080: HUD rect 9000000084 within screen
+PASS 1920x1080: HUD rect 9000000088 within screen
+PASS 1920x1200: title image/button rect 1544790733 within screen
+PASS 1920x1200: title image/button rect 735874439 within screen
+PASS 1920x1200: title image/button rect 9000000005 within screen
+PASS 1920x1200: HUD rect 9000000012 within screen
+PASS 1920x1200: HUD rect 9000000014 within screen
+PASS 1920x1200: HUD rect 9000000018 within screen
+PASS 1920x1200: HUD rect 9000000020 within screen
+PASS 1920x1200: HUD rect 9000000024 within screen
+PASS 1920x1200: HUD rect 9000000029 within screen
+PASS 1920x1200: HUD rect 9000000034 within screen
+PASS 1920x1200: HUD rect 9000000038 within screen
+PASS 1920x1200: HUD rect 9000000043 within screen
+PASS 1920x1200: HUD rect 9000000045 within screen
+PASS 1920x1200: HUD rect 9000000049 within screen
+PASS 1920x1200: HUD rect 9000000054 within screen
+PASS 1920x1200: HUD rect 9000000059 within screen
+PASS 1920x1200: HUD rect 9000000063 within screen
+PASS 1920x1200: HUD rect 9000000068 within screen
+PASS 1920x1200: HUD rect 9000000070 within screen
+PASS 1920x1200: HUD rect 9000000074 within screen
+PASS 1920x1200: HUD rect 9000000079 within screen
+PASS 1920x1200: HUD rect 9000000084 within screen
+PASS 1920x1200: HUD rect 9000000088 within screen
+PASS 1280x720: title image/button rect 1544790733 within screen
+PASS 1280x720: title image/button rect 735874439 within screen
+PASS 1280x720: title image/button rect 9000000005 within screen
+PASS 1280x720: HUD rect 9000000012 within screen
+PASS 1280x720: HUD rect 9000000014 within screen
+PASS 1280x720: HUD rect 9000000018 within screen
+PASS 1280x720: HUD rect 9000000020 within screen
+PASS 1280x720: HUD rect 9000000024 within screen
+PASS 1280x720: HUD rect 9000000029 within screen
+PASS 1280x720: HUD rect 9000000034 within screen
+PASS 1280x720: HUD rect 9000000038 within screen
+PASS 1280x720: HUD rect 9000000043 within screen
+PASS 1280x720: HUD rect 9000000045 within screen
+PASS 1280x720: HUD rect 9000000049 within screen
+PASS 1280x720: HUD rect 9000000054 within screen
+PASS 1280x720: HUD rect 9000000059 within screen
+PASS 1280x720: HUD rect 9000000063 within screen
+PASS 1280x720: HUD rect 9000000068 within screen
+PASS 1280x720: HUD rect 9000000070 within screen
+PASS 1280x720: HUD rect 9000000074 within screen
+PASS 1280x720: HUD rect 9000000079 within screen
+PASS 1280x720: HUD rect 9000000084 within screen
+PASS 1280x720: HUD rect 9000000088 within screen
+PASS 1440x900: title image/button rect 1544790733 within screen
+PASS 1440x900: title image/button rect 735874439 within screen
+PASS 1440x900: title image/button rect 9000000005 within screen
+PASS 1440x900: HUD rect 9000000012 within screen
+PASS 1440x900: HUD rect 9000000014 within screen
+PASS 1440x900: HUD rect 9000000018 within screen
+PASS 1440x900: HUD rect 9000000020 within screen
+PASS 1440x900: HUD rect 9000000024 within screen
+PASS 1440x900: HUD rect 9000000029 within screen
+PASS 1440x900: HUD rect 9000000034 within screen
+PASS 1440x900: HUD rect 9000000038 within screen
+PASS 1440x900: HUD rect 9000000043 within screen
+PASS 1440x900: HUD rect 9000000045 within screen
+PASS 1440x900: HUD rect 9000000049 within screen
+PASS 1440x900: HUD rect 9000000054 within screen
+PASS 1440x900: HUD rect 9000000059 within screen
+PASS 1440x900: HUD rect 9000000063 within screen
+PASS 1440x900: HUD rect 9000000068 within screen
+PASS 1440x900: HUD rect 9000000070 within screen
+PASS 1440x900: HUD rect 9000000074 within screen
+PASS 1440x900: HUD rect 9000000079 within screen
+PASS 1440x900: HUD rect 9000000084 within screen
+PASS 1440x900: HUD rect 9000000088 within screen
+PASS Windows release target has Malgun Gothic available for runtime Korean dynamic font
+PASS Actual gameplay scene is in saved build settings

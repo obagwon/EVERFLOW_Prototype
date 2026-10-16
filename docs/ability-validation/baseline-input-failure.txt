@@ -1,0 +1,22 @@
+Unity Editor Play Mode. Abilities use injected selection/click through EFMapPlayer.Update and the real center camera ray, unless explicitly marked API condition check. Traversal uses CharacterController. Camera is programmatically aimed; no human/OS mouse playthrough or duration measurement.
+PASS Initial stage and six incomplete areas
+PASS No animation autoplay
+PASS Unsolved arrival cannot complete P1
+PASS Ability 2 selects FREEZE through player input
+PASS Ability 3 selects PULSE through player input
+PASS Ability 1 selects BLOOM through player input
+PASS Flower support disabled before bloom completion
+PASS Center ray detects SM_FlowerJumpPad at player (18.00, 1.08, 34.00) point=(27.45, 0.59, 28.86) message=Flower — BLOOM, then Space on its open dome: growing. Wait for the animation to finish.
+PASS Flower bloom completes; support enables only afterward
+PASS Flower frame range uses imported 24 FPS
+  bloomed dome bounds Center: (27.45, 1.01, 28.86), Extents: (0.70, 0.26, 0.68); player starts (18.00, 1.08, 34.00)
+  jump landed (18.00, 2.28, 32.20)
+PASS Ordinary jump from initial ground reaches flower dome: (18.00, 2.28, 32.20)
+PASS P1 real flower launch lands on upper terrain: (23.47, 4.03, 23.24)
+FAIL Center ray detects SM_Vine at player (23.47, 4.03, 23.24) point=(40.45, 10.86, 19.86) message=Checkpoint saved. R retries this puzzle; previous restorations remain.
+ERROR System.Exception: Center ray detects SM_Vine at player (23.47, 4.03, 23.24) point=(40.45, 10.86, 19.86) message=Checkpoint saved. R retries this puzzle; previous restorations remain.
+  at EverflowMap.Editor.EFMapPlayProbe.Check (System.Boolean condition, System.String text) [0x0005d] in C:\Users\vzd12\EVERFLOW_Prototype\Assets\EverflowMap\Editor\EFMapPlayTests.cs:47 
+  at EverflowMap.Editor.EFMapPlayProbe+<ClickAt>d__15.MoveNext () [0x000c3] in C:\Users\vzd12\EVERFLOW_Prototype\Assets\EverflowMap\Editor\EFMapPlayTests.cs:112 
+  at EverflowMap.Editor.EFMapPlayProbe+<Start>d__18.MoveNext () [0x00063] in C:\Users\vzd12\EVERFLOW_Prototype\Assets\EverflowMap\Editor\EFMapPlayTests.cs:280 
+
+12 checks passed; overall FAIL. No human completion time measured.

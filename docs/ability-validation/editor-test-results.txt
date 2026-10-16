@@ -1,0 +1,33 @@
+Unity Edit Mode checks; separate from physical Play Mode tests.
+PASS Apply twice changes neither scene bytes nor object count
+PASS Camera Apply twice preserves object count, saved framing and scene bytes
+PASS Ability repair twice preserves scene/prefab bytes and explicit collider references
+PASS Exactly one free-look controller owns the gameplay camera
+PASS Saved camera limits and smoothing settings are valid
+PASS Exactly one map manager
+PASS Unique node registrations and manager references
+PASS 13 actual clips: imported 24 FPS, take starts at frame 1, loop off
+PASS No invented Restore_P3 asset or requirement
+PASS Stage membership SM_FlowerJumpPad
+PASS Stage membership SM_Vine
+PASS Stage membership SM_Slate
+PASS Stage membership SM_FallingDebris_03
+PASS Stage membership SM_FallingDebris_01
+PASS Stage membership SM_FallingDebris_02
+PASS Stage membership SM_RotatingBridge
+PASS Stage membership SM_PowerSource_P3
+PASS Stage membership SM_PowerSource_P4
+PASS Stage membership SM_WaterGate_P4
+PASS Stage membership SM_IceSlide
+PASS Stage membership SM_VineRoot_P5
+PASS Stage membership SM_Door_P5
+PASS Stage membership P6_ChannelRepair
+PASS Stage membership SM_PowerSource_P6
+PASS Stage membership SM_Channel_Swing_P6
+PASS Stage membership SM_WaterGate_P6
+PASS Original title UI/logo/event/input and new map references via release validator
+PASS Existing release version transaction tests; no version increment
+PASS Existing MVP ability/power state tests
+PASS Existing graybox scene reference validator (no save)
+PASS Original six-puzzle scene still loads with its original player and world
+OVERALL PASS. No standalone player build performed.

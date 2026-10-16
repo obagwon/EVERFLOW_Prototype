@@ -1,0 +1,12 @@
+NOT RUN: Unity import, Play Mode, screenshot and player build verification.
+Batch editor initialization was blocked by Unity Licensing Client IPC. The task-owned editor process was stopped after it stalled.
+Evidence from Logs/ui-progress-setup.log:
+[Licensing::IpcConnector] Connection to channel LicenseClient-vzd12 refused
+[Licensing::Module] Error: Timed-out after 60.01s, waiting for Licensing to initialize
+[Licensing::IpcConnector] Connection to channel LicenseClient-vzd12 refused
+[Licensing::Module] Timed-out after 60.03s, waiting for channel: "LicenseClient-vzd12"
+[Licensing::Module] Error: Licensing initialization failed after 74.84s
+[Licensing::Module] Error: The connection with the Unity Licensing Client has been lost. Attempting to reconnect.
+[Licensing::IpcConnector] Connection to channel LicenseClient-vzd12 refused
+
+Saved scenes were edited through their Unity text serialization; local references and source compilation were checked separately.

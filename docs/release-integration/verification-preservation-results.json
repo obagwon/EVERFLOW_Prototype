@@ -1,0 +1,28 @@
+{
+  "kind": "SHA256 comparison to pre-task working files",
+  "baseline_files": 388,
+  "allowed_changes": [
+    "Assets/EverflowMVP/Editor/EFReleaseBuild.cs",
+    "Assets/EverflowMVP/Editor/EFReleaseSetup.cs",
+    "Assets/EverflowMVP/Editor/EFReleaseTests.cs"
+  ],
+  "changed_files": [
+    {
+      "path": "Assets/EverflowMVP/Editor/EFReleaseBuild.cs",
+      "before": "33dd28bd4400af7e8f75dcd3ed42988fbc92259a322e887a90b97830656ffe7b",
+      "after": "d36642e93563960a48343c200567506c6efc48a2873bd00c61a6f5c0345f9e1b"
+    },
+    {
+      "path": "Assets/EverflowMVP/Editor/EFReleaseSetup.cs",
+      "before": "c645dea9d7ac783d4657560ad1e1a7d852471297dba472635249cc0bc21a5384",
+      "after": "bf497053c2f7183f68edcfc4459243c926c797af61525d38858f281ca92d7479"
+    },
+    {
+      "path": "Assets/EverflowMVP/Editor/EFReleaseTests.cs",
+      "before": "b84fffa3b886da4f66cf7b98fd9150dc53dc29f1e5cd6722a79f2dd68482cf54",
+      "after": "23bc6ae56ecb922858faf07970bc5a6d8587fb91b3e550c18956cec8491fbce9"
+    }
+  ],
+  "unexpected_changes": [],
+  "pass": true
+}

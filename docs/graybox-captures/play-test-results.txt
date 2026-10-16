@@ -1,0 +1,69 @@
+Unity Play Mode physical smoke tests
+Abilities are invoked by API; navigation uses the real EFPlayer and CharacterController.
+PASS Initial stage and completion array
+PASS Out-of-order entry rejected
+PASS Untouched P01 cannot complete
+PASS Walk connection to (-10.00, 0.00, -60.00); actual (-9.81, 1.05, -59.96)
+PASS Walk connection to (-50.00, 0.00, -60.00); actual (-49.81, 1.05, -60.00)
+PASS Walk connection to (-50.00, 0.00, -51.00); actual (-50.00, 1.05, -51.10)
+PASS P01 flower reaches upper ledge: (0.00, 4.05, 13.18)
+PASS P01 vine boards from upper ledge
+Vine release position=(0.00, 4.48, 23.57) handle=(-50.00, 4.98, -31.43) velocity=(0.00, 2.36, 4.04)
+Vine flight 0: (0.00, 5.15, 24.96) Air Swing forward; press Space to release.
+Vine flight 1: (0.00, 5.12, 26.30) Air Swing forward; press Space to release.
+Vine flight 2: (0.00, 4.42, 27.63) Air Swing forward; press Space to release.
+Vine flight 3: (0.00, 4.05, 28.76) Walk Swing forward; press Space to release.
+Vine flight 4: (0.00, 4.05, 29.01) Walk Swing forward; press Space to release.
+Vine flight 5: (0.00, 4.05, 29.01) Walk Swing forward; press Space to release.
+Vine flight 6: (0.00, 4.05, 29.01) Walk Swing forward; press Space to release.
+Vine flight 7: (0.00, 4.05, 29.01) Walk Swing forward; press Space to release.
+Vine flight 8: (0.00, 4.05, 29.01) Walk Swing forward; press Space to release.
+Vine flight 9: (0.00, 4.05, 29.01) Walk Swing forward; press Space to release.
+PASS P01 vine lands beyond the gap: (0.00, 4.05, 29.01)
+PASS P01 physical exit triggers completion
+PASS Walk connection to (-50.00, 3.00, -17.00); actual (-50.00, 4.05, -17.19)
+PASS Walk connection to (-50.00, 3.00, -4.00); actual (-50.00, 4.05, -4.19)
+PASS P01 to P02 advances on foot
+PASS R recovers an incorrectly frozen stone without clearing P01
+PASS Walk connection to (-50.00, 3.00, -4.00); actual (-50.00, 4.05, -4.20)
+PASS P02 normal jump onto frozen falling stone: (0.00, 2.30, 7.50)
+PASS P02 stone to middle ledge: (0.00, 3.05, 12.30)
+PASS P02 frozen slate supports crossing and completion
+PASS Walk connection to (-50.00, 5.00, 40.00); actual (-50.00, 6.05, 39.80)
+PASS Walk connection to (-36.00, 5.00, 40.00); actual (-36.10, 6.05, 40.00)
+PASS P02 to P03 advances on foot
+PASS P03 rotated powered bridge crosses physically
+PASS Walk connection to (13.00, 5.00, 40.00); actual (12.90, 6.05, 40.00)
+PASS P03 to P04 advances on foot
+PASS P04 leaf boards
+PASS P04 rotated slide lands and brakes: (0.00, 3.05, 38.64)
+PASS P04 landing completes
+PASS Walk connection to (66.00, 1.00, 40.00); actual (65.84, 2.05, 40.00)
+PASS Walk connection to (66.00, 1.00, 27.00); actual (66.00, 2.05, 27.10)
+PASS Walk connection to (55.00, 1.00, 27.00); actual (55.20, 2.05, 27.00)
+PASS Walk connection to (55.00, 1.00, 18.00); actual (55.00, 2.05, 18.10)
+PASS P04 to P05 advances on foot
+PASS P05 ungrown root blocks power
+PASS P05 rotated root and powered door cross physically: (0.00, 1.05, 33.90)
+PASS Walk connection to (55.00, 1.00, -24.00); actual (55.00, 2.05, -23.90)
+PASS Walk connection to (36.00, 1.00, -24.00); actual (36.10, 2.05, -24.00)
+PASS P05 to P06 advances on foot
+PASS P06 grown roots and powered aligned frozen rotor supply core
+PASS P06 both bridges physically support player: (0.00, 1.05, 38.40)
+PASS P06 final input and exit complete
+PASS Six completions activate inlet and outlet
+PASS Wheel rotates after six completions
+PASS Fall respawn clears ride and preserves checkpoint
+PASS Fall preserves completed areas
+PASS Walk connection to (2.20, 1.00, -24.00); actual (2.40, 2.05, -24.00)
+PASS Walk connection to (2.20, 1.00, -26.20); actual (2.21, 2.05, -26.09)
+PASS Walk connection to (-12.00, 1.00, -26.20); actual (-11.89, 2.05, -26.20)
+PASS Walk connection to (-12.00, 1.00, -24.00); actual (-11.99, 2.05, -24.10)
+PASS Walk connection to (-12.00, 3.00, -6.00); actual (-12.00, 4.05, -6.10)
+PASS Walk connection to (0.00, 3.00, -6.00); actual (-0.10, 4.05, -6.00)
+PASS Final walk enters the plaza ending area: (-0.05, 4.05, -2.90)
+PASS Safe plaza arrival starts ending overview
+PASS Full restart clears completion/ending and restores input
+PASS Full restart resets puzzle effects
+PASS Full restart clears environmental restoration
+Assertions passed: 55; result: PASS

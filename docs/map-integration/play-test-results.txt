@@ -1,0 +1,103 @@
+Unity Editor Play Mode. Abilities invoked via node API (except explicit cast checks). Traversal uses EFMapPlayer.Update + CharacterController. This is not a human playthrough or a duration measurement.
+PASS Initial stage and six incomplete areas
+PASS No animation autoplay
+PASS Unsolved arrival cannot complete P1
+PASS Ability 2 selects FREEZE through player input
+PASS Ability 3 selects PULSE through player input
+PASS Ability 1 selects BLOOM through player input
+PASS Flower support disabled before bloom completion
+PASS Flower ability range and line of sight from starting area
+PASS Flower bloom completes; support enables only afterward
+PASS Flower frame range uses imported 24 FPS
+  bloomed dome bounds Center: (27.45, 1.01, 28.86), Extents: (0.70, 0.26, 0.68); player starts (18.00, 1.08, 34.00)
+  jump landed (18.00, 2.28, 32.20)
+PASS Ordinary jump from initial ground reaches flower dome: (18.00, 2.28, 32.20)
+PASS P1 real flower launch lands on upper terrain: (23.47, 4.03, 23.24)
+PASS Vine growth exposes actual FBX handle
+PASS Walk to (26.00, 4.10, 23.00) actual (25.84, 2.54, 23.02)
+PASS P1 handle reachable from flower ledge
+PASS Vine camera frames the release landing: (0.40, 0.60, 16.63)
+PASS P1 vine release lands east: (46.41, 4.08, 21.77)
+PASS Walk to (44.00, 4.10, 21.00) actual (44.22, 4.13, 21.07)
+PASS P1 physical arrival advances only after flower and vine use
+PASS P1 restoration runs once and holds
+PASS Repeated restoration Begin does not replay or erase its result
+PASS Incorrect debris height remains unsolved
+PASS Automatic fall returns to checkpoint and preserves puzzle state
+PASS Debris retry resets current puzzle without resetting P1 restoration
+PASS Timing window exists for SM_FallingDebris_01
+PASS Correct freeze SM_FallingDebris_01
+PASS Timing window exists for SM_FallingDebris_02
+PASS Correct freeze SM_FallingDebris_02
+PASS Timing window exists for SM_FallingDebris_03
+PASS Correct freeze SM_FallingDebris_03
+PASS Three FREEZE states coexist; no replacement limit
+PASS Walk to (44.00, 4.10, 16.00) actual (44.00, 4.10, 16.20)
+  jump landed (44.00, 5.21, 13.40)
+PASS P2 first frozen debris physically supports player: (44.00, 5.21, 13.40)
+PASS Walk to (44.00, 5.30, 9.80) actual (44.00, 5.25, 10.00)
+  jump landed (44.00, 6.45, 7.20)
+PASS P2 second debris reached: (44.00, 6.45, 7.20)
+PASS Walk to (44.00, 6.50, 4.80) actual (44.00, 6.45, 5.00)
+  jump landed (44.00, 7.65, 2.20)
+PASS P2 third debris reached: (44.00, 7.65, 2.20)
+PASS Walk to (44.00, 7.70, -0.20) actual (44.00, 7.65, 0.00)
+  jump landed (44.00, 8.62, -3.30)
+PASS P2 debris exit reaches 7.5m terrain: (44.00, 8.62, -3.30)
+PASS Walk to (44.00, 8.60, -25.00) actual (44.00, 8.51, -24.80)
+PASS Timing window exists for SM_Slate
+PASS Correct freeze SM_Slate
+PASS Walk to (44.00, 8.60, -27.00) actual (44.00, 8.54, -26.80)
+PASS Walk to (44.00, 8.60, -40.00) actual (44.00, 8.43, -39.80)
+PASS P2 slate crossed and area advanced
+PASS P3 cannot freeze unpowered bridge
+PASS Timing window exists for SM_RotatingBridge
+PASS Correct freeze SM_RotatingBridge
+PASS Walk to (42.00, 8.60, -42.00) actual (42.12, 8.49, -41.87)
+PASS Walk to (33.00, 8.60, -42.00) actual (33.22, 8.55, -42.00)
+PASS Standing controller follows the rotating FBX bridge collider
+PASS Walk to (18.00, 8.60, -42.00) actual (18.22, 8.55, -42.00)
+PASS P3 bridge crossed to ridge
+PASS Walk to (10.00, 9.00, -44.00) actual (10.15, 11.80, -43.96)
+PASS Walk to (0.00, 14.00, -46.00) actual (0.15, 16.70, -45.97)
+PASS Walk to (-10.00, 22.00, -48.00) actual (-9.85, 21.80, -47.97)
+PASS Walk to (-19.40, 25.00, -47.00) actual (-19.20, 25.28, -47.02)
+PASS P3 to P4 ridge ascent with original move speed/jump
+PASS P4 cannot freeze dry slide
+PASS P4 open gate supplies both waterways
+PASS P4 only slide surface freezes; side channel stays water
+PASS P4 E input boards leaf at dock after ridge ascent
+PASS Leaf camera frames the downhill landing: (0.47, 0.61, 48.89)
+PASS P4 collision-swept leaf reaches P5 landing and restores controller: (-26.00, 11.07, 8.00)
+PASS P4 actual landing triggers restoration/valley water
+PASS P5 power cannot bypass ungrown wire
+PASS P5 power waits for animation completion
+PASS P5 grown wire relays root PULSE to animated door
+PASS Walk to (-20.50, 11.00, 5.00) actual (-20.64, 11.05, 5.08)
+PASS Walk to (-14.00, 13.60, 5.00) actual (-14.25, 13.47, 5.00)
+PASS P5 door crossing advances to final plateau
+PASS Walk to (-6.00, 16.20, 5.00) actual (-6.25, 16.12, 5.00)
+PASS P5 to P6 stairs climbed with 2m controller
+PASS Current-stage retry preserves all earlier restorations
+PASS Walk to (-5.00, 16.10, -19.00) actual (-5.01, 16.10, -18.78)
+PASS Walk to (5.00, 16.10, -19.00) actual (4.79, 16.05, -19.00)
+PASS P6 source reachable on foot with normal range and line of sight
+PASS P6 roots reachable with normal range and line of sight
+PASS P6 incomplete final alignment prevents waterwheel
+PASS Walk to (5.00, 16.10, -8.00) actual (5.00, 16.07, -8.20)
+PASS Timing window exists for SM_Channel_Swing_P6
+PASS Correct freeze SM_Channel_Swing_P6
+PASS P6 water propagates through repaired/aligned channel before wheel turns
+PASS Only SM_Waterwheel_Wheel rotates; fixed body remains still
+PASS P6 restoration completes and ending camera activates
+PASS All supplied restoration clips and valley water finish and retain their results
+PASS Ending camera releases cursor for ending UI
+PASS Continue exploring restores gameplay camera/input after ending
+PASS Ending camera does not reactivate after returning to play
+PASS Whole-world restart reloads all six initial states
+PASS Whole restart resets animated poses and one-shot flags
+PASS Return to original title UI
+PASS Actual title button event loads Everflow_Map
+PASS Title entry creates one player at P1
+
+94 checks passed; overall PASS. No human completion time measured.

@@ -1,0 +1,38 @@
+Unity Editor Play Mode: real player/camera Update and LateUpdate, CharacterController, physics sweeps and center-screen ability ray. Deterministic input injection; not a human mouse feel assessment. Collision fixtures are runtime-only and never saved to the map.
+PASS Opening camera owns the existing intro exclusively
+PASS Intro returns to player follow camera
+PASS Initial view is behind the player's starting heading
+PASS Gameplay requests a locked hidden cursor
+  actual editor cursor state: None, visible=False
+PASS Mouse horizontal delta immediately changes orbit without RMB
+PASS Mouse vertical delta immediately changes pitch
+PASS Looking around at rest does not rotate the character
+PASS Upward look clamps at minPitch
+PASS Downward look clamps at maxPitch without flipping
+PASS W follows camera yaw horizontally even at steep pitch: (2.00, 0.00, 0.00)
+PASS Character smoothly faces actual movement
+PASS Strafing/character rotation does not recenter the camera
+PASS C explicitly aligns the camera behind the character
+PASS Position follows smoothly rather than jumping to a moved target
+PASS Follow converges without residual drift
+PASS Stationary camera settles without measurable jitter
+PASS Player/explicit ability-orb roots do not obstruct camera
+PASS Wall retracts camera immediately: 2.518295
+PASS Retracted camera is outside the wall
+PASS Obstacle removal begins a smooth distance return
+PASS Camera returns to configured unobstructed distance
+PASS Jump is tracked vertically through the real controller
+PASS Jump tracking is damped, separate from mouse response
+PASS Center-screen selection and left-click ability path hit the intended target
+PASS Existing 10m ability range still rejects a far target
+PASS World obstruction prevents center-screen target selection/casting
+PASS Esc pauses simulation and releases cursor for menu UI
+PASS Pause blocks movement, mouse look and casts
+PASS Esc resume restores play and cursor capture
+PASS Cinematic has one camera owner and blocks gameplay input
+PASS Cinematic end restores follow/input without a long fly-in
+PASS Teleport immediately resets follow position and damping velocity
+PASS Teleport immediately moves actual camera to the new position
+PASS Real checkpoint respawn snaps player and camera back to the map
+
+34 checks passed; overall PASS. Human mouse feel, alt-tab and all frame rates remain unverified.

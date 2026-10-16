@@ -1,0 +1,158 @@
+Unity Editor Play Mode. Abilities use injected selection/click through EFMapPlayer.Update and the real center camera ray, unless explicitly marked API condition check. Traversal uses CharacterController. Camera is programmatically aimed; no human/OS mouse playthrough or duration measurement.
+PASS Actual title scene loads before traversal
+PASS Initial stage and six incomplete areas
+PASS No animation autoplay
+PASS Unsolved arrival cannot complete P1
+PASS REGRESSION: nested FBX collider resolves logical parent
+PASS REGRESSION: center ray and injected BLOOM click reach nested child
+PASS REGRESSION: wrong ability is blocked with reason
+PASS REGRESSION: inactive stage stays detected but cannot be used
+PASS REGRESSION: unrelated trigger does not swallow the aim ray
+PASS REGRESSION: own child collider is ignored by both camera ray and player line of sight
+PASS REGRESSION: explicit ability ignore root excludes an independent orb
+PASS REGRESSION: solid world occlusion prevents detection and reports collider
+PASS REGRESSION: visible target behind player-side obstacle cannot be cast on
+PASS REGRESSION: detected target outside player range is rejected
+PASS REGRESSION: explicit receiver survives separated model and functionality parents
+PASS REGRESSION: null receiver keeps solid non-target geometry blocking
+PASS REGRESSION: same-frame mouse orbit and click use rendered camera ray after LateUpdate (no next-frame catch-up)
+PASS Ability 2 selects FREEZE through player input
+PASS Ability 3 selects PULSE through player input
+PASS Ability 1 selects BLOOM through player input
+PASS REGRESSION: dormant visible vine tip is inside its ability collider
+PASS Flower support disabled before bloom completion
+PASS Center ray detects SM_FlowerJumpPad at player (18.00, 1.08, 34.00) point=(27.45, 0.59, 28.86) message=Flower — BLOOM, then Space on its open dome: growing. Wait for the animation to finish.
+PASS Click applies Bloom to SM_FlowerJumpPad: Applied: Flower — BLOOM, then Space on its open dome: growing. Wait for the animation to finish.
+PASS Flower bloom completes; support enables only afterward
+PASS Flower frame range uses imported 24 FPS
+  bloomed dome bounds Center: (27.45, 1.01, 28.86), Extents: (0.70, 0.26, 0.68); player starts (18.00, 1.08, 34.00)
+  jump landed (18.00, 2.28, 32.20)
+PASS Ordinary jump from initial ground reaches flower dome: (18.00, 2.28, 32.20)
+PASS P1 real flower launch lands on upper terrain: (23.47, 4.03, 23.24)
+PASS Center ray detects SM_Vine at player (23.47, 4.03, 23.24) point=(40.45, 10.85, 19.86) message=Vine — BLOOM, E at handle, Space to release: growing. Wait for the animation to finish.
+PASS Click applies Bloom to SM_Vine: Applied: Vine — BLOOM, E at handle, Space to release: growing. Wait for the animation to finish.
+PASS Vine growth exposes actual FBX handle
+PASS Walk to (26.00, 4.10, 23.00) actual (25.84, 2.54, 23.02)
+PASS P1 handle reachable from flower ledge
+PASS Vine camera frames the release landing: (0.48, 0.50, 16.78)
+PASS P1 vine release lands east: (46.41, 4.08, 21.77)
+PASS Walk to (44.00, 4.10, 21.00) actual (44.22, 4.13, 21.07)
+PASS P1 physical arrival advances only after flower and vine use
+PASS P1 restoration runs once and holds
+PASS Repeated restoration Begin does not replay or erase its result
+PASS Incorrect debris height remains unsolved
+PASS Automatic fall returns to checkpoint and preserves puzzle state
+PASS Debris retry resets current puzzle without resetting P1 restoration
+PASS Walk to (44.00, 4.10, 16.00) actual (44.00, 4.10, 16.20)
+PASS Center ray detects SM_FallingDebris_01 at player (44.00, 4.10, 16.20) point=(53.45, 7.25, 7.86) message=Debris 1 — FREEZE at blue height mark: wrong alignment. FREEZE again or R to retry.
+PASS Click applies Freeze to SM_FallingDebris_01: Applied: Debris 1 — FREEZE at blue height mark: wrong alignment. FREEZE again or R to retry.
+PASS FREEZE input holds a debris target
+PASS Center ray detects SM_FallingDebris_01 at player (44.00, 4.10, 16.20) point=(53.45, 7.22, 7.86) message=Debris 1 — FREEZE at blue height mark: released.
+PASS Click applies Freeze to SM_FallingDebris_01: Applied: Debris 1 — FREEZE at blue height mark: released.
+PASS Second FREEZE input releases target for a retry
+PASS Timing window exists for SM_FallingDebris_01
+PASS Center ray detects SM_FallingDebris_01 at player (44.00, 4.10, 16.20) point=(53.45, 4.15, 7.86) message=Debris 1 — FREEZE at blue height mark: frozen in position.
+PASS Click applies Freeze to SM_FallingDebris_01: Applied: Debris 1 — FREEZE at blue height mark: frozen in position.
+PASS Correct freeze SM_FallingDebris_01
+  jump landed (44.00, 5.21, 13.40)
+PASS P2 first frozen debris physically supports player: (44.00, 5.21, 13.40)
+PASS Walk to (44.00, 5.30, 9.80) actual (44.00, 5.25, 10.00)
+PASS Timing window exists for SM_FallingDebris_02
+PASS Center ray detects SM_FallingDebris_02 at player (44.00, 5.25, 10.00) point=(53.45, 5.35, 2.86) message=Debris 2 — FREEZE at blue height mark: frozen in position.
+PASS Click applies Freeze to SM_FallingDebris_02: Applied: Debris 2 — FREEZE at blue height mark: frozen in position.
+PASS Correct freeze SM_FallingDebris_02
+  jump landed (44.00, 6.45, 7.20)
+PASS P2 second debris reached: (44.00, 6.45, 7.20)
+PASS Walk to (44.00, 6.50, 4.80) actual (44.00, 6.45, 5.00)
+PASS Timing window exists for SM_FallingDebris_03
+PASS Center ray detects SM_FallingDebris_03 at player (44.00, 6.45, 5.00) point=(53.45, 6.55, -2.14) message=Debris 3 — FREEZE at blue height mark: frozen in position.
+PASS Click applies Freeze to SM_FallingDebris_03: Applied: Debris 3 — FREEZE at blue height mark: frozen in position.
+PASS Correct freeze SM_FallingDebris_03
+PASS Three FREEZE states coexist after sequential approach; no replacement limit
+  jump landed (44.00, 7.65, 2.20)
+PASS P2 third debris reached: (44.00, 7.65, 2.20)
+PASS Walk to (44.00, 7.70, -0.20) actual (44.00, 7.65, 0.00)
+  jump landed (44.00, 8.62, -3.30)
+PASS P2 debris exit reaches 7.5m terrain: (44.00, 8.62, -3.30)
+PASS Walk to (44.00, 8.60, -25.00) actual (44.00, 8.51, -24.80)
+PASS Timing window exists for SM_Slate
+PASS Center ray detects SM_Slate at player (44.00, 8.51, -24.80) point=(53.45, 7.45, -34.39) message=Slate — FREEZE level: frozen in position.
+PASS Click applies Freeze to SM_Slate: Applied: Slate — FREEZE level: frozen in position.
+PASS Correct freeze SM_Slate
+PASS Walk to (44.00, 8.60, -27.00) actual (44.00, 8.54, -26.80)
+PASS Walk to (44.00, 8.60, -40.00) actual (44.00, 8.43, -39.80)
+PASS P2 slate crossed and area advanced
+PASS P3 cannot freeze unpowered bridge (API condition check)
+PASS Center ray detects SM_PowerSource_P3 at player (44.00, 8.43, -39.80) point=(57.45, 8.83, -49.64) message=Power crystal — PULSE: power connected.
+PASS Click applies Pulse to SM_PowerSource_P3: Applied: Power crystal — PULSE: power connected.
+PASS Walk to (42.00, 8.60, -42.00) actual (42.12, 8.49, -41.87)
+PASS Timing window exists for SM_RotatingBridge
+PASS Center ray detects SM_RotatingBridge at player (42.12, 8.49, -41.87) point=(45.81, 7.45, -45.01) message=Bridge — PULSE source, FREEZE along the route: frozen in position.
+PASS Click applies Freeze to SM_RotatingBridge: Applied: Bridge — PULSE source, FREEZE along the route: frozen in position.
+PASS Correct freeze SM_RotatingBridge
+PASS Walk to (42.00, 8.60, -42.00) actual (42.12, 8.49, -41.87)
+PASS Walk to (33.00, 8.60, -42.00) actual (33.22, 8.55, -42.00)
+PASS Standing controller follows the rotating FBX bridge collider
+PASS Walk to (18.00, 8.60, -42.00) actual (18.22, 8.55, -42.00)
+PASS P3 bridge crossed to ridge
+PASS Walk to (10.00, 9.00, -44.00) actual (10.15, 11.80, -43.96)
+PASS Walk to (0.00, 14.00, -46.00) actual (0.15, 16.70, -45.97)
+PASS Walk to (-10.00, 22.00, -48.00) actual (-9.85, 21.80, -47.97)
+PASS Walk to (-19.40, 25.00, -47.00) actual (-19.20, 25.28, -47.02)
+PASS P3 to P4 ridge ascent with original move speed/jump
+PASS P4 cannot freeze dry slide (API condition check)
+PASS Center ray detects SM_PowerSource_P4 at player (-19.20, 25.28, -47.02) point=(-10.55, 25.50, -54.14) message=Power crystal — PULSE: power connected.
+PASS Click applies Pulse to SM_PowerSource_P4: Applied: Power crystal — PULSE: power connected.
+PASS P4 open gate supplies both waterways
+  jump landed (-21.83, 26.00, -46.06)
+PASS P4 reservoir rim reachable by an ordinary jump: (-21.83, 26.00, -46.06)
+PASS Center ray detects SM_IceSlide at player (-21.83, 26.00, -46.06) point=(-14.55, 24.15, -46.64) message=Slide surface — FREEZE after water arrives: frozen in position.
+PASS Click applies Freeze to SM_IceSlide: Applied: Slide surface — FREEZE after water arrives: frozen in position.
+PASS P4 only slide surface freezes; side channel stays water
+PASS Walk to (-19.40, 25.00, -47.00) actual (-19.59, 25.36, -46.93)
+PASS P4 E input boards leaf at dock after ridge ascent
+PASS Leaf camera frames the downhill landing: (0.47, 0.61, 48.87)
+PASS P4 collision-swept leaf reaches P5 landing and restores controller: (-26.00, 11.07, 8.00)
+PASS P4 actual landing triggers restoration/valley water
+PASS Walk to (-22.00, 11.10, 8.00) actual (-22.20, 11.03, 8.00)
+PASS Target detected; expected input denial SM_VineRoot_P5: Blocked: BLOOM the root and wait for the wire to connect, then PULSE this root.
+PASS P5 power cannot bypass ungrown wire
+PASS Center ray detects SM_VineRoot_P5 at player (-22.20, 11.03, 8.00) point=(-9.85, 10.17, 5.46) message=Root terminal — BLOOM, then PULSE here: growing. Wait for the animation to finish.
+PASS Click applies Bloom to SM_VineRoot_P5: Applied: Root terminal — BLOOM, then PULSE here: growing. Wait for the animation to finish.
+PASS Target detected; expected input denial SM_VineRoot_P5: Blocked: BLOOM the root and wait for the wire to connect, then PULSE this root.
+PASS P5 input waits for animation completion
+PASS Center ray detects SM_VineRoot_P5 at player (-22.20, 11.03, 8.00) point=(-9.85, 10.17, 5.46) message=Root terminal — BLOOM, then PULSE here: power connected.
+PASS Click applies Pulse to SM_VineRoot_P5: Applied: Root terminal — BLOOM, then PULSE here: power connected.
+PASS P5 grown wire relays root PULSE to animated door
+PASS Walk to (-20.50, 11.00, 5.00) actual (-20.62, 11.05, 5.22)
+PASS Walk to (-14.00, 13.60, 5.00) actual (-14.23, 13.48, 5.01)
+PASS P5 door crossing advances to final plateau
+PASS Walk to (-6.00, 16.20, 5.00) actual (-6.23, 16.12, 5.00)
+PASS P5 to P6 stairs climbed with 2m controller
+PASS Current-stage retry preserves all earlier restorations
+PASS Walk to (-5.00, 16.10, -19.00) actual (-5.01, 16.10, -18.78)
+PASS Walk to (5.00, 16.10, -19.00) actual (4.79, 16.05, -19.00)
+PASS Center ray detects SM_PowerSource_P6 at player (4.79, 16.05, -19.00) point=(12.13, 16.44, -26.59) message=Power crystal — PULSE: power connected.
+PASS Click applies Pulse to SM_PowerSource_P6: Applied: Power crystal — PULSE: power connected.
+PASS Center ray detects P6_ChannelRepair at player (4.79, 16.05, -19.00) point=(9.45, 16.10, -22.14) message=Broken channel roots — BLOOM: growing. Wait for the animation to finish.
+PASS Click applies Bloom to P6_ChannelRepair: Applied: Broken channel roots — BLOOM: growing. Wait for the animation to finish.
+PASS P6 incomplete final alignment prevents waterwheel
+PASS Walk to (5.00, 16.10, -8.00) actual (5.00, 16.07, -8.20)
+PASS Timing window exists for SM_Channel_Swing_P6
+PASS Center ray detects SM_Channel_Swing_P6 at player (5.00, 16.07, -8.20) point=(9.45, 18.60, -11.34) message=The waterway is connected. Water is reaching the wheel.
+PASS Click applies Freeze to SM_Channel_Swing_P6: Applied: Last channel — FREEZE aligned: frozen in position.
+PASS Correct freeze SM_Channel_Swing_P6
+PASS P6 water propagates through repaired/aligned channel before wheel turns
+PASS Only SM_Waterwheel_Wheel rotates; fixed body remains still
+PASS P6 restoration completes and ending camera activates
+PASS All supplied restoration clips and valley water finish and retain their results
+PASS Ending camera releases cursor for ending UI
+PASS Continue exploring restores gameplay camera/input after ending
+PASS Ending camera does not reactivate after returning to play
+PASS Whole-world restart reloads all six initial states
+PASS Whole restart resets animated poses and one-shot flags
+PASS Return to original title UI
+PASS Actual title button event loads Everflow_Map
+PASS Title entry creates one player at P1
+
+148 checks passed; overall PASS. No human completion time measured.

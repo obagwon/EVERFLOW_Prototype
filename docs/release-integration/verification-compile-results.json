@@ -1,0 +1,24 @@
+{
+  "kind": "Roslyn against installed Unity 6000.3.21f1 / project reference DLLs; not Unity execution",
+  "results": [
+    {
+      "mode": "runtime-editor",
+      "scripts": 33,
+      "exit_code": 0,
+      "diagnostics": ""
+    },
+    {
+      "mode": "editor",
+      "scripts": 24,
+      "exit_code": 0,
+      "diagnostics": ""
+    },
+    {
+      "mode": "runtime-player",
+      "scripts": 33,
+      "exit_code": 0,
+      "diagnostics": ""
+    }
+  ],
+  "pass": true
+}

@@ -16,7 +16,7 @@ namespace EverflowMVP.Editor
     public static class EFReleaseSetup
     {
         public const string TitleScene = "Assets/EverflowMVP/Scenes/Everflow_Title.unity";
-        const string LogoPath = "Assets/logo/EVERFLOW_color.png";
+        const string LogoPath = "Assets/logo/EVERFLOW_main.png";
         const string IconPath = "Assets/logo/EVERFLOW_icon.png";
 
         [MenuItem("Tools/EVERFLOW/Release/1. Set Up Title and Windows Settings")]
@@ -25,7 +25,7 @@ namespace EverflowMVP.Editor
             if (EditorApplication.isPlayingOrWillChangePlaymode)
                 throw new InvalidOperationException("Stop Play mode first.");
             if (AssetDatabase.LoadAssetAtPath<SceneAsset>(EFTitleScreen.GameplayScene) == null)
-                throw new InvalidOperationException("The original six-puzzle scene is missing.");
+                throw new InvalidOperationException("The configured gameplay scene is missing.");
             ImportTexture(LogoPath, true);
             ImportTexture(IconPath, false);
             var icon = AssetDatabase.LoadAssetAtPath<Texture2D>(IconPath);
@@ -36,11 +36,7 @@ namespace EverflowMVP.Editor
             }
             if (AssetDatabase.LoadAssetAtPath<SceneAsset>(TitleScene) == null) CreateTitle();
 
-            // Preserve unrelated entries, but never ship the obsolete/missing SampleScene.
-            var scenes = new[] { new EditorBuildSettingsScene(TitleScene, true),
-                new EditorBuildSettingsScene(EFTitleScreen.GameplayScene, true) }
-                .Concat(EditorBuildSettings.globalScenes.Where(s => s.path != TitleScene &&
-                    s.path != EFTitleScreen.GameplayScene).Select(s => new EditorBuildSettingsScene(s.path, false))).ToArray();
+            var scenes = CreateReleaseScenes(EditorBuildSettings.globalScenes);
             EditorBuildSettings.globalScenes = scenes;
             var profile = BuildProfile.GetActiveBuildProfile();
             if (profile != null && profile.overrideGlobalScenes)
@@ -51,6 +47,46 @@ namespace EverflowMVP.Editor
             AssetDatabase.SaveAssets();
             ValidateScenes();
             Debug.Log("EVERFLOW setup complete. Existing title/gameplay scene contents preserved. Version: " + PlayerSettings.bundleVersion);
+        }
+
+        // Reapplying Release must preserve utility scenes without enabling them in the player.
+        internal static EditorBuildSettingsScene[] CreateReleaseScenes(EditorBuildSettingsScene[] existing)
+        {
+            return new[] { new EditorBuildSettingsScene(TitleScene, true),
+                new EditorBuildSettingsScene(EFTitleScreen.GameplayScene, true) }
+                .Concat(existing.Where(s => s.path != TitleScene && s.path != EFTitleScreen.GameplayScene)
+                    .Select(s => new EditorBuildSettingsScene(s.path, false))).ToArray();
+        }
+
+        internal static void ValidateBuildScenes(EditorBuildSettingsScene[] scenes)
+        {
+            var enabled = scenes.Where(s => s.enabled).Select(s => s.path).ToArray();
+            Require(enabled.Length >= 2 && enabled[0] == TitleScene && enabled[1] == EFTitleScreen.GameplayScene &&
+                enabled.Count(p => p == TitleScene) == 1 && enabled.Count(p => p == EFTitleScreen.GameplayScene) == 1,
+                "The title and exhibition map must be the first two enabled scenes, without duplicates. Run Tools > EVERFLOW > Release > 1. Set Up Title and Windows Settings.");
+        }
+
+        static void Require(bool valid, string message)
+        {
+            if (!valid) throw new InvalidOperationException("EVERFLOW validation: " + message);
+        }
+
+        internal static void ValidateMapReferences(EverflowMap.EFMapWorld[] worlds, EverflowMap.EFMapPlayer[] players)
+        {
+            Require(worlds.Length == 1, "gameplay scene must contain exactly one exhibition map world; the legacy MVP world is not a release substitute.");
+            var world = worlds[0];
+            Require(world.stages != null && world.stages.Length == 6, "six-stage exhibition map");
+            Require(players.Length == 1 && world.player == players[0] && players[0].world == world &&
+                players[0].view != null && players[0].follow != null, "map player/camera references");
+            Require(world.stages.All(s => s != null && s.spawn != null && s.arrival != null &&
+                s.nodes != null && s.nodes.Length > 0 && s.nodes.All(n => n != null && n.world == world) &&
+                s.requirements != null && s.requirements.Length > 0 && s.requirements.All(n => n != null) &&
+                s.restoration != null && s.restoration.All(a => a != null && a.clip != null)),
+                "map puzzle/restoration references (empty restoration lists are allowed)");
+            Require(world.gate4 != null && world.sideWater != null, "map water gate references");
+            Require(world.wheel != null && world.endingCamera != null && world.endingCamera != world.player.view &&
+                world.finalFlow != null && world.finalFlow.Length > 0 && world.finalFlow.All(f => f != null),
+                "map ending camera/wheel/water-flow references");
         }
 
         static void ImportTexture(string path, bool sprite)
@@ -144,12 +180,9 @@ namespace EverflowMVP.Editor
         [MenuItem("Tools/EVERFLOW/Release/Validate Title and Gameplay References")]
         public static void ValidateScenes()
         {
-            void Require(bool valid, string message)
-            {
-                if (!valid) throw new InvalidOperationException("EVERFLOW validation: " + message);
-            }
             foreach (string path in new[] { TitleScene, EFTitleScreen.GameplayScene })
             {
+                Require(AssetDatabase.LoadAssetAtPath<SceneAsset>(path) != null, "missing release scene: " + path);
                 var scene = EditorSceneManager.OpenPreviewScene(path);
                 try
                 {
@@ -173,19 +206,13 @@ namespace EverflowMVP.Editor
                     }
                     else
                     {
-                        var worlds = Find<EFWorld>();
-                        Require(worlds.Length == 1 && worlds[0].stages.Length == 6, "six-puzzle world");
-                        var players = Find<EFPlayer>();
-                        Require(players.Length == 1 && worlds[0].player == players[0] && players[0].world == worlds[0] &&
-                            players[0].view != null && players[0].follow != null, "player/camera references");
-                        Require(worlds[0].stages.All(s => s.spawn != null && s.nodes.All(n => n != null) &&
-                            s.goalRequirements.Length > 0 && s.goalRequirements.All(n => n != null)), "puzzle references");
+                        ValidateMapReferences(Find<EverflowMap.EFMapWorld>(), Find<EverflowMap.EFMapPlayer>());
                         Require(Find<EventSystem>().Length <= 1, "duplicate gameplay EventSystems");
                     }
                 }
                 finally { EditorSceneManager.ClosePreviewScene(scene); }
             }
-            Debug.Log("PASS: title button/logo/input and original six-puzzle scene references. Playthrough still required.");
+            Debug.Log("PASS: title button/logo/input and configured gameplay scene references. Playthrough still required.");
         }
     }
 }

@@ -1,0 +1,22 @@
+{
+  "kind": "Static saved YAML/reference/geometry validation; no Unity execution or physical play implied",
+  "checks": 226,
+  "pass": true,
+  "changed_original_map_blocks": [
+    46391226,
+    1230967735,
+    1361118012,
+    1361118013,
+    1454693199,
+    1454693200,
+    2052792844,
+    2067115161
+  ],
+  "sprite_png_sha256": {
+    "Assets/icon/bloom_icon.png": "f71362e496e15021ef7ae1e25a0ba7812d33aeafc0b3e7df9b6422ffb5d7708b",
+    "Assets/icon/freeze_icon.png": "ce0ed7c679dec9f27ba9487ff55e39f206e6297427c00a865d99e6abd94b28f9",
+    "Assets/icon/pulse_icon.png": "f687c433e6c4274c4754453933f34fde99561ddccec9874e692280d073aca756",
+    "Assets/logo/EVERFLOW_main.png": "50a418fa97479d48ffdad59255469ef49e05e603b5e16ded9c1fb5866b3fb1fb",
+    "Assets/logo/EVERFLOW_start_button.png": "ca34ce8156ad8a3cdc3ad8b2536f64118d7d5e7fb04695d1432e2e7c4e646897"
+  }
+}
