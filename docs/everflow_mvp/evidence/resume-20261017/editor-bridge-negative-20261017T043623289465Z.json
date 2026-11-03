@@ -1,0 +1,28 @@
+{
+  "utc": "2026-10-17T04:36:23.289465+00:00",
+  "kind": "Actual enabled Editor bridge negative requests, no game command dispatched",
+  "checks": [
+    {
+      "case": "wrong session",
+      "pass": true,
+      "ack": "Session nonce mismatch; enable/status must come from the current Editor session. Request file was consumed."
+    },
+    {
+      "case": "expired request",
+      "pass": true,
+      "ack": "Request is older than five minutes or more than thirty seconds in the future. Request file was consumed."
+    },
+    {
+      "case": "unsupported command",
+      "pass": true,
+      "ack": "Command is not allowlisted. Request file was consumed."
+    },
+    {
+      "case": "sequence replay",
+      "pass": true,
+      "ack": "Sequence must strictly increase; consumed requests are never retried. Request file was consumed."
+    }
+  ],
+  "protected_files_changed": [],
+  "pass": true
+}

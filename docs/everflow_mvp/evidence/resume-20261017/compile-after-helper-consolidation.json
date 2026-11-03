@@ -1,0 +1,36 @@
+{
+  "utc": "2026-10-17T04:29:23.650231+00:00",
+  "kind": "Separate compiler and current source hashes; not Unity Play or build",
+  "compile": {
+    "kind": "Roslyn against installed Unity/project DLLs. No Unity import, Play Mode or player build.",
+    "results": [
+      {
+        "mode": "runtime-editor",
+        "scripts": 34,
+        "exit_code": 0,
+        "diagnostics": ""
+      },
+      {
+        "mode": "editor",
+        "scripts": 27,
+        "exit_code": 0,
+        "diagnostics": ""
+      },
+      {
+        "mode": "runtime-player",
+        "scripts": 34,
+        "exit_code": 0,
+        "diagnostics": ""
+      }
+    ],
+    "pass": true
+  },
+  "source_sha256": {
+    "Assets/EverflowMap/Editor/EFCanalApproachChecks.cs": "fec402b9def7b658c209e8a844158a13d87ef5dde8d656c49f9e3ffff4fa5714",
+    "Assets/EverflowMap/Editor/EFCanalExperimentSetup.cs": "9b888df981fb05d05f8cf864bd4690bf2003940954cc88e6f6204342c37e21da",
+    "Assets/EverflowMap/Editor/EFCanalExperimentTests.cs": "961677f28fdb41f1cb3237cac63ec98ba4bc9da2f7465d623b04f8c1accfec18",
+    "Assets/EverflowMap/Runtime/EFCanalExperiment.cs": "b0c51e31d337aa2d0da87a3f47a9fef5337303be4864c961cc6ea37446b778ba",
+    "Assets/EverflowMap/Runtime/EFMapWorld.cs": "b2b23fd550813f0109adf615694115f4263c25cc9a3cb00923a175c34f576592",
+    "Assets/EverflowMap/Runtime/EFMapNode.cs": "68277af7b9950c17ca9650835bbf908a366e9bf283ecba817c121d673c1a447d"
+  }
+}

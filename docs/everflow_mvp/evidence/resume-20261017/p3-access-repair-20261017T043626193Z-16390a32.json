@@ -1,0 +1,11 @@
+{
+    "utc": "2026-10-17T04:36:26.1933731Z",
+    "scene": "Assets/Scenes/Everflow_Map_P3_DesignTest_20261016.unity",
+    "backup": "docs/everflow_mvp/evidence/resume-20261017/p3-before-access-repair-20261017T043626193Z-16390a32.unity",
+    "beforeSha256": "83111d6ad472a6c2d4308576f2becada7dd242bb64e77737a1f4994f35b0da9a",
+    "afterSha256": "5a59ef9385accde771f6ae96eca5e293a693908cd697a433a9e3644d5b151e50",
+    "message": "Saved experimental access repair only. Actual approach/aim/ride checks must be rerun; this is not a physical traversal PASS.",
+    "saved": true,
+    "protectedAssetsUnchanged": true,
+    "changedSteps": 49
+}

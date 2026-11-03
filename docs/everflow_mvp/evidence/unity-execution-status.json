@@ -1,0 +1,18 @@
+{
+  "unity_version": "6000.3.21f1",
+  "action": "baseline batch Editor import/compile availability",
+  "command": "Unity.exe -batchmode -nographics -quit -projectPath C:/Users/vzd12/EVERFLOW_Prototype -logFile docs/everflow_mvp/evidence/unity-baseline.log",
+  "owned_editor_pid": 38776,
+  "outcome": "Stopped only this invocation's Editor after repeated licensing IPC failure. No successful import/compile/scene generation evidence.",
+  "log_evidence": [
+    "Connection to channel LicenseClient-vzd12 refused",
+    "Timed-out after 60.01s, waiting for channel: LicenseClient-vzd12",
+    "Licensing initialization failed after 74.81s",
+    "The connection with the Unity Licensing Client has been lost. Attempting to reconnect."
+  ],
+  "protection_changes": false,
+  "existing_hub_or_licensing_processes_stopped": false,
+  "editor_play_performed": false,
+  "player_build_performed": false,
+  "player_build_run_performed": false
+}

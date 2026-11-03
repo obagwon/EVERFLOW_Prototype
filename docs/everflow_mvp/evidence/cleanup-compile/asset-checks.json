@@ -1,0 +1,17 @@
+{
+  "kind": "Static GUID/meta inspection, not scene import",
+  "duplicate_guids": [],
+  "new_sources": [
+    "Assets\\EverflowMap\\Editor\\EFCanalApproachChecks.cs",
+    "Assets\\EverflowMap\\Editor\\EFCanalExperimentSetup.cs",
+    "Assets\\EverflowMap\\Editor\\EFCanalExperimentTests.cs",
+    "Assets\\EverflowMap\\Runtime\\EFCanalExperiment.cs",
+    "Assets\\EverflowMap\\Editor\\EFMvpChecks.cs",
+    "Assets\\EverflowMap\\Editor\\EFMvpSetup.cs",
+    "Assets\\EverflowMap\\Runtime\\EFMvpBuildSmoke.cs",
+    "Assets\\EverflowMap\\Runtime\\EFMvpFinale.cs",
+    "Assets\\EverflowMap\\Runtime\\EFMvpRotary.cs"
+  ],
+  "missing_meta": [],
+  "pass": true
+}

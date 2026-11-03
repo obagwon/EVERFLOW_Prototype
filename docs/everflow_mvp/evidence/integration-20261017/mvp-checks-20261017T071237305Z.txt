@@ -1,0 +1,11 @@
+MVP checks UTC 2026-10-17T07:12:41.8512905Z
+Normal route: actual title button, all six UI stages through CharacterController movement, ray/key/click abilities, vine/leaf rides. Includes deliberate retry/fall recovery checks. Skip/restart comparison cases use explicit grounded API/position fixtures. Programmatic camera/input, no human playthrough or duration claim.
+PASS Actual existing title and start button present
+CAPTURE docs/everflow_mvp/evidence/integration-20261017/mvp-checks-20261017T071237305Z-title.png (Game rendering; visual review is separate from state assertions)
+PASS Actual title button event loads fresh integrated MVP
+PASS Preserved opening overview locks movement during introduction
+PASS Opening overview restores movement and follow camera automatically
+CAPTURE docs/everflow_mvp/evidence/integration-20261017/mvp-checks-20261017T071237305Z-start.png (Game rendering; visual review is separate from state assertions)
+Last phase: actual title button route
+Runtime checks passed: 4; overall PASS.
+NOT VERIFIED BY THIS EDITOR REPORT: human understanding/fun/duration; standalone build execution. See separate player smoke evidence when available.

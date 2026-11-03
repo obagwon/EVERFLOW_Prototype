@@ -7,7 +7,7 @@ namespace EverflowMVP
 {
     public sealed class EFTitleScreen : MonoBehaviour
     {
-        public const string GameplayScene = "Assets/Scenes/Everflow_Map.unity";
+        public const string GameplayScene = "Assets/Scenes/Everflow_Map_MVP.unity";
         public Button startButton;
         public Text startLabel; // Retained inactive for existing scene/editor references; artwork includes text.
         public Text versionLabel;

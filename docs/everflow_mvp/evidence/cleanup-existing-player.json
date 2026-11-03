@@ -1,0 +1,22 @@
+{
+  "kind": "Existing 1.1.1 player only; predates cleanup. NOT a new build or verification of modified sources.",
+  "command": [
+    "C:\\Users\\vzd12\\EVERFLOW_Prototype\\Build\\1.1.1\\EVERFLOW.exe",
+    "-batchmode",
+    "-nographics",
+    "-everflow-mvp-smoke",
+    "-logFile",
+    "C:\\Users\\vzd12\\EVERFLOW_Prototype\\docs\\everflow_mvp\\evidence\\cleanup-existing-player.log"
+  ],
+  "exit_code": 0,
+  "timed_out": false,
+  "seconds": 9.2,
+  "sha256": "2c44c857ac016820e5be79bb52471e246a2c971f3c07a528cfdef3969b150c45",
+  "markers": [
+    "PLAYER SMOKE PASS: title/MVP fresh state, repetition 0",
+    "PLAYER SMOKE PASS: title/MVP fresh state, repetition 1",
+    "PLAYER SMOKE PASS: title/MVP fresh state, repetition 2",
+    "PLAYER SMOKE OVERALL PASS. Not a full physical playthrough or rendered UI inspection."
+  ],
+  "pass": true
+}

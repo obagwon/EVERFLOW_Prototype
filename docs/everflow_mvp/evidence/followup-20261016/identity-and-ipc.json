@@ -1,0 +1,14 @@
+﻿{
+    "utc":  "2026-10-16T13:25:31.5078328Z",
+    "actualIdentity":  "home\\CodexSandboxOffline",
+    "environmentUser":  "vzd12",
+    "environmentProfile":  "C:\\Users\\vzd12",
+    "session":  "Console",
+    "editorInstances":  [
+
+                        ],
+    "pipe":  "LicenseClient-vzd12",
+    "pipeConnectResult":  "System.TimeoutException",
+    "pipeError":  "작업 시간을 초과했습니다.",
+    "pipeHResult":  -2146233083
+}

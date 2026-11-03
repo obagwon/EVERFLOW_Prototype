@@ -1,0 +1,32 @@
+{
+  "utc": "2026-10-17T04:17:05.349332+00:00",
+  "kind": "Compiler result snapshot; not Unity import, Play, build or traversal",
+  "compilation": {
+    "kind": "Roslyn against installed Unity/project DLLs. No Unity import, Play Mode or player build.",
+    "results": [
+      {
+        "mode": "runtime-editor",
+        "scripts": 34,
+        "exit_code": 0,
+        "diagnostics": ""
+      },
+      {
+        "mode": "editor",
+        "scripts": 26,
+        "exit_code": 0,
+        "diagnostics": ""
+      },
+      {
+        "mode": "runtime-player",
+        "scripts": 34,
+        "exit_code": 0,
+        "diagnostics": ""
+      }
+    ],
+    "pass": true
+  },
+  "support_change_sha256": {
+    "Assets\\EverflowMap\\Runtime\\EFCanalExperiment.cs": "b0c51e31d337aa2d0da87a3f47a9fef5337303be4864c961cc6ea37446b778ba",
+    "Assets\\EverflowMap\\Editor\\EFCanalExperimentTests.cs": "9a1738ad6d2852f91bf175888f154d127692863d4af099cc332469b38add7193"
+  }
+}

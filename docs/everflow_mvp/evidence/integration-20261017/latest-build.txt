@@ -1,0 +1,5 @@
+Build\1.1.1\build-result.txt
+Succeeded
+Version: 1.1.1
+Errors: 0
+Warnings: 485

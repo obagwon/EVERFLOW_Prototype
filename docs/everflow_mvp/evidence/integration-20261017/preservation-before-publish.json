@@ -1,0 +1,15 @@
+{
+  "utc": "2026-10-17T06:55:50.831825+00:00",
+  "phase": "MVP created, before title publication",
+  "changed_existing": [
+    "Assets/EverflowMap/Editor/EFCanalExperimentTests.cs",
+    "Assets/EverflowMap/Runtime/EFMapNode.cs",
+    "Assets/EverflowMap/Runtime/EFMapWorld.cs",
+    "ProjectSettings/ProjectSettings.asset"
+  ],
+  "unexpected": [
+    "ProjectSettings/ProjectSettings.asset"
+  ],
+  "original_map_unchanged": true,
+  "p3_copy_unchanged": true
+}

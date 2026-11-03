@@ -1,0 +1,28 @@
+EVERFLOW P3 experiment checks; UTC 2026-10-16T13:29:00.4856309Z
+Edit-mode references and API state fixtures are separate from the collision-swept leaf segment. Teleports position fixtures; this is not a complete physical playthrough, user test, or duration measurement.
+PASS [EDIT] Saved copy references, one world/player, no missing scripts, camera owner, completion safety flags.
+PASS [EDIT] Original map/title, logo, shared map prefabs/materials, model import metadata and build/profile files unchanged by these checks.
+PASS [RUNTIME] Entered saved experimental scene
+PASS [RUNTIME] Fresh world starts with six incomplete stages
+PASS [API FIXTURE] Grounded test support before prior-stage assistance 0
+PASS [API FIXTURE] Prior-stage passage completion 0 (fixture support; no route claim)
+PASS [API FIXTURE] Grounded test support before prior-stage assistance 1
+PASS [API FIXTURE] Prior-stage passage completion 1 (fixture support; no route claim)
+PASS [API FIXTURE] Grounded test support before prior-stage assistance 2
+PASS [API FIXTURE] Prior-stage passage completion 2 (fixture support; no route claim)
+PASS [API FIXTURE] Canal starts dry and unfrozen
+PASS [API FIXTURE] Dry FREEZE changes no water state
+PASS [API FIXTURE] Real player range guard rejects distant pump
+PASS [API FIXTURE] Wrong pump ability rejected
+PASS [API FIXTURE] PULSE plus gate animation final sample fills water (not elapsed-time playback)
+PASS [API FIXTURE] Prepared low basin visibly contains water
+PASS [API FIXTURE] Filled water freezes
+PASS [API FIXTURE] Repeated FREEZE releases before completion
+PASS [API FIXTURE] Airborne deck visit cannot save checkpoint
+FAIL [COLLISION FIXTURE] CharacterController actually supported by departure deck
+FAIL [RUNTIME] System.InvalidOperationException: [COLLISION FIXTURE] CharacterController actually supported by departure deck
+  at EverflowMap.Editor.EFCanalExperimentProbe.Check (System.Boolean condition, System.String description) [0x00058] in C:\Users\vzd12\EVERFLOW_Prototype\Assets\EverflowMap\Editor\EFCanalExperimentTests.cs:109 
+  at EverflowMap.Editor.EFCanalExperimentProbe+<Tests>d__11.MoveNext () [0x0056b] in C:\Users\vzd12\EVERFLOW_Prototype\Assets\EverflowMap\Editor\EFCanalExperimentTests.cs:199 
+  at EverflowMap.Editor.EFCanalExperimentProbe+<Start>d__12.MoveNext () [0x00073] in C:\Users\vzd12\EVERFLOW_Prototype\Assets\EverflowMap\Editor\EFCanalExperimentTests.cs:260 
+Runtime checks passed: 17; overall FAIL.
+NOT VERIFIED: full start-to-end physical traversal, stair/courtyard approach, real camera-ray clicks, human comprehension/fun/time, title-to-experiment routing, final PULSE/restoration/skip, standalone player build.

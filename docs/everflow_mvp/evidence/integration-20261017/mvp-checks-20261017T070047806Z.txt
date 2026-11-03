@@ -1,0 +1,62 @@
+MVP checks UTC 2026-10-17T07:00:52.1849346Z
+Prior-stage progress uses grounded API fixtures; final normal route uses actual movement/rays; skip cases have explicit API/position setup. This is not a full physical six-puzzle playthrough or human test.
+PASS Saved integrated scene has opt-in finale
+RAY target=SM_FlowerJumpPad hovered=SM_FlowerJumpPad collider=Ability target reason=Click: BLOOM / Flower — BLOOM, then Space on its open dome
+PASS [RAY] Camera center identifies Flower — BLOOM, then Space on its open dome
+PASS [RAY] Bloom applies on Flower — BLOOM, then Space on its open dome: Applied: Flower — BLOOM, then Space on its open dome: growing. Wait for the animation to finish.
+PASS Ordinary jump reaches bloomed flower
+PASS Actual flower launch reaches upper terrain
+RAY target=SM_Vine hovered=SM_Vine collider=Ability target reason=Click: BLOOM / Vine — BLOOM, E at handle, Space to release
+PASS [RAY] Camera center identifies Vine — BLOOM, E at handle, Space to release
+PASS [RAY] Bloom applies on Vine — BLOOM, E at handle, Space to release: Applied: Vine — BLOOM, E at handle, Space to release: growing. Wait for the animation to finish.
+MOVE Flower ledge to vine handle frames=24 local=(25.8396, 1.3792, 23.0184) remaining=0.1614106 grounded=True
+PASS [PHYSICAL] Flower ledge to vine handle reached through actual controller movement
+PASS Vine boarded through actual E input
+PASS Actual vine release completes crossing
+MOVE UI P1 far-side arrival frames=24 local=(44.1531, 4.1300, 21.0484) remaining=0.1605602 grounded=True
+PASS [PHYSICAL] UI P1 far-side arrival reached through actual controller movement
+PASS Physical P1 advances and unlocks FREEZE stage
+MOVE UI P2 debris entrance frames=49 local=(44.0046, 4.1028, 16.1506) remaining=0.1506963 grounded=True
+PASS [PHYSICAL] UI P2 debris entrance reached through actual controller movement
+PASS Alignment available for SM_FallingDebris_01
+PASS Broad alignment window available before FREEZE input
+RAY target=SM_FallingDebris_01 hovered=SM_FallingDebris_01 collider=Ability target reason=Click: FREEZE / Debris 1 — FREEZE at blue height mark
+PASS [RAY] Camera center identifies Debris 1 — FREEZE at blue height mark
+PASS [RAY] Freeze applies on Debris 1 — FREEZE at blue height mark: Applied: Debris 1 — FREEZE at blue height mark: frozen in position.
+PASS Actual FREEZE stabilizes SM_FallingDebris_01
+PASS Physical support on frozen debris 0
+MOVE Debris takeoff 0 frames=34 local=(44.0001, 5.2500, 9.9506) remaining=0.1506296 grounded=True
+PASS [PHYSICAL] Debris takeoff 0 reached through actual controller movement
+PASS Alignment available for SM_FallingDebris_02
+PASS Broad alignment window available before FREEZE input
+RAY target=SM_FallingDebris_02 hovered=SM_FallingDebris_02 collider=Ability target reason=Click: FREEZE / Debris 2 — FREEZE at blue height mark
+PASS [RAY] Camera center identifies Debris 2 — FREEZE at blue height mark
+PASS [RAY] Freeze applies on Debris 2 — FREEZE at blue height mark: Applied: Debris 2 — FREEZE at blue height mark: frozen in position.
+PASS Actual FREEZE stabilizes SM_FallingDebris_02
+PASS Physical support on frozen debris 1
+MOVE Debris takeoff 1 frames=22 local=(44.0000, 6.4500, 4.9506) remaining=0.1506308 grounded=True
+PASS [PHYSICAL] Debris takeoff 1 reached through actual controller movement
+PASS Alignment available for SM_FallingDebris_03
+PASS Broad alignment window available before FREEZE input
+RAY target=SM_FallingDebris_03 hovered=SM_FallingDebris_03 collider=Ability target reason=Click: FREEZE / Debris 3 — FREEZE at blue height mark
+PASS [RAY] Camera center identifies Debris 3 — FREEZE at blue height mark
+PASS [RAY] Freeze applies on Debris 3 — FREEZE at blue height mark: Applied: Debris 3 — FREEZE at blue height mark: frozen in position.
+PASS Actual FREEZE stabilizes SM_FallingDebris_03
+PASS Physical support on frozen debris 2
+MOVE Debris takeoff 2 frames=22 local=(44.0000, 7.6500, -0.0494) remaining=0.1506298 grounded=True
+PASS [PHYSICAL] Debris takeoff 2 reached through actual controller movement
+MOVE Slate approach frames=215 local=(44.0000, 8.5114, -24.8494) remaining=0.1506233 grounded=True
+PASS [PHYSICAL] Slate approach reached through actual controller movement
+PASS Alignment available for SM_Slate
+PASS Broad alignment window available before FREEZE input
+RAY target=SM_Slate hovered=SM_Slate collider=SM_Slate reason=Click: FREEZE / Slate — FREEZE level
+PASS [RAY] Camera center identifies Slate — FREEZE level
+PASS [RAY] Freeze applies on Slate — FREEZE level: Applied: Slate — FREEZE level: wrong alignment. FREEZE again or R to retry.
+FAIL Actual FREEZE stabilizes SM_Slate
+FAIL System.InvalidOperationException: Actual FREEZE stabilizes SM_Slate; phase=ray Slate — FREEZE level player=(44.0000, 8.5114, -24.8494)
+  at EverflowMap.Editor.EFMvpProbe.Check (System.Boolean value, System.String label) [0x00043] in C:\Users\vzd12\EVERFLOW_Prototype\Assets\EverflowMap\Editor\EFMvpChecks.cs:80 
+  at EverflowMap.Editor.EFMvpProbe+<Freeze>d__22.MoveNext () [0x000dc] in C:\Users\vzd12\EVERFLOW_Prototype\Assets\EverflowMap\Editor\EFMvpChecks.cs:171 
+  at EverflowMap.Editor.EFMvpProbe+<Start>d__31.MoveNext () [0x00093] in C:\Users\vzd12\EVERFLOW_Prototype\Assets\EverflowMap\Editor\EFMvpChecks.cs:382 
+Last phase: ray Slate — FREEZE level
+Runtime checks passed: 39; overall FAIL.
+NOT VERIFIED: full physical six-puzzle traversal; human understanding/fun/duration; standalone build execution.

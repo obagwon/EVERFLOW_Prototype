@@ -1,0 +1,25 @@
+{
+  "kind": "Roslyn against installed Unity/project DLLs. No Unity import, Play Mode or player build.",
+  "results": [
+    {
+      "mode": "runtime-editor",
+      "scripts": 37,
+      "exit_code": 0,
+      "diagnostics": ""
+    },
+    {
+      "mode": "editor",
+      "scripts": 29,
+      "exit_code": 0,
+      "diagnostics": ""
+    },
+    {
+      "mode": "runtime-player",
+      "scripts": 37,
+      "exit_code": 0,
+      "diagnostics": ""
+    }
+  ],
+  "pass": true,
+  "prepared_sources_outside_assets": false
+}

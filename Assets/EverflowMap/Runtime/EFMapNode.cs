@@ -14,6 +14,7 @@ namespace EverflowMap
         public MapKind kind;
         public bool interactive = true;
         public bool pulseAtRoot;
+        public bool bidirectionalAlignment;
         public EFMapAnimation[] actions = Array.Empty<EFMapAnimation>();
         public EFMapNode supply;
         public Transform motion;
@@ -32,7 +33,8 @@ namespace EverflowMap
         public bool Frozen { get; private set; }
         public bool SourceOn { get; private set; }
         public float Angle { get; private set; }
-        public bool Aligned => kind == MapKind.Debris ? Mathf.Abs(offset) <= .55f : Mathf.Abs(Mathf.DeltaAngle(Angle, 0)) <= tolerance;
+        public bool Aligned => kind == MapKind.Debris ? Mathf.Abs(offset) <= .55f : (Mathf.Abs(Mathf.DeltaAngle(Angle, 0)) <= tolerance ||
+            kind==MapKind.Bridge && bidirectionalAlignment && Mathf.Abs(Mathf.DeltaAngle(Angle,180))<=tolerance);
         public bool Filled => kind == MapKind.Water && supply != null && supply.Done;
         public bool Satisfied => kind == MapKind.Debris || kind == MapKind.Slate || kind == MapKind.Bridge ? Frozen && Aligned :
             kind == MapKind.Water ? Filled && Frozen : Done;
@@ -70,11 +72,27 @@ namespace EverflowMap
             if (rideVisual == null) return;
             rideVisual.SetPositionAndRotation(leafHome, leafRotation);
         }
+        // Used only by opt-in experimental completion stabilization. Arrival
+        // assistance keeps a route safe even when the original cast was missed.
+        // The final puzzle is never solved or animated by this API.
+        public void ApplyCompletedState()
+        {
+            if (world == null || world.Completed == null || stage < 0 || stage >= world.Completed.Length - 1 || !world.Completed[stage]) return;
+            Initialize();
+            Started = Done = true;
+            if (kind == MapKind.Source || kind == MapKind.Root) SourceOn = true;
+            if (kind == MapKind.Debris || kind == MapKind.Slate || kind == MapKind.Bridge || kind == MapKind.Water)
+            { Frozen = true; Angle = 0; offset = 0; }
+            foreach (var action in actions)
+                if (action != null) { action.Begin(); action.Tick(action.Duration); }
+            Tick(0);
+        }
         public bool CanApply(Ability ability, out string reason)
         {
             reason = null;
             if (!interactive || world == null || stage != world.StageIndex || world.Completed[stage])
                 reason = "This area is not active. Finish the current puzzle first.";
+            else if(world.mvpFinale!=null && stage==5 && !world.mvpFinale.CanUse(this,ability,out reason)) { }
             else if (ability == Ability.Bloom && (kind == MapKind.Flower || kind == MapKind.Vine || kind == MapKind.Root || kind == MapKind.Repair)) { }
             else if (ability == Ability.Pulse && (kind == MapKind.Source || kind == MapKind.Root && pulseAtRoot))
             {
@@ -91,6 +109,8 @@ namespace EverflowMap
         public string Apply(Ability ability)
         {
             if (!CanApply(ability, out var reason)) return reason;
+            if(world.mvpFinale!=null && this==world.mvpFinale.finalControl && ability==Ability.Pulse &&
+               !world.mvpFinale.AcceptFinalPulse()) return world.Message;
             if (ability == Ability.Bloom && (kind == MapKind.Flower || kind == MapKind.Vine || kind == MapKind.Root || kind == MapKind.Repair))
             {
                 if (Done) return label + ": already grown. Ready.";

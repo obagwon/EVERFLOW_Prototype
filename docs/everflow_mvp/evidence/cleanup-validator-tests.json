@@ -1,0 +1,8 @@
+{
+  "kind": "Exact current EFMvpSetup.Validate body with managed stand-ins for Unity objects. Not Unity import, PreviewScene or Play.",
+  "compile_exit_code": 0,
+  "compiler": "Temp\\cleanup-validator\\Program.cs(10,125): warning CS0649: 'EFMapWorld.player' \ud544\ub4dc\uc5d0\ub294 \ud560\ub2f9\ub418\uc9c0 \uc54a\uc73c\ubbc0\ub85c \ud56d\uc0c1 null \uae30\ubcf8\uac12\uc744 \uc0ac\uc6a9\ud569\ub2c8\ub2e4.\n",
+  "exit_code": 0,
+  "output": "PASS valid fixture\nPASS missing finale\nPASS missing gate reports validation error, not NullReferenceException\nPASS missing final control\nPASS missing machine\nPASS missing near checkpoint\nPASS missing far checkpoint\nPASS foreign grounding world\nPASS missing route renderer\nPASS gate bypasses separate last PULSE\nPASS circular preparation\nTOTAL PASS 11\n",
+  "pass": true
+}

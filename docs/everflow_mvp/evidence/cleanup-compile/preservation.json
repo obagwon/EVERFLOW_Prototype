@@ -1,0 +1,37 @@
+{
+  "kind": "SHA256 comparison, not Unity verification",
+  "baseline_file_count": 462,
+  "changed": [
+    "Assets/Settings/DefaultVolumeProfile.asset",
+    "Assets/EverflowMap/Editor/EFMapPlayTests.cs",
+    "Assets/EverflowMap/Editor/EFMvpSetup.cs",
+    "Assets/EverflowMap/Runtime/EFMvpBuildSmoke.cs",
+    "Assets/EverflowMVP/Editor/EFReleaseSetup.cs",
+    "ProjectSettings/EditorBuildSettings.asset",
+    "tools/verify_mvp_experiment.py",
+    "docs/everflow_mvp/HANDOFF.md",
+    "docs/everflow_mvp/VERIFICATION.md",
+    "docs/everflow_mvp/WORKLOG.md",
+    ".gitignore"
+  ],
+  "baseline": "Backups\\20261017-cleanup\\baseline.json",
+  "allowed": [
+    ".gitignore",
+    "Assets/EverflowMVP/Editor/EFReleaseSetup.cs",
+    "Assets/EverflowMVP/Runtime/EFTitleScreen.cs",
+    "Assets/EverflowMap/Editor/EFMapPlayTests.cs",
+    "Assets/EverflowMap/Editor/EFMvpSetup.cs",
+    "Assets/EverflowMap/Runtime/EFMapNode.cs",
+    "Assets/EverflowMap/Runtime/EFMapWorld.cs",
+    "Assets/EverflowMap/Runtime/EFMvpBuildSmoke.cs",
+    "Assets/Settings/DefaultVolumeProfile.asset",
+    "ProjectSettings/EditorBuildSettings.asset",
+    "ProjectSettings/ProjectSettings.asset",
+    "docs/everflow_mvp/HANDOFF.md",
+    "docs/everflow_mvp/VERIFICATION.md",
+    "docs/everflow_mvp/WORKLOG.md",
+    "tools/verify_mvp_experiment.py"
+  ],
+  "unexpected": [],
+  "pass": true
+}

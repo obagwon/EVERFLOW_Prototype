@@ -1,0 +1,23 @@
+{
+  "version": 1,
+  "implementationRevision": 2,
+  "enabled": true,
+  "consumedSequence": 24,
+  "ackSequence": 24,
+  "ackCommand": "mvp-create",
+  "ackState": "accepted",
+  "ackMessage": "Fixed command returned: mvp-create. Read its artifact/evidence; command completion is not a gameplay PASS.",
+  "updatedUtc": "2026-10-17T07:14:23.7033312+00:00",
+  "runSequence": 24,
+  "runCommand": "mvp-create",
+  "runState": "completed",
+  "runStartedUtc": "2026-10-17T07:13:09.4966627+00:00",
+  "outputPath": "",
+  "overall": "NOT_A_TEST",
+  "limitations": "SafeMode has no verified stable public query here. Public compilation-failure/compiling/updating guards apply; SafeMode may prevent this editor code from loading. Accepted is not PASS; stalled never stops Play mode or closes the Editor.",
+  "commandScope": "mvp",
+  "editorPlaying": false,
+  "editorPaused": false,
+  "editorCompiling": false,
+  "editorUpdating": false
+}

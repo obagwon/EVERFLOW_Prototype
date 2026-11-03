@@ -1,0 +1,27 @@
+{
+  "utc": "2026-10-17T07:14:27.934663+00:00",
+  "baseline_count": 332,
+  "changed": [
+    "Assets/EverflowMap/Editor/EFCanalExperimentTests.cs",
+    "Assets/EverflowMap/Runtime/EFMapNode.cs",
+    "Assets/EverflowMap/Runtime/EFMapWorld.cs",
+    "Assets/EverflowMVP/Runtime/EFTitleScreen.cs",
+    "ProjectSettings/EditorBuildSettings.asset",
+    "ProjectSettings/ProjectSettings.asset"
+  ],
+  "unexpected": [],
+  "protected_scenes": {
+    "Assets/Scenes/Everflow_Map.unity": {
+      "sha256": "4dfecf3b2ed1640f71afff4deab73b7b34d859b8d7ddce8d97727075da2df6d2",
+      "unchanged_from_baseline": true
+    },
+    "Assets/Scenes/Everflow_Map_P3_DesignTest_20261016.unity": {
+      "sha256": "5a59ef9385accde771f6ae96eca5e293a693908cd697a433a9e3644d5b151e50",
+      "unchanged_from_baseline": true
+    }
+  },
+  "mvp_scene_sha256": "3baeb6c555f974075609ea49a59dda0c816b5058ca57f10c27ebb8af11f44def",
+  "mvp_matches_verified_scene": true,
+  "executable_sha256": "2c44c857ac016820e5be79bb52471e246a2c971f3c07a528cfdef3969b150c45",
+  "pass": true
+}

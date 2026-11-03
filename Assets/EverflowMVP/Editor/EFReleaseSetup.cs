@@ -207,6 +207,8 @@ namespace EverflowMVP.Editor
                     else
                     {
                         ValidateMapReferences(Find<EverflowMap.EFMapWorld>(), Find<EverflowMap.EFMapPlayer>());
+                        if (path == EverflowMap.Editor.EFMvpSetup.ScenePath)
+                            EverflowMap.Editor.EFMvpSetup.Validate(Find<EverflowMap.EFMapWorld>()[0]);
                         Require(Find<EventSystem>().Length <= 1, "duplicate gameplay EventSystems");
                     }
                 }

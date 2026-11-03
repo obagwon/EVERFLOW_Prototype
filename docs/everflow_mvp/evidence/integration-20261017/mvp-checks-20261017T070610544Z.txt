@@ -1,0 +1,366 @@
+MVP checks UTC 2026-10-17T07:06:15.0213907Z
+Normal route: actual title button, all six UI stages through CharacterController movement, ray/key/click abilities, vine/leaf rides. Includes deliberate retry/fall recovery checks. Skip/restart comparison cases use explicit grounded API/position fixtures. Programmatic camera/input, no human playthrough or duration claim.
+PASS Actual existing title and start button present
+CAPTURE docs/everflow_mvp/evidence/integration-20261017/mvp-checks-20261017T070610544Z-title.png (Game rendering; visual review is separate from state assertions)
+PASS Actual title button event loads fresh integrated MVP
+PASS Preserved opening overview locks movement during introduction
+PASS Opening overview restores movement and follow camera automatically
+CAPTURE docs/everflow_mvp/evidence/integration-20261017/mvp-checks-20261017T070610544Z-start.png (Game rendering; visual review is separate from state assertions)
+PASS Saved integrated scene has opt-in finale
+RAY target=SM_FlowerJumpPad hovered=SM_FlowerJumpPad collider=Ability target reason=Click: BLOOM / Flower — BLOOM, then Space on its open dome
+PASS [RAY] Camera center identifies Flower — BLOOM, then Space on its open dome
+PASS [RAY] Bloom applies on Flower — BLOOM, then Space on its open dome: Applied: Flower — BLOOM, then Space on its open dome: growing. Wait for the animation to finish.
+PASS Ordinary jump reaches bloomed flower
+PASS Actual flower launch reaches upper terrain
+RAY target=SM_Vine hovered=SM_Vine collider=Ability target reason=Click: BLOOM / Vine — BLOOM, E at handle, Space to release
+PASS [RAY] Camera center identifies Vine — BLOOM, E at handle, Space to release
+PASS [RAY] Bloom applies on Vine — BLOOM, E at handle, Space to release: Applied: Vine — BLOOM, E at handle, Space to release: growing. Wait for the animation to finish.
+MOVE Flower ledge to vine handle frames=24 local=(25.8396, 1.3792, 23.0184) remaining=0.1614109 grounded=True
+PASS [PHYSICAL] Flower ledge to vine handle reached through actual controller movement
+PASS Vine boarded through actual E input
+PASS Actual vine release completes crossing
+MOVE UI P1 far-side arrival frames=24 local=(44.1531, 4.1300, 21.0484) remaining=0.1605602 grounded=True
+PASS [PHYSICAL] UI P1 far-side arrival reached through actual controller movement
+PASS Physical P1 advances and unlocks FREEZE stage
+MOVE UI P2 debris entrance frames=49 local=(44.0046, 4.1028, 16.1506) remaining=0.1506963 grounded=True
+PASS [PHYSICAL] UI P2 debris entrance reached through actual controller movement
+PASS Alignment available for SM_FallingDebris_01
+PASS Broad alignment window available before FREEZE input
+RAY target=SM_FallingDebris_01 hovered=SM_FallingDebris_01 collider=Ability target reason=Click: FREEZE / Debris 1 — FREEZE at blue height mark
+PASS [RAY] Camera center identifies Debris 1 — FREEZE at blue height mark
+PASS [RAY] Freeze applies on Debris 1 — FREEZE at blue height mark: Applied: Debris 1 — FREEZE at blue height mark: frozen in position.
+PASS Actual FREEZE stabilizes SM_FallingDebris_01
+PASS Physical support on frozen debris 0
+MOVE Debris takeoff 0 frames=34 local=(44.0001, 5.2500, 9.9506) remaining=0.1506276 grounded=True
+PASS [PHYSICAL] Debris takeoff 0 reached through actual controller movement
+PASS Alignment available for SM_FallingDebris_02
+PASS Broad alignment window available before FREEZE input
+RAY target=SM_FallingDebris_02 hovered=SM_FallingDebris_02 collider=Ability target reason=Click: FREEZE / Debris 2 — FREEZE at blue height mark
+PASS [RAY] Camera center identifies Debris 2 — FREEZE at blue height mark
+PASS [RAY] Freeze applies on Debris 2 — FREEZE at blue height mark: Applied: Debris 2 — FREEZE at blue height mark: frozen in position.
+PASS Actual FREEZE stabilizes SM_FallingDebris_02
+PASS Physical support on frozen debris 1
+MOVE Debris takeoff 1 frames=22 local=(44.0000, 6.4500, 4.9506) remaining=0.1506289 grounded=True
+PASS [PHYSICAL] Debris takeoff 1 reached through actual controller movement
+PASS Alignment available for SM_FallingDebris_03
+PASS Broad alignment window available before FREEZE input
+RAY target=SM_FallingDebris_03 hovered=SM_FallingDebris_03 collider=Ability target reason=Click: FREEZE / Debris 3 — FREEZE at blue height mark
+PASS [RAY] Camera center identifies Debris 3 — FREEZE at blue height mark
+PASS [RAY] Freeze applies on Debris 3 — FREEZE at blue height mark: Applied: Debris 3 — FREEZE at blue height mark: frozen in position.
+PASS Actual FREEZE stabilizes SM_FallingDebris_03
+PASS Physical support on frozen debris 2
+MOVE Debris takeoff 2 frames=22 local=(44.0000, 7.6500, -0.0494) remaining=0.1506293 grounded=True
+PASS [PHYSICAL] Debris takeoff 2 reached through actual controller movement
+MOVE Slate approach frames=215 local=(44.0000, 8.5114, -24.8494) remaining=0.150631 grounded=True
+PASS [PHYSICAL] Slate approach reached through actual controller movement
+PASS Alignment available for SM_Slate
+PASS Broad alignment window available before FREEZE input
+RAY target=SM_Slate hovered=SM_Slate collider=SM_Slate reason=Click: FREEZE / Slate — FREEZE level
+PASS [RAY] Camera center identifies Slate — FREEZE level
+PASS [RAY] Freeze applies on Slate — FREEZE level: Applied: Slate — FREEZE level: frozen in position.
+PASS Actual FREEZE stabilizes SM_Slate
+MOVE Slate entry frames=20 local=(44.0000, 8.5482, -26.8494) remaining=0.150631 grounded=True
+PASS [PHYSICAL] Slate entry reached through actual controller movement
+MOVE UI P2 far-side arrival frames=130 local=(44.0000, 8.4347, -39.8494) remaining=0.1506348 grounded=True
+PASS [PHYSICAL] UI P2 far-side arrival reached through actual controller movement
+PASS Physical P2 advances and unlocks rotary PULSE
+PASS Unpowered B rejects FREEZE
+RAY target=SM_PowerSource_P3 hovered=SM_PowerSource_P3 collider=SM_PowerSource_P3_Crystal reason=Power crystal — PULSE does not respond to BLOOM.
+PASS [RAY] Camera center identifies Power crystal — PULSE
+PASS [RAY] Bloom rejects on Power crystal — PULSE: Blocked: Power crystal — PULSE does not respond to BLOOM.
+RAY target=SM_PowerSource_P3 hovered=SM_PowerSource_P3 collider=SM_PowerSource_P3_Crystal reason=Click: PULSE / Power crystal — PULSE
+PASS [RAY] Camera center identifies Power crystal — PULSE
+PASS [RAY] Pulse applies on Power crystal — PULSE: Applied: Power crystal — PULSE: power connected.
+MOVE Fixed A entrance frames=28 local=(42.0932, 8.6890, -41.8998) remaining=0.1368751 grounded=True
+PASS [PHYSICAL] Fixed A entrance reached through actual controller movement
+MOVE Fixed A to middle judgement deck frames=121 local=(29.9936, 8.7000, -41.9984) remaining=0.1936176 grounded=True
+PASS [PHYSICAL] Fixed A to middle judgement deck reached through actual controller movement
+CAPTURE docs/everflow_mvp/evidence/integration-20261017/mvp-checks-20261017T070610544Z-rotary.png (Game rendering; visual review is separate from state assertions)
+PASS Broad alignment window available before FREEZE input
+RAY target=SM_RotatingBridge hovered=SM_RotatingBridge collider=Rotary B FREEZE marker reason=Click: FREEZE / Bridge — PULSE source, FREEZE along the route
+PASS [RAY] Camera center identifies Bridge — PULSE source, FREEZE along the route
+PASS [RAY] Freeze applies on Bridge — PULSE source, FREEZE along the route: Applied: Bridge — PULSE source, FREEZE along the route: frozen in position.
+PASS B freezes with broad alignment and A remains available
+RAY target=SM_RotatingBridge hovered=SM_RotatingBridge collider=Rotary B FREEZE marker reason=Click: FREEZE / Bridge — PULSE source, FREEZE along the route
+PASS [RAY] Camera center identifies Bridge — PULSE source, FREEZE along the route
+PASS [RAY] Freeze applies on Bridge — PULSE source, FREEZE along the route: Applied: Bridge — PULSE source, FREEZE along the route: released.
+PASS Releasing B does not remove A
+PASS Broad alignment window available before FREEZE input
+RAY target=SM_RotatingBridge hovered=SM_RotatingBridge collider=Rotary B FREEZE marker reason=Click: FREEZE / Bridge — PULSE source, FREEZE along the route
+PASS [RAY] Camera center identifies Bridge — PULSE source, FREEZE along the route
+PASS [RAY] Freeze applies on Bridge — PULSE source, FREEZE along the route: Applied: Bridge — PULSE source, FREEZE along the route: frozen in position.
+PASS B reconnects without losing A
+PASS Rotary fall uses safe middle checkpoint and retains connection
+MOVE B crossing to western ridge frames=116 local=(18.2000, 8.5548, -42.0000) remaining=0.2000027 grounded=True
+PASS [PHYSICAL] B crossing to western ridge reached through actual controller movement
+PASS Actual B crossing advances and stabilizes completion
+PASS Rotary reentry/repeated input/fall cannot regress completed A or B
+PASS [PHYSICAL APPROACH] Entry contract: active canal after prior-stage fixtures, test input on, world/player/experiment initially disabled
+PASS [PHYSICAL APPROACH] Original terrain and active gameplay camera/input available
+[PHYSICAL APPROACH] Start at existing spawn local=(17.0000,8.6019,-42.0000); no fixture teleport, jump, disabled collider or manual movement method used.
+PASS [PHYSICAL APPROACH] Retry starts a dry canal with the real CharacterController enabled
+[PHYSICAL APPROACH] Begin existing ridge target.local=(10.0000,9.0000,-44.0000) grounded centerY range=[-Infinity,Infinity] start=(17.0000,8.6019,-42.0000)
+[PHYSICAL APPROACH] existing ridge frame=0 local=(17.0000,8.6019,-42.0000) distanceXZ=7.2801 grounded=True noProgress=0
+[PHYSICAL APPROACH] Nearby solid=T_Terrain distance=0.6664 hit=(25.7945,7.6060,-45.3799) normal=(0.0379,0.9898,0.1376)
+[PHYSICAL APPROACH] End existing ridge frames=70 local=(10.2693,11.7380,-43.9231) distanceXZ=0.2801 grounded=True
+[PHYSICAL APPROACH] Ground existing ridge collider=T_Terrain point.local=(10.2693,10.6381,-43.9231) feet.local=(10.2693,10.7380,-43.9231) footprint.offset=(0.0000,0.0000,0.0000) normal=(0.4426,0.8890,0.1171) rayDistance=0.2999
+PASS [PHYSICAL APPROACH] existing ridge reached on real ground within expected height (600-frame cap, 120-frame stall cap)
+[PHYSICAL APPROACH] Begin new approach stair entrance target.local=(2.0000,15.3000,-48.0000) grounded centerY range=[-Infinity,Infinity] start=(10.2693,11.7380,-43.9231)
+[PHYSICAL APPROACH] new approach stair entrance frame=0 local=(10.2693,11.7380,-43.9231) distanceXZ=9.2197 grounded=True noProgress=0
+[PHYSICAL APPROACH] Nearby solid=T_Terrain distance=0.0990 hit=(19.4538,10.7824,-47.1555) normal=(0.4426,0.8890,0.1171)
+[PHYSICAL APPROACH] End new approach stair entrance frames=90 local=(2.1971,15.9944,-47.9028) distanceXZ=0.2197 grounded=True
+[PHYSICAL APPROACH] Ground new approach stair entrance collider=T_Terrain point.local=(2.1971,14.8995,-47.9028) feet.local=(2.1971,14.9944,-47.9028) footprint.offset=(0.0000,0.0000,0.0000) normal=(0.4137,0.9013,0.1285) rayDistance=0.2949
+PASS [PHYSICAL APPROACH] new approach stair entrance reached on real ground within expected height (600-frame cap, 120-frame stall cap)
+[PHYSICAL APPROACH] Begin approach stairs to courtyard target.local=(-7.0000,22.8000,-48.0000) grounded centerY range=[23.3,24.6] start=(2.1971,15.9944,-47.9028)
+[PHYSICAL APPROACH] approach stairs to courtyard frame=0 local=(2.1971,15.9944,-47.9028) distanceXZ=9.1976 grounded=True noProgress=0
+[PHYSICAL APPROACH] Nearby solid=T_Terrain distance=0.1052 hit=(11.3723,15.0358,-51.0960) normal=(0.4249,0.8965,0.1258)
+[PHYSICAL APPROACH] Nearby solid=Existing ridge to courtyard 2 distance=0.1518 hit=(11.1204,15.2560,-51.0462) normal=(0.9382,0.3460,0.0000)
+[PHYSICAL APPROACH] Nearby solid=Existing ridge to courtyard 3 distance=0.4871 hit=(10.7604,15.5282,-51.0497) normal=(1.0000,0.0000,0.0000)
+[PHYSICAL APPROACH] Nearby solid=Existing ridge to courtyard 4 distance=0.8471 hit=(10.4004,15.7598,-51.0535) normal=(1.0000,0.0000,0.0000)
+[PHYSICAL APPROACH] End approach stairs to courtyard frames=89 local=(-6.7024,23.8500,-47.9969) distanceXZ=0.2976 grounded=True
+[PHYSICAL APPROACH] Ground approach stairs to courtyard collider=Existing ridge to courtyard 25 point.local=(-6.7024,22.8000,-47.9969) feet.local=(-6.7024,22.8500,-47.9969) footprint.offset=(0.0000,0.0000,0.0000) normal=(0.0000,1.0000,0.0000) rayDistance=0.2500
+PASS [PHYSICAL APPROACH] approach stairs to courtyard reached on real ground within expected height (600-frame cap, 120-frame stall cap)
+[PHYSICAL APPROACH] Begin low courtyard observation space target.local=(-11.0000,23.9200,-49.0000) grounded centerY range=[23.3,24.6] start=(-6.7024,23.8500,-47.9969)
+[PHYSICAL APPROACH] low courtyard observation space frame=0 local=(-6.7024,23.8500,-47.9969) distanceXZ=4.4131 grounded=True noProgress=0
+[PHYSICAL APPROACH] End low courtyard observation space frames=42 local=(-10.7504,23.8500,-48.9345) distanceXZ=0.2581 grounded=True
+[PHYSICAL APPROACH] Ground low courtyard observation space collider=Low maintenance courtyard point.local=(-10.7504,22.8000,-48.9345) feet.local=(-10.7504,22.8500,-48.9345) footprint.offset=(0.0000,0.0000,0.0000) normal=(0.0000,1.0000,0.0000) rayDistance=0.2500
+PASS [PHYSICAL APPROACH] low courtyard observation space reached on real ground within expected height (600-frame cap, 120-frame stall cap)
+[RAY INPUT] dry low basin FREEZE local=(-10.7504,23.8500,-48.9345) target=SM_IceSlide targetPoint=(0.1503,23.1500,-55.6418) range3D=3.9124 camera=(-5.1017,26.9184,-46.8456) yaw=149.2081 pitch=20.19291 hovered=SM_IceSlide collider=Ability target - low basin water ready=False reason=PULSE the source; wait until the watergate is open.
+PASS [RAY INPUT] dry low basin FREEZE: actual selected ability and center camera ray identify the intended receiver
+[RAY INPUT] dry low basin FREEZE result=Blocked: PULSE the source; wait until the watergate is open. castFrame=5002 previousFrame=4493
+PASS [RAY INPUT] dry low basin FREEZE: real player click rejects ability
+PASS [RAY INPUT] Dry FREEZE is rejected for missing supplied water rather than range or obstruction
+PASS [RAY INPUT] Dry FREEZE preserves dry/unfrozen water
+[RAY INPUT] low pump PULSE local=(-10.7504,23.8500,-48.9345) target=SM_PowerSource_P4 targetPoint=(-0.2497,24.2000,-53.4418) range3D=1.7580 camera=(-7.4157,26.0321,-48.9535) yaw=122.0617 pitch=12.22526 hovered=SM_PowerSource_P4 collider=SM_PowerSource_P4_Crystal ready=True reason=Click: PULSE / Canal pump — PULSE to send water through the pipe
+PASS [RAY INPUT] low pump PULSE: actual selected ability and center camera ray identify the intended receiver
+[RAY INPUT] low pump PULSE result=Applied: Canal pump — PULSE to send water through the pipe: power connected. castFrame=5046 previousFrame=5002
+PASS [RAY INPUT] low pump PULSE: real player click applies ability
+PASS [RAY INPUT] Actual pump click powers its source
+[RAY INPUT] Real gate elapsed seconds=1.6667; gate.Done=True water.Filled=True
+PASS [RAY INPUT] Gate animation updates over actual frames and fills the canal
+[RAY INPUT] filled low basin FREEZE local=(-10.7504,23.8500,-48.9345) target=SM_IceSlide targetPoint=(0.1503,23.1500,-55.6418) range3D=3.9124 camera=(-5.2071,26.9687,-46.7617) yaw=148.8968 pitch=20.21419 hovered=SM_IceSlide collider=Ability target - low basin water ready=True reason=Click: FREEZE / Canal water — FREEZE water, then E beside the leaf
+PASS [RAY INPUT] filled low basin FREEZE: actual selected ability and center camera ray identify the intended receiver
+[RAY INPUT] filled low basin FREEZE result=Applied: Canal water — FREEZE water, then E beside the leaf: frozen in position. castFrame=5190 previousFrame=5046
+PASS [RAY INPUT] filled low basin FREEZE: real player click applies ability
+PASS [RAY INPUT] Low basin click freezes the connected water
+[RAY INPUT] low basin release local=(-10.7504,23.8500,-48.9345) target=SM_IceSlide targetPoint=(0.1503,23.1500,-55.6418) range3D=3.9124 camera=(-5.2071,26.9687,-46.7617) yaw=148.8968 pitch=20.21419 hovered=SM_IceSlide collider=Ability target - low basin water ready=True reason=Click: FREEZE / Canal water — FREEZE water, then E beside the leaf
+PASS [RAY INPUT] low basin release: actual selected ability and center camera ray identify the intended receiver
+[RAY INPUT] low basin release result=Applied: Canal water — FREEZE water, then E beside the leaf: released. castFrame=5234 previousFrame=5190
+PASS [RAY INPUT] low basin release: real player click applies ability
+PASS [RAY INPUT] Repeated low basin click releases the same water before completion
+[PHYSICAL APPROACH] Begin courtyard lane west of solid pump target.local=(-12.0000,22.8000,-53.1000) grounded centerY range=[23.3,24.9] start=(-10.7504,23.8500,-48.9345)
+[PHYSICAL APPROACH] courtyard lane west of solid pump frame=0 local=(-10.7504,23.8500,-48.9345) distanceXZ=4.3489 grounded=True noProgress=0
+[PHYSICAL APPROACH] End courtyard lane west of solid pump frames=41 local=(-11.9285,23.8500,-52.8616) distanceXZ=0.2489 grounded=True
+[PHYSICAL APPROACH] Ground courtyard lane west of solid pump collider=Low maintenance courtyard point.local=(-11.9285,22.8000,-52.8616) feet.local=(-11.9285,22.8500,-52.8616) footprint.offset=(0.0000,0.0000,0.0000) normal=(0.0000,1.0000,0.0000) rayDistance=0.2500
+PASS [PHYSICAL APPROACH] courtyard lane west of solid pump reached on real ground within expected height (600-frame cap, 120-frame stall cap)
+[PHYSICAL APPROACH] Begin courtyard lane south of solid pump target.local=(-7.1000,22.8000,-53.1000) grounded centerY range=[23.3,24.9] start=(-11.9285,23.8500,-52.8616)
+[PHYSICAL APPROACH] courtyard lane south of solid pump frame=0 local=(-11.9285,23.8500,-52.8616) distanceXZ=4.8344 grounded=True noProgress=0
+[PHYSICAL APPROACH] End courtyard lane south of solid pump frames=49 local=(-7.3144,24.1426,-53.1465) distanceXZ=0.2194 grounded=True
+[PHYSICAL APPROACH] Ground courtyard lane south of solid pump collider=Short side access 1 point.local=(-7.5407,23.1280,-52.9202) feet.local=(-7.3144,23.1426,-53.1465) footprint.offset=(-0.2263,0.0000,0.2263) normal=(0.0000,1.0000,0.0000) rayDistance=0.2146
+PASS [PHYSICAL APPROACH] courtyard lane south of solid pump reached on real ground within expected height (600-frame cap, 120-frame stall cap)
+[PHYSICAL APPROACH] Begin short side stair entrance target.local=(-6.9000,22.8000,-52.0000) grounded centerY range=[23.3,24.9] start=(-7.3144,24.1426,-53.1465)
+[PHYSICAL APPROACH] short side stair entrance frame=0 local=(-7.3144,24.1426,-53.1465) distanceXZ=1.2191 grounded=True noProgress=0
+[PHYSICAL APPROACH] End short side stair entrance frames=10 local=(-6.9745,24.1780,-52.2061) distanceXZ=0.2191 grounded=True
+[PHYSICAL APPROACH] Ground short side stair entrance collider=Short side access 1 point.local=(-6.9745,23.1280,-51.8861) feet.local=(-6.9745,23.1780,-52.2061) footprint.offset=(0.0000,0.0000,0.3200) normal=(0.0000,1.0000,0.0000) rayDistance=0.2500
+PASS [PHYSICAL APPROACH] short side stair entrance reached on real ground within expected height (600-frame cap, 120-frame stall cap)
+[PHYSICAL APPROACH] Begin side stair summit outside deck target.local=(-15.7200,32.1200,-47.1000) grounded centerY range=[31.7,33] start=(-6.9745,24.1780,-52.2061)
+[PHYSICAL APPROACH] side stair summit outside deck frame=0 local=(-6.9745,24.1780,-52.2061) distanceXZ=10.1270 grounded=True noProgress=0
+[PHYSICAL APPROACH] Nearby solid=Short side access 2 distance=0.0358 hit=(2.1119,23.4560,-55.1447) normal=(0.8325,0.3049,-0.4625)
+[PHYSICAL APPROACH] Nearby solid=Short side access 3 distance=0.4287 hit=(1.7560,23.7234,-54.9374) normal=(0.8742,0.0000,-0.4856)
+[PHYSICAL APPROACH] Nearby solid=Short side access 4 distance=0.8406 hit=(1.4003,23.9549,-54.7297) normal=(0.8742,0.0000,-0.4856)
+[PHYSICAL APPROACH] side stair summit outside deck frame=90 local=(-14.7468,31.3883,-47.6682) distanceXZ=1.1270 grounded=True noProgress=0
+[PHYSICAL APPROACH] Nearby solid=Short side access 24 distance=0.0963 hit=(-5.7142,30.6722,-50.5755) normal=(0.8365,0.2903,-0.4647)
+[PHYSICAL APPROACH] Nearby solid=Short side access 25 distance=0.4909 hit=(-6.0700,30.9377,-50.3682) normal=(0.8742,0.0000,-0.4856)
+[PHYSICAL APPROACH] End side stair summit outside deck frames=99 local=(-15.5240,32.0500,-47.2144) distanceXZ=0.2270 grounded=True
+[PHYSICAL APPROACH] Ground side stair summit outside deck collider=Short side access 25 point.local=(-15.5240,31.0000,-47.2144) feet.local=(-15.5240,31.0500,-47.2144) footprint.offset=(0.0000,0.0000,0.0000) normal=(0.0000,1.0000,0.0000) rayDistance=0.2500
+PASS [PHYSICAL APPROACH] side stair summit outside deck reached on real ground within expected height (600-frame cap, 120-frame stall cap)
+[PHYSICAL APPROACH] Begin raised departure deck target.local=(-19.6000,32.1200,-47.0000) grounded centerY range=[31.7,33] start=(-15.5240,32.0500,-47.2144)
+[PHYSICAL APPROACH] raised departure deck frame=0 local=(-15.5240,32.0500,-47.2144) distanceXZ=4.0817 grounded=True noProgress=0
+[PHYSICAL APPROACH] End raised departure deck frames=38 local=(-19.3187,32.0500,-47.0148) distanceXZ=0.2817 grounded=True
+[PHYSICAL APPROACH] Ground raised departure deck collider=Raised departure deck point.local=(-19.3187,31.0000,-47.0148) feet.local=(-19.3187,31.0500,-47.0148) footprint.offset=(0.0000,0.0000,0.0000) normal=(0.0000,1.0000,0.0000) rayDistance=0.2500
+PASS [PHYSICAL APPROACH] raised departure deck reached on real ground within expected height (600-frame cap, 120-frame stall cap)
+PASS [PHYSICAL APPROACH] Walking up the side stairs reaches the designated departure deck
+[RAY INPUT] high slide surface FREEZE local=(-19.3187,32.0500,-47.0148) target=SM_IceSlide targetPoint=(-14.5497,31.0750,-46.6418) range3D=5.9345 camera=(-3.7978,34.6839,-53.1077) yaw=301.0229 pitch=16.04755 hovered=SM_IceSlide collider=Ability target - slide surface ready=True reason=Click: FREEZE / Canal water — FREEZE water, then E beside the leaf
+PASS [RAY INPUT] high slide surface FREEZE: actual selected ability and center camera ray identify the intended receiver
+[RAY INPUT] high slide surface FREEZE result=Applied: Canal water — FREEZE water, then E beside the leaf: frozen in position. castFrame=5555 previousFrame=5234
+PASS [RAY INPUT] high slide surface FREEZE: real player click applies ability
+PASS [RAY INPUT] High surface actual click also freezes the connected water
+[PHYSICAL APPROACH] Stable deck local=(-19.3187,32.0500,-47.0148) saved=True checkpoint=(-19.6000,32.1200,-47.0000)
+PASS [PHYSICAL APPROACH] Prepared canal checkpoint saves after actual grounded approach and stable deck contact
+[PHYSICAL APPROACH] Scope: existing canal spawn to prepared departure deck with real movement and camera-ray clicks; no full game, human comprehension or playtime measurement.
+CAPTURE docs/everflow_mvp/evidence/integration-20261017/mvp-checks-20261017T070610544Z-canal.png (Game rendering; visual review is separate from state assertions)
+PASS Integrated canal boards leaf with E from walked departure deck
+PASS Integrated leaf capsule traverses to raised exit
+MOVE Step off parked leaf onto far deck frames=23 local=(-28.3000, 27.0500, 8.0000) remaining=0.2000008 grounded=True
+PASS [PHYSICAL] Step off parked leaf onto far deck reached through actual controller movement
+MOVE Canal arrival line frames=36 local=(-26.1097, 27.0500, 10.8570) remaining=0.1802114 grounded=True
+PASS [PHYSICAL] Canal arrival line reached through actual controller movement
+PASS Physical canal exit advances UI P4 to UI P5
+MOVE Upper descent entrance frames=24 local=(-27.4159, 27.0500, 12.8704) remaining=0.1545268 grounded=True
+PASS [PHYSICAL] Upper descent entrance reached through actual controller movement
+MOVE Upper descent to turn landing frames=120 local=(-27.4991, 19.0500, 24.8701) remaining=0.129926 grounded=True
+PASS [PHYSICAL] Upper descent to turn landing reached through actual controller movement
+MOVE Turn landing to lower descent frames=48 local=(-22.7007, 19.0500, 24.9948) remaining=0.2007876 grounded=True
+PASS [PHYSICAL] Turn landing to lower descent reached through actual controller movement
+MOVE Lower descent to original plateau frames=118 local=(-22.5033, 11.2880, 13.1964) remaining=0.1964625 grounded=True
+PASS [PHYSICAL] Lower descent to original plateau reached through actual controller movement
+MOVE UI P5 root and door approach frames=51 local=(-22.0116, 11.0310, 8.1202) remaining=0.1207506 grounded=True
+PASS [PHYSICAL] UI P5 root and door approach reached through actual controller movement
+RAY target=SM_VineRoot_P5 hovered=SM_VineRoot_P5 collider=Ability target reason=BLOOM the root and wait for the wire to connect, then PULSE this root.
+PASS [RAY] Camera center identifies Root terminal — BLOOM, then PULSE here
+PASS [RAY] Pulse rejects on Root terminal — BLOOM, then PULSE here: Blocked: BLOOM the root and wait for the wire to connect, then PULSE this root.
+RAY target=SM_VineRoot_P5 hovered=SM_VineRoot_P5 collider=Ability target reason=Click: BLOOM / Root terminal — BLOOM, then PULSE here
+PASS [RAY] Camera center identifies Root terminal — BLOOM, then PULSE here
+PASS [RAY] Bloom applies on Root terminal — BLOOM, then PULSE here: Applied: Root terminal — BLOOM, then PULSE here: growing. Wait for the animation to finish.
+RAY target=SM_VineRoot_P5 hovered=SM_VineRoot_P5 collider=Ability target reason=Click: PULSE / Root terminal — BLOOM, then PULSE here
+PASS [RAY] Camera center identifies Root terminal — BLOOM, then PULSE here
+PASS [RAY] Pulse applies on Root terminal — BLOOM, then PULSE here: Applied: Root terminal — BLOOM, then PULSE here: power connected.
+PASS Existing root BLOOM then PULSE opens UI P5 door
+MOVE Door entrance frames=33 local=(-20.5729, 11.0504, 5.1504) remaining=0.1670778 grounded=True
+PASS [PHYSICAL] Door entrance reached through actual controller movement
+MOVE UI P5 door crossing frames=64 local=(-14.1745, 13.5016, 5.0040) remaining=0.1745652 grounded=True
+PASS [PHYSICAL] UI P5 door crossing reached through actual controller movement
+MOVE Existing stairs to final plateau frames=80 local=(-6.1745, 16.1163, 5.0001) remaining=0.1745205 grounded=True
+PASS [PHYSICAL] Existing stairs to final plateau reached through actual controller movement
+PASS Physical opening, rotary, canal and door connect to final stage
+PASS P6 entry does not start ending
+PASS Final PULSE and maintenance PULSE reject missing preparation
+RAY target=P6_ChannelRepair hovered=P6_ChannelRepair collider=BLOOM approach roots - reused model reason=Click: BLOOM / Broken channel roots — BLOOM
+PASS [RAY] Camera center identifies Broken channel roots — BLOOM
+PASS [RAY] Bloom applies on Broken channel roots — BLOOM: Applied: Broken channel roots — BLOOM: growing. Wait for the animation to finish.
+PASS BLOOM animation enables the approach route
+MOVE P6 staircase entrance frames=24 local=(-6.0138, 16.1254, 2.6055) remaining=0.2059356 grounded=True
+PASS [PHYSICAL] P6 staircase entrance reached through actual controller movement
+MOVE P6 approach staircase frames=75 local=(-6.0004, 20.3500, -4.8945) remaining=0.2054857 grounded=True
+PASS [PHYSICAL] P6 approach staircase reached through actual controller movement
+MOVE BLOOM route to maintenance frames=67 local=(-6.0000, 20.3500, -11.5945) remaining=0.2054863 grounded=True
+PASS [PHYSICAL] BLOOM route to maintenance reached through actual controller movement
+MOVE Maintenance safe deck frames=34 local=(-3.1300, 20.3500, -13.4174) remaining=0.1540039 grounded=True
+PASS [PHYSICAL] Maintenance safe deck reached through actual controller movement
+RAY target=SM_PowerSource_P6 hovered=SM_PowerSource_P6 collider=SM_PowerSource_P6_Crystal reason=Click: PULSE / Power crystal — PULSE
+PASS [RAY] Camera center identifies Power crystal — PULSE
+PASS [RAY] Pulse applies on Power crystal — PULSE: Applied: Power crystal — PULSE: power connected.
+PASS Maintenance power alone keeps final sluice and ending idle
+PASS Broad alignment window available before FREEZE input
+RAY target=SM_Channel_Swing_P6 hovered=SM_Channel_Swing_P6 collider=SM_Channel_Swing_P6 reason=Click: FREEZE / Last channel — FREEZE aligned
+PASS [RAY] Camera center identifies Last channel — FREEZE aligned
+PASS [RAY] Freeze applies on Last channel — FREEZE aligned: Applied: Last channel — FREEZE aligned: frozen in position.
+PASS Prepared route is safe but never auto-starts final restoration
+MOVE Frozen connection entry frames=33 local=(-0.1239, 20.3500, -12.0561) remaining=0.1359855 grounded=True
+PASS [PHYSICAL] Frozen connection entry reached through actual controller movement
+MOVE Frozen channel physical crossing frames=49 local=(-0.0039, 20.3500, -7.1576) remaining=0.1576143 grounded=True
+PASS [PHYSICAL] Frozen channel physical crossing reached through actual controller movement
+MOVE Final far deck physical arrival frames=49 local=(-0.0001, 20.3500, -2.6771) remaining=0.1770802 grounded=True
+PASS [PHYSICAL] Final far deck physical arrival reached through actual controller movement
+PASS Direct grounded crossing records evidence; mere final arrival still does not start ending
+PASS Final traversal cannot be completed by passage assistance
+PASS Final control rejects both wrong abilities
+PASS Fall recovery preserves final preparation, crossing and earlier completion
+RAY target=Final control - last PULSE hovered=Final control - last PULSE collider=SM_PowerSource_P6_Crystal reason=Final control needs PULSE (3).
+PASS [RAY] Camera center identifies FINAL CONTROL - PULSE after crossing
+PASS [RAY] Bloom rejects on FINAL CONTROL - PULSE after crossing: Blocked: Final control needs PULSE (3).
+RAY target=Final control - last PULSE hovered=Final control - last PULSE collider=SM_PowerSource_P6_Crystal reason=Final control needs PULSE (3).
+PASS [RAY] Camera center identifies FINAL CONTROL - PULSE after crossing
+PASS [RAY] Freeze rejects on FINAL CONTROL - PULSE after crossing: Blocked: Final control needs PULSE (3).
+CAPTURE docs/everflow_mvp/evidence/integration-20261017/mvp-checks-20261017T070610544Z-final-control.png (Game rendering; visual review is separate from state assertions)
+RAY target=Final control - last PULSE hovered=Final control - last PULSE collider=SM_PowerSource_P6_Crystal reason=Click: PULSE / FINAL CONTROL - PULSE after crossing
+PASS [RAY] Camera center identifies FINAL CONTROL - PULSE after crossing
+PASS [RAY] Pulse applies on FINAL CONTROL - PULSE after crossing: Applied: FINAL CONTROL - PULSE after crossing: power connected.
+PASS Last actual PULSE starts restoration and controls are locked
+PASS Repeated final PULSE cannot restart the sequence
+PASS Exceptional fall during cinematic recovers to safe final deck without restarting sequence
+PASS Retry cannot corrupt an accepted restoration
+PASS Normal restoration opens sluice, connects water, spins wheel and reaches ending
+NORMAL FINAL STATE True|True|True|True|True|True|True|True|Finished|True|True,True,True,True,True,True,True,True|3|True|False|False|False|True
+CAPTURE docs/everflow_mvp/evidence/integration-20261017/mvp-checks-20261017T070610544Z-ending.png (Game rendering; visual review is separate from state assertions)
+PASS [RELOAD] New game resets progression, devices, water/ice, checkpoint flags and cinematic state
+PASS [RELOAD] One player, gameplay camera and normal time scale
+PASS [POSITION FIXTURE] Grounded fixture placement (no route claim)
+PASS [API FIXTURE] Prior-stage assistance 0 preserves completion and unlocks next stage
+PASS [POSITION FIXTURE] Grounded fixture placement (no route claim)
+PASS [API FIXTURE] Prior-stage assistance 1 preserves completion and unlocks next stage
+PASS [POSITION FIXTURE] Grounded fixture placement (no route claim)
+PASS [API FIXTURE] Prior-stage assistance 2 preserves completion and unlocks next stage
+PASS [POSITION FIXTURE] Grounded fixture placement (no route claim)
+PASS [API FIXTURE] Prior-stage assistance 3 preserves completion and unlocks next stage
+PASS [POSITION FIXTURE] Grounded fixture placement (no route claim)
+PASS [API FIXTURE] Prior-stage assistance 4 preserves completion and unlocks next stage
+PASS P6 entry does not start ending
+PASS Final PULSE and maintenance PULSE reject missing preparation
+SETUP [API/POSITION FIXTURE] Skip/restart case preparation and bridge placement; normal case used real approach and ray input.
+PASS [POSITION FIXTURE] Grounded fixture placement (no route claim)
+PASS Prepared route is safe but never auto-starts final restoration
+PASS [POSITION FIXTURE] Grounded fixture placement (no route claim)
+MOVE Frozen channel physical crossing frames=13 local=(0.0000, 20.3500, -7.2000) remaining=0.1999998 grounded=True
+PASS [PHYSICAL] Frozen channel physical crossing reached through actual controller movement
+MOVE Final far deck physical arrival frames=49 local=(0.0000, 20.3500, -2.7144) remaining=0.2144094 grounded=True
+PASS [PHYSICAL] Final far deck physical arrival reached through actual controller movement
+PASS Direct grounded crossing records evidence; mere final arrival still does not start ending
+PASS Final traversal cannot be completed by passage assistance
+PASS Final control rejects both wrong abilities
+PASS Fall recovery preserves final preparation, crossing and earlier completion
+PASS [API INPUT] Last PULSE accepted for skip comparison: Applied: FINAL CONTROL - PULSE after crossing: power connected.
+PASS Early skip converges on normal final state (continuous wheel angle and elapsed playtime excluded)
+PASS [RELOAD] New game resets progression, devices, water/ice, checkpoint flags and cinematic state
+PASS [RELOAD] One player, gameplay camera and normal time scale
+PASS [POSITION FIXTURE] Grounded fixture placement (no route claim)
+PASS [API FIXTURE] Prior-stage assistance 0 preserves completion and unlocks next stage
+PASS [POSITION FIXTURE] Grounded fixture placement (no route claim)
+PASS [API FIXTURE] Prior-stage assistance 1 preserves completion and unlocks next stage
+PASS [POSITION FIXTURE] Grounded fixture placement (no route claim)
+PASS [API FIXTURE] Prior-stage assistance 2 preserves completion and unlocks next stage
+PASS [POSITION FIXTURE] Grounded fixture placement (no route claim)
+PASS [API FIXTURE] Prior-stage assistance 3 preserves completion and unlocks next stage
+PASS [POSITION FIXTURE] Grounded fixture placement (no route claim)
+PASS [API FIXTURE] Prior-stage assistance 4 preserves completion and unlocks next stage
+PASS P6 entry does not start ending
+PASS Final PULSE and maintenance PULSE reject missing preparation
+SETUP [API/POSITION FIXTURE] Skip/restart case preparation and bridge placement; normal case used real approach and ray input.
+PASS [POSITION FIXTURE] Grounded fixture placement (no route claim)
+PASS Prepared route is safe but never auto-starts final restoration
+PASS [POSITION FIXTURE] Grounded fixture placement (no route claim)
+MOVE Frozen channel physical crossing frames=13 local=(0.0000, 20.3500, -7.2000) remaining=0.1999998 grounded=True
+PASS [PHYSICAL] Frozen channel physical crossing reached through actual controller movement
+MOVE Final far deck physical arrival frames=49 local=(0.0000, 20.3500, -2.7144) remaining=0.2144094 grounded=True
+PASS [PHYSICAL] Final far deck physical arrival reached through actual controller movement
+PASS Direct grounded crossing records evidence; mere final arrival still does not start ending
+PASS Final traversal cannot be completed by passage assistance
+PASS Final control rejects both wrong abilities
+PASS Fall recovery preserves final preparation, crossing and earlier completion
+PASS [API INPUT] Last PULSE accepted for skip comparison: Applied: FINAL CONTROL - PULSE after crossing: power connected.
+PASS Late skip converges on normal final state (continuous wheel angle and elapsed playtime excluded)
+PASS Continue exploring restores controls/camera, retains completion and does not replay ending
+PASS [RELOAD] New game resets progression, devices, water/ice, checkpoint flags and cinematic state
+PASS [RELOAD] One player, gameplay camera and normal time scale
+PASS [POSITION FIXTURE] Grounded fixture placement (no route claim)
+PASS [API FIXTURE] Prior-stage assistance 0 preserves completion and unlocks next stage
+PASS [POSITION FIXTURE] Grounded fixture placement (no route claim)
+PASS [API FIXTURE] Prior-stage assistance 1 preserves completion and unlocks next stage
+PASS [POSITION FIXTURE] Grounded fixture placement (no route claim)
+PASS [API FIXTURE] Prior-stage assistance 2 preserves completion and unlocks next stage
+PASS [POSITION FIXTURE] Grounded fixture placement (no route claim)
+PASS [API FIXTURE] Prior-stage assistance 3 preserves completion and unlocks next stage
+PASS [POSITION FIXTURE] Grounded fixture placement (no route claim)
+PASS [API FIXTURE] Prior-stage assistance 4 preserves completion and unlocks next stage
+PASS P6 entry does not start ending
+PASS Final PULSE and maintenance PULSE reject missing preparation
+SETUP [API/POSITION FIXTURE] Skip/restart case preparation and bridge placement; normal case used real approach and ray input.
+PASS [POSITION FIXTURE] Grounded fixture placement (no route claim)
+PASS Prepared route is safe but never auto-starts final restoration
+PASS [POSITION FIXTURE] Grounded fixture placement (no route claim)
+MOVE Frozen channel physical crossing frames=13 local=(0.0000, 20.3500, -7.2000) remaining=0.1999998 grounded=True
+PASS [PHYSICAL] Frozen channel physical crossing reached through actual controller movement
+MOVE Final far deck physical arrival frames=49 local=(0.0000, 20.3500, -2.7144) remaining=0.2144094 grounded=True
+PASS [PHYSICAL] Final far deck physical arrival reached through actual controller movement
+PASS Direct grounded crossing records evidence; mere final arrival still does not start ending
+PASS Final traversal cannot be completed by passage assistance
+PASS Final control rejects both wrong abilities
+PASS Fall recovery preserves final preparation, crossing and earlier completion
+PASS [API INPUT] Start restoration before restart-interruption case: Applied: FINAL CONTROL - PULSE after crossing: power connected.
+PASS [RELOAD] New game resets progression, devices, water/ice, checkpoint flags and cinematic state
+PASS [RELOAD] One player, gameplay camera and normal time scale
+PASS [RELOAD] New game resets progression, devices, water/ice, checkpoint flags and cinematic state
+PASS [RELOAD] One player, gameplay camera and normal time scale
+Last phase: Final far deck physical arrival
+Runtime checks passed: 234; overall PASS.
+NOT VERIFIED BY THIS EDITOR REPORT: human understanding/fun/duration; standalone build execution. See separate player smoke evidence when available.

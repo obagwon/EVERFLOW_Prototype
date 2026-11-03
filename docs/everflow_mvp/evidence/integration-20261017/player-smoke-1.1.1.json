@@ -1,0 +1,20 @@
+{
+  "utc": "2026-10-17T07:12:36.762642+00:00",
+  "command": [
+    "C:\\Users\\vzd12\\EVERFLOW_Prototype\\Build\\1.1.1\\EVERFLOW.exe",
+    "-batchmode",
+    "-nographics",
+    "-everflow-mvp-smoke",
+    "-logFile",
+    "C:\\Users\\vzd12\\EVERFLOW_Prototype\\docs\\everflow_mvp\\evidence\\integration-20261017\\player-smoke-1.1.1.log"
+  ],
+  "kind": "Actual Windows player headless title/reload smoke; not rendered manual playthrough",
+  "exit_code": 0,
+  "pass": true,
+  "markers": [
+    "PLAYER SMOKE PASS: title/MVP fresh state, repetition 0",
+    "PLAYER SMOKE PASS: title/MVP fresh state, repetition 1",
+    "PLAYER SMOKE PASS: title/MVP fresh state, repetition 2",
+    "PLAYER SMOKE OVERALL PASS. Not a full physical playthrough or rendered UI inspection."
+  ]
+}

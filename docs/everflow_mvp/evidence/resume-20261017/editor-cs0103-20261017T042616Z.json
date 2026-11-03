@@ -1,0 +1,11 @@
+{
+  "utc": "2026-10-17T04:28:00.847605+00:00",
+  "kind": "Actual Editor compilation failure; sanitized error only",
+  "errors": [
+    "Assets\\EverflowMap\\Editor\\EFCanalExperimentTests.cs(345,26): error CS0103: The name 'EFCanalApproachChecks' does not exist in the current context"
+  ],
+  "editor_log_sha256": "4d8ab74e781a27ae701ab7721c9cab4a832307d524b32def835662a2ad6c9e63",
+  "cached_rsp_has_helper": false,
+  "helper_exists": true,
+  "raw_log_saved": false
+}

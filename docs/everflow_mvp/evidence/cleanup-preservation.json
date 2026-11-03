@@ -1,0 +1,38 @@
+{
+  "kind": "SHA256 comparison to task-start snapshot, not Unity execution",
+  "baseline_count": 462,
+  "changed": [
+    "Assets/Settings/DefaultVolumeProfile.asset",
+    "Assets/EverflowMap/Editor/EFMapPlayTests.cs",
+    "Assets/EverflowMap/Editor/EFMvpSetup.cs",
+    "Assets/EverflowMap/Runtime/EFMvpBuildSmoke.cs",
+    "Assets/EverflowMVP/Editor/EFReleaseSetup.cs",
+    "ProjectSettings/EditorBuildSettings.asset",
+    "tools/verify_mvp_experiment.py",
+    "docs/everflow_mvp/HANDOFF.md",
+    "docs/everflow_mvp/VERIFICATION.md",
+    "docs/everflow_mvp/WORKLOG.md",
+    ".gitignore"
+  ],
+  "deleted_existing_files": [],
+  "new_files": [
+    "tools/check_project_assets.py",
+    "docs/everflow_mvp/evidence/cleanup-audit.json",
+    "docs/everflow_mvp/evidence/cleanup-existing-player.json",
+    "docs/everflow_mvp/evidence/cleanup-existing-player.log",
+    "docs/everflow_mvp/evidence/cleanup-validator-tests.json",
+    "docs/everflow_mvp/evidence/cleanup-volume-profile.json",
+    "docs/everflow_mvp/evidence/cleanup-compile/asset-checks.json",
+    "docs/everflow_mvp/evidence/cleanup-compile/compile-results.json",
+    "docs/everflow_mvp/evidence/cleanup-compile/editor-compile.txt",
+    "docs/everflow_mvp/evidence/cleanup-compile/preservation.json",
+    "docs/everflow_mvp/evidence/cleanup-compile/runtime-development-compile.txt",
+    "docs/everflow_mvp/evidence/cleanup-compile/runtime-editor-compile.txt",
+    "docs/everflow_mvp/evidence/cleanup-compile/runtime-player-compile.txt"
+  ],
+  "unexpected_changes": [],
+  "all_meta_unchanged": true,
+  "all_scenes_unchanged": true,
+  "backup": "Backups/20261017-cleanup",
+  "pass": true
+}

@@ -1,0 +1,551 @@
+{
+  "kind": "Static GUID/local-reference audit only. No Unity import, subasset-ID validation or physics.",
+  "duplicate_guids": [],
+  "missing_meta": [],
+  "orphan_meta": [],
+  "unresolved_guids": {
+    "03cfc4915c15d504a9ed85ecc404e607": [
+      "Assets/Settings/PC_Renderer.asset"
+    ],
+    "24ec0e140fb444a44ab96ee80844e18e": [
+      "Assets/Settings/PC_Renderer.asset"
+    ],
+    "53a11f4ebaebf4049b3638ef78dc9664": [
+      "Assets/Settings/PC_Renderer.asset"
+    ],
+    "57d7c4c16e2765b47a4d2069b311bffe": [
+      "Assets/Settings/PC_Renderer.asset"
+    ],
+    "8f96cd657dc40064aa21efcc7e50a2e7": [
+      "Assets/Settings/PC_Renderer.asset"
+    ],
+    "b9a23f869c4fd45f19c5ada54dd82176": [
+      "Assets/Settings/PC_Renderer.asset"
+    ],
+    "e5c6678ed2aaa91408dd3df699057aae": [
+      "Assets/Settings/PC_Renderer.asset"
+    ]
+  },
+  "package_guids_resolved": 193,
+  "local_reference_errors": [],
+  "unresolved_script_guids": [],
+  "mvp_invariants": [
+    {
+      "pass": true,
+      "description": "Exactly one EFMapWorld"
+    },
+    {
+      "pass": true,
+      "description": "Exactly one EFMvpFinale"
+    },
+    {
+      "pass": true,
+      "description": "Exactly one EFMapPlayer"
+    },
+    {
+      "pass": true,
+      "description": "Exactly one EFCanalExperiment"
+    },
+    {
+      "pass": true,
+      "description": "World and finale references are reciprocal"
+    },
+    {
+      "pass": true,
+      "description": "Finale reference: growth"
+    },
+    {
+      "pass": true,
+      "description": "Finale reference: machine"
+    },
+    {
+      "pass": true,
+      "description": "Finale reference: connection"
+    },
+    {
+      "pass": true,
+      "description": "Finale reference: gate"
+    },
+    {
+      "pass": true,
+      "description": "Finale reference: finalControl"
+    },
+    {
+      "pass": true,
+      "description": "Finale reference: bloomRoute"
+    },
+    {
+      "pass": true,
+      "description": "Finale reference: nearDeck"
+    },
+    {
+      "pass": true,
+      "description": "Finale reference: frozenRoute"
+    },
+    {
+      "pass": true,
+      "description": "Finale reference: farDeck"
+    },
+    {
+      "pass": true,
+      "description": "Finale reference: nearCheckpoint"
+    },
+    {
+      "pass": true,
+      "description": "Finale reference: farCheckpoint"
+    },
+    {
+      "pass": true,
+      "description": "Finale reference: reactionCamera"
+    },
+    {
+      "pass": true,
+      "description": "Finale reference: restoredLight"
+    },
+    {
+      "pass": true,
+      "description": "Finale reference: feedback"
+    },
+    {
+      "pass": true,
+      "description": "Finale reference: grounding"
+    },
+    {
+      "pass": true,
+      "description": "Only the separate last PULSE supplies the final gate"
+    },
+    {
+      "pass": true,
+      "description": "Grounded arrival and completed-stage preservation remain enabled"
+    },
+    {
+      "pass": true,
+      "description": "Exactly one serialized active Camera"
+    },
+    {
+      "pass": true,
+      "description": "Exactly one serialized active AudioListener"
+    },
+    {
+      "pass": true,
+      "description": "Ability target receiver resolves to a map node"
+    },
+    {
+      "pass": true,
+      "description": "Ability target receiver resolves to a map node"
+    },
+    {
+      "pass": true,
+      "description": "Ability target receiver resolves to a map node"
+    },
+    {
+      "pass": true,
+      "description": "Ability target receiver resolves to a map node"
+    },
+    {
+      "pass": true,
+      "description": "Ability target receiver resolves to a map node"
+    },
+    {
+      "pass": true,
+      "description": "Ability target receiver resolves to a map node"
+    },
+    {
+      "pass": true,
+      "description": "Ability target receiver resolves to a map node"
+    },
+    {
+      "pass": true,
+      "description": "Ability target receiver resolves to a map node"
+    },
+    {
+      "pass": true,
+      "description": "Ability target receiver resolves to a map node"
+    },
+    {
+      "pass": true,
+      "description": "Ability target receiver resolves to a map node"
+    },
+    {
+      "pass": true,
+      "description": "Ability target receiver resolves to a map node"
+    },
+    {
+      "pass": true,
+      "description": "Ability target receiver resolves to a map node"
+    },
+    {
+      "pass": true,
+      "description": "Ability target receiver resolves to a map node"
+    },
+    {
+      "pass": true,
+      "description": "Ability target receiver resolves to a map node"
+    },
+    {
+      "pass": true,
+      "description": "Ability target receiver resolves to a map node"
+    },
+    {
+      "pass": true,
+      "description": "Ability target receiver resolves to a map node"
+    },
+    {
+      "pass": true,
+      "description": "Ability target receiver resolves to a map node"
+    },
+    {
+      "pass": true,
+      "description": "Ability target receiver resolves to a map node"
+    },
+    {
+      "pass": true,
+      "description": "Ability target receiver resolves to a map node"
+    },
+    {
+      "pass": true,
+      "description": "Ability target receiver resolves to a map node"
+    },
+    {
+      "pass": true,
+      "description": "Ability target receiver resolves to a map node"
+    },
+    {
+      "pass": true,
+      "description": "Ability target receiver resolves to a map node"
+    },
+    {
+      "pass": true,
+      "description": "Ability target receiver resolves to a map node"
+    },
+    {
+      "pass": true,
+      "description": "Ability target receiver resolves to a map node"
+    },
+    {
+      "pass": true,
+      "description": "Ability target receiver resolves to a map node"
+    },
+    {
+      "pass": true,
+      "description": "Ability target receiver resolves to a map node"
+    },
+    {
+      "pass": true,
+      "description": "Ability target receiver resolves to a map node"
+    },
+    {
+      "pass": true,
+      "description": "Ability target receiver resolves to a map node"
+    },
+    {
+      "pass": true,
+      "description": "Ability target receiver resolves to a map node"
+    }
+  ],
+  "explicit_missing_scripts": [],
+  "scenes": {
+    "Assets/EverflowMVP/Scenes/Everflow_6Puzzles.unity": {
+      "blocks": 426,
+      "components": {
+        "Camera": 1,
+        "active:Camera": 1,
+        "AudioListener": 1,
+        "active:AudioListener": 1,
+        "UnityEngine.Rendering.Universal.UniversalAdditionalCameraData": 1,
+        "active:UnityEngine.Rendering.Universal.UniversalAdditionalCameraData": 1,
+        "UnityEngine.Rendering.Universal.UniversalAdditionalLightData": 1,
+        "active:UnityEngine.Rendering.Universal.UniversalAdditionalLightData": 1
+      }
+    },
+    "Assets/EverflowMVP/Scenes/Everflow_Title.unity": {
+      "blocks": 59,
+      "components": {
+        "Camera": 1,
+        "active:Camera": 1,
+        "UnityEngine.InputSystem.InputActionReference": 10,
+        "UnityEngine.UI.Text": 2,
+        "UnityEngine.InputSystem.InputActionAsset": 1,
+        "UnityEngine.UI.Button": 1,
+        "active:UnityEngine.UI.Button": 1,
+        "UnityEngine.UI.Image": 4,
+        "active:UnityEngine.UI.Image": 4,
+        "active:UnityEngine.UI.Text": 1,
+        "EverflowMVP.EFTitleScreen": 1,
+        "active:EverflowMVP.EFTitleScreen": 1,
+        "UnityEngine.UI.GraphicRaycaster": 1,
+        "active:UnityEngine.UI.GraphicRaycaster": 1,
+        "UnityEngine.UI.CanvasScaler": 1,
+        "active:UnityEngine.UI.CanvasScaler": 1,
+        "UnityEngine.InputSystem.UI.InputSystemUIInputModule": 1,
+        "active:UnityEngine.InputSystem.UI.InputSystemUIInputModule": 1,
+        "UnityEngine.EventSystems.EventSystem": 1,
+        "active:UnityEngine.EventSystems.EventSystem": 1,
+        "UnityEngine.UI.AspectRatioFitter": 1,
+        "active:UnityEngine.UI.AspectRatioFitter": 1
+      }
+    },
+    "Assets/Scenes/Everflow_Map.unity": {
+      "blocks": 502,
+      "components": {
+        "EverflowMap.EFMapNode": 17,
+        "active:EverflowMap.EFMapNode": 17,
+        "EverflowMap.EFMapAnimation": 13,
+        "active:EverflowMap.EFMapAnimation": 13,
+        "EverflowMap.EFMapAbilityTarget": 35,
+        "active:EverflowMap.EFMapAbilityTarget": 35,
+        "UnityEngine.Rendering.Universal.UniversalAdditionalLightData": 1,
+        "active:UnityEngine.Rendering.Universal.UniversalAdditionalLightData": 1,
+        "EverflowMap.EFMapCheckpoint": 2,
+        "active:EverflowMap.EFMapCheckpoint": 2,
+        "AudioListener": 1,
+        "active:AudioListener": 1,
+        "Camera": 3,
+        "active:Camera": 1,
+        "UnityEngine.Rendering.Universal.UniversalAdditionalCameraData": 1,
+        "active:UnityEngine.Rendering.Universal.UniversalAdditionalCameraData": 1,
+        "EverflowMap.EFMapCamera": 1,
+        "active:EverflowMap.EFMapCamera": 1,
+        "EverflowMap.EFMapWorld": 1,
+        "active:EverflowMap.EFMapWorld": 1,
+        "EverflowMap.EFMapPlayer": 1,
+        "EverflowMap.EFMapPassage": 5,
+        "active:EverflowMap.EFMapPassage": 5,
+        "UnityEngine.UI.CanvasScaler": 1,
+        "active:UnityEngine.UI.CanvasScaler": 1,
+        "UnityEngine.UI.Image": 7,
+        "active:UnityEngine.UI.Image": 5,
+        "UnityEngine.UI.Text": 9,
+        "active:UnityEngine.UI.Text": 7,
+        "UnityEngine.UI.Shadow": 9,
+        "active:UnityEngine.UI.Shadow": 7,
+        "EverflowMap.EFMapAbilityHUD": 1,
+        "active:EverflowMap.EFMapAbilityHUD": 1
+      }
+    },
+    "Assets/Scenes/Everflow_Map_MVP.unity": {
+      "blocks": 1229,
+      "components": {
+        "EverflowMap.EFMapNode": 18,
+        "active:EverflowMap.EFMapNode": 17,
+        "EverflowMap.EFMapAnimation": 13,
+        "active:EverflowMap.EFMapAnimation": 13,
+        "EverflowMap.EFMapAbilityTarget": 41,
+        "active:EverflowMap.EFMapAbilityTarget": 41,
+        "UnityEngine.Rendering.Universal.UniversalAdditionalLightData": 1,
+        "active:UnityEngine.Rendering.Universal.UniversalAdditionalLightData": 1,
+        "EverflowMap.EFMapCheckpoint": 2,
+        "active:EverflowMap.EFMapCheckpoint": 2,
+        "AudioListener": 1,
+        "active:AudioListener": 1,
+        "Camera": 4,
+        "active:Camera": 1,
+        "UnityEngine.Rendering.Universal.UniversalAdditionalCameraData": 1,
+        "active:UnityEngine.Rendering.Universal.UniversalAdditionalCameraData": 1,
+        "EverflowMap.EFMapCamera": 1,
+        "active:EverflowMap.EFMapCamera": 1,
+        "EverflowMap.EFMapWorld": 1,
+        "active:EverflowMap.EFMapWorld": 1,
+        "EverflowMap.EFMvpFinale": 1,
+        "active:EverflowMap.EFMvpFinale": 1,
+        "EverflowMap.EFMvpRotary": 1,
+        "active:EverflowMap.EFMvpRotary": 1,
+        "EverflowMap.EFMapPlayer": 1,
+        "EverflowMap.EFCanalExperiment": 1,
+        "active:EverflowMap.EFCanalExperiment": 1,
+        "EverflowMap.EFMapPassage": 5,
+        "active:EverflowMap.EFMapPassage": 5,
+        "UnityEngine.UI.CanvasScaler": 1,
+        "active:UnityEngine.UI.CanvasScaler": 1,
+        "UnityEngine.UI.Image": 7,
+        "active:UnityEngine.UI.Image": 5,
+        "UnityEngine.UI.Text": 9,
+        "active:UnityEngine.UI.Text": 7,
+        "UnityEngine.UI.Shadow": 9,
+        "active:UnityEngine.UI.Shadow": 7,
+        "EverflowMap.EFMapAbilityHUD": 1,
+        "active:EverflowMap.EFMapAbilityHUD": 1
+      }
+    },
+    "Assets/Scenes/Everflow_Map_P3_DesignTest_20261016.unity": {
+      "blocks": 1043,
+      "components": {
+        "EverflowMap.EFMapNode": 17,
+        "active:EverflowMap.EFMapNode": 17,
+        "EverflowMap.EFMapAnimation": 13,
+        "active:EverflowMap.EFMapAnimation": 13,
+        "EverflowMap.EFMapAbilityTarget": 37,
+        "active:EverflowMap.EFMapAbilityTarget": 37,
+        "UnityEngine.Rendering.Universal.UniversalAdditionalLightData": 1,
+        "active:UnityEngine.Rendering.Universal.UniversalAdditionalLightData": 1,
+        "EverflowMap.EFMapCheckpoint": 2,
+        "active:EverflowMap.EFMapCheckpoint": 2,
+        "AudioListener": 1,
+        "active:AudioListener": 1,
+        "Camera": 3,
+        "active:Camera": 1,
+        "UnityEngine.Rendering.Universal.UniversalAdditionalCameraData": 1,
+        "active:UnityEngine.Rendering.Universal.UniversalAdditionalCameraData": 1,
+        "EverflowMap.EFMapCamera": 1,
+        "active:EverflowMap.EFMapCamera": 1,
+        "EverflowMap.EFMapWorld": 1,
+        "active:EverflowMap.EFMapWorld": 1,
+        "EverflowMap.EFMapPlayer": 1,
+        "EverflowMap.EFCanalExperiment": 1,
+        "active:EverflowMap.EFCanalExperiment": 1,
+        "EverflowMap.EFMapPassage": 5,
+        "active:EverflowMap.EFMapPassage": 5,
+        "UnityEngine.UI.CanvasScaler": 1,
+        "active:UnityEngine.UI.CanvasScaler": 1,
+        "UnityEngine.UI.Image": 7,
+        "active:UnityEngine.UI.Image": 5,
+        "UnityEngine.UI.Text": 9,
+        "active:UnityEngine.UI.Text": 7,
+        "UnityEngine.UI.Shadow": 9,
+        "active:UnityEngine.UI.Shadow": 7,
+        "EverflowMap.EFMapAbilityHUD": 1,
+        "active:EverflowMap.EFMapAbilityHUD": 1
+      }
+    },
+    "Assets/Scenes/Everflow_World_Graybox.unity": {
+      "blocks": 1466,
+      "components": {
+        "EverflowGraybox.EFNode": 14,
+        "active:EverflowGraybox.EFNode": 14,
+        "EverflowGraybox.EFCamera": 1,
+        "active:EverflowGraybox.EFCamera": 1,
+        "AudioListener": 1,
+        "active:AudioListener": 1,
+        "Camera": 2,
+        "active:Camera": 1,
+        "EverflowGraybox.EFZone": 9,
+        "active:EverflowGraybox.EFZone": 9,
+        "EverflowGraybox.EFGrayboxEntry": 6,
+        "active:EverflowGraybox.EFGrayboxEntry": 6,
+        "EverflowGraybox.EFWorld": 1,
+        "active:EverflowGraybox.EFWorld": 1,
+        "EverflowGraybox.EFGrayboxEnvironment": 1,
+        "active:EverflowGraybox.EFGrayboxEnvironment": 1,
+        "EverflowGraybox.EFPlayer": 1,
+        "active:EverflowGraybox.EFPlayer": 1,
+        "UnityEngine.Rendering.Universal.UniversalAdditionalLightData": 1,
+        "active:UnityEngine.Rendering.Universal.UniversalAdditionalLightData": 1
+      }
+    },
+    "Assets/Scenes/MechanicsLab.unity": {
+      "blocks": 20,
+      "components": {
+        "AudioListener": 1,
+        "active:AudioListener": 1,
+        "Camera": 1,
+        "active:Camera": 1,
+        "EFPrototype": 1,
+        "active:EFPrototype": 1
+      }
+    }
+  },
+  "build_scenes": [
+    {
+      "path": "Assets/EverflowMVP/Scenes/Everflow_Title.unity",
+      "enabled": true,
+      "guid": "80fa4ef976fd0094291da5c771c08b6d",
+      "exists": true,
+      "guid_matches": true
+    },
+    {
+      "path": "Assets/Scenes/Everflow_Map_MVP.unity",
+      "enabled": true,
+      "guid": "a09c1b8282a6b054eab301397c05d089",
+      "exists": true,
+      "guid_matches": true
+    },
+    {
+      "path": "Assets/Scenes/Everflow_Map.unity",
+      "enabled": false,
+      "guid": "7a98cb8d2fbb7594cbea70c54d5d724f",
+      "exists": true,
+      "guid_matches": true
+    },
+    {
+      "path": "Assets/EverflowMVP/Scenes/Everflow_6Puzzles.unity",
+      "enabled": false,
+      "guid": "e0b01c89c022b5484199000380708c2d",
+      "exists": true,
+      "guid_matches": true
+    }
+  ],
+  "build_errors": [],
+  "title_route": "Assets/Scenes/Everflow_Map_MVP.unity",
+  "title_route_matches_build": true,
+  "release_serialized_dependencies": [
+    "Assets/EverflowMVP/Materials/Player.mat",
+    "Assets/EverflowMVP/Runtime/EFTitleScreen.cs",
+    "Assets/EverflowMVP/Scenes/Everflow_Title.unity",
+    "Assets/EverflowMap/Materials/Flow.mat",
+    "Assets/EverflowMap/Materials/Ice.mat",
+    "Assets/EverflowMap/Prefabs/EFMapPlayer.prefab",
+    "Assets/EverflowMap/Runtime/EFCanalExperiment.cs",
+    "Assets/EverflowMap/Runtime/EFMapAbilityHUD.cs",
+    "Assets/EverflowMap/Runtime/EFMapAbilityTarget.cs",
+    "Assets/EverflowMap/Runtime/EFMapAnimation.cs",
+    "Assets/EverflowMap/Runtime/EFMapCamera.cs",
+    "Assets/EverflowMap/Runtime/EFMapCheckpoint.cs",
+    "Assets/EverflowMap/Runtime/EFMapNode.cs",
+    "Assets/EverflowMap/Runtime/EFMapPassage.cs",
+    "Assets/EverflowMap/Runtime/EFMapPlayer.cs",
+    "Assets/EverflowMap/Runtime/EFMapWorld.cs",
+    "Assets/EverflowMap/Runtime/EFMvpFinale.cs",
+    "Assets/EverflowMap/Runtime/EFMvpRotary.cs",
+    "Assets/EverflowMap/StairWalkSurface.asset",
+    "Assets/EverflowMap/TerrainStairOpening.asset",
+    "Assets/Scenes/Everflow_Map_MVP.unity",
+    "Assets/icon/bloom_icon.png",
+    "Assets/icon/freeze_icon.png",
+    "Assets/icon/pulse_icon.png",
+    "Assets/logo/EVERFLOW_main.png",
+    "Assets/logo/EVERFLOW_start_button.png",
+    "Assets/map_ver1/fbx/EF_Terrain.fbx",
+    "Assets/map_ver1/fbx/P6_ChannelRepair.fbx",
+    "Assets/map_ver1/fbx/Restore_P1.fbx",
+    "Assets/map_ver1/fbx/Restore_P2.fbx",
+    "Assets/map_ver1/fbx/Restore_P4.fbx",
+    "Assets/map_ver1/fbx/Restore_P5.fbx",
+    "Assets/map_ver1/fbx/Restore_P6.fbx",
+    "Assets/map_ver1/fbx/SM_Channel_Outlet_P6.fbx",
+    "Assets/map_ver1/fbx/SM_Channel_SwingPillar_P6.fbx",
+    "Assets/map_ver1/fbx/SM_Channel_Swing_P6.fbx",
+    "Assets/map_ver1/fbx/SM_Door_P5.fbx",
+    "Assets/map_ver1/fbx/SM_FallingDebris_01.fbx",
+    "Assets/map_ver1/fbx/SM_FallingDebris_02.fbx",
+    "Assets/map_ver1/fbx/SM_FallingDebris_03.fbx",
+    "Assets/map_ver1/fbx/SM_FlowerJumpPad.fbx",
+    "Assets/map_ver1/fbx/SM_HeightMark_01.fbx",
+    "Assets/map_ver1/fbx/SM_HeightMark_02.fbx",
+    "Assets/map_ver1/fbx/SM_HeightMark_03.fbx",
+    "Assets/map_ver1/fbx/SM_IceSlide.fbx",
+    "Assets/map_ver1/fbx/SM_PowerSource_P3.fbx",
+    "Assets/map_ver1/fbx/SM_PowerSource_P4.fbx",
+    "Assets/map_ver1/fbx/SM_PowerSource_P5.fbx",
+    "Assets/map_ver1/fbx/SM_PowerSource_P6.fbx",
+    "Assets/map_ver1/fbx/SM_Reservoir_P4.fbx",
+    "Assets/map_ver1/fbx/SM_RideLeaf.fbx",
+    "Assets/map_ver1/fbx/SM_RotatingBridge.fbx",
+    "Assets/map_ver1/fbx/SM_SideChannel.fbx",
+    "Assets/map_ver1/fbx/SM_Slate.fbx",
+    "Assets/map_ver1/fbx/SM_SluiceTower_P6.fbx",
+    "Assets/map_ver1/fbx/SM_ValleyWater.fbx",
+    "Assets/map_ver1/fbx/SM_Vine.fbx",
+    "Assets/map_ver1/fbx/SM_VineRoot_P5.fbx",
+    "Assets/map_ver1/fbx/SM_VineTree.fbx",
+    "Assets/map_ver1/fbx/SM_VineWire_P5.fbx",
+    "Assets/map_ver1/fbx/SM_WaterGate_P4.fbx",
+    "Assets/map_ver1/fbx/SM_WaterGate_P6.fbx",
+    "Assets/map_ver1/fbx/SM_Waterwheel.fbx"
+  ],
+  "special_folders": [
+    "Assets/Resources"
+  ],
+  "asmdefs": [],
+  "pass": false,
+  "scene_and_script_pass": true
+}

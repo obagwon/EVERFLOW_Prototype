@@ -1,0 +1,265 @@
+EVERFLOW P3 experiment checks; UTC 2026-10-17T04:17:54.6656532Z
+Edit-mode references and API state fixtures are separate from the collision-swept leaf segment. Teleports position fixtures; this is not a complete physical playthrough, user test, or duration measurement.
+PASS [EDIT] Saved copy references, one world/player, no missing scripts, camera owner, completion safety flags.
+PASS [EDIT] Original map/title, logo, shared map prefabs/materials, model import metadata and build/profile files unchanged by these checks.
+PASS [RUNTIME] Entered saved experimental scene
+PASS [RUNTIME] Fresh world starts with six incomplete stages
+DIAGNOSTIC [GROUND FIXTURE] prior-stage 0 requested=(53.450350, 4.082429, 17.858250)
+  move=1 position=(53.450350, 4.482429, 17.858250) flags=None grounded=False
+  move=2 position=(53.450350, 4.382429, 17.858250) flags=None grounded=False
+  move=3 position=(53.450350, 4.282429, 17.858250) flags=None grounded=False
+  move=4 position=(53.450350, 4.182429, 17.858250) flags=None grounded=False
+  move=5 position=(53.450350, 4.132798, 17.858250) flags=Below grounded=True
+DIAGNOSTIC [SUPPORT] prior-stage 0 settled frame=9
+  player=(53.450350, 4.132798, 17.858250) feet=(53.450350, 3.132798, 17.858250) controller.center=(0.000000, 0.000000, 0.000000) bounds.center=(53.450350, 4.132798, 17.858250) bounds.extents=(0.400000, 1.000000, 0.400000)
+  controller.enabled=True grounded=True player.enabled=False riding=False height=2.000000 radius=0.400000 skin=0.050000 step=0.550000 minMove=0.001000
+  ray.origin=(53.450350, 3.282798, 17.858250) direction=(0.000000, -1.000000, 0.000000) distance=0.400000 mask=all-except-layer-2 triggers=Ignore
+  expected=Test fixture support P1 id=-5406 layer=0 enabled=True trigger=False position=(53.450350, 2.782429, 17.858250) scale=(1.000000, 1.000000, 1.000000) size=(2.000000, 0.500000, 2.000000) center=(0.000000, 0.000000, 0.000000) feet.local=(0.000000, 0.350369, 0.000000) bounds.min=(52.450350, 2.532429, 16.858250) bounds.max=(54.450350, 3.032429, 18.858250)
+  designated.Raycast=True distance=0.250369 point=(53.450350, 3.032429, 17.858250) normal=(0.000000, 1.000000, 0.000000)
+  IsStandingOn=False
+  Physics.Raycast.first=EF_World/EF_Terrain/Terrain/T_Terrain id=-3834 layer=0 enabled=True trigger=False point=(53.450350, 3.082429, 17.858250)
+  Physics.RaycastAll.count=2
+    distance=0.200370 point=(53.450350, 3.082429, 17.858250) normal=(0.004864, 0.999077, 0.042685) collider=EF_World/EF_Terrain/Terrain/T_Terrain id=-3834 layer=0 enabled=True trigger=False
+    distance=0.250369 point=(53.450350, 3.032429, 17.858250) normal=(0.000000, 1.000000, 0.000000) collider=Test fixture support P1 id=-5406 layer=0 enabled=True trigger=False
+  Solids overlapping feet diagnostic box=EF_World/EF_Terrain/Terrain/T_Terrain id=-3834 layer=0 enabled=True trigger=False | Test fixture support P1 id=-5406 layer=0 enabled=True trigger=False
+PASS [API FIXTURE] Grounded test support before prior-stage assistance 0
+PASS [API FIXTURE] Prior-stage passage completion 0 (fixture support; no route claim)
+DIAGNOSTIC [GROUND FIXTURE] prior-stage 1 requested=(53.450350, 8.386669, -43.141750)
+  move=1 position=(53.450350, 8.786669, -43.141750) flags=None grounded=False
+  move=2 position=(53.450350, 8.686669, -43.141750) flags=None grounded=False
+  move=3 position=(53.450350, 8.586669, -43.141750) flags=None grounded=False
+  move=4 position=(53.450350, 8.486670, -43.141750) flags=None grounded=False
+  move=5 position=(53.450350, 8.436743, -43.141750) flags=Below grounded=True
+DIAGNOSTIC [SUPPORT] prior-stage 1 settled frame=15
+  player=(53.450350, 8.436743, -43.141750) feet=(53.450350, 7.436743, -43.141750) controller.center=(0.000000, 0.000000, 0.000000) bounds.center=(53.450350, 8.436743, -43.141750) bounds.extents=(0.400000, 1.000000, 0.400000)
+  controller.enabled=True grounded=True player.enabled=False riding=False height=2.000000 radius=0.400000 skin=0.050000 step=0.550000 minMove=0.001000
+  ray.origin=(53.450350, 7.586743, -43.141750) direction=(0.000000, -1.000000, 0.000000) distance=0.400000 mask=all-except-layer-2 triggers=Ignore
+  expected=Test fixture support P2 id=-5412 layer=0 enabled=True trigger=False position=(53.450350, 7.086669, -43.141750) scale=(1.000000, 1.000000, 1.000000) size=(2.000000, 0.500000, 2.000000) center=(0.000000, 0.000000, 0.000000) feet.local=(0.000000, 0.350074, 0.000000) bounds.min=(52.450350, 6.836669, -44.141750) bounds.max=(54.450350, 7.336669, -42.141750)
+  designated.Raycast=True distance=0.250074 point=(53.450350, 7.336669, -43.141750) normal=(0.000000, 1.000000, 0.000000)
+  IsStandingOn=False
+  Physics.Raycast.first=EF_World/EF_Terrain/Terrain/T_Terrain id=-3834 layer=0 enabled=True trigger=False point=(53.450350, 7.386670, -43.141750)
+  Physics.RaycastAll.count=2
+    distance=0.200074 point=(53.450350, 7.386670, -43.141750) normal=(-0.011495, 0.999815, 0.015446) collider=EF_World/EF_Terrain/Terrain/T_Terrain id=-3834 layer=0 enabled=True trigger=False
+    distance=0.250074 point=(53.450350, 7.336669, -43.141750) normal=(0.000000, 1.000000, 0.000000) collider=Test fixture support P2 id=-5412 layer=0 enabled=True trigger=False
+  Solids overlapping feet diagnostic box=EF_World/EF_Terrain/Terrain/T_Terrain id=-3834 layer=0 enabled=True trigger=False | Test fixture support P2 id=-5412 layer=0 enabled=True trigger=False
+PASS [API FIXTURE] Grounded test support before prior-stage assistance 1
+PASS [API FIXTURE] Prior-stage passage completion 1 (fixture support; no route claim)
+DIAGNOSTIC [GROUND FIXTURE] prior-stage 2 requested=(27.450350, 8.505840, -45.141750)
+  move=1 position=(27.450350, 8.905840, -45.141750) flags=None grounded=False
+  move=2 position=(27.450350, 8.805840, -45.141750) flags=None grounded=False
+  move=3 position=(27.450350, 8.705840, -45.141750) flags=None grounded=False
+  move=4 position=(27.450350, 8.605841, -45.141750) flags=None grounded=False
+  move=5 position=(27.450350, 8.555857, -45.141750) flags=Below grounded=True
+DIAGNOSTIC [SUPPORT] prior-stage 2 settled frame=21
+  player=(27.450350, 8.555857, -45.141750) feet=(27.450350, 7.555857, -45.141750) controller.center=(0.000000, 0.000000, 0.000000) bounds.center=(27.450350, 8.555857, -45.141750) bounds.extents=(0.400000, 1.000000, 0.400000)
+  controller.enabled=True grounded=True player.enabled=False riding=False height=2.000000 radius=0.400000 skin=0.050000 step=0.550000 minMove=0.001000
+  ray.origin=(27.450350, 7.705857, -45.141750) direction=(0.000000, -1.000000, 0.000000) distance=0.400000 mask=all-except-layer-2 triggers=Ignore
+  expected=Test fixture support P3 id=-5418 layer=0 enabled=True trigger=False position=(27.450350, 7.205840, -45.141750) scale=(1.000000, 1.000000, 1.000000) size=(2.000000, 0.500000, 2.000000) center=(0.000000, 0.000000, 0.000000) feet.local=(0.000000, 0.350017, 0.000000) bounds.min=(26.450350, 6.955840, -46.141750) bounds.max=(28.450350, 7.455840, -44.141750)
+  designated.Raycast=True distance=0.250017 point=(27.450350, 7.455840, -45.141750) normal=(0.000000, 1.000000, 0.000000)
+  IsStandingOn=False
+  Physics.Raycast.first=EF_World/EF_Terrain/Terrain/T_Terrain id=-3834 layer=0 enabled=True trigger=False point=(27.450350, 7.505840, -45.141750)
+  Physics.RaycastAll.count=2
+    distance=0.200016 point=(27.450350, 7.505840, -45.141750) normal=(0.005509, 0.999958, -0.007325) collider=EF_World/EF_Terrain/Terrain/T_Terrain id=-3834 layer=0 enabled=True trigger=False
+    distance=0.250017 point=(27.450350, 7.455840, -45.141750) normal=(0.000000, 1.000000, 0.000000) collider=Test fixture support P3 id=-5418 layer=0 enabled=True trigger=False
+  Solids overlapping feet diagnostic box=EF_World/EF_Terrain/Terrain/T_Terrain id=-3834 layer=0 enabled=True trigger=False | Test fixture support P3 id=-5418 layer=0 enabled=True trigger=False
+PASS [API FIXTURE] Grounded test support before prior-stage assistance 2
+PASS [API FIXTURE] Prior-stage passage completion 2 (fixture support; no route claim)
+DIAGNOSTIC [GROUND FIXTURE] coplanar overlap predicate fixture requested=(89.850350, 113.240000, -50.141750)
+  move=1 position=(89.850350, 113.640000, -50.141750) flags=None grounded=False
+  move=2 position=(89.850350, 113.540000, -50.141750) flags=None grounded=False
+  move=3 position=(89.850350, 113.440000, -50.141750) flags=None grounded=False
+  move=4 position=(89.850350, 113.340000, -50.141750) flags=None grounded=False
+  move=5 position=(89.850350, 113.240000, -50.141750) flags=None grounded=False
+  move=6 position=(89.850350, 113.170000, -50.141750) flags=Below grounded=True
+DIAGNOSTIC [SUPPORT] coplanar overlap predicate fixture settled frame=28
+  player=(89.850350, 113.170000, -50.141750) feet=(89.850350, 112.170000, -50.141750) controller.center=(0.000000, 0.000000, 0.000000) bounds.center=(89.850350, 113.170000, -50.141750) bounds.extents=(0.400000, 1.000000, 0.400000)
+  controller.enabled=True grounded=True player.enabled=False riding=False height=2.000000 radius=0.400000 skin=0.050000 step=0.550000 minMove=0.001000
+  ray.origin=(89.850350, 112.320000, -50.141750) direction=(0.000000, -1.000000, 0.000000) distance=0.400000 mask=all-except-layer-2 triggers=Ignore
+  expected=Support regression designated floor id=-5424 layer=0 enabled=True trigger=False position=(89.850350, 111.870000, -50.141750) scale=(1.000000, 1.000000, 1.000000) size=(6.000000, 0.500000, 6.000000) center=(0.000000, 0.000000, 0.000000) feet.local=(0.000000, 0.300003, 0.000000) bounds.min=(86.850350, 111.620000, -53.141750) bounds.max=(92.850350, 112.120000, -47.141750)
+  designated.Raycast=True distance=0.200005 point=(89.850350, 112.120000, -50.141750) normal=(0.000000, 1.000000, 0.000000)
+  IsStandingOn=True
+  Physics.Raycast.first=Support regression overlapping solid id=-5430 layer=0 enabled=True trigger=False point=(89.850350, 112.120000, -50.141750)
+  Physics.RaycastAll.count=2
+    distance=0.200005 point=(89.850350, 112.120000, -50.141750) normal=(0.000000, 1.000000, 0.000000) collider=Support regression designated floor id=-5424 layer=0 enabled=True trigger=False
+    distance=0.200005 point=(89.850350, 112.120000, -50.141750) normal=(0.000000, 1.000000, 0.000000) collider=Support regression overlapping solid id=-5430 layer=0 enabled=True trigger=False
+  Solids overlapping feet diagnostic box=Support regression designated floor id=-5424 layer=0 enabled=True trigger=False | Support regression overlapping solid id=-5430 layer=0 enabled=True trigger=False
+PASS [SUPPORT REGRESSION FIXTURE] Coplanar overlapping solids permit designated deck support
+DIAGNOSTIC [GROUND FIXTURE] 5 mm seam difference predicate fixture requested=(89.850350, 113.245000, -50.141750)
+  move=1 position=(89.850350, 113.645000, -50.141750) flags=None grounded=False
+  move=2 position=(89.850350, 113.545000, -50.141750) flags=None grounded=False
+  move=3 position=(89.850350, 113.445000, -50.141750) flags=None grounded=False
+  move=4 position=(89.850350, 113.345000, -50.141750) flags=None grounded=False
+  move=5 position=(89.850350, 113.245000, -50.141750) flags=None grounded=False
+  move=6 position=(89.850350, 113.175000, -50.141750) flags=Below grounded=True
+DIAGNOSTIC [SUPPORT] 5 mm seam difference predicate fixture settled frame=34
+  player=(89.850350, 113.175000, -50.141750) feet=(89.850350, 112.175000, -50.141750) controller.center=(0.000000, 0.000000, 0.000000) bounds.center=(89.850350, 113.175000, -50.141750) bounds.extents=(0.400000, 1.000000, 0.400000)
+  controller.enabled=True grounded=True player.enabled=False riding=False height=2.000000 radius=0.400000 skin=0.050000 step=0.550000 minMove=0.001000
+  ray.origin=(89.850350, 112.325000, -50.141750) direction=(0.000000, -1.000000, 0.000000) distance=0.400000 mask=all-except-layer-2 triggers=Ignore
+  expected=Support regression designated floor id=-5424 layer=0 enabled=True trigger=False position=(89.850350, 111.870000, -50.141750) scale=(1.000000, 1.000000, 1.000000) size=(6.000000, 0.500000, 6.000000) center=(0.000000, 0.000000, 0.000000) feet.local=(0.000000, 0.305000, 0.000000) bounds.min=(86.850350, 111.620000, -53.141750) bounds.max=(92.850350, 112.120000, -47.141750)
+  designated.Raycast=True distance=0.205002 point=(89.850350, 112.120000, -50.141750) normal=(0.000000, 1.000000, 0.000000)
+  IsStandingOn=True
+  Physics.Raycast.first=Support regression overlapping solid id=-5430 layer=0 enabled=True trigger=False point=(89.850350, 112.125000, -50.141750)
+  Physics.RaycastAll.count=2
+    distance=0.200005 point=(89.850350, 112.125000, -50.141750) normal=(0.000000, 1.000000, 0.000000) collider=Support regression overlapping solid id=-5430 layer=0 enabled=True trigger=False
+    distance=0.205002 point=(89.850350, 112.120000, -50.141750) normal=(0.000000, 1.000000, 0.000000) collider=Support regression designated floor id=-5424 layer=0 enabled=True trigger=False
+  Solids overlapping feet diagnostic box=Support regression designated floor id=-5424 layer=0 enabled=True trigger=False | Support regression overlapping solid id=-5430 layer=0 enabled=True trigger=False
+PASS [SUPPORT REGRESSION FIXTURE] 5 mm overlapping seam difference remains valid support
+DIAGNOSTIC [GROUND FIXTURE] 12 cm higher solid predicate fixture requested=(89.850350, 113.360000, -50.141750)
+  move=1 position=(89.850350, 113.760000, -50.141750) flags=None grounded=False
+  move=2 position=(89.850350, 113.660000, -50.141750) flags=None grounded=False
+  move=3 position=(89.850350, 113.560000, -50.141750) flags=None grounded=False
+  move=4 position=(89.850350, 113.460000, -50.141750) flags=None grounded=False
+  move=5 position=(89.850350, 113.360000, -50.141750) flags=None grounded=False
+  move=6 position=(89.850350, 113.290000, -50.141750) flags=Below grounded=True
+DIAGNOSTIC [SUPPORT] 12 cm higher solid predicate fixture settled frame=40
+  player=(89.850350, 113.290000, -50.141750) feet=(89.850350, 112.290000, -50.141750) controller.center=(0.000000, 0.000000, 0.000000) bounds.center=(89.850350, 113.290000, -50.141750) bounds.extents=(0.400000, 1.000000, 0.400000)
+  controller.enabled=True grounded=True player.enabled=False riding=False height=2.000000 radius=0.400000 skin=0.050000 step=0.550000 minMove=0.001000
+  ray.origin=(89.850350, 112.440000, -50.141750) direction=(0.000000, -1.000000, 0.000000) distance=0.400000 mask=all-except-layer-2 triggers=Ignore
+  expected=Support regression designated floor id=-5424 layer=0 enabled=True trigger=False position=(89.850350, 111.870000, -50.141750) scale=(1.000000, 1.000000, 1.000000) size=(6.000000, 0.500000, 6.000000) center=(0.000000, 0.000000, 0.000000) feet.local=(0.000000, 0.419998, 0.000000) bounds.min=(86.850350, 111.620000, -53.141750) bounds.max=(92.850350, 112.120000, -47.141750)
+  designated.Raycast=True distance=0.320000 point=(89.850350, 112.120000, -50.141750) normal=(0.000000, 1.000000, 0.000000)
+  IsStandingOn=False
+  Physics.Raycast.first=Support regression overlapping solid id=-5430 layer=0 enabled=True trigger=False point=(89.850350, 112.240000, -50.141750)
+  Physics.RaycastAll.count=2
+    distance=0.200005 point=(89.850350, 112.240000, -50.141750) normal=(0.000000, 1.000000, 0.000000) collider=Support regression overlapping solid id=-5430 layer=0 enabled=True trigger=False
+    distance=0.320000 point=(89.850350, 112.120000, -50.141750) normal=(0.000000, 1.000000, 0.000000) collider=Support regression designated floor id=-5424 layer=0 enabled=True trigger=False
+  Solids overlapping feet diagnostic box=Support regression designated floor id=-5424 layer=0 enabled=True trigger=False | Support regression overlapping solid id=-5430 layer=0 enabled=True trigger=False
+PASS [SUPPORT REGRESSION FIXTURE] Grounding on a different solid 12 cm higher cannot count as deck support
+DIAGNOSTIC [GROUND FIXTURE] lower terrain surrogate predicate fixture requested=(89.850350, 112.340000, -50.141750)
+  move=1 position=(89.850350, 112.740000, -50.141750) flags=None grounded=False
+  move=2 position=(89.850350, 112.640000, -50.141750) flags=None grounded=False
+  move=3 position=(89.850350, 112.540000, -50.141750) flags=None grounded=False
+  move=4 position=(89.850350, 112.440000, -50.141750) flags=None grounded=False
+  move=5 position=(89.850350, 112.340000, -50.141750) flags=None grounded=False
+  move=6 position=(89.850350, 112.270000, -50.141750) flags=Below grounded=True
+DIAGNOSTIC [SUPPORT] lower terrain surrogate predicate fixture settled frame=46
+  player=(89.850350, 112.270000, -50.141750) feet=(89.850350, 111.270000, -50.141750) controller.center=(0.000000, 0.000000, 0.000000) bounds.center=(89.850350, 112.270000, -50.141750) bounds.extents=(0.400000, 1.000000, 0.400000)
+  controller.enabled=True grounded=True player.enabled=False riding=False height=2.000000 radius=0.400000 skin=0.050000 step=0.550000 minMove=0.001000
+  ray.origin=(89.850350, 111.420000, -50.141750) direction=(0.000000, -1.000000, 0.000000) distance=0.400000 mask=all-except-layer-2 triggers=Ignore
+  expected=Support regression designated floor id=-5424 layer=0 enabled=True trigger=False position=(89.850350, 111.870000, -50.141750) scale=(1.000000, 1.000000, 1.000000) size=(6.000000, 0.500000, 6.000000) center=(0.000000, 0.000000, 0.000000) feet.local=(0.000000, -0.599999, 0.000000) bounds.min=(86.850350, 111.620000, -53.141750) bounds.max=(92.850350, 112.120000, -47.141750)
+  designated.Raycast=False
+  IsStandingOn=False
+  Physics.Raycast.first=Support regression lower terrain surrogate id=-5436 layer=0 enabled=True trigger=False point=(89.850350, 111.220000, -50.141750)
+  Physics.RaycastAll.count=1
+    distance=0.200005 point=(89.850350, 111.220000, -50.141750) normal=(0.000000, 1.000000, 0.000000) collider=Support regression lower terrain surrogate id=-5436 layer=0 enabled=True trigger=False
+  Solids overlapping feet diagnostic box=Support regression designated floor id=-5424 layer=0 enabled=True trigger=False | Support regression lower terrain surrogate id=-5436 layer=0 enabled=True trigger=False
+PASS [SUPPORT REGRESSION FIXTURE] Grounding on lower terrain surrogate cannot count as raised deck support
+DIAGNOSTIC [SUPPORT] airborne predicate fixture frame=46
+  player=(89.850350, 115.110000, -50.141750) feet=(89.850350, 114.110000, -50.141750) controller.center=(0.000000, 0.000000, 0.000000) bounds.center=(89.850350, 115.110000, -50.141750) bounds.extents=(0.400000, 1.000000, 0.400000)
+  controller.enabled=True grounded=False player.enabled=False riding=False height=2.000000 radius=0.400000 skin=0.050000 step=0.550000 minMove=0.001000
+  ray.origin=(89.850350, 114.260000, -50.141750) direction=(0.000000, -1.000000, 0.000000) distance=0.400000 mask=all-except-layer-2 triggers=Ignore
+  expected=Support regression designated floor id=-5424 layer=0 enabled=True trigger=False position=(89.850350, 111.870000, -50.141750) scale=(1.000000, 1.000000, 1.000000) size=(6.000000, 0.500000, 6.000000) center=(0.000000, 0.000000, 0.000000) feet.local=(0.000000, 2.239998, 0.000000) bounds.min=(86.850350, 111.620000, -53.141750) bounds.max=(92.850350, 112.120000, -47.141750)
+  designated.Raycast=False
+  IsStandingOn=False
+  Physics.Raycast.first=none
+  Physics.RaycastAll.count=0
+  Solids overlapping feet diagnostic box=
+PASS [SUPPORT REGRESSION FIXTURE] Airborne passage above the deck is rejected
+DIAGNOSTIC [GROUND FIXTURE] near edge predicate fixture requested=(92.800350, 113.240000, -50.141750)
+  move=1 position=(92.800350, 113.640000, -50.141750) flags=None grounded=False
+  move=2 position=(92.800350, 113.540000, -50.141750) flags=None grounded=False
+  move=3 position=(92.800350, 113.440000, -50.141750) flags=None grounded=False
+  move=4 position=(92.800350, 113.340000, -50.141750) flags=None grounded=False
+  move=5 position=(92.800350, 113.240000, -50.141750) flags=None grounded=False
+  move=6 position=(92.800350, 113.170000, -50.141750) flags=Below grounded=True
+DIAGNOSTIC [SUPPORT] near edge predicate fixture settled frame=52
+  player=(92.800350, 113.170000, -50.141750) feet=(92.800350, 112.170000, -50.141750) controller.center=(0.000000, 0.000000, 0.000000) bounds.center=(92.800350, 113.170000, -50.141750) bounds.extents=(0.400000, 1.000000, 0.400000)
+  controller.enabled=True grounded=True player.enabled=False riding=False height=2.000000 radius=0.400000 skin=0.050000 step=0.550000 minMove=0.001000
+  ray.origin=(92.800350, 112.320000, -50.141750) direction=(0.000000, -1.000000, 0.000000) distance=0.400000 mask=all-except-layer-2 triggers=Ignore
+  expected=Support regression designated floor id=-5424 layer=0 enabled=True trigger=False position=(89.850350, 111.870000, -50.141750) scale=(1.000000, 1.000000, 1.000000) size=(6.000000, 0.500000, 6.000000) center=(0.000000, 0.000000, 0.000000) feet.local=(2.949997, 0.300003, 0.000000) bounds.min=(86.850350, 111.620000, -53.141750) bounds.max=(92.850350, 112.120000, -47.141750)
+  designated.Raycast=True distance=0.200005 point=(92.800350, 112.120000, -50.141750) normal=(0.000000, 1.000000, 0.000000)
+  IsStandingOn=True
+  Physics.Raycast.first=Support regression designated floor id=-5424 layer=0 enabled=True trigger=False point=(92.800350, 112.120000, -50.141750)
+  Physics.RaycastAll.count=1
+    distance=0.200005 point=(92.800350, 112.120000, -50.141750) normal=(0.000000, 1.000000, 0.000000) collider=Support regression designated floor id=-5424 layer=0 enabled=True trigger=False
+  Solids overlapping feet diagnostic box=Support regression designated floor id=-5424 layer=0 enabled=True trigger=False
+PASS [SUPPORT REGRESSION FIXTURE] Grounded center 5 cm inside a broad deck edge is accepted
+PASS [API FIXTURE] Canal starts dry and unfrozen
+PASS [API FIXTURE] Dry FREEZE changes no water state
+PASS [API FIXTURE] Real player range guard rejects distant pump
+PASS [API FIXTURE] Wrong pump ability rejected
+PASS [API FIXTURE] PULSE plus gate animation final sample fills water (not elapsed-time playback)
+PASS [API FIXTURE] Prepared low basin visibly contains water
+PASS [API FIXTURE] Filled water freezes
+PASS [API FIXTURE] Repeated FREEZE releases before completion
+PASS [API FIXTURE] Airborne deck visit cannot save checkpoint
+DIAGNOSTIC [GROUND FIXTURE] actual saved departure checkpoint requested=(-10.149650, 32.120000, -50.141750)
+  move=1 position=(-10.149650, 32.520000, -50.141750) flags=None grounded=False
+  move=2 position=(-10.149650, 32.420000, -50.141750) flags=None grounded=False
+  move=3 position=(-10.149650, 32.320000, -50.141750) flags=None grounded=False
+  move=4 position=(-10.149650, 32.220000, -50.141750) flags=None grounded=False
+  move=5 position=(-10.149650, 32.120000, -50.141750) flags=None grounded=False
+  move=6 position=(-10.149650, 32.050000, -50.141750) flags=Below grounded=True
+DIAGNOSTIC [SUPPORT] actual saved departure checkpoint settled frame=59
+  player=(-10.149650, 32.050000, -50.141750) feet=(-10.149650, 31.050000, -50.141750) controller.center=(0.000000, 0.000000, 0.000000) bounds.center=(-10.149650, 32.050000, -50.141750) bounds.extents=(0.400000, 1.000000, 0.400000)
+  controller.enabled=True grounded=True player.enabled=False riding=False height=2.000000 radius=0.400000 skin=0.050000 step=0.550000 minMove=0.001000
+  ray.origin=(-10.149650, 31.200000, -50.141750) direction=(0.000000, -1.000000, 0.000000) distance=0.400000 mask=all-except-layer-2 triggers=Ignore
+  expected=EF_MapSystems/EF_P3_Canal_Experiment_20261016/Raised departure deck id=67704 layer=0 enabled=True trigger=False position=(-10.549650, 30.750000, -50.141750) scale=(7.000000, 0.500000, 5.000000) size=(1.000000, 1.000000, 1.000000) center=(0.000000, 0.000000, 0.000000) feet.local=(0.057143, 0.599999, 0.000000) bounds.min=(-14.049650, 30.500000, -52.641750) bounds.max=(-7.049650, 31.000000, -47.641750)
+  designated.Raycast=True distance=0.199999 point=(-10.149650, 31.000000, -50.141750) normal=(0.000000, 1.000000, 0.000000)
+  IsStandingOn=True
+  Physics.Raycast.first=EF_MapSystems/EF_P3_Canal_Experiment_20261016/Short side access 25 id=67174 layer=0 enabled=True trigger=False point=(-10.149650, 31.000000, -50.141750)
+  Physics.RaycastAll.count=2
+    distance=0.199999 point=(-10.149650, 31.000000, -50.141750) normal=(0.000000, 1.000000, 0.000000) collider=EF_MapSystems/EF_P3_Canal_Experiment_20261016/Short side access 25 id=67174 layer=0 enabled=True trigger=False
+    distance=0.199999 point=(-10.149650, 31.000000, -50.141750) normal=(0.000000, 1.000000, 0.000000) collider=EF_MapSystems/EF_P3_Canal_Experiment_20261016/Raised departure deck id=67704 layer=0 enabled=True trigger=False
+  Solids overlapping feet diagnostic box=EF_MapSystems/EF_P3_Canal_Experiment_20261016/Raised departure deck id=67704 layer=0 enabled=True trigger=False | EF_MapSystems/EF_P3_Canal_Experiment_20261016/Short side access 25 id=67174 layer=0 enabled=True trigger=False | EF_MapSystems/EF_P3_Canal_Experiment_20261016/Short side access 24 id=67958 layer=0 enabled=True trigger=False
+PASS [COLLISION FIXTURE] CharacterController actually supported by departure deck
+PASS [API FIXTURE] Checkpoint waits for stable grounded interval
+PASS [API FIXTURE] Prepared deck saves checkpoint after stable support
+PASS [API FIXTURE] Local below-canal recovery volume returns player without losing preparation or granting completion
+PASS [API FIXTURE] Explicit fall recovery preserves prepared pump/gate/ice and deck checkpoint
+PASS [PHYSICAL SEGMENT] Leaf boarding API accepts prepared nearby leaf (teleported start fixture)
+PASS [PHYSICAL SEGMENT] Existing collision-swept leaf ride reaches its endpoint without recovery
+FAIL [PHYSICAL SEGMENT] Endpoint settles onto real far-side deck
+DIAGNOSTIC [SUPPORT] failed check: [PHYSICAL SEGMENT] Endpoint settles onto real far-side deck frame=318
+  player=(-16.549650, 27.120000, 4.858250) feet=(-16.549650, 26.120000, 4.858250) controller.center=(0.000000, 0.000000, 0.000000) bounds.center=(-16.549650, 27.120000, 4.858250) bounds.extents=(0.400000, 1.000000, 0.400000)
+  controller.enabled=True grounded=True player.enabled=False riding=False height=2.000000 radius=0.400000 skin=0.050000 step=0.550000 minMove=0.001000
+  ray.origin=(-16.549650, 26.270000, 4.858250) direction=(0.000000, -1.000000, 0.000000) distance=0.400000 mask=all-except-layer-2 triggers=Ignore
+  expected=EF_MapSystems/EF_P3_Canal_Experiment_20261016/Raised departure deck id=67704 layer=0 enabled=True trigger=False position=(-10.549650, 30.750000, -50.141750) scale=(7.000000, 0.500000, 5.000000) size=(1.000000, 1.000000, 1.000000) center=(0.000000, 0.000000, 0.000000) feet.local=(-0.857143, -9.259998, 11.000000) bounds.min=(-14.049650, 30.500000, -52.641750) bounds.max=(-7.049650, 31.000000, -47.641750)
+  designated.Raycast=False
+  IsStandingOn=False
+  Physics.Raycast.first=EF_World/SM_RideLeaf/P4_IceSlide/SM_RideLeaf id=67186 layer=0 enabled=True trigger=False point=(-16.549650, 26.070000, 4.858251)
+  Physics.RaycastAll.count=2
+    distance=0.199997 point=(-16.549650, 26.070000, 4.858251) normal=(-0.160555, 0.984183, -0.074868) collider=EF_World/SM_RideLeaf/P4_IceSlide/SM_RideLeaf id=67186 layer=0 enabled=True trigger=False
+    distance=0.270000 point=(-16.549650, 26.000000, 4.858250) normal=(0.000000, 1.000000, 0.000000) collider=EF_MapSystems/EF_P3_Canal_Experiment_20261016/High far-side exit deck id=67404 layer=0 enabled=True trigger=False
+  Solids overlapping feet diagnostic box=EF_MapSystems/EF_P3_Canal_Experiment_20261016/High far-side exit deck id=67404 layer=0 enabled=True trigger=False | EF_World/SM_RideLeaf/P4_IceSlide/SM_RideLeaf id=67186 layer=0 enabled=True trigger=False
+FAIL [RUNTIME] System.InvalidOperationException: [PHYSICAL SEGMENT] Endpoint settles onto real far-side deck
+  at EverflowMap.Editor.EFCanalExperimentProbe.Check (System.Boolean condition, System.String description) [0x0006f] in C:\Users\vzd12\EVERFLOW_Prototype\Assets\EverflowMap\Editor\EFCanalExperimentTests.cs:117 
+  at EverflowMap.Editor.EFCanalExperimentProbe+<Tests>d__21.MoveNext () [0x00858] in C:\Users\vzd12\EVERFLOW_Prototype\Assets\EverflowMap\Editor\EFCanalExperimentTests.cs:352 
+  at EverflowMap.Editor.EFCanalExperimentProbe+<Start>d__22.MoveNext () [0x00073] in C:\Users\vzd12\EVERFLOW_Prototype\Assets\EverflowMap\Editor\EFCanalExperimentTests.cs:392 
+DIAGNOSTIC [SUPPORT] failure active support frame=318
+  player=(-16.549650, 27.120000, 4.858250) feet=(-16.549650, 26.120000, 4.858250) controller.center=(0.000000, 0.000000, 0.000000) bounds.center=(-16.549650, 27.120000, 4.858250) bounds.extents=(0.400000, 1.000000, 0.400000)
+  controller.enabled=True grounded=True player.enabled=False riding=False height=2.000000 radius=0.400000 skin=0.050000 step=0.550000 minMove=0.001000
+  ray.origin=(-16.549650, 26.270000, 4.858250) direction=(0.000000, -1.000000, 0.000000) distance=0.400000 mask=all-except-layer-2 triggers=Ignore
+  expected=EF_MapSystems/EF_P3_Canal_Experiment_20261016/Raised departure deck id=67704 layer=0 enabled=True trigger=False position=(-10.549650, 30.750000, -50.141750) scale=(7.000000, 0.500000, 5.000000) size=(1.000000, 1.000000, 1.000000) center=(0.000000, 0.000000, 0.000000) feet.local=(-0.857143, -9.259998, 11.000000) bounds.min=(-14.049650, 30.500000, -52.641750) bounds.max=(-7.049650, 31.000000, -47.641750)
+  designated.Raycast=False
+  IsStandingOn=False
+  Physics.Raycast.first=EF_World/SM_RideLeaf/P4_IceSlide/SM_RideLeaf id=67186 layer=0 enabled=True trigger=False point=(-16.549650, 26.070000, 4.858251)
+  Physics.RaycastAll.count=2
+    distance=0.199997 point=(-16.549650, 26.070000, 4.858251) normal=(-0.160555, 0.984183, -0.074868) collider=EF_World/SM_RideLeaf/P4_IceSlide/SM_RideLeaf id=67186 layer=0 enabled=True trigger=False
+    distance=0.270000 point=(-16.549650, 26.000000, 4.858250) normal=(0.000000, 1.000000, 0.000000) collider=EF_MapSystems/EF_P3_Canal_Experiment_20261016/High far-side exit deck id=67404 layer=0 enabled=True trigger=False
+  Solids overlapping feet diagnostic box=EF_MapSystems/EF_P3_Canal_Experiment_20261016/High far-side exit deck id=67404 layer=0 enabled=True trigger=False | EF_World/SM_RideLeaf/P4_IceSlide/SM_RideLeaf id=67186 layer=0 enabled=True trigger=False
+DIAGNOSTIC [SUPPORT] failure departure deck frame=318
+  player=(-16.549650, 27.120000, 4.858250) feet=(-16.549650, 26.120000, 4.858250) controller.center=(0.000000, 0.000000, 0.000000) bounds.center=(-16.549650, 27.120000, 4.858250) bounds.extents=(0.400000, 1.000000, 0.400000)
+  controller.enabled=True grounded=True player.enabled=False riding=False height=2.000000 radius=0.400000 skin=0.050000 step=0.550000 minMove=0.001000
+  ray.origin=(-16.549650, 26.270000, 4.858250) direction=(0.000000, -1.000000, 0.000000) distance=0.400000 mask=all-except-layer-2 triggers=Ignore
+  expected=EF_MapSystems/EF_P3_Canal_Experiment_20261016/Raised departure deck id=67704 layer=0 enabled=True trigger=False position=(-10.549650, 30.750000, -50.141750) scale=(7.000000, 0.500000, 5.000000) size=(1.000000, 1.000000, 1.000000) center=(0.000000, 0.000000, 0.000000) feet.local=(-0.857143, -9.259998, 11.000000) bounds.min=(-14.049650, 30.500000, -52.641750) bounds.max=(-7.049650, 31.000000, -47.641750)
+  designated.Raycast=False
+  IsStandingOn=False
+  Physics.Raycast.first=EF_World/SM_RideLeaf/P4_IceSlide/SM_RideLeaf id=67186 layer=0 enabled=True trigger=False point=(-16.549650, 26.070000, 4.858251)
+  Physics.RaycastAll.count=2
+    distance=0.199997 point=(-16.549650, 26.070000, 4.858251) normal=(-0.160555, 0.984183, -0.074868) collider=EF_World/SM_RideLeaf/P4_IceSlide/SM_RideLeaf id=67186 layer=0 enabled=True trigger=False
+    distance=0.270000 point=(-16.549650, 26.000000, 4.858250) normal=(0.000000, 1.000000, 0.000000) collider=EF_MapSystems/EF_P3_Canal_Experiment_20261016/High far-side exit deck id=67404 layer=0 enabled=True trigger=False
+  Solids overlapping feet diagnostic box=EF_MapSystems/EF_P3_Canal_Experiment_20261016/High far-side exit deck id=67404 layer=0 enabled=True trigger=False | EF_World/SM_RideLeaf/P4_IceSlide/SM_RideLeaf id=67186 layer=0 enabled=True trigger=False
+DIAGNOSTIC [SUPPORT] failure arrival deck frame=318
+  player=(-16.549650, 27.120000, 4.858250) feet=(-16.549650, 26.120000, 4.858250) controller.center=(0.000000, 0.000000, 0.000000) bounds.center=(-16.549650, 27.120000, 4.858250) bounds.extents=(0.400000, 1.000000, 0.400000)
+  controller.enabled=True grounded=True player.enabled=False riding=False height=2.000000 radius=0.400000 skin=0.050000 step=0.550000 minMove=0.001000
+  ray.origin=(-16.549650, 26.270000, 4.858250) direction=(0.000000, -1.000000, 0.000000) distance=0.400000 mask=all-except-layer-2 triggers=Ignore
+  expected=EF_MapSystems/EF_P3_Canal_Experiment_20261016/High far-side exit deck id=67404 layer=0 enabled=True trigger=False position=(-16.549650, 25.700000, 5.858250) scale=(9.000000, 0.600000, 8.000000) size=(1.000000, 1.000000, 1.000000) center=(0.000000, 0.000000, 0.000000) feet.local=(0.000000, 0.700000, -0.125000) bounds.min=(-21.049650, 25.400000, 1.858250) bounds.max=(-12.049650, 26.000000, 9.858250)
+  designated.Raycast=True distance=0.270000 point=(-16.549650, 26.000000, 4.858250) normal=(0.000000, 1.000000, 0.000000)
+  IsStandingOn=False
+  Physics.Raycast.first=EF_World/SM_RideLeaf/P4_IceSlide/SM_RideLeaf id=67186 layer=0 enabled=True trigger=False point=(-16.549650, 26.070000, 4.858251)
+  Physics.RaycastAll.count=2
+    distance=0.199997 point=(-16.549650, 26.070000, 4.858251) normal=(-0.160555, 0.984183, -0.074868) collider=EF_World/SM_RideLeaf/P4_IceSlide/SM_RideLeaf id=67186 layer=0 enabled=True trigger=False
+    distance=0.270000 point=(-16.549650, 26.000000, 4.858250) normal=(0.000000, 1.000000, 0.000000) collider=EF_MapSystems/EF_P3_Canal_Experiment_20261016/High far-side exit deck id=67404 layer=0 enabled=True trigger=False
+  Solids overlapping feet diagnostic box=EF_MapSystems/EF_P3_Canal_Experiment_20261016/High far-side exit deck id=67404 layer=0 enabled=True trigger=False | EF_World/SM_RideLeaf/P4_IceSlide/SM_RideLeaf id=67186 layer=0 enabled=True trigger=False
+Runtime checks passed: 30; overall FAIL.
+NOT VERIFIED: full start-to-end physical traversal, stair/courtyard approach, real camera-ray clicks, human comprehension/fun/time, title-to-experiment routing, final PULSE/restoration/skip, standalone player build.

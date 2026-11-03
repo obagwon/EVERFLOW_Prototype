@@ -1,0 +1,10 @@
+{
+  "kind": "SHA256 comparison, not Unity verification",
+  "baseline_file_count": 322,
+  "changed": [
+    "Assets/EverflowMap/Runtime/EFMapNode.cs",
+    "Assets/EverflowMap/Runtime/EFMapWorld.cs"
+  ],
+  "unexpected": [],
+  "pass": true
+}

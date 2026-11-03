@@ -1,0 +1,114 @@
+MVP checks UTC 2026-10-17T06:55:37.6247477Z
+Prior-stage progress uses grounded API fixtures; final normal route uses actual movement/rays; skip cases have explicit API/position setup. This is not a full physical six-puzzle playthrough or human test.
+PASS Saved integrated scene has opt-in finale
+PASS [POSITION FIXTURE] Grounded fixture placement (no route claim)
+PASS [API FIXTURE] Prior-stage assistance 0 preserves completion and unlocks next stage
+PASS [POSITION FIXTURE] Grounded fixture placement (no route claim)
+PASS [API FIXTURE] Prior-stage assistance 1 preserves completion and unlocks next stage
+PASS Unpowered B rejects FREEZE
+RAY target=SM_PowerSource_P3 hovered=SM_PowerSource_P3 collider=SM_PowerSource_P3_Crystal reason=Power crystal — PULSE does not respond to BLOOM.
+PASS [RAY] Camera center identifies Power crystal — PULSE
+PASS [RAY] Bloom rejects on Power crystal — PULSE: Blocked: Power crystal — PULSE does not respond to BLOOM.
+RAY target=SM_PowerSource_P3 hovered=SM_PowerSource_P3 collider=SM_PowerSource_P3_Crystal reason=Click: PULSE / Power crystal — PULSE
+PASS [RAY] Camera center identifies Power crystal — PULSE
+PASS [RAY] Pulse applies on Power crystal — PULSE: Applied: Power crystal — PULSE: power connected.
+MOVE Fixed A entrance frames=27 local=(42.0908, 8.6896, -41.9092) remaining=0.1284285 grounded=True
+PASS [PHYSICAL] Fixed A entrance reached through actual controller movement
+MOVE Fixed A to middle judgement deck frames=121 local=(29.9911, 8.7000, -41.9986) remaining=0.1911483 grounded=True
+PASS [PHYSICAL] Fixed A to middle judgement deck reached through actual controller movement
+PASS Broad alignment window available before FREEZE input
+RAY target=SM_RotatingBridge hovered=SM_RotatingBridge collider=Rotary B FREEZE marker reason=Click: FREEZE / Bridge — PULSE source, FREEZE along the route
+PASS [RAY] Camera center identifies Bridge — PULSE source, FREEZE along the route
+PASS [RAY] Freeze applies on Bridge — PULSE source, FREEZE along the route: Applied: Bridge — PULSE source, FREEZE along the route: frozen in position.
+PASS B freezes with broad alignment and A remains available
+RAY target=SM_RotatingBridge hovered=SM_RotatingBridge collider=Rotary B FREEZE marker reason=Click: FREEZE / Bridge — PULSE source, FREEZE along the route
+PASS [RAY] Camera center identifies Bridge — PULSE source, FREEZE along the route
+PASS [RAY] Freeze applies on Bridge — PULSE source, FREEZE along the route: Applied: Bridge — PULSE source, FREEZE along the route: released.
+PASS Releasing B does not remove A
+PASS Broad alignment window available before FREEZE input
+RAY target=SM_RotatingBridge hovered=SM_RotatingBridge collider=Rotary B FREEZE marker reason=Click: FREEZE / Bridge — PULSE source, FREEZE along the route
+PASS [RAY] Camera center identifies Bridge — PULSE source, FREEZE along the route
+PASS [RAY] Freeze applies on Bridge — PULSE source, FREEZE along the route: Applied: Bridge — PULSE source, FREEZE along the route: frozen in position.
+PASS B reconnects without losing A
+PASS Rotary fall uses safe middle checkpoint and retains connection
+MOVE B crossing to western ridge frames=116 local=(18.2000, 8.5548, -42.0000) remaining=0.1999989 grounded=True
+PASS [PHYSICAL] B crossing to western ridge reached through actual controller movement
+PASS Actual B crossing advances and stabilizes completion
+PASS Rotary reentry/repeated input/fall cannot regress completed A or B
+PASS [POSITION FIXTURE] Grounded fixture placement (no route claim)
+PASS [API FIXTURE] Prior-stage assistance 3 preserves completion and unlocks next stage
+PASS [POSITION FIXTURE] Grounded fixture placement (no route claim)
+PASS [API FIXTURE] Prior-stage assistance 4 preserves completion and unlocks next stage
+PASS P6 entry does not start ending
+PASS Final PULSE and maintenance PULSE reject missing preparation
+RAY target=P6_ChannelRepair hovered=P6_ChannelRepair collider=BLOOM approach roots - reused model reason=Click: BLOOM / Broken channel roots — BLOOM
+PASS [RAY] Camera center identifies Broken channel roots — BLOOM
+PASS [RAY] Bloom applies on Broken channel roots — BLOOM: Applied: Broken channel roots — BLOOM: growing. Wait for the animation to finish.
+PASS BLOOM animation enables the approach route
+MOVE P6 staircase entrance frames=24 local=(-6.0000, 16.1253, 2.6000) remaining=0.1999993 grounded=True
+PASS [PHYSICAL] P6 staircase entrance reached through actual controller movement
+MOVE P6 approach staircase frames=75 local=(-6.0000, 20.3500, -4.9000) remaining=0.1999969 grounded=True
+PASS [PHYSICAL] P6 approach staircase reached through actual controller movement
+MOVE BLOOM route to maintenance frames=67 local=(-6.0000, 20.3500, -11.6000) remaining=0.199996 grounded=True
+PASS [PHYSICAL] BLOOM route to maintenance reached through actual controller movement
+MOVE Maintenance safe deck frames=34 local=(-3.1276, 20.3500, -13.4192) remaining=0.1510539 grounded=True
+PASS [PHYSICAL] Maintenance safe deck reached through actual controller movement
+RAY target=SM_PowerSource_P6 hovered=SM_PowerSource_P6 collider=SM_PowerSource_P6_Crystal reason=Click: PULSE / Power crystal — PULSE
+PASS [RAY] Camera center identifies Power crystal — PULSE
+PASS [RAY] Pulse applies on Power crystal — PULSE: Applied: Power crystal — PULSE: power connected.
+PASS Maintenance power alone keeps final sluice and ending idle
+PASS Broad alignment window available before FREEZE input
+RAY target=SM_Channel_Swing_P6 hovered=SM_Channel_Swing_P6 collider=SM_Channel_Swing_P6 reason=Click: FREEZE / Last channel — FREEZE aligned
+PASS [RAY] Camera center identifies Last channel — FREEZE aligned
+PASS [RAY] Freeze applies on Last channel — FREEZE aligned: Applied: Last channel — FREEZE aligned: frozen in position.
+PASS Prepared route is safe but never auto-starts final restoration
+MOVE Frozen connection entry frames=33 local=(-0.1225, 20.3500, -12.0556) remaining=0.1345352 grounded=True
+PASS [PHYSICAL] Frozen connection entry reached through actual controller movement
+MOVE Frozen channel physical crossing frames=49 local=(-0.0038, 20.3500, -7.1570) remaining=0.1570753 grounded=True
+PASS [PHYSICAL] Frozen channel physical crossing reached through actual controller movement
+MOVE Final far deck physical arrival frames=49 local=(-0.0001, 20.3500, -2.6769) remaining=0.1769038 grounded=True
+PASS [PHYSICAL] Final far deck physical arrival reached through actual controller movement
+PASS Direct grounded crossing records evidence; mere final arrival still does not start ending
+PASS Final control rejects both wrong abilities
+PASS Fall recovery preserves final preparation, crossing and earlier completion
+RAY target=Final control - last PULSE hovered=Final control - last PULSE collider=SM_PowerSource_P6_Crystal reason=Click: PULSE / FINAL CONTROL - PULSE after crossing
+PASS [RAY] Camera center identifies FINAL CONTROL - PULSE after crossing
+PASS [RAY] Pulse applies on FINAL CONTROL - PULSE after crossing: Applied: FINAL CONTROL - PULSE after crossing: power connected.
+PASS Last actual PULSE starts restoration and controls are locked
+PASS Repeated final PULSE cannot restart the sequence
+PASS Retry cannot corrupt an accepted restoration
+PASS Normal restoration opens sluice, connects water, spins wheel and reaches ending
+NORMAL FINAL STATE True|True|True|True|True|True|True|True|Finished|True|True,True,True,True,True,True,True,True|3|True|False|False|False|True
+PASS [RELOAD] New game resets progression, devices, water/ice, checkpoint flags and cinematic state
+PASS [RELOAD] One player, gameplay camera and normal time scale
+PASS [POSITION FIXTURE] Grounded fixture placement (no route claim)
+PASS [API FIXTURE] Prior-stage assistance 0 preserves completion and unlocks next stage
+PASS [POSITION FIXTURE] Grounded fixture placement (no route claim)
+PASS [API FIXTURE] Prior-stage assistance 1 preserves completion and unlocks next stage
+PASS [POSITION FIXTURE] Grounded fixture placement (no route claim)
+PASS [API FIXTURE] Prior-stage assistance 2 preserves completion and unlocks next stage
+PASS [POSITION FIXTURE] Grounded fixture placement (no route claim)
+PASS [API FIXTURE] Prior-stage assistance 3 preserves completion and unlocks next stage
+PASS [POSITION FIXTURE] Grounded fixture placement (no route claim)
+PASS [API FIXTURE] Prior-stage assistance 4 preserves completion and unlocks next stage
+PASS P6 entry does not start ending
+PASS Final PULSE and maintenance PULSE reject missing preparation
+SETUP [API/POSITION FIXTURE] Skip/restart case preparation and bridge placement; normal case used real approach and ray input.
+PASS [POSITION FIXTURE] Grounded fixture placement (no route claim)
+PASS Prepared route is safe but never auto-starts final restoration
+PASS [POSITION FIXTURE] Grounded fixture placement (no route claim)
+MOVE Frozen channel physical crossing frames=13 local=(0.0000, 20.3500, -7.2000) remaining=0.1999998 grounded=True
+PASS [PHYSICAL] Frozen channel physical crossing reached through actual controller movement
+MOVE Final far deck physical arrival frames=49 local=(0.0000, 20.3500, -2.7144) remaining=0.2144094 grounded=True
+PASS [PHYSICAL] Final far deck physical arrival reached through actual controller movement
+PASS Direct grounded crossing records evidence; mere final arrival still does not start ending
+PASS Final control rejects both wrong abilities
+PASS Fall recovery preserves final preparation, crossing and earlier completion
+FAIL [API INPUT] Last PULSE accepted for skip comparison
+FAIL System.InvalidOperationException: [API INPUT] Last PULSE accepted for skip comparison; phase=Final far deck physical arrival player=(0.0000, 20.3500, -2.0000)
+  at EverflowMap.Editor.EFMvpProbe.Check (System.Boolean value, System.String label) [0x00043] in C:\Users\vzd12\EVERFLOW_Prototype\Assets\EverflowMap\Editor\EFMvpChecks.cs:66 
+  at EverflowMap.Editor.EFMvpProbe+<Tests>d__24.MoveNext () [0x0034f] in C:\Users\vzd12\EVERFLOW_Prototype\Assets\EverflowMap\Editor\EFMvpChecks.cs:260 
+  at EverflowMap.Editor.EFMvpProbe+<Start>d__25.MoveNext () [0x00093] in C:\Users\vzd12\EVERFLOW_Prototype\Assets\EverflowMap\Editor\EFMvpChecks.cs:279 
+Last phase: Final far deck physical arrival
+Runtime checks passed: 81; overall FAIL.
+NOT VERIFIED: full physical six-puzzle traversal; human understanding/fun/duration; standalone build execution.

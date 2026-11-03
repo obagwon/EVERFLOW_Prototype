@@ -1,0 +1,14 @@
+Built from '6000.3/staging' branch; Version is '6000.3.21f1 (c02631ffc030) revision 12592689'; Using compiler version '194234433'; Build Type 'Release'
+[Licensing::IpcConnector] Successfully connected to: "LicenseClient-vzd12" at "2026-10-16T13:28:30.6410533Z"
+BatchMode: 0, IsHumanControllingUs: 1, StartBugReporterOnCrash: 1, Is64bit: 1
+Date: 2026-10-16T13:28:30Z
+[Licensing::Module] Successfully connected to LicensingClient on channel: "LicenseClient-vzd12" (connect: 0.00s, validation: 0.00s, handshake: 0.05s)
+[Licensing::IpcConnector] Successfully connected to: "LicenseClient-vzd12-notifications" at "2026-10-16T13:28:30.6885958Z"
+  Product: Unity Student
+  Type: Assigned
+  Expiration: 2027-07-14T10:50:47Z
+[Licensing::Client] Successfully updated license, isAsync: True, time: 0.00
+Loaded scene 'Assets/Scenes/Everflow_Map.unity'
+[INFO ] [relay] log Unity client requested immediate shutdown - shutting down now, reason: Shutdown requested by client
+[Licensing::IpcConnector] LicenseClient-vzd12 channel disconnected successfully.
+Cleanup mono

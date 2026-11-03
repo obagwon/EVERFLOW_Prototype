@@ -1,0 +1,140 @@
+{
+  "utc": "2026-10-17T04:42:59.101674+00:00",
+  "kind": "Static serialization/reference/hash checks only. No Unity import or physics execution.",
+  "scene": "Assets\\Scenes\\Everflow_Map_P3_DesignTest_20261016.unity",
+  "blocks": 1043,
+  "local_references": 1038,
+  "missing_local_ids": [],
+  "parent_errors": [],
+  "unresolved_script_guids": [],
+  "changed_protected_files": [],
+  "checks": [
+    {
+      "pass": true,
+      "description": "Serialized local file IDs are unique"
+    },
+    {
+      "pass": true,
+      "description": "All exact local {fileID} references resolve (external GUID references excluded)"
+    },
+    {
+      "pass": true,
+      "description": "Exactly one saved EverflowMap.EFMapWorld"
+    },
+    {
+      "pass": true,
+      "description": "Exactly one saved EverflowMap.EFCanalExperiment"
+    },
+    {
+      "pass": true,
+      "description": "Transform parent/child ownership is consistent"
+    },
+    {
+      "pass": true,
+      "description": "All saved MonoBehaviour script GUIDs resolve in Assets or installed PackageCache"
+    },
+    {
+      "pass": true,
+      "description": "departureFloor references the expected Unity component type"
+    },
+    {
+      "pass": true,
+      "description": "arrivalFloor references the expected Unity component type"
+    },
+    {
+      "pass": true,
+      "description": "departureCheckpoint references the expected Unity component type"
+    },
+    {
+      "pass": true,
+      "description": "Saved copy enables both experimental completion safety flags"
+    },
+    {
+      "pass": true,
+      "description": "source: planning canal role / actual UI P4 / stage index 3"
+    },
+    {
+      "pass": true,
+      "description": "gate: planning canal role / actual UI P4 / stage index 3"
+    },
+    {
+      "pass": true,
+      "description": "water: planning canal role / actual UI P4 / stage index 3"
+    },
+    {
+      "pass": true,
+      "description": "Saved source -> gate -> water causal references are connected"
+    },
+    {
+      "pass": true,
+      "description": "Explicit repair evidence links preserved original copy, byte backup and current saved copy"
+    },
+    {
+      "pass": true,
+      "description": "Saved repair changes only generated stair Transform position/rotation/scale; all other scene blocks unchanged"
+    },
+    {
+      "pass": true,
+      "description": "Resume baseline: protected scenes/assets unchanged except an explicitly verified stair repair"
+    }
+  ],
+  "pass": true,
+  "explicit_access_repair": {
+    "evidence": "docs\\everflow_mvp\\evidence\\resume-20261017\\p3-access-repair-20261017T043626193Z-16390a32.json",
+    "backup": "docs/everflow_mvp/evidence/resume-20261017/p3-before-access-repair-20261017T043626193Z-16390a32.unity",
+    "changed_transform_ids": [
+      18208656,
+      113802367,
+      116655444,
+      235432171,
+      259495365,
+      343207978,
+      383607127,
+      409088738,
+      411592713,
+      466020879,
+      495214594,
+      498468960,
+      536763202,
+      542095996,
+      548297171,
+      550605182,
+      643791871,
+      686833211,
+      758914585,
+      766716846,
+      816434588,
+      836920047,
+      858812762,
+      936845727,
+      944700980,
+      1036094960,
+      1162452665,
+      1240889413,
+      1249871747,
+      1342763261,
+      1364301965,
+      1393018103,
+      1395905664,
+      1422310551,
+      1426951318,
+      1476222287,
+      1485519457,
+      1518746880,
+      1525207530,
+      1587461363,
+      1736502176,
+      1809647848,
+      1844759377,
+      1875597234,
+      1978584213,
+      2002417027,
+      2092945707,
+      2097662128,
+      2099754029
+    ],
+    "unexpected_ids": [],
+    "provenance_valid": true,
+    "restricted_diff": true
+  }
+}

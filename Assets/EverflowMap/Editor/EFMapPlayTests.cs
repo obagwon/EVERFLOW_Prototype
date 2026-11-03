@@ -17,6 +17,8 @@ namespace EverflowMap.Editor
         [MenuItem("Tools/EVERFLOW/Map/Run Physical and State Tests")]
         public static void Run()
         {
+            if(!string.Equals(EverflowMVP.EFTitleScreen.GameplayScene,EFMapAudit.ScenePath,StringComparison.Ordinal))
+                throw new InvalidOperationException("This legacy test requires the original Map title route. For the integrated MVP use Tools > EVERFLOW > MVP Integration > Run MVP Checks. No scene was changed.");
             if(EditorApplication.isPlayingOrWillChangePlaymode)throw new Exception("Stop Play mode first.");
             if(!Application.isBatchMode&&!EditorSceneManager.SaveCurrentModifiedScenesIfUserWantsTo())return;
             EditorSceneManager.OpenScene(EFMapAudit.ScenePath);EFMapSetup.Validate();

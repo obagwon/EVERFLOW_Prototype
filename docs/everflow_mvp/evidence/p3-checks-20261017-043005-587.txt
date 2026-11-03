@@ -1,0 +1,146 @@
+EVERFLOW P3 experiment checks; UTC 2026-10-17T04:30:05.5873947Z
+Edit-mode references and API state fixtures are separate from the collision-swept leaf segment. Teleports position fixtures; this is not a complete physical playthrough, user test, or duration measurement.
+PASS [EDIT] Saved copy references, one world/player, no missing scripts, camera owner, completion safety flags.
+PASS [EDIT] Original map/title, logo, shared map prefabs/materials, model import metadata and build/profile files unchanged by these checks.
+PASS [RUNTIME] Entered saved experimental scene
+PASS [RUNTIME] Fresh world starts with six incomplete stages
+DIAGNOSTIC [GROUND FIXTURE] prior-stage 0 requested=(53.450350, 4.082429, 17.858250)
+  move=1 position=(53.450350, 4.482429, 17.858250) flags=None grounded=False
+  move=2 position=(53.450350, 4.382429, 17.858250) flags=None grounded=False
+  move=3 position=(53.450350, 4.282429, 17.858250) flags=None grounded=False
+  move=4 position=(53.450350, 4.182429, 17.858250) flags=None grounded=False
+  move=5 position=(53.450350, 4.132798, 17.858250) flags=Below grounded=True
+DIAGNOSTIC [SUPPORT] prior-stage 0 settled frame=9
+  player=(53.450350, 4.132798, 17.858250) feet=(53.450350, 3.132798, 17.858250) controller.center=(0.000000, 0.000000, 0.000000) bounds.center=(53.450350, 4.132798, 17.858250) bounds.extents=(0.400000, 1.000000, 0.400000)
+  controller.enabled=True grounded=True player.enabled=False riding=False height=2.000000 radius=0.400000 skin=0.050000 step=0.550000 minMove=0.001000
+  ray.origin=(53.450350, 3.282798, 17.858250) direction=(0.000000, -1.000000, 0.000000) distance=0.400000 mask=all-except-layer-2 triggers=Ignore
+  expected=Test fixture support P1 id=-5682 layer=0 enabled=True trigger=False position=(53.450350, 2.782429, 17.858250) scale=(1.000000, 1.000000, 1.000000) size=(2.000000, 0.500000, 2.000000) center=(0.000000, 0.000000, 0.000000) feet.local=(0.000000, 0.350369, 0.000000) bounds.min=(52.450350, 2.532429, 16.858250) bounds.max=(54.450350, 3.032429, 18.858250)
+  designated.Raycast=True distance=0.250369 point=(53.450350, 3.032429, 17.858250) normal=(0.000000, 1.000000, 0.000000)
+  IsStandingOn=False
+  Physics.Raycast.first=EF_World/EF_Terrain/Terrain/T_Terrain id=-4500 layer=0 enabled=True trigger=False point=(53.450350, 3.082429, 17.858250)
+  Physics.RaycastAll.count=2
+    distance=0.200370 point=(53.450350, 3.082429, 17.858250) normal=(0.004864, 0.999077, 0.042685) collider=EF_World/EF_Terrain/Terrain/T_Terrain id=-4500 layer=0 enabled=True trigger=False
+    distance=0.250369 point=(53.450350, 3.032429, 17.858250) normal=(0.000000, 1.000000, 0.000000) collider=Test fixture support P1 id=-5682 layer=0 enabled=True trigger=False
+  Solids overlapping feet diagnostic box=EF_World/EF_Terrain/Terrain/T_Terrain id=-4500 layer=0 enabled=True trigger=False | Test fixture support P1 id=-5682 layer=0 enabled=True trigger=False
+PASS [API FIXTURE] Grounded test support before prior-stage assistance 0
+PASS [API FIXTURE] Prior-stage passage completion 0 (fixture support; no route claim)
+DIAGNOSTIC [GROUND FIXTURE] prior-stage 1 requested=(53.450350, 8.386669, -43.141750)
+  move=1 position=(53.450350, 8.786669, -43.141750) flags=None grounded=False
+  move=2 position=(53.450350, 8.686669, -43.141750) flags=None grounded=False
+  move=3 position=(53.450350, 8.586669, -43.141750) flags=None grounded=False
+  move=4 position=(53.450350, 8.486670, -43.141750) flags=None grounded=False
+  move=5 position=(53.450350, 8.436743, -43.141750) flags=Below grounded=True
+DIAGNOSTIC [SUPPORT] prior-stage 1 settled frame=15
+  player=(53.450350, 8.436743, -43.141750) feet=(53.450350, 7.436743, -43.141750) controller.center=(0.000000, 0.000000, 0.000000) bounds.center=(53.450350, 8.436743, -43.141750) bounds.extents=(0.400000, 1.000000, 0.400000)
+  controller.enabled=True grounded=True player.enabled=False riding=False height=2.000000 radius=0.400000 skin=0.050000 step=0.550000 minMove=0.001000
+  ray.origin=(53.450350, 7.586743, -43.141750) direction=(0.000000, -1.000000, 0.000000) distance=0.400000 mask=all-except-layer-2 triggers=Ignore
+  expected=Test fixture support P2 id=-5688 layer=0 enabled=True trigger=False position=(53.450350, 7.086669, -43.141750) scale=(1.000000, 1.000000, 1.000000) size=(2.000000, 0.500000, 2.000000) center=(0.000000, 0.000000, 0.000000) feet.local=(0.000000, 0.350074, 0.000000) bounds.min=(52.450350, 6.836669, -44.141750) bounds.max=(54.450350, 7.336669, -42.141750)
+  designated.Raycast=True distance=0.250074 point=(53.450350, 7.336669, -43.141750) normal=(0.000000, 1.000000, 0.000000)
+  IsStandingOn=False
+  Physics.Raycast.first=EF_World/EF_Terrain/Terrain/T_Terrain id=-4500 layer=0 enabled=True trigger=False point=(53.450350, 7.386670, -43.141750)
+  Physics.RaycastAll.count=2
+    distance=0.200074 point=(53.450350, 7.386670, -43.141750) normal=(-0.011495, 0.999815, 0.015446) collider=EF_World/EF_Terrain/Terrain/T_Terrain id=-4500 layer=0 enabled=True trigger=False
+    distance=0.250074 point=(53.450350, 7.336669, -43.141750) normal=(0.000000, 1.000000, 0.000000) collider=Test fixture support P2 id=-5688 layer=0 enabled=True trigger=False
+  Solids overlapping feet diagnostic box=EF_World/EF_Terrain/Terrain/T_Terrain id=-4500 layer=0 enabled=True trigger=False | Test fixture support P2 id=-5688 layer=0 enabled=True trigger=False
+PASS [API FIXTURE] Grounded test support before prior-stage assistance 1
+PASS [API FIXTURE] Prior-stage passage completion 1 (fixture support; no route claim)
+DIAGNOSTIC [GROUND FIXTURE] prior-stage 2 requested=(27.450350, 8.505840, -45.141750)
+  move=1 position=(27.450350, 8.905840, -45.141750) flags=None grounded=False
+  move=2 position=(27.450350, 8.805840, -45.141750) flags=None grounded=False
+  move=3 position=(27.450350, 8.705840, -45.141750) flags=None grounded=False
+  move=4 position=(27.450350, 8.605841, -45.141750) flags=None grounded=False
+  move=5 position=(27.450350, 8.555857, -45.141750) flags=Below grounded=True
+DIAGNOSTIC [SUPPORT] prior-stage 2 settled frame=21
+  player=(27.450350, 8.555857, -45.141750) feet=(27.450350, 7.555857, -45.141750) controller.center=(0.000000, 0.000000, 0.000000) bounds.center=(27.450350, 8.555857, -45.141750) bounds.extents=(0.400000, 1.000000, 0.400000)
+  controller.enabled=True grounded=True player.enabled=False riding=False height=2.000000 radius=0.400000 skin=0.050000 step=0.550000 minMove=0.001000
+  ray.origin=(27.450350, 7.705857, -45.141750) direction=(0.000000, -1.000000, 0.000000) distance=0.400000 mask=all-except-layer-2 triggers=Ignore
+  expected=Test fixture support P3 id=-5694 layer=0 enabled=True trigger=False position=(27.450350, 7.205840, -45.141750) scale=(1.000000, 1.000000, 1.000000) size=(2.000000, 0.500000, 2.000000) center=(0.000000, 0.000000, 0.000000) feet.local=(0.000000, 0.350017, 0.000000) bounds.min=(26.450350, 6.955840, -46.141750) bounds.max=(28.450350, 7.455840, -44.141750)
+  designated.Raycast=True distance=0.250017 point=(27.450350, 7.455840, -45.141750) normal=(0.000000, 1.000000, 0.000000)
+  IsStandingOn=False
+  Physics.Raycast.first=EF_World/EF_Terrain/Terrain/T_Terrain id=-4500 layer=0 enabled=True trigger=False point=(27.450350, 7.505840, -45.141750)
+  Physics.RaycastAll.count=2
+    distance=0.200016 point=(27.450350, 7.505840, -45.141750) normal=(0.005509, 0.999958, -0.007325) collider=EF_World/EF_Terrain/Terrain/T_Terrain id=-4500 layer=0 enabled=True trigger=False
+    distance=0.250017 point=(27.450350, 7.455840, -45.141750) normal=(0.000000, 1.000000, 0.000000) collider=Test fixture support P3 id=-5694 layer=0 enabled=True trigger=False
+  Solids overlapping feet diagnostic box=EF_World/EF_Terrain/Terrain/T_Terrain id=-4500 layer=0 enabled=True trigger=False | Test fixture support P3 id=-5694 layer=0 enabled=True trigger=False
+PASS [API FIXTURE] Grounded test support before prior-stage assistance 2
+PASS [API FIXTURE] Prior-stage passage completion 2 (fixture support; no route claim)
+PASS [PHYSICAL APPROACH] Entry contract: active canal after prior-stage fixtures, test input on, world/player/experiment initially disabled
+PASS [PHYSICAL APPROACH] Original terrain and active gameplay camera/input available
+[PHYSICAL APPROACH] Start at existing spawn local=(17.0000,8.6019,-42.0000); no fixture teleport, jump, disabled collider or manual movement method used.
+PASS [PHYSICAL APPROACH] Retry starts a dry canal with the real CharacterController enabled
+[PHYSICAL APPROACH] Begin existing ridge target.local=(10.0000,9.0000,-44.0000) grounded centerY range=[-Infinity,Infinity] start=(17.0000,8.6019,-42.0000)
+[PHYSICAL APPROACH] existing ridge frame=0 local=(17.0000,8.6019,-42.0000) distanceXZ=7.2801 grounded=True noProgress=0
+[PHYSICAL APPROACH] Nearby solid=T_Terrain distance=0.6663 hit=(25.7945,7.6060,-45.3799) normal=(0.0379,0.9898,0.1376)
+[PHYSICAL APPROACH] End existing ridge frames=70 local=(10.2693,11.7380,-43.9231) distanceXZ=0.2801 grounded=True
+[PHYSICAL APPROACH] Ground existing ridge collider=T_Terrain point.local=(10.2693,10.6381,-43.9231) feet.local=(10.2693,10.7380,-43.9231) normal=(0.4426,0.8890,0.1171) rayDistance=0.2999
+PASS [PHYSICAL APPROACH] existing ridge reached on real ground within expected height (600-frame cap, 120-frame stall cap)
+[PHYSICAL APPROACH] Begin new approach stair entrance target.local=(2.0000,15.3000,-48.0000) grounded centerY range=[-Infinity,Infinity] start=(10.2693,11.7380,-43.9231)
+[PHYSICAL APPROACH] new approach stair entrance frame=0 local=(10.2693,11.7380,-43.9231) distanceXZ=9.2197 grounded=True noProgress=0
+[PHYSICAL APPROACH] Nearby solid=T_Terrain distance=0.0990 hit=(19.4538,10.7824,-47.1555) normal=(0.4426,0.8890,0.1171)
+[PHYSICAL APPROACH] new approach stair entrance frame=90 local=(2.4662,15.8509,-47.8818) distanceXZ=0.4809 grounded=True noProgress=1
+[PHYSICAL APPROACH] Nearby solid=Existing ridge to courtyard 1 distance=0.0373 hit=(11.4804,15.4973,-51.0327) normal=(1.0000,0.0000,0.0000)
+[PHYSICAL APPROACH] Nearby solid=T_Terrain distance=0.0710 hit=(11.6822,14.8903,-51.0924) normal=(0.4137,0.9013,0.1285)
+[PHYSICAL APPROACH] Nearby solid=Existing ridge to courtyard 2 distance=0.4087 hit=(11.1204,15.7091,-51.1240) normal=(1.0000,0.0000,0.0000)
+[PHYSICAL APPROACH] Nearby solid=Existing ridge to courtyard 3 distance=0.7801 hit=(10.7604,15.9208,-51.2153) normal=(1.0000,0.0000,0.0000)
+[PHYSICAL APPROACH] new approach stair entrance frame=180 local=(2.4662,15.8509,-47.9959) distanceXZ=0.4662 grounded=True noProgress=91
+[PHYSICAL APPROACH] Nearby solid=Existing ridge to courtyard 1 distance=0.0362 hit=(11.4804,15.4973,-51.1380) normal=(1.0000,0.0000,0.0000)
+[PHYSICAL APPROACH] Nearby solid=T_Terrain distance=0.0380 hit=(11.7149,14.8897,-51.1913) normal=(0.4088,0.9028,0.1332)
+[PHYSICAL APPROACH] Nearby solid=Existing ridge to courtyard 2 distance=0.3962 hit=(11.1204,15.7091,-51.1411) normal=(1.0000,0.0000,0.0000)
+[PHYSICAL APPROACH] Nearby solid=Existing ridge to courtyard 3 distance=0.7562 hit=(10.7604,15.9208,-51.1443) normal=(1.0000,0.0000,0.0000)
+[PHYSICAL APPROACH] new approach stair entrance frame=209 local=(2.4662,15.8509,-47.9959) distanceXZ=0.4662 grounded=True noProgress=120
+[PHYSICAL APPROACH] Nearby solid=Existing ridge to courtyard 1 distance=0.0362 hit=(11.4804,15.4973,-51.1380) normal=(1.0000,0.0000,0.0000)
+[PHYSICAL APPROACH] Nearby solid=T_Terrain distance=0.0380 hit=(11.7149,14.8897,-51.1913) normal=(0.4088,0.9028,0.1332)
+[PHYSICAL APPROACH] Nearby solid=Existing ridge to courtyard 2 distance=0.3962 hit=(11.1204,15.7091,-51.1411) normal=(1.0000,0.0000,0.0000)
+[PHYSICAL APPROACH] Nearby solid=Existing ridge to courtyard 3 distance=0.7562 hit=(10.7604,15.9208,-51.1443) normal=(1.0000,0.0000,0.0000)
+[PHYSICAL APPROACH] End new approach stair entrance frames=209 local=(2.4662,15.8509,-47.9959) distanceXZ=0.4662 grounded=True
+[PHYSICAL APPROACH] Ground new approach stair entrance collider=T_Terrain point.local=(2.4662,14.7905,-47.9959) feet.local=(2.4662,14.8509,-47.9959) normal=(0.4088,0.9028,0.1332) rayDistance=0.2603
+FAIL [PHYSICAL APPROACH] new approach stair entrance reached on real ground within expected height (600-frame cap, 120-frame stall cap)
+DIAGNOSTIC [SUPPORT] failed check: [PHYSICAL APPROACH] new approach stair entrance reached on real ground within expected height (600-frame cap, 120-frame stall cap) frame=325
+  player=(11.916500, 15.850850, -51.137630) feet=(11.916500, 14.850850, -51.137630) controller.center=(0.000000, 0.000000, 0.000000) bounds.center=(11.916500, 15.850850, -51.137630) bounds.extents=(0.400000, 1.000000, 0.400000)
+  controller.enabled=True grounded=True player.enabled=True riding=False height=2.000000 radius=0.400000 skin=0.050000 step=0.550000 minMove=0.001000
+  ray.origin=(11.916500, 15.000850, -51.137630) direction=(0.000000, -1.000000, 0.000000) distance=0.400000 mask=all-except-layer-2 triggers=Ignore
+  Physics.Raycast.first=EF_World/EF_Terrain/Terrain/T_Terrain id=-4500 layer=0 enabled=True trigger=False point=(11.916500, 14.790530, -51.137640)
+  Physics.RaycastAll.count=1
+    distance=0.210321 point=(11.916500, 14.790530, -51.137640) normal=(0.408847, 0.902825, 0.133232) collider=EF_World/EF_Terrain/Terrain/T_Terrain id=-4500 layer=0 enabled=True trigger=False
+  Solids overlapping feet diagnostic box=EF_MapSystems/EF_P3_Canal_Experiment_20261016/Existing ridge to courtyard 1 id=66688 layer=0 enabled=True trigger=False | EF_World/EF_Terrain/Terrain/T_Terrain id=-4500 layer=0 enabled=True trigger=False
+[PHYSICAL APPROACH] Cleanup: Retry returned to dry canal spawn; helper input cleared.
+FAIL [RUNTIME] System.InvalidOperationException: [PHYSICAL APPROACH] new approach stair entrance reached on real ground within expected height (600-frame cap, 120-frame stall cap)
+  at EverflowMap.Editor.EFCanalExperimentProbe.Check (System.Boolean condition, System.String description) [0x0006f] in C:\Users\vzd12\EVERFLOW_Prototype\Assets\EverflowMap\Editor\EFCanalExperimentTests.cs:119 
+  at EverflowMap.Editor.EFCanalApproachChecks+Approach.Require (System.Boolean condition, System.String message) [0x00000] in C:\Users\vzd12\EVERFLOW_Prototype\Assets\EverflowMap\Editor\EFCanalExperimentTests.cs:573 
+  at EverflowMap.Editor.EFCanalApproachChecks+Approach+<WalkTo>d__16.MoveNext () [0x0038d] in C:\Users\vzd12\EVERFLOW_Prototype\Assets\EverflowMap\Editor\EFCanalExperimentTests.cs:647 
+  at EverflowMap.Editor.EFCanalApproachChecks+<Run>d__0.MoveNext () [0x001c7] in C:\Users\vzd12\EVERFLOW_Prototype\Assets\EverflowMap\Editor\EFCanalExperimentTests.cs:516 
+  at EverflowMap.Editor.EFCanalExperimentProbe+<Start>d__26.MoveNext () [0x00073] in C:\Users\vzd12\EVERFLOW_Prototype\Assets\EverflowMap\Editor\EFCanalExperimentTests.cs:444 
+DIAGNOSTIC [SUPPORT] failure active support frame=325
+  player=(26.450350, 8.667718, -45.141750) feet=(26.450350, 7.667718, -45.141750) controller.center=(0.000000, 0.000000, 0.000000) bounds.center=(26.450350, 8.667718, -45.141750) bounds.extents=(0.400000, 1.000000, 0.400000)
+  controller.enabled=True grounded=True player.enabled=False riding=False height=2.000000 radius=0.400000 skin=0.050000 step=0.550000 minMove=0.001000
+  ray.origin=(26.450350, 7.817718, -45.141750) direction=(0.000000, -1.000000, 0.000000) distance=0.400000 mask=all-except-layer-2 triggers=Ignore
+  Physics.Raycast.first=EF_World/EF_Terrain/Terrain/T_Terrain id=-4500 layer=0 enabled=True trigger=False point=(26.450350, 7.547718, -45.141750)
+  Physics.RaycastAll.count=1
+    distance=0.270000 point=(26.450350, 7.547718, -45.141750) normal=(0.037919, 0.989759, 0.137621) collider=EF_World/EF_Terrain/Terrain/T_Terrain id=-4500 layer=0 enabled=True trigger=False
+  Solids overlapping feet diagnostic box=EF_World/EF_Terrain/Terrain/T_Terrain id=-4500 layer=0 enabled=True trigger=False
+DIAGNOSTIC [SUPPORT] failure departure deck frame=325
+  player=(26.450350, 8.667718, -45.141750) feet=(26.450350, 7.667718, -45.141750) controller.center=(0.000000, 0.000000, 0.000000) bounds.center=(26.450350, 8.667718, -45.141750) bounds.extents=(0.400000, 1.000000, 0.400000)
+  controller.enabled=True grounded=True player.enabled=False riding=False height=2.000000 radius=0.400000 skin=0.050000 step=0.550000 minMove=0.001000
+  ray.origin=(26.450350, 7.817718, -45.141750) direction=(0.000000, -1.000000, 0.000000) distance=0.400000 mask=all-except-layer-2 triggers=Ignore
+  expected=EF_MapSystems/EF_P3_Canal_Experiment_20261016/Raised departure deck id=67318 layer=0 enabled=True trigger=False position=(-10.549650, 30.750000, -50.141750) scale=(7.000000, 0.500000, 5.000000) size=(1.000000, 1.000000, 1.000000) center=(0.000000, 0.000000, 0.000000) feet.local=(5.285714, -46.164570, 1.000000) bounds.min=(-14.049650, 30.500000, -52.641750) bounds.max=(-7.049650, 31.000000, -47.641750)
+  designated.Raycast=False
+  IsStandingOn=False
+  Physics.Raycast.first=EF_World/EF_Terrain/Terrain/T_Terrain id=-4500 layer=0 enabled=True trigger=False point=(26.450350, 7.547718, -45.141750)
+  Physics.RaycastAll.count=1
+    distance=0.270000 point=(26.450350, 7.547718, -45.141750) normal=(0.037919, 0.989759, 0.137621) collider=EF_World/EF_Terrain/Terrain/T_Terrain id=-4500 layer=0 enabled=True trigger=False
+  Solids overlapping feet diagnostic box=EF_World/EF_Terrain/Terrain/T_Terrain id=-4500 layer=0 enabled=True trigger=False
+DIAGNOSTIC [SUPPORT] failure arrival deck frame=325
+  player=(26.450350, 8.667718, -45.141750) feet=(26.450350, 7.667718, -45.141750) controller.center=(0.000000, 0.000000, 0.000000) bounds.center=(26.450350, 8.667718, -45.141750) bounds.extents=(0.400000, 1.000000, 0.400000)
+  controller.enabled=True grounded=True player.enabled=False riding=False height=2.000000 radius=0.400000 skin=0.050000 step=0.550000 minMove=0.001000
+  ray.origin=(26.450350, 7.817718, -45.141750) direction=(0.000000, -1.000000, 0.000000) distance=0.400000 mask=all-except-layer-2 triggers=Ignore
+  expected=EF_MapSystems/EF_P3_Canal_Experiment_20261016/High far-side exit deck id=67018 layer=0 enabled=True trigger=False position=(-16.549650, 25.700000, 5.858250) scale=(9.000000, 0.600000, 8.000000) size=(1.000000, 1.000000, 1.000000) center=(0.000000, 0.000000, 0.000000) feet.local=(4.777778, -30.053800, -6.375000) bounds.min=(-21.049650, 25.400000, 1.858250) bounds.max=(-12.049650, 26.000000, 9.858250)
+  designated.Raycast=False
+  IsStandingOn=False
+  Physics.Raycast.first=EF_World/EF_Terrain/Terrain/T_Terrain id=-4500 layer=0 enabled=True trigger=False point=(26.450350, 7.547718, -45.141750)
+  Physics.RaycastAll.count=1
+    distance=0.270000 point=(26.450350, 7.547718, -45.141750) normal=(0.037919, 0.989759, 0.137621) collider=EF_World/EF_Terrain/Terrain/T_Terrain id=-4500 layer=0 enabled=True trigger=False
+  Solids overlapping feet diagnostic box=EF_World/EF_Terrain/Terrain/T_Terrain id=-4500 layer=0 enabled=True trigger=False
+Runtime checks passed: 12; overall FAIL.
+Last phase: physical canal approach and camera-ray helper; subsequent phases were not executed in this run.
+INCOMPLETE: automated canal approach/camera-ray helper; only its individual recorded PASS results were reached, and subsequent phases were not executed.
+NOT VERIFIED: full start-to-end physical traversal, human/OS-controlled camera play, human comprehension/fun/time, title-to-experiment routing, final PULSE/restoration/skip, standalone player build.

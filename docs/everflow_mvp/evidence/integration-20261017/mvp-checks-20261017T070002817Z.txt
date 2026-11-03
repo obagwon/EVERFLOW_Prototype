@@ -1,0 +1,30 @@
+MVP checks UTC 2026-10-17T07:00:07.1836410Z
+Prior-stage progress uses grounded API fixtures; final normal route uses actual movement/rays; skip cases have explicit API/position setup. This is not a full physical six-puzzle playthrough or human test.
+PASS Saved integrated scene has opt-in finale
+RAY target=SM_FlowerJumpPad hovered=SM_FlowerJumpPad collider=Ability target reason=Click: BLOOM / Flower — BLOOM, then Space on its open dome
+PASS [RAY] Camera center identifies Flower — BLOOM, then Space on its open dome
+PASS [RAY] Bloom applies on Flower — BLOOM, then Space on its open dome: Applied: Flower — BLOOM, then Space on its open dome: growing. Wait for the animation to finish.
+PASS Ordinary jump reaches bloomed flower
+PASS Actual flower launch reaches upper terrain
+RAY target=SM_Vine hovered=SM_Vine collider=Ability target reason=Click: BLOOM / Vine — BLOOM, E at handle, Space to release
+PASS [RAY] Camera center identifies Vine — BLOOM, E at handle, Space to release
+PASS [RAY] Bloom applies on Vine — BLOOM, E at handle, Space to release: Applied: Vine — BLOOM, E at handle, Space to release: growing. Wait for the animation to finish.
+MOVE Flower ledge to vine handle frames=24 local=(25.8396, 1.3792, 23.0184) remaining=0.1614106 grounded=True
+PASS [PHYSICAL] Flower ledge to vine handle reached through actual controller movement
+PASS Vine boarded through actual E input
+PASS Actual vine release completes crossing
+MOVE UI P1 far-side arrival frames=24 local=(44.1531, 4.1300, 21.0484) remaining=0.1605602 grounded=True
+PASS [PHYSICAL] UI P1 far-side arrival reached through actual controller movement
+PASS Physical P1 advances and unlocks FREEZE stage
+MOVE UI P2 debris entrance frames=49 local=(44.0046, 4.1028, 16.1506) remaining=0.1506963 grounded=True
+PASS [PHYSICAL] UI P2 debris entrance reached through actual controller movement
+PASS Alignment available for SM_FallingDebris_01
+RAY target=SM_FallingDebris_01 hovered=SM_FallingDebris_02 collider=Ability target reason=Click: FREEZE / Debris 2 — FREEZE at blue height mark
+FAIL [RAY] Camera center identifies Debris 1 — FREEZE at blue height mark
+FAIL System.InvalidOperationException: [RAY] Camera center identifies Debris 1 — FREEZE at blue height mark; phase=ray Debris 1 — FREEZE at blue height mark player=(44.0046, 4.1028, 16.1506)
+  at EverflowMap.Editor.EFMvpProbe.Check (System.Boolean value, System.String label) [0x00043] in C:\Users\vzd12\EVERFLOW_Prototype\Assets\EverflowMap\Editor\EFMvpChecks.cs:80 
+  at EverflowMap.Editor.EFMvpProbe+<Click>d__15.MoveNext () [0x002bd] in C:\Users\vzd12\EVERFLOW_Prototype\Assets\EverflowMap\Editor\EFMvpChecks.cs:125 
+  at EverflowMap.Editor.EFMvpProbe+<Start>d__31.MoveNext () [0x00093] in C:\Users\vzd12\EVERFLOW_Prototype\Assets\EverflowMap\Editor\EFMvpChecks.cs:381 
+Last phase: ray Debris 1 — FREEZE at blue height mark
+Runtime checks passed: 14; overall FAIL.
+NOT VERIFIED: full physical six-puzzle traversal; human understanding/fun/duration; standalone build execution.

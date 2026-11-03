@@ -1,0 +1,12 @@
+{
+  "kind": "Static GUID/meta inspection, not scene import",
+  "duplicate_guids": [],
+  "new_sources": [
+    "Assets\\EverflowMap\\Editor\\EFCanalApproachChecks.cs",
+    "Assets\\EverflowMap\\Editor\\EFCanalExperimentSetup.cs",
+    "Assets\\EverflowMap\\Editor\\EFCanalExperimentTests.cs",
+    "Assets\\EverflowMap\\Runtime\\EFCanalExperiment.cs"
+  ],
+  "missing_meta": [],
+  "pass": true
+}

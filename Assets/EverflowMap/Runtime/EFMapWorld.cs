@@ -32,6 +32,10 @@ namespace EverflowMap
         public GameObject[] finalFlow = Array.Empty<GameObject>();
         public Camera endingCamera;
         public Camera openingCamera;
+        [Header("Experimental copy only (off in existing scenes)")]
+        public bool requireGroundedArrivals;
+        public bool stabilizeCompletedStages;
+        public EFMvpFinale mvpFinale;
         public bool[] Completed { get; private set; }
         public int StageIndex { get; private set; }
         public string Message { get; set; }
@@ -77,6 +81,12 @@ namespace EverflowMap
             }
             if (EFInput.KeyDown(KeyCode.R) && GameInputActive) Retry();
             sideWater.enabled = gate4.Done;
+            if(mvpFinale!=null)
+            {
+                mvpFinale.Tick(Time.deltaTime);
+                if(WheelRunning) wheel.Rotate(wheelAxis,-25*Time.deltaTime,Space.Self);
+                return;
+            }
             if (Ended) return;
             if (StageIndex == 5 && ConditionsMet(5))
             {
@@ -111,7 +121,15 @@ namespace EverflowMap
                 // Passage is evidence of traversal; never recheck pose/use history here.
                 if (!TryArrive(StageIndex)) TryPassage(StageIndex);
             }
-            if (Ended && WheelRunning) wheel.Rotate(wheelAxis, -25 * Time.deltaTime, Space.Self);
+            if (Ended && WheelRunning && mvpFinale==null) wheel.Rotate(wheelAxis, -25 * Time.deltaTime, Space.Self);
+        }
+        public void StartMvpWheel() { if(mvpFinale!=null) WheelRunning=true; }
+        public void FinishMvpEnding()
+        {
+            if(mvpFinale==null) return;
+            WheelRunning=true; Completed[5]=true; Ended=true; endingShown=true;
+            Message="EVERFLOW restored. Restart world for a new game, or continue exploring.";
+            BeginCinematic(endingCamera);
         }
         public void BeginCinematic(Camera camera)
         {
@@ -175,6 +193,14 @@ namespace EverflowMap
         public bool IsAtArrival(int index)
         {
             if (index < 0 || index >= stages.Length || stages[index].arrival == null) return false;
+            // Airborne crossings of a landing's volume are not safe arrivals.
+            // No ability-use history or exact alignment is required for assistance.
+            if (requireGroundedArrivals && (player.Riding || !player.GetComponent<CharacterController>().isGrounded)) return false;
+            if (requireGroundedArrivals && index == EFCanalExperiment.Stage)
+            {
+                var canal = GetComponentInChildren<EFCanalExperiment>();
+                if (canal != null && !canal.IsStandingOn(canal.arrivalFloor)) return false;
+            }
             var stage = stages[index];
             return new Bounds(Vector3.zero, stage.arrivalSize).Contains(stage.arrival.InverseTransformPoint(player.transform.position));
         }
@@ -188,6 +214,12 @@ namespace EverflowMap
         bool CompleteTraversal(int index)
         {
             Completed[index] = true;
+            if (stabilizeCompletedStages)
+            {
+                foreach (var node in stages[index].nodes) if (node != null) node.ApplyCompletedState();
+                // Supply nodes may occur after their water/gate consumers in serialization.
+                foreach (var node in stages[index].nodes) if (node != null) node.Tick(0);
+            }
             foreach (var action in stages[index].restoration) action.Begin();
             if (index < 5)
             {
@@ -208,14 +240,30 @@ namespace EverflowMap
         public void Retry()
         {
             if (Completed[StageIndex]) return;
+            if(StageIndex==5 && mvpFinale!=null && mvpFinale.State!=EFMvpFinale.RestorationState.Preparing)
+            { Message="Restoration is running; use Skip or New game."; return; }
             foreach (var node in stages[StageIndex].nodes) node.ResetNode();
+            if(StageIndex==5 && mvpFinale!=null) mvpFinale.ResetPreparation();
             foreach (var checkpoint in GetComponentsInChildren<EFMapCheckpoint>()) checkpoint.ResetIfStage(StageIndex);
             if (StageIndex == 0) player.FlowerUsed = player.VineUsed = false;
             if (StageIndex == 1) Array.Clear(player.SteppedDebris, 0, player.SteppedDebris.Length);
             if (StageIndex == 3) player.SlideUsed = false;
             Checkpoint = stages[StageIndex].spawn.position; Respawn();
         }
-        public void RestartWorld() { SetPaused(false); SceneManager.LoadScene(gameObject.scene.path, LoadSceneMode.Single); }
+        public void RestartWorld()
+        {
+            SetPaused(false);
+#if UNITY_EDITOR
+            // An experimental copy need not alter the team's release scene list.
+            if (Application.isEditor)
+            {
+                UnityEditor.SceneManagement.EditorSceneManager.LoadSceneInPlayMode(gameObject.scene.path,
+                    new LoadSceneParameters(LoadSceneMode.Single));
+                return;
+            }
+#endif
+            SceneManager.LoadScene(gameObject.scene.path, LoadSceneMode.Single);
+        }
         public void ReturnToTitle() { SetPaused(false); SceneManager.LoadScene("Assets/EverflowMVP/Scenes/Everflow_Title.unity", LoadSceneMode.Single); }
         void OnGUI()
         {

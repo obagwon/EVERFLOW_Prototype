@@ -1,0 +1,63 @@
+{
+  "kind": "Actual latest build Editor log shader-warning triage, no package mutation",
+  "build": "1.1.1",
+  "build_report_warnings": 485,
+  "shader_warning_lines": 485,
+  "shader_sources": [
+    "Library/PackageCache/com.unity.ai.inference@9a123aee5df7/Runtime/Core/Resources/Sentis/ComputeShaders/ConvGeneric.compute"
+  ],
+  "groups": [
+    {
+      "count": 116,
+      "message": "Shader warning in 'ConvGeneric': \"TRANSPOSE_OUTPUT variants not supported with NON_UNIFORM_CONVGROUP_PER_OC, make sure this variant is not used\" at kernel Conv1D_OutTransposed_4eoc_4esp at ConvGeneric.compute(location)"
+    },
+    {
+      "count": 104,
+      "message": "Shader warning in 'ConvGeneric': \"TRANSPOSE_OUTPUT variants not supported with NON_UNIFORM_CONVGROUP_PER_OC, make sure this variant is not used\" at kernel Conv1DComplex_OutTransposed_4eoc_4esp at ConvGeneric.compute(location)"
+    },
+    {
+      "count": 92,
+      "message": "Shader warning in 'ConvGeneric': \"TRANSPOSE_OUTPUT variants not supported with NON_UNIFORM_CONVGROUP_PER_OC, make sure this variant is not used\" at kernel Conv1D_Scaled_OutTransposed_4eoc_4esp at ConvGeneric.compute(location)"
+    },
+    {
+      "count": 80,
+      "message": "Shader warning in 'ConvGeneric': \"TRANSPOSE_OUTPUT variants not supported with NON_UNIFORM_CONVGROUP_PER_OC, make sure this variant is not used\" at kernel Conv1D_Scaled_Complex_OutTransposed_4eoc_4esp at ConvGeneric.compute(location)"
+    },
+    {
+      "count": 68,
+      "message": "Shader warning in 'ConvGeneric': \"TRANSPOSE_OUTPUT variants not supported with NON_UNIFORM_CONVGROUP_PER_OC, make sure this variant is not used\" at kernel Conv1D_OutTransposedDouble_4eoc_4esp at ConvGeneric.compute(location)"
+    },
+    {
+      "count": 8,
+      "message": "Shader warning in 'Hidden/Sentis/ScatterND': signed/unsigned mismatch, unsigned assumed at Packages/com.unity.ai.inference/Runtime/Core/Resources/Sentis/PixelShaders/ScatterND.shader(location) (location)"
+    },
+    {
+      "count": 6,
+      "message": "Shader warning in 'Hidden/Sentis/ConvTranspose': integer modulus may be much slower, try using uints if possible. at Packages/com.unity.ai.inference/Runtime/Core/Resources/Sentis/PixelShaders/ConvTranspose.shader(location) (location)"
+    },
+    {
+      "count": 3,
+      "message": "Shader warning in 'Hidden/Sentis/GridSample': signed/unsigned mismatch, unsigned assumed at Packages/com.unity.ai.inference/Runtime/Core/Resources/Sentis/PixelShaders/GridSample.shader(location) (location)"
+    },
+    {
+      "count": 2,
+      "message": "Shader warning in 'Hidden/Sentis/ScatterElements': signed/unsigned mismatch, unsigned assumed at Packages/com.unity.ai.inference/Runtime/Core/Resources/Sentis/PixelShaders/ScatterElements.shader(location) (location)"
+    },
+    {
+      "count": 2,
+      "message": "Shader warning in 'Hidden/Sentis/SliceSet': integer divides may be much slower, try using uints if possible. at Packages/com.unity.ai.inference/Runtime/Core/Resources/Sentis/PixelShaders/SliceSet.shader(location) (location)"
+    },
+    {
+      "count": 2,
+      "message": "Shader warning in 'Hidden/Sentis/SliceSet': signed/unsigned mismatch, unsigned assumed at Packages/com.unity.ai.inference/Runtime/Core/Resources/Sentis/PixelShaders/SliceSet.shader(location) (location)"
+    },
+    {
+      "count": 1,
+      "message": "Shader warning in 'Hidden/Sentis/Pad': integer modulus may be much slower, try using uints if possible. at Packages/com.unity.ai.inference/Runtime/Core/Resources/Sentis/PixelShaders/Pad.shader(location) (location)"
+    },
+    {
+      "count": 1,
+      "message": "Shader warning in 'Hidden/Sentis/ScatterND': 'j': loop control variable conflicts with a previous declaration in the outer scope; most recent declaration will be used at Packages/com.unity.ai.inference/Runtime/Core/Resources/Sentis/PixelShaders/ScatterND.shader(location) (location)"
+    }
+  ]
+}

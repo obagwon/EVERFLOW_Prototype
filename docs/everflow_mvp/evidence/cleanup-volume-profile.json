@@ -1,0 +1,47 @@
+{
+  "asset": "Assets/Settings/DefaultVolumeProfile.asset",
+  "backup": "Backups/20261017-cleanup/Assets/Settings/DefaultVolumeProfile.asset",
+  "removed_unreferenced_broken_subassets": [
+    {
+      "fileID": -8104416584915340131,
+      "name": "CopyPasteTestComponent2"
+    },
+    {
+      "fileID": -7750755424749557576,
+      "name": "OutlineVolumeComponent"
+    },
+    {
+      "fileID": -7274224791359825572,
+      "name": "TestAnimationCurveVolumeComponent"
+    },
+    {
+      "fileID": -5360449096862653589,
+      "name": "VolumeComponentSupportedEverywhere"
+    },
+    {
+      "fileID": -5139089513906902183,
+      "name": "OasisFogVolumeComponent"
+    },
+    {
+      "fileID": -581120513425526550,
+      "name": "CopyPasteTestComponent3"
+    },
+    {
+      "fileID": 4251301726029935498,
+      "name": "TestVolume"
+    },
+    {
+      "fileID": 6940869943325143175,
+      "name": "VolumeComponentSupportedOnAnySRP"
+    },
+    {
+      "fileID": 9122958982931076880,
+      "name": "CopyPasteTestComponent1"
+    }
+  ],
+  "surviving_blocks_byte_preserved": true,
+  "root_component_list_unchanged": true,
+  "external_serialized_references": 0,
+  "before_sha256": "463776c51ae49d4fef980e8fd268081b2f505610d79315003faae1acff8f4115",
+  "after_sha256": "d31338e82c78790990d446c5f2a76e663151d9112b2bf1dce65f62ed99ecb28f"
+}

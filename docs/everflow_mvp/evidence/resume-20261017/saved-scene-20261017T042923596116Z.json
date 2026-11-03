@@ -1,0 +1,74 @@
+{
+  "utc": "2026-10-17T04:29:23.596116+00:00",
+  "kind": "Static serialization/reference/hash checks only. No Unity import or physics execution.",
+  "scene": "Assets\\Scenes\\Everflow_Map_P3_DesignTest_20261016.unity",
+  "blocks": 1043,
+  "local_references": 1038,
+  "missing_local_ids": [],
+  "parent_errors": [],
+  "unresolved_script_guids": [],
+  "changed_protected_files": [],
+  "checks": [
+    {
+      "pass": true,
+      "description": "Serialized local file IDs are unique"
+    },
+    {
+      "pass": true,
+      "description": "All exact local {fileID} references resolve (external GUID references excluded)"
+    },
+    {
+      "pass": true,
+      "description": "Exactly one saved EverflowMap.EFMapWorld"
+    },
+    {
+      "pass": true,
+      "description": "Exactly one saved EverflowMap.EFCanalExperiment"
+    },
+    {
+      "pass": true,
+      "description": "Transform parent/child ownership is consistent"
+    },
+    {
+      "pass": true,
+      "description": "All saved MonoBehaviour script GUIDs resolve in Assets or installed PackageCache"
+    },
+    {
+      "pass": true,
+      "description": "departureFloor references the expected Unity component type"
+    },
+    {
+      "pass": true,
+      "description": "arrivalFloor references the expected Unity component type"
+    },
+    {
+      "pass": true,
+      "description": "departureCheckpoint references the expected Unity component type"
+    },
+    {
+      "pass": true,
+      "description": "Saved copy enables both experimental completion safety flags"
+    },
+    {
+      "pass": true,
+      "description": "source: planning canal role / actual UI P4 / stage index 3"
+    },
+    {
+      "pass": true,
+      "description": "gate: planning canal role / actual UI P4 / stage index 3"
+    },
+    {
+      "pass": true,
+      "description": "water: planning canal role / actual UI P4 / stage index 3"
+    },
+    {
+      "pass": true,
+      "description": "Saved source -> gate -> water causal references are connected"
+    },
+    {
+      "pass": true,
+      "description": "Resume baseline: original/experiment scenes, shared prefabs, packages and build settings unchanged"
+    }
+  ],
+  "pass": true
+}

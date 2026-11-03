@@ -1,0 +1,22 @@
+{
+  "utc": "20261016T132803493121Z",
+  "action": "diagnose",
+  "context": {
+    "actualIdentity": "home\\CodexSandboxOffline",
+    "environmentUser": "vzd12",
+    "environmentProfile": "C:\\Users\\vzd12",
+    "unityProcesses": [
+      {
+        "pid": 29300,
+        "path": "C:\\Program Files\\Unity Hub\\resources\\unity.exe",
+        "title": "",
+        "sessionId": 1
+      }
+    ]
+  },
+  "blockers": [
+    "Windows token identity differs from the inherited user environment (home\\CodexSandboxOffline / vzd12). Use the existing Editor menus or a normal user terminal; license expiry is not implied."
+  ],
+  "editor_started": false,
+  "note": "Sandbox process discovery can be incomplete. No instances does not prove the GUI Editor is closed."
+}
