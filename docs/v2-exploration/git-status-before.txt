@@ -1,0 +1,26 @@
+ M Assets/EverflowMap/Runtime/EFMapPlayer.cs
+ M Assets/Scenes/Everflow_Map.unity
+ D Assets/Scenes/Everflow_Map_P3_DesignTest_20261016.unity
+ D Assets/Scenes/Everflow_Map_P3_DesignTest_20261016.unity.meta
+?? Assets/EF_Handoff_v2.meta
+?? Assets/EF_Handoff_v2/
+?? Assets/EmacEArt.meta
+?? Assets/EmacEArt/
+?? Assets/EverflowPuzzleLab.meta
+?? Assets/EverflowPuzzleLab/
+?? Assets/Scenes/Everflow_Map_v2_test.unity
+?? Assets/Scenes/Everflow_Map_v2_test.unity.meta
+?? Assets/Scenes/Everflow_V02_PuzzleLab.unity
+?? Assets/Scenes/Everflow_V02_PuzzleLab.unity.meta
+?? Assets/Scenes/Everflow_V02_PuzzleLab_T01_Check.unity
+?? Assets/Scenes/Everflow_V02_PuzzleLab_T01_Check.unity.meta
+?? docs/EVERFLOW_V02_PuzzleLab_Guide.md
+?? docs/EVERFLOW_redesign_v0.2.md
+?? docs/puzzle-lab/
+?? docs/v2-exploration/
+?? tools/check_v02_signage.py
+?? tools/inspect_v2_fbx.py
+?? tools/preview_v02_signage.ps1
+?? tools/puzzle-lab-state-checks/
+?? tools/update_v02_signage.py
+?? tools/verify_v02_lab.py

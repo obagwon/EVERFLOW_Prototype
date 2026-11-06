@@ -1,0 +1,50 @@
+{
+  "utc": "2026-11-05T13:32:38.712078+00:00",
+  "context": {
+    "actualIdentity": "home\\CodexSandboxOffline",
+    "environmentUser": "vzd12",
+    "environmentProfile": "C:\\Users\\vzd12",
+    "unityProcesses": [
+      {
+        "pid": 13588,
+        "path": "C:\\Users\\vzd12\\AppData\\Local\\Unity\\bin\\unity.exe",
+        "title": "",
+        "sessionId": 1
+      },
+      {
+        "pid": 33824,
+        "path": "C:\\Program Files\\Unity Hub\\resources\\unity.exe",
+        "title": "",
+        "sessionId": 1
+      }
+    ]
+  },
+  "launch_guard": [
+    "Windows token identity differs from the inherited user environment (home\\CodexSandboxOffline / vzd12). Use the existing Editor menus or a normal user terminal; license expiry is not implied.",
+    "Cannot rule out an Editor for Unity PID 13588. No second Editor will be started."
+  ],
+  "cli_status": {
+    "success": false,
+    "command": "status",
+    "data": {
+      "count": 0,
+      "instances": []
+    },
+    "errors": [
+      {
+        "code": "STATUS_NO_INSTANCES",
+        "message": "Pipeline 패키지가 설치된 Unity Editor 인스턴스를 찾을 수 없습니다. Unity를 열고 Pipeline 패키지를 설치하거나 unity pipeline install를 실행하십시오."
+      }
+    ],
+    "warnings": [
+      "어떤 에디터가 실행 중인지 확인할 수 없어 실행 중인 에디터가 이 보고서에 표시되지 않을 수 있습니다."
+    ]
+  },
+  "unity_started_this_task": false,
+  "unity_play_this_task": "NOT EXECUTED",
+  "reason": "Restricted Windows account differs from user session; no attached Editor. Existing project guard blocks a second launch under this identity. Prior IPC refusal is historical evidence, not a new attempt or license-expiration diagnosis.",
+  "packages_installed": false,
+  "licensing_modified": false,
+  "processes_stopped": false,
+  "evidence_note": "Offline compilation and scene/geometry checks continued."
+}

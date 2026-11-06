@@ -1,0 +1,85 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &3810410118118677013
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 3771823345915149517, guid: d844f05f75072854990db77d1633db48,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 8119f15d1cefb5448953fc8060f4ecec, type: 2}
+    - target: {fileID: 4011956588830602016, guid: d844f05f75072854990db77d1633db48,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4011956588830602016, guid: d844f05f75072854990db77d1633db48,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4011956588830602016, guid: d844f05f75072854990db77d1633db48,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4011956588830602016, guid: d844f05f75072854990db77d1633db48,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4011956588830602016, guid: d844f05f75072854990db77d1633db48,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4011956588830602016, guid: d844f05f75072854990db77d1633db48,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4011956588830602016, guid: d844f05f75072854990db77d1633db48,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4011956588830602016, guid: d844f05f75072854990db77d1633db48,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4011956588830602016, guid: d844f05f75072854990db77d1633db48,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4011956588830602016, guid: d844f05f75072854990db77d1633db48,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6360909263894196644, guid: d844f05f75072854990db77d1633db48,
+        type: 3}
+      propertyPath: m_Name
+      value: EA_Env_Meadow_ColorfulTree_01e_GRAD_PRE (1) Variant
+      objectReference: {fileID: 0}
+    - target: {fileID: 6898121639800198730, guid: d844f05f75072854990db77d1633db48,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 8119f15d1cefb5448953fc8060f4ecec, type: 2}
+    - target: {fileID: 9085050413195590405, guid: d844f05f75072854990db77d1633db48,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 8119f15d1cefb5448953fc8060f4ecec, type: 2}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: d844f05f75072854990db77d1633db48, type: 3}

@@ -1,0 +1,11 @@
+{
+  "utc": "2026-11-04T13:29:47.499117+00:00",
+  "offline_runtime_compile": "pass",
+  "offline_editor_compile": "pass",
+  "offline_player_define_compile": "pass",
+  "managed_state_tests": "pass",
+  "unity_scene_created": true,
+  "unity_import_and_reference_validation": "not executed: Licensing Client IPC refused",
+  "unity_play_physics_aim_riding": "not executed: Licensing Client IPC refused",
+  "human_controls_visibility": "not verified"
+}

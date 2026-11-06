@@ -213,6 +213,7 @@ MonoBehaviour:
   kind: 8
   interactive: 1
   pulseAtRoot: 0
+  bidirectionalAlignment: 0
   actions:
   - {fileID: 23162296}
   supply: {fileID: 0}
@@ -671,6 +672,7 @@ MonoBehaviour:
   kind: 0
   interactive: 1
   pulseAtRoot: 0
+  bidirectionalAlignment: 0
   actions:
   - {fileID: 208149358}
   supply: {fileID: 0}
@@ -1000,6 +1002,7 @@ MonoBehaviour:
   kind: 5
   interactive: 1
   pulseAtRoot: 0
+  bidirectionalAlignment: 0
   actions: []
   supply: {fileID: 0}
   motion: {fileID: 251074354}
@@ -1226,6 +1229,7 @@ MonoBehaviour:
   kind: 5
   interactive: 1
   pulseAtRoot: 0
+  bidirectionalAlignment: 0
   actions: []
   supply: {fileID: 0}
   motion: {fileID: 387306067}
@@ -1428,6 +1432,7 @@ MonoBehaviour:
   kind: 6
   interactive: 1
   pulseAtRoot: 0
+  bidirectionalAlignment: 0
   actions: []
   supply: {fileID: 1803132408}
   motion: {fileID: 409453993}
@@ -2075,6 +2080,7 @@ MonoBehaviour:
   kind: 1
   interactive: 1
   pulseAtRoot: 0
+  bidirectionalAlignment: 0
   actions:
   - {fileID: 514513844}
   supply: {fileID: 0}
@@ -2491,6 +2497,7 @@ MonoBehaviour:
   kind: 5
   interactive: 1
   pulseAtRoot: 0
+  bidirectionalAlignment: 0
   actions: []
   supply: {fileID: 0}
   motion: {fileID: 567929985}
@@ -2805,6 +2812,7 @@ MonoBehaviour:
   kind: 4
   interactive: 1
   pulseAtRoot: 0
+  bidirectionalAlignment: 0
   actions: []
   supply: {fileID: 567929988}
   motion: {fileID: 628482710}
@@ -3736,6 +3744,7 @@ MonoBehaviour:
   kind: 7
   interactive: 1
   pulseAtRoot: 1
+  bidirectionalAlignment: 0
   actions:
   - {fileID: 1283499964}
   supply: {fileID: 0}
@@ -3957,6 +3966,7 @@ MonoBehaviour:
   kind: 10
   interactive: 0
   pulseAtRoot: 0
+  bidirectionalAlignment: 0
   actions:
   - {fileID: 970982634}
   supply: {fileID: 966481767}
@@ -4168,6 +4178,7 @@ MonoBehaviour:
   kind: 2
   interactive: 1
   pulseAtRoot: 0
+  bidirectionalAlignment: 0
   actions: []
   supply: {fileID: 0}
   motion: {fileID: 1043849062}
@@ -4325,6 +4336,7 @@ MonoBehaviour:
   kind: 3
   interactive: 1
   pulseAtRoot: 0
+  bidirectionalAlignment: 0
   actions: []
   supply: {fileID: 0}
   motion: {fileID: 1051171125}
@@ -4912,6 +4924,7 @@ MonoBehaviour:
   kind: 3
   interactive: 1
   pulseAtRoot: 0
+  bidirectionalAlignment: 0
   actions: []
   supply: {fileID: 0}
   motion: {fileID: 1256644185}
@@ -5287,6 +5300,7 @@ MonoBehaviour:
   kind: 9
   interactive: 0
   pulseAtRoot: 0
+  bidirectionalAlignment: 0
   actions:
   - {fileID: 1337821501}
   supply: {fileID: 387306070}
@@ -5483,6 +5497,9 @@ MonoBehaviour:
   - {fileID: 488661075}
   endingCamera: {fileID: 2082794303}
   openingCamera: {fileID: 1858897380}
+  requireGroundedArrivals: 0
+  stabilizeCompletedStages: 0
+  mvpFinale: {fileID: 0}
 --- !u!4 &1361118013
 Transform:
   m_ObjectHideFlags: 0
@@ -6668,6 +6685,10 @@ PrefabInstance:
       propertyPath: follow
       value: 
       objectReference: {fileID: 1235368018}
+    - target: {fileID: 925579041381698730, guid: b6ad62e0df9d13e4aa1bc7de9e4b2efe, type: 3}
+      propertyPath: abilityMask.m_Bits
+      value: 51
+      objectReference: {fileID: 0}
     - target: {fileID: 3022002046285459237, guid: b6ad62e0df9d13e4aa1bc7de9e4b2efe, type: 3}
       propertyPath: m_Name
       value: EFMapPlayer
@@ -7009,6 +7030,7 @@ MonoBehaviour:
   kind: 9
   interactive: 0
   pulseAtRoot: 0
+  bidirectionalAlignment: 0
   actions:
   - {fileID: 1803132409}
   supply: {fileID: 251074357}
@@ -7609,6 +7631,7 @@ MonoBehaviour:
   kind: 2
   interactive: 1
   pulseAtRoot: 0
+  bidirectionalAlignment: 0
   actions: []
   supply: {fileID: 0}
   motion: {fileID: 1965001222}
@@ -7954,6 +7977,7 @@ MonoBehaviour:
   kind: 2
   interactive: 1
   pulseAtRoot: 0
+  bidirectionalAlignment: 0
   actions: []
   supply: {fileID: 0}
   motion: {fileID: 2069863033}
@@ -8091,6 +8115,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2082794304}
   - component: {fileID: 2082794303}
+  - component: {fileID: 2082794305}
   m_Layer: 0
   m_Name: Final waterway camera
   m_TagString: Untagged
@@ -8164,6 +8189,50 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1361118013}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2082794305
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2082794302}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a79441f348de89743a2939f4d699eac1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.RenderPipelines.Universal.Runtime::UnityEngine.Rendering.Universal.UniversalAdditionalCameraData
+  m_RenderShadows: 1
+  m_RequiresDepthTextureOption: 2
+  m_RequiresOpaqueTextureOption: 2
+  m_CameraType: 0
+  m_Cameras: []
+  m_RendererIndex: -1
+  m_VolumeLayerMask:
+    serializedVersion: 2
+    m_Bits: 1
+  m_VolumeTrigger: {fileID: 0}
+  m_VolumeFrameworkUpdateModeOption: 2
+  m_RenderPostProcessing: 0
+  m_Antialiasing: 0
+  m_AntialiasingQuality: 2
+  m_StopNaN: 0
+  m_Dithering: 0
+  m_ClearDepth: 1
+  m_AllowXRRendering: 1
+  m_AllowHDROutput: 1
+  m_UseScreenCoordOverride: 0
+  m_ScreenSizeOverride: {x: 0, y: 0, z: 0, w: 0}
+  m_ScreenCoordScaleBias: {x: 0, y: 0, z: 0, w: 0}
+  m_RequiresDepthTexture: 0
+  m_RequiresColorTexture: 0
+  m_TaaSettings:
+    m_Quality: 3
+    m_FrameInfluence: 0.1
+    m_JitterScale: 1
+    m_MipBias: 0
+    m_VarianceClampScale: 0.9
+    m_ContrastAdaptiveSharpening: 0
+  m_Version: 2
 --- !u!1 &2094029748
 GameObject:
   m_ObjectHideFlags: 0
@@ -8273,7 +8342,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 523f1edb074c46f584112028ce2bbb6f, type: 3}
-  m_Name:
+  m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EverflowMap.EFMapPassage
   world: {fileID: 1361118012}
   stage: 0
@@ -8287,7 +8356,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 523f1edb074c46f584112028ce2bbb6f, type: 3}
-  m_Name:
+  m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EverflowMap.EFMapPassage
   world: {fileID: 1361118012}
   stage: 1
@@ -8301,7 +8370,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 523f1edb074c46f584112028ce2bbb6f, type: 3}
-  m_Name:
+  m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EverflowMap.EFMapPassage
   world: {fileID: 1361118012}
   stage: 2
@@ -8315,7 +8384,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 523f1edb074c46f584112028ce2bbb6f, type: 3}
-  m_Name:
+  m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EverflowMap.EFMapPassage
   world: {fileID: 1361118012}
   stage: 3
@@ -8329,7 +8398,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 523f1edb074c46f584112028ce2bbb6f, type: 3}
-  m_Name:
+  m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EverflowMap.EFMapPassage
   world: {fileID: 1361118012}
   stage: 4
@@ -8362,17 +8431,17 @@ RectTransform:
   m_GameObject: {fileID: 9000000006}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0, y: 0, z: 0}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 9000000012}
   m_Father: {fileID: 1361118013}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0}
-  m_AnchorMax: {x: 0.5, y: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
-  m_Pivot: {x: 0.5, y: 0.5}
+  m_Pivot: {x: 0, y: 0}
 --- !u!223 &9000000008
 Canvas:
   m_ObjectHideFlags: 0
@@ -8406,7 +8475,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 0cd44c1031e13a943bb63640046fad76, type: 3}
-  m_Name:
+  m_Name: 
   m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.CanvasScaler
   m_UiScaleMode: 1
   m_ReferencePixelsPerUnit: 100
@@ -8528,7 +8597,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
-  m_Name:
+  m_Name: 
   m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
   m_Material: {fileID: 0}
   m_Color: {r: 0.02, g: 0.04, b: 0.05, a: 0.6}
@@ -8621,8 +8690,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 0}
-  m_AnchoredPosition: {x: 0.0, y: 119.81188118811882}
-  m_SizeDelta: {x: 94.36039603960396, y: 94.36039603960396}
+  m_AnchoredPosition: {x: 0, y: 119.81188}
+  m_SizeDelta: {x: 94.3604, y: 94.3604}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &9000000021
 CanvasRenderer:
@@ -8642,7 +8711,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
-  m_Name:
+  m_Name: 
   m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -8718,7 +8787,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
-  m_Name:
+  m_Name: 
   m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Text
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -8741,7 +8810,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: "1"
+  m_Text: 1
 --- !u!114 &9000000027
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8752,7 +8821,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: cfabb0440166ab443bba8876756fdfa9, type: 3}
-  m_Name:
+  m_Name: 
   m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Shadow
   m_EffectColor: {r: 0, g: 0, b: 0, a: 0.85}
   m_EffectDistance: {x: 1, y: -1}
@@ -8813,7 +8882,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
-  m_Name:
+  m_Name: 
   m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Text
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -8836,7 +8905,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: "BLOOM"
+  m_Text: BLOOM
 --- !u!114 &9000000032
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8847,7 +8916,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: cfabb0440166ab443bba8876756fdfa9, type: 3}
-  m_Name:
+  m_Name: 
   m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Shadow
   m_EffectColor: {r: 0, g: 0, b: 0, a: 0.85}
   m_EffectDistance: {x: 1, y: -1}
@@ -8907,7 +8976,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
-  m_Name:
+  m_Name: 
   m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -8983,7 +9052,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
-  m_Name:
+  m_Name: 
   m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Text
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -9006,7 +9075,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: "\uc2dd\ubb3c\uc744 \uc131\uc7a5\uc2dc\ud0b5\ub2c8\ub2e4"
+  m_Text: "\uC2DD\uBB3C\uC744 \uC131\uC7A5\uC2DC\uD0B5\uB2C8\uB2E4"
 --- !u!114 &9000000041
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9017,7 +9086,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: cfabb0440166ab443bba8876756fdfa9, type: 3}
-  m_Name:
+  m_Name: 
   m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Shadow
   m_EffectColor: {r: 0, g: 0, b: 0, a: 0.85}
   m_EffectDistance: {x: 1, y: -1}
@@ -9095,8 +9164,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 0}
-  m_AnchoredPosition: {x: -0.0392967942088946, y: 119.64632885211996}
-  m_SizeDelta: {x: 98.55635987590486, y: 98.55635987590486}
+  m_AnchoredPosition: {x: -0.039296795, y: 119.64633}
+  m_SizeDelta: {x: 98.55636, y: 98.55636}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &9000000046
 CanvasRenderer:
@@ -9116,7 +9185,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
-  m_Name:
+  m_Name: 
   m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
   m_Material: {fileID: 0}
   m_Color: {r: 0.78, g: 0.78, b: 0.78, a: 1}
@@ -9192,7 +9261,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
-  m_Name:
+  m_Name: 
   m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Text
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -9215,7 +9284,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: "2"
+  m_Text: 2
 --- !u!114 &9000000052
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9226,7 +9295,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: cfabb0440166ab443bba8876756fdfa9, type: 3}
-  m_Name:
+  m_Name: 
   m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Shadow
   m_EffectColor: {r: 0, g: 0, b: 0, a: 0.85}
   m_EffectDistance: {x: 1, y: -1}
@@ -9287,7 +9356,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
-  m_Name:
+  m_Name: 
   m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Text
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -9310,7 +9379,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: "FREEZE"
+  m_Text: FREEZE
 --- !u!114 &9000000057
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9321,7 +9390,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: cfabb0440166ab443bba8876756fdfa9, type: 3}
-  m_Name:
+  m_Name: 
   m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Shadow
   m_EffectColor: {r: 0, g: 0, b: 0, a: 0.85}
   m_EffectDistance: {x: 1, y: -1}
@@ -9381,7 +9450,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
-  m_Name:
+  m_Name: 
   m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -9457,7 +9526,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
-  m_Name:
+  m_Name: 
   m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Text
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -9480,7 +9549,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: "\ubb3c\uc744 \uc5bc\ub9ac\uace0 \uc6c0\uc9c1\uc784\uc744 \uba48\ucda5\ub2c8\ub2e4"
+  m_Text: "\uBB3C\uC744 \uC5BC\uB9AC\uACE0 \uC6C0\uC9C1\uC784\uC744 \uBA48\uCDA5\uB2C8\uB2E4"
 --- !u!114 &9000000066
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9491,7 +9560,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: cfabb0440166ab443bba8876756fdfa9, type: 3}
-  m_Name:
+  m_Name: 
   m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Shadow
   m_EffectColor: {r: 0, g: 0, b: 0, a: 0.85}
   m_EffectDistance: {x: 1, y: -1}
@@ -9569,8 +9638,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 0}
-  m_AnchoredPosition: {x: 0.18009478672985793, y: 119.56777251184835}
-  m_SizeDelta: {x: 90.33554502369668, y: 90.33554502369668}
+  m_AnchoredPosition: {x: 0.1800948, y: 119.56777}
+  m_SizeDelta: {x: 90.33555, y: 90.33555}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &9000000071
 CanvasRenderer:
@@ -9590,7 +9659,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
-  m_Name:
+  m_Name: 
   m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
   m_Material: {fileID: 0}
   m_Color: {r: 0.78, g: 0.78, b: 0.78, a: 1}
@@ -9666,7 +9735,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
-  m_Name:
+  m_Name: 
   m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Text
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -9689,7 +9758,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: "3"
+  m_Text: 3
 --- !u!114 &9000000077
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9700,7 +9769,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: cfabb0440166ab443bba8876756fdfa9, type: 3}
-  m_Name:
+  m_Name: 
   m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Shadow
   m_EffectColor: {r: 0, g: 0, b: 0, a: 0.85}
   m_EffectDistance: {x: 1, y: -1}
@@ -9761,7 +9830,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
-  m_Name:
+  m_Name: 
   m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Text
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -9784,7 +9853,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: "PULSE"
+  m_Text: PULSE
 --- !u!114 &9000000082
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9795,7 +9864,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: cfabb0440166ab443bba8876756fdfa9, type: 3}
-  m_Name:
+  m_Name: 
   m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Shadow
   m_EffectColor: {r: 0, g: 0, b: 0, a: 0.85}
   m_EffectDistance: {x: 1, y: -1}
@@ -9855,7 +9924,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
-  m_Name:
+  m_Name: 
   m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -9931,7 +10000,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
-  m_Name:
+  m_Name: 
   m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Text
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -9954,7 +10023,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: "\uc5d0\ub108\uc9c0\ub97c \uc804\ub2ec\ud574 \uc7a5\uce58\ub97c \uc791\ub3d9\uc2dc\ud0b5\ub2c8\ub2e4"
+  m_Text: "\uC5D0\uB108\uC9C0\uB97C \uC804\uB2EC\uD574 \uC7A5\uCE58\uB97C \uC791\uB3D9\uC2DC\uD0B5\uB2C8\uB2E4"
 --- !u!114 &9000000091
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9965,7 +10034,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: cfabb0440166ab443bba8876756fdfa9, type: 3}
-  m_Name:
+  m_Name: 
   m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Shadow
   m_EffectColor: {r: 0, g: 0, b: 0, a: 0.85}
   m_EffectDistance: {x: 1, y: -1}
@@ -9980,7 +10049,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: dea1d5818a5747f5942e625436ada2c4, type: 3}
-  m_Name:
+  m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EverflowMap.EFMapAbilityHUD
   player: {fileID: 1724823459}
   visibility: {fileID: 9000000010}

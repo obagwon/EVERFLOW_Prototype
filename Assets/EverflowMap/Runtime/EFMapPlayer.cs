@@ -9,6 +9,8 @@ namespace EverflowMap
         public EFMapWorld world;
         public Camera view;
         public EFMapCamera follow;
+        [Header("Standalone puzzle lab (off in existing scenes)")]
+        public bool puzzleLabLocomotion;
         // Original graybox locomotion and input convention, adapted to FBX pivots.
         public float moveSpeed = 6, gravity = 24, jumpHeight = 1.35f, castRange = 10;
         [Min(.1f)] public float turnSharpness = 14;
@@ -52,19 +54,20 @@ namespace EverflowMap
         void Awake() { controller = GetComponent<CharacterController>(); }
         void Update()
         {
-            if (world == null || !world.GameInputActive) return;
+            if (!puzzleLabLocomotion && (world == null || !world.GameInputActive)) return;
             Physics.SyncTransforms();
             if (EFInput.KeyDown(KeyCode.Alpha1)) selected = Ability.Bloom;
             if (EFInput.KeyDown(KeyCode.Alpha2)) selected = Ability.Freeze;
             if (EFInput.KeyDown(KeyCode.Alpha3)) selected = Ability.Pulse;
             if (ride != null) Ride();
-            else { if (EFInput.KeyDown(KeyCode.E)) TryRide(); if (ride == null) Walk(); }
-            if (transform.position.y < world.FallFloor) world.Respawn();
+            else { if (!puzzleLabLocomotion && EFInput.KeyDown(KeyCode.E)) TryRide(); if (ride == null) Walk(); }
+            if (!puzzleLabLocomotion && transform.position.y < world.FallFloor) world.Respawn();
         }
         // Camera LateUpdate (-50) runs before this. Cast against the view rendered
         // this frame, after movement and mouse rotation, rather than yesterday's ray.
         void LateUpdate()
         {
+            if (puzzleLabLocomotion) return;
             if (world == null || !world.GameInputActive || view == null) { Hovered = null; return; }
             Physics.SyncTransforms();
             Aim();
@@ -176,9 +179,9 @@ namespace EverflowMap
         {
             if (hit.normal.y <= .5f) return;
             ground = hit.collider.GetComponentInParent<EFMapNode>();
-            if (ground == null) return;
+            if (ground == null && !puzzleLabLocomotion) return;
             supportTransform = hit.collider.transform;
-            if (ground.kind == MapKind.Debris && ground.Frozen)
+            if (ground != null && ground.kind == MapKind.Debris && ground.Frozen)
             {
                 for (int i = 0; i < world.debris.Length; i++) if (world.debris[i] == ground) SteppedDebris[i] = true;
             }

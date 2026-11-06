@@ -1,0 +1,148 @@
+{
+  "utc": "2026-11-05T13:21:28.365545+00:00",
+  "unity_play": "NOT EXECUTED",
+  "scene_local_references": "pass",
+  "team_map_instance_and_transforms": "preserved",
+  "collider_mesh_names": 286,
+  "spawn_floor_analytical": [
+    {
+      "x": -46,
+      "z": -9,
+      "height": 0.11999999999999997,
+      "mesh": "S_OverlookPaving",
+      "normal_y": 1.0
+    },
+    {
+      "x": -46.4,
+      "z": -9,
+      "height": 0.11999999999999997,
+      "mesh": "S_OverlookPaving",
+      "normal_y": 1.0
+    },
+    {
+      "x": -45.6,
+      "z": -9,
+      "height": 0.11999999999999997,
+      "mesh": "S_OverlookPaving",
+      "normal_y": 1.0
+    },
+    {
+      "x": -46,
+      "z": -9.4,
+      "height": 0.11999999999999998,
+      "mesh": "S_OverlookPaving",
+      "normal_y": 1.0
+    },
+    {
+      "x": -46,
+      "z": -8.6,
+      "height": 0.11999999999999998,
+      "mesh": "S_OverlookPaving",
+      "normal_y": 1.0
+    }
+  ],
+  "lowest_selected_mesh_y": -36.596149902343754,
+  "fall_height": -45,
+  "stairs_analytical": {
+    "TWR_Flight1_Step": {
+      "steps": 12,
+      "max_riser": 0.25,
+      "step_offset": 0.55,
+      "physics_traversal": "unverified"
+    },
+    "TWR_Flight2_Step": {
+      "steps": 12,
+      "max_riser": 0.25,
+      "step_offset": 0.55,
+      "physics_traversal": "unverified"
+    },
+    "D1_Stairs_Step": {
+      "steps": 45,
+      "max_riser": 0.20000000000000284,
+      "step_offset": 0.55,
+      "physics_traversal": "unverified"
+    },
+    "D3_DockStairs_Step": {
+      "steps": 18,
+      "max_riser": 0.2166667683919279,
+      "step_offset": 0.55,
+      "physics_traversal": "unverified"
+    }
+  },
+  "scenes": {
+    "Assets/Scenes/Everflow_Map.unity": {
+      "serialized_component_types": {
+        "Assembly-CSharp::EverflowMap.EFMapNode": 17,
+        "Assembly-CSharp::EverflowMap.EFMapAnimation": 13,
+        "Assembly-CSharp::EverflowMap.EFMapAbilityTarget": 35,
+        "Unity.RenderPipelines.Universal.Runtime::UnityEngine.Rendering.Universal.UniversalAdditionalLightData": 1,
+        "Assembly-CSharp::EverflowMap.EFMapCheckpoint": 2,
+        "Unity.RenderPipelines.Universal.Runtime::UnityEngine.Rendering.Universal.UniversalAdditionalCameraData": 2,
+        "Assembly-CSharp::EverflowMap.EFMapCamera": 1,
+        "Assembly-CSharp::EverflowMap.EFMapWorld": 1,
+        "Assembly-CSharp::EverflowMap.EFMapPlayer": 1,
+        "Assembly-CSharp::EverflowMap.EFMapPassage": 5,
+        "UnityEngine.UI::UnityEngine.UI.CanvasScaler": 1,
+        "UnityEngine.UI::UnityEngine.UI.Image": 7,
+        "UnityEngine.UI::UnityEngine.UI.Text": 9,
+        "UnityEngine.UI::UnityEngine.UI.Shadow": 9,
+        "Assembly-CSharp::EverflowMap.EFMapAbilityHUD": 1
+      },
+      "missing_script_guid": [],
+      "records": 503,
+      "imported_prefab_internal_fileIDs": "not resolved outside Unity"
+    },
+    "Assets/Scenes/Everflow_Map_v2_test.unity": {
+      "serialized_component_types": {
+        "Unity.RenderPipelines.Universal.Runtime::UnityEngine.Rendering.Universal.UniversalAdditionalLightData": 1,
+        "Unity.RenderPipelines.Universal.Runtime::UnityEngine.Rendering.Universal.UniversalAdditionalCameraData": 1,
+        "Assembly-CSharp::EverflowMap.EFMapCamera": 1,
+        "Assembly-CSharp::EverflowMap.EFMapExploration": 1,
+        "Assembly-CSharp::EverflowMap.EFMapPlayer": 1
+      },
+      "missing_script_guid": [],
+      "records": 24,
+      "imported_prefab_internal_fileIDs": "not resolved outside Unity"
+    },
+    "Assets/Scenes/Everflow_V02_PuzzleLab.unity": {
+      "serialized_component_types": {
+        "Assembly-CSharp::EverflowPuzzleLab.LabStreamMarker": 14,
+        "Assembly-CSharp::EverflowPuzzleLab.LabDirection": 14,
+        "Assembly-CSharp::EverflowPuzzleLab.LabTarget": 20,
+        "Assembly-CSharp::EverflowPuzzleLab.LabRootLift": 1,
+        "Assembly-CSharp::EverflowPuzzleLab.LabArea": 5,
+        "Assembly-CSharp::EverflowPuzzleLab.LabMover": 5,
+        "Assembly-CSharp::EverflowPuzzleLab.LabGateFlow": 1,
+        "Assembly-CSharp::EverflowPuzzleLab.LabGate": 2,
+        "Assembly-CSharp::EverflowPuzzleLab.LabCanal": 1,
+        "Assembly-CSharp::EverflowMap.EFMapPlayer": 1,
+        "Assembly-CSharp::EverflowMap.EFMapCamera": 1,
+        "Assembly-CSharp::EverflowPuzzleLab.PuzzleLab": 1,
+        "Assembly-CSharp::EverflowPuzzleLab.LabInfoBoard": 5,
+        "Assembly-CSharp::EverflowPuzzleLab.LabShortLabel": 20
+      },
+      "missing_script_guid": [],
+      "records": 2042,
+      "imported_prefab_internal_fileIDs": "not resolved outside Unity"
+    },
+    "Assets/Scenes/Everflow_V02_PuzzleLab_T01_Check.unity": {
+      "serialized_component_types": {
+        "Assembly-CSharp::EverflowPuzzleLab.LabDirection": 2,
+        "Assembly-CSharp::EverflowPuzzleLab.LabArea": 1,
+        "Assembly-CSharp::EverflowMap.EFMapPlayer": 1,
+        "Assembly-CSharp::EverflowPuzzleLab.PuzzleLab": 1,
+        "Assembly-CSharp::EverflowPuzzleLab.LabMover": 1,
+        "Assembly-CSharp::EverflowPuzzleLab.LabTarget": 3,
+        "Unity.RenderPipelines.Universal.Runtime::UnityEngine.Rendering.Universal.UniversalAdditionalLightData": 1,
+        "Assembly-CSharp::EverflowMap.EFMapCamera": 1
+      },
+      "missing_script_guid": [],
+      "records": 167,
+      "imported_prefab_internal_fileIDs": "not resolved outside Unity"
+    }
+  },
+  "limits": [
+    "FBX coordinate calculations do not replace Unity importer/physics validation.",
+    "Imported FBX internal fileIDs, runtime cooking, camera obstruction and human traversal unverified."
+  ]
+}

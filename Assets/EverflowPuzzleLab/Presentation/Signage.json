@@ -1,0 +1,30 @@
+{
+  "statusPreview":"직접 끊김 · 내부 물 흐름 · 우회 닫힘\n공급 끊김 · 분기 미선택 · 문 닫힘\n주 얼음 없음 · W 도착 없음 · 0.0 / 3.0초",
+  "boards": [
+    { "index":0, "key":"T01", "title":"T01 · 같은 둔덕, 두 가지 길", "goal":"두 해법 중 하나로 높은 둔덕에 착지하세요.",
+      "methods":"1  BLOOM으로 뿌리 발판을 만들어 오르기\n2  FLOW로 잎을 출발지에 가져와 탑승하기\n    물살을 둔덕으로 바꾸고 FREEZE 후 점프\n    회수해도 성장·방향·고정은 유지됩니다.",
+      "controls":"1 성장 · 2 고정 · 3 흐름 / 좌클릭 적용\nFLOW: E 방향 선택 → 클릭 확정 / Q 회수\nX 정지 해제 · R 초기화 · Backspace 복귀", "position":[-2.5,3,4.5], "size":[6.4,5.4] },
+    { "index":1, "key":"T02", "title":"T02 · 뿌리 테라스의 두 경로", "goal":"긴 뿌리 길 또는 짧은 발판 길로 건너세요.",
+      "methods":"1  BLOOM으로 긴 뿌리 길을 펼쳐 건너기\n2  FLOW의 정방향 바람으로 회전체 작동\n    이동 발판에 타고 테라스 근처에서 고정\n    X로 풀면 현재 위치에서 이동을 재개합니다.",
+      "controls":"1 성장 · 2 고정 · 3 흐름 / 좌클릭 적용\nFLOW: E 방향 선택 → 클릭 확정 / Q 회수\nX 정지 해제 · R 초기화 · Backspace 복귀", "position":[-2.5,3,4.5], "size":[6.4,5.4] },
+    { "index":2, "key":"T03", "title":"T03 · 바람과 넓은 잎", "goal":"잎을 펼쳐 낮은 선반 또는 높은 선반에 착지하세요.",
+      "methods":"1  BLOOM으로 잎을 펼치고 탑승하기\n2  FLOW에서 낮은 선반 / 높은 선반 선택\n3  FREEZE로 멈춘 뒤 원하는 선반으로 점프\n작은 잎은 느리고 멀리 가지 못합니다.\n회수 후에도 유지되며 X로 현재 바람에 재반응합니다.",
+      "controls":"1 펼치기 · 2 고정 · 3 바람 / 좌클릭 적용\nE 방향 선택 → 클릭 확정 / Q 회수\n귀환 바람 또는 Backspace 복귀 · R 초기화", "position":[-2.5,3,4.5], "size":[6.4,5.4] },
+    { "index":3, "key":"T04", "title":"T04 · 수차와 석문", "goal":"수차 또는 뿌리로 문을 완전히 열고 통과하세요.",
+      "methods":"1  FLOW를 작은 수차로 보내 끝까지 열기\n2  BLOOM으로 뿌리를 키워 문을 받쳐 올리기\n완전 개방 시 걸쇠가 문을 유지합니다.\n이후 구체를 회수하거나 배수 쪽으로 바꿔도 유지.\n부분 개방에서 물을 끊으면 문이 내려옵니다.",
+      "controls":"1 뿌리 성장 · 3 물 분기 / 좌클릭 적용\nE 방향 선택 → 클릭 확정 / Q 회수\nR 이 구역 초기화 · Backspace 안전 복귀", "position":[-2.5,3,4.5], "size":[6.4,5.4] },
+    { "index":4, "key":"D", "title":"D1–D5 · 연결된 지하 수로", "goal":"W에 물이 3초간 도착하도록 연결하세요.",
+      "methods":"D1  왼쪽 계단으로 하강 · D3 서쪽 고정 계단은 복귀로\nD3  성장 덩굴 / 부두 잎 운반 / 물 구간 동결로 접근\nD5  바람으로 도수로 정렬 후 고정, 또는 우회 뿌리 성장\n      구조물 고정과 내부 물 동결은 서로 다른 대상\nD2  부두 / 작은 수차 / 주 출구 중 한 방향만 공급\nD4  작은 수차 또는 뿌리로 문을 끝까지 열어 걸쇠 유지\nW   연결 + 열린 문 + 주 출구 + 주 수로 해동 필요",
+      "controls":"1 성장 · 2 고정 / 물 동결 · 3 FLOW · 클릭 적용\nE 방향 → 클릭 확정 · Q 회수 · X 해제 / 해동\n누수: 재정렬 / 문 닫힘: 수차·뿌리 / 얼음: 해동\nR 지하 전체 초기화 · Backspace 발코니 복귀", "position":[-5.5,8.2,-4.5], "size":[7.2,6.2] }
+  ],
+  "labels": [
+    {"source":"A ROOT STEP","text":"성장 뿌리"}, {"source":"A WATER CURRENT","text":"FLOW 물살"}, {"source":"A LEAF","text":"동결 가능 잎"},
+    {"source":"B LONG ROOT ROUTE","text":"성장 뿌리 길"}, {"source":"B WIND ROTOR","text":"FLOW 바람"}, {"source":"B ROTARY PLATFORM","text":"동결 이동 발판"},
+    {"source":"C WIND ZONE","text":"FLOW 바람"}, {"source":"C UNFOLDING LEAF","text":"펼침 · 동결 잎"},
+    {"source":"G WATER BRANCH","text":"FLOW 물 분기"}, {"source":"G GATE LIFT ROOT","text":"문 받침 뿌리"},
+    {"source":"D3 GROWN VINE PATH","text":"성장 덩굴 길"}, {"source":"D2 CENTRAL THREE-WAY","text":"FLOW 중앙 분기"}, {"source":"D3 DOCK LEAF","text":"동결 부두 잎"},
+    {"source":"D3 ICE CROSSING","text":"동결 물 구간"}, {"source":"D5 ALIGNMENT WIND","text":"FLOW 정렬 바람"}, {"source":"D5 AQUEDUCT STRUCTURE","text":"동결 도수로 구조물"},
+    {"source":"D5 WATER INSIDE (not structure)","text":"동결 내부 물"}, {"source":"D5 BYPASS ROOT GATE","text":"우회 수로 뿌리"},
+    {"source":"MAIN ICE WALKWAY / SUPPLY BLOCK","text":"동결 주 공급로"}, {"source":"D4 GATE LIFT ROOT","text":"수문 받침 뿌리"}
+  ]
+}

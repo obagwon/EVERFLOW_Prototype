@@ -1,0 +1,40 @@
+MANAGED STATE CHECKS: exact LabState.cs compiled outside Unity. No scene, aiming, physics, platform riding or Play validation.
+PASS Bloom first placement
+PASS Bloom second target rejected before recall
+PASS Bloom same target reconfiguration
+PASS Bloom world change survives recall
+PASS Bloom reuses recalled orb
+PASS Bloom sequential world changes coexist
+PASS Bloom target disable/destroy release
+PASS Freeze first placement
+PASS Freeze second target rejected before recall
+PASS Freeze same target reconfiguration
+PASS Freeze world change survives recall
+PASS Freeze reuses recalled orb
+PASS Freeze sequential world changes coexist
+PASS Freeze target disable/destroy release
+PASS Flow first placement
+PASS Flow second target rejected before recall
+PASS Flow same target reconfiguration
+PASS Flow world change survives recall
+PASS Flow reuses recalled orb
+PASS Flow sequential world changes coexist
+PASS Flow target disable/destroy release
+PASS explicit release only changes named target
+PASS explicit shrink distinct from recall
+PASS area reset releases matching slots and preserves another area
+PASS reset restores world state
+PASS partial door is not latched
+PASS wheel fully opens and latches
+PASS door remains after recall / direction change
+PASS root alternative latches door
+PASS 128 unique circuit combinations: dock/turbine, closed gate, misalignment and main ice block W
+PASS realignment/thaw/branch change restores supply
+PASS bypass alternative independent of upper canal freeze
+PASS under 3 seconds cannot restore
+PASS interrupted water resets continuous timer
+PASS 3 continuous seconds restore
+PASS completed restoration retained; live flow still tracked separately
+PASS area reset clears final restoration
+PASS zero inspector threshold cannot succeed without water
+TOTAL 38 checks; 0 failures

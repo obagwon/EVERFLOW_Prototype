@@ -1,0 +1,20 @@
+{
+  "utc": "2026-11-05T13:33:52.674692+00:00",
+  "preservation": "pass; 1801 existing files unchanged; only target scene modified",
+  "camera_count": 1,
+  "listener_count": 1,
+  "player_prefab_instances": 1,
+  "map_prefab_instances": 1,
+  "fbx_embedded_cameras_lights": 0,
+  "document_local_links_checked": 18,
+  "document_referenced_source_paths": "all exist",
+  "play_smoke_report": "absent; correctly labeled unexecuted",
+  "hashes": {
+    "docs/EVERFLOW_V2_Next_Steps.md": "10bd3ea91d741ea6e54410d4c22794f49b0e0cff1875e78d7110284c2fa21d97",
+    "docs/EVERFLOW_V2_Scene_And_Script_Guide.md": "525647cc6b5752823e25ceb9e21f73133cf5cc7800825d8bcadbe17088466032",
+    "Assets/Scenes/Everflow_Map_v2_test.unity": "84706be74391503ddab379034e9a29be5bc30d30946f89fe5a65d41c23191f34",
+    "Assets/EverflowMap/Runtime/EFMapExploration.cs": "c7aa0a5f86437c4837c9440a8991cef257da07851bc2b865b8225b70daa8d3d6",
+    "Assets/EverflowMap/Editor/EFMapExplorationTools.cs": "32b710f22106892b38f6f262343bf378ac6471166dd462db0d2f48141c5f99b2",
+    "Assets/EverflowMap/Editor/EFMapExplorationChecks.cs": "1bc5a44b20523b5f40a34a7d26283fa01d03d220f644a8c53364c8abbef088bc"
+  }
+}

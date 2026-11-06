@@ -1,0 +1,49 @@
+Unity Editor Play checks. API state checks and injected physical/center-camera input checks are labeled separately. Teleports are fixture setup, never traversal proof. No human playthrough.
+Scene: Assets/Scenes/Everflow_V02_PuzzleLab.unity
+PASS REFERENCES reused standalone locomotion and camera; no legacy stage world
+PASS REFERENCES single player
+PASS REFERENCES no missing scripts
+PASS INPUT center camera ray finds A ROOT STEP (A ROOT STEP | SMALL
+LMB: grow (retained after Q))
+PASS INPUT click grows A root
+PASS API recall retains growth
+PASS PHYSICAL jump onto root support
+PASS PHYSICAL T01 root route reaches same grounded goal
+PASS API area reset clears local state and slots
+PASS API choose departure current
+PASS API current retained after recall
+PASS PHYSICAL jump onto bounded leaf
+PASS PHYSICAL moving support carries standing CharacterController
+PASS API freeze + recall preserves pose
+PASS API release resumes from current pose
+PASS PHYSICAL T01 leaf route reaches same goal
+PASS API second target rejected until recall
+PASS API sequential growth retained together
+PASS API disabled target releases placed orb
+PASS API debug navigation does not complete T02
+PASS API T02 freeze persists independently of FLOW
+PASS API T02 release continues current phase without teleport
+PASS API unfolding moving leaf preserves position
+PASS API expanded leaf responds faster to same wind
+PASS API T03 unfolding, wind and freeze retained together after all recalls
+PASS API T03 release reacts to retained current wind
+PASS API T03 reset preserves T02 state
+PASS API T04 wheel opens and latches gate
+PASS API T04 changed water direction retains fully open gate
+PASS API T04 root alternative retains open gate after recall
+PASS API misaligned upper canal prevents supply
+PASS API dock branch carries water and cannot feed final wheel
+PASS API closed gate blocks W and its downstream visuals
+PASS API root-open gate + main + bypass starts arrival, no instant win
+PASS API main ice blocks supply after recall, downstream stays dry
+PASS API W requires full 3 seconds
+PASS API thaw recovers circuit and final restoration
+PASS API freezing misaligned structure cannot fake a connection
+PASS API release and realignment recover upper supply
+PASS API structure freeze alone does not freeze contained water
+PASS API separate inner-water target blocks upper supply
+PASS API D4 small-wheel branch fully latches exit sluice
+PASS API alignment alternative and wheel-open gate feed W, regardless of prior input order
+PASS API completed restoration and gate persist; live water reflects changed branch
+PASS API integrated reset clears its circuit and preserves surface changes
+TOTAL 45 checks; 0 failures

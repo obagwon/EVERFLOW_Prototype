@@ -1,0 +1,23 @@
+{
+  "scene": "Assets\\Scenes\\Everflow_V02_PuzzleLab.unity",
+  "backup": "Backups\\PuzzleLab-Signage-20261104-222209",
+  "before_sha256": "c6e1f3c98a31e8ad6ab467e836caa6c9b869fa74cc199555b4e1a12f6ea3a7ca",
+  "after_sha256": "12773a3a4a045563c90971ea6be1c70933ef7abdf2534a21fc622ccc99a65ee3",
+  "boards": 5,
+  "protected_geometry_poses": 324,
+  "gameplay_components_colliders_unchanged": true,
+  "local_file_references": "pass",
+  "unity_editor_play_visual": "not executed; restricted Windows account cannot reach interactive Licensing Client",
+  "short_labels": 20,
+  "status_reference_ids_preserved": true,
+  "initial_camera_frustum": {
+    "T01": "within initial 16:9 frustum (analytical only)",
+    "T02": "within initial 16:9 frustum (analytical only)",
+    "T03": "within initial 16:9 frustum (analytical only)",
+    "T04": "within initial 16:9 frustum (analytical only)",
+    "D": "within initial 16:9 frustum (analytical only)"
+  },
+  "offline_state_checks": "38 passed; no presentation runtime test",
+  "flat_preview": "5 panels checked with installed Malgun Gothic; separate from Unity rendering",
+  "scene_regenerated": false
+}

@@ -1,0 +1,9 @@
+Unity 6000.3.21f1 batch launch attempted.
+Editor startup did not reach executeMethod; no scene generated; no Play tests ran.
+[Licensing::IpcConnector] Connection to channel LicenseClient-vzd12 refused
+[Licensing::Module] Error: Timed-out after 60.01s, waiting for Licensing to initialize
+[Licensing::IpcConnector] Connection to channel LicenseClient-vzd12 refused
+[Licensing::Module] Timed-out after 60.04s, waiting for channel: "LicenseClient-vzd12"
+[Licensing::Module] Error: Licensing initialization failed after 74.84s
+[Licensing::IpcConnector] Connection to channel LicenseClient-vzd12 refused
+Task-owned Editor process stopped after repeated automatic IPC reconnect. No licensing changes or Unity upgrades.

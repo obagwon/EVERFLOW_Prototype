@@ -1,0 +1,7033 @@
+{
+  "coordinate_note": "Analytical FBX cm->m, X handedness conversion; not imported Unity physics.",
+  "settings": {
+    "UpAxis": [
+      1
+    ],
+    "UpAxisSign": [
+      1
+    ],
+    "FrontAxis": [
+      2
+    ],
+    "FrontAxisSign": [
+      1
+    ],
+    "CoordAxis": [
+      0
+    ],
+    "CoordAxisSign": [
+      1
+    ],
+    "OriginalUpAxis": [
+      1
+    ],
+    "OriginalUpAxisSign": [
+      1
+    ],
+    "UnitScaleFactor": [
+      1.0
+    ],
+    "OriginalUnitScaleFactor": [
+      1.0
+    ],
+    "AmbientColor": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "DefaultCamera": [
+      "Producer Perspective"
+    ],
+    "TimeMode": [
+      11
+    ],
+    "TimeProtocol": [
+      2
+    ],
+    "SnapOnFrameMode": [
+      0
+    ],
+    "TimeSpanStart": [
+      0
+    ],
+    "TimeSpanStop": [
+      461861580000
+    ],
+    "CustomFrameRate": [
+      -1.0
+    ],
+    "TimeMarker": [],
+    "CurrentTimeMarker": [
+      -1
+    ]
+  },
+  "meshes": [
+    {
+      "name": "T_Terrain",
+      "model_id": 1980711450976,
+      "geometry_id": 1979959489584,
+      "path": "GRP_Surface/T_Terrain",
+      "min": [
+        -102.0,
+        -36.596149902343754,
+        -92.0
+      ],
+      "max": [
+        12.0,
+        19.688507080078125,
+        12.0
+      ],
+      "vertices": 21174,
+      "solid": true
+    },
+    {
+      "name": "S_OverlookPaving",
+      "model_id": 1980711483456,
+      "geometry_id": 1979726036320,
+      "path": "GRP_Surface/S_OverlookPaving",
+      "min": [
+        -54.5,
+        -0.3,
+        -10.5
+      ],
+      "max": [
+        -37.5,
+        0.11999999999999998,
+        -1.5
+      ],
+      "vertices": 24,
+      "solid": true
+    },
+    {
+      "name": "G_RuinPaving",
+      "model_id": 1980711481136,
+      "geometry_id": 1979726037216,
+      "path": "GRP_Surface/G_RuinPaving",
+      "min": [
+        -55.5,
+        14.775,
+        -72.80000000000001
+      ],
+      "max": [
+        -33.5,
+        15.120000000000001,
+        -60.50000000000001
+      ],
+      "vertices": 24,
+      "solid": true
+    },
+    {
+      "name": "TWR_WallW",
+      "model_id": 1980711474176,
+      "geometry_id": 1979726037664,
+      "path": "GRP_Surface/TWR_WallW",
+      "min": [
+        -28.0,
+        -4.5,
+        -70.0
+      ],
+      "max": [
+        -27.5,
+        22.5,
+        -62.0
+      ],
+      "vertices": 24,
+      "solid": true
+    },
+    {
+      "name": "TWR_WallE",
+      "model_id": 1980711471856,
+      "geometry_id": 1979726035872,
+      "path": "GRP_Surface/TWR_WallE",
+      "min": [
+        -32.0,
+        -4.5,
+        -70.0
+      ],
+      "max": [
+        -31.5,
+        22.5,
+        -62.0
+      ],
+      "vertices": 24,
+      "solid": true
+    },
+    {
+      "name": "TWR_WallN",
+      "model_id": 1980711476496,
+      "geometry_id": 1979726036768,
+      "path": "GRP_Surface/TWR_WallN",
+      "min": [
+        -32.0,
+        -4.5,
+        -70.0
+      ],
+      "max": [
+        -27.5,
+        22.5,
+        -69.5
+      ],
+      "vertices": 24,
+      "solid": true
+    },
+    {
+      "name": "TWR_WallS_Low",
+      "model_id": 1980711478816,
+      "geometry_id": 1979726038112,
+      "path": "GRP_Surface/TWR_WallS_Low",
+      "min": [
+        -32.0,
+        -4.5,
+        -62.5
+      ],
+      "max": [
+        -27.5,
+        -3.0,
+        -62.0
+      ],
+      "vertices": 24,
+      "solid": true
+    },
+    {
+      "name": "TWR_WallS_SideW",
+      "model_id": 1980711499696,
+      "geometry_id": 1979726038560,
+      "path": "GRP_Surface/TWR_WallS_SideW",
+      "min": [
+        -29.0,
+        -3.0,
+        -62.5
+      ],
+      "max": [
+        -27.5,
+        1.5,
+        -62.0
+      ],
+      "vertices": 24,
+      "solid": true
+    },
+    {
+      "name": "TWR_WallS_SideE",
+      "model_id": 1980711488096,
+      "geometry_id": 1979726039008,
+      "path": "GRP_Surface/TWR_WallS_SideE",
+      "min": [
+        -32.0,
+        -3.0,
+        -62.5
+      ],
+      "max": [
+        -31.5,
+        1.5,
+        -62.0
+      ],
+      "vertices": 24,
+      "solid": true
+    },
+    {
+      "name": "TWR_WallS_Mid",
+      "model_id": 1980711492736,
+      "geometry_id": 1980552160368,
+      "path": "GRP_Surface/TWR_WallS_Mid",
+      "min": [
+        -32.0,
+        1.5,
+        -62.5
+      ],
+      "max": [
+        -27.5,
+        15.0,
+        -62.0
+      ],
+      "vertices": 24,
+      "solid": true
+    },
+    {
+      "name": "TWR_WallS_DoorW",
+      "model_id": 1980711495056,
+      "geometry_id": 1980552160816,
+      "path": "GRP_Surface/TWR_WallS_DoorW",
+      "min": [
+        -28.0,
+        15.0,
+        -62.5
+      ],
+      "max": [
+        -27.5,
+        22.5,
+        -62.0
+      ],
+      "vertices": 24,
+      "solid": true
+    },
+    {
+      "name": "TWR_WallS_DoorE",
+      "model_id": 1980711490416,
+      "geometry_id": 1980552161264,
+      "path": "GRP_Surface/TWR_WallS_DoorE",
+      "min": [
+        -32.0,
+        15.0,
+        -62.5
+      ],
+      "max": [
+        -31.5,
+        22.5,
+        -62.0
+      ],
+      "vertices": 24,
+      "solid": true
+    },
+    {
+      "name": "TWR_Roof",
+      "model_id": 1980711508976,
+      "geometry_id": 1980552159920,
+      "path": "GRP_Surface/TWR_Roof",
+      "min": [
+        -32.3,
+        22.5,
+        -70.3
+      ],
+      "max": [
+        -27.2,
+        23.400000000000002,
+        -61.7
+      ],
+      "vertices": 24,
+      "solid": true
+    },
+    {
+      "name": "TWR_Floor",
+      "model_id": 1980711539136,
+      "geometry_id": 1980552162160,
+      "path": "GRP_Surface/TWR_Floor",
+      "min": [
+        -31.5,
+        -4.5,
+        -70.0
+      ],
+      "max": [
+        -28.0,
+        -3.0,
+        -62.5
+      ],
+      "vertices": 24,
+      "solid": true
+    },
+    {
+      "name": "TWR_EntryLanding",
+      "model_id": 1980711555376,
+      "geometry_id": 1980552159472,
+      "path": "GRP_Surface/TWR_EntryLanding",
+      "min": [
+        -31.5,
+        14.700000000000003,
+        -63.5
+      ],
+      "max": [
+        -28.0,
+        15.000000000000002,
+        -62.5
+      ],
+      "vertices": 24,
+      "solid": true
+    },
+    {
+      "name": "TWR_Landing_N8",
+      "model_id": 1980711548416,
+      "geometry_id": 1980552161712,
+      "path": "GRP_Surface/TWR_Landing_N8",
+      "min": [
+        -31.5,
+        11.700000000000001,
+        -69.5
+      ],
+      "max": [
+        -28.0,
+        12.0,
+        -68.5
+      ],
+      "vertices": 24,
+      "solid": true
+    },
+    {
+      "name": "TWR_Landing_S6",
+      "model_id": 1980711550736,
+      "geometry_id": 1980552159024,
+      "path": "GRP_Surface/TWR_Landing_S6",
+      "min": [
+        -31.5,
+        8.700000000000001,
+        -63.5
+      ],
+      "max": [
+        -28.0,
+        9.0,
+        -62.5
+      ],
+      "vertices": 24,
+      "solid": true
+    },
+    {
+      "name": "TWR_Landing_N4",
+      "model_id": 1980711541456,
+      "geometry_id": 1980513692416,
+      "path": "GRP_Surface/TWR_Landing_N4",
+      "min": [
+        -31.5,
+        5.7,
+        -69.5
+      ],
+      "max": [
+        -28.0,
+        6.0,
+        -68.5
+      ],
+      "vertices": 24,
+      "solid": true
+    },
+    {
+      "name": "TWR_Landing_S2",
+      "model_id": 1980711560016,
+      "geometry_id": 1980513692864,
+      "path": "GRP_Surface/TWR_Landing_S2",
+      "min": [
+        -31.5,
+        2.7,
+        -63.5
+      ],
+      "max": [
+        -28.0,
+        3.0,
+        -62.5
+      ],
+      "vertices": 24,
+      "solid": true
+    },
+    {
+      "name": "TWR_Landing_N0",
+      "model_id": 1980711557696,
+      "geometry_id": 1980513691520,
+      "path": "GRP_Surface/TWR_Landing_N0",
+      "min": [
+        -31.5,
+        -0.3,
+        -69.5
+      ],
+      "max": [
+        -28.0,
+        -3.552713678800501e-17,
+        -68.5
+      ],
+      "vertices": 24,
+      "solid": true
+    },
+    {
+      "name": "H_RimS_W",
+      "model_id": 1980711562336,
+      "geometry_id": 1980513689728,
+      "path": "GRP_Surface/H_RimS_W",
+      "min": [
+        -44.0,
+        19.5,
+        -75.0
+      ],
+      "max": [
+        -38.0,
+        21.0,
+        -74.0
+      ],
+      "vertices": 24,
+      "solid": true
+    },
+    {
+      "name": "H_RimS_E",
+      "model_id": 1980711564656,
+      "geometry_id": 1980513690624,
+      "path": "GRP_Surface/H_RimS_E",
+      "min": [
+        -52.0,
+        19.5,
+        -75.0
+      ],
+      "max": [
+        -46.0,
+        21.0,
+        -74.0
+      ],
+      "vertices": 24,
+      "solid": true
+    },
+    {
+      "name": "H_RimN",
+      "model_id": 1980711553056,
+      "geometry_id": 1980513691072,
+      "path": "GRP_Surface/H_RimN",
+      "min": [
+        -52.0,
+        19.5,
+        -80.0
+      ],
+      "max": [
+        -38.0,
+        21.0,
+        -79.0
+      ],
+      "vertices": 24,
+      "solid": true
+    },
+    {
+      "name": "H_RimW",
+      "model_id": 1980711578576,
+      "geometry_id": 1980513691968,
+      "path": "GRP_Surface/H_RimW",
+      "min": [
+        -39.0,
+        19.5,
+        -79.0
+      ],
+      "max": [
+        -38.0,
+        21.0,
+        -75.0
+      ],
+      "vertices": 24,
+      "solid": true
+    },
+    {
+      "name": "H_RimE",
+      "model_id": 1980711580896,
+      "geometry_id": 1980513690176,
+      "path": "GRP_Surface/H_RimE",
+      "min": [
+        -52.0,
+        19.5,
+        -79.0
+      ],
+      "max": [
+        -51.0,
+        21.0,
+        -75.0
+      ],
+      "vertices": 24,
+      "solid": true
+    },
+    {
+      "name": "CH_G_Supply_Rim1",
+      "model_id": 1980711566976,
+      "geometry_id": 1980468561328,
+      "path": "GRP_Surface/CH_G_Supply_Rim1",
+      "min": [
+        -44.0,
+        15.075000000000003,
+        -73.19999999999999
+      ],
+      "max": [
+        -43.7,
+        15.625000000000002,
+        -62.49999999999999
+      ],
+      "vertices": 24,
+      "solid": true
+    },
+    {
+      "name": "CH_G_Supply_Rim2",
+      "model_id": 1980711583216,
+      "geometry_id": 1980468559984,
+      "path": "GRP_Surface/CH_G_Supply_Rim2",
+      "min": [
+        -46.300000000000004,
+        15.075000000000003,
+        -73.19999999999999
+      ],
+      "max": [
+        -46.0,
+        15.625000000000002,
+        -62.49999999999999
+      ],
+      "vertices": 24,
+      "solid": true
+    },
+    {
+      "name": "CH_G_ToWheel_Rim1",
+      "model_id": 1980711569296,
+      "geometry_id": 1980468560880,
+      "path": "GRP_Surface/CH_G_ToWheel_Rim1",
+      "min": [
+        -44.0,
+        15.075000000000003,
+        -61.0
+      ],
+      "max": [
+        -35.0,
+        15.625000000000002,
+        -60.7
+      ],
+      "vertices": 24,
+      "solid": true
+    },
+    {
+      "name": "CH_G_ToWheel_Rim2",
+      "model_id": 1980711576256,
+      "geometry_id": 1980468560432,
+      "path": "GRP_Surface/CH_G_ToWheel_Rim2",
+      "min": [
+        -44.0,
+        15.075000000000003,
+        -62.800000000000004
+      ],
+      "max": [
+        -35.0,
+        15.625000000000002,
+        -62.5
+      ],
+      "vertices": 24,
+      "solid": true
+    },
+    {
+      "name": "TWR_Flight1_Step01",
+      "model_id": 1980711587856,
+      "geometry_id": 1980425373248,
+      "path": "GRP_Surface/TWR_Flight1/TWR_Flight1_Step01",
+      "min": [
+        -31.5,
+        14.200000000000001,
+        -63.916666673024494
+      ],
+      "max": [
+        -29.75,
+        14.75,
+        -63.49999999364217
+      ],
+      "vertices": 24,
+      "solid": true
+    },
+    {
+      "name": "TWR_Flight1_Step02",
+      "model_id": 1980711573936,
+      "geometry_id": 1980425373696,
+      "path": "GRP_Surface/TWR_Flight1/TWR_Flight1_Step02",
+      "min": [
+        -31.5,
+        13.950000000000001,
+        -64.33333333969117
+      ],
+      "max": [
+        -29.75,
+        14.5,
+        -63.91666666030884
+      ],
+      "vertices": 24,
+      "solid": true
+    },
+    {
+      "name": "TWR_Flight1_Step03",
+      "model_id": 1980711599456,
+      "geometry_id": 1980425374592,
+      "path": "GRP_Surface/TWR_Flight1/TWR_Flight1_Step03",
+      "min": [
+        -31.5,
+        13.700000000000001,
+        -64.75000000635782
+      ],
+      "max": [
+        -29.75,
+        14.25,
+        -64.3333333269755
+      ],
+      "vertices": 24,
+      "solid": true
+    },
+    {
+      "name": "TWR_Flight1_Step04",
+      "model_id": 1980711590176,
+      "geometry_id": 1980425375040,
+      "path": "GRP_Surface/TWR_Flight1/TWR_Flight1_Step04",
+      "min": [
+        -31.5,
+        13.450000000000001,
+        -65.16666667302451
+      ],
+      "max": [
+        -29.75,
+        14.0,
+        -64.74999999364218
+      ],
+      "vertices": 24,
+      "solid": true
+    },
+    {
+      "name": "TWR_Flight1_Step05",
+      "model_id": 1980711585536,
+      "geometry_id": 1980425375488,
+      "path": "GRP_Surface/TWR_Flight1/TWR_Flight1_Step05",
+      "min": [
+        -31.5,
+        13.200000000000001,
+        -65.58333333969117
+      ],
+      "max": [
+        -29.75,
+        13.75,
+        -65.16666666030883
+      ],
+      "vertices": 24,
+      "solid": true
+    },
+    {
+      "name": "TWR_Flight1_Step06",
+      "model_id": 1980711597136,
+      "geometry_id": 1980425374144,
+      "path": "GRP_Surface/TWR_Flight1/TWR_Flight1_Step06",
+      "min": [
+        -31.5,
+        12.950000000000001,
+        -66.00000000635782
+      ],
+      "max": [
+        -29.75,
+        13.5,
+        -65.5833333269755
+      ],
+      "vertices": 24,
+      "solid": true
+    },
+    {
+      "name": "TWR_Flight1_Step07",
+      "model_id": 1980711601776,
+      "geometry_id": 1980425375936,
+      "path": "GRP_Surface/TWR_Flight1/TWR_Flight1_Step07",
+      "min": [
+        -31.5,
+        12.700000000000001,
+        -66.41666667302451
+      ],
+      "max": [
+        -29.75,
+        13.25,
+        -65.99999999364218
+      ],
+      "vertices": 24,
+      "solid": true
+    },
+    {
+      "name": "TWR_Flight1_Step08",
+      "model_id": 1980711606416,
+      "geometry_id": 1980425372800,
+      "path": "GRP_Surface/TWR_Flight1/TWR_Flight1_Step08",
+      "min": [
+        -31.5,
+        12.450000000000001,
+        -66.83333333969117
+      ],
+      "max": [
+        -29.75,
+        13.0,
+        -66.41666666030883
+      ],
+      "vertices": 24,
+      "solid": true
+    },
+    {
+      "name": "TWR_Flight1_Step09",
+      "model_id": 1980711592496,
+      "geometry_id": 1980059236656,
+      "path": "GRP_Surface/TWR_Flight1/TWR_Flight1_Step09",
+      "min": [
+        -31.5,
+        12.200000000000001,
+        -67.25000000635782
+      ],
+      "max": [
+        -29.75,
+        12.75,
+        -66.8333333269755
+      ],
+      "vertices": 24,
+      "solid": true
+    },
+    {
+      "name": "TWR_Flight1_Step10",
+      "model_id": 1980711608736,
+      "geometry_id": 1980059237104,
+      "path": "GRP_Surface/TWR_Flight1/TWR_Flight1_Step10",
+      "min": [
+        -31.5,
+        11.950000000000001,
+        -67.66666667302451
+      ],
+      "max": [
+        -29.75,
+        12.5,
+        -67.24999999364218
+      ],
+      "vertices": 24,
+      "solid": true
+    },
+    {
+      "name": "TWR_Flight1_Step11",
+      "model_id": 1980711604096,
+      "geometry_id": 1980059235760,
+      "path": "GRP_Surface/TWR_Flight1/TWR_Flight1_Step11",
+      "min": [
+        -31.5,
+        11.700000000000001,
+        -68.08333333969117
+      ],
+      "max": [
+        -29.75,
+        12.25,
+        -67.66666666030883
+      ],
+      "vertices": 24,
+      "solid": true
+    },
+    {
+      "name": "TWR_Flight1_Step12",
+      "model_id": 1980711594816,
+      "geometry_id": 1980059237552,
+      "path": "GRP_Surface/TWR_Flight1/TWR_Flight1_Step12",
+      "min": [
+        -31.5,
+        11.450000000000001,
+        -68.50000000635782
+      ],
+      "max": [
+        -29.75,
+        12.0,
+        -68.0833333269755
+      ],
+      "vertices": 24,
+      "solid": true
+    },
+    {
+      "name": "TWR_Flight2_Step01",
+      "model_id": 1980711615696,
+      "geometry_id": 1980059238000,
+      "path": "GRP_Surface/TWR_Flight2/TWR_Flight2_Step01",
+      "min": [
+        -29.75,
+        11.200000000000001,
+        -68.50000000635782
+      ],
+      "max": [
+        -28.0,
+        11.75,
+        -68.0833333269755
+      ],
+      "vertices": 24,
+      "solid": true
+    },
+    {
+      "name": "TWR_Flight2_Step02",
+      "model_id": 1980711620336,
+      "geometry_id": 1980059234864,
+      "path": "GRP_Surface/TWR_Flight2/TWR_Flight2_Step02",
+      "min": [
+        -29.75,
+        10.950000000000001,
+        -68.08333333969117
+      ],
+      "max": [
+        -28.0,
+        11.5,
+        -67.66666666030883
+      ],
+      "vertices": 24,
+      "solid": true
+    },
+    {
+      "name": "TWR_Flight2_Step03",
+      "model_id": 1980711622656,
+      "geometry_id": 1980059235312,
+      "path": "GRP_Surface/TWR_Flight2/TWR_Flight2_Step03",
+      "min": [
+        -29.75,
+        10.700000000000001,
+        -67.66666667302451
+      ],
+      "max": [
+        -28.0,
+        11.25,
+        -67.24999999364218
+      ],
+      "vertices": 24,
+      "solid": true
+    },
+    {
+      "name": "TWR_Flight2_Step04",
+      "model_id": 1980711624976,
+      "geometry_id": 1980059236208,
+      "path": "GRP_Surface/TWR_Flight2/TWR_Flight2_Step04",
+      "min": [
+        -29.75,
+        10.450000000000001,
+        -67.25000000635782
+      ],
+      "max": [
+        -28.0,
+        11.0,
+        -66.8333333269755
+      ],
+      "vertices": 24,
+      "solid": true
+    },
+    {
+      "name": "TWR_Flight2_Step05",
+      "model_id": 1980711611056,
+      "geometry_id": 1979943149280,
+      "path": "GRP_Surface/TWR_Flight2/TWR_Flight2_Step05",
+      "min": [
+        -29.75,
+        10.200000000000001,
+        -66.83333333969117
+      ],
+      "max": [
+        -28.0,
+        10.75,
+        -66.41666666030883
+      ],
+      "vertices": 24,
+      "solid": true
+    },
+    {
+      "name": "TWR_Flight2_Step06",
+      "model_id": 1980711627296,
+      "geometry_id": 1979943149728,
+      "path": "GRP_Surface/TWR_Flight2/TWR_Flight2_Step06",
+      "min": [
+        -29.75,
+        9.950000000000001,
+        -66.41666667302451
+      ],
+      "max": [
+        -28.0,
+        10.5,
+        -65.99999999364218
+      ],
+      "vertices": 24,
+      "solid": true
+    },
+    {
+      "name": "TWR_Flight2_Step07",
+      "model_id": 1980711613376,
+      "geometry_id": 1979943151520,
+      "path": "GRP_Surface/TWR_Flight2/TWR_Flight2_Step07",
+      "min": [
+        -29.75,
+        9.700000000000001,
+        -66.00000000635782
+      ],
+      "max": [
+        -28.0,
+        10.25,
+        -65.5833333269755
+      ],
+      "vertices": 24,
+      "solid": true
+    },
+    {
+      "name": "TWR_Flight2_Step08",
+      "model_id": 1980711636576,
+      "geometry_id": 1979943150176,
+      "path": "GRP_Surface/TWR_Flight2/TWR_Flight2_Step08",
+      "min": [
+        -29.75,
+        9.450000000000001,
+        -65.58333333969117
+      ],
+      "max": [
+        -28.0,
+        10.0,
+        -65.16666666030883
+      ],
+      "vertices": 24,
+      "solid": true
+    },
+    {
+      "name": "TWR_Flight2_Step09",
+      "model_id": 1980711641216,
+      "geometry_id": 1979943150624,
+      "path": "GRP_Surface/TWR_Flight2/TWR_Flight2_Step09",
+      "min": [
+        -29.75,
+        9.200000000000001,
+        -65.16666667302451
+      ],
+      "max": [
+        -28.0,
+        9.75,
+        -64.74999999364218
+      ],
+      "vertices": 24,
+      "solid": true
+    },
+    {
+      "name": "TWR_Flight2_Step10",
+      "model_id": 1980711629616,
+      "geometry_id": 1979943151072,
+      "path": "GRP_Surface/TWR_Flight2/TWR_Flight2_Step10",
+      "min": [
+        -29.75,
+        8.950000000000001,
+        -64.75000000635782
+      ],
+      "max": [
+        -28.0,
+        9.5,
+        -64.3333333269755
+      ],
+      "vertices": 24,
+      "solid": true
+    },
+    {
+      "name": "TWR_Flight2_Step11",
+      "model_id": 1980711631936,
+      "geometry_id": 1979943148384,
+      "path": "GRP_Surface/TWR_Flight2/TWR_Flight2_Step11",
+      "min": [
+        -29.75,
+        8.700000000000001,
+        -64.33333333969117
+      ],
+      "max": [
+        -28.0,
+        9.25,
+        -63.91666666030884
+      ],
+      "vertices": 24,
+      "solid": true
+    },
+    {
+      "name": "TWR_Flight2_Step12",
+      "model_id": 1980711638896,
+      "geometry_id": 1979943148832,
+      "path": "GRP_Surface/TWR_Flight2/TWR_Flight2_Step12",
+      "min": [
+        -29.75,
+        8.45,
+        -63.916666673024494
+      ],
+      "max": [
+        -28.0,
+        9.0,
+        -63.49999999364217
+      ],
+      "vertices": 24,
+      "solid": true
+    },
+    {
+      "name": "TWR_Flight3_Step01",
+      "model_id": 1980711634256,
+      "geometry_id": 1979882240912,
+      "path": "GRP_Surface/TWR_Flight3/TWR_Flight3_Step01",
+      "min": [
+        -31.5,
+        8.2,
+        -63.916666673024494
+      ],
+      "max": [
+        -29.75,
+        8.75,
+        -63.49999999364217
+      ],
+      "vertices": 24,
+      "solid": true
+    },
+    {
+      "name": "TWR_Flight3_Step02",
+      "model_id": 1979995116256,
+      "geometry_id": 1979882240464,
+      "path": "GRP_Surface/TWR_Flight3/TWR_Flight3_Step02",
+      "min": [
+        -31.5,
+        7.95,
+        -64.33333333969117
+      ],
+      "max": [
+        -29.75,
+        8.5,
+        -63.91666666030884
+      ],
+      "vertices": 24,
+      "solid": true
+    },
+    {
+      "name": "TWR_Flight3_Step03",
+      "model_id": 1979995111616,
+      "geometry_id": 1979882241360,
+      "path": "GRP_Surface/TWR_Flight3/TWR_Flight3_Step03",
+      "min": [
+        -31.5,
+        7.7,
+        -64.75000000635782
+      ],
+      "max": [
+        -29.75,
+        8.25,
+        -64.3333333269755
+      ],
+      "vertices": 24,
+      "solid": true
+    },
+    {
+      "name": "TWR_Flight3_Step04",
+      "model_id": 1979995118576,
+      "geometry_id": 1979882240016,
+      "path": "GRP_Surface/TWR_Flight3/TWR_Flight3_Step04",
+      "min": [
+        -31.5,
+        7.45,
+        -65.16666667302451
+      ],
+      "max": [
+        -29.75,
+        8.0,
+        -64.74999999364218
+      ],
+      "vertices": 24,
+      "solid": true
+    },
+    {
+      "name": "TWR_Flight3_Step05",
+      "model_id": 1979995120896,
+      "geometry_id": 1979882239568,
+      "path": "GRP_Surface/TWR_Flight3/TWR_Flight3_Step05",
+      "min": [
+        -31.5,
+        7.2,
+        -65.58333333969117
+      ],
+      "max": [
+        -29.75,
+        7.75,
+        -65.16666666030883
+      ],
+      "vertices": 24,
+      "solid": true
+    },
+    {
+      "name": "TWR_Flight3_Step06",
+      "model_id": 1979995123216,
+      "geometry_id": 1979882241808,
+      "path": "GRP_Surface/TWR_Flight3/TWR_Flight3_Step06",
+      "min": [
+        -31.5,
+        6.95,
+        -66.00000000635782
+      ],
+      "max": [
+        -29.75,
+        7.5,
+        -65.5833333269755
+      ],
+      "vertices": 24,
+      "solid": true
+    },
+    {
+      "name": "TWR_Flight3_Step07",
+      "model_id": 1979995109296,
+      "geometry_id": 1979882239120,
+      "path": "GRP_Surface/TWR_Flight3/TWR_Flight3_Step07",
+      "min": [
+        -31.5,
+        6.7,
+        -66.41666667302451
+      ],
+      "max": [
+        -29.75,
+        7.25,
+        -65.99999999364218
+      ],
+      "vertices": 24,
+      "solid": true
+    },
+    {
+      "name": "TWR_Flight3_Step08",
+      "model_id": 1979995132496,
+      "geometry_id": 1979882242256,
+      "path": "GRP_Surface/TWR_Flight3/TWR_Flight3_Step08",
+      "min": [
+        -31.5,
+        6.45,
+        -66.83333333969117
+      ],
+      "max": [
+        -29.75,
+        7.0,
+        -66.41666666030883
+      ],
+      "vertices": 24,
+      "solid": true
+    },
+    {
+      "name": "TWR_Flight3_Step09",
+      "model_id": 1979995130176,
+      "geometry_id": 1978728775296,
+      "path": "GRP_Surface/TWR_Flight3/TWR_Flight3_Step09",
+      "min": [
+        -31.5,
+        6.2,
+        -67.25000000635782
+      ],
+      "max": [
+        -29.75,
+        6.75,
+        -66.8333333269755
+      ],
+      "vertices": 24,
+      "solid": true
+    },
+    {
+      "name": "TWR_Flight3_Step10",
+      "model_id": 1979995134816,
+      "geometry_id": 1978728779328,
+      "path": "GRP_Surface/TWR_Flight3/TWR_Flight3_Step10",
+      "min": [
+        -31.5,
+        5.95,
+        -67.66666667302451
+      ],
+      "max": [
+        -29.75,
+        6.5,
+        -67.24999999364218
+      ],
+      "vertices": 24,
+      "solid": true
+    },
+    {
+      "name": "TWR_Flight3_Step11",
+      "model_id": 1979995137136,
+      "geometry_id": 1978728772608,
+      "path": "GRP_Surface/TWR_Flight3/TWR_Flight3_Step11",
+      "min": [
+        -31.5,
+        5.7,
+        -68.08333333969117
+      ],
+      "max": [
+        -29.75,
+        6.25,
+        -67.66666666030883
+      ],
+      "vertices": 24,
+      "solid": true
+    },
+    {
+      "name": "TWR_Flight3_Step12",
+      "model_id": 1979995125536,
+      "geometry_id": 1978728773504,
+      "path": "GRP_Surface/TWR_Flight3/TWR_Flight3_Step12",
+      "min": [
+        -31.5,
+        5.45,
+        -68.50000000635782
+      ],
+      "max": [
+        -29.75,
+        6.0,
+        -68.0833333269755
+      ],
+      "vertices": 24,
+      "solid": true
+    },
+    {
+      "name": "TWR_Flight4_Step01",
+      "model_id": 1979995148736,
+      "geometry_id": 1978728779776,
+      "path": "GRP_Surface/TWR_Flight4/TWR_Flight4_Step01",
+      "min": [
+        -29.75,
+        5.2,
+        -68.50000000635782
+      ],
+      "max": [
+        -28.0,
+        5.75,
+        -68.0833333269755
+      ],
+      "vertices": 24,
+      "solid": true
+    },
+    {
+      "name": "TWR_Flight4_Step02",
+      "model_id": 1979995146416,
+      "geometry_id": 1978728777088,
+      "path": "GRP_Surface/TWR_Flight4/TWR_Flight4_Step02",
+      "min": [
+        -29.75,
+        4.95,
+        -68.08333333969117
+      ],
+      "max": [
+        -28.0,
+        5.5,
+        -67.66666666030883
+      ],
+      "vertices": 24,
+      "solid": true
+    },
+    {
+      "name": "TWR_Flight4_Step03",
+      "model_id": 1979995153376,
+      "geometry_id": 1978728775744,
+      "path": "GRP_Surface/TWR_Flight4/TWR_Flight4_Step03",
+      "min": [
+        -29.75,
+        4.699999999999999,
+        -67.66666667302451
+      ],
+      "max": [
+        -28.0,
+        5.25,
+        -67.24999999364218
+      ],
+      "vertices": 24,
+      "solid": true
+    },
+    {
+      "name": "TWR_Flight4_Step04",
+      "model_id": 1979995155696,
+      "geometry_id": 1978728780224,
+      "path": "GRP_Surface/TWR_Flight4/TWR_Flight4_Step04",
+      "min": [
+        -29.75,
+        4.449999999999999,
+        -67.25000000635782
+      ],
+      "max": [
+        -28.0,
+        4.999999999999999,
+        -66.8333333269755
+      ],
+      "vertices": 24,
+      "solid": true
+    },
+    {
+      "name": "TWR_Flight4_Step05",
+      "model_id": 1979995141776,
+      "geometry_id": 1978728777536,
+      "path": "GRP_Surface/TWR_Flight4/TWR_Flight4_Step05",
+      "min": [
+        -29.75,
+        4.199999999999999,
+        -66.83333333969117
+      ],
+      "max": [
+        -28.0,
+        4.749999999999999,
+        -66.41666666030883
+      ],
+      "vertices": 24,
+      "solid": true
+    },
+    {
+      "name": "TWR_Flight4_Step06",
+      "model_id": 1979995158016,
+      "geometry_id": 1978728778432,
+      "path": "GRP_Surface/TWR_Flight4/TWR_Flight4_Step06",
+      "min": [
+        -29.75,
+        3.9499999999999997,
+        -66.41666667302451
+      ],
+      "max": [
+        -28.0,
+        4.499999999999999,
+        -65.99999999364218
+      ],
+      "vertices": 24,
+      "solid": true
+    },
+    {
+      "name": "TWR_Flight4_Step07",
+      "model_id": 1979995144096,
+      "geometry_id": 1978728776192,
+      "path": "GRP_Surface/TWR_Flight4/TWR_Flight4_Step07",
+      "min": [
+        -29.75,
+        3.7,
+        -66.00000000635782
+      ],
+      "max": [
+        -28.0,
+        4.25,
+        -65.5833333269755
+      ],
+      "vertices": 24,
+      "solid": true
+    },
+    {
+      "name": "TWR_Flight4_Step08",
+      "model_id": 1979995174256,
+      "geometry_id": 1978728776640,
+      "path": "GRP_Surface/TWR_Flight4/TWR_Flight4_Step08",
+      "min": [
+        -29.75,
+        3.45,
+        -65.58333333969117
+      ],
+      "max": [
+        -28.0,
+        4.0,
+        -65.16666666030883
+      ],
+      "vertices": 24,
+      "solid": true
+    },
+    {
+      "name": "TWR_Flight4_Step09",
+      "model_id": 1979995167296,
+      "geometry_id": 1978728774848,
+      "path": "GRP_Surface/TWR_Flight4/TWR_Flight4_Step09",
+      "min": [
+        -29.75,
+        3.2,
+        -65.16666667302451
+      ],
+      "max": [
+        -28.0,
+        3.75,
+        -64.74999999364218
+      ],
+      "vertices": 24,
+      "solid": true
+    },
+    {
+      "name": "TWR_Flight4_Step10",
+      "model_id": 1979995171936,
+      "geometry_id": 1978728777984,
+      "path": "GRP_Surface/TWR_Flight4/TWR_Flight4_Step10",
+      "min": [
+        -29.75,
+        2.95,
+        -64.75000000635782
+      ],
+      "max": [
+        -28.0,
+        3.5,
+        -64.3333333269755
+      ],
+      "vertices": 24,
+      "solid": true
+    },
+    {
+      "name": "TWR_Flight4_Step11",
+      "model_id": 1979995160336,
+      "geometry_id": 1978728773056,
+      "path": "GRP_Surface/TWR_Flight4/TWR_Flight4_Step11",
+      "min": [
+        -29.75,
+        2.7,
+        -64.33333333969117
+      ],
+      "max": [
+        -28.0,
+        3.25,
+        -63.91666666030884
+      ],
+      "vertices": 24,
+      "solid": true
+    },
+    {
+      "name": "TWR_Flight4_Step12",
+      "model_id": 1979995169616,
+      "geometry_id": 1978728773952,
+      "path": "GRP_Surface/TWR_Flight4/TWR_Flight4_Step12",
+      "min": [
+        -29.75,
+        2.45,
+        -63.916666673024494
+      ],
+      "max": [
+        -28.0,
+        3.0,
+        -63.49999999364217
+      ],
+      "vertices": 24,
+      "solid": true
+    },
+    {
+      "name": "TWR_Flight5_Step01",
+      "model_id": 1979995164976,
+      "geometry_id": 1978728774400,
+      "path": "GRP_Surface/TWR_Flight5/TWR_Flight5_Step01",
+      "min": [
+        -31.5,
+        2.2,
+        -63.916666673024494
+      ],
+      "max": [
+        -29.75,
+        2.75,
+        -63.49999999364217
+      ],
+      "vertices": 24,
+      "solid": true
+    },
+    {
+      "name": "TWR_Flight5_Step02",
+      "model_id": 1979995190496,
+      "geometry_id": 1978728778880,
+      "path": "GRP_Surface/TWR_Flight5/TWR_Flight5_Step02",
+      "min": [
+        -31.5,
+        1.95,
+        -64.33333333969117
+      ],
+      "max": [
+        -29.75,
+        2.5,
+        -63.91666666030884
+      ],
+      "vertices": 24,
+      "solid": true
+    },
+    {
+      "name": "TWR_Flight5_Step03",
+      "model_id": 1979995188176,
+      "geometry_id": 1979960998368,
+      "path": "GRP_Surface/TWR_Flight5/TWR_Flight5_Step03",
+      "min": [
+        -31.5,
+        1.7,
+        -64.75000000635782
+      ],
+      "max": [
+        -29.75,
+        2.25,
+        -64.3333333269755
+      ],
+      "vertices": 24,
+      "solid": true
+    },
+    {
+      "name": "TWR_Flight5_Step04",
+      "model_id": 1979995176576,
+      "geometry_id": 1979961002848,
+      "path": "GRP_Surface/TWR_Flight5/TWR_Flight5_Step04",
+      "min": [
+        -31.5,
+        1.45,
+        -65.16666667302451
+      ],
+      "max": [
+        -29.75,
+        2.0,
+        -64.74999999364218
+      ],
+      "vertices": 24,
+      "solid": true
+    },
+    {
+      "name": "TWR_Flight5_Step05",
+      "model_id": 1979995178896,
+      "geometry_id": 1979960997920,
+      "path": "GRP_Surface/TWR_Flight5/TWR_Flight5_Step05",
+      "min": [
+        -31.5,
+        1.2,
+        -65.58333333969117
+      ],
+      "max": [
+        -29.75,
+        1.75,
+        -65.16666666030883
+      ],
+      "vertices": 24,
+      "solid": true
+    },
+    {
+      "name": "TWR_Flight5_Step06",
+      "model_id": 1979995183536,
+      "geometry_id": 1979961001952,
+      "path": "GRP_Surface/TWR_Flight5/TWR_Flight5_Step06",
+      "min": [
+        -31.5,
+        0.9500000000000002,
+        -66.00000000635782
+      ],
+      "max": [
+        -29.75,
+        1.5,
+        -65.5833333269755
+      ],
+      "vertices": 24,
+      "solid": true
+    },
+    {
+      "name": "TWR_Flight5_Step07",
+      "model_id": 1979995185856,
+      "geometry_id": 1979961001056,
+      "path": "GRP_Surface/TWR_Flight5/TWR_Flight5_Step07",
+      "min": [
+        -31.5,
+        0.7000000000000001,
+        -66.41666667302451
+      ],
+      "max": [
+        -29.75,
+        1.25,
+        -65.99999999364218
+      ],
+      "vertices": 24,
+      "solid": true
+    },
+    {
+      "name": "TWR_Flight5_Step08",
+      "model_id": 1979995195136,
+      "geometry_id": 1979961004192,
+      "path": "GRP_Surface/TWR_Flight5/TWR_Flight5_Step08",
+      "min": [
+        -31.5,
+        0.45,
+        -66.83333333969117
+      ],
+      "max": [
+        -29.75,
+        1.0,
+        -66.41666666030883
+      ],
+      "vertices": 24,
+      "solid": true
+    },
+    {
+      "name": "TWR_Flight5_Step09",
+      "model_id": 1979995181216,
+      "geometry_id": 1979961004640,
+      "path": "GRP_Surface/TWR_Flight5/TWR_Flight5_Step09",
+      "min": [
+        -31.5,
+        0.2,
+        -67.25000000635782
+      ],
+      "max": [
+        -29.75,
+        0.75,
+        -66.8333333269755
+      ],
+      "vertices": 24,
+      "solid": true
+    },
+    {
+      "name": "TWR_Flight5_Step10",
+      "model_id": 1979995197456,
+      "geometry_id": 1979961001504,
+      "path": "GRP_Surface/TWR_Flight5/TWR_Flight5_Step10",
+      "min": [
+        -31.5,
+        -0.05,
+        -67.66666667302451
+      ],
+      "max": [
+        -29.75,
+        0.5,
+        -67.24999999364218
+      ],
+      "vertices": 24,
+      "solid": true
+    },
+    {
+      "name": "TWR_Flight5_Step11",
+      "model_id": 1979995204416,
+      "geometry_id": 1979961003296,
+      "path": "GRP_Surface/TWR_Flight5/TWR_Flight5_Step11",
+      "min": [
+        -31.5,
+        -0.3,
+        -68.08333333969117
+      ],
+      "max": [
+        -29.75,
+        0.25,
+        -67.66666666030883
+      ],
+      "vertices": 24,
+      "solid": true
+    },
+    {
+      "name": "TWR_Flight5_Step12",
+      "model_id": 1979995213696,
+      "geometry_id": 1979960997024,
+      "path": "GRP_Surface/TWR_Flight5/TWR_Flight5_Step12",
+      "min": [
+        -31.5,
+        -0.55,
+        -68.50000000635782
+      ],
+      "max": [
+        -29.75,
+        -3.552713678800501e-17,
+        -68.0833333269755
+      ],
+      "vertices": 24,
+      "solid": true
+    },
+    {
+      "name": "TWR_Flight6_Step01",
+      "model_id": 1979995211376,
+      "geometry_id": 1979961000160,
+      "path": "GRP_Surface/TWR_Flight6/TWR_Flight6_Step01",
+      "min": [
+        -29.75,
+        -0.8,
+        -68.50000000635782
+      ],
+      "max": [
+        -28.0,
+        -0.25,
+        -68.0833333269755
+      ],
+      "vertices": 24,
+      "solid": true
+    },
+    {
+      "name": "TWR_Flight6_Step02",
+      "model_id": 1979995202096,
+      "geometry_id": 1979960997472,
+      "path": "GRP_Surface/TWR_Flight6/TWR_Flight6_Step02",
+      "min": [
+        -29.75,
+        -1.05,
+        -68.08333333969117
+      ],
+      "max": [
+        -28.0,
+        -0.5,
+        -67.66666666030883
+      ],
+      "vertices": 24,
+      "solid": true
+    },
+    {
+      "name": "TWR_Flight6_Step03",
+      "model_id": 1979995220656,
+      "geometry_id": 1979961002400,
+      "path": "GRP_Surface/TWR_Flight6/TWR_Flight6_Step03",
+      "min": [
+        -29.75,
+        -1.3,
+        -67.66666667302451
+      ],
+      "max": [
+        -28.0,
+        -0.7499999999999999,
+        -67.24999999364218
+      ],
+      "vertices": 24,
+      "solid": true
+    },
+    {
+      "name": "TWR_Flight6_Step04",
+      "model_id": 1979995216016,
+      "geometry_id": 1979961003744,
+      "path": "GRP_Surface/TWR_Flight6/TWR_Flight6_Step04",
+      "min": [
+        -29.75,
+        -1.55,
+        -67.25000000635782
+      ],
+      "max": [
+        -28.0,
+        -0.9999999999999999,
+        -66.8333333269755
+      ],
+      "vertices": 24,
+      "solid": true
+    },
+    {
+      "name": "TWR_Flight6_Step05",
+      "model_id": 1979995227616,
+      "geometry_id": 1979960998816,
+      "path": "GRP_Surface/TWR_Flight6/TWR_Flight6_Step05",
+      "min": [
+        -29.75,
+        -1.8,
+        -66.83333333969117
+      ],
+      "max": [
+        -28.0,
+        -1.25,
+        -66.41666666030883
+      ],
+      "vertices": 24,
+      "solid": true
+    },
+    {
+      "name": "TWR_Flight6_Step06",
+      "model_id": 1979995229936,
+      "geometry_id": 1979960999264,
+      "path": "GRP_Surface/TWR_Flight6/TWR_Flight6_Step06",
+      "min": [
+        -29.75,
+        -2.05,
+        -66.41666667302451
+      ],
+      "max": [
+        -28.0,
+        -1.5,
+        -65.99999999364218
+      ],
+      "vertices": 24,
+      "solid": true
+    },
+    {
+      "name": "TWR_Flight6_Step07",
+      "model_id": 1979995232256,
+      "geometry_id": 1979961000608,
+      "path": "GRP_Surface/TWR_Flight6/TWR_Flight6_Step07",
+      "min": [
+        -29.75,
+        -2.3000000000000003,
+        -66.00000000635782
+      ],
+      "max": [
+        -28.0,
+        -1.75,
+        -65.5833333269755
+      ],
+      "vertices": 24,
+      "solid": true
+    },
+    {
+      "name": "TWR_Flight6_Step08",
+      "model_id": 1979995222976,
+      "geometry_id": 1979960999712,
+      "path": "GRP_Surface/TWR_Flight6/TWR_Flight6_Step08",
+      "min": [
+        -29.75,
+        -2.5500000000000003,
+        -65.58333333969117
+      ],
+      "max": [
+        -28.0,
+        -2.0,
+        -65.16666666030883
+      ],
+      "vertices": 24,
+      "solid": true
+    },
+    {
+      "name": "TWR_Flight6_Step09",
+      "model_id": 1979995218336,
+      "geometry_id": 1979732406320,
+      "path": "GRP_Surface/TWR_Flight6/TWR_Flight6_Step09",
+      "min": [
+        -29.75,
+        -2.8000000000000003,
+        -65.16666667302451
+      ],
+      "max": [
+        -28.0,
+        -2.25,
+        -64.74999999364218
+      ],
+      "vertices": 24,
+      "solid": true
+    },
+    {
+      "name": "TWR_Flight6_Step10",
+      "model_id": 1979995225296,
+      "geometry_id": 1979732402736,
+      "path": "GRP_Surface/TWR_Flight6/TWR_Flight6_Step10",
+      "min": [
+        -29.75,
+        -3.0500000000000003,
+        -64.75000000635782
+      ],
+      "max": [
+        -28.0,
+        -2.5,
+        -64.3333333269755
+      ],
+      "vertices": 24,
+      "solid": true
+    },
+    {
+      "name": "TWR_Flight6_Step11",
+      "model_id": 1979995234576,
+      "geometry_id": 1979732409456,
+      "path": "GRP_Surface/TWR_Flight6/TWR_Flight6_Step11",
+      "min": [
+        -29.75,
+        -3.3000000000000003,
+        -64.33333333969117
+      ],
+      "max": [
+        -28.0,
+        -2.75,
+        -63.91666666030884
+      ],
+      "vertices": 24,
+      "solid": true
+    },
+    {
+      "name": "TWR_Flight6_Step12",
+      "model_id": 1979361194288,
+      "geometry_id": 1979732404528,
+      "path": "GRP_Surface/TWR_Flight6/TWR_Flight6_Step12",
+      "min": [
+        -29.75,
+        -3.5500000000000003,
+        -63.916666673024494
+      ],
+      "max": [
+        -28.0,
+        -3.0,
+        -63.49999999364217
+      ],
+      "vertices": 24,
+      "solid": true
+    },
+    {
+      "name": "G_DoorArch",
+      "model_id": 1979361198928,
+      "geometry_id": 1979732404080,
+      "path": "GRP_Surface/G_DoorArch",
+      "min": [
+        -32.2,
+        15.0,
+        -62.050000000000004
+      ],
+      "max": [
+        -27.3,
+        23.1,
+        -60.95
+      ],
+      "vertices": 96,
+      "solid": true
+    },
+    {
+      "name": "ROOF_SkylightRail_S",
+      "model_id": 1979361215168,
+      "geometry_id": 1979732408112,
+      "path": "GRP_Surface/ROOF_SkylightRail_S",
+      "min": [
+        -42.410000000000004,
+        3.0,
+        -46.34
+      ],
+      "max": [
+        -35.59,
+        4.04,
+        -46.06
+      ],
+      "vertices": 140,
+      "solid": true
+    },
+    {
+      "name": "ROOF_SkylightRail_N",
+      "model_id": 1979361201248,
+      "geometry_id": 1979732403632,
+      "path": "GRP_Surface/ROOF_SkylightRail_N",
+      "min": [
+        -42.410000000000004,
+        3.0,
+        -53.94
+      ],
+      "max": [
+        -35.59,
+        4.04,
+        -53.660000000000004
+      ],
+      "vertices": 140,
+      "solid": true
+    },
+    {
+      "name": "ROOF_SkylightRail_W",
+      "model_id": 1979361229088,
+      "geometry_id": 1979732402288,
+      "path": "GRP_Surface/ROOF_SkylightRail_W",
+      "min": [
+        -35.84,
+        3.0,
+        -53.895263671875
+      ],
+      "max": [
+        -35.56,
+        4.04,
+        -46.104736328125
+      ],
+      "vertices": 164,
+      "solid": true
+    },
+    {
+      "name": "ROOF_SkylightRail_E",
+      "model_id": 1979361217488,
+      "geometry_id": 1979732405424,
+      "path": "GRP_Surface/ROOF_SkylightRail_E",
+      "min": [
+        -42.44,
+        3.0,
+        -53.895263671875
+      ],
+      "max": [
+        -42.160000000000004,
+        4.04,
+        -46.104736328125
+      ],
+      "vertices": 164,
+      "solid": true
+    },
+    {
+      "name": "PLT_South_W",
+      "model_id": 1979361219808,
+      "geometry_id": 1979732403184,
+      "path": "GRP_Underground/PLT_South_W",
+      "min": [
+        -72.0,
+        -13.5,
+        -35.0
+      ],
+      "max": [
+        -29.0,
+        2.805,
+        -31.0
+      ],
+      "vertices": 24,
+      "solid": true
+    },
+    {
+      "name": "PLT_South_E",
+      "model_id": 1979361256928,
+      "geometry_id": 1979732404976,
+      "path": "GRP_Underground/PLT_South_E",
+      "min": [
+        -78.0,
+        -13.5,
+        -35.0
+      ],
+      "max": [
+        -76.0,
+        2.805,
+        -31.0
+      ],
+      "vertices": 24,
+      "solid": true
+    },
+    {
+      "name": "PLT_South_WinLo",
+      "model_id": 1979361245328,
+      "geometry_id": 1979732407216,
+      "path": "GRP_Underground/PLT_South_WinLo",
+      "min": [
+        -76.0,
+        -13.5,
+        -35.0
+      ],
+      "max": [
+        -72.0,
+        -10.5,
+        -31.0
+      ],
+      "vertices": 24,
+      "solid": true
+    },
+    {
+      "name": "PLT_South_WinHi",
+      "model_id": 1979361273168,
+      "geometry_id": 1979732407664,
+      "path": "GRP_Underground/PLT_South_WinHi",
+      "min": [
+        -76.0,
+        -6.45,
+        -35.0
+      ],
+      "max": [
+        -72.0,
+        2.805000000000001,
+        -31.0
+      ],
+      "vertices": 24,
+      "solid": true
+    },
+    {
+      "name": "TUN_Floor",
+      "model_id": 1979361268528,
+      "geometry_id": 1979372382896,
+      "path": "GRP_Underground/TUN_Floor",
+      "min": [
+        -32.0,
+        -4.5,
+        -62.0
+      ],
+      "max": [
+        -29.0,
+        -3.0,
+        -35.0
+      ],
+      "vertices": 24,
+      "solid": true
+    },
+    {
+      "name": "TUN_WallW",
+      "model_id": 1979361263888,
+      "geometry_id": 1979372382000,
+      "path": "GRP_Underground/TUN_WallW",
+      "min": [
+        -29.0,
+        -4.5,
+        -62.0
+      ],
+      "max": [
+        -28.5,
+        2.805,
+        -35.0
+      ],
+      "vertices": 24,
+      "solid": true
+    },
+    {
+      "name": "TUN_Cap",
+      "model_id": 1979361289408,
+      "geometry_id": 1979372376624,
+      "path": "GRP_Underground/TUN_Cap",
+      "min": [
+        -33.0,
+        1.5,
+        -62.0
+      ],
+      "max": [
+        -29.0,
+        2.805,
+        -35.0
+      ],
+      "vertices": 24,
+      "solid": true
+    },
+    {
+      "name": "TUN_Cap2",
+      "model_id": 1979361280128,
+      "geometry_id": 1979372379312,
+      "path": "GRP_Underground/TUN_Cap2",
+      "min": [
+        -33.0,
+        1.5,
+        -71.0
+      ],
+      "max": [
+        -32.0,
+        2.805,
+        -62.0
+      ],
+      "vertices": 24,
+      "solid": true
+    },
+    {
+      "name": "HALL_Floor",
+      "model_id": 1979361277808,
+      "geometry_id": 1979372378864,
+      "path": "GRP_Underground/HALL_Floor",
+      "min": [
+        -78.0,
+        -15.0,
+        -71.0
+      ],
+      "max": [
+        -33.0,
+        -12.0,
+        -35.0
+      ],
+      "vertices": 24,
+      "solid": true
+    },
+    {
+      "name": "HALL_WallS_W",
+      "model_id": 1979361282448,
+      "geometry_id": 1979372383344,
+      "path": "GRP_Underground/HALL_WallS_W",
+      "min": [
+        -72.0,
+        -12.0,
+        -36.0
+      ],
+      "max": [
+        -33.0,
+        1.5,
+        -35.0
+      ],
+      "vertices": 24,
+      "solid": true
+    },
+    {
+      "name": "HALL_WallS_E",
+      "model_id": 1979361291728,
+      "geometry_id": 1979372377072,
+      "path": "GRP_Underground/HALL_WallS_E",
+      "min": [
+        -78.0,
+        -12.0,
+        -36.0
+      ],
+      "max": [
+        -76.0,
+        1.5,
+        -35.0
+      ],
+      "vertices": 24,
+      "solid": true
+    },
+    {
+      "name": "HALL_WallS_WinLo",
+      "model_id": 1979361296368,
+      "geometry_id": 1979372379760,
+      "path": "GRP_Underground/HALL_WallS_WinLo",
+      "min": [
+        -76.0,
+        -12.0,
+        -36.0
+      ],
+      "max": [
+        -72.0,
+        -10.5,
+        -35.0
+      ],
+      "vertices": 24,
+      "solid": true
+    },
+    {
+      "name": "HALL_WallS_WinHi",
+      "model_id": 1979361284768,
+      "geometry_id": 1979372380208,
+      "path": "GRP_Underground/HALL_WallS_WinHi",
+      "min": [
+        -76.0,
+        -6.45,
+        -36.0
+      ],
+      "max": [
+        -72.0,
+        1.5000000000000002,
+        -35.0
+      ],
+      "vertices": 24,
+      "solid": true
+    },
+    {
+      "name": "HALL_WallN",
+      "model_id": 1979361307968,
+      "geometry_id": 1979372382448,
+      "path": "GRP_Underground/HALL_WallN",
+      "min": [
+        -78.0,
+        -15.0,
+        -72.0
+      ],
+      "max": [
+        -29.0,
+        2.805,
+        -71.0
+      ],
+      "vertices": 24,
+      "solid": true
+    },
+    {
+      "name": "HALL_WallW",
+      "model_id": 1979361303328,
+      "geometry_id": 1979372380656,
+      "path": "GRP_Underground/HALL_WallW",
+      "min": [
+        -33.0,
+        -15.0,
+        -71.0
+      ],
+      "max": [
+        -32.0,
+        1.5,
+        -38.0
+      ],
+      "vertices": 24,
+      "solid": true
+    },
+    {
+      "name": "HALL_WallW_Low",
+      "model_id": 1979361301008,
+      "geometry_id": 1979372383792,
+      "path": "GRP_Underground/HALL_WallW_Low",
+      "min": [
+        -33.0,
+        -15.0,
+        -38.0
+      ],
+      "max": [
+        -32.0,
+        -3.75,
+        -35.0
+      ],
+      "vertices": 24,
+      "solid": true
+    },
+    {
+      "name": "HALL_WallE_S",
+      "model_id": 1979361298688,
+      "geometry_id": 1979372376176,
+      "path": "GRP_Underground/HALL_WallE_S",
+      "min": [
+        -80.0,
+        -15.0,
+        -46.0
+      ],
+      "max": [
+        -78.0,
+        1.5,
+        -35.0
+      ],
+      "vertices": 24,
+      "solid": true
+    },
+    {
+      "name": "HALL_WallE_N",
+      "model_id": 1979361310288,
+      "geometry_id": 1979372381104,
+      "path": "GRP_Underground/HALL_WallE_N",
+      "min": [
+        -80.0,
+        -15.0,
+        -71.0
+      ],
+      "max": [
+        -78.0,
+        1.5,
+        -50.0
+      ],
+      "vertices": 24,
+      "solid": true
+    },
+    {
+      "name": "HALL_WallE_Below",
+      "model_id": 1979361312608,
+      "geometry_id": 1979372377520,
+      "path": "GRP_Underground/HALL_WallE_Below",
+      "min": [
+        -80.0,
+        -15.0,
+        -50.0
+      ],
+      "max": [
+        -78.0,
+        -12.0,
+        -46.0
+      ],
+      "vertices": 24,
+      "solid": true
+    },
+    {
+      "name": "HALL_WallE_Above",
+      "model_id": 1979361314928,
+      "geometry_id": 1979372377968,
+      "path": "GRP_Underground/HALL_WallE_Above",
+      "min": [
+        -80.0,
+        -6.0,
+        -50.0
+      ],
+      "max": [
+        -78.0,
+        1.5,
+        -46.0
+      ],
+      "vertices": 24,
+      "solid": true
+    },
+    {
+      "name": "ROOF_S",
+      "model_id": 1979361319568,
+      "geometry_id": 1979372378416,
+      "path": "GRP_Underground/ROOF_S",
+      "min": [
+        -78.0,
+        1.5,
+        -46.5
+      ],
+      "max": [
+        -33.0,
+        2.805,
+        -36.0
+      ],
+      "vertices": 24,
+      "solid": true
+    },
+    {
+      "name": "ROOF_N",
+      "model_id": 1979361321888,
+      "geometry_id": 1979372381552,
+      "path": "GRP_Underground/ROOF_N",
+      "min": [
+        -78.0,
+        1.5,
+        -71.0
+      ],
+      "max": [
+        -33.0,
+        2.805,
+        -53.5
+      ],
+      "vertices": 24,
+      "solid": true
+    },
+    {
+      "name": "ROOF_W",
+      "model_id": 1979361317248,
+      "geometry_id": 1979710326608,
+      "path": "GRP_Underground/ROOF_W",
+      "min": [
+        -36.0,
+        1.5,
+        -53.5
+      ],
+      "max": [
+        -33.0,
+        2.805,
+        -46.5
+      ],
+      "vertices": 24,
+      "solid": true
+    },
+    {
+      "name": "ROOF_E",
+      "model_id": 1978657354368,
+      "geometry_id": 1979710335120,
+      "path": "GRP_Underground/ROOF_E",
+      "min": [
+        -78.0,
+        1.5,
+        -53.5
+      ],
+      "max": [
+        -42.0,
+        2.805,
+        -46.5
+      ],
+      "vertices": 24,
+      "solid": true
+    },
+    {
+      "name": "D1_Walkway",
+      "model_id": 1978657356688,
+      "geometry_id": 1979710339600,
+      "path": "GRP_Underground/D1_Walkway",
+      "min": [
+        -45.0,
+        -12.0,
+        -38.0
+      ],
+      "max": [
+        -32.0,
+        -3.0,
+        -36.0
+      ],
+      "vertices": 24,
+      "solid": true
+    },
+    {
+      "name": "D1_Balcony",
+      "model_id": 1978657361328,
+      "geometry_id": 1979710335568,
+      "path": "GRP_Underground/D1_Balcony",
+      "min": [
+        -66.0,
+        -12.0,
+        -41.5
+      ],
+      "max": [
+        -45.0,
+        -3.0,
+        -36.0
+      ],
+      "vertices": 24,
+      "solid": true
+    },
+    {
+      "name": "D1_Rail_W",
+      "model_id": 1978657352048,
+      "geometry_id": 1979710327056,
+      "path": "GRP_Underground/D1_Rail_W",
+      "min": [
+        -58.0,
+        -3.0,
+        -41.6
+      ],
+      "max": [
+        -45.0,
+        -2.0999999999999996,
+        -41.300000000000004
+      ],
+      "vertices": 24,
+      "solid": true
+    },
+    {
+      "name": "D1_Rail_E",
+      "model_id": 1978657375248,
+      "geometry_id": 1979710327504,
+      "path": "GRP_Underground/D1_Rail_E",
+      "min": [
+        -66.0,
+        -3.0,
+        -41.6
+      ],
+      "max": [
+        -61.0,
+        -2.0999999999999996,
+        -41.300000000000004
+      ],
+      "vertices": 24,
+      "solid": true
+    },
+    {
+      "name": "D3_Workbench",
+      "model_id": 1978657382208,
+      "geometry_id": 1979710325264,
+      "path": "GRP_Underground/D3_Workbench",
+      "min": [
+        -42.5,
+        -12.0,
+        -64.0
+      ],
+      "max": [
+        -33.0,
+        -7.5,
+        -44.0
+      ],
+      "vertices": 24,
+      "solid": true
+    },
+    {
+      "name": "D3_Dock",
+      "model_id": 1978657368288,
+      "geometry_id": 1979710331536,
+      "path": "GRP_Underground/D3_Dock",
+      "min": [
+        -45.0,
+        -12.0,
+        -54.5
+      ],
+      "max": [
+        -42.5,
+        -11.4,
+        -49.5
+      ],
+      "vertices": 24,
+      "solid": true
+    },
+    {
+      "name": "D5_Ledge",
+      "model_id": 1978657384528,
+      "geometry_id": 1979710336912,
+      "path": "GRP_Underground/D5_Ledge",
+      "min": [
+        -70.0,
+        -12.0,
+        -71.0
+      ],
+      "max": [
+        -44.0,
+        -6.0,
+        -64.0
+      ],
+      "vertices": 24,
+      "solid": true
+    },
+    {
+      "name": "D5_Bypass1",
+      "model_id": 1978657370608,
+      "geometry_id": 1979710334672,
+      "path": "GRP_Underground/D5_Bypass1",
+      "min": [
+        -77.0,
+        -12.0,
+        -71.0
+      ],
+      "max": [
+        -70.0,
+        -6.75,
+        -66.0
+      ],
+      "vertices": 24,
+      "solid": true
+    },
+    {
+      "name": "D5_Bypass2",
+      "model_id": 1978657386848,
+      "geometry_id": 1979710336016,
+      "path": "GRP_Underground/D5_Bypass2",
+      "min": [
+        -77.0,
+        -12.0,
+        -66.0
+      ],
+      "max": [
+        -74.0,
+        -9.0,
+        -60.0
+      ],
+      "vertices": 24,
+      "solid": true
+    },
+    {
+      "name": "CH_D5_Fixed_Rim1",
+      "model_id": 1973580381152,
+      "geometry_id": 1979710337360,
+      "path": "GRP_Underground/CH_D5_Fixed_Rim1",
+      "min": [
+        -55.0,
+        -6.0,
+        -69.0
+      ],
+      "max": [
+        -54.7,
+        -5.45,
+        -64.0
+      ],
+      "vertices": 24,
+      "solid": true
+    },
+    {
+      "name": "CH_D5_Fixed_Rim2",
+      "model_id": 1973580399712,
+      "geometry_id": 1979710333776,
+      "path": "GRP_Underground/CH_D5_Fixed_Rim2",
+      "min": [
+        -57.300000000000004,
+        -6.0,
+        -69.0
+      ],
+      "max": [
+        -57.0,
+        -5.45,
+        -64.0
+      ],
+      "vertices": 24,
+      "solid": true
+    },
+    {
+      "name": "CH_D5_ToD2_Rim1",
+      "model_id": 1973580385792,
+      "geometry_id": 1979710323920,
+      "path": "GRP_Underground/CH_D5_ToD2_Rim1",
+      "min": [
+        -55.0,
+        -12.000000000000002,
+        -63.7
+      ],
+      "max": [
+        -54.7,
+        -11.450000000000003,
+        -59.0
+      ],
+      "vertices": 24,
+      "solid": true
+    },
+    {
+      "name": "CH_D5_ToD2_Rim2",
+      "model_id": 1973580436832,
+      "geometry_id": 1979710333328,
+      "path": "GRP_Underground/CH_D5_ToD2_Rim2",
+      "min": [
+        -57.300000000000004,
+        -12.000000000000002,
+        -63.7
+      ],
+      "max": [
+        -57.0,
+        -11.450000000000003,
+        -59.0
+      ],
+      "vertices": 24,
+      "solid": true
+    },
+    {
+      "name": "CH_D2_Dock_Rim1",
+      "model_id": 1973580425232,
+      "geometry_id": 1979710337808,
+      "path": "GRP_Underground/CH_D2_Dock_Rim1",
+      "min": [
+        -47.0,
+        -12.000000000000002,
+        -51.0
+      ],
+      "max": [
+        -45.0,
+        -11.450000000000003,
+        -50.7
+      ],
+      "vertices": 24,
+      "solid": true
+    },
+    {
+      "name": "CH_D2_Dock_Rim2",
+      "model_id": 1974330981936,
+      "geometry_id": 1979710327952,
+      "path": "GRP_Underground/CH_D2_Dock_Rim2",
+      "min": [
+        -47.0,
+        -12.000000000000002,
+        -53.300000000000004
+      ],
+      "max": [
+        -45.0,
+        -11.450000000000003,
+        -53.0
+      ],
+      "vertices": 24,
+      "solid": true
+    },
+    {
+      "name": "CH_D2_Wheel_Rim1",
+      "model_id": 1974330984256,
+      "geometry_id": 1979710330192,
+      "path": "GRP_Underground/CH_D2_Wheel_Rim1",
+      "min": [
+        -72.0,
+        -12.000000000000002,
+        -51.5
+      ],
+      "max": [
+        -65.0,
+        -11.450000000000003,
+        -51.2
+      ],
+      "vertices": 24,
+      "solid": true
+    },
+    {
+      "name": "CH_D2_Wheel_Rim2",
+      "model_id": 1974330970336,
+      "geometry_id": 1979710329744,
+      "path": "GRP_Underground/CH_D2_Wheel_Rim2",
+      "min": [
+        -72.0,
+        -12.000000000000002,
+        -54.300000000000004
+      ],
+      "max": [
+        -65.0,
+        -11.450000000000003,
+        -54.0
+      ],
+      "vertices": 24,
+      "solid": true
+    },
+    {
+      "name": "CH_D2_Exit_Rim1",
+      "model_id": 1974330986576,
+      "geometry_id": 1979710328848,
+      "path": "GRP_Underground/CH_D2_Exit_Rim1",
+      "min": [
+        -78.0,
+        -12.000000000000002,
+        -47.0
+      ],
+      "max": [
+        -65.0,
+        -11.450000000000003,
+        -46.7
+      ],
+      "vertices": 24,
+      "solid": true
+    },
+    {
+      "name": "CH_D2_Exit_Rim2",
+      "model_id": 1974229383360,
+      "geometry_id": 1979710328400,
+      "path": "GRP_Underground/CH_D2_Exit_Rim2",
+      "min": [
+        -78.0,
+        -12.000000000000002,
+        -50.300000000000004
+      ],
+      "max": [
+        -65.0,
+        -11.450000000000003,
+        -50.0
+      ],
+      "vertices": 24,
+      "solid": true
+    },
+    {
+      "name": "CH_Bypass_1_Rim1",
+      "model_id": 1974229369440,
+      "geometry_id": 1979710325712,
+      "path": "GRP_Underground/CH_Bypass_1_Rim1",
+      "min": [
+        -77.0,
+        -6.75,
+        -65.99999999999999
+      ],
+      "max": [
+        -70.0,
+        -6.2,
+        -65.69999999999999
+      ],
+      "vertices": 24,
+      "solid": true
+    },
+    {
+      "name": "CH_Bypass_1_Rim2",
+      "model_id": 1974229399600,
+      "geometry_id": 1979710334224,
+      "path": "GRP_Underground/CH_Bypass_1_Rim2",
+      "min": [
+        -77.0,
+        -6.75,
+        -69.30000000000001
+      ],
+      "max": [
+        -70.0,
+        -6.2,
+        -69.00000000000001
+      ],
+      "vertices": 24,
+      "solid": true
+    },
+    {
+      "name": "CH_Bypass_2_Rim1",
+      "model_id": 1974229385680,
+      "geometry_id": 1979710338256,
+      "path": "GRP_Underground/CH_Bypass_2_Rim1",
+      "min": [
+        -73.99999999999999,
+        -9.000000000000002,
+        -66.0
+      ],
+      "max": [
+        -73.69999999999999,
+        -8.450000000000001,
+        -60.0
+      ],
+      "vertices": 24,
+      "solid": true
+    },
+    {
+      "name": "CH_Bypass_2_Rim2",
+      "model_id": 1974330289488,
+      "geometry_id": 1979710339152,
+      "path": "GRP_Underground/CH_Bypass_2_Rim2",
+      "min": [
+        -77.30000000000001,
+        -9.000000000000002,
+        -66.0
+      ],
+      "max": [
+        -77.00000000000001,
+        -8.450000000000001,
+        -60.0
+      ],
+      "vertices": 24,
+      "solid": true
+    },
+    {
+      "name": "CH_Exit_Tunnel_Rim1",
+      "model_id": 1974330308048,
+      "geometry_id": 1979710336464,
+      "path": "GRP_Underground/CH_Exit_Tunnel_Rim1",
+      "min": [
+        -77.99999999999999,
+        -12.000000000000002,
+        -50.0
+      ],
+      "max": [
+        -77.69999999999999,
+        -11.450000000000003,
+        -47.0
+      ],
+      "vertices": 24,
+      "solid": true
+    },
+    {
+      "name": "CH_Exit_Tunnel_Rim2",
+      "model_id": 1974330312688,
+      "geometry_id": 1979710329296,
+      "path": "GRP_Underground/CH_Exit_Tunnel_Rim2",
+      "min": [
+        -80.30000000000001,
+        -12.000000000000002,
+        -50.0
+      ],
+      "max": [
+        -80.00000000000001,
+        -11.450000000000003,
+        -47.0
+      ],
+      "vertices": 24,
+      "solid": true
+    },
+    {
+      "name": "D1_Stairs_Step01",
+      "model_id": 1974330135184,
+      "geometry_id": 1979710324368,
+      "path": "GRP_Underground/D1_Stairs/D1_Stairs_Step01",
+      "min": [
+        -61.0,
+        -12.3,
+        -41.75555555449592
+      ],
+      "max": [
+        -58.0,
+        -3.2,
+        -41.50000000105965
+      ],
+      "vertices": 24,
+      "solid": true
+    },
+    {
+      "name": "D1_Stairs_Step02",
+      "model_id": 1974330163024,
+      "geometry_id": 1979710324816,
+      "path": "GRP_Underground/D1_Stairs/D1_Stairs_Step02",
+      "min": [
+        -61.0,
+        -12.3,
+        -42.01111111005147
+      ],
+      "max": [
+        -58.0,
+        -3.4,
+        -41.75555555661519
+      ],
+      "vertices": 24,
+      "solid": true
+    },
+    {
+      "name": "D1_Stairs_Step03",
+      "model_id": 1974331038208,
+      "geometry_id": 1979710326160,
+      "path": "GRP_Underground/D1_Stairs/D1_Stairs_Step03",
+      "min": [
+        -61.0,
+        -12.3,
+        -42.266666665607026
+      ],
+      "max": [
+        -58.0,
+        -3.6,
+        -42.011111112170745
+      ],
+      "vertices": 24,
+      "solid": true
+    },
+    {
+      "name": "D1_Stairs_Step04",
+      "model_id": 1974331035888,
+      "geometry_id": 1979710330640,
+      "path": "GRP_Underground/D1_Stairs/D1_Stairs_Step04",
+      "min": [
+        -61.0,
+        -12.3,
+        -42.522222221162586
+      ],
+      "max": [
+        -58.0,
+        -3.800000000000001,
+        -42.266666667726305
+      ],
+      "vertices": 24,
+      "solid": true
+    },
+    {
+      "name": "D1_Stairs_Step05",
+      "model_id": 1974330228576,
+      "geometry_id": 1979710331088,
+      "path": "GRP_Underground/D1_Stairs/D1_Stairs_Step05",
+      "min": [
+        -61.0,
+        -12.3,
+        -42.777777776718146
+      ],
+      "max": [
+        -58.0,
+        -4.0,
+        -42.52222222328187
+      ],
+      "vertices": 24,
+      "solid": true
+    },
+    {
+      "name": "D1_Stairs_Step06",
+      "model_id": 1974330223936,
+      "geometry_id": 1979710331984,
+      "path": "GRP_Underground/D1_Stairs/D1_Stairs_Step06",
+      "min": [
+        -61.0,
+        -12.3,
+        -43.033333332273685
+      ],
+      "max": [
+        -58.0,
+        -4.2,
+        -42.77777777883741
+      ],
+      "vertices": 24,
+      "solid": true
+    },
+    {
+      "name": "D1_Stairs_Step07",
+      "model_id": 1975340706000,
+      "geometry_id": 1979710332432,
+      "path": "GRP_Underground/D1_Stairs/D1_Stairs_Step07",
+      "min": [
+        -61.0,
+        -12.3,
+        -43.28888888782925
+      ],
+      "max": [
+        -58.0,
+        -4.400000000000001,
+        -43.03333333439297
+      ],
+      "vertices": 24,
+      "solid": true
+    },
+    {
+      "name": "D1_Stairs_Step08",
+      "model_id": 1979995236896,
+      "geometry_id": 1979710332880,
+      "path": "GRP_Underground/D1_Stairs/D1_Stairs_Step08",
+      "min": [
+        -61.0,
+        -12.3,
+        -43.54444444338481
+      ],
+      "max": [
+        -58.0,
+        -4.599999999999999,
+        -43.28888888994853
+      ],
+      "vertices": 24,
+      "solid": true
+    },
+    {
+      "name": "D1_Stairs_Step09",
+      "model_id": 1979361287088,
+      "geometry_id": 1979710338704,
+      "path": "GRP_Underground/D1_Stairs/D1_Stairs_Step09",
+      "min": [
+        -61.0,
+        -12.3,
+        -43.79999999894036
+      ],
+      "max": [
+        -58.0,
+        -4.800000000000002,
+        -43.54444444550408
+      ],
+      "vertices": 24,
+      "solid": true
+    },
+    {
+      "name": "D1_Stairs_Step10",
+      "model_id": 1979958245968,
+      "geometry_id": 1980343820784,
+      "path": "GRP_Underground/D1_Stairs/D1_Stairs_Step10",
+      "min": [
+        -61.0,
+        -12.3,
+        -44.05555555449592
+      ],
+      "max": [
+        -58.0,
+        -5.0,
+        -43.80000000105964
+      ],
+      "vertices": 24,
+      "solid": true
+    },
+    {
+      "name": "D1_Stairs_Step11",
+      "model_id": 1979958236688,
+      "geometry_id": 1980343816304,
+      "path": "GRP_Underground/D1_Stairs/D1_Stairs_Step11",
+      "min": [
+        -61.0,
+        -12.3,
+        -44.31111111005148
+      ],
+      "max": [
+        -58.0,
+        -5.2,
+        -44.055555556615204
+      ],
+      "vertices": 24,
+      "solid": true
+    },
+    {
+      "name": "D1_Stairs_Step12",
+      "model_id": 1979958241328,
+      "geometry_id": 1980343819440,
+      "path": "GRP_Underground/D1_Stairs/D1_Stairs_Step12",
+      "min": [
+        -61.0,
+        -12.3,
+        -44.56666666560703
+      ],
+      "max": [
+        -58.0,
+        -5.400000000000001,
+        -44.31111111217075
+      ],
+      "vertices": 24,
+      "solid": true
+    },
+    {
+      "name": "D1_Stairs_Step13",
+      "model_id": 1979958248288,
+      "geometry_id": 1980343828400,
+      "path": "GRP_Underground/D1_Stairs/D1_Stairs_Step13",
+      "min": [
+        -61.0,
+        -12.3,
+        -44.82222222116258
+      ],
+      "max": [
+        -58.0,
+        -5.599999999999999,
+        -44.5666666677263
+      ],
+      "vertices": 24,
+      "solid": true
+    },
+    {
+      "name": "D1_Stairs_Step14",
+      "model_id": 1979958239008,
+      "geometry_id": 1980343827056,
+      "path": "GRP_Underground/D1_Stairs/D1_Stairs_Step14",
+      "min": [
+        -61.0,
+        -12.3,
+        -45.07777777671814
+      ],
+      "max": [
+        -58.0,
+        -5.800000000000002,
+        -44.82222222328186
+      ],
+      "vertices": 24,
+      "solid": true
+    },
+    {
+      "name": "D1_Stairs_Step15",
+      "model_id": 1979958243648,
+      "geometry_id": 1980343825712,
+      "path": "GRP_Underground/D1_Stairs/D1_Stairs_Step15",
+      "min": [
+        -61.0,
+        -12.3,
+        -45.333333332273696
+      ],
+      "max": [
+        -58.0,
+        -6.0,
+        -45.077777778837415
+      ],
+      "vertices": 24,
+      "solid": true
+    },
+    {
+      "name": "D1_Stairs_Step16",
+      "model_id": 1979958234368,
+      "geometry_id": 1980343831536,
+      "path": "GRP_Underground/D1_Stairs/D1_Stairs_Step16",
+      "min": [
+        -61.0,
+        -12.3,
+        -45.588888887829256
+      ],
+      "max": [
+        -58.0,
+        -6.2,
+        -45.333333334392975
+      ],
+      "vertices": 24,
+      "solid": true
+    },
+    {
+      "name": "D1_Stairs_Step17",
+      "model_id": 1979958255248,
+      "geometry_id": 1980343816752,
+      "path": "GRP_Underground/D1_Stairs/D1_Stairs_Step17",
+      "min": [
+        -61.0,
+        -12.3,
+        -45.84444444338481
+      ],
+      "max": [
+        -58.0,
+        -6.400000000000001,
+        -45.58888888994853
+      ],
+      "vertices": 24,
+      "solid": true
+    },
+    {
+      "name": "D1_Stairs_Step18",
+      "model_id": 1979958252928,
+      "geometry_id": 1980343825264,
+      "path": "GRP_Underground/D1_Stairs/D1_Stairs_Step18",
+      "min": [
+        -61.0,
+        -12.3,
+        -46.099999998940355
+      ],
+      "max": [
+        -58.0,
+        -6.599999999999999,
+        -45.84444444550408
+      ],
+      "vertices": 24,
+      "solid": true
+    },
+    {
+      "name": "D1_Stairs_Step19",
+      "model_id": 1979958257568,
+      "geometry_id": 1980343823472,
+      "path": "GRP_Underground/D1_Stairs/D1_Stairs_Step19",
+      "min": [
+        -61.0,
+        -12.3,
+        -46.355555554495915
+      ],
+      "max": [
+        -58.0,
+        -6.800000000000002,
+        -46.100000001059634
+      ],
+      "vertices": 24,
+      "solid": true
+    },
+    {
+      "name": "D1_Stairs_Step20",
+      "model_id": 1979958264528,
+      "geometry_id": 1980343829296,
+      "path": "GRP_Underground/D1_Stairs/D1_Stairs_Step20",
+      "min": [
+        -61.0,
+        -12.3,
+        -46.61111111005147
+      ],
+      "max": [
+        -58.0,
+        -7.0,
+        -46.355555556615194
+      ],
+      "vertices": 24,
+      "solid": true
+    },
+    {
+      "name": "D1_Stairs_Step21",
+      "model_id": 1979958259888,
+      "geometry_id": 1980343817648,
+      "path": "GRP_Underground/D1_Stairs/D1_Stairs_Step21",
+      "min": [
+        -61.0,
+        -12.3,
+        -46.866666665607035
+      ],
+      "max": [
+        -58.0,
+        -7.2,
+        -46.611111112170754
+      ],
+      "vertices": 24,
+      "solid": true
+    },
+    {
+      "name": "D1_Stairs_Step22",
+      "model_id": 1979958262208,
+      "geometry_id": 1980343829744,
+      "path": "GRP_Underground/D1_Stairs/D1_Stairs_Step22",
+      "min": [
+        -61.0,
+        -12.3,
+        -47.12222222116258
+      ],
+      "max": [
+        -58.0,
+        -7.400000000000001,
+        -46.86666666772631
+      ],
+      "vertices": 24,
+      "solid": true
+    },
+    {
+      "name": "D1_Stairs_Step23",
+      "model_id": 1979958250608,
+      "geometry_id": 1980343828848,
+      "path": "GRP_Underground/D1_Stairs/D1_Stairs_Step23",
+      "min": [
+        -61.0,
+        -12.3,
+        -47.37777777671814
+      ],
+      "max": [
+        -58.0,
+        -7.600000000000001,
+        -47.12222222328186
+      ],
+      "vertices": 24,
+      "solid": true
+    },
+    {
+      "name": "D1_Stairs_Step24",
+      "model_id": 1979958273808,
+      "geometry_id": 1980343821232,
+      "path": "GRP_Underground/D1_Stairs/D1_Stairs_Step24",
+      "min": [
+        -61.0,
+        -12.3,
+        -47.6333333322737
+      ],
+      "max": [
+        -58.0,
+        -7.800000000000002,
+        -47.37777777883742
+      ],
+      "vertices": 24,
+      "solid": true
+    },
+    {
+      "name": "D1_Stairs_Step25",
+      "model_id": 1979958276128,
+      "geometry_id": 1980343817200,
+      "path": "GRP_Underground/D1_Stairs/D1_Stairs_Step25",
+      "min": [
+        -61.0,
+        -12.3,
+        -47.888888887829246
+      ],
+      "max": [
+        -58.0,
+        -8.0,
+        -47.633333334392965
+      ],
+      "vertices": 24,
+      "solid": true
+    },
+    {
+      "name": "D1_Stairs_Step26",
+      "model_id": 1979958269168,
+      "geometry_id": 1980343818096,
+      "path": "GRP_Underground/D1_Stairs/D1_Stairs_Step26",
+      "min": [
+        -61.0,
+        -12.3,
+        -48.14444444338481
+      ],
+      "max": [
+        -58.0,
+        -8.2,
+        -47.88888888994853
+      ],
+      "vertices": 24,
+      "solid": true
+    },
+    {
+      "name": "D1_Stairs_Step27",
+      "model_id": 1979958266848,
+      "geometry_id": 1980343818544,
+      "path": "GRP_Underground/D1_Stairs/D1_Stairs_Step27",
+      "min": [
+        -61.0,
+        -12.300000000000002,
+        -48.399999998940366
+      ],
+      "max": [
+        -58.0,
+        -8.400000000000002,
+        -48.144444445504085
+      ],
+      "vertices": 24,
+      "solid": true
+    },
+    {
+      "name": "D1_Stairs_Step28",
+      "model_id": 1979958285408,
+      "geometry_id": 1980343827504,
+      "path": "GRP_Underground/D1_Stairs/D1_Stairs_Step28",
+      "min": [
+        -61.0,
+        -12.3,
+        -48.65555555449591
+      ],
+      "max": [
+        -58.0,
+        -8.6,
+        -48.40000000105964
+      ],
+      "vertices": 24,
+      "solid": true
+    },
+    {
+      "name": "D1_Stairs_Step29",
+      "model_id": 1979958278448,
+      "geometry_id": 1980343823920,
+      "path": "GRP_Underground/D1_Stairs/D1_Stairs_Step29",
+      "min": [
+        -61.0,
+        -12.3,
+        -48.91111111005147
+      ],
+      "max": [
+        -58.0,
+        -8.8,
+        -48.65555555661519
+      ],
+      "vertices": 24,
+      "solid": true
+    },
+    {
+      "name": "D1_Stairs_Step30",
+      "model_id": 1979958271488,
+      "geometry_id": 1980343826608,
+      "path": "GRP_Underground/D1_Stairs/D1_Stairs_Step30",
+      "min": [
+        -61.0,
+        -12.3,
+        -49.166666665607025
+      ],
+      "max": [
+        -58.0,
+        -9.0,
+        -48.91111111217075
+      ],
+      "vertices": 24,
+      "solid": true
+    },
+    {
+      "name": "D1_Stairs_Step31",
+      "model_id": 1979958280768,
+      "geometry_id": 1980343823024,
+      "path": "GRP_Underground/D1_Stairs/D1_Stairs_Step31",
+      "min": [
+        -61.0,
+        -12.3,
+        -49.422222221162585
+      ],
+      "max": [
+        -58.0,
+        -9.200000000000001,
+        -49.166666667726304
+      ],
+      "vertices": 24,
+      "solid": true
+    },
+    {
+      "name": "D1_Stairs_Step32",
+      "model_id": 1979958287728,
+      "geometry_id": 1980343820336,
+      "path": "GRP_Underground/D1_Stairs/D1_Stairs_Step32",
+      "min": [
+        -61.0,
+        -12.300000000000002,
+        -49.67777777671814
+      ],
+      "max": [
+        -58.0,
+        -9.400000000000002,
+        -49.422222223281864
+      ],
+      "vertices": 24,
+      "solid": true
+    },
+    {
+      "name": "D1_Stairs_Step33",
+      "model_id": 1979958294688,
+      "geometry_id": 1980343831984,
+      "path": "GRP_Underground/D1_Stairs/D1_Stairs_Step33",
+      "min": [
+        -61.0,
+        -12.3,
+        -49.9333333322737
+      ],
+      "max": [
+        -58.0,
+        -9.6,
+        -49.67777777883742
+      ],
+      "vertices": 24,
+      "solid": true
+    },
+    {
+      "name": "D1_Stairs_Step34",
+      "model_id": 1979958283088,
+      "geometry_id": 1980343826160,
+      "path": "GRP_Underground/D1_Stairs/D1_Stairs_Step34",
+      "min": [
+        -61.0,
+        -12.3,
+        -50.18888888782925
+      ],
+      "max": [
+        -58.0,
+        -9.8,
+        -49.93333333439298
+      ],
+      "vertices": 24,
+      "solid": true
+    },
+    {
+      "name": "D1_Stairs_Step35",
+      "model_id": 1979958303968,
+      "geometry_id": 1980343827952,
+      "path": "GRP_Underground/D1_Stairs/D1_Stairs_Step35",
+      "min": [
+        -61.0,
+        -12.3,
+        -50.4444444433848
+      ],
+      "max": [
+        -58.0,
+        -10.0,
+        -50.18888888994852
+      ],
+      "vertices": 24,
+      "solid": true
+    },
+    {
+      "name": "D1_Stairs_Step36",
+      "model_id": 1979958290048,
+      "geometry_id": 1980343818992,
+      "path": "GRP_Underground/D1_Stairs/D1_Stairs_Step36",
+      "min": [
+        -61.0,
+        -12.3,
+        -50.69999999894037
+      ],
+      "max": [
+        -58.0,
+        -10.200000000000001,
+        -50.44444444550409
+      ],
+      "vertices": 24,
+      "solid": true
+    },
+    {
+      "name": "D1_Stairs_Step37",
+      "model_id": 1979958306288,
+      "geometry_id": 1980343830192,
+      "path": "GRP_Underground/D1_Stairs/D1_Stairs_Step37",
+      "min": [
+        -61.0,
+        -12.300000000000002,
+        -50.95555555449592
+      ],
+      "max": [
+        -58.0,
+        -10.400000000000002,
+        -50.70000000105964
+      ],
+      "vertices": 24,
+      "solid": true
+    },
+    {
+      "name": "D1_Stairs_Step38",
+      "model_id": 1979958297008,
+      "geometry_id": 1980343822128,
+      "path": "GRP_Underground/D1_Stairs/D1_Stairs_Step38",
+      "min": [
+        -61.0,
+        -12.3,
+        -51.21111111005147
+      ],
+      "max": [
+        -58.0,
+        -10.6,
+        -50.955555556615195
+      ],
+      "vertices": 24,
+      "solid": true
+    },
+    {
+      "name": "D1_Stairs_Step39",
+      "model_id": 1979958301648,
+      "geometry_id": 1980343831088,
+      "path": "GRP_Underground/D1_Stairs/D1_Stairs_Step39",
+      "min": [
+        -61.0,
+        -12.3,
+        -51.46666666560703
+      ],
+      "max": [
+        -58.0,
+        -10.8,
+        -51.21111111217075
+      ],
+      "vertices": 24,
+      "solid": true
+    },
+    {
+      "name": "D1_Stairs_Step40",
+      "model_id": 1979958299328,
+      "geometry_id": 1980343819888,
+      "path": "GRP_Underground/D1_Stairs/D1_Stairs_Step40",
+      "min": [
+        -61.0,
+        -12.3,
+        -51.722222221162596
+      ],
+      "max": [
+        -58.0,
+        -11.0,
+        -51.466666667726315
+      ],
+      "vertices": 24,
+      "solid": true
+    },
+    {
+      "name": "D1_Stairs_Step41",
+      "model_id": 1979958292368,
+      "geometry_id": 1980343822576,
+      "path": "GRP_Underground/D1_Stairs/D1_Stairs_Step41",
+      "min": [
+        -61.0,
+        -12.3,
+        -51.977777776718135
+      ],
+      "max": [
+        -58.0,
+        -11.200000000000001,
+        -51.722222223281854
+      ],
+      "vertices": 24,
+      "solid": true
+    },
+    {
+      "name": "D1_Stairs_Step42",
+      "model_id": 1979958322528,
+      "geometry_id": 1980343830640,
+      "path": "GRP_Underground/D1_Stairs/D1_Stairs_Step42",
+      "min": [
+        -61.0,
+        -12.300000000000002,
+        -52.233333332273695
+      ],
+      "max": [
+        -58.0,
+        -11.400000000000002,
+        -51.97777777883742
+      ],
+      "vertices": 24,
+      "solid": true
+    },
+    {
+      "name": "D1_Stairs_Step43",
+      "model_id": 1979958310928,
+      "geometry_id": 1980343821680,
+      "path": "GRP_Underground/D1_Stairs/D1_Stairs_Step43",
+      "min": [
+        -61.0,
+        -12.3,
+        -52.488888887829255
+      ],
+      "max": [
+        -58.0,
+        -11.6,
+        -52.233333334392974
+      ],
+      "vertices": 24,
+      "solid": true
+    },
+    {
+      "name": "D1_Stairs_Step44",
+      "model_id": 1979958313248,
+      "geometry_id": 1980343824368,
+      "path": "GRP_Underground/D1_Stairs/D1_Stairs_Step44",
+      "min": [
+        -61.0,
+        -12.3,
+        -52.7444444433848
+      ],
+      "max": [
+        -58.0,
+        -11.8,
+        -52.48888888994852
+      ],
+      "vertices": 24,
+      "solid": true
+    },
+    {
+      "name": "D1_Stairs_Step45",
+      "model_id": 1979958308608,
+      "geometry_id": 1980343824816,
+      "path": "GRP_Underground/D1_Stairs/D1_Stairs_Step45",
+      "min": [
+        -61.0,
+        -12.3,
+        -52.99999999894036
+      ],
+      "max": [
+        -58.0,
+        -12.0,
+        -52.74444444550408
+      ],
+      "vertices": 24,
+      "solid": true
+    },
+    {
+      "name": "D3_DockStairs_Step01",
+      "model_id": 1979958317888,
+      "geometry_id": 1979952108448,
+      "path": "GRP_Underground/D3_DockStairs/D3_DockStairs_Step01",
+      "min": [
+        -45.0,
+        -12.299999987284343,
+        -54.805555554495925
+      ],
+      "max": [
+        -42.5,
+        -11.183333346048991,
+        -54.50000000105965
+      ],
+      "vertices": 24,
+      "solid": true
+    },
+    {
+      "name": "D3_DockStairs_Step02",
+      "model_id": 1979958327168,
+      "geometry_id": 1979952116960,
+      "path": "GRP_Underground/D3_DockStairs/D3_DockStairs_Step02",
+      "min": [
+        -45.0,
+        -12.299999974568685,
+        -55.11111111005148
+      ],
+      "max": [
+        -42.5,
+        -10.96666669209798,
+        -54.805555556615204
+      ],
+      "vertices": 24,
+      "solid": true
+    },
+    {
+      "name": "D3_DockStairs_Step03",
+      "model_id": 1979958324848,
+      "geometry_id": 1979952103520,
+      "path": "GRP_Underground/D3_DockStairs/D3_DockStairs_Step03",
+      "min": [
+        -45.0,
+        -12.299999999999997,
+        -55.416666665607025
+      ],
+      "max": [
+        -42.5,
+        -10.749999999999998,
+        -55.11111111217075
+      ],
+      "vertices": 24,
+      "solid": true
+    },
+    {
+      "name": "D3_DockStairs_Step04",
+      "model_id": 1979958315568,
+      "geometry_id": 1979952115616,
+      "path": "GRP_Underground/D3_DockStairs/D3_DockStairs_Step04",
+      "min": [
+        -45.0,
+        -12.300000025431315,
+        -55.72222222116258
+      ],
+      "max": [
+        -42.5,
+        -10.533333307902017,
+        -55.416666667726304
+      ],
+      "vertices": 24,
+      "solid": true
+    },
+    {
+      "name": "D3_DockStairs_Step05",
+      "model_id": 1979958331808,
+      "geometry_id": 1979952111584,
+      "path": "GRP_Underground/D3_DockStairs/D3_DockStairs_Step05",
+      "min": [
+        -45.0,
+        -12.299999974568685,
+        -56.02777777671814
+      ],
+      "max": [
+        -42.5,
+        -10.31666669209798,
+        -55.72222222328186
+      ],
+      "vertices": 24,
+      "solid": true
+    },
+    {
+      "name": "D3_DockStairs_Step06",
+      "model_id": 1979958329488,
+      "geometry_id": 1979952114272,
+      "path": "GRP_Underground/D3_DockStairs/D3_DockStairs_Step06",
+      "min": [
+        -45.0,
+        -12.3,
+        -56.333333332273696
+      ],
+      "max": [
+        -42.5,
+        -10.1,
+        -56.02777777883742
+      ],
+      "vertices": 24,
+      "solid": true
+    },
+    {
+      "name": "D3_DockStairs_Step07",
+      "model_id": 1979958343408,
+      "geometry_id": 1979952106656,
+      "path": "GRP_Underground/D3_DockStairs/D3_DockStairs_Step07",
+      "min": [
+        -45.0,
+        -12.300000025431316,
+        -56.63888888782925
+      ],
+      "max": [
+        -42.5,
+        -9.883333307902019,
+        -56.333333334392975
+      ],
+      "vertices": 24,
+      "solid": true
+    },
+    {
+      "name": "D3_DockStairs_Step08",
+      "model_id": 1979958345728,
+      "geometry_id": 1979952109344,
+      "path": "GRP_Underground/D3_DockStairs/D3_DockStairs_Step08",
+      "min": [
+        -45.0,
+        -12.300000050862632,
+        -56.9444444433848
+      ],
+      "max": [
+        -42.5,
+        -9.666666615804038,
+        -56.638888889948525
+      ],
+      "vertices": 24,
+      "solid": true
+    },
+    {
+      "name": "D3_DockStairs_Step09",
+      "model_id": 1979958334128,
+      "geometry_id": 1979952106208,
+      "path": "GRP_Underground/D3_DockStairs/D3_DockStairs_Step09",
+      "min": [
+        -45.0,
+        -12.3,
+        -57.24999999894036
+      ],
+      "max": [
+        -42.5,
+        -9.450000000000001,
+        -56.944444445504075
+      ],
+      "vertices": 24,
+      "solid": true
+    },
+    {
+      "name": "D3_DockStairs_Step10",
+      "model_id": 1979958336448,
+      "geometry_id": 1979952109792,
+      "path": "GRP_Underground/D3_DockStairs/D3_DockStairs_Step10",
+      "min": [
+        -45.0,
+        -12.29999994913737,
+        -57.555555554495925
+      ],
+      "max": [
+        -42.5,
+        -9.233333384195962,
+        -57.25000000105965
+      ],
+      "vertices": 24,
+      "solid": true
+    },
+    {
+      "name": "D3_DockStairs_Step11",
+      "model_id": 1979958338768,
+      "geometry_id": 1979952103968,
+      "path": "GRP_Underground/D3_DockStairs/D3_DockStairs_Step11",
+      "min": [
+        -45.0,
+        -12.30000005086263,
+        -57.86111111005148
+      ],
+      "max": [
+        -42.5,
+        -9.016666615804036,
+        -57.555555556615204
+      ],
+      "vertices": 24,
+      "solid": true
+    },
+    {
+      "name": "D3_DockStairs_Step12",
+      "model_id": 1979958348048,
+      "geometry_id": 1979952117408,
+      "path": "GRP_Underground/D3_DockStairs/D3_DockStairs_Step12",
+      "min": [
+        -45.0,
+        -12.3,
+        -58.166666665607025
+      ],
+      "max": [
+        -42.5,
+        -8.8,
+        -57.86111111217075
+      ],
+      "vertices": 24,
+      "solid": true
+    },
+    {
+      "name": "D3_DockStairs_Step13",
+      "model_id": 1979958350368,
+      "geometry_id": 1979952107552,
+      "path": "GRP_Underground/D3_DockStairs/D3_DockStairs_Step13",
+      "min": [
+        -45.0,
+        -12.299999949137371,
+        -58.47222222116258
+      ],
+      "max": [
+        -42.5,
+        -8.583333384195965,
+        -58.166666667726304
+      ],
+      "vertices": 24,
+      "solid": true
+    },
+    {
+      "name": "D3_DockStairs_Step14",
+      "model_id": 1979958352688,
+      "geometry_id": 1979952110240,
+      "path": "GRP_Underground/D3_DockStairs/D3_DockStairs_Step14",
+      "min": [
+        -45.0,
+        -12.300000050862632,
+        -58.77777777671814
+      ],
+      "max": [
+        -42.5,
+        -8.366666615804037,
+        -58.47222222328186
+      ],
+      "vertices": 24,
+      "solid": true
+    },
+    {
+      "name": "D3_DockStairs_Step15",
+      "model_id": 1979958355008,
+      "geometry_id": 1979952117856,
+      "path": "GRP_Underground/D3_DockStairs/D3_DockStairs_Step15",
+      "min": [
+        -45.0,
+        -12.3,
+        -59.083333332273696
+      ],
+      "max": [
+        -42.5,
+        -8.150000000000002,
+        -58.77777777883742
+      ],
+      "vertices": 24,
+      "solid": true
+    },
+    {
+      "name": "D3_DockStairs_Step16",
+      "model_id": 1979958341088,
+      "geometry_id": 1979952114720,
+      "path": "GRP_Underground/D3_DockStairs/D3_DockStairs_Step16",
+      "min": [
+        -45.0,
+        -12.299999949137371,
+        -59.38888888782925
+      ],
+      "max": [
+        -42.5,
+        -7.933333384195964,
+        -59.083333334392975
+      ],
+      "vertices": 24,
+      "solid": true
+    },
+    {
+      "name": "D3_DockStairs_Step17",
+      "model_id": 1979958361968,
+      "geometry_id": 1979952105312,
+      "path": "GRP_Underground/D3_DockStairs/D3_DockStairs_Step17",
+      "min": [
+        -45.0,
+        -12.30000005086263,
+        -59.6944444433848
+      ],
+      "max": [
+        -42.5,
+        -7.716666615804036,
+        -59.388888889948525
+      ],
+      "vertices": 24,
+      "solid": true
+    },
+    {
+      "name": "D3_DockStairs_Step18",
+      "model_id": 1979958371248,
+      "geometry_id": 1979952112032,
+      "path": "GRP_Underground/D3_DockStairs/D3_DockStairs_Step18",
+      "min": [
+        -45.0,
+        -12.3,
+        -59.99999999894036
+      ],
+      "max": [
+        -42.5,
+        -7.5,
+        -59.694444445504075
+      ],
+      "vertices": 24,
+      "solid": true
+    },
+    {
+      "name": "D2_Hub",
+      "model_id": 1979958357328,
+      "geometry_id": 1979952107104,
+      "path": "GRP_Underground/D2_Hub",
+      "min": [
+        -58.2,
+        -12.0,
+        -54.2
+      ],
+      "max": [
+        -53.800000000000004,
+        -11.15,
+        -49.800000000000004
+      ],
+      "vertices": 88,
+      "solid": true
+    },
+    {
+      "name": "D3_RopeBridge",
+      "model_id": 1979958373568,
+      "geometry_id": 1979952118304,
+      "path": "GRP_Underground/D3_RopeBridge",
+      "min": [
+        -45.5550537109375,
+        -7.5,
+        -65.8011328125
+      ],
+      "max": [
+        -41.744946289062504,
+        -4.9,
+        -62.1988671875
+      ],
+      "vertices": 240,
+      "solid": true
+    },
+    {
+      "name": "D3_Balustrade_S",
+      "model_id": 1979958368928,
+      "geometry_id": 1979952108896,
+      "path": "GRP_Underground/D3_Balustrade_S",
+      "min": [
+        -42.44,
+        -7.5,
+        -49.395263671875
+      ],
+      "max": [
+        -42.160000000000004,
+        -6.46,
+        -44.204736328125
+      ],
+      "vertices": 116,
+      "solid": true
+    },
+    {
+      "name": "D3_Balustrade_N",
+      "model_id": 1979958364288,
+      "geometry_id": 1979952112480,
+      "path": "GRP_Underground/D3_Balustrade_N",
+      "min": [
+        -42.44,
+        -7.5,
+        -62.395263671875
+      ],
+      "max": [
+        -42.160000000000004,
+        -6.46,
+        -60.204736328125
+      ],
+      "vertices": 56,
+      "solid": true
+    },
+    {
+      "name": "HALL_SouthWindowArch",
+      "model_id": 1979958366608,
+      "geometry_id": 1979952118752,
+      "path": "GRP_Underground/HALL_SouthWindowArch",
+      "min": [
+        -76.7,
+        -10.5,
+        -36.04
+      ],
+      "max": [
+        -71.3,
+        -5.8500000000000005,
+        -35.160000000000004
+      ],
+      "vertices": 96,
+      "solid": true
+    },
+    {
+      "name": "UG_Pilaster_E0",
+      "model_id": 1979958359648,
+      "geometry_id": 1979952116064,
+      "path": "GRP_Underground/UG_Pilaster_E0",
+      "min": [
+        -78.0,
+        -12.0,
+        -40.5
+      ],
+      "max": [
+        -77.0,
+        1.5,
+        -39.5
+      ],
+      "vertices": 24,
+      "solid": true
+    },
+    {
+      "name": "UG_Pilaster_E1",
+      "model_id": 1979958380528,
+      "geometry_id": 1979952115168,
+      "path": "GRP_Underground/UG_Pilaster_E1",
+      "min": [
+        -78.0,
+        -12.0,
+        -58.5
+      ],
+      "max": [
+        -77.0,
+        1.5,
+        -57.5
+      ],
+      "vertices": 24,
+      "solid": true
+    },
+    {
+      "name": "UG_Pilaster_E2",
+      "model_id": 1979958375888,
+      "geometry_id": 1979952113376,
+      "path": "GRP_Underground/UG_Pilaster_E2",
+      "min": [
+        -78.0,
+        -12.0,
+        -63.5
+      ],
+      "max": [
+        -77.0,
+        1.5,
+        -62.5
+      ],
+      "vertices": 24,
+      "solid": true
+    },
+    {
+      "name": "UG_Pilaster_E3",
+      "model_id": 1979958378208,
+      "geometry_id": 1979952113824,
+      "path": "GRP_Underground/UG_Pilaster_E3",
+      "min": [
+        -78.0,
+        -12.0,
+        -69.5
+      ],
+      "max": [
+        -77.0,
+        1.5,
+        -68.5
+      ],
+      "vertices": 24,
+      "solid": true
+    },
+    {
+      "name": "UG_Pilaster_N0",
+      "model_id": 1979958389808,
+      "geometry_id": 1979952104864,
+      "path": "GRP_Underground/UG_Pilaster_N0",
+      "min": [
+        -38.5,
+        -12.0,
+        -71.0
+      ],
+      "max": [
+        -37.5,
+        1.5,
+        -70.0
+      ],
+      "vertices": 24,
+      "solid": true
+    },
+    {
+      "name": "UG_Pilaster_N1",
+      "model_id": 1979958382848,
+      "geometry_id": 1979952116512,
+      "path": "GRP_Underground/UG_Pilaster_N1",
+      "min": [
+        -72.5,
+        -12.0,
+        -71.0
+      ],
+      "max": [
+        -71.5,
+        1.5,
+        -70.0
+      ],
+      "vertices": 24,
+      "solid": true
+    },
+    {
+      "name": "UG_Pilaster_S0",
+      "model_id": 1979958392128,
+      "geometry_id": 1979952105760,
+      "path": "GRP_Underground/UG_Pilaster_S0",
+      "min": [
+        -48.5,
+        -12.0,
+        -37.0
+      ],
+      "max": [
+        -47.5,
+        1.5,
+        -36.0
+      ],
+      "vertices": 24,
+      "solid": true
+    },
+    {
+      "name": "UG_Pilaster_S1",
+      "model_id": 1979958385168,
+      "geometry_id": 1979952119200,
+      "path": "GRP_Underground/UG_Pilaster_S1",
+      "min": [
+        -68.5,
+        -12.0,
+        -37.0
+      ],
+      "max": [
+        -67.5,
+        1.5,
+        -36.0
+      ],
+      "vertices": 24,
+      "solid": true
+    },
+    {
+      "name": "W_H_Pond",
+      "model_id": 1979958403728,
+      "geometry_id": 1980188669600,
+      "path": "GRP_Water/W_H_Pond",
+      "min": [
+        -51.0,
+        20.4,
+        -79.0
+      ],
+      "max": [
+        -39.0,
+        20.55,
+        -75.0
+      ],
+      "vertices": 8,
+      "solid": false
+    },
+    {
+      "name": "W_H_to_G_Fall",
+      "model_id": 1979958394448,
+      "geometry_id": 1980188661984,
+      "path": "GRP_Water/W_H_to_G_Fall",
+      "min": [
+        -46.0,
+        15.075000000000001,
+        -73.20000000000002
+      ],
+      "max": [
+        -44.0,
+        20.55,
+        -72.9
+      ],
+      "vertices": 8,
+      "solid": false
+    },
+    {
+      "name": "W_H_to_G_Fall_Foam",
+      "model_id": 1979958406048,
+      "geometry_id": 1980188657952,
+      "path": "GRP_Water/W_H_to_G_Fall_Foam",
+      "min": [
+        -45.9719921875,
+        14.74882568359375,
+        -73.1646240234375
+      ],
+      "max": [
+        -44.0130322265625,
+        15.54055419921875,
+        -71.8588623046875
+      ],
+      "vertices": 120,
+      "solid": false
+    },
+    {
+      "name": "W_G_Supply",
+      "model_id": 1979958408368,
+      "geometry_id": 1980188670496,
+      "path": "GRP_Water/W_G_Supply",
+      "min": [
+        -46.0,
+        15.075000000000003,
+        -73.19999999999999
+      ],
+      "max": [
+        -44.0,
+        15.225000000000003,
+        -61.99999999999999
+      ],
+      "vertices": 8,
+      "solid": false
+    },
+    {
+      "name": "W_G_Leak_Fall",
+      "model_id": 1979958396768,
+      "geometry_id": 1980188670944,
+      "path": "GRP_Water/W_G_Leak_Fall",
+      "min": [
+        -46.0,
+        3.074999999999999,
+        -57.6
+      ],
+      "max": [
+        -44.0,
+        15.15,
+        -57.300000000000004
+      ],
+      "vertices": 8,
+      "solid": false
+    },
+    {
+      "name": "W_G_Leak_Fall_Foam",
+      "model_id": 1979958413008,
+      "geometry_id": 1980188665120,
+      "path": "GRP_Water/W_G_Leak_Fall_Foam",
+      "min": [
+        -46.082978515625,
+        2.822265930175781,
+        -57.716904296875
+      ],
+      "max": [
+        -43.678173828125004,
+        3.5579473876953127,
+        -56.2053125
+      ],
+      "vertices": 120,
+      "solid": false
+    },
+    {
+      "name": "W_Leak_S1",
+      "model_id": 1979958410688,
+      "geometry_id": 1980188660192,
+      "path": "GRP_Water/W_Leak_S1",
+      "min": [
+        -46.0,
+        3.0749999999999993,
+        -57.6
+      ],
+      "max": [
+        -44.0,
+        3.2249999999999996,
+        -46.0
+      ],
+      "vertices": 8,
+      "solid": false
+    },
+    {
+      "name": "W_Leak_S2",
+      "model_id": 1979958399088,
+      "geometry_id": 1980188663776,
+      "path": "GRP_Water/W_Leak_S2",
+      "min": [
+        -46.0,
+        3.0749999999999993,
+        -46.0
+      ],
+      "max": [
+        -34.0,
+        3.2249999999999996,
+        -44.0
+      ],
+      "vertices": 8,
+      "solid": false
+    },
+    {
+      "name": "W_Leak_S3",
+      "model_id": 1979958415328,
+      "geometry_id": 1980188656160,
+      "path": "GRP_Water/W_Leak_S3",
+      "min": [
+        -36.0,
+        3.0749999999999993,
+        -44.0
+      ],
+      "max": [
+        -34.0,
+        3.2249999999999996,
+        -31.5
+      ],
+      "vertices": 8,
+      "solid": false
+    },
+    {
+      "name": "W_Leak_Fall2",
+      "model_id": 1979958401408,
+      "geometry_id": 1980188658400,
+      "path": "GRP_Water/W_Leak_Fall2",
+      "min": [
+        -36.0,
+        0.07500000000000029,
+        -30.199999999999996
+      ],
+      "max": [
+        -34.0,
+        3.15,
+        -29.899999999999995
+      ],
+      "vertices": 8,
+      "solid": false
+    },
+    {
+      "name": "W_Leak_Fall2_Foam",
+      "model_id": 1979958431568,
+      "geometry_id": 1980188657056,
+      "path": "GRP_Water/W_Leak_Fall2_Foam",
+      "min": [
+        -36.099765625,
+        -0.2525536727905274,
+        -30.24706787109375
+      ],
+      "max": [
+        -33.44976318359375,
+        0.6328099822998047,
+        -28.75798583984375
+      ],
+      "vertices": 120,
+      "solid": false
+    },
+    {
+      "name": "W_Leak_S4",
+      "model_id": 1979958419968,
+      "geometry_id": 1980188671392,
+      "path": "GRP_Water/W_Leak_S4",
+      "min": [
+        -36.0,
+        0.075,
+        -30.2
+      ],
+      "max": [
+        -34.0,
+        0.225,
+        -26.0
+      ],
+      "vertices": 8,
+      "solid": false
+    },
+    {
+      "name": "W_A_Pond",
+      "model_id": 1979958424608,
+      "geometry_id": 1980188663328,
+      "path": "GRP_Water/W_A_Pond",
+      "min": [
+        -56.0,
+        -0.15,
+        -26.0
+      ],
+      "max": [
+        -34.0,
+        -1.7763568394002505e-17,
+        -16.0
+      ],
+      "vertices": 8,
+      "solid": false
+    },
+    {
+      "name": "W_H_to_D5_Fall",
+      "model_id": 1979958417648,
+      "geometry_id": 1980188666016,
+      "path": "GRP_Water/W_H_to_D5_Fall",
+      "min": [
+        -47.0,
+        -6.0,
+        -70.99999999999999
+      ],
+      "max": [
+        -45.0,
+        1.5,
+        -70.69999999999999
+      ],
+      "vertices": 8,
+      "solid": false
+    },
+    {
+      "name": "W_H_to_D5_Fall_Foam",
+      "model_id": 1979958426928,
+      "geometry_id": 1980188655712,
+      "path": "GRP_Water/W_H_to_D5_Fall_Foam",
+      "min": [
+        -47.515771484375,
+        -6.28282470703125,
+        -70.8878076171875
+      ],
+      "max": [
+        -44.769345703125,
+        -5.505022583007813,
+        -69.3176025390625
+      ],
+      "vertices": 120,
+      "solid": false
+    },
+    {
+      "name": "W_D5_SpillPool",
+      "model_id": 1979958429248,
+      "geometry_id": 1980188656608,
+      "path": "GRP_Water/W_D5_SpillPool",
+      "min": [
+        -55.0,
+        -6.0,
+        -66.0
+      ],
+      "max": [
+        -46.0,
+        -5.88,
+        -64.0
+      ],
+      "vertices": 8,
+      "solid": false
+    },
+    {
+      "name": "W_D5_SpillFall",
+      "model_id": 1979958433888,
+      "geometry_id": 1980188657504,
+      "path": "GRP_Water/W_D5_SpillFall",
+      "min": [
+        -50.0,
+        -12.0,
+        -64.0
+      ],
+      "max": [
+        -48.0,
+        -6.0,
+        -63.7
+      ],
+      "vertices": 8,
+      "solid": false
+    },
+    {
+      "name": "W_D5_SpillFall_Foam",
+      "model_id": 1979958436208,
+      "geometry_id": 1980188665568,
+      "path": "GRP_Water/W_D5_SpillFall_Foam",
+      "min": [
+        -49.9075048828125,
+        -12.284305419921875,
+        -64.0249365234375
+      ],
+      "max": [
+        -48.424404296875004,
+        -11.55640625,
+        -62.561748046875
+      ],
+      "vertices": 120,
+      "solid": false
+    },
+    {
+      "name": "W_D5_SpillFloor",
+      "model_id": 1979958422288,
+      "geometry_id": 1980188669152,
+      "path": "GRP_Water/W_D5_SpillFloor",
+      "min": [
+        -50.0,
+        -12.000000000000002,
+        -63.7
+      ],
+      "max": [
+        -48.0,
+        -11.880000000000003,
+        -59.0
+      ],
+      "vertices": 8,
+      "solid": false
+    },
+    {
+      "name": "W_D2_Basin",
+      "model_id": 1979958445488,
+      "geometry_id": 1980188667360,
+      "path": "GRP_Water/W_D2_Basin",
+      "min": [
+        -65.0,
+        -12.0,
+        -59.0
+      ],
+      "max": [
+        -47.0,
+        -11.85,
+        -47.0
+      ],
+      "vertices": 8,
+      "solid": false
+    },
+    {
+      "name": "W_D2_Dock",
+      "model_id": 1979958452448,
+      "geometry_id": 1980188661088,
+      "path": "GRP_Water/W_D2_Dock",
+      "min": [
+        -47.0,
+        -12.0,
+        -53.0
+      ],
+      "max": [
+        -45.0,
+        -11.85,
+        -51.0
+      ],
+      "vertices": 8,
+      "solid": false
+    },
+    {
+      "name": "W_D2_Low",
+      "model_id": 1979958443168,
+      "geometry_id": 1980188658848,
+      "path": "GRP_Water/W_D2_Low",
+      "min": [
+        -47.0,
+        -12.0,
+        -47.0
+      ],
+      "max": [
+        -42.5,
+        -11.85,
+        -45.0
+      ],
+      "vertices": 8,
+      "solid": false
+    },
+    {
+      "name": "W_G_ToWheel",
+      "model_id": 1979958447808,
+      "geometry_id": 1980188670048,
+      "path": "GRP_Water_Restored/W_G_ToWheel",
+      "min": [
+        -44.0,
+        15.075000000000003,
+        -62.5
+      ],
+      "max": [
+        -35.0,
+        15.225000000000003,
+        -61.0
+      ],
+      "vertices": 8,
+      "solid": false
+    },
+    {
+      "name": "W_D5_Fixed",
+      "model_id": 1979958450128,
+      "geometry_id": 1980188666464,
+      "path": "GRP_Water_Restored/W_D5_Fixed",
+      "min": [
+        -57.0,
+        -6.0,
+        -69.0
+      ],
+      "max": [
+        -55.0,
+        -5.8500000000000005,
+        -64.0
+      ],
+      "vertices": 8,
+      "solid": false
+    },
+    {
+      "name": "W_D5_Fall",
+      "model_id": 1979958454768,
+      "geometry_id": 1980188659296,
+      "path": "GRP_Water_Restored/W_D5_Fall",
+      "min": [
+        -57.0,
+        -12.0,
+        -64.0
+      ],
+      "max": [
+        -55.0,
+        -6.0,
+        -63.7
+      ],
+      "vertices": 8,
+      "solid": false
+    },
+    {
+      "name": "W_D5_Fall_Foam",
+      "model_id": 1979958440848,
+      "geometry_id": 1980188666912,
+      "path": "GRP_Water_Restored/W_D5_Fall_Foam",
+      "min": [
+        -57.409511718750004,
+        -12.288256835937501,
+        -64.08306640625
+      ],
+      "max": [
+        -54.886455078125,
+        -11.543070068359375,
+        -62.6072705078125
+      ],
+      "vertices": 120,
+      "solid": false
+    },
+    {
+      "name": "W_D5_ToD2",
+      "model_id": 1979958464048,
+      "geometry_id": 1980188660640,
+      "path": "GRP_Water_Restored/W_D5_ToD2",
+      "min": [
+        -57.0,
+        -12.0,
+        -63.7
+      ],
+      "max": [
+        -55.0,
+        -11.85,
+        -59.0
+      ],
+      "vertices": 8,
+      "solid": false
+    },
+    {
+      "name": "W_Bypass_1",
+      "model_id": 1979958461728,
+      "geometry_id": 1980188661536,
+      "path": "GRP_Water_Restored/W_Bypass_1",
+      "min": [
+        -77.0,
+        -6.750000000000001,
+        -69.0
+      ],
+      "max": [
+        -70.0,
+        -6.600000000000001,
+        -66.0
+      ],
+      "vertices": 8,
+      "solid": false
+    },
+    {
+      "name": "W_Bypass_2",
+      "model_id": 1979958459408,
+      "geometry_id": 1980188668256,
+      "path": "GRP_Water_Restored/W_Bypass_2",
+      "min": [
+        -77.0,
+        -9.000000000000002,
+        -66.0
+      ],
+      "max": [
+        -74.0,
+        -8.850000000000001,
+        -60.0
+      ],
+      "vertices": 8,
+      "solid": false
+    },
+    {
+      "name": "W_Bypass_Fall",
+      "model_id": 1979958466368,
+      "geometry_id": 1980188668704,
+      "path": "GRP_Water_Restored/W_Bypass_Fall",
+      "min": [
+        -77.0,
+        -12.0,
+        -60.0
+      ],
+      "max": [
+        -74.0,
+        -9.0,
+        -59.7
+      ],
+      "vertices": 8,
+      "solid": false
+    },
+    {
+      "name": "W_Bypass_Fall_Foam",
+      "model_id": 1979958468688,
+      "geometry_id": 1979698450416,
+      "path": "GRP_Water_Restored/W_Bypass_Fall_Foam",
+      "min": [
+        -76.7910107421875,
+        -12.290496826171875,
+        -60.079228515625005
+      ],
+      "max": [
+        -74.22393066406251,
+        -11.497000732421876,
+        -58.90013671875
+      ],
+      "vertices": 120,
+      "solid": false
+    },
+    {
+      "name": "W_D2_Wheel",
+      "model_id": 1979958457088,
+      "geometry_id": 1979698442352,
+      "path": "GRP_Water_Restored/W_D2_Wheel",
+      "min": [
+        -72.0,
+        -12.0,
+        -54.0
+      ],
+      "max": [
+        -65.0,
+        -11.85,
+        -51.5
+      ],
+      "vertices": 8,
+      "solid": false
+    },
+    {
+      "name": "W_D2_Exit",
+      "model_id": 1979958482608,
+      "geometry_id": 1979698446384,
+      "path": "GRP_Water_Restored/W_D2_Exit",
+      "min": [
+        -78.0,
+        -12.0,
+        -50.0
+      ],
+      "max": [
+        -65.0,
+        -11.85,
+        -47.0
+      ],
+      "vertices": 8,
+      "solid": false
+    },
+    {
+      "name": "W_Exit_Tunnel",
+      "model_id": 1979958484928,
+      "geometry_id": 1979698456688,
+      "path": "GRP_Water_Restored/W_Exit_Tunnel",
+      "min": [
+        -80.0,
+        -12.0,
+        -50.0
+      ],
+      "max": [
+        -78.0,
+        -11.85,
+        -47.0
+      ],
+      "vertices": 8,
+      "solid": false
+    },
+    {
+      "name": "W_R_WheelFeed",
+      "model_id": 1979958471008,
+      "geometry_id": 1979698449968,
+      "path": "GRP_Water_Restored/W_R_WheelFeed",
+      "min": [
+        -87.5,
+        -17.85,
+        -14.0
+      ],
+      "max": [
+        -84.5,
+        -12.3,
+        -13.700000000000001
+      ],
+      "vertices": 8,
+      "solid": false
+    },
+    {
+      "name": "W_R_WheelPool",
+      "model_id": 1979958477968,
+      "geometry_id": 1979698451312,
+      "path": "GRP_Water_Restored/W_R_WheelPool",
+      "min": [
+        -90.0,
+        -17.924999999999997,
+        -14.0
+      ],
+      "max": [
+        -80.0,
+        -17.775,
+        2.5
+      ],
+      "vertices": 8,
+      "solid": false
+    },
+    {
+      "name": "W_R_IslandFall",
+      "model_id": 1979958480288,
+      "geometry_id": 1979698443696,
+      "path": "GRP_Water_Restored/W_R_IslandFall",
+      "min": [
+        -89.0,
+        -28.5,
+        2.5
+      ],
+      "max": [
+        -84.0,
+        -17.775000000000002,
+        2.8000000000000003
+      ],
+      "vertices": 8,
+      "solid": false
+    },
+    {
+      "name": "W_R_IslandFall_Foam",
+      "model_id": 1979958487248,
+      "geometry_id": 1979698445936,
+      "path": "GRP_Water_Restored/W_R_IslandFall_Foam",
+      "min": [
+        -87.94041015625,
+        -28.79627685546875,
+        2.489396514892578
+      ],
+      "max": [
+        -83.691123046875,
+        -28.0043017578125,
+        4.018259887695312
+      ],
+      "vertices": 120,
+      "solid": false
+    },
+    {
+      "name": "W_Gorge",
+      "model_id": 1979958473328,
+      "geometry_id": 1979698455344,
+      "path": "GRP_Water_Restored/W_Gorge",
+      "min": [
+        -87.5,
+        -17.994319657166734,
+        -50.008219715216036
+      ],
+      "max": [
+        -84.5,
+        -11.895680342833266,
+        -13.991780284783967
+      ],
+      "vertices": 8,
+      "solid": false
+    },
+    {
+      "name": "PH_B_MovingStone",
+      "model_id": 1979958475648,
+      "geometry_id": 1979698448176,
+      "path": "GRP_Interactive/PH_B_MovingStone",
+      "min": [
+        -25.0,
+        5.25,
+        -47.5
+      ],
+      "max": [
+        -22.0,
+        6.0,
+        -44.5
+      ],
+      "vertices": 24,
+      "solid": true
+    },
+    {
+      "name": "PH_B_MidLedge",
+      "model_id": 1979958491888,
+      "geometry_id": 1979698449072,
+      "path": "GRP_Interactive/PH_B_MidLedge",
+      "min": [
+        -30.0,
+        6.0,
+        -53.0
+      ],
+      "max": [
+        -28.0,
+        7.5,
+        -50.0
+      ],
+      "vertices": 24,
+      "solid": true
+    },
+    {
+      "name": "PH_A_Tut_WitheredPad",
+      "model_id": 1979958494208,
+      "geometry_id": 1979698457136,
+      "path": "GRP_Interactive/PH_A_Tut_WitheredPad",
+      "min": [
+        -42.580857009887694,
+        -1.908195823574488e-18,
+        -13.589294891357422
+      ],
+      "max": [
+        -40.419142990112306,
+        0.8672077178955079,
+        -11.410705108642578
+      ],
+      "vertices": 65,
+      "solid": true
+    },
+    {
+      "name": "PH_A_Tut_MovingPad",
+      "model_id": 1979947917440,
+      "geometry_id": 1979698448624,
+      "path": "GRP_Interactive/PH_A_Tut_MovingPad",
+      "min": [
+        -49.97704132080078,
+        0.75,
+        -13.47704116821289
+      ],
+      "max": [
+        -48.02295883178711,
+        1.05,
+        -11.522958755493164
+      ],
+      "vertices": 48,
+      "solid": true
+    },
+    {
+      "name": "PH_A_Root01_Withered",
+      "model_id": 1979947924400,
+      "geometry_id": 1979698458480,
+      "path": "GRP_Interactive/PH_A_Root01/PH_A_Root01_Withered",
+      "min": [
+        -40.28386734008789,
+        -0.054646987915039066,
+        -29.525154800415038
+      ],
+      "max": [
+        -38.56181121826172,
+        0.6142704391479492,
+        -27.55405975341797
+      ],
+      "vertices": 110,
+      "solid": false
+    },
+    {
+      "name": "PH_A_Root01_Grown",
+      "model_id": 1979947933680,
+      "geometry_id": 1979698446832,
+      "path": "GRP_Interactive/PH_A_Root01/PH_A_Root01_Grown",
+      "min": [
+        -39.30018573242187,
+        -0.0002,
+        -28.501771674804687
+      ],
+      "max": [
+        -39.29488993408203,
+        0.006167317504882812,
+        -28.49822899169922
+      ],
+      "vertices": 380,
+      "solid": false
+    },
+    {
+      "name": "PH_A_Leaf01",
+      "model_id": 1979947922080,
+      "geometry_id": 1979698444592,
+      "path": "GRP_Interactive/PH_A_Leaf01",
+      "min": [
+        -51.06177902326634,
+        0.0,
+        -21.889450206326437
+      ],
+      "max": [
+        -48.93822100282773,
+        0.20101930618286135,
+        -18.13089708350889
+      ],
+      "vertices": 38,
+      "solid": true
+    },
+    {
+      "name": "PH_A_Leaf02",
+      "model_id": 1979947936000,
+      "geometry_id": 1979698444144,
+      "path": "GRP_Interactive/PH_A_Leaf02",
+      "min": [
+        -60.20590898606624,
+        0.0,
+        -28.749156730180687
+      ],
+      "max": [
+        -57.85853164058991,
+        0.20101930618286135,
+        -25.22032142424822
+      ],
+      "vertices": 38,
+      "solid": true
+    },
+    {
+      "name": "PH_B_RootBridge_Withered",
+      "model_id": 1979947938320,
+      "geometry_id": 1979698452656,
+      "path": "GRP_Interactive/PH_B_RootBridge/PH_B_RootBridge_Withered",
+      "min": [
+        -8.37015380859375,
+        5.550360107421875,
+        -48.7852392578125
+      ],
+      "max": [
+        -7.523655395507813,
+        6.1073242187500005,
+        -43.162255859375
+      ],
+      "vertices": 90,
+      "solid": false
+    },
+    {
+      "name": "PH_B_RootBridge_Grown",
+      "model_id": 1979947940640,
+      "geometry_id": 1979698449520,
+      "path": "GRP_Interactive/PH_B_RootBridge/PH_B_RootBridge_Grown",
+      "min": [
+        -8.00092,
+        5.69733340177536,
+        -43.6048
+      ],
+      "max": [
+        -7.99908,
+        5.69792531879425,
+        -43.6
+      ],
+      "vertices": 90,
+      "solid": false
+    },
+    {
+      "name": "PH_B_Windmill_Pole",
+      "model_id": 1979947926720,
+      "geometry_id": 1979698445040,
+      "path": "GRP_Interactive/PH_B_Windmill_Pole",
+      "min": [
+        -26.565685424804688,
+        6.0,
+        -50.565685501098635
+      ],
+      "max": [
+        -25.43431453704834,
+        13.1,
+        -49.434314537048344
+      ],
+      "vertices": 31,
+      "solid": true
+    },
+    {
+      "name": "PH_B_Windmill_Rotor",
+      "model_id": 1979947952240,
+      "geometry_id": 1979698447280,
+      "path": "GRP_Interactive/PH_B_Windmill_Rotor",
+      "min": [
+        -28.6,
+        9.3,
+        -49.51355213165283
+      ],
+      "max": [
+        -23.400000000000002,
+        14.5,
+        -48.98644786834717
+      ],
+      "vertices": 80,
+      "solid": false
+    },
+    {
+      "name": "PH_C_LeafPlatform",
+      "model_id": 1979947945280,
+      "geometry_id": 1979698454448,
+      "path": "GRP_Interactive/PH_C_LeafPlatform",
+      "min": [
+        -65.28025007891587,
+        6.0,
+        -44.560880347955425
+      ],
+      "max": [
+        -62.71974975063143,
+        6.23227596282959,
+        -39.52774384161258
+      ],
+      "vertices": 38,
+      "solid": true
+    },
+    {
+      "name": "PH_G_StoneDoor",
+      "model_id": 1979947942960,
+      "geometry_id": 1979698452208,
+      "path": "GRP_Interactive/PH_G_StoneDoor",
+      "min": [
+        -31.45,
+        15.0,
+        -62.2
+      ],
+      "max": [
+        -28.05,
+        22.5,
+        -61.65
+      ],
+      "vertices": 56,
+      "solid": true
+    },
+    {
+      "name": "PH_G_SmallWheel",
+      "model_id": 1979947961520,
+      "geometry_id": 1979698460272,
+      "path": "GRP_Interactive/PH_G_SmallWheel",
+      "min": [
+        -36.045,
+        15.169029541015624,
+        -61.625
+      ],
+      "max": [
+        -32.955,
+        18.130970458984372,
+        -60.775
+      ],
+      "vertices": 284,
+      "solid": false
+    },
+    {
+      "name": "PH_G_DoorRoot_Withered",
+      "model_id": 1979947947600,
+      "geometry_id": 1979698459824,
+      "path": "GRP_Interactive/PH_G_DoorRoot/PH_G_DoorRoot_Withered",
+      "min": [
+        -30.967293853759767,
+        14.976896514892578,
+        -61.53973526000977
+      ],
+      "max": [
+        -30.012746620178223,
+        15.590142936706544,
+        -60.6503793334961
+      ],
+      "vertices": 90,
+      "solid": false
+    },
+    {
+      "name": "PH_G_DoorRoot_Grown",
+      "model_id": 1979947963840,
+      "geometry_id": 1979698455792,
+      "path": "GRP_Interactive/PH_G_DoorRoot/PH_G_DoorRoot_Grown",
+      "min": [
+        -30.600459782714843,
+        14.999988973388673,
+        -61.200493125
+      ],
+      "max": [
+        -30.599554509277347,
+        15.003365700683593,
+        -61.199505366210936
+      ],
+      "vertices": 138,
+      "solid": false
+    },
+    {
+      "name": "PH_G_Latch",
+      "model_id": 1979947949920,
+      "geometry_id": 1979698458032,
+      "path": "GRP_Interactive/PH_G_Latch",
+      "min": [
+        -30.0,
+        22.3,
+        -61.78
+      ],
+      "max": [
+        -29.5,
+        22.900000000000002,
+        -61.15
+      ],
+      "vertices": 28,
+      "solid": false
+    },
+    {
+      "name": "PH_G_ChannelBranch",
+      "model_id": 1979947968480,
+      "geometry_id": 1979698456240,
+      "path": "GRP_Interactive/PH_G_ChannelBranch",
+      "min": [
+        -46.325,
+        15.05,
+        -61.675000000000004
+      ],
+      "max": [
+        -43.675000000000004,
+        15.950000000000001,
+        -61.325
+      ],
+      "vertices": 24,
+      "solid": false
+    },
+    {
+      "name": "PH_D2_BranchGate",
+      "model_id": 1979947970800,
+      "geometry_id": 1979698459376,
+      "path": "GRP_Interactive/PH_D2_BranchGate",
+      "min": [
+        -56.800000000000004,
+        -11.15,
+        -52.79999992370605
+      ],
+      "max": [
+        -55.20000007629395,
+        -9.700000000000001,
+        -50.61966995239258
+      ],
+      "vertices": 44,
+      "solid": false
+    },
+    {
+      "name": "PH_D2_Leaf",
+      "model_id": 1979947975440,
+      "geometry_id": 1979698445488,
+      "path": "GRP_Interactive/PH_D2_Leaf",
+      "min": [
+        -53.31801824258075,
+        -11.9,
+        -51.555016825862936
+      ],
+      "max": [
+        -50.55703382236866,
+        -11.69898069381714,
+        -48.3638203415998
+      ],
+      "vertices": 38,
+      "solid": true
+    },
+    {
+      "name": "PH_D3_VinePath_Withered",
+      "model_id": 1979947980080,
+      "geometry_id": 1979698462064,
+      "path": "GRP_Interactive/PH_D3_VinePath/PH_D3_VinePath_Withered",
+      "min": [
+        -40.44149658203125,
+        -3.174785461425781,
+        -38.60710693359375
+      ],
+      "max": [
+        -39.45005615234375,
+        -2.67333740234375,
+        -37.614338378906254
+      ],
+      "vertices": 45,
+      "solid": false
+    },
+    {
+      "name": "PH_D3_VinePath_Grown",
+      "model_id": 1979947966160,
+      "geometry_id": 1979698464752,
+      "path": "GRP_Interactive/PH_D3_VinePath/PH_D3_VinePath_Grown",
+      "min": [
+        -40.001129999999996,
+        -3.0045,
+        -38.00614706338882
+      ],
+      "max": [
+        -39.998889098281865,
+        -2.9997582647705077,
+        -37.999998698566436
+      ],
+      "vertices": 123,
+      "solid": false
+    },
+    {
+      "name": "PH_D5_MovingChannel",
+      "model_id": 1979947987040,
+      "geometry_id": 1979698465648,
+      "path": "GRP_Interactive/PH_D5_MovingChannel",
+      "min": [
+        -55.15342585753789,
+        -7.150450931367158,
+        -69.63061152925042
+      ],
+      "max": [
+        -45.91974406674947,
+        -4.822430376056835,
+        -65.3693884707496
+      ],
+      "vertices": 72,
+      "solid": true
+    },
+    {
+      "name": "PH_D5_BypassDoor",
+      "model_id": 1979947996320,
+      "geometry_id": 1979698466544,
+      "path": "GRP_Interactive/PH_D5_BypassDoor",
+      "min": [
+        -77.0,
+        -9.0,
+        -63.925000000000004
+      ],
+      "max": [
+        -74.0,
+        -4.5,
+        -63.550000000000004
+      ],
+      "vertices": 80,
+      "solid": true
+    },
+    {
+      "name": "PH_D5_BypassRoot_Withered",
+      "model_id": 1979947991680,
+      "geometry_id": 1979698462960,
+      "path": "GRP_Interactive/PH_D5_BypassRoot/PH_D5_BypassRoot_Withered",
+      "min": [
+        -75.49338989257812,
+        -9.022541103363038,
+        -64.97084396362304
+      ],
+      "max": [
+        -74.3845414352417,
+        -8.432780990600586,
+        -64.05185871124267
+      ],
+      "vertices": 90,
+      "solid": false
+    },
+    {
+      "name": "PH_D5_BypassRoot_Grown",
+      "model_id": 1979947982400,
+      "geometry_id": 1979698466096,
+      "path": "GRP_Interactive/PH_D5_BypassRoot/PH_D5_BypassRoot_Grown",
+      "min": [
+        -75.00080475585938,
+        -9.000018851318359,
+        -64.600493125
+      ],
+      "max": [
+        -74.9995039453125,
+        -8.996160223388673,
+        -64.59950536621092
+      ],
+      "vertices": 138,
+      "solid": false
+    },
+    {
+      "name": "PH_D4_SmallWheel",
+      "model_id": 1979947994000,
+      "geometry_id": 1979698465200,
+      "path": "GRP_Interactive/PH_D4_SmallWheel",
+      "min": [
+        -75.545,
+        -11.830970458984375,
+        -53.26
+      ],
+      "max": [
+        -72.455,
+        -8.869029541015625,
+        -52.24
+      ],
+      "vertices": 284,
+      "solid": false
+    },
+    {
+      "name": "PH_D4_Gate",
+      "model_id": 1979947984720,
+      "geometry_id": 1979698467440,
+      "path": "GRP_Interactive/PH_D4_Gate",
+      "min": [
+        -78.45,
+        -12.0,
+        -50.0
+      ],
+      "max": [
+        -78.075,
+        -6.0,
+        -46.0
+      ],
+      "vertices": 80,
+      "solid": true
+    },
+    {
+      "name": "PH_D4_Winch",
+      "model_id": 1979948005600,
+      "geometry_id": 1979698468336,
+      "path": "GRP_Interactive/PH_D4_Winch",
+      "min": [
+        -78.22500000000001,
+        -12.0,
+        -53.2
+      ],
+      "max": [
+        -74.0,
+        -4.5,
+        -47.75
+      ],
+      "vertices": 80,
+      "solid": true
+    },
+    {
+      "name": "PH_D4_Latch",
+      "model_id": 1979948007920,
+      "geometry_id": 1979698470128,
+      "path": "GRP_Interactive/PH_D4_Latch",
+      "min": [
+        -77.95,
+        -6.1000000000000005,
+        -48.18
+      ],
+      "max": [
+        -77.45,
+        -5.5,
+        -47.550000000000004
+      ],
+      "vertices": 28,
+      "solid": false
+    },
+    {
+      "name": "PH_D4_GateRoot_Withered",
+      "model_id": 1979948012560,
+      "geometry_id": 1979698471472,
+      "path": "GRP_Interactive/PH_D4_GateRoot/PH_D4_GateRoot_Withered",
+      "min": [
+        -77.42018001556397,
+        -12.026243286132813,
+        -48.42956928253174
+      ],
+      "max": [
+        -76.54001747131348,
+        -11.545894737243653,
+        -47.54052230834961
+      ],
+      "vertices": 90,
+      "solid": false
+    },
+    {
+      "name": "PH_D4_GateRoot_Grown",
+      "model_id": 1979948014880,
+      "geometry_id": 1979698471920,
+      "path": "GRP_Interactive/PH_D4_GateRoot/PH_D4_GateRoot_Grown",
+      "min": [
+        -77.00052432617187,
+        -12.0000291796875,
+        -48.000493125000006
+      ],
+      "max": [
+        -76.99919211425781,
+        -11.995164903564453,
+        -47.99950536621093
+      ],
+      "vertices": 138,
+      "solid": false
+    },
+    {
+      "name": "PH_W_Waterwheel",
+      "model_id": 1979948000960,
+      "geometry_id": 1979698472368,
+      "path": "GRP_Interactive/PH_W_Waterwheel",
+      "min": [
+        -87.275,
+        -17.92,
+        -11.120000000000001
+      ],
+      "max": [
+        -84.72500000000001,
+        -9.68,
+        -2.88
+      ],
+      "vertices": 332,
+      "solid": false
+    },
+    {
+      "name": "VOL_A_Wind",
+      "model_id": 1979948019520,
+      "geometry_id": 1979698472816,
+      "path": "GRP_Volumes/VOL_A_Wind",
+      "min": [
+        -62.0,
+        0.0,
+        -32.0
+      ],
+      "max": [
+        -56.0,
+        9.0,
+        -22.0
+      ],
+      "vertices": 8,
+      "solid": false
+    },
+    {
+      "name": "VOL_A_WaterFlow",
+      "model_id": 1979948031120,
+      "geometry_id": 1979698471024,
+      "path": "GRP_Volumes/VOL_A_WaterFlow",
+      "min": [
+        -56.0,
+        -1.5,
+        -26.0
+      ],
+      "max": [
+        -45.0,
+        0.75,
+        -16.0
+      ],
+      "vertices": 8,
+      "solid": false
+    },
+    {
+      "name": "VOL_C_Wind",
+      "model_id": 1979948028800,
+      "geometry_id": 1980794799072,
+      "path": "GRP_Volumes/VOL_C_Wind",
+      "min": [
+        -78.0,
+        6.0,
+        -54.0
+      ],
+      "max": [
+        -58.0,
+        13.5,
+        -38.0
+      ],
+      "vertices": 8,
+      "solid": false
+    },
+    {
+      "name": "VOL_D5_Wind",
+      "model_id": 1979948035760,
+      "geometry_id": 1980794799520,
+      "path": "GRP_Volumes/VOL_D5_Wind",
+      "min": [
+        -44.0,
+        -7.5,
+        -71.0
+      ],
+      "max": [
+        -33.0,
+        0.0,
+        -64.0
+      ],
+      "vertices": 8,
+      "solid": false
+    },
+    {
+      "name": "TEMP_Bridge_MoundB",
+      "model_id": 1979948026480,
+      "geometry_id": 1980794802208,
+      "path": "GRP_Connector_TEMP/TEMP_Bridge_MoundB",
+      "min": [
+        -41.410942475805214,
+        -0.75,
+        -39.99349629056438
+      ],
+      "max": [
+        -27.156534726763656,
+        6.7,
+        -28.259610082930422
+      ],
+      "vertices": 144,
+      "solid": true
+    },
+    {
+      "name": "TEMP_Bridge_MoundC",
+      "model_id": 1979948024160,
+      "geometry_id": 1980794807584,
+      "path": "GRP_Connector_TEMP/TEMP_Bridge_MoundC",
+      "min": [
+        -59.191536825330395,
+        -0.75,
+        -38.91117526056376
+      ],
+      "max": [
+        -50.308463174669605,
+        6.7,
+        -28.51593072652775
+      ],
+      "vertices": 128,
+      "solid": true
+    },
+    {
+      "name": "PROP_D3_MooringPost0",
+      "model_id": 1979948052000,
+      "geometry_id": 1980794807136,
+      "path": "GRP_Props/PROP_D3_MooringPost0",
+      "min": [
+        -44.95,
+        -12.4,
+        -50.329903821945194
+      ],
+      "max": [
+        -44.65,
+        -11.1,
+        -50.07009618759155
+      ],
+      "vertices": 12,
+      "solid": true
+    },
+    {
+      "name": "PROP_D3_MooringPost1",
+      "model_id": 1979948054320,
+      "geometry_id": 1980794799968,
+      "path": "GRP_Props/PROP_D3_MooringPost1",
+      "min": [
+        -44.95,
+        -12.4,
+        -52.12990382194519
+      ],
+      "max": [
+        -44.65,
+        -11.1,
+        -51.87009618759156
+      ],
+      "vertices": 12,
+      "solid": true
+    },
+    {
+      "name": "PROP_D3_MooringPost2",
+      "model_id": 1979948040400,
+      "geometry_id": 1980794809824,
+      "path": "GRP_Props/PROP_D3_MooringPost2",
+      "min": [
+        -44.95,
+        -12.4,
+        -53.92990382194519
+      ],
+      "max": [
+        -44.65,
+        -11.1,
+        -53.670096187591554
+      ],
+      "vertices": 12,
+      "solid": true
+    },
+    {
+      "name": "PROP_W_WheelSupport",
+      "model_id": 1979948056640,
+      "geometry_id": 1980794808032,
+      "path": "GRP_Props/PROP_W_WheelSupport",
+      "min": [
+        -87.38,
+        -18.055987548828124,
+        -8.611071777343751
+      ],
+      "max": [
+        -84.62,
+        -13.544013671875,
+        -5.38892822265625
+      ],
+      "vertices": 32,
+      "solid": true
+    },
+    {
+      "name": "UG_CaveRock00",
+      "model_id": 1979948058960,
+      "geometry_id": 1980794814304,
+      "path": "GRP_Props/UG_CaveRock00",
+      "min": [
+        -38.07114123220948,
+        -12.261707611083985,
+        -69.40819412652944
+      ],
+      "max": [
+        -33.12102720730715,
+        -9.303291625976563,
+        -64.50233191882175
+      ],
+      "vertices": 30,
+      "solid": true
+    },
+    {
+      "name": "UG_CaveRock01",
+      "model_id": 1979948045040,
+      "geometry_id": 1980794810272,
+      "path": "GRP_Props/UG_CaveRock01",
+      "min": [
+        -35.69702860557512,
+        -12.15288200378418,
+        -71.6774847661046
+      ],
+      "max": [
+        -32.65602952832163,
+        -10.050791015625,
+        -68.34768153288121
+      ],
+      "vertices": 30,
+      "solid": true
+    },
+    {
+      "name": "UG_CaveRock02",
+      "model_id": 1979948049680,
+      "geometry_id": 1980794801760,
+      "path": "GRP_Props/UG_CaveRock02",
+      "min": [
+        -70.17825811291304,
+        -12.36300521850586,
+        -40.34707288249148
+      ],
+      "max": [
+        -66.5535066939279,
+        -9.826578369140625,
+        -36.60614955161036
+      ],
+      "vertices": 30,
+      "solid": true
+    },
+    {
+      "name": "UG_CaveRock03",
+      "model_id": 1979948061280,
+      "geometry_id": 1980794808480,
+      "path": "GRP_Props/UG_CaveRock03",
+      "min": [
+        -77.79521477333073,
+        -12.351468887329101,
+        -38.89644003179272
+      ],
+      "max": [
+        -74.26740967267783,
+        -10.124901733398438,
+        -35.628470445576845
+      ],
+      "vertices": 30,
+      "solid": true
+    },
+    {
+      "name": "UG_CaveRock04",
+      "model_id": 1979948047360,
+      "geometry_id": 1980794804448,
+      "path": "GRP_Props/UG_CaveRock04",
+      "min": [
+        -77.74041032436396,
+        -12.324012222290039,
+        -45.52614739785281
+      ],
+      "max": [
+        -75.25340961002713,
+        -10.375841369628906,
+        -42.52880646998898
+      ],
+      "vertices": 30,
+      "solid": true
+    },
+    {
+      "name": "UG_CaveRock05",
+      "model_id": 1979948063600,
+      "geometry_id": 1980794806688,
+      "path": "GRP_Props/UG_CaveRock05",
+      "min": [
+        -53.38180547734668,
+        -12.164205856323242,
+        -62.57514912381201
+      ],
+      "max": [
+        -51.41963617293751,
+        -10.78812026977539,
+        -60.48906564445187
+      ],
+      "vertices": 30,
+      "solid": true
+    },
+    {
+      "name": "UG_CaveRock06",
+      "model_id": 1979948077520,
+      "geometry_id": 1980794811168,
+      "path": "GRP_Props/UG_CaveRock06",
+      "min": [
+        -62.69303312638928,
+        -12.101292800903321,
+        -62.905377841073935
+      ],
+      "max": [
+        -60.280787091586284,
+        -10.553573913574219,
+        -60.68535716996743
+      ],
+      "vertices": 30,
+      "solid": true
+    },
+    {
+      "name": "UG_CaveRock07",
+      "model_id": 1979948079840,
+      "geometry_id": 1980794798624,
+      "path": "GRP_Props/UG_CaveRock07",
+      "min": [
+        -67.74307670420065,
+        -12.14346908569336,
+        -63.55869791455876
+      ],
+      "max": [
+        -65.1396269791139,
+        -10.472828216552735,
+        -60.84457470705517
+      ],
+      "vertices": 30,
+      "solid": true
+    },
+    {
+      "name": "UG_CaveRock08",
+      "model_id": 1979948070560,
+      "geometry_id": 1980794803552,
+      "path": "GRP_Props/UG_CaveRock08",
+      "min": [
+        -44.97102063979128,
+        -12.167895050048829,
+        -44.29153477868889
+      ],
+      "max": [
+        -43.31532171194892,
+        -10.919262847900391,
+        -42.42180953892785
+      ],
+      "vertices": 30,
+      "solid": true
+    },
+    {
+      "name": "UG_HangingRoot00",
+      "model_id": 1979948068240,
+      "geometry_id": 1980794808928,
+      "path": "GRP_Props/UG_HangingRoot00",
+      "min": [
+        -34.166519241333006,
+        -0.8862167358398437,
+        -40.17948966979981
+      ],
+      "max": [
+        -33.728852157592776,
+        1.5,
+        -39.846828365325926
+      ],
+      "vertices": 20,
+      "solid": false
+    },
+    {
+      "name": "UG_HangingRoot01",
+      "model_id": 1979948075200,
+      "geometry_id": 1980794800416,
+      "path": "GRP_Props/UG_HangingRoot01",
+      "min": [
+        -36.17578678131104,
+        -0.5481343078613281,
+        -58.18901020050049
+      ],
+      "max": [
+        -35.60785343170166,
+        1.5,
+        -57.84478109359741
+      ],
+      "vertices": 20,
+      "solid": false
+    },
+    {
+      "name": "UG_HangingRoot02",
+      "model_id": 1979948084480,
+      "geometry_id": 1980794810720,
+      "path": "GRP_Props/UG_HangingRoot02",
+      "min": [
+        -44.177529125213624,
+        -0.8125338745117188,
+        -69.65965559005737
+      ],
+      "max": [
+        -43.642239074707035,
+        1.5,
+        -69.3053742980957
+      ],
+      "vertices": 20,
+      "solid": false
+    },
+    {
+      "name": "UG_HangingRoot03",
+      "model_id": 1979948072880,
+      "geometry_id": 1980794806240,
+      "path": "GRP_Props/UG_HangingRoot03",
+      "min": [
+        -60.17707319259644,
+        -1.8364154052734376,
+        -70.45841676712037
+      ],
+      "max": [
+        -59.83774295806885,
+        1.5,
+        -70.12160354614258
+      ],
+      "vertices": 20,
+      "solid": false
+    },
+    {
+      "name": "UG_HangingRoot04",
+      "model_id": 1979948096080,
+      "geometry_id": 1980794812512,
+      "path": "GRP_Props/UG_HangingRoot04",
+      "min": [
+        -72.17965629577637,
+        -0.01874542236328125,
+        -70.09313901901245
+      ],
+      "max": [
+        -71.84811962127685,
+        1.5,
+        -69.63257259368896
+      ],
+      "vertices": 20,
+      "solid": false
+    },
+    {
+      "name": "UG_HangingRoot05",
+      "model_id": 1979948098400,
+      "geometry_id": 1980794800864,
+      "path": "GRP_Props/UG_HangingRoot05",
+      "min": [
+        -77.45561418533326,
+        -0.8469645690917968,
+        -56.17595363616943
+      ],
+      "max": [
+        -77.12093044281006,
+        1.5,
+        -55.81057939529419
+      ],
+      "vertices": 20,
+      "solid": false
+    },
+    {
+      "name": "UG_HangingRoot06",
+      "model_id": 1979948100720,
+      "geometry_id": 1980794803104,
+      "path": "GRP_Props/UG_HangingRoot06",
+      "min": [
+        -77.35194497108459,
+        -1.7202764892578126,
+        -42.167383155822755
+      ],
+      "max": [
+        -77.02035120010376,
+        1.5,
+        -41.82567085266113
+      ],
+      "vertices": 20,
+      "solid": false
+    },
+    {
+      "name": "UG_HangingRoot07",
+      "model_id": 1979948116960,
+      "geometry_id": 1980794813408,
+      "path": "GRP_Props/UG_HangingRoot07",
+      "min": [
+        -66.17864456176758,
+        -1.7194781494140625,
+        -36.96308780670166
+      ],
+      "max": [
+        -65.84251389503478,
+        1.5,
+        -36.52018711090088
+      ],
+      "vertices": 20,
+      "solid": false
+    },
+    {
+      "name": "UG_HangingRoot08",
+      "model_id": 1979948105360,
+      "geometry_id": 1980794811616,
+      "path": "GRP_Props/UG_HangingRoot08",
+      "min": [
+        -52.17918617248535,
+        -1.959837646484375,
+        -36.775699577331544
+      ],
+      "max": [
+        -51.844985733032225,
+        1.5,
+        -36.434867248535156
+      ],
+      "vertices": 20,
+      "solid": false
+    },
+    {
+      "name": "UG_HangingRoot09",
+      "model_id": 1979948107680,
+      "geometry_id": 1980794809376,
+      "path": "GRP_Props/UG_HangingRoot09",
+      "min": [
+        -39.1477245426178,
+        -0.9761007690429687,
+        -44.6722758102417
+      ],
+      "max": [
+        -38.82003650665283,
+        1.5,
+        -44.329964866638186
+      ],
+      "vertices": 20,
+      "solid": false
+    },
+    {
+      "name": "UG_HangingRoot10",
+      "model_id": 1979948110000,
+      "geometry_id": 1980794812064,
+      "path": "GRP_Props/UG_HangingRoot10",
+      "min": [
+        -63.179759445190435,
+        -0.5815219116210938,
+        -55.17383621215821
+      ],
+      "max": [
+        -62.84910329818726,
+        1.5,
+        -54.83191345214844
+      ],
+      "vertices": 20,
+      "solid": false
+    },
+    {
+      "name": "UG_HangingRoot11",
+      "model_id": 1979948112320,
+      "geometry_id": 1980794804000,
+      "path": "GRP_Props/UG_HangingRoot11",
+      "min": [
+        -49.17038990020752,
+        -2.1178338623046877,
+        -57.1799821472168
+      ],
+      "max": [
+        -48.82804347991944,
+        1.5,
+        -56.852901430130004
+      ],
+      "vertices": 20,
+      "solid": false
+    },
+    {
+      "name": "UG_Torch00",
+      "model_id": 1979948114640,
+      "geometry_id": 1980794804896,
+      "path": "GRP_Props/UG_Torch00",
+      "min": [
+        -34.75,
+        -7.5,
+        -45.21650638580322
+      ],
+      "max": [
+        -34.25,
+        -5.3500000000000005,
+        -44.78349363327026
+      ],
+      "vertices": 28,
+      "solid": false
+    },
+    {
+      "name": "UG_Torch01",
+      "model_id": 1979948133200,
+      "geometry_id": 1980794812960,
+      "path": "GRP_Props/UG_Torch01",
+      "min": [
+        -44.75,
+        -3.0,
+        -37.21650638580322
+      ],
+      "max": [
+        -44.25,
+        -0.85,
+        -36.78349363327026
+      ],
+      "vertices": 28,
+      "solid": false
+    },
+    {
+      "name": "UG_Torch02",
+      "model_id": 1979948144800,
+      "geometry_id": 1980794813856,
+      "path": "GRP_Props/UG_Torch02",
+      "min": [
+        -64.75,
+        -3.0,
+        -37.21650638580322
+      ],
+      "max": [
+        -64.25,
+        -0.85,
+        -36.78349363327026
+      ],
+      "vertices": 28,
+      "solid": false
+    },
+    {
+      "name": "UG_Torch03",
+      "model_id": 1979948140160,
+      "geometry_id": 1980794805344,
+      "path": "GRP_Props/UG_Torch03",
+      "min": [
+        -76.75,
+        -12.0,
+        -59.21650638580322
+      ],
+      "max": [
+        -76.25,
+        -9.85,
+        -58.78349363327027
+      ],
+      "vertices": 28,
+      "solid": false
+    },
+    {
+      "name": "UG_Torch04",
+      "model_id": 1979948135520,
+      "geometry_id": 1980794805792,
+      "path": "GRP_Props/UG_Torch04",
+      "min": [
+        -69.25,
+        -6.0,
+        -70.51650638580323
+      ],
+      "max": [
+        -68.75,
+        -3.85,
+        -70.08349363327027
+      ],
+      "vertices": 28,
+      "solid": false
+    },
+    {
+      "name": "UG_Torch05",
+      "model_id": 1979948130880,
+      "geometry_id": 1980794798176,
+      "path": "GRP_Props/UG_Torch05",
+      "min": [
+        -47.25,
+        -6.0,
+        -70.51650638580323
+      ],
+      "max": [
+        -46.75,
+        -3.85,
+        -70.08349363327027
+      ],
+      "vertices": 28,
+      "solid": false
+    },
+    {
+      "name": "PROP_C_ParasolLeaf01",
+      "model_id": 1979948147120,
+      "geometry_id": 1980794815200,
+      "path": "GRP_Props/PROP_C_ParasolLeaf01",
+      "min": [
+        -60.69908543471495,
+        6.00341747414924,
+        -40.69908543471495
+      ],
+      "max": [
+        -56.30091456528505,
+        10.00341747414924,
+        -36.30091456528505
+      ],
+      "vertices": 48,
+      "solid": false
+    },
+    {
+      "name": "PROP_C_ParasolLeaf02",
+      "model_id": 1979948149440,
+      "geometry_id": 1980794820576,
+      "path": "GRP_Props/PROP_C_ParasolLeaf02",
+      "min": [
+        -80.59883567271875,
+        6.005529367282774,
+        -41.59883567271875
+      ],
+      "max": [
+        -75.40116432728125,
+        11.005529367282774,
+        -36.40116432728125
+      ],
+      "vertices": 48,
+      "solid": false
+    },
+    {
+      "name": "PROP_C_ParasolLeaf03",
+      "model_id": 1979948151760,
+      "geometry_id": 1980794819232,
+      "path": "GRP_Props/PROP_C_ParasolLeaf03",
+      "min": [
+        -79.47533869564165,
+        6.013014681857992,
+        -48.97533869564166
+      ],
+      "max": [
+        -75.52466130435835,
+        9.513014681857992,
+        -45.02466130435834
+      ],
+      "vertices": 48,
+      "solid": false
+    },
+    {
+      "name": "PROP_G_ParasolLeaf",
+      "model_id": 1979948142480,
+      "geometry_id": 1980794816096,
+      "path": "GRP_Props/PROP_G_ParasolLeaf",
+      "min": [
+        -56.07634069751524,
+        15.0,
+        -74.07634069751525
+      ],
+      "max": [
+        -52.92365930248476,
+        18.0,
+        -70.92365930248477
+      ],
+      "vertices": 48,
+      "solid": false
+    },
+    {
+      "name": "PROP_G_RuinArch01",
+      "model_id": 1979948137840,
+      "geometry_id": 1980794825504,
+      "path": "GRP_Props/PROP_G_RuinArch01",
+      "min": [
+        -50.2,
+        15.0,
+        -73.75
+      ],
+      "max": [
+        -45.800000000000004,
+        19.95,
+        -72.65
+      ],
+      "vertices": 96,
+      "solid": true
+    },
+    {
+      "name": "PROP_G_RuinArch02",
+      "model_id": 1979948165680,
+      "geometry_id": 1980794820128,
+      "path": "GRP_Props/PROP_G_RuinArch02",
+      "min": [
+        -54.2,
+        15.0,
+        -73.75
+      ],
+      "max": [
+        -49.800000000000004,
+        19.95,
+        -72.65
+      ],
+      "vertices": 96,
+      "solid": true
+    },
+    {
+      "name": "PROP_DeadTree00",
+      "model_id": 1979948156400,
+      "geometry_id": 1980794817888,
+      "path": "GRP_Props/PROP_DeadTree00",
+      "min": [
+        -4.3150162117249975,
+        -0.3415067042642929,
+        -34.31896601693165
+      ],
+      "max": [
+        -3.4685242020359137,
+        5.915672861165395,
+        -32.61352910243184
+      ],
+      "vertices": 75,
+      "solid": false
+    },
+    {
+      "name": "PROP_DeadTree01",
+      "model_id": 1979948168000,
+      "geometry_id": 1980794818784,
+      "path": "GRP_Props/PROP_DeadTree01",
+      "min": [
+        -4.020798697494002,
+        -0.29122304718271685,
+        -47.80326634938456
+      ],
+      "max": [
+        -1.823570724284371,
+        5.036964819028221,
+        -44.40607279660955
+      ],
+      "vertices": 150,
+      "solid": false
+    },
+    {
+      "name": "PROP_DeadTree02",
+      "model_id": 1979948161040,
+      "geometry_id": 1980794821024,
+      "path": "GRP_Props/PROP_DeadTree02",
+      "min": [
+        -5.98735258253582,
+        -0.08504976510952782,
+        -61.934435134108334
+      ],
+      "max": [
+        -3.5054666812978037,
+        5.753978555202972,
+        -58.57131624909074
+      ],
+      "vertices": 135,
+      "solid": false
+    },
+    {
+      "name": "PROP_DeadTree03",
+      "model_id": 1979948172640,
+      "geometry_id": 1980794824608,
+      "path": "GRP_Props/PROP_DeadTree03",
+      "min": [
+        -13.716655936166864,
+        -0.459504209505045,
+        -70.80381193662254
+      ],
+      "max": [
+        -11.701398273306294,
+        6.1378895893230805,
+        -68.60854742488291
+      ],
+      "vertices": 75,
+      "solid": false
+    },
+    {
+      "name": "PROP_DeadTree04",
+      "model_id": 1979948158720,
+      "geometry_id": 1980794821472,
+      "path": "GRP_Props/PROP_DeadTree04",
+      "min": [
+        -21.519998693287867,
+        -0.3206870016615904,
+        -75.50759259079462
+      ],
+      "max": [
+        -18.1443241707113,
+        4.744473520799347,
+        -73.40220058030368
+      ],
+      "vertices": 150,
+      "solid": false
+    },
+    {
+      "name": "PROP_DeadTree05",
+      "model_id": 1979948163360,
+      "geometry_id": 1980794822368,
+      "path": "GRP_Props/PROP_DeadTree05",
+      "min": [
+        -9.226296199266024,
+        -0.867591349997483,
+        -21.47579078080327
+      ],
+      "max": [
+        -6.463721533068845,
+        4.935880329690017,
+        -18.551507362733254
+      ],
+      "vertices": 135,
+      "solid": false
+    },
+    {
+      "name": "PROP_DeadTree06",
+      "model_id": 1979948179600,
+      "geometry_id": 1980794825952,
+      "path": "GRP_Props/PROP_DeadTree06",
+      "min": [
+        -19.267466674061072,
+        -1.108679512502508,
+        -15.526437342378083
+      ],
+      "max": [
+        -17.6921025808444,
+        5.3620797648412415,
+        -12.779421079975018
+      ],
+      "vertices": 90,
+      "solid": false
+    },
+    {
+      "name": "PROP_DeadTree07",
+      "model_id": 1979948170320,
+      "geometry_id": 1980794825056,
+      "path": "GRP_Props/PROP_DeadTree07",
+      "min": [
+        -25.8520134920893,
+        -0.7974608780342611,
+        -25.00317450986986
+      ],
+      "max": [
+        -22.061795063123927,
+        5.730820982317302,
+        -22.680517301790655
+      ],
+      "vertices": 135,
+      "solid": false
+    },
+    {
+      "name": "PROP_DeadTree08",
+      "model_id": 1979948174960,
+      "geometry_id": 1980794831776,
+      "path": "GRP_Props/PROP_DeadTree08",
+      "min": [
+        -85.50593488958162,
+        -0.23669920605990374,
+        -61.09130504766204
+      ],
+      "max": [
+        -82.52810635818899,
+        4.730028088861971,
+        -58.799005133988125
+      ],
+      "vertices": 135,
+      "solid": false
+    },
+    {
+      "name": "PROP_DeadTree09",
+      "model_id": 1979906477456,
+      "geometry_id": 1980794829088,
+      "path": "GRP_Props/PROP_DeadTree09",
+      "min": [
+        -86.89314834820404,
+        -0.11494587809582163,
+        -71.4898009821745
+      ],
+      "max": [
+        -85.11245135235497,
+        5.047528487138553,
+        -69.69487663849435
+      ],
+      "vertices": 75,
+      "solid": false
+    },
+    {
+      "name": "PROP_DeadTree10",
+      "model_id": 1979906479776,
+      "geometry_id": 1980794829536,
+      "path": "GRP_Props/PROP_DeadTree10",
+      "min": [
+        -72.1623394368027,
+        3.08457038363522,
+        -76.90347400774458
+      ],
+      "max": [
+        -68.84912184811044,
+        7.943419870939907,
+        -74.20396371553424
+      ],
+      "vertices": 135,
+      "solid": false
+    },
+    {
+      "name": "PROP_DeadTree11",
+      "model_id": 1979906465856,
+      "geometry_id": 1980794829984,
+      "path": "GRP_Props/PROP_DeadTree11",
+      "min": [
+        -60.947420906177335,
+        3.076088491551668,
+        -78.2818717348107
+      ],
+      "max": [
+        -58.685427461463526,
+        9.390252920262606,
+        -75.24390813782897
+      ],
+      "vertices": 135,
+      "solid": false
+    },
+    {
+      "name": "PROP_DeadTree12",
+      "model_id": 1979906472816,
+      "geometry_id": 1980794830880,
+      "path": "GRP_Props/PROP_DeadTree12",
+      "min": [
+        -34.71426385193641,
+        2.7948925884123406,
+        -78.18032691694737
+      ],
+      "max": [
+        -31.994086454185787,
+        9.051080332552965,
+        -76.40968529999274
+      ],
+      "vertices": 75,
+      "solid": false
+    },
+    {
+      "name": "PROP_Rock00",
+      "model_id": 1979906468176,
+      "geometry_id": 1980794832672,
+      "path": "GRP_Props/PROP_Rock00",
+      "min": [
+        -31.78171282328352,
+        2.921924449534379,
+        -14.859074950895936
+      ],
+      "max": [
+        -30.16313401817942,
+        3.946258479685746,
+        -13.209410379209412
+      ],
+      "vertices": 30,
+      "solid": true
+    },
+    {
+      "name": "PROP_Rock01",
+      "model_id": 1979906470496,
+      "geometry_id": 1980794834464,
+      "path": "GRP_Props/PROP_Rock01",
+      "min": [
+        -31.6136762143364,
+        2.8145801620279296,
+        -24.669551242318857
+      ],
+      "max": [
+        -30.246273036859595,
+        3.8186716537271486,
+        -23.34402048590779
+      ],
+      "vertices": 30,
+      "solid": true
+    },
+    {
+      "name": "PROP_Rock02",
+      "model_id": 1979906482096,
+      "geometry_id": 1980794833120,
+      "path": "GRP_Props/PROP_Rock02",
+      "min": [
+        -61.99537989247359,
+        2.801432759915603,
+        -13.83902782710941
+      ],
+      "max": [
+        -60.1409863885325,
+        3.9593000389683373,
+        -12.193754314905972
+      ],
+      "vertices": 30,
+      "solid": true
+    },
+    {
+      "name": "PROP_Rock03",
+      "model_id": 1979906486736,
+      "geometry_id": 1980794826848,
+      "path": "GRP_Props/PROP_Rock03",
+      "min": [
+        -61.5596048966917,
+        2.897791165132408,
+        -18.70998840755211
+      ],
+      "max": [
+        -60.324451107315525,
+        3.676560696382408,
+        -17.34754714981588
+      ],
+      "vertices": 30,
+      "solid": true
+    },
+    {
+      "name": "PROP_Rock04",
+      "model_id": 1979906484416,
+      "geometry_id": 1980794827744,
+      "path": "GRP_Props/PROP_Rock04",
+      "min": [
+        -66.46939513301444,
+        -4.631642207756007,
+        -9.258286733693597
+      ],
+      "max": [
+        -63.83597062487619,
+        -2.7316461750411634,
+        -6.625238362672392
+      ],
+      "vertices": 30,
+      "solid": true
+    },
+    {
+      "name": "PROP_Rock05",
+      "model_id": 1979906489056,
+      "geometry_id": 1980794828192,
+      "path": "GRP_Props/PROP_Rock05",
+      "min": [
+        -67.26246598361939,
+        -4.939515812208272,
+        -23.15163620281359
+      ],
+      "max": [
+        -64.96262491092847,
+        -3.393181736280538,
+        -20.788155767058402
+      ],
+      "vertices": 30,
+      "solid": true
+    },
+    {
+      "name": "PROP_Rock06",
+      "model_id": 1979906475136,
+      "geometry_id": 1980794828640,
+      "path": "GRP_Props/PROP_Rock06",
+      "min": [
+        -75.49150472825211,
+        -10.833122452136589,
+        -7.254623791700681
+      ],
+      "max": [
+        -72.73953451990054,
+        -8.696908005115104,
+        -4.577312864796814
+      ],
+      "vertices": 30,
+      "solid": true
+    },
+    {
+      "name": "PROP_Rock07",
+      "model_id": 1979906500656,
+      "geometry_id": 1979890195952,
+      "path": "GRP_Props/PROP_Rock07",
+      "min": [
+        -77.01339486458248,
+        -10.69944194990062,
+        -25.092516154976025
+      ],
+      "max": [
+        -74.72194103587303,
+        -9.098780557688706,
+        -22.72162116451873
+      ],
+      "vertices": 30,
+      "solid": true
+    },
+    {
+      "name": "PROP_Rock08",
+      "model_id": 1979906502976,
+      "geometry_id": 1979890196400,
+      "path": "GRP_Props/PROP_Rock08",
+      "min": [
+        -89.77942836810047,
+        -9.423044158083615,
+        -30.733695049087473
+      ],
+      "max": [
+        -88.23327015128812,
+        -8.436015883547482,
+        -29.241729761385532
+      ],
+      "vertices": 30,
+      "solid": true
+    },
+    {
+      "name": "PROP_Rock09",
+      "model_id": 1979906505296,
+      "geometry_id": 1979890194608,
+      "path": "GRP_Props/PROP_Rock09",
+      "min": [
+        -3.054877297727427,
+        -0.9399267555072177,
+        -5.90306562319411
+      ],
+      "max": [
+        -1.0343634345342214,
+        0.4282682823345792,
+        -3.950942991590158
+      ],
+      "vertices": 30,
+      "solid": true
+    },
+    {
+      "name": "PROP_Rock10",
+      "model_id": 1979906491376,
+      "geometry_id": 1979890190128,
+      "path": "GRP_Props/PROP_Rock10",
+      "min": [
+        -28.809898777425055,
+        -1.1974715014585013,
+        -6.814404924571459
+      ],
+      "max": [
+        -27.21984256031411,
+        -0.19080562316260286,
+        -5.325273660585391
+      ],
+      "vertices": 30,
+      "solid": true
+    },
+    {
+      "name": "PROP_Rock11",
+      "model_id": 1979906507616,
+      "geometry_id": 1979890190576,
+      "path": "GRP_Props/PROP_Rock11",
+      "min": [
+        -59.015668293183964,
+        -1.0502718032985212,
+        -4.921730519398889
+      ],
+      "max": [
+        -57.00382196389072,
+        0.15760386808819746,
+        -2.935689642145435
+      ],
+      "vertices": 30,
+      "solid": true
+    },
+    {
+      "name": "PROP_Rock12",
+      "model_id": 1979906493696,
+      "geometry_id": 1979890199088,
+      "path": "GRP_Props/PROP_Rock12",
+      "min": [
+        -36.13806204193396,
+        -0.7730386232379229,
+        -3.668339824313231
+      ],
+      "max": [
+        -34.90291460733394,
+        0.10926976451842478,
+        -2.448573555697338
+      ],
+      "vertices": 30,
+      "solid": true
+    },
+    {
+      "name": "PROP_Rock13",
+      "model_id": 1979906509936,
+      "geometry_id": 1979890195504,
+      "path": "GRP_Props/PROP_Rock13",
+      "min": [
+        -8.793847130938685,
+        5.695975744885153,
+        -52.8556085126554
+      ],
+      "max": [
+        -7.316117522939749,
+        6.876014883679098,
+        -51.17652687439077
+      ],
+      "vertices": 30,
+      "solid": true
+    },
+    {
+      "name": "PROP_Rock14",
+      "model_id": 1979906496016,
+      "geometry_id": 1979890191024,
+      "path": "GRP_Props/PROP_Rock14",
+      "min": [
+        -12.708867126611608,
+        5.654963899049704,
+        -37.703621525647776
+      ],
+      "max": [
+        -11.31370181253527,
+        6.729063630495017,
+        -36.18451749263677
+      ],
+      "vertices": 30,
+      "solid": true
+    },
+    {
+      "name": "PROP_Rock15",
+      "model_id": 1979906512256,
+      "geometry_id": 1979890193712,
+      "path": "GRP_Props/PROP_Rock15",
+      "min": [
+        -79.85862056533004,
+        5.7187885490451,
+        -38.906102745876225
+      ],
+      "max": [
+        -78.13808217506185,
+        6.884910146335139,
+        -37.29378520955305
+      ],
+      "vertices": 30,
+      "solid": true
+    },
+    {
+      "name": "PROP_Rock16",
+      "model_id": 1979906498336,
+      "geometry_id": 1979890196848,
+      "path": "GRP_Props/PROP_Rock16",
+      "min": [
+        -57.621752006532695,
+        5.745923196052355,
+        -53.17897173209367
+      ],
+      "max": [
+        -56.31635551545073,
+        6.64315155146007,
+        -51.831238587068405
+      ],
+      "vertices": 30,
+      "solid": true
+    },
+    {
+      "name": "PROP_Rock17",
+      "model_id": 1979906519216,
+      "geometry_id": 1979890188336,
+      "path": "GRP_Props/PROP_Rock17",
+      "min": [
+        -3.1729446946689372,
+        -0.4120527334498707,
+        -75.11790187167489
+      ],
+      "max": [
+        -0.873187668673705,
+        1.0969471292210278,
+        -72.73234089951674
+      ],
+      "vertices": 30,
+      "solid": true
+    },
+    {
+      "name": "PROP_Rock18",
+      "model_id": 1979906521536,
+      "geometry_id": 1979890199984,
+      "path": "GRP_Props/PROP_Rock18",
+      "min": [
+        -85.93913302897165,
+        2.7681037334606424,
+        -77.05618591802123
+      ],
+      "max": [
+        -83.94966865240386,
+        4.225664310853221,
+        -74.85126660623685
+      ],
+      "vertices": 30,
+      "solid": true
+    },
+    {
+      "name": "PROP_Rock19",
+      "model_id": 1979906528496,
+      "geometry_id": 1979890199536,
+      "path": "GRP_Props/PROP_Rock19",
+      "min": [
+        -21.011202767957563,
+        -0.45885031870220694,
+        -64.8786256001417
+      ],
+      "max": [
+        -19.180260397287977,
+        0.7969489366688868,
+        -63.10921655757472
+      ],
+      "vertices": 30,
+      "solid": true
+    },
+    {
+      "name": "PROP_RuinPillar00",
+      "model_id": 1979906523856,
+      "geometry_id": 1979890188784,
+      "path": "GRP_Props/PROP_RuinPillar00",
+      "min": [
+        -52.5,
+        15.0,
+        -70.49999992370606
+      ],
+      "max": [
+        -51.500000076293944,
+        18.49138854980469,
+        -69.50000003814698
+      ],
+      "vertices": 24,
+      "solid": true
+    },
+    {
+      "name": "PROP_RuinPillar01",
+      "model_id": 1979906514576,
+      "geometry_id": 1979890191472,
+      "path": "GRP_Props/PROP_RuinPillar01",
+      "min": [
+        -54.5,
+        15.0,
+        -66.49999992370606
+      ],
+      "max": [
+        -53.500000076293944,
+        17.178468017578126,
+        -65.50000003814698
+      ],
+      "vertices": 24,
+      "solid": true
+    },
+    {
+      "name": "PROP_RuinPillar02",
+      "model_id": 1979906530816,
+      "geometry_id": 1979890200432,
+      "path": "GRP_Props/PROP_RuinPillar02",
+      "min": [
+        -36.5,
+        15.0,
+        -73.09999992370605
+      ],
+      "max": [
+        -35.500000076293944,
+        16.768451232910156,
+        -72.10000003814696
+      ],
+      "vertices": 24,
+      "solid": true
+    },
+    {
+      "name": "PROP_RuinPillarFallen",
+      "model_id": 1979906526176,
+      "geometry_id": 1979890194160,
+      "path": "GRP_Props/PROP_RuinPillarFallen",
+      "min": [
+        -40.0,
+        15.000021139823764,
+        -68.49997886017624
+      ],
+      "max": [
+        -37.05457092285156,
+        15.999978936466968,
+        -67.5000211016784
+      ],
+      "vertices": 24,
+      "solid": true
+    },
+    {
+      "name": "FX_LightShaft01",
+      "model_id": 1979906535456,
+      "geometry_id": 1979890184304,
+      "path": "GRP_FX/FX_LightShaft01",
+      "min": [
+        -40.971477495659805,
+        -7.791082144407881,
+        -52.55887406497782
+      ],
+      "max": [
+        -37.0285225043402,
+        1.7910821444078802,
+        -47.441125935022185
+      ],
+      "vertices": 8,
+      "solid": false
+    },
+    {
+      "name": "FX_LightShaft02",
+      "model_id": 1979906540096,
+      "geometry_id": 1979890195056,
+      "path": "GRP_FX/FX_LightShaft02",
+      "min": [
+        -40.236972554381694,
+        -7.426974511308677,
+        -51.7035181548379
+      ],
+      "max": [
+        -37.763027445618306,
+        1.6269745113086764,
+        -48.2964818451621
+      ],
+      "vertices": 8,
+      "solid": false
+    },
+    {
+      "name": "ENV_Sea",
+      "model_id": 1979906551696,
+      "geometry_id": 1979890197744,
+      "path": "GRP_Environment/ENV_Sea",
+      "min": [
+        -255.0,
+        -28.5,
+        -250.0
+      ],
+      "max": [
+        165.0,
+        -28.5,
+        170.0
+      ],
+      "vertices": 4,
+      "solid": false
+    }
+  ]
+}

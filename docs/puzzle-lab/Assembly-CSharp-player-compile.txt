@@ -1,0 +1,2 @@
+Offline Roslyn compile against cached Unity 6000.3.21f1 references. Exit=0
+This is not Unity Editor import, scene/reference validation or Play.

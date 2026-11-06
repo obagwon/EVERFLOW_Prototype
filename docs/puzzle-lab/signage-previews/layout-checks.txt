@@ -1,0 +1,6 @@
+﻿Flat GDI preview using installed Malgun Gothic. NOT a Unity Scene/Play screenshot or mesh-bound validation.
+PASS T01: measured text widths, section spacing and bottom bounds in flat preview.
+PASS T02: measured text widths, section spacing and bottom bounds in flat preview.
+PASS T03: measured text widths, section spacing and bottom bounds in flat preview.
+PASS T04: measured text widths, section spacing and bottom bounds in flat preview.
+PASS D: measured text widths, section spacing and bottom bounds in flat preview.
