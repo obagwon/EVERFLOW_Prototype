@@ -1,0 +1,10 @@
+Observations from the real-input alternate route.
+Frames=26336 Selection=558 Impact=1315 WrongModeOverlay=0 BaseColorOverride=0 DuplicateWaves=0
+Observed Ability glow / C GROWABLE LEAF Bloom
+Observed Ability glow / C WIND Flow
+Observed Ability glow / C GROWABLE LEAF Freeze
+Observed Ability glow / G WATER BRANCH Flow
+Observed Ability glow / D2 MAIN WATER / ICE BRIDGE Freeze
+Observed Ability glow / D5 ALIGNING WIND Flow
+Observed Ability glow / D5 CHANNEL STRUCTURE Freeze
+Observed Ability glow / D2 THREE WAY BRANCH Flow

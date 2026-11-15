@@ -1,0 +1,89 @@
+﻿PATH 환경 변수에 'C:\Users\vzd12\EVERFLOW_Prototype\Temp\dotnet-v2-puzzle\.dotnet\tools'을(를) 추가하지 못했습니다. 'dotnet tool install'로 설치한 도구를 사용하려면 이 디렉터리를 PATH에 추가하세요.
+
+.NET 9.0을(를) 시작합니다.
+---------------------
+SDK 버전: 9.0.312
+
+----------------
+ASP.NET Core HTTPS 개발 인증서를 설치했습니다.
+인증서를 신뢰하려면 'dotnet dev-certs https --trust'를 실행하세요.
+HTTPS에 관한 자세한 정보: https://aka.ms/dotnet-https
+
+----------------
+첫 번째 앱 작성: https://aka.ms/dotnet-hello-world
+새로운 기능 확인: https://aka.ms/dotnet-whats-new
+설명서 살펴보기: https://aka.ms/dotnet-docs
+GitHub에서 문제 보고 및 소스 찾기: https://github.com/dotnet/core
+사용 가능한 명령을 보려면 'dotnet --help'를 사용하거나 https://aka.ms/dotnet-cli를 방문하세요.
+--------------------------------------------------------------------------------------
+OFFLINE MANAGED STATE CHECKS. Exact production classes. No Unity scene, input, physics, rendering or Play.
+PASS Bloom invalid aim cannot consume an orb
+PASS Bloom starts ready and accepts first target
+PASS Bloom repeated clicks do not restart flight
+PASS Bloom first flight arrives exactly once
+PASS Bloom duplicate arrival rejected
+PASS Bloom retargets immediately without manual recall
+PASS Bloom previous completed state remains on transfer
+PASS Bloom old revision cannot affect new target
+PASS Bloom new target receives the same single orb
+PASS Bloom distance boundary is explicit
+PASS Bloom distance recall works independently of new casts
+PASS Bloom automatic distance recall preserves both results
+PASS Bloom reusable during return animation
+PASS Bloom stale return completion cannot cancel reuse
+PASS Bloom respawn cancels incomplete arrival without ghost ownership
+PASS Bloom respawn leaves one reusable orb
+PASS Bloom respawn preserves remote completed work
+PASS Freeze invalid aim cannot consume an orb
+PASS Freeze starts ready and accepts first target
+PASS Freeze repeated clicks do not restart flight
+PASS Freeze first flight arrives exactly once
+PASS Freeze duplicate arrival rejected
+PASS Freeze retargets immediately without manual recall
+PASS Freeze previous completed state remains on transfer
+PASS Freeze old revision cannot affect new target
+PASS Freeze new target receives the same single orb
+PASS Freeze distance boundary is explicit
+PASS Freeze distance recall works independently of new casts
+PASS Freeze automatic distance recall preserves both results
+PASS Freeze reusable during return animation
+PASS Freeze stale return completion cannot cancel reuse
+PASS Freeze respawn cancels incomplete arrival without ghost ownership
+PASS Freeze respawn leaves one reusable orb
+PASS Freeze respawn preserves remote completed work
+PASS Flow invalid aim cannot consume an orb
+PASS Flow starts ready and accepts first target
+PASS Flow repeated clicks do not restart flight
+PASS Flow first flight arrives exactly once
+PASS Flow duplicate arrival rejected
+PASS Flow retargets immediately without manual recall
+PASS Flow previous completed state remains on transfer
+PASS Flow old revision cannot affect new target
+PASS Flow new target receives the same single orb
+PASS Flow distance boundary is explicit
+PASS Flow distance recall works independently of new casts
+PASS Flow automatic distance recall preserves both results
+PASS Flow reusable during return animation
+PASS Flow stale return completion cannot cancel reuse
+PASS Flow respawn cancels incomplete arrival without ghost ownership
+PASS Flow respawn leaves one reusable orb
+PASS Flow respawn preserves remote completed work
+PASS explicit thaw clears ice without resetting other world state
+PASS partial opening does not latch
+PASS partial unpowered door can close
+PASS G wheel solution fully opens and latches
+PASS G remains open after FLOW moves to another device
+PASS D4 root alternative fully opens and latches
+PASS D4 stays open after branch switches to main exit
+PASS all 256 structure alignment / fixed / upper ice / bypass / gate / main ice / branch combinations
+PASS D5 needs structure freeze after alignment
+PASS D5 aligned and fixed route supplies water
+PASS D5 bypass supplies water independently of broken or internally frozen upper channel
+PASS dock is a leaf shortcut, never final supply
+PASS small wheel branch opens gate but does not feed W
+PASS under three seconds cannot restore
+PASS interrupted supply resets continuous timer
+PASS three continuous seconds restore
+PASS restoration stays complete while live supply can stop
+PASS restart clears finale and timer
+TOTAL 69 checks + 256 circuit combinations; 0 failures. NOT A PLAYTHROUGH.

@@ -1,0 +1,6 @@
+Read-only source: Assets/Scenes/Everflow_Map.unity
+Overview: (31.45, 31.00, 33.86), FOV=52, original hold=3 seconds.
+Assets/icon/bloom_icon.png
+Assets/icon/freeze_icon.png
+Assets/icon/pulse_icon.png
+Third PULSE image reused as FLOW art; v2 rules/text retained.

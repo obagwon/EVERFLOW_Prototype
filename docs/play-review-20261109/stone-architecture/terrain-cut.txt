@@ -1,0 +1,3 @@
+Original natural river mesh retained in Assets/EverflowMap/StoneArchitecture/TerrainBeforeStairCut.asset
+Only C stair corridor cut; same visible and collision mesh.
+Changed triangles=494 vertices=213252

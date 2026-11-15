@@ -1,0 +1,21 @@
+{
+  "utc": "2026-11-07T13:00:58.926327+00:00",
+  "kind": "Static preservation only; see runtime reports separately",
+  "passed": true,
+  "baseline_files": 361,
+  "allowed_existing_changes": [
+    "Assets/EverflowMap/Editor/EFV2EditorBridge.cs",
+    "Assets/EverflowMap/Runtime/EFV2Plant.cs",
+    "Assets/EverflowMap/Runtime/EFV2PuzzleAssembly.cs"
+  ],
+  "preserved": [
+    "Original scene and independent puzzle scene YAML + GUIDs",
+    "Team FBX and importer",
+    "Entire PuzzleLab source/assets",
+    "Water shaders/materials/textures/meshes/integration scripts",
+    "Puzzle state/ability/circuit/input/camera scripts",
+    "Pipeline/quality/player/build settings and packages",
+    "All pre-existing tracked user changes"
+  ],
+  "new_script_guids_unique": true
+}

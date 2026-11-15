@@ -1,0 +1,32 @@
+[
+  {
+    "Algorithm": "SHA256",
+    "Hash": "438886ABBC4CD5DE228BA29283AA076F36537ECBE1F07AB95D0A0D9A9320BDD1",
+    "Path": "C:\\Users\\vzd12\\EVERFLOW_Prototype\\Assets\\character_1\\animation\\character_jump.fbx"
+  },
+  {
+    "Algorithm": "SHA256",
+    "Hash": "D0FDCD6270D25699AA3C5CD6EA30349F66167D499E2C0023A87DBC202AF70178",
+    "Path": "C:\\Users\\vzd12\\EVERFLOW_Prototype\\Assets\\character_1\\animation\\character_landing.fbx"
+  },
+  {
+    "Algorithm": "SHA256",
+    "Hash": "63B5462252B7D92DF94E25E57352BF93EC921B9A1CAAF13F749E4CAAF38766A0",
+    "Path": "C:\\Users\\vzd12\\EVERFLOW_Prototype\\Assets\\character_1\\animation\\character_run.fbx"
+  },
+  {
+    "Algorithm": "SHA256",
+    "Hash": "CE5EF496EAA690CD0699131BFA5364C474CFE90F7B9EB2F295650F90265D6BCC",
+    "Path": "C:\\Users\\vzd12\\EVERFLOW_Prototype\\Assets\\character_1\\animation\\character_walk.fbx"
+  },
+  {
+    "Algorithm": "SHA256",
+    "Hash": "0FDC0A07488AB63129F557256106AF9257BEA3CA24F229C845C8E0B83DA3AFF5",
+    "Path": "C:\\Users\\vzd12\\EVERFLOW_Prototype\\Assets\\EverflowMap\\Character\\Character1.controller"
+  },
+  {
+    "Algorithm": "SHA256",
+    "Hash": "17FE5B0A8F0A7D6B6AFCF00F2A108C7A8DEEC1A25FA3524DF1242F4910921285",
+    "Path": "C:\\Users\\vzd12\\EVERFLOW_Prototype\\Assets\\EverflowMap\\Character\\Character1.mat"
+  }
+]

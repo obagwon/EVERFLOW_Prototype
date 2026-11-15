@@ -1,0 +1,8 @@
+0.25 PullCameraForward poses=288 avg=1.938 min=0.620 near<1.25=125 occluded=0 nearPlane=0
+0.25 PreserveCameraHeight poses=288 avg=3.344 min=1.096 near<1.25=16 occluded=0 nearPlane=0
+0.2 PullCameraForward poses=288 avg=2.022 min=0.672 near<1.25=111 occluded=0 nearPlane=0
+0.2 PreserveCameraHeight poses=288 avg=3.329 min=1.147 near<1.25=11 occluded=0 nearPlane=0
+0.18 PullCameraForward poses=288 avg=2.057 min=0.693 near<1.25=109 occluded=0 nearPlane=0
+0.18 PreserveCameraHeight poses=288 avg=3.334 min=1.167 near<1.25=6 occluded=0 nearPlane=0
+0.15 PullCameraForward poses=288 avg=2.105 min=0.724 near<1.25=106 occluded=0 nearPlane=0
+0.15 PreserveCameraHeight poses=288 avg=3.398 min=1.198 near<1.25=3 occluded=0 nearPlane=0

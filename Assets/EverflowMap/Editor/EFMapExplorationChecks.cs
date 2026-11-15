@@ -15,6 +15,8 @@ namespace EverflowMap.Editor
         [MenuItem("Tools/EVERFLOW/V2 Exploration/Run Open Scene Play Smoke Checks")]
         public static void Run()
         {
+            var cameraRig = UnityEngine.Object.FindFirstObjectByType<EFMapCinemachineRig>();
+            if (cameraRig != null) { EFMapCinemachineChecks.Run(); return; }
             var manager = UnityEngine.SceneManagement.SceneManager.GetActiveScene();
             if (EditorApplication.isPlayingOrWillChangePlaymode || manager.path != "Assets/Scenes/Everflow_Map_v2_test.unity")
                 throw new InvalidOperationException("Open the saved v2 exploration scene in Edit mode first.");

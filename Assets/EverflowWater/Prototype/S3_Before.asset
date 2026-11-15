@@ -1,0 +1,30 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 35b405938cdf68d428f4ebf6e1fd0750, type: 3}
+  m_Name: S3_Before
+  m_EditorClassIdentifier: Assembly-CSharp-Editor::EverflowMap.Editor.EFLeakPrototypeBackup
+  labels:
+  - W_Leak_S3
+  - W_Leak_Fall2
+  - W_Leak_S4
+  - W_Leak_Fall2_Foam
+  meshes:
+  - {fileID: 4300000, guid: 02d627816bc75ca4e93b3d154488e5d1, type: 2}
+  - {fileID: 4300000, guid: f6944bda6579be946b393000ad2133dd, type: 2}
+  - {fileID: 4300000, guid: f55f044c07a38d442a1a360cd47f2174, type: 2}
+  - {fileID: 4300000, guid: 42e34ac894356c54c8dca907ab62d392, type: 2}
+  overrides:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  suppressed: 00000000

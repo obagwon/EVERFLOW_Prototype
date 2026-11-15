@@ -1,0 +1,40 @@
+2026-11-08T17:15:29.2382612Z
+Isolated start placements and fixed observation cameras; real synthetic WASD through the normal motor. Separate full input routes validate puzzle progression.
+PASS Eight fixed flights and sixteen decks dressed; grown root paths excluded
+PASS Every added stone body/rail uses the same visible and solid mesh
+PASS Generated world meshes retain unit scale under scaled deck parents
+PASS Foundations/upper corridor corbels terminate on measured existing ground/wall surfaces
+PASS A grown root staircase retains original ability-owned growth geometry
+PASS B grown root bridge retains original ability-owned growth geometry
+PASS D3 grown vine path retains original ability-owned growth geometry
+PASS Switching bridge piers and arches leave the natural creek cross-section clear
+PASS Conditional D3 return route remains inactive before workbench arrival
+ISOLATED WALK B stone ascent start placement=(-25.00, 6.10, -52.00) goal=(-34.50, 15.15, -58.80) (no jump, normal CharacterController)
+PASS B stone ascent reachable without jump, feet=(-34.397, 15.179, -58.726)
+PASS B stone ascent no automatic fall recovery during normal traversal
+ISOLATED WALK C stone ascent start placement=(-61.00, 11.90, -60.00) goal=(-57.00, 15.15, -62.00) (no jump, normal CharacterController)
+PASS C stone ascent reachable without jump, feet=(-57.150, 15.200, -61.925)
+PASS C stone ascent no automatic fall recovery during normal traversal
+ISOLATED WALK B-C arched switching bridge start placement=(-60.00, 6.10, -40.00) goal=(-28.00, 6.10, -40.00) (no jump, normal CharacterController)
+PASS B-C arched switching bridge reachable without jump, feet=(-28.200, 6.150, -40.000)
+PASS B-C arched switching bridge no automatic fall recovery during normal traversal
+ISOLATED WALK D3-D5 stone access start placement=(-40.00, -7.45, -62.00) goal=(-46.00, -5.95, -66.00) (no jump, normal CharacterController)
+PASS D3-D5 stone access reachable without jump, feet=(-45.824, -5.900, -65.883)
+PASS D3-D5 stone access no automatic fall recovery during normal traversal
+ISOLATED WALK D5 service-junction turn after ascent (no reposition) start placement=(-46.00, -5.95, -66.00) goal=(-46.00, -5.95, -64.40) (no jump, normal CharacterController)
+PASS D5 service-junction turn after ascent (no reposition) reachable without jump, feet=(-45.978, -5.900, -64.586)
+PASS D5 service-junction turn after ascent (no reposition) no automatic fall recovery during normal traversal
+ISOLATED WALK D5 bypass stone descent start placement=(-70.10, -5.95, -65.00) goal=(-74.00, -8.90, -64.80) (no jump, normal CharacterController)
+PASS D5 bypass stone descent reachable without jump, feet=(-73.695, -8.404, -64.816)
+PASS D5 bypass stone descent no automatic fall recovery during normal traversal
+ISOLATED WALK Conditional D3 return stairs (forced availability fixture) start placement=(-45.15, -7.45, -59.20) goal=(-50.00, -11.50, -59.20) (no jump, normal CharacterController)
+PASS Conditional D3 return stairs (forced availability fixture) reachable without jump, feet=(-49.750, -10.994, -59.200)
+PASS Conditional D3 return stairs (forced availability fixture) no automatic fall recovery during normal traversal
+ISOLATED WALK D5 unchanged dry channel crossing start placement=(-58.60, -5.95, -63.90) goal=(-53.40, -5.95, -63.90) (no jump, normal CharacterController)
+PASS D5 unchanged dry channel crossing reachable without jump, feet=(-53.600, -5.611, -63.900)
+PASS D5 unchanged dry channel crossing no automatic fall recovery during normal traversal
+ISOLATED WALK Stone exterior descent start placement=(-82.30, -11.90, -47.00) goal=(-82.30, -17.35, -12.00) (no jump, normal CharacterController)
+PASS Stone exterior descent reachable without jump, feet=(-82.395, -17.250, -12.213)
+PASS Stone exterior descent no automatic fall recovery during normal traversal
+PASS Restart resets conditional route without duplicating masonry
+TOTAL 28 checks, 0 failures.

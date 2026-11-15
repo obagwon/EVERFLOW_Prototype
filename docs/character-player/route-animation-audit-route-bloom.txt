@@ -1,0 +1,5 @@
+2026-11-09T08:44:54.0075072Z
+Observed states: Locomotion, Fall, Land
+Idle transport samples=0, erroneous running=0
+Paused animation frames=625, clock advances=0
+Route puzzle result is in docs/v2-puzzle-validation/runtime-route-bloom.txt.

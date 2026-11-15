@@ -1,0 +1,3 @@
+Offline Roslyn, cached Unity references. Not Editor import or Play.
+Assets\EverflowMap\Editor\EFV2PresentationChecks.cs(86,19): warning CS0252: Possible unintended reference comparison; to get a value comparison, cast the left hand side to type 'Object'
+Assets\EverflowMap\Editor\EFV2PresentationChecks.cs(110,19): warning CS0252: Possible unintended reference comparison; to get a value comparison, cast the left hand side to type 'Object'

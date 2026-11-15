@@ -1,0 +1,43 @@
+PASS No exploration respawn/input owner
+PASS No lab input/recall owner
+PASS Cinemachine and standalone player own camera/locomotion
+ISOLATED PLATFORM/FALL TESTS: initial player teleports and bypass setup; each ride, cast and fall uses real keyboard/mouse and scene physics. NOT continuous completion.
+WALK B board moving stone -> (-24.00, 6.08, -42.20)
+ARRIVED B board moving stone feet=(-24.32, 6.13, -42.02)
+CAST Flow / B WINDMILL
+PASS Input cast applied B WINDMILL
+CAST Freeze / B MOVING STONE
+PASS Input cast applied B MOVING STONE
+PASS Freeze holds ridden platform B MOVING STONE
+WALK B MOVING STONE actual landing -> (-25.00, 6.10, -51.50)
+ARRIVED B MOVING STONE actual landing feet=(-24.89, 6.12, -51.15)
+PASS B windmill/stone alternative reaches actual far bank
+PASS Invalid BLOOM aim consumes no orb and preserves fixed stone
+WALK B-C connector entry -> (-28.00, 6.10, -40.00)
+ARRIVED B-C connector entry feet=(-27.68, 6.15, -40.16)
+WALK B-C connector span -> (-60.00, 6.10, -40.00)
+ARRIVED B-C connector span feet=(-59.63, 6.15, -40.01)
+WALK B-C connector C arrival -> (-64.00, 6.12, -40.00)
+ARRIVED B-C connector C arrival feet=(-63.63, 6.07, -40.00)
+PASS Physical intermediate connector permits B to C switching
+WALK C-B connector return entry -> (-60.00, 6.10, -40.00)
+ARRIVED C-B connector return entry feet=(-60.37, 6.15, -40.00)
+WALK C-B connector return span -> (-28.00, 6.10, -40.00)
+ARRIVED C-B connector return span feet=(-28.36, 6.15, -40.00)
+WALK D2 board unpowered dock leaf -> (-52.00, -11.55, -51.00)
+ARRIVED D2 board unpowered dock leaf feet=(-52.35, -11.50, -51.09)
+CAST Flow / D2 THREE WAY BRANCH
+PASS Input cast applied D2 THREE WAY BRANCH
+CAST Freeze / D2 DOCK LEAF - AFTER SUPPLY
+PASS Input cast applied D2 DOCK LEAF - AFTER SUPPLY
+PASS Freeze holds ridden platform D2 DOCK LEAF - AFTER SUPPLY
+WALK D2 DOCK LEAF - AFTER SUPPLY actual landing -> (-43.80, -11.40, -54.00)
+ARRIVED D2 DOCK LEAF - AFTER SUPPLY actual landing feet=(-44.10, -11.31, -53.78)
+WALK D3 restored dock stairs -> (-43.80, -7.50, -59.90)
+ARRIVED D3 restored dock stairs feet=(-43.81, -7.50, -59.53)
+WALK D3 restored leaf arrival -> (-40.00, -7.46, -57.00)
+ARRIVED D3 restored leaf arrival feet=(-40.31, -7.45, -57.20)
+PASS Restored dock leaf and stairs reach workbench through physical traversal
+PASS Actual fall returns to nearby C safety point
+PASS Fall recovery preserves unrelated growth and fixed B platform
+TOTAL 15 checks, 0 failures. Full S-to-garden traversal remains a separate manual test.

@@ -1,0 +1,15 @@
+2026-11-08T15:12:37.7550329Z
+PASS Original capsule renderer hidden
+PASS Original collision dimensions retained
+PASS Valid Humanoid, root motion disabled
+PASS Idle after normal opening handoff
+PASS Real movement selects run without root-motion displacement
+PASS Release input blends back to idle (self=0.000, blend=0.023)
+PASS Space selects jump while physically airborne
+PASS Fall, ground contact, landing and idle complete
+PASS Ability mode freezes animation pose and physical movement
+PASS Cancel resumes animation without stale running input
+PASS Normal pause also freezes character animation
+PASS Real R respawn resets airborne/landing animation
+PASS Restart retains one character animation owner
+TOTAL 13 checks, 0 failures. Input-driven character integration; full route checked separately.

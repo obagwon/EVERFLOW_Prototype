@@ -1,0 +1,1 @@
+Offline Roslyn, cached Unity references. Not Editor import or Play.

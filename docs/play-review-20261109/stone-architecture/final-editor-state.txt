@@ -1,0 +1,1 @@
+{ scene = Assets/Scenes/Everflow_Map_v2_test_with_puzzle.unity, dirty = False, playing = False, terrain = Assets/EverflowMap/StoneArchitecture/TerrainStairCut.asset, characterMeshes = System.String[], timeScale = 1, audioPause = False, waterDb = 12, waterRadius = 9 }

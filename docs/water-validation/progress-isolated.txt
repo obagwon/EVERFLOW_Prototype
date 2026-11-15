@@ -1,0 +1,17 @@
+ISOLATED PLAY: real URP Game View, actual copied canal mesh; presentation interface state controlled by test.
+PASS Water component present
+PASS C# and EVERFLOW shader compile/support
+PASS Dedicated shader/material references
+PASS All configured surfaces use dedicated mesh/material
+PASS No solid colliders added to water surfaces
+PASS Advection travels in configured world downstream direction
+PASS Rendered flowing water changes pixels; mean RGB delta=0.0004562221
+PASS Freeze stops shared wave/foam/caustic clock and offset
+PASS Frozen rendered image stable; mean RGB delta=0
+PASS Direction change retains continuous phase instead of resetting UVs
+PASS Thaw resumes animation; reversed world flow takes effect
+PASS No supply hides water and all foam effects
+PASS Supplied surface visible relative to dry canal
+PASS Supply start has a moving spatial arrival front
+PASS Supply front settles to full flow
+PASS Shader remains valid across viewCamera angles/distances (captures require visual review)

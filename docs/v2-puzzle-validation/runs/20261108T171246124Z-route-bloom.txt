@@ -1,0 +1,112 @@
+PASS No exploration respawn/input owner
+PASS No lab input/recall owner
+PASS Cinemachine and standalone player own camera/locomotion
+PASS Opening cinematic rejects ability entry
+CONTINUOUS SYNTHETIC KEYBOARD/MOUSE ROUTE. No Teleport, direct Apply, gate Tick or forced device pose. Camera uses mouse events, movement uses WASD/Space, casts use normal raycasts and orb flight. NOT a human timing test.
+CAST Bloom / A ROOT STAIRS
+PASS Ability selection pauses world before A ROOT STAIRS
+PASS Selection freezes movers, gates, water clocks and circuit timer: A ROOT STAIRS
+PASS Confirmation resumes exploration before orb arrival: A ROOT STAIRS
+PASS Input cast applied A ROOT STAIRS
+WALK A shore approach -> (-42.00, 0.10, -12.50)
+ARRIVED A shore approach feet=(-42.19, 0.04, -12.19)
+WALK A root foot -> (-40.40, 0.10, -14.80)
+ARRIVED A root foot feet=(-40.62, 0.06, -14.49)
+WALK A root stair top -> (-40.40, 6.05, -27.00)
+ARRIVED A root stair top feet=(-40.40, 6.10, -26.62)
+WALK A common landing -> (-45.00, 6.05, -28.00)
+ARRIVED A common landing feet=(-44.64, 6.10, -27.89)
+PASS A actual common landing checkpoint
+WALK B bridge threshold -> (-40.40, 6.05, -29.00)
+ARRIVED B bridge threshold feet=(-40.76, 6.10, -28.90)
+WALK B temporary connector center -> (-36.00, 6.00, -33.00)
+ARRIVED B temporary connector center feet=(-36.28, 6.05, -32.77)
+WALK B connector far end -> (-30.20, 6.00, -37.70)
+ARRIVED B connector far end feet=(-30.49, 6.66, -37.46)
+WALK B entrance -> (-27.00, 6.10, -40.50)
+ARRIVED B entrance feet=(-27.28, 6.10, -40.26)
+CAST Bloom / B ROOT BRIDGE
+PASS Ability selection pauses world before B ROOT BRIDGE
+PASS Selection freezes movers, gates, water clocks and circuit timer: B ROOT BRIDGE
+PASS Confirmation resumes exploration before orb arrival: B ROOT BRIDGE
+PASS Input cast applied B ROOT BRIDGE
+WALK B root bridge near -> (-26.40, 6.08, -41.50)
+ARRIVED B root bridge near feet=(-26.61, 6.13, -41.21)
+WALK B root bridge far -> (-26.40, 6.08, -50.80)
+ARRIVED B root bridge far feet=(-26.56, 6.13, -50.46)
+WALK B far bank -> (-25.00, 6.10, -51.50)
+ARRIVED B far bank feet=(-25.31, 6.27, -51.31)
+WALK B ascent foot -> (-25.00, 6.10, -52.00)
+ARRIVED B ascent foot feet=(-25.16, 6.29, -51.65)
+WALK B ascent to G -> (-34.50, 15.15, -58.80)
+ARRIVED B ascent to G feet=(-34.21, 15.06, -58.58)
+WALK G approach -> (-35.00, 15.16, -60.50)
+ARRIVED G approach feet=(-34.86, 15.21, -60.16)
+CAST Bloom / G RUIN GATE ROOT
+PASS Ability selection pauses world before G RUIN GATE ROOT
+PASS Selection freezes movers, gates, water clocks and circuit timer: G RUIN GATE ROOT
+PASS Confirmation resumes exploration before orb arrival: G RUIN GATE ROOT
+PASS Input cast applied G RUIN GATE ROOT
+PASS Gate is actually moving before pause test
+PASS Ability mode freezes an actively opening gate
+PASS G root opens and latches using input
+WALK G doorway front -> (-29.75, 15.06, -60.20)
+ARRIVED G doorway front feet=(-30.11, 15.11, -60.19)
+WALK G doorway pass -> (-30.65, 15.02, -63.10)
+ARRIVED G doorway pass feet=(-30.59, 15.08, -62.75)
+WALK Tower flight 1 -> (-30.65, 12.02, -68.90)
+ARRIVED Tower flight 1 feet=(-30.64, 12.05, -68.53)
+WALK Tower switchback 1 -> (-28.85, 12.02, -68.90)
+ARRIVED Tower switchback 1 feet=(-29.22, 12.05, -68.83)
+WALK Tower flight 2 -> (-28.85, 9.02, -63.10)
+ARRIVED Tower flight 2 feet=(-28.88, 9.05, -63.47)
+WALK Tower switchback 2 -> (-30.65, 9.02, -63.10)
+ARRIVED Tower switchback 2 feet=(-30.31, 9.05, -63.16)
+WALK Tower flight 3 -> (-30.65, 6.02, -68.90)
+ARRIVED Tower flight 3 feet=(-30.63, 6.05, -68.52)
+WALK Tower switchback 3 -> (-28.85, 6.02, -68.90)
+ARRIVED Tower switchback 3 feet=(-29.21, 6.05, -68.84)
+WALK Tower flight 4 -> (-28.85, 3.02, -63.10)
+ARRIVED Tower flight 4 feet=(-28.87, 3.05, -63.47)
+WALK Tower switchback 4 -> (-30.65, 3.02, -63.10)
+ARRIVED Tower switchback 4 feet=(-30.29, 3.05, -63.18)
+WALK Tower flight 5 -> (-30.65, 0.02, -68.90)
+ARRIVED Tower flight 5 feet=(-30.63, 0.05, -68.53)
+WALK Tower switchback 5 -> (-28.85, 0.02, -68.90)
+ARRIVED Tower switchback 5 feet=(-29.20, 0.05, -68.84)
+WALK Tower flight 6 -> (-28.85, -2.98, -63.10)
+ARRIVED Tower flight 6 feet=(-28.87, -2.95, -63.46)
+WALK Tower ground exit lane -> (-30.50, -2.98, -63.10)
+ARRIVED Tower ground exit lane feet=(-30.14, -2.95, -63.18)
+WALK Underground tunnel -> (-30.50, -3.00, -37.00)
+ARRIVED Underground tunnel feet=(-30.23, -2.95, -37.23)
+WALK D1 walkway -> (-44.00, -3.00, -37.00)
+ARRIVED D1 walkway feet=(-43.63, -2.95, -37.00)
+WALK D1 balcony threshold -> (-46.00, -3.00, -38.00)
+ARRIVED D1 balcony threshold feet=(-45.66, -2.95, -37.85)
+WALK D1 balcony -> (-48.00, -2.97, -38.70)
+ARRIVED D1 balcony feet=(-47.66, -2.95, -38.58)
+CAST Bloom / D3 VINE ACCESS
+PASS Ability selection pauses world before D3 VINE ACCESS
+PASS Selection freezes movers, gates, water clocks and circuit timer: D3 VINE ACCESS
+PASS Confirmation resumes exploration before orb arrival: D3 VINE ACCESS
+PASS Input cast applied D3 VINE ACCESS
+WALK D3 vine foot -> (-40.00, -3.00, -37.50)
+ARRIVED D3 vine foot feet=(-40.35, -2.95, -37.55)
+WALK D3 vine landing -> (-39.00, -7.45, -45.20)
+ARRIVED D3 vine landing feet=(-39.06, -7.06, -44.84)
+WALK D3 workbench -> (-40.00, -7.46, -57.00)
+ARRIVED D3 workbench feet=(-39.98, -7.45, -56.65)
+PASS Actual workbench arrival enables safe thaw return walkway
+WALK D5 workbench edge -> (-40.00, -7.45, -61.70)
+ARRIVED D5 workbench edge feet=(-40.00, -7.45, -61.33)
+WALK D5 service access -> (-46.00, -5.95, -66.00)
+ARRIVED D5 service access feet=(-45.71, -5.90, -65.78)
+WALK D5 channel clearance -> (-46.00, -5.95, -64.40)
+EXCEPTION System.Exception: Wrong landing height at D5 channel clearance: player=(-45.92, -4.10, -64.75) expected surface=(-46.00, -5.95, -64.40)
+  at EverflowMap.Editor.EFV2PuzzleProbe+<Walk>d__30.MoveNext () [0x00190] in C:\Users\vzd12\EVERFLOW_Prototype\Assets\EverflowMap\Editor\EFV2PuzzlePlayChecks.cs:208 
+  at EverflowMap.Editor.EFV2PuzzleProbe+<Start>d__43.MoveNext () [0x00372] in C:\Users\vzd12\EVERFLOW_Prototype\Assets\EverflowMap\Editor\EFV2PuzzlePlayChecks.cs:761 
+CAMERA sampled after Cinemachine: 14262 frames / 8704 moving; max horizontal error 0.00008, max torso vertical error 0.00015 (normalized screen).
+PASS Cinemachine keeps centered torso while standing, moving and orbiting
+INPUT isolated synthetic devices; OS current-device changes restored=0
+TOTAL 26 checks, 1 failures. Synthetic input only; human usability remains a separate review.

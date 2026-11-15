@@ -1,0 +1,43 @@
+{
+  "utc": "2026-11-08T05:42:52.630727+00:00",
+  "kind": "STATIC ONLY; read runtime reports for actual Play results",
+  "passed": true,
+  "protected_baseline_files": 1951,
+  "expected_changed_files": [
+    "Assets/EverflowMap/Editor/EFV2EditorBridge.cs",
+    "Assets/EverflowMap/Editor/EFV2GuidanceChecks.cs",
+    "Assets/EverflowMap/Editor/EFV2PuzzlePlayChecks.cs",
+    "Assets/EverflowMap/Editor/EFV2WaterPlayChecks.cs",
+    "Assets/EverflowMap/Runtime/EFV2Guidance.cs",
+    "Assets/EverflowMap/Runtime/EFV2PuzzleWorld.cs",
+    "Assets/Scenes/Everflow_Map_v2_test_with_puzzle.unity"
+  ],
+  "byte_identical_world_methods": [
+    "Awake",
+    "Record",
+    "Select",
+    "CycleFlow",
+    "TickCircuit",
+    "Show",
+    "TickOrbs",
+    "LateUpdate",
+    "CanUse",
+    "TryCast",
+    "Reach",
+    "Respawn",
+    "BeginCinematic",
+    "EndCinematic",
+    "OnApplicationFocus",
+    "OnDisable"
+  ],
+  "lifecycle_changes": "Only intro Begin/early return/Cancel and shared input gate; checked exact remaining bodies",
+  "references": "3 existing sprites, scene-specific component and unique new script GUIDs",
+  "preserved": [
+    "Existing tracked user diff",
+    "Original map/v2/PuzzleLab scenes and FBX",
+    "Original UI/camera scripts and icon importers",
+    "Player/input/Cinemachine rig and cleanup geometry",
+    "All water assets and circuit rules",
+    "Project/pipeline/quality/build/package settings"
+  ]
+}

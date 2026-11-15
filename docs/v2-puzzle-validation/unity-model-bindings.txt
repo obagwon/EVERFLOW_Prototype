@@ -1,0 +1,9 @@
+Actual Unity 6000.3.21f1 Play model bindings; runtime scene only.
+PH_A_Leaf01 pivot=(-50.000, 0.000, -20.000) bounds=Center: (-50.02, 0.10, -20.06), Extents: (1.60, 0.10, 2.16) importedScale=(1.0000, 1.0000, 1.0000) carrierScale=1
+PH_B_MovingStone pivot=(-23.500, 5.250, -46.000) bounds=Center: (-23.50, 5.63, -46.00), Extents: (1.50, 0.38, 1.50) importedScale=(1.0000, 1.0000, 1.0000) carrierScale=1
+PH_C_LeafPlatform pivot=(-64.000, 6.000, -42.000) bounds=Center: (-64.01, 6.12, -42.08), Extents: (1.72, 0.12, 2.71) importedScale=(1.0000, 1.0000, 1.0000) carrierScale=1
+PH_G_StoneDoor pivot=(-29.750, 15.000, -62.000) bounds=Center: (-29.75, 18.75, -61.93), Extents: (1.70, 3.75, 0.28) importedScale=(1.0000, 1.0000, 1.0000) carrierScale=1
+PH_D2_Leaf pivot=(-52.000, -11.900, -50.000) bounds=Center: (-52.04, -11.80, -50.05), Extents: (2.01, 0.10, 2.13) importedScale=(1.0000, 1.0000, 1.0000) carrierScale=1
+PH_D5_MovingChannel pivot=(-50.500, -6.000, -67.500) bounds=Center: (-50.47, -6.05, -67.41), Extents: (4.68, 1.23, 2.22) importedScale=(1.0000, 1.0000, 1.0000) carrierScale=1
+PH_D5_BypassDoor pivot=(-75.500, -9.000, -63.750) bounds=Center: (-75.50, -6.75, -63.74), Extents: (1.50, 2.25, 0.19) importedScale=(1.0000, 1.0000, 1.0000) carrierScale=1
+PH_D4_Gate pivot=(-78.250, -12.000, -48.000) bounds=Center: (-78.26, -9.00, -48.00), Extents: (0.19, 3.00, 2.00) importedScale=(1.0000, 1.0000, 1.0000) carrierScale=1

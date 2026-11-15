@@ -1,0 +1,17 @@
+PASS No exploration respawn/input owner
+PASS No lab input/recall owner
+PASS Cinemachine and standalone player own camera/locomotion
+SYNTHETIC Input System mouse/keyboard events through game Update/LateUpdate, actual raycasts and orb flight. No LabTarget.Apply or forced device state. NOT a human or full traversal playthrough.
+PASS Synthetic mouse aims at the real A root sphere with camera collision enabled
+PASS Actual left click, raycast and orb arrival grow A stairs
+PASS Only one BLOOM orb occupies A
+PASS FLOW click opens valid direction preview
+PASS E selects second valid direction
+PASS Second click confirms chosen direction through real input
+PASS FLOW reuse leaves previously grown A stairs complete
+PASS Real imported A leaf and its carrier move
+PASS W moves actual character with camera-relative locomotion
+PASS Space produces physical jump
+PASS R respawn preserves completed A growth
+PASS Respawn retains exactly three orb visuals
+TOTAL 15 checks, 0 failures. Full S-to-garden traversal remains a separate manual test.

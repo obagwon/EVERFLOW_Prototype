@@ -1,0 +1,1 @@
+PASS scene object/component IDs, camera configuration and positions, colliders, player and puzzle settings retained. Water landing height and spray adjusted; camera quaternion normalization <1e-7/component.

@@ -1,0 +1,19 @@
+{
+  "Assets\\character_1\\animation.meta": "5fa439a40c2107b6e14b00eaa7b0a292d36296eb10cf94195dbe4ff68ccf07de",
+  "Assets\\character_1\\model.meta": "4f1205d72eeeee461bdd8c2fe82b93fd923e40a49267db71bf9916db65f98d2e",
+  "Assets\\character_1\\animation\\character_jump.fbx": "438886abbc4cd5de228ba29283aa076f36537ecbe1f07ab95d0a0d9a9320bdd1",
+  "Assets\\character_1\\animation\\character_jump.fbx.meta": "0f8ce043fbf8a8ad3fdf3b0ee20615fc24f488b425d371946b980aef54896d81",
+  "Assets\\character_1\\animation\\character_landing.fbx": "d0fdcd6270d25699aa3c5cd6ea30349f66167d499e2c0023a87dbc202af70178",
+  "Assets\\character_1\\animation\\character_landing.fbx.meta": "e87cdbacf02efdffd9047a10e74ca8323342ce76adf3ae6b872cc4e42f301999",
+  "Assets\\character_1\\animation\\character_run.fbx": "63b5462252b7d92df94e25e57352bf93ec921b9a1caaf13f749e4caaf38766a0",
+  "Assets\\character_1\\animation\\character_run.fbx.meta": "3e95d10c29427162b24a9de25712d54a36e7a7f86b41afe7a2598c180fb0126b",
+  "Assets\\character_1\\animation\\character_walk.fbx": "ce5ef496eaa690cd0699131bfa5364c474cfe90f7b9eb2f295650f90265d6bcc",
+  "Assets\\character_1\\animation\\character_walk.fbx.meta": "4d50ae7cd5a75d6c07b87a64286f359163bea68b11946fb538133970c4acaa35",
+  "Assets\\character_1\\model\\character_noTex.fbm.meta": "4c718f6e47601f75cce61cb40dd20ec76e95e0e610dc72d35e48316c1d831cad",
+  "Assets\\character_1\\model\\character_noTex.fbx": "ca5c5c0489d4efd123926462f4d629486c4cfc8b4c9226dfd8109794c2345ac4",
+  "Assets\\character_1\\model\\character_noTex.fbx.meta": "02ba1a707ea57a39a9359fef79a75dc12946c42c63a03676fec7c67f5dca7ce8",
+  "Assets\\character_1\\model\\character_noTex.fbm\\extracted_normal_broch.png": "b2369e0d38e30d6e9c330b90db3b2d3516248d3c24fbbf33879e70277eefa0b2",
+  "Assets\\character_1\\model\\character_noTex.fbm\\extracted_normal_broch.png.meta": "24a02c26240ee3523fb2879f409ffe5676102aa9a5b4eeb6e1b2dc4bb7823a3f",
+  "Assets\\character_1\\model\\character_noTex.fbm\\tripo_rgb_d2b5edfd-09b8-4ac9-b06f-35e1366cf3cb.jpg": "e499cf5ceeeb36953a2068de112f6830b378cfc241af90a6056b2457c5ae4429",
+  "Assets\\character_1\\model\\character_noTex.fbm\\tripo_rgb_d2b5edfd-09b8-4ac9-b06f-35e1366cf3cb.jpg.meta": "10a92acf2c8d2223a18eb9ca35870c3d7fadcb743d360a93400ea3cf6f26a07f"
+}

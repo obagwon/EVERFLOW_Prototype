@@ -9,6 +9,8 @@ namespace EverflowMap
         public EFMapWorld world;
         public Camera view;
         public EFMapCamera follow;
+        // Optional scene override; legacy scenes keep their existing follow camera.
+        public EFMapCinemachineRig cinemachineRig;
         [Header("Standalone puzzle lab (off in existing scenes)")]
         public bool puzzleLabLocomotion;
         // Original graybox locomotion and input convention, adapted to FBX pivots.
@@ -40,6 +42,11 @@ namespace EverflowMap
         public Collider AimCollider { get; private set; }
         Vector3 aimPoint;
         public bool Riding => ride != null;
+        // Read-only animation signals. Support-platform transport is excluded from self speed.
+        public float LocomotionSpeed {get;private set;}
+        public float VerticalSpeed => velocity.y;
+        public bool Grounded => controller!=null&&controller.isGrounded&&velocity.y<=.1f&&airGrace<=0;
+        public int TeleportVersion {get;private set;}
         public Vector3 CameraTravelTarget => ride == null ? transform.position + transform.forward * 5 :
             ride.kind == MapKind.Vine && ride.launchTarget != null ? ride.launchTarget.position :
             ride.ridePath.Length > 0 ? ride.ridePath[Mathf.Min(rideSegment + 2, ride.ridePath.Length - 1)].position : ride.HandlePosition;
@@ -170,6 +177,7 @@ namespace EverflowMap
             ground = null; supportTransform = null;
             Vector3 beforeMove = transform.position;
             var flags = controller.Move((horizontal + Vector3.up * velocity.y) * Time.deltaTime);
+            LocomotionSpeed=Vector3.ProjectOnPlane(transform.position-beforeMove,Vector3.up).magnitude/Mathf.Max(.0001f,Time.deltaTime);
             if (input.sqrMagnitude > .001f || momentum.sqrMagnitude > .05f) FaceMotion(transform.position - beforeMove);
             if ((flags & CollisionFlags.Above) != 0 && velocity.y > 0) velocity.y = 0;
             if (supportTransform != null)
@@ -263,10 +271,12 @@ namespace EverflowMap
         }
         public void Teleport(Vector3 point)
         {
+            TeleportVersion++;LocomotionSpeed=0;
             if (controller == null) controller = GetComponent<CharacterController>();
             ride = ground = null; supportTransform = null; controller.enabled = false;
             transform.position = point; velocity = momentum = Vector3.zero; airGrace = 0;
             controller.enabled = true; if (follow != null) follow.Snap(true);
+            if (cinemachineRig != null) cinemachineRig.ResetView(true);
         }
     }
 }

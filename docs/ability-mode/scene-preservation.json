@@ -1,0 +1,12 @@
+{
+  "utc": "2026-11-08T12:00:27.027019+00:00",
+  "pass": true,
+  "kind": "offline scene preservation, not gameplay verification",
+  "changes": [
+    "Existing Cinemachine screen position (0,.02)",
+    "Existing rotation composer damping zero",
+    "Existing CameraTarget local Y .15"
+  ],
+  "preserved": "All other scene content byte-identical after newline normalization: colliders, water meshes/material references, puzzle configuration, deoccluder and opening/finale settings",
+  "scene_sha256": "d09ac41ca82e4da4b4e9e4f20a2d64bc26fd3c97b8cde2657f29ebd17c06ba5c"
+}

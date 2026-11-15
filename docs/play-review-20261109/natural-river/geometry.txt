@@ -1,0 +1,11 @@
+Natural river carving
+T_Terrain modified triangles=15682 vertices=204423
+HALL_Floor modified triangles=491 vertices=1956
+PLT_South_W modified triangles=419 vertices=5016
+ROOF_E modified triangles=673 vertices=3150
+ROOF_N modified triangles=448 vertices=5517
+ROOF_S modified triangles=1449 vertices=9228
+Skylight creek samples=158 bounds=Center: (-40.40, 2.88, -44.10), Extents: (7.95, 0.93, 15.15)
+Pond inlet samples=12 bounds=Center: (-35.00, 0.02, -27.81), Extents: (2.40, 0.92, 4.21)
+Cave spill bed samples=13 bounds=Center: (-49.00, -11.85, -60.95), Extents: (2.40, 0.90, 4.35)
+Gorge bed samples=100 bounds=Center: (-86.00, -15.28, -29.33), Extents: (2.90, 3.39, 18.23)

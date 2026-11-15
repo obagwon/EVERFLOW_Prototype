@@ -104,13 +104,21 @@ namespace EverflowMVP.Editor
                     AssetDatabase.SaveAssets();
                 }, () =>
                 {
-                    var report = BuildPipeline.BuildPlayer(new BuildPlayerOptions
-                    {
-                        scenes = new[] { EFReleaseSetup.TitleScene, EFTitleScreen.GameplayScene },
-                        target = BuildTarget.StandaloneWindows64,
-                        locationPathName = Path.Combine(folder, "EVERFLOW.exe"),
-                        options = BuildOptions.None
-                    });
+                    string executable = Path.Combine(folder, "EVERFLOW.exe");
+                    var report = profile != null
+                        ? BuildPipeline.BuildPlayer(new BuildPlayerWithProfileOptions
+                        {
+                            buildProfile = profile,
+                            locationPathName = executable,
+                            options = BuildOptions.None
+                        })
+                        : BuildPipeline.BuildPlayer(new BuildPlayerOptions
+                        {
+                            scenes = new[] { EFReleaseSetup.TitleScene, EFTitleScreen.GameplayScene },
+                            target = BuildTarget.StandaloneWindows64,
+                            locationPathName = executable,
+                            options = BuildOptions.None
+                        });
                     File.WriteAllText(Path.Combine(folder, "build-result.txt"), report.summary.result + "\nVersion: " + candidate +
                         "\nErrors: " + report.summary.totalErrors + "\nWarnings: " + report.summary.totalWarnings);
                     return report.summary.result;

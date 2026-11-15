@@ -1,0 +1,79 @@
+ M Assets/EverflowMap/Editor/EFMapExplorationChecks.cs
+ M Assets/EverflowMap/Runtime/EFMapExploration.cs
+ M Assets/EverflowMap/Runtime/EFMapPlayer.cs
+ M Assets/Scenes/Everflow_Map_v2_test.unity
+ M Packages/manifest.json
+ M Packages/packages-lock.json
+?? "Assets/EmacEArt/Roadside Tales Backroad Bridges.meta"
+?? "Assets/EmacEArt/Roadside Tales Backroad Bridges/"
+?? Assets/EverflowMap/Editor/EFMapCinemachineChecks.cs
+?? Assets/EverflowMap/Editor/EFMapCinemachineChecks.cs.meta
+?? Assets/EverflowMap/Editor/EFMapCinemachineSetup.cs
+?? Assets/EverflowMap/Editor/EFMapCinemachineSetup.cs.meta
+?? Assets/EverflowMap/Editor/EFV2EditorBridge.cs
+?? Assets/EverflowMap/Editor/EFV2EditorBridge.cs.meta
+?? Assets/EverflowMap/Editor/EFV2PuzzleBuild.cs
+?? Assets/EverflowMap/Editor/EFV2PuzzleBuild.cs.meta
+?? Assets/EverflowMap/Editor/EFV2PuzzlePlayChecks.cs
+?? Assets/EverflowMap/Editor/EFV2PuzzlePlayChecks.cs.meta
+?? Assets/EverflowMap/Editor/EFV2WaterPlayChecks.cs
+?? Assets/EverflowMap/Editor/EFV2WaterPlayChecks.cs.meta
+?? Assets/EverflowMap/Editor/EFV2WaterTools.cs
+?? Assets/EverflowMap/Editor/EFV2WaterTools.cs.meta
+?? Assets/EverflowMap/Runtime/EFMapCinemachineRig.cs
+?? Assets/EverflowMap/Runtime/EFMapCinemachineRig.cs.meta
+?? Assets/EverflowMap/Runtime/EFV2Billboard.cs
+?? Assets/EverflowMap/Runtime/EFV2Billboard.cs.meta
+?? Assets/EverflowMap/Runtime/EFV2CameraInputGate.cs
+?? Assets/EverflowMap/Runtime/EFV2CameraInputGate.cs.meta
+?? Assets/EverflowMap/Runtime/EFV2ChannelPose.cs
+?? Assets/EverflowMap/Runtime/EFV2ChannelPose.cs.meta
+?? Assets/EverflowMap/Runtime/EFV2Checkpoint.cs
+?? Assets/EverflowMap/Runtime/EFV2Checkpoint.cs.meta
+?? Assets/EverflowMap/Runtime/EFV2IceVisual.cs
+?? Assets/EverflowMap/Runtime/EFV2IceVisual.cs.meta
+?? Assets/EverflowMap/Runtime/EFV2Plant.cs
+?? Assets/EverflowMap/Runtime/EFV2Plant.cs.meta
+?? Assets/EverflowMap/Runtime/EFV2PlayRecorder.cs
+?? Assets/EverflowMap/Runtime/EFV2PlayRecorder.cs.meta
+?? Assets/EverflowMap/Runtime/EFV2PuzzleAssembly.cs
+?? Assets/EverflowMap/Runtime/EFV2PuzzleAssembly.cs.meta
+?? Assets/EverflowMap/Runtime/EFV2PuzzleState.cs
+?? Assets/EverflowMap/Runtime/EFV2PuzzleState.cs.meta
+?? Assets/EverflowMap/Runtime/EFV2PuzzleWorld.cs
+?? Assets/EverflowMap/Runtime/EFV2PuzzleWorld.cs.meta
+?? Assets/EverflowMap/Runtime/EFV2TargetProxy.cs
+?? Assets/EverflowMap/Runtime/EFV2TargetProxy.cs.meta
+?? Assets/EverflowMap/Runtime/EFV2WaterHazard.cs
+?? Assets/EverflowMap/Runtime/EFV2WaterHazard.cs.meta
+?? Assets/EverflowMap/Runtime/EFV2WaterIntegration.cs
+?? Assets/EverflowMap/Runtime/EFV2WaterIntegration.cs.meta
+?? Assets/EverflowMap/Runtime/EFV2WaterPreview.cs
+?? Assets/EverflowMap/Runtime/EFV2WaterPreview.cs.meta
+?? Assets/EverflowMap/V2Camera.inputactions
+?? Assets/EverflowMap/V2Camera.inputactions.meta
+?? Assets/EverflowMap/V2CameraLook.asset
+?? Assets/EverflowMap/V2CameraLook.asset.meta
+?? Assets/EverflowWater.meta
+?? Assets/EverflowWater/
+?? Assets/Scenes/Everflow_Map_v2_test_with_puzzle.unity
+?? Assets/Scenes/Everflow_Map_v2_test_with_puzzle.unity.meta
+?? Assets/Scenes/Everflow_Water_Test.unity
+?? Assets/Scenes/Everflow_Water_Test.unity.meta
+?? "Assets/\354\203\210 \355\217\264\353\215\224.meta"
+?? docs/EVERFLOW_V2.3_Improvement_Notes.md
+?? docs/EVERFLOW_Water_Integration_Guide.md
+?? docs/EVERFLOW_redesign_v2.3.md
+?? docs/cinemachine/
+?? docs/v2-puzzle-validation/
+?? docs/visual-cleanup/
+?? docs/water-validation/
+?? tools/Open_V2_Puzzle_Tests.cmd
+?? tools/compile_v2_puzzles.py
+?? tools/create_everflow_water_shader.py
+?? tools/request_v2_editor.py
+?? tools/setup_v2_puzzles.py
+?? tools/v2-puzzle-state-checks/
+?? tools/verify_everflow_water.py
+?? tools/verify_v2_puzzle_geometry.py
+?? tools/verify_v2_puzzles.py

@@ -1,0 +1,205 @@
+{
+  "kind": "ANALYTICAL only: FBX transform/height samples plus generated staircase formulas. NOT imported Unity physics, camera or Play.",
+  "required_models": 46,
+  "missing_models": [],
+  "routes": [
+    {
+      "name": "A grown root staircase",
+      "from": [
+        -40.4,
+        0.05,
+        -15.0
+      ],
+      "to": [
+        -40.4,
+        6.05,
+        -27.0
+      ],
+      "width": 3.2,
+      "steps": 22,
+      "rise_per_step": 0.2727272727272727,
+      "run_per_step": 0.5454545454545454,
+      "embedded_samples": []
+    },
+    {
+      "name": "B ascent to ruin",
+      "from": [
+        -25.0,
+        6.1,
+        -52.0
+      ],
+      "to": [
+        -34.5,
+        15.15,
+        -58.8
+      ],
+      "width": 2.8,
+      "steps": 33,
+      "rise_per_step": 0.2742424242424243,
+      "run_per_step": 0.35402707506718234,
+      "embedded_samples": []
+    },
+    {
+      "name": "C ascent to ruin",
+      "from": [
+        -61.0,
+        11.9,
+        -60.0
+      ],
+      "to": [
+        -57.0,
+        15.15,
+        -62.0
+      ],
+      "width": 2.4,
+      "steps": 12,
+      "rise_per_step": 0.2708333333333333,
+      "run_per_step": 0.37267799624996495,
+      "embedded_samples": []
+    },
+    {
+      "name": "D3 grown vine path",
+      "from": [
+        -40.0,
+        -2.98,
+        -38.0
+      ],
+      "to": [
+        -39.0,
+        -7.45,
+        -45.0
+      ],
+      "width": 2.4,
+      "steps": 16,
+      "rise_per_step": 0.27937500000000004,
+      "run_per_step": 0.4419417382415922,
+      "embedded_samples": []
+    },
+    {
+      "name": "D3 return stairs",
+      "from": [
+        -45.15,
+        -7.45,
+        -59.2
+      ],
+      "to": [
+        -50.0,
+        -11.5,
+        -59.2
+      ],
+      "width": 2.4,
+      "steps": 15,
+      "rise_per_step": 0.26999999999999996,
+      "run_per_step": 0.3233333333333334,
+      "embedded_samples": []
+    },
+    {
+      "name": "D3 workbench to D5 ledge",
+      "from": [
+        -40.0,
+        -7.45,
+        -62.0
+      ],
+      "to": [
+        -46.0,
+        -5.95,
+        -66.0
+      ],
+      "width": 2.3,
+      "steps": 12,
+      "rise_per_step": 0.125,
+      "run_per_step": 0.6009252125773316,
+      "embedded_samples": []
+    },
+    {
+      "name": "D5 ledge to bypass access",
+      "from": [
+        -70.1,
+        -5.95,
+        -65.0
+      ],
+      "to": [
+        -74.0,
+        -8.9,
+        -64.8
+      ],
+      "width": 2.3,
+      "steps": 11,
+      "rise_per_step": 0.2681818181818182,
+      "run_per_step": 0.3550113489048485,
+      "embedded_samples": []
+    },
+    {
+      "name": "Safe exit gorge corridor",
+      "from": [
+        -82.3,
+        -11.9,
+        -47.0
+      ],
+      "to": [
+        -82.3,
+        -17.35,
+        -12.0
+      ],
+      "width": 2.7,
+      "steps": 54,
+      "rise_per_step": 0.10092592592592595,
+      "run_per_step": 0.6481481481481481,
+      "embedded_samples": []
+    },
+    {
+      "name": "Garden threshold",
+      "from": [
+        -83.4,
+        -17.35,
+        -2.0
+      ],
+      "to": [
+        -84.0,
+        -17.32,
+        0.0
+      ],
+      "width": 1.8,
+      "steps": 4,
+      "rise_per_step": 0.007500000000000284,
+      "run_per_step": 0.5220153254455271,
+      "embedded_samples": []
+    }
+  ],
+  "existing_stairs": {
+    "TWR_Flight1_Step": {
+      "steps": 12,
+      "max_riser": 0.25
+    },
+    "TWR_Flight2_Step": {
+      "steps": 12,
+      "max_riser": 0.25
+    },
+    "TWR_Flight3_Step": {
+      "steps": 12,
+      "max_riser": 0.25
+    },
+    "TWR_Flight4_Step": {
+      "steps": 12,
+      "max_riser": 0.2500000000000009
+    },
+    "TWR_Flight5_Step": {
+      "steps": 12,
+      "max_riser": 0.25000000000000006
+    },
+    "TWR_Flight6_Step": {
+      "steps": 12,
+      "max_riser": 0.2500000000000001
+    },
+    "D1_Stairs_Step": {
+      "steps": 45,
+      "max_riser": 0.20000000000000284
+    },
+    "D3_DockStairs_Step": {
+      "steps": 18,
+      "max_riser": 0.2166667683919279
+    }
+  },
+  "embedded_samples": 0,
+  "unity_play": false
+}

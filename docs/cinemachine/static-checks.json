@@ -1,0 +1,1019 @@
+{
+  "kind": "STATIC ONLY; Unity scene reopening and Play Mode not executed",
+  "scene_sha256": "e07a94948129d42ff1868ecebe72ae72eda9fe0baa936ad01153cc0480da2e9c",
+  "passed": 252,
+  "checks": [
+    {
+      "pass": true,
+      "check": "Saved scene has unique object/component IDs"
+    },
+    {
+      "pass": true,
+      "check": "Local fileID resolves: 0"
+    },
+    {
+      "pass": true,
+      "check": "Local fileID resolves: 0"
+    },
+    {
+      "pass": true,
+      "check": "Local fileID resolves: 0"
+    },
+    {
+      "pass": true,
+      "check": "Local fileID resolves: 0"
+    },
+    {
+      "pass": true,
+      "check": "Local fileID resolves: 0"
+    },
+    {
+      "pass": true,
+      "check": "Local fileID resolves: 0"
+    },
+    {
+      "pass": true,
+      "check": "Local fileID resolves: 0"
+    },
+    {
+      "pass": true,
+      "check": "Local fileID resolves: 0"
+    },
+    {
+      "pass": true,
+      "check": "Local fileID resolves: 0"
+    },
+    {
+      "pass": true,
+      "check": "Local fileID resolves: 0"
+    },
+    {
+      "pass": true,
+      "check": "Local fileID resolves: 686077272"
+    },
+    {
+      "pass": true,
+      "check": "Local fileID resolves: 686077271"
+    },
+    {
+      "pass": true,
+      "check": "Local fileID resolves: 686077273"
+    },
+    {
+      "pass": true,
+      "check": "Local fileID resolves: 0"
+    },
+    {
+      "pass": true,
+      "check": "Local fileID resolves: 0"
+    },
+    {
+      "pass": true,
+      "check": "Local fileID resolves: 0"
+    },
+    {
+      "pass": true,
+      "check": "Local fileID resolves: 0"
+    },
+    {
+      "pass": true,
+      "check": "Local fileID resolves: 686077270"
+    },
+    {
+      "pass": true,
+      "check": "Local fileID resolves: 0"
+    },
+    {
+      "pass": true,
+      "check": "Local fileID resolves: 0"
+    },
+    {
+      "pass": true,
+      "check": "Local fileID resolves: 0"
+    },
+    {
+      "pass": true,
+      "check": "Local fileID resolves: 0"
+    },
+    {
+      "pass": true,
+      "check": "Local fileID resolves: 0"
+    },
+    {
+      "pass": true,
+      "check": "Local fileID resolves: 686077270"
+    },
+    {
+      "pass": true,
+      "check": "Local fileID resolves: 0"
+    },
+    {
+      "pass": true,
+      "check": "Local fileID resolves: 0"
+    },
+    {
+      "pass": true,
+      "check": "Local fileID resolves: 0"
+    },
+    {
+      "pass": true,
+      "check": "Local fileID resolves: 0"
+    },
+    {
+      "pass": true,
+      "check": "Local fileID resolves: 686077270"
+    },
+    {
+      "pass": true,
+      "check": "Local fileID resolves: 0"
+    },
+    {
+      "pass": true,
+      "check": "Local fileID resolves: 0"
+    },
+    {
+      "pass": true,
+      "check": "Local fileID resolves: 0"
+    },
+    {
+      "pass": true,
+      "check": "Local fileID resolves: 880000002"
+    },
+    {
+      "pass": true,
+      "check": "Local fileID resolves: 880000003"
+    },
+    {
+      "pass": true,
+      "check": "Local fileID resolves: 0"
+    },
+    {
+      "pass": true,
+      "check": "Local fileID resolves: 0"
+    },
+    {
+      "pass": true,
+      "check": "Local fileID resolves: 0"
+    },
+    {
+      "pass": true,
+      "check": "Local fileID resolves: 0"
+    },
+    {
+      "pass": true,
+      "check": "Local fileID resolves: 880000001"
+    },
+    {
+      "pass": true,
+      "check": "Local fileID resolves: 0"
+    },
+    {
+      "pass": true,
+      "check": "Local fileID resolves: 0"
+    },
+    {
+      "pass": true,
+      "check": "Local fileID resolves: 0"
+    },
+    {
+      "pass": true,
+      "check": "Local fileID resolves: 0"
+    },
+    {
+      "pass": true,
+      "check": "Local fileID resolves: 880000001"
+    },
+    {
+      "pass": true,
+      "check": "Local fileID resolves: 880000021"
+    },
+    {
+      "pass": true,
+      "check": "Local fileID resolves: 880000011"
+    },
+    {
+      "pass": true,
+      "check": "Local fileID resolves: 880000030"
+    },
+    {
+      "pass": true,
+      "check": "Local fileID resolves: 0"
+    },
+    {
+      "pass": true,
+      "check": "Local fileID resolves: 0"
+    },
+    {
+      "pass": true,
+      "check": "Local fileID resolves: 0"
+    },
+    {
+      "pass": true,
+      "check": "Local fileID resolves: 880000011"
+    },
+    {
+      "pass": true,
+      "check": "Local fileID resolves: 0"
+    },
+    {
+      "pass": true,
+      "check": "Local fileID resolves: 0"
+    },
+    {
+      "pass": true,
+      "check": "Local fileID resolves: 0"
+    },
+    {
+      "pass": true,
+      "check": "Local fileID resolves: 0"
+    },
+    {
+      "pass": true,
+      "check": "Local fileID resolves: 880000010"
+    },
+    {
+      "pass": true,
+      "check": "Local fileID resolves: 0"
+    },
+    {
+      "pass": true,
+      "check": "Local fileID resolves: 0"
+    },
+    {
+      "pass": true,
+      "check": "Local fileID resolves: 1235368015"
+    },
+    {
+      "pass": true,
+      "check": "Local fileID resolves: 0"
+    },
+    {
+      "pass": true,
+      "check": "Local fileID resolves: 0"
+    },
+    {
+      "pass": true,
+      "check": "Local fileID resolves: 0"
+    },
+    {
+      "pass": true,
+      "check": "Local fileID resolves: 0"
+    },
+    {
+      "pass": true,
+      "check": "Local fileID resolves: 0"
+    },
+    {
+      "pass": true,
+      "check": "Local fileID resolves: 0"
+    },
+    {
+      "pass": true,
+      "check": "Local fileID resolves: 0"
+    },
+    {
+      "pass": true,
+      "check": "Local fileID resolves: 0"
+    },
+    {
+      "pass": true,
+      "check": "Local fileID resolves: 0"
+    },
+    {
+      "pass": true,
+      "check": "Local fileID resolves: 890000008"
+    },
+    {
+      "pass": true,
+      "check": "Local fileID resolves: 890000011"
+    },
+    {
+      "pass": true,
+      "check": "Local fileID resolves: 880000020"
+    },
+    {
+      "pass": true,
+      "check": "Local fileID resolves: 0"
+    },
+    {
+      "pass": true,
+      "check": "Local fileID resolves: 0"
+    },
+    {
+      "pass": true,
+      "check": "Local fileID resolves: 1736641463"
+    },
+    {
+      "pass": true,
+      "check": "Local fileID resolves: 0"
+    },
+    {
+      "pass": true,
+      "check": "Local fileID resolves: 0"
+    },
+    {
+      "pass": true,
+      "check": "Local fileID resolves: 0"
+    },
+    {
+      "pass": true,
+      "check": "Local fileID resolves: 0"
+    },
+    {
+      "pass": true,
+      "check": "Local fileID resolves: 1235368016"
+    },
+    {
+      "pass": true,
+      "check": "Local fileID resolves: 1235368015"
+    },
+    {
+      "pass": true,
+      "check": "Local fileID resolves: 1235368014"
+    },
+    {
+      "pass": true,
+      "check": "Local fileID resolves: 1235368017"
+    },
+    {
+      "pass": true,
+      "check": "Local fileID resolves: 1235368019"
+    },
+    {
+      "pass": true,
+      "check": "Local fileID resolves: 0"
+    },
+    {
+      "pass": true,
+      "check": "Local fileID resolves: 0"
+    },
+    {
+      "pass": true,
+      "check": "Local fileID resolves: 0"
+    },
+    {
+      "pass": true,
+      "check": "Local fileID resolves: 0"
+    },
+    {
+      "pass": true,
+      "check": "Local fileID resolves: 1235368013"
+    },
+    {
+      "pass": true,
+      "check": "Local fileID resolves: 0"
+    },
+    {
+      "pass": true,
+      "check": "Local fileID resolves: 0"
+    },
+    {
+      "pass": true,
+      "check": "Local fileID resolves: 0"
+    },
+    {
+      "pass": true,
+      "check": "Local fileID resolves: 1235368013"
+    },
+    {
+      "pass": true,
+      "check": "Local fileID resolves: 0"
+    },
+    {
+      "pass": true,
+      "check": "Local fileID resolves: 0"
+    },
+    {
+      "pass": true,
+      "check": "Local fileID resolves: 0"
+    },
+    {
+      "pass": true,
+      "check": "Local fileID resolves: 0"
+    },
+    {
+      "pass": true,
+      "check": "Local fileID resolves: 1235368013"
+    },
+    {
+      "pass": true,
+      "check": "Local fileID resolves: 0"
+    },
+    {
+      "pass": true,
+      "check": "Local fileID resolves: 0"
+    },
+    {
+      "pass": true,
+      "check": "Local fileID resolves: 0"
+    },
+    {
+      "pass": true,
+      "check": "Local fileID resolves: 0"
+    },
+    {
+      "pass": true,
+      "check": "Local fileID resolves: 1235368013"
+    },
+    {
+      "pass": true,
+      "check": "Local fileID resolves: 0"
+    },
+    {
+      "pass": true,
+      "check": "Local fileID resolves: 0"
+    },
+    {
+      "pass": true,
+      "check": "Local fileID resolves: 0"
+    },
+    {
+      "pass": true,
+      "check": "Local fileID resolves: 0"
+    },
+    {
+      "pass": true,
+      "check": "Local fileID resolves: 1235368013"
+    },
+    {
+      "pass": true,
+      "check": "Local fileID resolves: 0"
+    },
+    {
+      "pass": true,
+      "check": "Local fileID resolves: 0"
+    },
+    {
+      "pass": true,
+      "check": "Local fileID resolves: 0"
+    },
+    {
+      "pass": true,
+      "check": "Local fileID resolves: 0"
+    },
+    {
+      "pass": true,
+      "check": "Local fileID resolves: 0"
+    },
+    {
+      "pass": true,
+      "check": "Local fileID resolves: 0"
+    },
+    {
+      "pass": true,
+      "check": "Local fileID resolves: 0"
+    },
+    {
+      "pass": true,
+      "check": "Local fileID resolves: 0"
+    },
+    {
+      "pass": true,
+      "check": "Local fileID resolves: 0"
+    },
+    {
+      "pass": true,
+      "check": "Local fileID resolves: 0"
+    },
+    {
+      "pass": true,
+      "check": "Local fileID resolves: 0"
+    },
+    {
+      "pass": true,
+      "check": "Local fileID resolves: 0"
+    },
+    {
+      "pass": true,
+      "check": "Local fileID resolves: 0"
+    },
+    {
+      "pass": true,
+      "check": "Local fileID resolves: 0"
+    },
+    {
+      "pass": true,
+      "check": "Local fileID resolves: 0"
+    },
+    {
+      "pass": true,
+      "check": "Local fileID resolves: 0"
+    },
+    {
+      "pass": true,
+      "check": "Local fileID resolves: 0"
+    },
+    {
+      "pass": true,
+      "check": "Local fileID resolves: 0"
+    },
+    {
+      "pass": true,
+      "check": "Local fileID resolves: 0"
+    },
+    {
+      "pass": true,
+      "check": "Local fileID resolves: 0"
+    },
+    {
+      "pass": true,
+      "check": "Local fileID resolves: 0"
+    },
+    {
+      "pass": true,
+      "check": "Local fileID resolves: 0"
+    },
+    {
+      "pass": true,
+      "check": "Local fileID resolves: 0"
+    },
+    {
+      "pass": true,
+      "check": "Local fileID resolves: 880000020"
+    },
+    {
+      "pass": true,
+      "check": "Local fileID resolves: 0"
+    },
+    {
+      "pass": true,
+      "check": "Local fileID resolves: 0"
+    },
+    {
+      "pass": true,
+      "check": "Local fileID resolves: 0"
+    },
+    {
+      "pass": true,
+      "check": "Local fileID resolves: 0"
+    },
+    {
+      "pass": true,
+      "check": "Local fileID resolves: 890000011"
+    },
+    {
+      "pass": true,
+      "check": "Local fileID resolves: 0"
+    },
+    {
+      "pass": true,
+      "check": "Local fileID resolves: 0"
+    },
+    {
+      "pass": true,
+      "check": "Local fileID resolves: 0"
+    },
+    {
+      "pass": true,
+      "check": "Local fileID resolves: 0"
+    },
+    {
+      "pass": true,
+      "check": "Local fileID resolves: 890000010"
+    },
+    {
+      "pass": true,
+      "check": "Local fileID resolves: 880000022"
+    },
+    {
+      "pass": true,
+      "check": "Local fileID resolves: 0"
+    },
+    {
+      "pass": true,
+      "check": "Local fileID resolves: 0"
+    },
+    {
+      "pass": true,
+      "check": "Local fileID resolves: 0"
+    },
+    {
+      "pass": true,
+      "check": "Local fileID resolves: 890000001"
+    },
+    {
+      "pass": true,
+      "check": "Local fileID resolves: 890000002"
+    },
+    {
+      "pass": true,
+      "check": "Local fileID resolves: 890000003"
+    },
+    {
+      "pass": true,
+      "check": "Local fileID resolves: 890000004"
+    },
+    {
+      "pass": true,
+      "check": "Local fileID resolves: 890000005"
+    },
+    {
+      "pass": true,
+      "check": "Local fileID resolves: 890000006"
+    },
+    {
+      "pass": true,
+      "check": "Local fileID resolves: 890000008"
+    },
+    {
+      "pass": true,
+      "check": "Local fileID resolves: 0"
+    },
+    {
+      "pass": true,
+      "check": "Local fileID resolves: 0"
+    },
+    {
+      "pass": true,
+      "check": "Local fileID resolves: 0"
+    },
+    {
+      "pass": true,
+      "check": "Local fileID resolves: 0"
+    },
+    {
+      "pass": true,
+      "check": "Local fileID resolves: 890000000"
+    },
+    {
+      "pass": true,
+      "check": "Local fileID resolves: 0"
+    },
+    {
+      "pass": true,
+      "check": "Local fileID resolves: 0"
+    },
+    {
+      "pass": true,
+      "check": "Local fileID resolves: 0"
+    },
+    {
+      "pass": true,
+      "check": "Local fileID resolves: 0"
+    },
+    {
+      "pass": true,
+      "check": "Local fileID resolves: 890000000"
+    },
+    {
+      "pass": true,
+      "check": "Local fileID resolves: 890000011"
+    },
+    {
+      "pass": true,
+      "check": "Local fileID resolves: 890000011"
+    },
+    {
+      "pass": true,
+      "check": "Local fileID resolves: 0"
+    },
+    {
+      "pass": true,
+      "check": "Local fileID resolves: 0"
+    },
+    {
+      "pass": true,
+      "check": "Local fileID resolves: 0"
+    },
+    {
+      "pass": true,
+      "check": "Local fileID resolves: 890000000"
+    },
+    {
+      "pass": true,
+      "check": "Local fileID resolves: 0"
+    },
+    {
+      "pass": true,
+      "check": "Local fileID resolves: 0"
+    },
+    {
+      "pass": true,
+      "check": "Local fileID resolves: 0"
+    },
+    {
+      "pass": true,
+      "check": "Local fileID resolves: 890000000"
+    },
+    {
+      "pass": true,
+      "check": "Local fileID resolves: 0"
+    },
+    {
+      "pass": true,
+      "check": "Local fileID resolves: 0"
+    },
+    {
+      "pass": true,
+      "check": "Local fileID resolves: 0"
+    },
+    {
+      "pass": true,
+      "check": "Local fileID resolves: 890000000"
+    },
+    {
+      "pass": true,
+      "check": "Local fileID resolves: 0"
+    },
+    {
+      "pass": true,
+      "check": "Local fileID resolves: 0"
+    },
+    {
+      "pass": true,
+      "check": "Local fileID resolves: 0"
+    },
+    {
+      "pass": true,
+      "check": "Local fileID resolves: 890000000"
+    },
+    {
+      "pass": true,
+      "check": "Local fileID resolves: 890000003"
+    },
+    {
+      "pass": true,
+      "check": "Local fileID resolves: 890000003"
+    },
+    {
+      "pass": true,
+      "check": "Local fileID resolves: 890000003"
+    },
+    {
+      "pass": true,
+      "check": "Local fileID resolves: 0"
+    },
+    {
+      "pass": true,
+      "check": "Local fileID resolves: 0"
+    },
+    {
+      "pass": true,
+      "check": "Local fileID resolves: 0"
+    },
+    {
+      "pass": true,
+      "check": "Local fileID resolves: 0"
+    },
+    {
+      "pass": true,
+      "check": "Local fileID resolves: 890000000"
+    },
+    {
+      "pass": true,
+      "check": "Local fileID resolves: 880000021"
+    },
+    {
+      "pass": true,
+      "check": "Local fileID resolves: 1235368019"
+    },
+    {
+      "pass": true,
+      "check": "Local fileID resolves: 890000002"
+    },
+    {
+      "pass": true,
+      "check": "Local fileID resolves: 890000003"
+    },
+    {
+      "pass": true,
+      "check": "Local fileID resolves: 890000006"
+    },
+    {
+      "pass": true,
+      "check": "Local fileID resolves: 1235368016"
+    },
+    {
+      "pass": true,
+      "check": "Local fileID resolves: 686077272"
+    },
+    {
+      "pass": true,
+      "check": "Local fileID resolves: 1736641463"
+    },
+    {
+      "pass": true,
+      "check": "Local fileID resolves: 880000002"
+    },
+    {
+      "pass": true,
+      "check": "Local fileID resolves: 880000011"
+    },
+    {
+      "pass": true,
+      "check": "Local fileID resolves: 880000020"
+    },
+    {
+      "pass": true,
+      "check": "Local fileID resolves: 890000001"
+    },
+    {
+      "pass": true,
+      "check": "Legacy EFMapCamera and all references removed from target scene"
+    },
+    {
+      "pass": true,
+      "check": "Original MainCamera tag and Camera object retained"
+    },
+    {
+      "pass": true,
+      "check": "Original rendering Camera component retained"
+    },
+    {
+      "pass": true,
+      "check": "Existing Main Camera contains Brain"
+    },
+    {
+      "pass": true,
+      "check": "Brain uses LateUpdate for CharacterController movement"
+    },
+    {
+      "pass": true,
+      "check": "Player view still references original rendering camera"
+    },
+    {
+      "pass": true,
+      "check": "Player legacy follow override is null"
+    },
+    {
+      "pass": true,
+      "check": "Player Cinemachine bridge is a scene override"
+    },
+    {
+      "pass": true,
+      "check": "CameraTarget is an added child of prefab player root"
+    },
+    {
+      "pass": true,
+      "check": "CameraTarget is chest height above centred capsule origin"
+    },
+    {
+      "pass": true,
+      "check": "FreeLook Camera component: CinemachineCamera"
+    },
+    {
+      "pass": true,
+      "check": "FreeLook Camera component: CinemachineOrbitalFollow"
+    },
+    {
+      "pass": true,
+      "check": "FreeLook Camera component: CinemachineRotationComposer"
+    },
+    {
+      "pass": true,
+      "check": "FreeLook Camera component: CinemachineDeoccluder"
+    },
+    {
+      "pass": true,
+      "check": "FreeLook Camera component: CinemachineInputAxisController"
+    },
+    {
+      "pass": true,
+      "check": "FreeLook Camera component: EFMapCinemachineRig"
+    },
+    {
+      "pass": true,
+      "check": "Follow and LookAt resolve to CameraTarget"
+    },
+    {
+      "pass": true,
+      "check": "Orbital Follow binding is WorldSpace (installed 3.1.7 enum)"
+    },
+    {
+      "pass": true,
+      "check": "Recentering is disabled on all three axes"
+    },
+    {
+      "pass": true,
+      "check": "Horizontal wraps 360 degrees; vertical clamps -30 to 65 degrees"
+    },
+    {
+      "pass": true,
+      "check": "Deoccluder pulls forward immediately and damps return"
+    },
+    {
+      "pass": true,
+      "check": "Deoccluder tests Default terrain; excludes player layer 2, FX, water and UI"
+    },
+    {
+      "pass": true,
+      "check": "Axis controller uses pixel sensitivity with Cancel Delta Time"
+    },
+    {
+      "pass": true,
+      "check": "Both input backends cannot double-feed mouse input"
+    },
+    {
+      "pass": true,
+      "check": "Look action reads Mouse delta"
+    },
+    {
+      "pass": true,
+      "check": "InputActionReference action UUID matches Look"
+    },
+    {
+      "pass": true,
+      "check": "InputActionReference points to the inputaction importer main asset"
+    },
+    {
+      "pass": true,
+      "check": "Horizontal and vertical controllers share Look reference"
+    },
+    {
+      "pass": true,
+      "check": "External scene GUID resolves: dbe43d662878a7c43bcd44d43c9e2094"
+    },
+    {
+      "pass": true,
+      "check": "External scene GUID resolves: 9c8c664db6f94952b6576868fe06261d"
+    },
+    {
+      "pass": true,
+      "check": "External scene GUID resolves: 13401b0c9afd5cf8b26c5081d53758a0"
+    },
+    {
+      "pass": true,
+      "check": "External scene GUID resolves: b6ad62e0df9d13e4aa1bc7de9e4b2efe"
+    },
+    {
+      "pass": true,
+      "check": "External scene GUID resolves: 72ece51f2901e7445ab60da3685d6b5f"
+    },
+    {
+      "pass": true,
+      "check": "External scene GUID resolves: 2df0e76407b673c43b29747d8ca55a73"
+    },
+    {
+      "pass": true,
+      "check": "External scene GUID resolves: b19a0c0ad4464ef681522dbbc29a6ac0"
+    },
+    {
+      "pass": true,
+      "check": "External scene GUID resolves: 0000000000000000e000000000000000"
+    },
+    {
+      "pass": true,
+      "check": "External scene GUID resolves: f38bda98361e1de48a4ca2bd86ea3c17"
+    },
+    {
+      "pass": true,
+      "check": "External scene GUID resolves: 474bcb49853aa07438625e644c072ee6"
+    },
+    {
+      "pass": true,
+      "check": "External scene GUID resolves: 0000000000000000f000000000000000"
+    },
+    {
+      "pass": true,
+      "check": "External scene GUID resolves: 89875cdc57c54474a8a74efd9b2a3b5d"
+    },
+    {
+      "pass": true,
+      "check": "External scene GUID resolves: 3b5d7c088409d9a40b7b09aa707777f8"
+    },
+    {
+      "pass": true,
+      "check": "External scene GUID resolves: 1d4e7df0d3e36ea43bc217b468d03a5f"
+    },
+    {
+      "pass": true,
+      "check": "External scene GUID resolves: f9dfa5b682dcd46bda6128250e975f58"
+    },
+    {
+      "pass": true,
+      "check": "External scene GUID resolves: a79441f348de89743a2939f4d699eac1"
+    },
+    {
+      "pass": true,
+      "check": "Main Camera has only Brain and URP scripts; no custom transform owner"
+    },
+    {
+      "pass": true,
+      "check": "Movement retains actual camera horizontal-forward fallback when legacy follow is null"
+    },
+    {
+      "pass": true,
+      "check": "Serialized player remains linked to the original prefab instance"
+    },
+    {
+      "pass": true,
+      "check": "Manifest and lock agree on Cinemachine 3.1.7"
+    },
+    {
+      "pass": true,
+      "check": "Target scene remains standalone exploration; ability gameplay is not enabled here"
+    },
+    {
+      "pass": true,
+      "check": "Only the legacy camera component was removed from original scene objects"
+    },
+    {
+      "pass": true,
+      "check": "All original non-camera scene objects and geometry overrides are preserved"
+    }
+  ],
+  "main_camera_scripts": [
+    "Library/PackageCache\\com.unity.render-pipelines.universal@8aa8d736cba6\\Runtime\\UniversalAdditionalCameraData.cs",
+    "Library/PackageCache\\com.unity.cinemachine@f3f96bcb59af\\Runtime\\Behaviours\\CinemachineBrain.cs"
+  ]
+}

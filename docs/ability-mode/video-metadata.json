@@ -1,0 +1,17 @@
+{
+  "bytes": 2808427,
+  "tracks": [
+    {
+      "width": 1280,
+      "height": 720,
+      "type": "vide"
+    },
+    {
+      "width": 0,
+      "height": 0,
+      "type": "soun"
+    }
+  ],
+  "fps": 30,
+  "seconds": 12.533
+}

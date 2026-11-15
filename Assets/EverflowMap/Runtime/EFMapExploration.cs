@@ -33,8 +33,11 @@ namespace EverflowMap
         {
             if (player == null || spawnPoint == null || mapRoot == null)
                 throw new InvalidOperationException("Exploration needs Player, Spawn Point and Map Root scene references.");
-            if (!player.puzzleLabLocomotion || player.world != null || player.follow == null ||
-                player.follow.player != player || player.view != player.follow.GetComponent<Camera>())
+            bool cameraConnected = player.cinemachineRig != null
+                ? player.follow == null && player.cinemachineRig.player == player &&
+                  player.cinemachineRig.brain != null && player.view == player.cinemachineRig.brain.GetComponent<Camera>()
+                : player.follow != null && player.follow.player == player && player.view == player.follow.GetComponent<Camera>();
+            if (!player.puzzleLabLocomotion || player.world != null || !cameraConnected)
                 throw new InvalidOperationException("Exploration requires standalone locomotion and reciprocal player/camera references.");
             if (solidMeshNames == null || solidMeshNames.Length == 0 || fallHeight >= spawnPoint.position.y - 3)
                 throw new InvalidOperationException("Exploration needs explicit solid meshes and a fall height below normal terrain.");
@@ -83,8 +86,13 @@ namespace EverflowMap
         void SetPaused(bool value)
         {
             Paused = value;
-            player.enabled = player.follow.enabled = !value;
-            player.follow.DiscardLookDelta();
+            player.enabled = !value;
+            if (player.cinemachineRig != null) player.cinemachineRig.SetInputActive(!value);
+            else
+            {
+                player.follow.enabled = !value;
+                player.follow.DiscardLookDelta();
+            }
             Cursor.lockState = value ? CursorLockMode.None : CursorLockMode.Locked;
             Cursor.visible = value;
         }

@@ -1,0 +1,5 @@
+2026-11-09T12:25:37.7385739Z
+Observed states: Locomotion, Fall
+Idle transport samples=0, erroneous running=0
+Paused animation frames=0, clock advances=0
+Route puzzle result is in docs/v2-puzzle-validation/runtime-route-alternate.txt.

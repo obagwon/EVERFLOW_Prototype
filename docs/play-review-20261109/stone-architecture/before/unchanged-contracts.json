@@ -1,0 +1,32 @@
+[
+  {
+    "Algorithm": "SHA256",
+    "Hash": "A322C6C9979D55A54A0704FDA43D4DFBB88AFBE22F4BEC51B757FC0F24D63B8C",
+    "Path": "C:\\Users\\vzd12\\EVERFLOW_Prototype\\Assets\\EverflowMap\\Runtime\\EFV2PuzzleWorld.cs"
+  },
+  {
+    "Algorithm": "SHA256",
+    "Hash": "35ADFD680017149F3A799858B2793DE74AAB88DF32BFE83FF5C9BD29661B3207",
+    "Path": "C:\\Users\\vzd12\\EVERFLOW_Prototype\\Assets\\EverflowMap\\Runtime\\EFV2FallRecovery.cs"
+  },
+  {
+    "Algorithm": "SHA256",
+    "Hash": "0248D381812158501FC41946B69F0A2C3DE956267557798D23A82627E53F4474",
+    "Path": "C:\\Users\\vzd12\\EVERFLOW_Prototype\\Assets\\EverflowMap\\Runtime\\EFV2WaterIntegration.cs"
+  },
+  {
+    "Algorithm": "SHA256",
+    "Hash": "C18D2C430F102FA1B71C51ADF2DB03BC15B6B97DB2BD7D873C0E362D7D81DE24",
+    "Path": "C:\\Users\\vzd12\\EVERFLOW_Prototype\\Assets\\EverflowMap\\Runtime\\EFDemoFeedback.cs"
+  },
+  {
+    "Algorithm": "SHA256",
+    "Hash": "6184189D5D4DE543E28E69C208179A6D09D0BFEE76F36B18C07A468A06C154AD",
+    "Path": "C:\\Users\\vzd12\\EVERFLOW_Prototype\\Assets\\EverflowWater\\Network\\W_H_to_G_Fall_Network.asset"
+  },
+  {
+    "Algorithm": "SHA256",
+    "Hash": "4C18E5018D3CE03E6625111EC5CF28695AE5E8A198E57AF8851AB48F8321573D",
+    "Path": "C:\\Users\\vzd12\\EVERFLOW_Prototype\\Assets\\EverflowWater\\Network\\ContinuousWater.mat"
+  }
+]

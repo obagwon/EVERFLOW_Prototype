@@ -1,0 +1,25 @@
+{
+  "utc": "2026-11-08T12:52:02.744152+00:00",
+  "pass": true,
+  "changed_scene_blocks": [
+    [
+      890000001,
+      4
+    ],
+    [
+      1235368016,
+      4
+    ],
+    [
+      1368662994,
+      4
+    ],
+    [
+      1614832883,
+      114
+    ]
+  ],
+  "preserved": "Scene object IDs, camera configuration/position, all physics and puzzle parameters. Unity normalized camera quaternions within 1e-7 per component during save.",
+  "mesh_checks": "W_H_to_G_Fall verts=12972 openEdges=0 nonManifold=0 hasBody=True\nW_G_ToWheel verts=1422 openEdges=0 nonManifold=0 hasBody=True",
+  "pause_checks": "Ability mode stops water clock: True\nCancel resumes water clock: True\n"
+}

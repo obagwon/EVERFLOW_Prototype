@@ -1,0 +1,9 @@
+2026-11-08T17:06:10.6521555Z
+Comparison fixture: new masonry colliders and renderers disabled, original imported terrain and original stair boxes/ramp unchanged.
+ISOLATED WALK C original physics baseline start placement=(-61.00, 11.90, -60.00) goal=(-57.00, 15.15, -62.00) (no jump, normal CharacterController)
+FAIL C original physics baseline reachable without jump, feet=(-60.976, 12.061, -59.776)
+PASS C original physics baseline no automatic fall recovery during normal traversal
+ISOLATED WALK D3-D5 original physics baseline start placement=(-40.00, -7.45, -62.00) goal=(-46.00, -5.95, -66.00) (no jump, normal CharacterController)
+FAIL D3-D5 original physics baseline reachable without jump, feet=(-43.058, -6.623, -63.845)
+PASS D3-D5 original physics baseline no automatic fall recovery during normal traversal
+TOTAL 4 checks, 2 failures.

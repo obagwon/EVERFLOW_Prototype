@@ -1,0 +1,40 @@
+W_A_Pond verts=684 triangles=1258 impacts=1 pool=True
+W_D2_Basin verts=651 triangles=1200 impacts=2 pool=True
+W_D2_Dock verts=765 triangles=1408 impacts=0 pool=False
+W_D2_Low -> covered by continuous route (original gameplay object retained)
+W_D5_SpillFall -> covered by continuous route (original gameplay object retained)
+W_D5_SpillFall_Foam -> covered by continuous route (original gameplay object retained)
+W_D5_SpillFloor -> covered by continuous route (original gameplay object retained)
+W_D5_SpillPool verts=1258 triangles=2336 impacts=1 pool=False
+W_G_Leak_Fall -> covered by continuous route (original gameplay object retained)
+W_G_Leak_Fall_Foam -> covered by continuous route (original gameplay object retained)
+W_G_Supply -> covered by continuous route (original gameplay object retained)
+W_H_Pond verts=168 triangles=280 impacts=0 pool=True
+W_H_to_D5_Fall verts=1377 triangles=2560 impacts=1 pool=False
+W_H_to_D5_Fall_Foam -> covered by continuous route (original gameplay object retained)
+W_H_to_G_Fall verts=12972 triangles=20804 impacts=3 pool=False
+W_H_to_G_Fall_Foam -> covered by continuous route (original gameplay object retained)
+W_Leak_Fall2 -> covered by continuous route (original gameplay object retained)
+W_Leak_Fall2_Foam -> covered by continuous route (original gameplay object retained)
+W_Leak_S1 -> covered by continuous route (original gameplay object retained)
+W_Leak_S2 -> covered by continuous route (original gameplay object retained)
+W_Leak_S3 -> covered by continuous route (original gameplay object retained)
+W_Leak_S4 -> covered by continuous route (original gameplay object retained)
+W_Bypass_1 verts=2448 triangles=4576 impacts=2 pool=False
+W_Bypass_2 -> covered by continuous route (original gameplay object retained)
+W_Bypass_Fall -> covered by continuous route (original gameplay object retained)
+W_Bypass_Fall_Foam -> covered by continuous route (original gameplay object retained)
+W_D2_Exit verts=663 triangles=1216 impacts=0 pool=False
+W_D2_Wheel verts=391 triangles=704 impacts=0 pool=False
+W_D5_Fall verts=799 triangles=1472 impacts=1 pool=False
+W_D5_Fall_Foam -> covered by continuous route (original gameplay object retained)
+W_D5_Fixed verts=272 triangles=480 impacts=0 pool=False
+W_D5_ToD2 -> covered by continuous route (original gameplay object retained)
+W_Exit_Tunnel verts=2550 triangles=4768 impacts=0 pool=False
+W_G_ToWheel verts=1422 triangles=2104 impacts=0 pool=False
+W_Gorge -> covered by continuous route (original gameplay object retained)
+W_R_IslandFall -> covered by continuous route (original gameplay object retained)
+W_R_IslandFall_Foam -> covered by continuous route (original gameplay object retained)
+W_R_WheelFeed -> covered by continuous route (original gameplay object retained)
+W_R_WheelPool verts=1972 triangles=3680 impacts=1 pool=False
+segments=39 owners=15 totalVertices=28392

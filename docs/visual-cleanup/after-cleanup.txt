@@ -1,0 +1,24 @@
+Hidden preview/decorative renderer only: VOL_A_Wind
+Hidden preview/decorative renderer only: VOL_C_Wind
+Hidden preview/decorative renderer only: VOL_D5_Wind
+Hidden preview/decorative renderer only: PH_A_Tut_MovingPad
+Hidden preview/decorative renderer only: PH_A_Tut_WitheredPad
+C parasol moved 12m west onto the same terrace; no collision or puzzle target
+D1 torch moved onto the south balcony edge, away from the character/camera corridor; no collider
+Removed duplicate safe landing skin/collider: Safe landing / S / A SHORE; nine supporting samples on T_Terrain
+Removed duplicate safe landing skin/collider: Safe landing / A COMMON MOUND; nine supporting samples on A common mound landing
+Removed duplicate safe landing skin/collider: Safe landing / B ENTRANCE; nine supporting samples on B approach,B-C intermediate switching walkway,T_Terrain
+Removed duplicate safe landing skin/collider: Safe landing / B FAR BANK; nine supporting samples on T_Terrain,B far bank
+Removed duplicate safe landing skin/collider: Safe landing / C ENTRANCE; nine supporting samples on T_Terrain
+Removed duplicate safe landing skin/collider: Safe landing / C HIGH LEDGE; nine supporting samples on C visible high landing
+Removed duplicate safe landing skin/collider: Safe landing / TOWER 0; nine supporting samples on TWR_EntryLanding
+Removed duplicate safe landing skin/collider: Safe landing / TOWER 1; nine supporting samples on TWR_Landing_N8
+Removed duplicate safe landing skin/collider: Safe landing / TOWER 2; nine supporting samples on TWR_Landing_S6
+Removed duplicate safe landing skin/collider: Safe landing / TOWER 3; nine supporting samples on TWR_Landing_N4
+Removed duplicate safe landing skin/collider: Safe landing / TOWER 4; nine supporting samples on TWR_Landing_S2
+Removed duplicate safe landing skin/collider: Safe landing / TOWER 5; nine supporting samples on TWR_Landing_N0
+Removed duplicate safe landing skin/collider: Safe landing / TOWER 6; nine supporting samples on TWR_Floor
+Removed duplicate safe landing skin/collider: Safe landing / D1 BALCONY; nine supporting samples on D1_Balcony
+Removed duplicate safe landing skin/collider: Safe landing / D3 WORKBENCH; nine supporting samples on D3_Workbench
+Removed duplicate safe landing skin/collider: Safe landing / D5 SERVICE LEDGE; nine supporting samples on D5_Ledge,D5 west service walkway
+Removed duplicate safe landing skin/collider: Safe landing / RESTORED GARDEN; nine supporting samples on Restored garden viewpoint,Garden east wheel walkway

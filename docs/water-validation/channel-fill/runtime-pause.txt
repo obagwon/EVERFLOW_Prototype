@@ -1,0 +1,2 @@
+Ability mode stops water clock: True
+Cancel resumes water clock: True

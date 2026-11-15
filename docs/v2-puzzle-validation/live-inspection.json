@@ -1,0 +1,21 @@
+{
+    "built": false,
+    "paused": false,
+    "grounded": false,
+    "supply": false,
+    "arriving": false,
+    "restored": false,
+    "player": {
+        "x": -46.0,
+        "y": 1.25,
+        "z": -9.0
+    },
+    "camera": {
+        "x": -46.0,
+        "y": 3.7541019916534426,
+        "z": -3.293661117553711
+    },
+    "checkpoint": "S",
+    "targets": [],
+    "movers": []
+}

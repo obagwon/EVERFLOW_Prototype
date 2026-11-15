@@ -1,0 +1,7 @@
+Samples=8670 Faded=497 FocusLineObstruction=14 NearPlanePenetration=0 CinematicSamples=359 CinematicFaded=0
+LINE PH_B_Windmill_Pole player=(-25.27, 7.27, -51.35) camera=(-26.28, 9.25, -48.78)
+LINE PH_B_Windmill_Pole player=(-25.24, 7.27, -51.40) camera=(-26.50, 9.15, -48.87)
+LINE PH_B_Windmill_Pole player=(-25.24, 7.27, -51.42) camera=(-25.90, 9.19, -49.50)
+LINE PH_B_Windmill_Pole player=(-25.21, 7.27, -51.46) camera=(-26.20, 9.06, -49.59)
+LINE TWR_WallE player=(-30.65, 13.10, -68.52) camera=(-31.53, 15.13, -64.21)
+LINE TWR_Flight2_Step10 player=(-30.63, 7.05, -68.54) camera=(-29.29, 8.97, -64.38)

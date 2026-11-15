@@ -1,0 +1,21 @@
+2026-11-06T16:50:00.9086363Z
+PASS No exploration respawn/input owner
+PASS No lab input/recall owner
+PASS Cinemachine and standalone player own camera/locomotion
+FORCED device-state runtime checks. Direct LabTarget.Apply, model pose and gate Tick changes. NOT ordinary-input completion or a traversal playthrough.
+PASS D5 aligned+structure-fixed route supplies actual composed circuit
+PASS Internal water ice blocks channel supply separately from structure freeze
+PASS BLOOM bypass supplies despite upper-channel ice
+PASS Dock branch powers leaf, does not feed W
+PASS Small wheel fully opens and latches D4
+PASS Main selection preserves latch, ice blocks W
+PASS Thaw restores water, under 3s not complete
+PASS Supply interruption resets timer
+PASS 3s continuous actual circuit result restores W
+PASS G BLOOM alternative opens and latches imported door
+PASS G RUIN GATE visible model and active collider share moving carrier
+PASS G RUIN GATE model/collider carrier reaches fully open position
+PASS D4 EXIT GATE visible model and active collider share moving carrier
+PASS D4 EXIT GATE model/collider carrier reaches fully open position
+PASS Restart resets all scene-local puzzles and finale
+TOTAL 18 checks, 0 failures. Full S-to-garden traversal remains a separate manual test.

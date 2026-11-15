@@ -15,13 +15,14 @@ namespace EverflowPuzzleLab
         [Range(.05f, 1)] public float smallSpeed = .3f;
         public bool oscillate;
         public bool powered = true;
+        public bool externallyDriven;
         bool returning;
         public bool AtDestination => flow != null && flow.Direction >= 0 && flow.Direction < destinations.Length &&
             Vector3.Distance(motion.position, destinations[flow.Direction]) < .45f;
         void Update() { Tick(Time.deltaTime); }
         public void Tick(float dt)
         {
-            if (motion == null || target == null || flow == null || target.Frozen || !powered || flow.Direction < 0 || flow.Direction >= destinations.Length) return;
+            if (externallyDriven || motion == null || target == null || flow == null || target.Frozen || !powered || flow.Direction < 0 || flow.Direction >= destinations.Length) return;
             bool expanded = !target.acceptsBloom || target.Grown;
             Vector3 end = Vector3.Lerp(home, destinations[flow.Direction], expanded ? 1 : smallReach);
             Vector3 goal = oscillate && returning ? home : end;

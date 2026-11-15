@@ -1,0 +1,13 @@
+Isolated material and lifetime checks in Play mode. Impact invocation here is only for visual timing.
+PASS Growth keeps the authored material, grown scale and support
+PASS Frozen leaf keeps the original material
+PASS Thaw leaves growth and original material intact
+PASS Actual water ice support remains solid after freeze
+PASS Water thaw disables the ice support
+PASS Default LabTarget keeps the legacy indicator color
+PASS Impact draws on a separate overlay while exploring
+PASS Timed wave clears and exposes the original material
+PASS Respawn clears an active wave and preserves completed growth
+PASS Restart clears an active wave and resets growth with original material
+PASS Overlay renders without shader errors
+TOTAL 11 checks, 0 failures.

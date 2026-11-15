@@ -1,0 +1,13 @@
+PASS Terrain render and collision share the gorge cut
+PASS Hall ceiling covers the 36 interior and corner samples: 36
+PASS Existing roof panels are enabled at runtime
+PASS Gorge treads have clear walking and camera headroom above the cut: 270/270
+PASS One top surface across D3 and D5 at the same elevation: 10/10
+PASS TEMP_Bridge_MoundB retains a shared visual/collision mesh with no protruding hall vertices below the slab
+PASS TEMP_Bridge_MoundC retains a shared visual/collision mesh with no protruding hall vertices below the slab
+PASS South arch has a continuous backing and the intersecting original is disabled
+PASS Trough water and collision move with the hull
+PASS D5 reaches and holds its socket: 0.28s observed
+PASS D5 follows intermediate rail poses (largest sampled translation step 0.004m)
+PASS Aligned FREEZE holds the hull and feeds the trough
+Failures: 0

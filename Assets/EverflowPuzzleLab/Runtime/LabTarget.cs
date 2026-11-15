@@ -19,6 +19,7 @@ namespace EverflowPuzzleLab
         public string[] directions = new string[0];
         public Transform[] arrows = new Transform[0];
         public Renderer[] indicators = new Renderer[0];
+        public bool TintIndicators { get; set; } = true;
         [SerializeField] LabWorldState state = new LabWorldState();
         public bool Grown => state.grown;
         public bool Frozen => state.frozen;
@@ -51,12 +52,15 @@ namespace EverflowPuzzleLab
             }
             foreach (var item in grownObjects) if (item != null) item.SetActive(Grown);
             if (iceSupport != null) iceSupport.enabled = Frozen;
-            var block = new MaterialPropertyBlock();
-            foreach (var item in indicators) if (item != null)
+            if (TintIndicators && indicators.Length > 0)
             {
-                Color color = Frozen ? new Color(.5f,.85f,1) : Grown ? new Color(.3f,.8f,.3f) :
-                    item.sharedMaterial != null ? item.sharedMaterial.color : Color.white;
-                block.SetColor("_BaseColor",color); block.SetColor("_Color",color); item.SetPropertyBlock(block);
+                var block = new MaterialPropertyBlock();
+                foreach (var item in indicators) if (item != null)
+                {
+                    Color color = Frozen ? new Color(.5f,.85f,1) : Grown ? new Color(.3f,.8f,.3f) :
+                        item.sharedMaterial != null ? item.sharedMaterial.color : Color.white;
+                    block.SetColor("_BaseColor",color); block.SetColor("_Color",color); item.SetPropertyBlock(block);
+                }
             }
             for (int i = 0; i < arrows.Length; i++) if (arrows[i] != null)
                 arrows[i].localScale = Vector3.one * (i == Direction ? 1.35f : .8f);

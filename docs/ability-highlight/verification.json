@@ -1,0 +1,16 @@
+{
+  "utc": "2026-11-08T13:51:08.817157+00:00",
+  "tests": {
+    "runtime-synthetic-input-smoke.txt": "TOTAL 55 checks, 0 failures. Synthetic input only; human usability remains a separate review.",
+    "runtime-route-alternate.txt": "TOTAL 63 checks, 0 failures. Synthetic input only; human usability remains a separate review.",
+    "runtime-route-bloom.txt": "TOTAL 46 checks, 0 failures. Synthetic input only; human usability remains a separate review.",
+    "runtime-tactical-review.txt": "TOTAL 10 checks, 0 failures. Synthetic input only; human usability remains a separate review."
+  },
+  "video_seconds": 14.567,
+  "video_bytes": 3105139,
+  "decoded_frames": [
+    90,
+    240,
+    360
+  ]
+}

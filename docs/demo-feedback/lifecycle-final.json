@@ -1,0 +1,9 @@
+{
+  "pausePass": true,
+  "sources": 12,
+  "bursts": 8,
+  "particlesAfterRestart": 0,
+  "transientRingsAfterRestart": 0,
+  "trailCount": 3,
+  "gardenReset": true
+}

@@ -1,0 +1,13 @@
+PASS No exploration respawn/input owner
+PASS No lab input/recall owner
+PASS Cinemachine and standalone player own camera/locomotion
+PASS Opening cinematic rejects ability entry
+Recorded real synthetic keyboard/mouse interaction. No direct puzzle mutation, teleport or selection bypass.
+PASS Review selection freezes world before BLOOM
+PASS Review confirms BLOOM and returns to exploration
+PASS Review FLOW has no effect during preview
+PASS Review mouse FLOW confirmation resumes actual mover
+PASS Review FREEZE highlights real leaf in sky blue
+CAMERA sampled after Cinemachine: 212 frames / 37 moving; max horizontal error 0.00005, max torso vertical error 0.00014 (normalized screen).
+PASS Cinemachine keeps centered torso while standing, moving and orbiting
+TOTAL 10 checks, 0 failures. Synthetic input only; human usability remains a separate review.

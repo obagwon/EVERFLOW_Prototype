@@ -1,0 +1,192 @@
+2026-11-08T17:21:37.2383935Z
+PASS No exploration respawn/input owner
+PASS No lab input/recall owner
+PASS Cinemachine and standalone player own camera/locomotion
+PASS Opening cinematic rejects ability entry
+CONTINUOUS ALTERNATE SYNTHETIC INPUT ROUTE: A leaf, C grown leaf, G wheel, D3 ice, D5 alignment/freeze, D4 wheel, ice thaw, garden and restart. No Teleport/Apply/Tick/forced poses.
+WALK A leaf shore -> (-49.00, 0.08, -13.00)
+ARRIVED A leaf shore feet=(-48.86, 0.06, -12.67)
+WALK A board stationary leaf -> (-49.00, 0.28, -15.70)
+ARRIVED A board stationary leaf feet=(-48.99, 0.33, -15.34)
+CAST Flow / A POND CURRENT
+PASS Ability selection pauses world before A POND CURRENT
+PASS Selection freezes movers, gates, water clocks and circuit timer: A POND CURRENT
+PASS Confirmation resumes exploration before orb arrival: A POND CURRENT
+PASS Input cast applied A POND CURRENT
+CAST Freeze / A FLOATING LEAF
+PASS Ability selection pauses world before A FLOATING LEAF
+PASS Selection freezes movers, gates, water clocks and circuit timer: A FLOATING LEAF
+PASS Confirmation resumes exploration before orb arrival: A FLOATING LEAF
+PASS Input cast applied A FLOATING LEAF
+PASS Freeze holds ridden platform A FLOATING LEAF
+WALK A FLOATING LEAF actual landing -> (-48.50, 6.05, -27.50)
+INPUT Space at obstacle / A FLOATING LEAF actual landing position=(-48.52, 6.04, -25.95)
+ARRIVED A FLOATING LEAF actual landing feet=(-48.51, 6.10, -27.13)
+WALK A alternate common landing -> (-45.00, 6.05, -28.00)
+ARRIVED A alternate common landing feet=(-45.36, 6.10, -27.90)
+PASS A leaf reaches same common mound
+WALK C connector threshold -> (-50.80, 6.08, -30.10)
+ARRIVED C connector threshold feet=(-50.46, 6.63, -29.96)
+WALK C temporary connector -> (-54.50, 6.00, -34.00)
+ARRIVED C temporary connector feet=(-54.24, 6.05, -33.74)
+WALK C connector end -> (-57.50, 6.00, -37.50)
+ARRIVED C connector end feet=(-57.25, 6.05, -37.22)
+WALK C entrance -> (-64.00, 6.12, -40.00)
+ARRIVED C entrance feet=(-63.65, 6.07, -39.86)
+CAST Bloom / C GROWABLE LEAF
+PASS Ability selection pauses world before C GROWABLE LEAF
+PASS Selection freezes movers, gates, water clocks and circuit timer: C GROWABLE LEAF
+PASS Confirmation resumes exploration before orb arrival: C GROWABLE LEAF
+PASS Input cast applied C GROWABLE LEAF
+WALK C board grown leaf -> (-64.00, 6.25, -43.80)
+ARRIVED C board grown leaf feet=(-63.96, 6.36, -43.43)
+CAST Flow / C WIND
+PASS Ability selection pauses world before C WIND
+PASS Selection freezes movers, gates, water clocks and circuit timer: C WIND
+PASS Confirmation resumes exploration before orb arrival: C WIND
+PASS Input cast applied C WIND
+CAST Freeze / C GROWABLE LEAF
+PASS Ability selection pauses world before C GROWABLE LEAF
+PASS Selection freezes movers, gates, water clocks and circuit timer: C GROWABLE LEAF
+PASS Confirmation resumes exploration before orb arrival: C GROWABLE LEAF
+PASS Input cast applied C GROWABLE LEAF
+PASS Freeze holds ridden platform C GROWABLE LEAF
+WALK C GROWABLE LEAF actual landing -> (-62.00, 11.85, -59.00)
+ARRIVED C GROWABLE LEAF actual landing feet=(-62.01, 11.90, -58.64)
+PASS Retargeted FREEZE/FLOW preserve earlier A world results
+WALK C ascent foot -> (-61.00, 11.90, -60.00)
+ARRIVED C ascent foot feet=(-61.22, 12.00, -59.70)
+WALK C ascent top -> (-57.00, 15.15, -62.00)
+ARRIVED C ascent top feet=(-57.31, 15.20, -61.83)
+WALK C arrives G paving -> (-53.80, 15.15, -63.00)
+ARRIVED C arrives G paving feet=(-54.15, 15.20, -62.89)
+WALK G alternate approach -> (-35.00, 15.16, -60.50)
+ARRIVED G alternate approach feet=(-35.37, 15.62, -60.54)
+PASS Distance recall independently returns FREEZE while C remains fixed
+CAST Flow / G WATER BRANCH
+PASS Ability selection pauses world before G WATER BRANCH
+PASS Selection freezes movers, gates, water clocks and circuit timer: G WATER BRANCH
+PASS Confirmation resumes exploration before orb arrival: G WATER BRANCH
+PASS Input cast applied G WATER BRANCH
+PASS G water wheel alternative opens and latches from input
+WALK G alternate doorway front -> (-29.75, 15.06, -60.20)
+ARRIVED G alternate doorway front feet=(-30.13, 15.11, -60.22)
+WALK G alternate doorway pass -> (-30.65, 15.02, -63.10)
+ARRIVED G alternate doorway pass feet=(-30.58, 15.08, -62.73)
+WALK Alternate tower flight 1 -> (-30.65, 12.02, -68.90)
+ARRIVED Alternate tower flight 1 feet=(-30.64, 12.05, -68.54)
+WALK Alternate tower turn 1 -> (-28.85, 12.02, -68.90)
+ARRIVED Alternate tower turn 1 feet=(-29.22, 12.05, -68.83)
+WALK Alternate tower flight 2 -> (-28.85, 9.02, -63.10)
+ARRIVED Alternate tower flight 2 feet=(-28.87, 9.05, -63.48)
+WALK Alternate tower turn 2 -> (-30.65, 9.02, -63.10)
+ARRIVED Alternate tower turn 2 feet=(-30.28, 9.05, -63.18)
+WALK Alternate tower flight 3 -> (-30.65, 6.02, -68.90)
+ARRIVED Alternate tower flight 3 feet=(-30.62, 6.05, -68.54)
+WALK Alternate tower turn 3 -> (-28.85, 6.02, -68.90)
+ARRIVED Alternate tower turn 3 feet=(-29.20, 6.05, -68.81)
+WALK Alternate tower flight 4 -> (-28.85, 3.02, -63.10)
+ARRIVED Alternate tower flight 4 feet=(-28.87, 3.05, -63.47)
+WALK Alternate tower turn 4 -> (-30.65, 3.02, -63.10)
+ARRIVED Alternate tower turn 4 feet=(-30.29, 3.05, -63.18)
+WALK Alternate tower flight 5 -> (-30.65, 0.02, -68.90)
+ARRIVED Alternate tower flight 5 feet=(-30.62, 0.05, -68.54)
+WALK Alternate tower turn 5 -> (-28.85, 0.02, -68.90)
+ARRIVED Alternate tower turn 5 feet=(-29.19, 0.05, -68.82)
+WALK Alternate tower flight 6 -> (-28.85, -2.98, -63.10)
+ARRIVED Alternate tower flight 6 feet=(-28.87, -2.95, -63.47)
+WALK Alternate tower exit lane -> (-30.50, -2.98, -63.10)
+ARRIVED Alternate tower exit lane feet=(-30.14, -2.95, -63.19)
+WALK Alternate tunnel -> (-30.50, -3.00, -37.00)
+ARRIVED Alternate tunnel feet=(-30.22, -2.95, -37.24)
+WALK Alternate D1 walkway -> (-44.00, -3.00, -37.00)
+ARRIVED Alternate D1 walkway feet=(-43.63, -2.95, -37.00)
+WALK Alternate D1 threshold -> (-46.00, -3.00, -38.00)
+ARRIVED Alternate D1 threshold feet=(-45.65, -2.95, -37.86)
+WALK D1 stairs top -> (-59.50, -3.00, -40.00)
+ARRIVED D1 stairs top feet=(-59.14, -2.95, -39.94)
+WALK D1 stairs bottom safe landing -> (-59.50, -11.50, -53.00)
+ARRIVED D1 stairs bottom safe landing feet=(-59.49, -11.45, -52.64)
+CAST Freeze / D2 MAIN WATER / ICE BRIDGE
+PASS Ability selection pauses world before D2 MAIN WATER / ICE BRIDGE
+PASS Selection freezes movers, gates, water clocks and circuit timer: D2 MAIN WATER / ICE BRIDGE
+PASS Confirmation resumes exploration before orb arrival: D2 MAIN WATER / ICE BRIDGE
+PASS Input cast applied D2 MAIN WATER / ICE BRIDGE
+PASS R recovery preserves local ice and completed surface platform states
+WALK D3 ice crossing -> (-49.00, -11.57, -52.00)
+ARRIVED D3 ice crossing feet=(-49.37, -11.52, -52.03)
+WALK D3 ice to dock -> (-43.80, -11.40, -52.00)
+INPUT Space at obstacle / D3 ice to dock position=(-45.41, -10.95, -51.99)
+ARRIVED D3 ice to dock feet=(-44.17, -11.35, -52.00)
+WALK D3 dock stair foot -> (-43.80, -11.40, -54.00)
+ARRIVED D3 dock stair foot feet=(-43.87, -11.35, -53.64)
+WALK D3 dock stair top -> (-43.80, -7.50, -59.90)
+ARRIVED D3 dock stair top feet=(-43.81, -7.49, -59.54)
+WALK Alternate D3 workbench -> (-40.00, -7.46, -57.00)
+ARRIVED Alternate D3 workbench feet=(-40.32, -7.45, -57.20)
+WALK D5 workbench controls -> (-40.00, -7.45, -61.00)
+ARRIVED D5 workbench controls feet=(-40.03, -7.45, -60.64)
+CAST Flow / D5 ALIGNING WIND
+PASS Ability selection pauses world before D5 ALIGNING WIND
+PASS Selection freezes movers, gates, water clocks and circuit timer: D5 ALIGNING WIND
+PASS Confirmation resumes exploration before orb arrival: D5 ALIGNING WIND
+PASS Input cast applied D5 ALIGNING WIND
+PASS D5 FLOW alignment and FREEZE structure supplies from real orb flight
+WALK D3 return after alignment -> (-40.00, -7.46, -57.00)
+ARRIVED D3 return after alignment feet=(-40.00, -7.45, -57.37)
+WALK Alternate return threshold -> (-43.50, -7.45, -59.20)
+ARRIVED Alternate return threshold feet=(-43.16, -7.40, -59.03)
+WALK Alternate return stairs start -> (-45.15, -7.45, -59.20)
+ARRIVED Alternate return stairs start feet=(-44.78, -7.40, -59.17)
+WALK Alternate return stairs end -> (-50.00, -11.50, -59.20)
+ARRIVED Alternate return stairs end feet=(-49.64, -10.86, -59.20)
+WALK Alternate return perimeter -> (-56.00, -11.50, -59.20)
+ARRIVED Alternate return perimeter feet=(-55.63, -11.45, -59.20)
+WALK Alternate D2 hub -> (-56.00, -11.10, -52.00)
+ARRIVED Alternate D2 hub feet=(-55.98, -11.05, -52.37)
+CAST Flow / D2 THREE WAY BRANCH
+PASS Ability selection pauses world before D2 THREE WAY BRANCH
+PASS Selection freezes movers, gates, water clocks and circuit timer: D2 THREE WAY BRANCH
+PASS Confirmation resumes exploration before orb arrival: D2 THREE WAY BRANCH
+PASS Input cast applied D2 THREE WAY BRANCH
+PASS D4 small-wheel alternative fully opens and latches through input
+CAST Flow / D2 THREE WAY BRANCH
+PASS Ability selection pauses world before D2 THREE WAY BRANCH
+PASS Selection freezes movers, gates, water clocks and circuit timer: D2 THREE WAY BRANCH
+PASS Confirmation resumes exploration before orb arrival: D2 THREE WAY BRANCH
+PASS Input cast applied D2 THREE WAY BRANCH
+PASS Main ice blocks W after D4 remains latched and D2 points to main exit
+CAST Freeze / D2 MAIN WATER / ICE BRIDGE
+PASS Ability selection pauses world before D2 MAIN WATER / ICE BRIDGE
+PASS Selection freezes movers, gates, water clocks and circuit timer: D2 MAIN WATER / ICE BRIDGE
+PASS Confirmation resumes exploration before orb arrival: D2 MAIN WATER / ICE BRIDGE
+PASS Input cast applied D2 MAIN WATER / ICE BRIDGE
+PASS Thaw main water leaves prior D5 structure freeze intact
+PASS Alternate result circuit restores W after thaw
+WALK Alternate exit north -> (-56.00, -11.50, -55.50)
+ARRIVED Alternate exit north feet=(-56.00, -11.45, -55.13)
+WALK Alternate exit west bridge -> (-71.00, -11.50, -55.50)
+ARRIVED Alternate exit west bridge feet=(-70.63, -11.45, -55.49)
+WALK Alternate exit control approach -> (-71.00, -11.50, -46.50)
+ARRIVED Alternate exit control approach feet=(-70.98, -11.40, -46.86)
+WALK Alternate D4 exit approach -> (-75.50, -11.46, -47.50)
+ARRIVED Alternate D4 exit approach feet=(-75.13, -11.41, -47.44)
+WALK Alternate actual door passage -> (-79.50, -11.90, -48.10)
+ARRIVED Alternate actual door passage feet=(-79.12, -11.85, -48.05)
+WALK Alternate corridor start -> (-82.30, -11.90, -47.00)
+ARRIVED Alternate corridor start feet=(-81.95, -11.85, -47.12)
+WALK Alternate safe corridor -> (-82.30, -17.35, -13.30)
+ARRIVED Alternate safe corridor feet=(-82.30, -17.03, -13.66)
+WALK Alternate garden threshold -> (-83.40, -17.35, -13.30)
+ARRIVED Alternate garden threshold feet=(-83.05, -17.05, -13.41)
+WALK Alternate east walkway -> (-83.40, -17.35, -2.00)
+ARRIVED Alternate east walkway feet=(-83.39, -17.27, -2.36)
+WALK Alternate garden -> (-84.00, -17.28, 0.00)
+ARRIVED Alternate garden feet=(-83.90, -17.27, -0.36)
+PASS Continuous alternate A-leaf/C/G-wheel/D3-ice/D5-align/D4-wheel route reaches garden
+ALTERNATE AUTOMATED ROUTE elapsed=143.67s; not human first-play time.
+PASS Alternate route ending restarts through Enter
+CAMERA sampled after Cinemachine: 29816 frames / 17718 moving; max horizontal error 0.00008, max torso vertical error 0.00015 (normalized screen).
+PASS Cinemachine keeps centered torso while standing, moving and orbiting
+INPUT isolated synthetic devices; OS current-device changes restored=0
+TOTAL 63 checks, 0 failures. Synthetic input only; human usability remains a separate review.

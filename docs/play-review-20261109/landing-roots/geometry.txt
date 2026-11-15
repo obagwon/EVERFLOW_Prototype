@@ -1,0 +1,18 @@
+PASS B approach extra deck absent
+PASS B far bank extra deck absent
+PASS Safe landing / B ENTRANCE extra deck absent
+PASS Safe landing / B FAR BANK extra deck absent
+PASS Safe landing / D4 EXIT CONTROL extra deck absent
+PASS B ENTRANCE trigger and safe floor T_Terrain 1.200
+PASS B FAR BANK trigger and safe floor T_Terrain 1.206
+PASS D4 EXIT CONTROL trigger and safe floor D4 dry control approach 1.120
+PASS B ROOT BRIDGE small piece 0 crosses support plane -0.239..0.169
+PASS B ROOT BRIDGE small piece 1 crosses support plane -0.251..0.307
+PASS B ROOT BRIDGE grown piece 0 crosses support plane -0.468..0.269
+PASS B ROOT BRIDGE grown piece 1 crosses support plane -0.374..0.629
+PASS D3 VINE ACCESS small piece 0 crosses support plane -0.193..0.321
+PASS D3 VINE ACCESS grown piece 0 crosses support plane -0.333..0.690
+PASS D4 EXIT GATE ROOT small piece 0 crosses support plane -0.010..0.446
+PASS D4 EXIT GATE ROOT grown piece 0 crosses support plane -0.031..0.833
+PASS Moving stone and essential D5 crossing present
+TOTAL 17 checks, 0 failures.

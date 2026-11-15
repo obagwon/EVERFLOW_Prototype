@@ -1,0 +1,4 @@
+Original arch visible with its original collision mesh, spanning both wall faces: True
+The stone legs retain collision on both sides: True
+Clear line-of-sight samples across opening from inside: 20/20
+Clear line-of-sight samples across opening from outside: 20/20

@@ -1,0 +1,1 @@
+During continuous input. D5 moving hull cross-section samples above trough floor 21/21. Clearance 0.140–0.140 m. Water parent PH_D5_MovingChannel; model world rotation (-0.00015, 0.00286, 0.00114, 1.00000).

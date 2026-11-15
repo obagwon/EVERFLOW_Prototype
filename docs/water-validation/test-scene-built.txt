@@ -1,0 +1,2 @@
+Independent short canal copied from W_D2_Exit; original local mesh shape/scale preserved, translated to origin. New mesh asset; no FBX edits.
+GUID=8c28c9f95c448394c9077bff9480943d

@@ -1,0 +1,30 @@
+2026-11-08T15:48:07.9008975Z
+ISOLATED PHYSICS REGRESSION: checkpoint and drop start positions are placed explicitly. Falls/landings use the normal player motor, gravity, collisions and world recovery. This is not a continuous puzzle playthrough.
+PASS All active solid geometry lies inside explicit exterior recovery regions
+DROP G-to-D1 from (-48.00, 0.00, -38.70) to D1_Balcony y=-3.00; previous relative limit=8.24
+PASS Ability selection freezes airborne player without recovery
+PASS One Esc resumes the same physical fall
+PASS G-to-D1 lands without teleport
+PASS G-to-D1 crosses old 8m limit and lands on the real visible floor (feet=-2.95)
+DROP D1-to-dry-hub from (-71.00, 1.00, -55.50) to D2 to D4 dry perimeter y=-11.50; previous relative limit=-9.89
+PASS D1-to-dry-hub lands without teleport
+PASS D1-to-dry-hub crosses old 8m limit and lands on the real visible floor (feet=-11.45)
+DROP G-to-garden-floor from (-84.00, -4.00, 0.00) to Restored garden viewpoint y=-17.32; previous relative limit=8.24
+PASS G-to-garden-floor lands without teleport
+PASS G-to-garden-floor crosses old 8m limit and lands on the real visible floor (feet=-17.27)
+PASS Unrestored final floor permits landing without replacing the return checkpoint or completing the garden
+PASS R returns from unrestored garden floor to the prior safe area
+PASS West exterior recovers once after an actual gravity step
+PASS West exterior settles at checkpoint without repeated recovery
+PASS East exterior recovers once after an actual gravity step
+PASS East exterior settles at checkpoint without repeated recovery
+PASS North exterior recovers once after an actual gravity step
+PASS North exterior settles at checkpoint without repeated recovery
+PASS South exterior recovers once after an actual gravity step
+PASS South exterior settles at checkpoint without repeated recovery
+PASS Below-map safety plane recovers once after an actual gravity step
+PASS Below-map safety plane settles at checkpoint without repeated recovery
+PASS Falls/recovery preserve existing target growth, freeze and flow states
+PASS Manual R recovery still uses existing input
+PASS Restart clears fall diagnostics and restores exploration
+TOTAL 24 checks, 0 failures.

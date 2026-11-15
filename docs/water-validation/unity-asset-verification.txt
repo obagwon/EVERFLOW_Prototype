@@ -1,0 +1,167 @@
+2026-11-08T05:42:28.8398159Z
+Unity asset/reference verification; not a Play test.
+PASS 39 scene-local water bindings and world reference
+PASS W_A_Pond references and rollback data
+PASS W_A_Pond original geometry/normals/UV/bounds retained (bounds tolerance 0.1mm)
+PASS W_A_Pond explicit white vertex colors
+PASS W_A_Pond no water collider
+PASS W_D2_Basin references and rollback data
+PASS W_D2_Basin original geometry/normals/UV/bounds retained (bounds tolerance 0.1mm)
+PASS W_D2_Basin explicit white vertex colors
+PASS W_D2_Basin no water collider
+PASS W_D2_Dock references and rollback data
+PASS W_D2_Dock original geometry/normals/UV/bounds retained (bounds tolerance 0.1mm)
+PASS W_D2_Dock explicit white vertex colors
+PASS W_D2_Dock no water collider
+PASS W_D2_Low references and rollback data
+PASS W_D2_Low original geometry/normals/UV/bounds retained (bounds tolerance 0.1mm)
+PASS W_D2_Low explicit white vertex colors
+PASS W_D2_Low no water collider
+PASS W_D5_SpillFall references and rollback data
+PASS W_D5_SpillFall original geometry/normals/UV/bounds retained (bounds tolerance 0.1mm)
+PASS W_D5_SpillFall explicit white vertex colors
+PASS W_D5_SpillFall no water collider
+PASS W_D5_SpillFall_Foam references and rollback data
+PASS W_D5_SpillFall_Foam original geometry/normals/UV/bounds retained (bounds tolerance 0.1mm)
+PASS W_D5_SpillFall_Foam explicit white vertex colors
+PASS W_D5_SpillFall_Foam no water collider
+PASS W_D5_SpillFloor references and rollback data
+PASS W_D5_SpillFloor original geometry/normals/UV/bounds retained (bounds tolerance 0.1mm)
+PASS W_D5_SpillFloor explicit white vertex colors
+PASS W_D5_SpillFloor no water collider
+PASS W_D5_SpillPool references and rollback data
+PASS W_D5_SpillPool original geometry/normals/UV/bounds retained (bounds tolerance 0.1mm)
+PASS W_D5_SpillPool explicit white vertex colors
+PASS W_D5_SpillPool no water collider
+PASS W_G_Leak_Fall references and rollback data
+PASS W_G_Leak_Fall original geometry/normals/UV/bounds retained (bounds tolerance 0.1mm)
+PASS W_G_Leak_Fall explicit white vertex colors
+PASS W_G_Leak_Fall no water collider
+PASS W_G_Leak_Fall_Foam references and rollback data
+PASS W_G_Leak_Fall_Foam original geometry/normals/UV/bounds retained (bounds tolerance 0.1mm)
+PASS W_G_Leak_Fall_Foam explicit white vertex colors
+PASS W_G_Leak_Fall_Foam no water collider
+PASS W_G_Supply references and rollback data
+PASS W_G_Supply original geometry/normals/UV/bounds retained (bounds tolerance 0.1mm)
+PASS W_G_Supply explicit white vertex colors
+PASS W_G_Supply no water collider
+PASS W_H_Pond references and rollback data
+PASS W_H_Pond original geometry/normals/UV/bounds retained (bounds tolerance 0.1mm)
+PASS W_H_Pond explicit white vertex colors
+PASS W_H_Pond no water collider
+PASS W_H_to_D5_Fall references and rollback data
+PASS W_H_to_D5_Fall original geometry/normals/UV/bounds retained (bounds tolerance 0.1mm)
+PASS W_H_to_D5_Fall explicit white vertex colors
+PASS W_H_to_D5_Fall no water collider
+PASS W_H_to_D5_Fall_Foam references and rollback data
+PASS W_H_to_D5_Fall_Foam original geometry/normals/UV/bounds retained (bounds tolerance 0.1mm)
+PASS W_H_to_D5_Fall_Foam explicit white vertex colors
+PASS W_H_to_D5_Fall_Foam no water collider
+PASS W_H_to_G_Fall references and rollback data
+PASS W_H_to_G_Fall original geometry/normals/UV/bounds retained (bounds tolerance 0.1mm)
+PASS W_H_to_G_Fall explicit white vertex colors
+PASS W_H_to_G_Fall no water collider
+PASS W_H_to_G_Fall_Foam references and rollback data
+PASS W_H_to_G_Fall_Foam original geometry/normals/UV/bounds retained (bounds tolerance 0.1mm)
+PASS W_H_to_G_Fall_Foam explicit white vertex colors
+PASS W_H_to_G_Fall_Foam no water collider
+PASS W_Leak_Fall2 references and rollback data
+PASS W_Leak_Fall2 original geometry/normals/UV/bounds retained (bounds tolerance 0.1mm)
+PASS W_Leak_Fall2 explicit white vertex colors
+PASS W_Leak_Fall2 no water collider
+PASS W_Leak_Fall2_Foam references and rollback data
+PASS W_Leak_Fall2_Foam original geometry/normals/UV/bounds retained (bounds tolerance 0.1mm)
+PASS W_Leak_Fall2_Foam explicit white vertex colors
+PASS W_Leak_Fall2_Foam no water collider
+PASS W_Leak_S1 references and rollback data
+PASS W_Leak_S1 original geometry/normals/UV/bounds retained (bounds tolerance 0.1mm)
+PASS W_Leak_S1 explicit white vertex colors
+PASS W_Leak_S1 no water collider
+PASS W_Leak_S2 references and rollback data
+PASS W_Leak_S2 original geometry/normals/UV/bounds retained (bounds tolerance 0.1mm)
+PASS W_Leak_S2 explicit white vertex colors
+PASS W_Leak_S2 no water collider
+PASS W_Leak_S3 references and rollback data
+PASS W_Leak_S3 original geometry/normals/UV/bounds retained (bounds tolerance 0.1mm)
+PASS W_Leak_S3 explicit white vertex colors
+PASS W_Leak_S3 no water collider
+PASS W_Leak_S4 references and rollback data
+PASS W_Leak_S4 original geometry/normals/UV/bounds retained (bounds tolerance 0.1mm)
+PASS W_Leak_S4 explicit white vertex colors
+PASS W_Leak_S4 no water collider
+PASS W_Bypass_1 references and rollback data
+PASS W_Bypass_1 original geometry/normals/UV/bounds retained (bounds tolerance 0.1mm)
+PASS W_Bypass_1 explicit white vertex colors
+PASS W_Bypass_1 no water collider
+PASS W_Bypass_2 references and rollback data
+PASS W_Bypass_2 original geometry/normals/UV/bounds retained (bounds tolerance 0.1mm)
+PASS W_Bypass_2 explicit white vertex colors
+PASS W_Bypass_2 no water collider
+PASS W_Bypass_Fall references and rollback data
+PASS W_Bypass_Fall original geometry/normals/UV/bounds retained (bounds tolerance 0.1mm)
+PASS W_Bypass_Fall explicit white vertex colors
+PASS W_Bypass_Fall no water collider
+PASS W_Bypass_Fall_Foam references and rollback data
+PASS W_Bypass_Fall_Foam original geometry/normals/UV/bounds retained (bounds tolerance 0.1mm)
+PASS W_Bypass_Fall_Foam explicit white vertex colors
+PASS W_Bypass_Fall_Foam no water collider
+PASS W_D2_Exit references and rollback data
+PASS W_D2_Exit original geometry/normals/UV/bounds retained (bounds tolerance 0.1mm)
+PASS W_D2_Exit explicit white vertex colors
+PASS W_D2_Exit no water collider
+PASS W_D2_Wheel references and rollback data
+PASS W_D2_Wheel original geometry/normals/UV/bounds retained (bounds tolerance 0.1mm)
+PASS W_D2_Wheel explicit white vertex colors
+PASS W_D2_Wheel no water collider
+PASS W_D5_Fall references and rollback data
+PASS W_D5_Fall original geometry/normals/UV/bounds retained (bounds tolerance 0.1mm)
+PASS W_D5_Fall explicit white vertex colors
+PASS W_D5_Fall no water collider
+PASS W_D5_Fall_Foam references and rollback data
+PASS W_D5_Fall_Foam original geometry/normals/UV/bounds retained (bounds tolerance 0.1mm)
+PASS W_D5_Fall_Foam explicit white vertex colors
+PASS W_D5_Fall_Foam no water collider
+PASS W_D5_Fixed references and rollback data
+PASS W_D5_Fixed original geometry/normals/UV/bounds retained (bounds tolerance 0.1mm)
+PASS W_D5_Fixed explicit white vertex colors
+PASS W_D5_Fixed no water collider
+PASS W_D5_ToD2 references and rollback data
+PASS W_D5_ToD2 original geometry/normals/UV/bounds retained (bounds tolerance 0.1mm)
+PASS W_D5_ToD2 explicit white vertex colors
+PASS W_D5_ToD2 no water collider
+PASS W_Exit_Tunnel references and rollback data
+PASS W_Exit_Tunnel original geometry/normals/UV/bounds retained (bounds tolerance 0.1mm)
+PASS W_Exit_Tunnel explicit white vertex colors
+PASS W_Exit_Tunnel no water collider
+PASS W_G_ToWheel references and rollback data
+PASS W_G_ToWheel original geometry/normals/UV/bounds retained (bounds tolerance 0.1mm)
+PASS W_G_ToWheel explicit white vertex colors
+PASS W_G_ToWheel no water collider
+PASS W_Gorge references and rollback data
+PASS W_Gorge original geometry/normals/UV/bounds retained (bounds tolerance 0.1mm)
+PASS W_Gorge explicit white vertex colors
+PASS W_Gorge no water collider
+PASS W_R_IslandFall references and rollback data
+PASS W_R_IslandFall original geometry/normals/UV/bounds retained (bounds tolerance 0.1mm)
+PASS W_R_IslandFall explicit white vertex colors
+PASS W_R_IslandFall no water collider
+PASS W_R_IslandFall_Foam references and rollback data
+PASS W_R_IslandFall_Foam original geometry/normals/UV/bounds retained (bounds tolerance 0.1mm)
+PASS W_R_IslandFall_Foam explicit white vertex colors
+PASS W_R_IslandFall_Foam no water collider
+PASS W_R_WheelFeed references and rollback data
+PASS W_R_WheelFeed original geometry/normals/UV/bounds retained (bounds tolerance 0.1mm)
+PASS W_R_WheelFeed explicit white vertex colors
+PASS W_R_WheelFeed no water collider
+PASS W_R_WheelPool references and rollback data
+PASS W_R_WheelPool original geometry/normals/UV/bounds retained (bounds tolerance 0.1mm)
+PASS W_R_WheelPool explicit white vertex colors
+PASS W_R_WheelPool no water collider
+PASS Shader imported and supported
+PASS Dedicated normal importer, linear, repeat
+Active pipeline=Assets/Settings/PC_RPAsset.asset, depth=True, opaque=True, colorSpace=Linear
+Shader messages: 
+PASS Test scene has independent GUID
+PASS Original map has no water integration component
+PASS Original map retains original water materials
+Restored task-start runInBackground=0 in memory and on disk after testing.

@@ -1,0 +1,31 @@
+2026-11-08T07:43:02.9006437Z
+INTEGRATED PLAY: explicit forced puzzle state and verification viewCamera. This is NOT input traversal.
+PASS Water component present
+PASS C# and EVERFLOW shader compile/support
+PASS Dedicated shader/material references
+PASS All configured surfaces use their dedicated mesh/material override
+PASS No solid colliders added to water surfaces
+PASS 39 original water/foam meshes across GRP_Water and GRP_Water_Restored integrated
+PASS Initial supply absent, exit dry, existing basin retains standing water
+PASS Platform structure FREEZE does not freeze pond
+PASS BLOOM bypass reads existing circuit supply/visibility
+PASS Unselected D2 does not imply a flowing outlet
+PASS D2 dock branch only
+PASS D2 wheel branch opens existing D4 gate
+PASS D2 main branch and D4 latch supply actual downstream result
+PASS D2 water FREEZE stops all shader animation, preserves ice collider
+PASS Ice block removes actual downstream water effects
+PASS Thaw resumes actual supply and removes ice collision
+PASS Puzzle restart resets visual phase and circuit-owned wet state
+PASS Aligned/fixed D5 uses existing supply result
+PASS D5 internal water freeze distinct from fixed structure; falls stop
+PASS Thawed D5, root gate, main branch restore waterwheel and garden
+PASS Vertical falls have world-Y downward advection, separate projection
+PASS Network vertex masks or legacy white colors match the assigned shader
+PASS Every original water/foam segment assigned to the continuous network
+PASS 15 independent owners preserve supply, branch and ice visibility
+PASS Covered legacy renderers stay hidden during runtime
+PASS Continuous network shaders compile after actual runtime rendering
+PASS Impact emitters respect bounded particle counts
+PASS Ending restart restores dry garden paths
+28 passes, 0 failures.

@@ -1,0 +1,37 @@
+{
+  "utc": "2026-11-07T14:07:32.905766+00:00",
+  "kind": "STATIC ONLY; not Play or first-time human usability testing",
+  "passed": true,
+  "unchanged_baseline_files": 363,
+  "byte_identical_gameplay_methods": [
+    "Start",
+    "Record",
+    "Update",
+    "Select",
+    "CycleFlow",
+    "TickCircuit",
+    "Show",
+    "TickOrbs",
+    "LateUpdate",
+    "CanUse",
+    "TryCast",
+    "Reach",
+    "Respawn",
+    "BeginCinematic",
+    "EndCinematic",
+    "SetPaused",
+    "Restart",
+    "OnApplicationFocus",
+    "OnDisable"
+  ],
+  "awake_delta": "one presentation component attachment only",
+  "preserved": [
+    "Original and puzzle scene YAML/GUIDs",
+    "Team FBX/PuzzleLab/external assets",
+    "Visual cleanup builder/colliders/camera/player/input",
+    "All water assets/state integration",
+    "Project/pipeline/quality/build/package settings",
+    "Preexisting tracked user changes"
+  ],
+  "new_guids_unique": true
+}

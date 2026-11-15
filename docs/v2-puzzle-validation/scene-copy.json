@@ -1,0 +1,9 @@
+{
+  "source": "Assets/Scenes/Everflow_Map_v2_test.unity",
+  "source_sha256": "e07a94948129d42ff1868ecebe72ae72eda9fe0baa936ad01153cc0480da2e9c",
+  "scene": "Assets/Scenes/Everflow_Map_v2_test_with_puzzle.unity",
+  "source_guid": "0cec4433cf38ea142ad8690264aced93",
+  "puzzle_guid": "815ede8c18e65ad5be5be5781bb09ea9",
+  "strategy": "Independent scene asset; existing FBX/player/camera instance content retained; exploration host replaced with scene-local v2 puzzle composition.",
+  "actual_unity_open_or_play": false
+}

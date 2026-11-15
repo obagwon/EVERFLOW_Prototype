@@ -1,0 +1,109 @@
+Shader "EVERFLOW/Water/Continuous Network"
+{
+    Properties
+    {
+        _WaterTime("Local time",Float)=0
+        _Wet("Supply",Float)=1
+        _Arrival("Arrival",Float)=1
+        _Frozen("Frozen",Float)=0
+        _WorldUV("Pool projection",Float)=0
+        _FoamAmount("Surface foam",Float)=.24
+        _FlowOffset("Integrated flow",Vector)=(0,0,0,0)
+        _NormalMap("Normal",2D)="bump"{}
+        _Tint("Water tint",Color)=(.10,.36,.37,1)
+        _Foam("Foam tint",Color)=(.68,.85,.81,1)
+    }
+    SubShader
+    {
+        Tags {"RenderType"="Transparent" "Queue"="Transparent" "RenderPipeline"="UniversalPipeline"}
+        Pass
+        {
+            Tags {"LightMode"="UniversalForward"}
+            Blend SrcAlpha OneMinusSrcAlpha
+            ZWrite Off
+            Cull Off
+            HLSLPROGRAM
+            #pragma vertex vert
+            #pragma fragment frag
+            #include "Packages/com.unity.render-pipelines.universal/ShaderLibrary/Core.hlsl"
+            #include "Packages/com.unity.render-pipelines.universal/ShaderLibrary/Lighting.hlsl"
+            #include "Packages/com.unity.render-pipelines.universal/ShaderLibrary/DeclareOpaqueTexture.hlsl"
+            #include "Packages/com.unity.render-pipelines.universal/ShaderLibrary/DeclareDepthTexture.hlsl"
+            TEXTURE2D(_NormalMap); SAMPLER(sampler_NormalMap);
+            CBUFFER_START(UnityPerMaterial)
+                float _WaterTime,_Wet,_Arrival,_Frozen,_WorldUV,_FoamAmount;
+                float4 _FlowOffset,_Tint,_Foam,_Impact0,_Impact1,_Impact2;
+            CBUFFER_END
+            struct A {float4 positionOS:POSITION;float3 normalOS:NORMAL;float4 tangentOS:TANGENT;float2 uv:TEXCOORD0;float2 progress:TEXCOORD1;float4 color:COLOR;};
+            struct V {float4 pos:SV_POSITION;float3 ws:TEXCOORD0;float3 n:TEXCOORD1;float3 t:TEXCOORD2;float2 uv:TEXCOORD3;float4 color:COLOR;float progress:TEXCOORD4;};
+            float hash(float2 p){return frac(sin(dot(p,float2(127.1,311.7)))*43758.5453);}
+            float noise(float2 p)
+            {
+                float2 i=floor(p),f=frac(p);f=f*f*(3-2*f);
+                return lerp(lerp(hash(i),hash(i+float2(1,0)),f.x),lerp(hash(i+float2(0,1)),hash(i+1),f.x),f.y);
+            }
+            V vert(A i)
+            {
+                V o;float3 ws=TransformObjectToWorld(i.positionOS.xyz);
+                float3 n=TransformObjectToWorldNormal(i.normalOS),tx=TransformObjectToWorldDir(i.tangentOS.xyz);
+                float2 q=lerp(i.uv,(ws-_FlowOffset.xyz).xz,_WorldUV);
+                // Pinned path junctions and bank edges cannot pull apart as the surface ripples.
+                float ripple=sin(q.y*6-_WaterTime*2+q.x*4)*.008;
+                ws+=n*ripple*i.color.b*(1-_Frozen);
+                ws+=tx*sin(q.y*8-_WaterTime*4)*.018*i.color.r*i.color.b*(1-_Frozen);
+                o.ws=ws;o.pos=TransformWorldToHClip(ws);o.n=n;o.t=tx;o.uv=i.uv;o.color=i.color;o.progress=i.progress.x;return o;
+            }
+            float ImpactRing(float3 ws,float4 impact,float t)
+            {
+                float radius=length((ws.xz-impact.xz)*float2(1,.8));
+                float height=1-smoothstep(.05,.5,abs(ws.y-impact.y));
+                return pow(saturate(sin(radius*18-t*5)),10)*exp(-radius*1.6)*height*impact.w;
+            }
+            half4 frag(V i):SV_Target
+            {
+                clip(_Wet-.5);
+                if(_WorldUV<.5)clip(_Arrival>=.999?1:_Arrival-i.progress);
+                float t=_WaterTime;
+                float2 flow=lerp(float2(i.uv.x,i.uv.y-t*.72),(i.ws-_FlowOffset.xyz).xz,_WorldUV);
+                // Only bounded ripples animate standing pools; they have no false downstream current.
+                flow+=float2(sin(t*.7+flow.y),cos(t*.6+flow.x))*.015;
+                flow*=lerp(1,.25,_WorldUV);
+                float fall=i.color.r,impact=i.color.g;
+                float a=noise(flow*float2(4,10)),b=noise(flow*float2(11,23)+5.3);
+                float streak=smoothstep(.51,.79,a*.65+b*.35);
+                float3 n0=normalize(i.n),tx=normalize(i.t),ty=normalize(cross(n0,tx));
+                float3 nm=UnpackNormal(SAMPLE_TEXTURE2D(_NormalMap,sampler_NormalMap,flow*.65));
+                float3 n=normalize(n0+(tx*nm.x+ty*nm.y)*.28*(1-_Frozen));
+                float3 view=SafeNormalize(GetWorldSpaceViewDir(i.ws));
+                float fres=pow(1-abs(dot(n,view)),3);
+                float2 screen=GetNormalizedScreenSpaceUV(i.pos);
+                half3 back=SampleSceneColor(clamp(screen+nm.xy*.002*(1-_Frozen),.002,.998));
+                float rawDepth=SampleSceneDepth(screen);
+                #if !UNITY_REVERSED_Z
+                    rawDepth=lerp(UNITY_NEAR_CLIP_VALUE,1,rawDepth);
+                #endif
+                float3 ground=ComputeWorldSpacePosition(screen,rawDepth,UNITY_MATRIX_I_VP);
+                float depth=saturate(max(0,i.ws.y-ground.y)/3);
+                // One body tint and smoothly changing slope detail across every path.
+                half3 tint=_Tint.rgb*lerp(1,.8,depth*_WorldUV);
+                half3 col=lerp(back,tint,.72+fall*.1);
+                col+=float3(.07,.12,.12)*fres;
+                Light sun=GetMainLight();
+                float spec=pow(saturate(dot(n,SafeNormalize(view+sun.direction))),48);
+                col+=sun.color*spec*.16*(1-_Frozen);
+                float foam=streak*lerp(min(.12,_FoamAmount)*lerp(1,.4,_WorldUV),.3,fall);
+                float ring=ImpactRing(i.ws,_Impact0,t)+ImpactRing(i.ws,_Impact1,t)+ImpactRing(i.ws,_Impact2,t);
+                foam+=impact*(.38+.35*a)+ring*(1-fall)*.3;
+                col=lerp(col,_Foam.rgb,saturate(foam)*(1-_Frozen));
+                float edge=i.color.a;
+                edge*=lerp(1,smoothstep(.02,.12,edge+noise(float2(i.uv.y*5-t*2,3))*.08),fall);
+                float alpha=(.79+fres*.12+impact*.08)*edge;
+                float ice=noise(i.ws.xz*2);
+                col=lerp(col,lerp(float3(.46,.73,.80),float3(.62,.85,.90),smoothstep(.7,.9,ice)),_Frozen*.95);
+                alpha=lerp(alpha,.96*edge,_Frozen);
+                return half4(col,saturate(alpha));
+            }
+            ENDHLSL
+        }
+    }
+}

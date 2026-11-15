@@ -1,0 +1,29 @@
+{
+  "utc": "2026-11-06T16:58:26.526045+00:00",
+  "kind": "Offline verifier only; see PLAY_RESULTS.md for separate Unity execution evidence",
+  "checks": [
+    "Preserved Assets/Scenes/Everflow_Map_v2_test.unity",
+    "Preserved Assets/Scenes/Everflow_Map_v2_test.unity.meta",
+    "Preserved Assets/Scenes/Everflow_V02_PuzzleLab.unity",
+    "Preserved Assets/EF_Handoff_v2/EF_Map_v2.fbx",
+    "Preserved ProjectSettings/EditorBuildSettings.asset",
+    "Preserved Assets/EverflowMVP/Scenes/Everflow_Title.unity",
+    "All existing tracked user changes match task-start diff; no shared source edits",
+    "Cloned scene differs only in scene-local puzzle host; FBX/player/Cinemachine instance YAML retained",
+    "All cloned scene local fileID references resolve",
+    "16 new asset GUIDs are unique across Assets",
+    "Scene has independent meta GUID",
+    "V2 host has no manual recall, PULSE or stage ability restrictions",
+    "69 production state checks + 256 circuit combinations",
+    "Nine generated stair centerline samples show no embedded original horizontal floor within body clearance"
+  ],
+  "passed": true,
+  "unity_import": false,
+  "unity_play": false,
+  "ordinary_input_playthrough": false,
+  "limitations": [
+    "Cached-reference Roslyn is not Unity import or player build.",
+    "FBX analytical height tests do not simulate Unity CharacterController, moving support, camera collision, occluded aiming or unintended skips.",
+    "This offline verifier does not run Unity or measure human play time. Separate actual Unity test evidence is in PLAY_RESULTS.md."
+  ]
+}

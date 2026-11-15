@@ -1,0 +1,37 @@
+2026-11-08T16:26:44.6360047Z
+ISOLATED NATURAL RIVER CHECK: start player/camera explicitly placed. Real Input System W/ability keys, normal motor and cooked floor colliders. Fixed observation camera is not a camera regression or continuous puzzle playthrough.
+PASS Carved floor overrides installed
+PASS T_Terrain visible floor and collision use the same carved mesh
+PASS HALL_Floor visible floor and collision use the same carved mesh
+PASS PLT_South_W visible floor and collision use the same carved mesh
+PASS ROOF_E visible floor and collision use the same carved mesh
+PASS ROOF_N visible floor and collision use the same carved mesh
+PASS ROOF_S visible floor and collision use the same carved mesh
+PASS Original 39 water segments / 15 visible network owners retained
+PASS Water surfaces remain non-solid
+PASS Connected main stream never rises upstream-to-downstream
+PASS Real creek bed below water at (-45.00, 2.90, -55.35) depth=0.300
+PASS Both earth banks contain water at (-45.00, 2.90, -55.35)
+PASS Real creek bed below water at (-45.57, 2.90, -51.49) depth=0.290
+PASS Both earth banks contain water at (-45.57, 2.90, -51.49)
+PASS Real creek bed below water at (-45.79, 2.89, -47.81) depth=0.305
+PASS Both earth banks contain water at (-45.79, 2.89, -47.81)
+PASS Real creek bed below water at (-44.91, 2.88, -45.11) depth=0.299
+PASS Both earth banks contain water at (-44.91, 2.88, -45.11)
+PASS Real creek bed below water at (-42.59, 2.88, -43.88) depth=0.302
+PASS Both earth banks contain water at (-42.59, 2.88, -43.88)
+PASS Real creek bed below water at (-38.48, 2.87, -43.75) depth=0.296
+PASS Both earth banks contain water at (-38.48, 2.87, -43.75)
+PASS Real creek bed below water at (-36.05, 2.86, -42.65) depth=0.296
+PASS Both earth banks contain water at (-36.05, 2.86, -42.65)
+PASS Real creek bed below water at (-35.03, 2.86, -40.15) depth=0.288
+PASS Both earth banks contain water at (-35.03, 2.86, -40.15)
+PASS Real creek bed below water at (-35.00, 2.85, -34.59) depth=0.296
+PASS Both earth banks contain water at (-35.00, 2.85, -34.59)
+PASS Real W walk crosses both banks and the shallow creek without jump
+PASS Walk physically enters the lowered bed and climbs out (minimum feet=2.648)
+PASS Creek crossing triggers no fall recovery
+PASS Ability selection pauses new river animation through existing clock
+PASS Cancel resumes the existing water clock
+PASS Restart retains one bank detail set without duplicate geometry
+TOTAL 34 checks, 0 failures.

@@ -1,0 +1,18 @@
+{
+  "utc": "2026-11-08T07:58:35.951607+00:00",
+  "kind": "Offline only; separate Play reports required",
+  "passed": true,
+  "checks": [
+    "Every existing scene object/component fileID retained",
+    "Existing physics components byte-identical to immediate scene baseline",
+    "Camera components byte-identical to immediate scene baseline",
+    "Existing non-water MonoBehaviour configuration byte-identical",
+    "Prefab overrides change only mesh/material/renderer visibility",
+    "All local scene references resolve",
+    "All 39 original segment records converted",
+    "All network asset/script GUIDs unique",
+    "Network shader uses local pauseable phase, never global _Time",
+    "Network shader supports frozen state, arrival and multiple impacts"
+  ],
+  "scene_sha256": "e28ab525a3d34c4fa52e0d4aa17ead9c19cffaff9f28aa3c3cf60600c3b1cc42"
+}

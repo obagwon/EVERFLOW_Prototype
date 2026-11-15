@@ -1,0 +1,13 @@
+Focused camera check. Fixed tower starting pose, real ability and Escape input. Manual camera offset tests opacity only.
+PASS Near tower shot uses the dither material, opacity 0.201
+PASS Fade uses the original body texture
+PASS Digit1 freezes world and camera
+PASS Close camera holds pose in ability mode
+PASS Character stays faded while choosing an ability
+PASS Escape restores exploration without pose jump: 0.0000m 0.000deg
+PASS Moving away eases through intermediate opacity and restores the original material
+PASS Fade still runs while world time is frozen
+PASS Opening shot restores opaque character
+PASS Disabling fade restores the original renderer material
+PASS Dither shader renders without shader errors
+TOTAL 11 checks, 0 failures.

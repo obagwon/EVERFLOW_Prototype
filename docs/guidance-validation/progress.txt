@@ -1,0 +1,26 @@
+ACTUAL PLAY GUI: F1, ability keys, FLOW selection use synthetic Input System events. Later circuit cases explicitly force device states and pose; not traversal.
+PASS Start goal describes the first mound
+PASS Start presents both A solutions, no staged ability lock
+PASS All orb slots ready at startup
+PASS F1 opens non-pausing help through actual input
+PASS F1 closes help
+PASS Actual raycast resolves Korean target name
+PASS Correct ability has explicit use prompt
+PASS Wrong ability displays the available ability key
+PASS First click opens actual FLOW choice
+PASS E changes actual selected FLOW direction
+PASS Second click confirms actual FLOW direction
+FORCED STATE PRESENTATION CASES begin here.
+PASS Workbench points to D5 when supply missing
+PASS Misaligned structure freeze explains release before alignment
+PASS Internal ice explains thaw and valid bypass alternative
+PASS Actual bypass supply overrides inactive normal-channel ice warning
+PASS Dock branch readout
+PASS Existing wheel rule opens D4
+PASS Open gate shifts objective to main exit
+PASS Main outlet ice gets a distinct thaw objective
+PASS Unblocked actual arrival displays supply progress
+PASS Actual 3 second rule still restores W
+PASS Cinematic returns control and tells player to walk to garden
+PASS Garden completion has explore/restart copy
+PASS Enter restart resets presentation along with existing world

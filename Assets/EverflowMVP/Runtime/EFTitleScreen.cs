@@ -7,14 +7,14 @@ namespace EverflowMVP
 {
     public sealed class EFTitleScreen : MonoBehaviour
     {
-        public const string GameplayScene = "Assets/Scenes/Everflow_Map_MVP.unity";
+        public const string GameplayScene = "Assets/Scenes/Everflow_Map_v2_test_with_puzzle.unity";
         public Button startButton;
         public Text startLabel; // Retained inactive for existing scene/editor references; artwork includes text.
         public Text versionLabel;
         bool loading;
         void Awake()
         {
-            // EFMapWorld takes over cursor ownership after the title is unloaded.
+            // The gameplay world takes over cursor ownership when the title unloads.
             Cursor.lockState = CursorLockMode.None;
             Cursor.visible = true;
             if (versionLabel != null) versionLabel.text = "v" + Application.version;

@@ -1,0 +1,2 @@
+2026-11-09T12:27:13.3473157Z
+Observation only; no pose, puzzle state or input writes. 24630 LateUpdate samples; 0 samples with an enabled non-trigger Default-layer collider within 0.08m of the actual camera. This proximity measurement is not an image-quality guarantee.

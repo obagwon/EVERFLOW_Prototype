@@ -1,0 +1,21 @@
+PASS Two planters and eight clusters are built once
+PASS Each cluster reuses three blades and a stem
+PASS All garden surfaces have authored materials
+PASS Dry clusters begin small with wet targets configured
+PASS Original leaf mesh is reused
+PASS The original garden approach remains clear of solid planters
+PASS Garden checkpoint retains the original landing surface and elevation
+PASS Stone beds do not obstruct eye-height view to wheel
+PASS Every plant is seated in a soil bed
+PASS Landing on garden before restoration does not activate it
+PASS Water restoration keeps the existing circuit and garden water behavior
+PASS Wheel restoration alone leaves all garden growth dormant
+PASS Actual grounded garden trigger emits exactly one arrival event
+PASS Front plant interpolates while far plant waits
+PASS Pause holds in-flight foliage growth
+PASS Resume completes all eight growth animations
+PASS Growth ends in the plant's green tint
+PASS Respawn and repeat checkpoint touch preserve mature plants without a second event
+PASS Restart resets scales and reuses the original plant instances
+PASS Restart resets dry tint and garden water
+TOTAL 20/20

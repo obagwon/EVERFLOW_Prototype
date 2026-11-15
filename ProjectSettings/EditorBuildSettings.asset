@@ -9,6 +9,9 @@ EditorBuildSettings:
     path: Assets/EverflowMVP/Scenes/Everflow_Title.unity
     guid: 80fa4ef976fd0094291da5c771c08b6d
   - enabled: 1
+    path: Assets/Scenes/Everflow_Map_v2_test_with_puzzle.unity
+    guid: 815ede8c18e65ad5be5be5781bb09ea9
+  - enabled: 0
     path: Assets/Scenes/Everflow_Map_MVP.unity
     guid: a09c1b8282a6b054eab301397c05d089
   - enabled: 0

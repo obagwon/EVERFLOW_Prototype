@@ -1,0 +1,13 @@
+PASS Capture fixture uses the saved scene with terrain active
+PASS Upper fall has a closed side volume and separate top sampling surface
+PASS Five interfering originals removed from both rendering and collision
+D2 dry walk D2 to D4 dry perimeter at -11.500
+PASS Dry perimeter top sits above the basin waterline
+D4 threshold D4 threshold - follows opened gate passage at -11.760
+PASS D4 crossing top clears the exit waterline
+PASS Culvert head is under the service walking surface
+PASS Misaligned supply diverts to the overflow grate
+PASS Intake endpoint lands inside the moving trough mouth at its wet height
+PASS Fixed aligned supply runs through inlet, trough and tailrace while the overflow goes dry
+PASS D2 main outlet reaches the open D4 portal
+TOTAL 10/10

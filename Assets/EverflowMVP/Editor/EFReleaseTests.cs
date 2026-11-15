@@ -50,7 +50,7 @@ namespace EverflowMVP.Editor
             EFReleaseSetup.ValidateScenes();
             Reject(() => EFReleaseSetup.ValidateMapReferences(Array.Empty<EverflowMap.EFMapWorld>(),
                 Array.Empty<EverflowMap.EFMapPlayer>()), "missing map world (legacy fallback)");
-            var scene = EditorSceneManager.OpenPreviewScene(EFTitleScreen.GameplayScene);
+            var scene = EditorSceneManager.OpenPreviewScene(EverflowMap.Editor.EFMvpSetup.ScenePath);
             try
             {
                 var roots = scene.GetRootGameObjects();

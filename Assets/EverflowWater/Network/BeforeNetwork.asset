@@ -1,0 +1,328 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: adce251b49f129a4781c68a9c354f105, type: 3}
+  m_Name: BeforeNetwork
+  m_EditorClassIdentifier: Assembly-CSharp-Editor::EverflowMap.Editor.EFWaterNetworkBackup
+  entries:
+  - label: W_A_Pond
+    mesh: {fileID: 4300000, guid: e9c7b097104a9d14dab3658752c1b5ca, type: 2}
+    material: {fileID: 0}
+    suppressed: 0
+    network: 0
+    worldUV: 0
+    impacts: []
+    sources: []
+  - label: W_D2_Basin
+    mesh: {fileID: 4300000, guid: 63947bc3994eb264aa0267f7f0bde543, type: 2}
+    material: {fileID: 0}
+    suppressed: 0
+    network: 0
+    worldUV: 0
+    impacts: []
+    sources: []
+  - label: W_D2_Dock
+    mesh: {fileID: 4300000, guid: f18683814abff164980b54974967f1fd, type: 2}
+    material: {fileID: 0}
+    suppressed: 0
+    network: 0
+    worldUV: 0
+    impacts: []
+    sources: []
+  - label: W_D2_Low
+    mesh: {fileID: 4300000, guid: 65e7aff6ca3ad3c429ac2f180748596b, type: 2}
+    material: {fileID: 0}
+    suppressed: 0
+    network: 0
+    worldUV: 0
+    impacts: []
+    sources: []
+  - label: W_D5_SpillFall
+    mesh: {fileID: 4300000, guid: 93a0964ac5b81ab42aee6909af523cb8, type: 2}
+    material: {fileID: 0}
+    suppressed: 0
+    network: 0
+    worldUV: 0
+    impacts: []
+    sources: []
+  - label: W_D5_SpillFall_Foam
+    mesh: {fileID: 4300000, guid: 4011a5de983eea046bc30c9d1e484351, type: 2}
+    material: {fileID: 0}
+    suppressed: 0
+    network: 0
+    worldUV: 0
+    impacts: []
+    sources: []
+  - label: W_D5_SpillFloor
+    mesh: {fileID: 4300000, guid: 55e6fcc1ec7ced346a080f864a42d9eb, type: 2}
+    material: {fileID: 0}
+    suppressed: 0
+    network: 0
+    worldUV: 0
+    impacts: []
+    sources: []
+  - label: W_D5_SpillPool
+    mesh: {fileID: 4300000, guid: dc8c513b9caed8b40bf8780e2cc44035, type: 2}
+    material: {fileID: 0}
+    suppressed: 0
+    network: 0
+    worldUV: 0
+    impacts: []
+    sources: []
+  - label: W_G_Leak_Fall
+    mesh: {fileID: 4300000, guid: 887bd5393fc3f6249a5b77214b9edb48, type: 2}
+    material: {fileID: 0}
+    suppressed: 0
+    network: 0
+    worldUV: 0
+    impacts: []
+    sources: []
+  - label: W_G_Leak_Fall_Foam
+    mesh: {fileID: 4300000, guid: 3b2f3c0e046a51743bef9da934140a75, type: 2}
+    material: {fileID: 0}
+    suppressed: 0
+    network: 0
+    worldUV: 0
+    impacts: []
+    sources: []
+  - label: W_G_Supply
+    mesh: {fileID: 4300000, guid: ec41edaf6a7b1804eb9c6ec3f44691f9, type: 2}
+    material: {fileID: 0}
+    suppressed: 0
+    network: 0
+    worldUV: 0
+    impacts: []
+    sources: []
+  - label: W_H_Pond
+    mesh: {fileID: 4300000, guid: db828d44bcfa9b74cb94cb339ffa302a, type: 2}
+    material: {fileID: 0}
+    suppressed: 0
+    network: 0
+    worldUV: 0
+    impacts: []
+    sources: []
+  - label: W_H_to_D5_Fall
+    mesh: {fileID: 4300000, guid: 07cae49de3c135d4ab4694c5d9fcd570, type: 2}
+    material: {fileID: 0}
+    suppressed: 0
+    network: 0
+    worldUV: 0
+    impacts: []
+    sources: []
+  - label: W_H_to_D5_Fall_Foam
+    mesh: {fileID: 4300000, guid: f6ff4b2a5d2c0924f8a32370c97dd665, type: 2}
+    material: {fileID: 0}
+    suppressed: 0
+    network: 0
+    worldUV: 0
+    impacts: []
+    sources: []
+  - label: W_H_to_G_Fall
+    mesh: {fileID: 4300000, guid: 3b77785e5e1b65948bf303d084ae323f, type: 2}
+    material: {fileID: 0}
+    suppressed: 0
+    network: 0
+    worldUV: 0
+    impacts: []
+    sources: []
+  - label: W_H_to_G_Fall_Foam
+    mesh: {fileID: 4300000, guid: 2189fcf5d3403e0479998daf9bc04447, type: 2}
+    material: {fileID: 0}
+    suppressed: 0
+    network: 0
+    worldUV: 0
+    impacts: []
+    sources: []
+  - label: W_Leak_Fall2
+    mesh: {fileID: 4300000, guid: f6944bda6579be946b393000ad2133dd, type: 2}
+    material: {fileID: 0}
+    suppressed: 1
+    network: 0
+    worldUV: 0
+    impacts: []
+    sources: []
+  - label: W_Leak_Fall2_Foam
+    mesh: {fileID: 4300000, guid: 42e34ac894356c54c8dca907ab62d392, type: 2}
+    material: {fileID: 0}
+    suppressed: 1
+    network: 0
+    worldUV: 0
+    impacts: []
+    sources: []
+  - label: W_Leak_S1
+    mesh: {fileID: 4300000, guid: 6278acc5104998e4ba74595da3084e79, type: 2}
+    material: {fileID: 0}
+    suppressed: 0
+    network: 0
+    worldUV: 0
+    impacts: []
+    sources: []
+  - label: W_Leak_S2
+    mesh: {fileID: 4300000, guid: 45813e23dc786ee4aacf80647a1769cc, type: 2}
+    material: {fileID: 0}
+    suppressed: 0
+    network: 0
+    worldUV: 0
+    impacts: []
+    sources: []
+  - label: W_Leak_S3
+    mesh: {fileID: 4300000, guid: 5ffc73fe8bb78c7448a831db4857057f, type: 2}
+    material: {fileID: 2100000, guid: 559cff223a2ebca4e92b3c385bd8c45e, type: 2}
+    suppressed: 0
+    network: 0
+    worldUV: 0
+    impacts: []
+    sources: []
+  - label: W_Leak_S4
+    mesh: {fileID: 4300000, guid: f55f044c07a38d442a1a360cd47f2174, type: 2}
+    material: {fileID: 0}
+    suppressed: 1
+    network: 0
+    worldUV: 0
+    impacts: []
+    sources: []
+  - label: W_Bypass_1
+    mesh: {fileID: 4300000, guid: 71feb72ed90fa4142988b5dbbaf95cb2, type: 2}
+    material: {fileID: 0}
+    suppressed: 0
+    network: 0
+    worldUV: 0
+    impacts: []
+    sources: []
+  - label: W_Bypass_2
+    mesh: {fileID: 4300000, guid: 695422adc9c095e43994767ed3028c06, type: 2}
+    material: {fileID: 0}
+    suppressed: 0
+    network: 0
+    worldUV: 0
+    impacts: []
+    sources: []
+  - label: W_Bypass_Fall
+    mesh: {fileID: 4300000, guid: 77faa7d4bb49cab47a5934f391ced6f7, type: 2}
+    material: {fileID: 0}
+    suppressed: 0
+    network: 0
+    worldUV: 0
+    impacts: []
+    sources: []
+  - label: W_Bypass_Fall_Foam
+    mesh: {fileID: 4300000, guid: b5a9723d3c10ee842bb6bcd056bc463d, type: 2}
+    material: {fileID: 0}
+    suppressed: 0
+    network: 0
+    worldUV: 0
+    impacts: []
+    sources: []
+  - label: W_D2_Exit
+    mesh: {fileID: 4300000, guid: a631dd2f647850d499fc4da09b8cce42, type: 2}
+    material: {fileID: 0}
+    suppressed: 0
+    network: 0
+    worldUV: 0
+    impacts: []
+    sources: []
+  - label: W_D2_Wheel
+    mesh: {fileID: 4300000, guid: ff529247dd61c0a498210103dc442be7, type: 2}
+    material: {fileID: 0}
+    suppressed: 0
+    network: 0
+    worldUV: 0
+    impacts: []
+    sources: []
+  - label: W_D5_Fall
+    mesh: {fileID: 4300000, guid: 06c2526318f41ff43bb432715f82cc4f, type: 2}
+    material: {fileID: 0}
+    suppressed: 0
+    network: 0
+    worldUV: 0
+    impacts: []
+    sources: []
+  - label: W_D5_Fall_Foam
+    mesh: {fileID: 4300000, guid: 646c286c474c1af498f5b7920c68e21b, type: 2}
+    material: {fileID: 0}
+    suppressed: 0
+    network: 0
+    worldUV: 0
+    impacts: []
+    sources: []
+  - label: W_D5_Fixed
+    mesh: {fileID: 4300000, guid: 3cf4c38d9b56e0941a28d950ea5eedeb, type: 2}
+    material: {fileID: 0}
+    suppressed: 0
+    network: 0
+    worldUV: 0
+    impacts: []
+    sources: []
+  - label: W_D5_ToD2
+    mesh: {fileID: 4300000, guid: 8b3917a91b4b19540a2a40eafc438bd8, type: 2}
+    material: {fileID: 0}
+    suppressed: 0
+    network: 0
+    worldUV: 0
+    impacts: []
+    sources: []
+  - label: W_Exit_Tunnel
+    mesh: {fileID: 4300000, guid: 9ef089e2876199f4885c1215a5ac38eb, type: 2}
+    material: {fileID: 0}
+    suppressed: 0
+    network: 0
+    worldUV: 0
+    impacts: []
+    sources: []
+  - label: W_G_ToWheel
+    mesh: {fileID: 4300000, guid: 260806be2ee541941a9ded8529cf2f1a, type: 2}
+    material: {fileID: 0}
+    suppressed: 0
+    network: 0
+    worldUV: 0
+    impacts: []
+    sources: []
+  - label: W_Gorge
+    mesh: {fileID: 4300000, guid: f35293f44bdc72a47a8f17cec9675f73, type: 2}
+    material: {fileID: 0}
+    suppressed: 0
+    network: 0
+    worldUV: 0
+    impacts: []
+    sources: []
+  - label: W_R_IslandFall
+    mesh: {fileID: 4300000, guid: da5c98d391b3e5f4f90e2676f1e336d6, type: 2}
+    material: {fileID: 0}
+    suppressed: 0
+    network: 0
+    worldUV: 0
+    impacts: []
+    sources: []
+  - label: W_R_IslandFall_Foam
+    mesh: {fileID: 4300000, guid: 541b927cec79566498effdaa1ff412c9, type: 2}
+    material: {fileID: 0}
+    suppressed: 0
+    network: 0
+    worldUV: 0
+    impacts: []
+    sources: []
+  - label: W_R_WheelFeed
+    mesh: {fileID: 4300000, guid: 37b2c3569eb0ee84da6572b2171e1a17, type: 2}
+    material: {fileID: 0}
+    suppressed: 0
+    network: 0
+    worldUV: 0
+    impacts: []
+    sources: []
+  - label: W_R_WheelPool
+    mesh: {fileID: 4300000, guid: e393cd79cf0d3764880bbbc4dee2b10e, type: 2}
+    material: {fileID: 0}
+    suppressed: 0
+    network: 0
+    worldUV: 0
+    impacts: []
+    sources: []
+  prototypeSprayActive: 1

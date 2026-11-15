@@ -1,0 +1,38 @@
+2026-11-08T05:38:23.6959029Z
+REAL PLAY, existing MainCamera/Cinemachine and synthetic keyboard/mouse. No camera pose, target Apply, teleport or circuit writes. Not human testing or a full route.
+PASS Opening locks movement and ability input
+PASS Opening disables gameplay look input
+PASS Cinemachine alone owns the overview
+PASS Actual rendering camera starts at far overview
+GAME VIEW 01-opening-overview: 1920x1080, camera=(-16.000, 30.000, 20.000), introElapsed=0.180
+PASS W, mouse look, 3 and cast cannot move/cast during overview
+PASS Mouse input cannot rotate standby gameplay orbit during opening
+PASS Esc pause stops the opening clock
+PASS Opening camera remains still while paused
+GAME VIEW 02-opening-paused: 1920x1080, camera=(-16.000, 30.000, 20.000), introElapsed=0.403
+PASS Resume continues opening without releasing input early
+GAME VIEW 03-opening-approach: 1920x1080, camera=(-26.704, 19.160, 10.945), introElapsed=3.552
+PASS Camera approaches the character after overview hold
+PASS Opening returns movement, cast and look controls
+PASS Gameplay Cinemachine camera regains priority
+PASS No deferred mouse input rotates gameplay orbit on handoff
+PASS Near-camera handoff has no large position jump
+PASS Cursor is captured for gameplay
+PASS No old transform-camera or old-world HUD/input owner copied into puzzle
+PASS Three real reference sprites and visible crops bound
+PASS Original puzzle objective and both A hints preserved
+PASS Actual key 1 selects matching ability and description
+GAME VIEW 04-ability-1: 1920x1080, camera=(-41.965, 3.698, -1.965), introElapsed=4.251
+PASS Actual key 2 selects matching ability and description
+GAME VIEW 04-ability-2: 1920x1080, camera=(-41.966, 3.678, -1.966), introElapsed=4.251
+PASS Actual key 3 selects matching ability and description
+GAME VIEW 04-ability-3: 1920x1080, camera=(-41.965, 3.675, -1.965), introElapsed=4.251
+PASS Existing F1 help remains usable
+GAME VIEW 05-help: 1920x1080, camera=(-41.965, 3.674, -1.965), introElapsed=4.251
+PASS Actual W movement works after camera handoff
+PASS Actual mouse look works after handoff
+PASS Existing R recovery remains immediate
+PASS Gameplay pause still works
+PASS Gameplay resume still works
+PASS Existing water presentation and puzzle composition preserved
+28 passes, 0 failures.

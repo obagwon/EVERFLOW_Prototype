@@ -1,0 +1,49 @@
+2026-11-08T16:46:53.6948414Z
+Isolated audio/geometry fixtures and real Input System mode transitions. Fixed listener/camera viewpoints, not a puzzle playthrough or human listening evaluation.
+PASS Dry gap inside renderer bounds is silent (exact triangle distance)
+PASS Shallow surface produces at most 55% of fall gain
+PASS Transformed vertical sheet is louder than shallow sheet
+PASS Moving transform invalidates cached world vertices
+PASS Frozen water excluded
+PASS Dry water excluded
+PASS Suppressed legacy surfaces excluded
+PASS UV2 volume underside/skirt cannot become an audible source
+PASS Water-only maximum reduced 12 dB: 0.045214
+PASS Existing effect and wheel base gains unchanged
+PASS Spatial panning with one listener-based attenuation
+PASS One water voice in original bounded 12-source pool
+VIEW 0 ear=(-43.00, 8.00, -58.00) surface=W_H_to_G_Fall distance=1.142 gain=0.879 source volume=0.039757
+PASS View 0 remains below -12 dB water ceiling
+PASS View 0 uses actual listener/surface distance
+PASS View 0 emitter lies on audible water triangle
+VIEW 1 ear=(-39.00, 3.00, -50.00) surface=W_H_to_G_Fall distance=5.060 gain=0.224 source volume=0.010124
+PASS View 1 remains below -12 dB water ceiling
+PASS View 1 uses actual listener/surface distance
+PASS View 1 emitter lies on audible water triangle
+VIEW 2 ear=(-44.00, 4.00, -47.00) surface=W_H_to_G_Fall distance=1.259 gain=0.521 source volume=0.023544
+PASS View 2 remains below -12 dB water ceiling
+PASS View 2 uses actual listener/surface distance
+PASS View 2 emitter lies on audible water triangle
+VIEW 3 ear=(30.00, 25.00, 30.00) surface= distance=9.000 gain=0.000 source volume=0.000000
+PASS View 3 remains below -12 dB water ceiling
+PASS View 3 uses actual listener/surface distance
+PASS Distant listener is fully silent
+Exact surface query mean 0.976 ms (Editor, 50 warmed queries)
+PASS Ability mode pauses audio (cycle 0)
+PASS Paused water voice does not advance or accumulate
+PASS Cancel restores audio without opening pause
+PASS Ability mode pauses audio (cycle 1)
+PASS Paused water voice does not advance or accumulate
+PASS Cancel restores audio without opening pause
+PASS Ability mode pauses audio (cycle 2)
+PASS Paused water voice does not advance or accumulate
+PASS Cancel restores audio without opening pause
+PASS Ability mode pauses audio (cycle 3)
+PASS Paused water voice does not advance or accumulate
+PASS Cancel restores audio without opening pause
+PASS Ordinary Esc pauses water
+PASS Ordinary resume restores water
+PASS Respawn/restart create no additional audio sources
+PASS Restart restores one running loop and simulation
+PASS Ability effect gain remains .22
+TOTAL 41 checks, 0 failures.

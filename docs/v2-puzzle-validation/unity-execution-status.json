@@ -1,0 +1,64 @@
+{
+  "initial_sandbox_attempt": {
+    "utc": "2026-11-06T15:18:24.973652+00:00",
+    "editor": "6000.3.21f1",
+    "attempt": "-batchmode -executeMethod EverflowMap.Editor.EFV2PuzzleBuild.Audit",
+    "observed_account": "home\\codexsandboxoffline",
+    "user_session_channel": "LicenseClient-vzd12",
+    "observed_lines": [
+      "Built from '6000.3/staging' branch; Version is '6000.3.21f1 (c02631ffc030) revision 12592689'; Using compiler version '194234433'; Build Type 'Release'",
+      "[Licensing::IpcConnector] Connection to channel LicenseClient-vzd12 refused",
+      "Date: 2026-11-06T14:47:54Z",
+      "Assertion failed on expression: 'SUCCEEDED(hr)'",
+      "Assertion failed on expression: 'SUCCEEDED(hr)'",
+      "Assertion failed on expression: 'ERROR_SUCCESS == status'",
+      "[Licensing::Module] Licensing is not yet initialized."
+    ],
+    "result": "Editor did not reach project import or executeMethod; Licensing remained uninitialized. Task-owned stuck Editor PID 32244 stopped. Existing user/Hub processes left alone.",
+    "unity_import": false,
+    "unity_play": false,
+    "ordinary_input_playthrough": false,
+    "forced_state_runtime_checks": false,
+    "synthetic_input_runtime_checks": false,
+    "licensing_modified": false,
+    "interpretation": "Account/session IPC access mismatch is a plausible cause; license expiry was not established.",
+    "followup": {
+      "utc": "2026-11-06T15:31:04.587252+00:00",
+      "existing_editor_pid": 31112,
+      "normal_user_licensing_connected": true,
+      "new_editor_launched": false,
+      "v2_bridge_created": true,
+      "bridge_initial_import": "waiting for existing Editor Ctrl+R; current tools cannot send native Unity keys",
+      "runtime_tests_executed": false,
+      "license_or_windows_security_settings_changed": false
+    }
+  },
+  "current": {
+    "utc": "2026-11-06T16:58:14.084934+00:00",
+    "editor": "6000.3.21f1",
+    "editor_pid": 31112,
+    "execution": "Existing normal-user Editor via fixed project-local test bridge",
+    "unity_import": true,
+    "unity_play": true,
+    "human_playthrough": false,
+    "synthetic_input_continuous_routes": {
+      "bloom": {
+        "passed": true,
+        "checks": 18,
+        "seconds_to_garden": 136.33
+      },
+      "alternate": {
+        "passed": true,
+        "checks": 28,
+        "seconds_to_garden": 138.55
+      }
+    },
+    "forced_state_checks": 18,
+    "input_smoke_checks": 15,
+    "isolated_exit_checks": 4,
+    "isolated_platform_connector_fall_checks": 15,
+    "license_security_settings_changed": false,
+    "input_focus_gate_smoke_retest": 15,
+    "handoff": "Independent puzzle scene left open in normal Play at S; no test probe devices remain."
+  }
+}

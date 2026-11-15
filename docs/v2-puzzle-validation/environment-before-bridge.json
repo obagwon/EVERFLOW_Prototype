@@ -1,0 +1,30 @@
+{
+  "utc": "20261106T152435735279Z",
+  "action": "diagnose",
+  "context": {
+    "actualIdentity": "home\\CodexSandboxOffline",
+    "environmentUser": "vzd12",
+    "environmentProfile": "C:\\Users\\vzd12",
+    "unityProcesses": [
+      {
+        "pid": 31112,
+        "path": "C:\\Program Files\\Unity\\Hub\\Editor\\6000.3.21f1\\Editor\\Unity.exe",
+        "title": "",
+        "sessionId": 1
+      },
+      {
+        "pid": 33824,
+        "path": "C:\\Program Files\\Unity Hub\\resources\\unity.exe",
+        "title": "",
+        "sessionId": 1
+      }
+    ]
+  },
+  "blockers": [
+    "Windows token identity differs from the inherited user environment (home\\CodexSandboxOffline / vzd12). Use the existing Editor menus or a normal user terminal; license expiry is not implied.",
+    "Editor PID 31112 is already running. Use its menu; it was not stopped.",
+    "The project has a UnityLockfile. Inspect the existing Editor; this helper will not remove the lock or start another Editor."
+  ],
+  "editor_started": false,
+  "note": "Sandbox process discovery can be incomplete. No instances does not prove the GUI Editor is closed."
+}

@@ -1,0 +1,545 @@
+2026-11-07T12:56:45.2712831Z FORCED STATES / FIXED CAMERA. Not input traversal.
+MODEL PH_A_Leaf02 localBounds=Center: (0.00, 0.10, -0.06), Extents: (1.00, 0.10, 1.94) pivot=(-59.00, 0.00, -27.00) world=Center: (-58.97, 0.10, -27.05), Extents: (1.83, 0.10, 2.18)
+MODEL PH_A_Root01_Grown localBounds=Center: (2.46, 2.98, 0.00), Extents: (2.65, 3.18, 1.77) pivot=(-39.30, 0.00, -28.50) world=Center: (-39.30, 0.00, -28.50), Extents: (0.00, 0.00, 0.00)
+MODEL PH_A_Root01_Withered localBounds=Center: (-0.12, 0.28, -0.04), Extents: (0.86, 0.33, 0.99) pivot=(-39.30, 0.00, -28.50) world=Center: (-39.42, 0.28, -28.54), Extents: (0.86, 0.33, 0.99)
+MODEL PH_A_Tut_MovingPad localBounds=Center: (0.00, 0.15, 0.00), Extents: (0.98, 0.15, 0.98) pivot=(-49.00, 0.75, -12.50) world=Center: (-49.00, 0.90, -12.50), Extents: (0.98, 0.15, 0.98)
+MODEL PH_A_Tut_WitheredPad localBounds=Center: (0.00, 0.43, 0.00), Extents: (1.08, 0.43, 1.09) pivot=(-41.50, 0.00, -12.50) world=Center: (-41.50, 0.43, -12.50), Extents: (1.08, 0.43, 1.09)
+MODEL PH_B_MidLedge localBounds=Center: (0.00, 0.75, 0.00), Extents: (1.00, 0.75, 1.50) pivot=(-29.00, 6.00, -51.50) world=Center: (-29.00, 6.75, -51.50), Extents: (1.00, 0.75, 1.50)
+MODEL PH_B_RootBridge_Grown localBounds=Center: (0.00, -2.37, -2.40), Extents: (0.92, 0.30, 2.40) pivot=(-8.00, 5.70, -43.60) world=Center: (-8.00, 5.70, -43.60), Extents: (0.00, 0.00, 0.00)
+MODEL PH_B_RootBridge_Withered localBounds=Center: (0.05, 0.13, -2.37), Extents: (0.42, 0.28, 2.81) pivot=(-24.00, 5.70, -40.60) world=Center: (-23.95, 5.83, -42.97), Extents: (0.42, 0.28, 2.81)
+MODEL PH_B_Windmill_Pole localBounds=Center: (0.00, 3.55, 0.00), Extents: (0.57, 3.55, 0.57) pivot=(-26.00, 6.00, -50.00) world=Center: (-26.00, 9.55, -50.00), Extents: (0.57, 3.55, 0.57)
+MODEL PH_D2_BranchGate localBounds=Center: (0.00, 0.73, 0.29), Extents: (0.80, 0.73, 1.09) pivot=(-56.00, -11.15, -52.00) world=Center: (-56.00, -10.43, -51.71), Extents: (0.80, 0.73, 1.09)
+MODEL PH_D3_VinePath_Grown localBounds=Center: (-0.01, 0.17, -3.75), Extents: (1.12, 0.17, 3.75) pivot=(-40.00, -3.00, -38.00) world=Center: (-40.00, -3.00, -38.00), Extents: (0.00, 0.00, 0.00)
+MODEL PH_D3_VinePath_Withered localBounds=Center: (0.05, 0.08, -0.11), Extents: (0.50, 0.25, 0.50) pivot=(-40.00, -3.00, -38.00) world=Center: (-39.95, -2.92, -38.11), Extents: (0.50, 0.25, 0.50)
+MODEL PH_D4_GateRoot_Grown localBounds=Center: (0.14, 2.40, 0.00), Extents: (0.67, 2.43, 0.49) pivot=(-77.00, -12.00, -48.00) world=Center: (-77.00, -12.00, -48.00), Extents: (0.00, 0.00, 0.00)
+MODEL PH_D4_GateRoot_Withered localBounds=Center: (0.02, 0.21, 0.01), Extents: (0.44, 0.24, 0.44) pivot=(-77.00, -12.00, -48.00) world=Center: (-76.98, -11.79, -47.99), Extents: (0.44, 0.24, 0.44)
+MODEL PH_D4_Winch localBounds=Center: (-76.11, -8.25, -50.48), Extents: (2.11, 3.75, 2.72) pivot=(0.00, 0.00, 0.00) world=Center: (-76.11, -8.25, -50.48), Extents: (2.11, 3.75, 2.72)
+MODEL PH_D5_BypassRoot_Grown localBounds=Center: (-0.15, 1.91, 0.00), Extents: (0.65, 1.93, 0.49) pivot=(-75.00, -9.00, -64.60) world=Center: (-75.00, -9.00, -64.60), Extents: (0.00, 0.00, 0.00)
+MODEL PH_D5_BypassRoot_Withered localBounds=Center: (0.06, 0.27, 0.09), Extents: (0.55, 0.29, 0.46) pivot=(-75.00, -9.00, -64.60) world=Center: (-74.94, -8.73, -64.51), Extents: (0.55, 0.29, 0.46)
+MODEL PH_G_ChannelBranch localBounds=Center: (0.00, 0.45, 0.00), Extents: (1.33, 0.45, 0.18) pivot=(-45.00, 15.05, -61.50) world=Center: (-45.00, 15.50, -61.50), Extents: (1.33, 0.45, 0.18)
+MODEL PH_G_DoorRoot_Grown localBounds=Center: (-0.01, 1.68, 0.00), Extents: (0.45, 1.69, 0.49) pivot=(-30.60, 15.00, -61.20) world=Center: (-30.60, 15.00, -61.20), Extents: (0.00, 0.00, 0.00)
+MODEL PH_G_DoorRoot_Withered localBounds=Center: (0.11, 0.28, 0.10), Extents: (0.48, 0.31, 0.44) pivot=(-30.60, 15.00, -61.20) world=Center: (-30.49, 15.28, -61.10), Extents: (0.48, 0.31, 0.44)
+FIXTURE SIGN / S  /  RESTORE THE VALLEY bounds=Center: (-46.08, 2.71, -9.05), Extents: (1.43, 0.21, 1.94) visible=True active=True
+FIXTURE A common mound landing bounds=Center: (-45.00, 5.87, -28.00), Extents: (6.00, 0.18, 1.60) visible=True active=True
+FIXTURE A to C bridge threshold bounds=Center: (-50.80, 5.90, -30.10), Extents: (1.50, 0.18, 1.25) visible=True active=True
+FIXTURE A ROOT STAIRS bounds=Center: (-40.40, 1.00, -15.00), Extents: (0.33, 0.33, 0.33) visible=False active=True
+FIXTURE Ability focus visual bounds=Center: (-40.40, 1.00, -15.00), Extents: (0.18, 0.18, 0.18) visible=True active=True
+FIXTURE SIGN / A ROOT STAIRS bounds=Center: (-40.42, 1.76, -15.01), Extents: (0.28, 0.06, 0.37) visible=False active=True
+FIXTURE A grown root staircase step 0 bounds=Center: (-40.40, -0.01, -15.27), Extents: (1.60, 0.20, 0.31) visible=True active=False
+FIXTURE A grown root staircase step 1 bounds=Center: (-40.40, 0.26, -15.82), Extents: (1.60, 0.20, 0.31) visible=True active=False
+FIXTURE A grown root staircase step 2 bounds=Center: (-40.40, 0.53, -16.36), Extents: (1.60, 0.20, 0.31) visible=True active=False
+FIXTURE A grown root staircase step 3 bounds=Center: (-40.40, 0.80, -16.91), Extents: (1.60, 0.20, 0.31) visible=True active=False
+FIXTURE A grown root staircase step 4 bounds=Center: (-40.40, 1.08, -17.45), Extents: (1.60, 0.20, 0.31) visible=True active=False
+FIXTURE A grown root staircase step 5 bounds=Center: (-40.40, 1.35, -18.00), Extents: (1.60, 0.20, 0.31) visible=True active=False
+FIXTURE A grown root staircase step 6 bounds=Center: (-40.40, 1.62, -18.55), Extents: (1.60, 0.20, 0.31) visible=True active=False
+FIXTURE A grown root staircase step 7 bounds=Center: (-40.40, 1.90, -19.09), Extents: (1.60, 0.20, 0.31) visible=True active=False
+FIXTURE A grown root staircase step 8 bounds=Center: (-40.40, 2.17, -19.64), Extents: (1.60, 0.20, 0.31) visible=True active=False
+FIXTURE A grown root staircase step 9 bounds=Center: (-40.40, 2.44, -20.18), Extents: (1.60, 0.20, 0.31) visible=True active=False
+FIXTURE A grown root staircase step 10 bounds=Center: (-40.40, 2.71, -20.73), Extents: (1.60, 0.20, 0.31) visible=True active=False
+FIXTURE A grown root staircase step 11 bounds=Center: (-40.40, 2.99, -21.27), Extents: (1.60, 0.20, 0.31) visible=True active=False
+FIXTURE A grown root staircase step 12 bounds=Center: (-40.40, 3.26, -21.82), Extents: (1.60, 0.20, 0.31) visible=True active=False
+FIXTURE A grown root staircase step 13 bounds=Center: (-40.40, 3.53, -22.36), Extents: (1.60, 0.20, 0.31) visible=True active=False
+FIXTURE A grown root staircase step 14 bounds=Center: (-40.40, 3.80, -22.91), Extents: (1.60, 0.20, 0.31) visible=True active=False
+FIXTURE A grown root staircase step 15 bounds=Center: (-40.40, 4.08, -23.45), Extents: (1.60, 0.20, 0.31) visible=True active=False
+FIXTURE A grown root staircase step 16 bounds=Center: (-40.40, 4.35, -24.00), Extents: (1.60, 0.20, 0.31) visible=True active=False
+FIXTURE A grown root staircase step 17 bounds=Center: (-40.40, 4.62, -24.55), Extents: (1.60, 0.20, 0.31) visible=True active=False
+FIXTURE A grown root staircase step 18 bounds=Center: (-40.40, 4.90, -25.09), Extents: (1.60, 0.20, 0.31) visible=True active=False
+FIXTURE A grown root staircase step 19 bounds=Center: (-40.40, 5.17, -25.64), Extents: (1.60, 0.20, 0.31) visible=True active=False
+FIXTURE A grown root staircase step 20 bounds=Center: (-40.40, 5.44, -26.18), Extents: (1.60, 0.20, 0.31) visible=True active=False
+FIXTURE A grown root staircase step 21 bounds=Center: (-40.40, 5.71, -26.73), Extents: (1.60, 0.20, 0.31) visible=True active=False
+FIXTURE A POND CURRENT bounds=Center: (-49.00, 1.40, -14.50), Extents: (0.33, 0.33, 0.33) visible=False active=True
+FIXTURE Ability focus visual bounds=Center: (-49.00, 1.40, -14.50), Extents: (0.18, 0.18, 0.18) visible=True active=True
+FIXTURE SIGN / A POND CURRENT bounds=Center: (-49.02, 2.16, -14.51), Extents: (0.32, 0.06, 0.44) visible=False active=True
+FIXTURE Direction shaft bounds=Center: (-49.33, 2.13, -15.15), Extents: (0.38, 0.37, 0.69) visible=True active=False
+FIXTURE Arrow head bounds=Center: (-49.65, 2.45, -15.81), Extents: (0.19, 0.15, 0.19) visible=True active=False
+FIXTURE SIGN / MOUND bounds=Center: (-49.65, 2.97, -15.81), Extents: (0.14, 0.04, 0.00) visible=True active=False
+FIXTURE Direction shaft bounds=Center: (-49.00, 1.80, -13.70), Extents: (0.05, 0.05, 0.80) visible=True active=False
+FIXTURE Arrow head bounds=Center: (-49.00, 1.80, -12.90), Extents: (0.20, 0.07, 0.20) visible=True active=False
+FIXTURE SIGN / SHORE bounds=Center: (-49.00, 2.32, -12.90), Extents: (0.13, 0.04, 0.00) visible=True active=False
+FIXTURE PH_A_Leaf01 bounds=Center: (-49.00, 0.18, -16.20), Extents: (1.60, 0.10, 2.16) visible=True active=True
+FIXTURE A FLOATING LEAF bounds=Center: (-48.20, 0.93, -16.20), Extents: (0.33, 0.33, 0.33) visible=False active=True
+FIXTURE Ability focus visual bounds=Center: (-48.20, 0.93, -16.20), Extents: (0.18, 0.18, 0.18) visible=True active=True
+FIXTURE SIGN / A FLOATING LEAF bounds=Center: (-48.22, 1.69, -16.21), Extents: (0.31, 0.06, 0.42) visible=False active=True
+FIXTURE Safe landing / S / A SHORE bounds=Center: (-46.00, -0.03, -13.30), Extents: (1.50, 0.18, 1.50) visible=False active=True
+FIXTURE SIGN / S / A SHORE bounds=Center: (-46.02, 2.41, -13.31), Extents: (0.22, 0.06, 0.29) visible=True active=True
+FIXTURE Safe landing / A COMMON MOUND bounds=Center: (-45.00, 5.90, -28.00), Extents: (1.50, 0.18, 1.50) visible=False active=True
+FIXTURE SIGN / A COMMON MOUND bounds=Center: (-45.02, 8.34, -28.01), Extents: (0.34, 0.06, 0.46) visible=True active=True
+FIXTURE SIGN / B  ROOT TERRACE  >>> bounds=Center: (-45.06, 8.17, -30.04), Extents: (0.59, 0.17, 0.79) visible=True active=True
+FIXTURE B WINDMILL bounds=Center: (-28.60, 7.60, -42.00), Extents: (0.33, 0.33, 0.33) visible=False active=True
+FIXTURE Ability focus visual bounds=Center: (-28.60, 7.60, -42.00), Extents: (0.18, 0.18, 0.18) visible=True active=True
+FIXTURE SIGN / B WINDMILL bounds=Center: (-28.62, 8.36, -42.01), Extents: (0.21, 0.06, 0.29) visible=False active=True
+FIXTURE Direction shaft bounds=Center: (-28.60, 8.00, -42.80), Extents: (0.05, 0.05, 0.80) visible=True active=False
+FIXTURE Arrow head bounds=Center: (-28.60, 8.00, -43.60), Extents: (0.20, 0.07, 0.20) visible=True active=False
+FIXTURE SIGN / FAR BANK bounds=Center: (-28.60, 8.52, -43.60), Extents: (0.18, 0.04, 0.00) visible=True active=False
+FIXTURE Direction shaft bounds=Center: (-28.60, 8.00, -41.20), Extents: (0.05, 0.05, 0.80) visible=True active=False
+FIXTURE Arrow head bounds=Center: (-28.60, 8.00, -40.40), Extents: (0.20, 0.07, 0.20) visible=True active=False
+FIXTURE SIGN / RETURN bounds=Center: (-28.60, 8.52, -40.40), Extents: (0.15, 0.04, 0.00) visible=True active=False
+FIXTURE PH_B_MovingStone bounds=Center: (-24.00, 5.71, -42.20), Extents: (1.50, 0.38, 1.50) visible=True active=True
+FIXTURE B MOVING STONE bounds=Center: (-23.20, 6.73, -42.20), Extents: (0.33, 0.33, 0.33) visible=False active=True
+FIXTURE Ability focus visual bounds=Center: (-23.20, 6.73, -42.20), Extents: (0.18, 0.18, 0.18) visible=True active=True
+FIXTURE SIGN / B MOVING STONE bounds=Center: (-23.22, 7.49, -42.21), Extents: (0.31, 0.06, 0.42) visible=False active=True
+FIXTURE PH_B_Windmill_Rotor bounds=Center: (-26.00, 11.90, -49.25), Extents: (2.60, 2.60, 0.26) visible=True active=True
+FIXTURE B ROOT BRIDGE bounds=Center: (-22.00, 7.20, -41.80), Extents: (0.33, 0.33, 0.33) visible=False active=True
+FIXTURE Ability focus visual bounds=Center: (-22.00, 7.20, -41.80), Extents: (0.18, 0.18, 0.18) visible=True active=True
+FIXTURE SIGN / B ROOT BRIDGE bounds=Center: (-22.02, 7.96, -41.81), Extents: (0.29, 0.06, 0.38) visible=False active=True
+FIXTURE B grown root bridge bounds=Center: (-26.40, 5.90, -46.00), Extents: (1.20, 0.18, 4.90) visible=True active=False
+FIXTURE B approach bounds=Center: (-25.00, 5.87, -41.00), Extents: (3.50, 0.18, 1.75) visible=True active=True
+FIXTURE B far bank bounds=Center: (-25.00, 5.87, -51.00), Extents: (3.50, 0.18, 1.75) visible=True active=True
+FIXTURE Safe landing / B ENTRANCE bounds=Center: (-27.00, 5.92, -40.50), Extents: (1.50, 0.18, 1.50) visible=False active=True
+FIXTURE SIGN / B ENTRANCE bounds=Center: (-27.02, 8.36, -40.51), Extents: (0.24, 0.06, 0.32) visible=False active=True
+FIXTURE Safe landing / B FAR BANK bounds=Center: (-25.00, 5.92, -51.50), Extents: (1.50, 0.18, 1.50) visible=False active=True
+FIXTURE SIGN / B FAR BANK bounds=Center: (-25.02, 8.36, -51.51), Extents: (0.22, 0.06, 0.29) visible=False active=True
+FIXTURE B ascent to ruin step 0 bounds=Center: (-25.14, 6.04, -52.10), Extents: (0.99, 0.20, 1.26) visible=True active=True
+FIXTURE B ascent to ruin step 1 bounds=Center: (-25.43, 6.31, -52.31), Extents: (0.99, 0.20, 1.26) visible=True active=True
+FIXTURE B ascent to ruin step 2 bounds=Center: (-25.72, 6.59, -52.52), Extents: (0.99, 0.20, 1.26) visible=True active=True
+FIXTURE B ascent to ruin step 3 bounds=Center: (-26.01, 6.86, -52.72), Extents: (0.99, 0.20, 1.26) visible=True active=True
+FIXTURE B ascent to ruin step 4 bounds=Center: (-26.30, 7.13, -52.93), Extents: (0.99, 0.20, 1.26) visible=True active=True
+FIXTURE B ascent to ruin step 5 bounds=Center: (-26.58, 7.41, -53.13), Extents: (0.99, 0.20, 1.26) visible=True active=True
+FIXTURE B ascent to ruin step 6 bounds=Center: (-26.87, 7.68, -53.34), Extents: (0.99, 0.20, 1.26) visible=True active=True
+FIXTURE B ascent to ruin step 7 bounds=Center: (-27.16, 7.96, -53.55), Extents: (0.99, 0.20, 1.26) visible=True active=True
+FIXTURE B ascent to ruin step 8 bounds=Center: (-27.45, 8.23, -53.75), Extents: (0.99, 0.20, 1.26) visible=True active=True
+FIXTURE B ascent to ruin step 9 bounds=Center: (-27.73, 8.51, -53.96), Extents: (0.99, 0.20, 1.26) visible=True active=True
+FIXTURE B ascent to ruin step 10 bounds=Center: (-28.02, 8.78, -54.16), Extents: (0.99, 0.20, 1.26) visible=True active=True
+FIXTURE B ascent to ruin step 11 bounds=Center: (-28.31, 9.05, -54.37), Extents: (0.99, 0.20, 1.26) visible=True active=True
+FIXTURE B ascent to ruin step 12 bounds=Center: (-28.60, 9.33, -54.58), Extents: (0.99, 0.20, 1.26) visible=True active=True
+FIXTURE B ascent to ruin step 13 bounds=Center: (-28.89, 9.60, -54.78), Extents: (0.99, 0.20, 1.26) visible=True active=True
+FIXTURE B ascent to ruin step 14 bounds=Center: (-29.17, 9.88, -54.99), Extents: (0.99, 0.20, 1.26) visible=True active=True
+FIXTURE B ascent to ruin step 15 bounds=Center: (-29.46, 10.15, -55.19), Extents: (0.99, 0.20, 1.26) visible=True active=True
+FIXTURE B ascent to ruin step 16 bounds=Center: (-29.75, 10.43, -55.40), Extents: (0.99, 0.20, 1.26) visible=True active=True
+FIXTURE B ascent to ruin step 17 bounds=Center: (-30.04, 10.70, -55.61), Extents: (0.99, 0.20, 1.26) visible=True active=True
+FIXTURE B ascent to ruin step 18 bounds=Center: (-30.33, 10.97, -55.81), Extents: (0.99, 0.20, 1.26) visible=True active=True
+FIXTURE B ascent to ruin step 19 bounds=Center: (-30.61, 11.25, -56.02), Extents: (0.99, 0.20, 1.26) visible=True active=True
+FIXTURE B ascent to ruin step 20 bounds=Center: (-30.90, 11.52, -56.22), Extents: (0.99, 0.20, 1.26) visible=True active=True
+FIXTURE B ascent to ruin step 21 bounds=Center: (-31.19, 11.80, -56.43), Extents: (0.99, 0.20, 1.26) visible=True active=True
+FIXTURE B ascent to ruin step 22 bounds=Center: (-31.48, 12.07, -56.64), Extents: (0.99, 0.20, 1.26) visible=True active=True
+FIXTURE B ascent to ruin step 23 bounds=Center: (-31.77, 12.34, -56.84), Extents: (0.99, 0.20, 1.26) visible=True active=True
+FIXTURE B ascent to ruin step 24 bounds=Center: (-32.05, 12.62, -57.05), Extents: (0.99, 0.20, 1.26) visible=True active=True
+FIXTURE B ascent to ruin step 25 bounds=Center: (-32.34, 12.89, -57.25), Extents: (0.99, 0.20, 1.26) visible=True active=True
+FIXTURE B ascent to ruin step 26 bounds=Center: (-32.63, 13.17, -57.46), Extents: (0.99, 0.20, 1.26) visible=True active=True
+FIXTURE B ascent to ruin step 27 bounds=Center: (-32.92, 13.44, -57.67), Extents: (0.99, 0.20, 1.26) visible=True active=True
+FIXTURE B ascent to ruin step 28 bounds=Center: (-33.20, 13.72, -57.87), Extents: (0.99, 0.20, 1.26) visible=True active=True
+FIXTURE B ascent to ruin step 29 bounds=Center: (-33.49, 13.99, -58.08), Extents: (0.99, 0.20, 1.26) visible=True active=True
+FIXTURE B ascent to ruin step 30 bounds=Center: (-33.78, 14.26, -58.28), Extents: (0.99, 0.20, 1.26) visible=True active=True
+FIXTURE B ascent to ruin step 31 bounds=Center: (-34.07, 14.54, -58.49), Extents: (0.99, 0.20, 1.26) visible=True active=True
+FIXTURE B ascent to ruin step 32 bounds=Center: (-34.36, 14.81, -58.70), Extents: (0.99, 0.20, 1.26) visible=True active=True
+FIXTURE SIGN / B: ROOT BRIDGE OR WINDMILL + FROZEN STONE bounds=Center: (-24.02, 8.57, -42.02), Extents: (0.99, 0.07, 1.36) visible=False active=True
+FIXTURE C WIND bounds=Center: (-62.00, 7.40, -42.00), Extents: (0.33, 0.33, 0.33) visible=False active=True
+FIXTURE Ability focus visual bounds=Center: (-62.00, 7.40, -42.00), Extents: (0.18, 0.18, 0.18) visible=True active=True
+FIXTURE SIGN / C WIND bounds=Center: (-62.02, 8.16, -42.01), Extents: (0.14, 0.06, 0.19) visible=False active=True
+FIXTURE Direction shaft bounds=Center: (-61.76, 8.04, -42.72), Extents: (0.29, 0.29, 0.75) visible=True active=False
+FIXTURE Arrow head bounds=Center: (-61.52, 8.28, -43.45), Extents: (0.19, 0.13, 0.20) visible=True active=False
+FIXTURE SIGN / HIGH LEDGE bounds=Center: (-61.52, 8.80, -43.45), Extents: (0.23, 0.04, 0.00) visible=True active=False
+FIXTURE Direction shaft bounds=Center: (-62.00, 7.80, -41.20), Extents: (0.05, 0.05, 0.80) visible=True active=False
+FIXTURE Arrow head bounds=Center: (-62.00, 7.80, -40.40), Extents: (0.20, 0.07, 0.20) visible=True active=False
+FIXTURE SIGN / RETURN bounds=Center: (-62.00, 8.32, -40.40), Extents: (0.15, 0.04, 0.00) visible=True active=False
+FIXTURE PH_C_LeafPlatform bounds=Center: (-64.00, 6.13, -44.20), Extents: (1.72, 0.12, 2.71) visible=True active=True
+FIXTURE C GROWABLE LEAF bounds=Center: (-63.20, 6.90, -44.20), Extents: (0.33, 0.33, 0.33) visible=False active=True
+FIXTURE Ability focus visual bounds=Center: (-63.20, 6.90, -44.20), Extents: (0.18, 0.18, 0.18) visible=True active=True
+FIXTURE SIGN / C GROWABLE LEAF bounds=Center: (-63.22, 7.66, -44.21), Extents: (0.34, 0.06, 0.46) visible=False active=True
+FIXTURE Safe landing / C ENTRANCE bounds=Center: (-64.00, 5.94, -40.00), Extents: (1.50, 0.18, 1.50) visible=False active=True
+FIXTURE SIGN / C ENTRANCE bounds=Center: (-64.02, 8.38, -40.01), Extents: (0.24, 0.06, 0.32) visible=False active=True
+FIXTURE C visible high landing bounds=Center: (-62.00, 11.67, -59.00), Extents: (2.75, 0.18, 2.25) visible=True active=True
+FIXTURE Safe landing / C HIGH LEDGE bounds=Center: (-62.00, 11.72, -59.00), Extents: (1.50, 0.18, 1.50) visible=False active=True
+FIXTURE SIGN / C HIGH LEDGE bounds=Center: (-62.02, 14.16, -59.01), Extents: (0.26, 0.06, 0.35) visible=False active=True
+FIXTURE C ascent to ruin step 0 bounds=Center: (-60.83, 11.84, -60.08), Extents: (0.74, 0.20, 1.17) visible=True active=True
+FIXTURE C ascent to ruin step 1 bounds=Center: (-60.50, 12.11, -60.25), Extents: (0.74, 0.20, 1.17) visible=True active=True
+FIXTURE C ascent to ruin step 2 bounds=Center: (-60.17, 12.38, -60.42), Extents: (0.74, 0.20, 1.17) visible=True active=True
+FIXTURE C ascent to ruin step 3 bounds=Center: (-59.83, 12.65, -60.58), Extents: (0.74, 0.20, 1.17) visible=True active=True
+FIXTURE C ascent to ruin step 4 bounds=Center: (-59.50, 12.92, -60.75), Extents: (0.74, 0.20, 1.17) visible=True active=True
+FIXTURE C ascent to ruin step 5 bounds=Center: (-59.17, 13.19, -60.92), Extents: (0.74, 0.20, 1.17) visible=True active=True
+FIXTURE C ascent to ruin step 6 bounds=Center: (-58.83, 13.46, -61.08), Extents: (0.74, 0.20, 1.17) visible=True active=True
+FIXTURE C ascent to ruin step 7 bounds=Center: (-58.50, 13.73, -61.25), Extents: (0.74, 0.20, 1.17) visible=True active=True
+FIXTURE C ascent to ruin step 8 bounds=Center: (-58.17, 14.00, -61.42), Extents: (0.74, 0.20, 1.17) visible=True active=True
+FIXTURE C ascent to ruin step 9 bounds=Center: (-57.83, 14.27, -61.58), Extents: (0.74, 0.20, 1.17) visible=True active=True
+FIXTURE C ascent to ruin step 10 bounds=Center: (-57.50, 14.54, -61.75), Extents: (0.74, 0.20, 1.17) visible=True active=True
+FIXTURE C ascent to ruin step 11 bounds=Center: (-57.17, 14.81, -61.92), Extents: (0.74, 0.20, 1.17) visible=True active=True
+FIXTURE C ruin edge link bounds=Center: (-55.50, 14.97, -62.50), Extents: (2.50, 0.18, 1.25) visible=True active=True
+FIXTURE SIGN / C: BLOOM LEAF -> FLOW TO HIGH LEDGE bounds=Center: (-64.05, 9.14, -43.04), Extents: (1.04, 0.14, 1.41) visible=False active=True
+FIXTURE B-C intermediate switching walkway bounds=Center: (-44.00, 5.92, -40.00), Extents: (16.50, 0.18, 1.00) visible=True active=True
+FIXTURE SIGN / B <-> C  /  SWITCH ROUTES bounds=Center: (-45.03, 8.08, -40.02), Extents: (0.60, 0.08, 0.82) visible=False active=True
+FIXTURE G door approach bounds=Center: (-31.50, 14.88, -60.20), Extents: (4.00, 0.18, 1.20) visible=True active=True
+FIXTURE G WATER BRANCH bounds=Center: (-43.70, 16.25, -61.00), Extents: (0.33, 0.33, 0.33) visible=False active=True
+FIXTURE Ability focus visual bounds=Center: (-43.70, 16.25, -61.00), Extents: (0.18, 0.18, 0.18) visible=True active=True
+FIXTURE SIGN / G WATER BRANCH bounds=Center: (-43.72, 17.01, -61.01), Extents: (0.33, 0.06, 0.44) visible=False active=True
+FIXTURE Direction shaft bounds=Center: (-42.90, 16.65, -61.00), Extents: (0.80, 0.05, 0.05) visible=True active=False
+FIXTURE Arrow head bounds=Center: (-42.10, 16.65, -61.00), Extents: (0.20, 0.07, 0.20) visible=True active=False
+FIXTURE SIGN / OPEN DOOR bounds=Center: (-42.10, 17.17, -61.00), Extents: (0.22, 0.04, 0.00) visible=True active=False
+FIXTURE Direction shaft bounds=Center: (-43.70, 16.65, -60.20), Extents: (0.05, 0.05, 0.80) visible=True active=False
+FIXTURE Arrow head bounds=Center: (-43.70, 16.65, -59.40), Extents: (0.20, 0.07, 0.20) visible=True active=False
+FIXTURE SIGN / DIVERT bounds=Center: (-43.70, 17.17, -59.40), Extents: (0.14, 0.04, 0.00) visible=True active=False
+FIXTURE G RUIN GATE ROOT bounds=Center: (-30.80, 16.10, -60.70), Extents: (0.33, 0.33, 0.33) visible=False active=True
+FIXTURE Ability focus visual bounds=Center: (-30.80, 16.10, -60.70), Extents: (0.18, 0.18, 0.18) visible=True active=True
+FIXTURE SIGN / G RUIN GATE ROOT bounds=Center: (-30.82, 16.86, -60.71), Extents: (0.34, 0.06, 0.46) visible=False active=True
+FIXTURE PH_G_StoneDoor bounds=Center: (-29.75, 18.75, -61.93), Extents: (1.70, 3.75, 0.28) visible=True active=True
+FIXTURE PH_G_SmallWheel bounds=Center: (-34.50, 16.65, -61.20), Extents: (1.55, 1.48, 0.43) visible=True active=True
+FIXTURE PH_G_Latch bounds=Center: (-29.75, 22.60, -61.47), Extents: (0.25, 0.30, 0.32) visible=True active=True
+FIXTURE Safe landing / G RUIN bounds=Center: (-35.00, 14.98, -60.50), Extents: (1.50, 0.18, 1.10) visible=True active=True
+FIXTURE SIGN / G RUIN bounds=Center: (-35.02, 17.42, -60.51), Extents: (0.14, 0.06, 0.18) visible=False active=True
+FIXTURE SIGN / G: FLOW TO WHEEL OR BLOOM ROOT bounds=Center: (-30.05, 19.14, -60.04), Extents: (1.08, 0.14, 1.47) visible=False active=True
+FIXTURE Safe landing / TOWER 0 bounds=Center: (-29.75, 14.84, -63.00), Extents: (1.50, 0.18, 0.33) visible=False active=True
+FIXTURE SIGN / TOWER 0 bounds=Center: (-29.77, 17.28, -63.01), Extents: (0.17, 0.06, 0.23) visible=False active=True
+FIXTURE Safe landing / TOWER 1 bounds=Center: (-29.75, 11.84, -69.00), Extents: (1.50, 0.18, 0.33) visible=False active=True
+FIXTURE SIGN / TOWER 1 bounds=Center: (-29.77, 14.28, -69.01), Extents: (0.17, 0.06, 0.23) visible=False active=True
+FIXTURE Safe landing / TOWER 2 bounds=Center: (-29.75, 8.84, -63.00), Extents: (1.50, 0.18, 0.33) visible=False active=True
+FIXTURE SIGN / TOWER 2 bounds=Center: (-29.77, 11.28, -63.01), Extents: (0.17, 0.06, 0.23) visible=False active=True
+FIXTURE Safe landing / TOWER 3 bounds=Center: (-29.75, 5.84, -69.00), Extents: (1.50, 0.18, 0.33) visible=False active=True
+FIXTURE SIGN / TOWER 3 bounds=Center: (-29.77, 8.28, -69.01), Extents: (0.17, 0.06, 0.23) visible=False active=True
+FIXTURE Safe landing / TOWER 4 bounds=Center: (-29.75, 2.84, -63.00), Extents: (1.50, 0.18, 0.33) visible=False active=True
+FIXTURE SIGN / TOWER 4 bounds=Center: (-29.77, 5.28, -63.01), Extents: (0.17, 0.06, 0.23) visible=False active=True
+FIXTURE Safe landing / TOWER 5 bounds=Center: (-29.75, -0.16, -69.00), Extents: (1.50, 0.18, 0.33) visible=False active=True
+FIXTURE SIGN / TOWER 5 bounds=Center: (-29.77, 2.28, -69.01), Extents: (0.17, 0.06, 0.23) visible=False active=True
+FIXTURE Safe landing / TOWER 6 bounds=Center: (-29.75, -3.16, -63.00), Extents: (1.50, 0.18, 0.33) visible=False active=True
+FIXTURE SIGN / TOWER 6 bounds=Center: (-29.77, -0.72, -63.01), Extents: (0.17, 0.06, 0.23) visible=False active=True
+FIXTURE Safe landing / D1 BALCONY bounds=Center: (-48.00, -3.15, -38.70), Extents: (1.50, 0.18, 1.50) visible=False active=True
+FIXTURE SIGN / D1 BALCONY bounds=Center: (-48.02, -0.71, -38.71), Extents: (0.23, 0.06, 0.31) visible=False active=True
+FIXTURE SIGN / D1 MID STAIRS bounds=Center: (-59.52, -5.14, -47.01), Extents: (0.26, 0.06, 0.35) visible=False active=True
+FIXTURE SIGN / D1  /  BROKEN D5 ABOVE - CLOSED D4 ACROSS THE HALL bounds=Center: (-51.05, -0.25, -40.54), Extents: (1.28, 0.15, 1.75) visible=False active=True
+FIXTURE Safe landing / D1 STAIR LANDING bounds=Center: (-59.50, -11.68, -53.00), Extents: (1.50, 0.18, 1.50) visible=True active=True
+FIXTURE SIGN / D1 STAIR LANDING bounds=Center: (-59.52, -9.24, -53.01), Extents: (0.33, 0.06, 0.44) visible=False active=True
+FIXTURE D3 VINE ACCESS bounds=Center: (-40.00, -1.70, -38.20), Extents: (0.33, 0.33, 0.33) visible=False active=True
+FIXTURE Ability focus visual bounds=Center: (-40.00, -1.70, -38.20), Extents: (0.18, 0.18, 0.18) visible=True active=True
+FIXTURE SIGN / D3 VINE ACCESS bounds=Center: (-40.02, -0.94, -38.21), Extents: (0.30, 0.06, 0.40) visible=False active=True
+FIXTURE D3 grown vine path step 0 bounds=Center: (-39.97, -3.32, -38.22), Extents: (1.22, 0.20, 0.43) visible=True active=False
+FIXTURE D3 grown vine path step 1 bounds=Center: (-39.91, -3.60, -38.66), Extents: (1.22, 0.20, 0.43) visible=True active=False
+FIXTURE D3 grown vine path step 2 bounds=Center: (-39.84, -3.88, -39.09), Extents: (1.22, 0.20, 0.43) visible=True active=False
+FIXTURE D3 grown vine path step 3 bounds=Center: (-39.78, -4.16, -39.53), Extents: (1.22, 0.20, 0.43) visible=True active=False
+FIXTURE D3 grown vine path step 4 bounds=Center: (-39.72, -4.44, -39.97), Extents: (1.22, 0.20, 0.43) visible=True active=False
+FIXTURE D3 grown vine path step 5 bounds=Center: (-39.66, -4.72, -40.41), Extents: (1.22, 0.20, 0.43) visible=True active=False
+FIXTURE D3 grown vine path step 6 bounds=Center: (-39.59, -5.00, -40.84), Extents: (1.22, 0.20, 0.43) visible=True active=False
+FIXTURE D3 grown vine path step 7 bounds=Center: (-39.53, -5.28, -41.28), Extents: (1.22, 0.20, 0.43) visible=True active=False
+FIXTURE D3 grown vine path step 8 bounds=Center: (-39.47, -5.55, -41.72), Extents: (1.22, 0.20, 0.43) visible=True active=False
+FIXTURE D3 grown vine path step 9 bounds=Center: (-39.41, -5.83, -42.16), Extents: (1.22, 0.20, 0.43) visible=True active=False
+FIXTURE D3 grown vine path step 10 bounds=Center: (-39.34, -6.11, -42.59), Extents: (1.22, 0.20, 0.43) visible=True active=False
+FIXTURE D3 grown vine path step 11 bounds=Center: (-39.28, -6.39, -43.03), Extents: (1.22, 0.20, 0.43) visible=True active=False
+FIXTURE D3 grown vine path step 12 bounds=Center: (-39.22, -6.67, -43.47), Extents: (1.22, 0.20, 0.43) visible=True active=False
+FIXTURE D3 grown vine path step 13 bounds=Center: (-39.16, -6.95, -43.91), Extents: (1.22, 0.20, 0.43) visible=True active=False
+FIXTURE D3 grown vine path step 14 bounds=Center: (-39.09, -7.23, -44.34), Extents: (1.22, 0.20, 0.43) visible=True active=False
+FIXTURE D3 grown vine path step 15 bounds=Center: (-39.03, -7.51, -44.78), Extents: (1.22, 0.20, 0.43) visible=True active=False
+FIXTURE D2 MAIN WATER / ICE BRIDGE bounds=Center: (-56.00, -10.10, -52.00), Extents: (0.33, 0.33, 0.33) visible=False active=True
+FIXTURE Ability focus visual bounds=Center: (-56.00, -10.10, -52.00), Extents: (0.18, 0.18, 0.18) visible=True active=True
+FIXTURE SIGN / D2 MAIN WATER / ICE BRIDGE bounds=Center: (-56.02, -9.34, -52.01), Extents: (0.51, 0.06, 0.69) visible=False active=True
+FIXTURE D2 ICE WALK / blocks final water bounds=Center: (-55.70, -11.72, -52.00), Extents: (9.20, 0.15, 5.85) visible=False active=True
+FIXTURE D2 THREE WAY BRANCH bounds=Center: (-56.00, -9.55, -50.80), Extents: (0.33, 0.33, 0.33) visible=False active=True
+FIXTURE Ability focus visual bounds=Center: (-56.00, -9.55, -50.80), Extents: (0.18, 0.18, 0.18) visible=True active=True
+FIXTURE SIGN / D2 THREE WAY BRANCH bounds=Center: (-56.02, -8.79, -50.81), Extents: (0.42, 0.06, 0.58) visible=False active=True
+FIXTURE Direction shaft bounds=Center: (-55.20, -9.15, -50.80), Extents: (0.80, 0.05, 0.05) visible=True active=False
+FIXTURE Arrow head bounds=Center: (-54.40, -9.15, -50.80), Extents: (0.20, 0.07, 0.20) visible=True active=False
+FIXTURE SIGN / DOCK LEAF bounds=Center: (-54.40, -8.63, -50.80), Extents: (0.21, 0.04, 0.00) visible=True active=False
+FIXTURE Direction shaft bounds=Center: (-56.80, -9.15, -50.80), Extents: (0.80, 0.05, 0.05) visible=True active=False
+FIXTURE Arrow head bounds=Center: (-57.60, -9.15, -50.80), Extents: (0.20, 0.07, 0.20) visible=True active=False
+FIXTURE SIGN / OPEN D4 bounds=Center: (-57.60, -8.63, -50.80), Extents: (0.16, 0.04, 0.00) visible=True active=False
+FIXTURE Direction shaft bounds=Center: (-56.57, -9.15, -50.23), Extents: (0.60, 0.05, 0.60) visible=True active=False
+FIXTURE Arrow head bounds=Center: (-57.13, -9.15, -49.67), Extents: (0.14, 0.07, 0.14) visible=True active=False
+FIXTURE SIGN / TO WATERWHEEL bounds=Center: (-57.13, -8.63, -49.67), Extents: (0.32, 0.04, 0.00) visible=True active=False
+FIXTURE PH_D2_Leaf bounds=Center: (-52.00, -11.65, -51.00), Extents: (2.01, 0.10, 2.13) visible=True active=True
+FIXTURE D2 DOCK LEAF - AFTER SUPPLY bounds=Center: (-51.20, -10.90, -51.00), Extents: (0.33, 0.33, 0.33) visible=False active=True
+FIXTURE Ability focus visual bounds=Center: (-51.20, -10.90, -51.00), Extents: (0.18, 0.18, 0.18) visible=True active=True
+FIXTURE SIGN / D2 DOCK LEAF - AFTER SUPPLY bounds=Center: (-51.22, -10.14, -51.01), Extents: (0.54, 0.06, 0.74) visible=False active=True
+FIXTURE Safe landing / D2 CENTRAL HUB bounds=Center: (-56.00, -11.28, -52.00), Extents: (1.50, 0.18, 1.50) visible=True active=True
+FIXTURE SIGN / D2 CENTRAL HUB bounds=Center: (-56.02, -8.84, -52.01), Extents: (0.31, 0.06, 0.42) visible=False active=True
+FIXTURE SIGN / D3: VINE FROM BALCONY OR FREEZE BASIN bounds=Center: (-43.05, -5.66, -55.04), Extents: (0.97, 0.14, 1.32) visible=False active=True
+FIXTURE Safe landing / D3 WORKBENCH bounds=Center: (-40.00, -7.64, -57.00), Extents: (1.50, 0.18, 1.50) visible=False active=True
+FIXTURE SIGN / D3 WORKBENCH bounds=Center: (-40.02, -5.20, -57.01), Extents: (0.29, 0.06, 0.40) visible=False active=True
+FIXTURE D3 return edge landing bounds=Center: (-43.50, -7.63, -59.20), Extents: (1.60, 0.18, 1.00) visible=True active=False
+FIXTURE D3 return stairs step 0 bounds=Center: (-45.31, -7.79, -59.20), Extents: (0.20, 0.20, 1.20) visible=True active=False
+FIXTURE D3 return stairs step 1 bounds=Center: (-45.64, -8.06, -59.20), Extents: (0.20, 0.20, 1.20) visible=True active=False
+FIXTURE D3 return stairs step 2 bounds=Center: (-45.96, -8.33, -59.20), Extents: (0.20, 0.20, 1.20) visible=True active=False
+FIXTURE D3 return stairs step 3 bounds=Center: (-46.28, -8.59, -59.20), Extents: (0.20, 0.20, 1.20) visible=True active=False
+FIXTURE D3 return stairs step 4 bounds=Center: (-46.61, -8.87, -59.20), Extents: (0.20, 0.20, 1.20) visible=True active=False
+FIXTURE D3 return stairs step 5 bounds=Center: (-46.93, -9.13, -59.20), Extents: (0.20, 0.20, 1.20) visible=True active=False
+FIXTURE D3 return stairs step 6 bounds=Center: (-47.25, -9.41, -59.20), Extents: (0.20, 0.20, 1.20) visible=True active=False
+FIXTURE D3 return stairs step 7 bounds=Center: (-47.58, -9.68, -59.20), Extents: (0.20, 0.20, 1.20) visible=True active=False
+FIXTURE D3 return stairs step 8 bounds=Center: (-47.90, -9.95, -59.20), Extents: (0.20, 0.20, 1.20) visible=True active=False
+FIXTURE D3 return stairs step 9 bounds=Center: (-48.22, -10.22, -59.20), Extents: (0.20, 0.20, 1.20) visible=True active=False
+FIXTURE D3 return stairs step 10 bounds=Center: (-48.55, -10.49, -59.20), Extents: (0.20, 0.20, 1.20) visible=True active=False
+FIXTURE D3 return stairs step 11 bounds=Center: (-48.87, -10.76, -59.20), Extents: (0.20, 0.20, 1.20) visible=True active=False
+FIXTURE D3 return stairs step 12 bounds=Center: (-49.19, -11.03, -59.20), Extents: (0.20, 0.20, 1.20) visible=True active=False
+FIXTURE D3 return stairs step 13 bounds=Center: (-49.52, -11.30, -59.20), Extents: (0.20, 0.20, 1.20) visible=True active=False
+FIXTURE D3 return stairs step 14 bounds=Center: (-49.84, -11.57, -59.20), Extents: (0.20, 0.20, 1.20) visible=True active=False
+FIXTURE D3 return perimeter bounds=Center: (-51.00, -11.68, -59.60), Extents: (6.00, 0.18, 1.00) visible=True active=False
+FIXTURE D3 return to hub bounds=Center: (-56.00, -11.68, -56.50), Extents: (1.00, 0.18, 3.75) visible=True active=False
+FIXTURE D3 workbench to D5 ledge step 0 bounds=Center: (-40.25, -7.59, -62.17), Extents: (0.92, 0.20, 1.15) visible=True active=True
+FIXTURE D3 workbench to D5 ledge step 1 bounds=Center: (-40.75, -7.46, -62.50), Extents: (0.92, 0.20, 1.15) visible=True active=True
+FIXTURE D3 workbench to D5 ledge step 2 bounds=Center: (-41.25, -7.34, -62.83), Extents: (0.92, 0.20, 1.15) visible=True active=True
+FIXTURE D3 workbench to D5 ledge step 3 bounds=Center: (-41.75, -7.21, -63.17), Extents: (0.92, 0.20, 1.15) visible=True active=True
+FIXTURE D3 workbench to D5 ledge step 4 bounds=Center: (-42.25, -7.09, -63.50), Extents: (0.92, 0.20, 1.15) visible=True active=True
+FIXTURE D3 workbench to D5 ledge step 5 bounds=Center: (-42.75, -6.96, -63.83), Extents: (0.92, 0.20, 1.15) visible=True active=True
+FIXTURE D3 workbench to D5 ledge step 6 bounds=Center: (-43.25, -6.84, -64.17), Extents: (0.92, 0.20, 1.15) visible=True active=True
+FIXTURE D3 workbench to D5 ledge step 7 bounds=Center: (-43.75, -6.71, -64.50), Extents: (0.92, 0.20, 1.15) visible=True active=True
+FIXTURE D3 workbench to D5 ledge step 8 bounds=Center: (-44.25, -6.59, -64.83), Extents: (0.92, 0.20, 1.15) visible=True active=True
+FIXTURE D3 workbench to D5 ledge step 9 bounds=Center: (-44.75, -6.46, -65.17), Extents: (0.92, 0.20, 1.15) visible=True active=True
+FIXTURE D3 workbench to D5 ledge step 10 bounds=Center: (-45.25, -6.34, -65.50), Extents: (0.92, 0.20, 1.15) visible=True active=True
+FIXTURE D3 workbench to D5 ledge step 11 bounds=Center: (-45.75, -6.21, -65.83), Extents: (0.92, 0.20, 1.15) visible=True active=True
+FIXTURE D5 west service walkway bounds=Center: (-64.55, -6.13, -63.90), Extents: (5.95, 0.18, 1.20) visible=True active=True
+FIXTURE D5 service bridge west ramp step 0 bounds=Center: (-58.43, -6.05, -63.90), Extents: (0.21, 0.20, 1.20) visible=True active=True
+FIXTURE D5 service bridge west ramp step 1 bounds=Center: (-58.10, -5.85, -63.90), Extents: (0.21, 0.20, 1.20) visible=True active=True
+FIXTURE D5 service bridge west ramp step 2 bounds=Center: (-57.77, -5.65, -63.90), Extents: (0.21, 0.20, 1.20) visible=True active=True
+FIXTURE D5 dry channel crossing bounds=Center: (-56.00, -5.53, -63.90), Extents: (1.60, 0.18, 1.20) visible=True active=True
+FIXTURE D5 service bridge east ramp step 0 bounds=Center: (-54.23, -5.65, -63.90), Extents: (0.21, 0.20, 1.20) visible=True active=True
+FIXTURE D5 service bridge east ramp step 1 bounds=Center: (-53.90, -5.85, -63.90), Extents: (0.21, 0.20, 1.20) visible=True active=True
+FIXTURE D5 service bridge east ramp step 2 bounds=Center: (-53.57, -6.05, -63.90), Extents: (0.21, 0.20, 1.20) visible=True active=True
+FIXTURE D5 east service walkway bounds=Center: (-48.45, -6.13, -63.90), Extents: (4.95, 0.18, 1.20) visible=True active=True
+FIXTURE D5 ALIGNING WIND bounds=Center: (-40.00, -6.05, -61.40), Extents: (0.33, 0.33, 0.33) visible=False active=True
+FIXTURE Ability focus visual bounds=Center: (-40.00, -6.05, -61.40), Extents: (0.18, 0.18, 0.18) visible=True active=True
+FIXTURE SIGN / D5 ALIGNING WIND bounds=Center: (-40.02, -5.29, -61.41), Extents: (0.33, 0.06, 0.45) visible=False active=True
+FIXTURE Direction shaft bounds=Center: (-40.57, -5.65, -61.97), Extents: (0.60, 0.05, 0.60) visible=True active=False
+FIXTURE Arrow head bounds=Center: (-41.13, -5.65, -62.53), Extents: (0.14, 0.07, 0.14) visible=True active=False
+FIXTURE SIGN / ALIGN CHANNEL bounds=Center: (-41.13, -5.13, -62.53), Extents: (0.30, 0.04, 0.00) visible=True active=False
+FIXTURE Direction shaft bounds=Center: (-39.20, -5.65, -61.40), Extents: (0.80, 0.05, 0.05) visible=True active=False
+FIXTURE Arrow head bounds=Center: (-38.40, -5.65, -61.40), Extents: (0.20, 0.07, 0.20) visible=True active=False
+FIXTURE SIGN / MISALIGN bounds=Center: (-38.40, -5.13, -61.40), Extents: (0.17, 0.04, 0.00) visible=True active=False
+FIXTURE PH_D5_MovingChannel bounds=Center: (-50.47, -6.05, -67.41), Extents: (4.68, 1.23, 2.22) visible=True active=True
+FIXTURE D5 CHANNEL STRUCTURE bounds=Center: (-50.50, -3.90, -67.50), Extents: (0.33, 0.33, 0.33) visible=False active=True
+FIXTURE Ability focus visual bounds=Center: (-50.50, -3.90, -67.50), Extents: (0.18, 0.18, 0.18) visible=True active=True
+FIXTURE SIGN / D5 CHANNEL STRUCTURE bounds=Center: (-50.52, -3.14, -67.51), Extents: (0.45, 0.06, 0.61) visible=False active=True
+FIXTURE D5 alignment socket marker bounds=Center: (-55.60, -5.60, -68.00), Extents: (0.10, 0.10, 0.90) visible=True active=True
+FIXTURE D5 INTERNAL WATER - NOT STRUCTURE bounds=Center: (-55.80, -4.40, -66.80), Extents: (0.33, 0.33, 0.33) visible=False active=True
+FIXTURE Ability focus visual bounds=Center: (-55.80, -4.40, -66.80), Extents: (0.18, 0.18, 0.18) visible=True active=True
+FIXTURE SIGN / D5 INTERNAL WATER - NOT STRUCTURE bounds=Center: (-55.82, -3.64, -66.81), Extents: (0.69, 0.06, 0.94) visible=False active=True
+FIXTURE D5 internal ice bounds=Center: (-56.00, -5.90, -66.60), Extents: (0.80, 0.15, 1.85) visible=False active=True
+FIXTURE D5 BYPASS ROOT bounds=Center: (-74.50, -7.50, -64.50), Extents: (0.33, 0.33, 0.33) visible=False active=True
+FIXTURE Ability focus visual bounds=Center: (-74.50, -7.50, -64.50), Extents: (0.18, 0.18, 0.18) visible=True active=True
+FIXTURE SIGN / D5 BYPASS ROOT bounds=Center: (-74.52, -6.74, -64.51), Extents: (0.31, 0.06, 0.42) visible=False active=True
+FIXTURE PH_D5_BypassDoor bounds=Center: (-75.50, -6.75, -63.74), Extents: (1.50, 2.25, 0.19) visible=True active=True
+FIXTURE D5 ledge to bypass access step 0 bounds=Center: (-70.28, -6.28, -64.99), Extents: (0.28, 0.20, 1.16) visible=True active=True
+FIXTURE D5 ledge to bypass access step 1 bounds=Center: (-70.63, -6.55, -64.97), Extents: (0.28, 0.20, 1.16) visible=True active=True
+FIXTURE D5 ledge to bypass access step 2 bounds=Center: (-70.99, -6.82, -64.95), Extents: (0.28, 0.20, 1.16) visible=True active=True
+FIXTURE D5 ledge to bypass access step 3 bounds=Center: (-71.34, -7.09, -64.94), Extents: (0.28, 0.20, 1.16) visible=True active=True
+FIXTURE D5 ledge to bypass access step 4 bounds=Center: (-71.70, -7.36, -64.92), Extents: (0.28, 0.20, 1.16) visible=True active=True
+FIXTURE D5 ledge to bypass access step 5 bounds=Center: (-72.05, -7.63, -64.90), Extents: (0.28, 0.20, 1.16) visible=True active=True
+FIXTURE D5 ledge to bypass access step 6 bounds=Center: (-72.40, -7.89, -64.88), Extents: (0.28, 0.20, 1.16) visible=True active=True
+FIXTURE D5 ledge to bypass access step 7 bounds=Center: (-72.76, -8.16, -64.86), Extents: (0.28, 0.20, 1.16) visible=True active=True
+FIXTURE D5 ledge to bypass access step 8 bounds=Center: (-73.11, -8.43, -64.85), Extents: (0.28, 0.20, 1.16) visible=True active=True
+FIXTURE D5 ledge to bypass access step 9 bounds=Center: (-73.47, -8.70, -64.83), Extents: (0.28, 0.20, 1.16) visible=True active=True
+FIXTURE D5 ledge to bypass access step 10 bounds=Center: (-73.82, -8.97, -64.81), Extents: (0.28, 0.20, 1.16) visible=True active=True
+FIXTURE Safe landing / D5 SERVICE LEDGE bounds=Center: (-64.00, -6.13, -65.50), Extents: (1.50, 0.18, 1.25) visible=False active=True
+FIXTURE SIGN / D5 SERVICE LEDGE bounds=Center: (-64.02, -3.69, -65.51), Extents: (0.34, 0.06, 0.46) visible=False active=True
+FIXTURE SIGN / D5 LEAK - ALIGN OR OPEN BYPASS bounds=Center: (-49.02, -2.73, -65.02), Extents: (0.81, 0.07, 1.12) visible=False active=True
+FIXTURE D4 EXIT GATE ROOT bounds=Center: (-76.50, -10.60, -47.40), Extents: (0.33, 0.33, 0.33) visible=False active=True
+FIXTURE Ability focus visual bounds=Center: (-76.50, -10.60, -47.40), Extents: (0.18, 0.18, 0.18) visible=True active=True
+FIXTURE SIGN / D4 EXIT GATE ROOT bounds=Center: (-76.52, -9.84, -47.41), Extents: (0.35, 0.06, 0.48) visible=False active=True
+FIXTURE PH_D4_Gate bounds=Center: (-78.26, -9.00, -48.00), Extents: (0.19, 3.00, 2.00) visible=True active=True
+FIXTURE PH_D4_SmallWheel bounds=Center: (-74.00, -10.35, -52.75), Extents: (1.55, 1.48, 0.51) visible=True active=True
+FIXTURE PH_D4_Latch bounds=Center: (-77.70, -5.80, -47.87), Extents: (0.25, 0.30, 0.32) visible=True active=True
+FIXTURE D2 to D4 dry perimeter bounds=Center: (-63.50, -11.68, -55.50), Extents: (8.50, 0.18, 1.00) visible=True active=True
+FIXTURE D2 perimeter connector bounds=Center: (-56.00, -11.68, -54.70), Extents: (1.00, 0.18, 3.50) visible=True active=True
+FIXTURE D4 west perimeter connector bounds=Center: (-71.00, -11.68, -51.00), Extents: (1.00, 0.18, 5.50) visible=True active=True
+FIXTURE D4 dry control approach bounds=Center: (-73.00, -11.68, -46.50), Extents: (3.50, 0.18, 1.00) visible=True active=True
+FIXTURE D4 control landing bounds=Center: (-75.50, -11.68, -47.00), Extents: (2.00, 0.18, 1.50) visible=True active=True
+FIXTURE Safe landing / D4 EXIT CONTROL bounds=Center: (-75.50, -11.64, -46.50), Extents: (1.50, 0.18, 1.25) visible=True active=True
+FIXTURE SIGN / D4 EXIT CONTROL bounds=Center: (-75.52, -9.20, -46.51), Extents: (0.32, 0.06, 0.43) visible=False active=True
+FIXTURE SIGN / D2: DOCK / SMALL WHEEL / MAIN EXIT bounds=Center: (-57.05, -8.07, -51.03), Extents: (0.56, 0.13, 0.74) visible=False active=True
+FIXTURE SIGN / D4 CLOSED bounds=Center: (-75.02, -7.74, -48.02), Extents: (1.03, 0.06, 1.42) visible=False active=True
+FIXTURE SIGN / W NO WATER bounds=Center: (-68.02, -9.14, -47.02), Extents: (0.73, 0.06, 1.00) visible=False active=True
+FIXTURE PH_W_Waterwheel bounds=Center: (-86.00, -13.80, -7.00), Extents: (1.28, 4.12, 4.12) visible=True active=True
+FIXTURE D4 threshold - follows opened gate passage bounds=Center: (-79.50, -12.08, -48.10), Extents: (2.00, 0.18, 1.25) visible=True active=True
+FIXTURE Exit outer landing bounds=Center: (-82.10, -12.08, -48.00), Extents: (1.50, 0.18, 2.00) visible=True active=True
+FIXTURE Safe exit gorge corridor step 0 bounds=Center: (-82.30, -12.15, -46.68), Extents: (1.35, 0.20, 0.36) visible=True active=True
+FIXTURE Safe exit gorge corridor step 1 bounds=Center: (-82.30, -12.25, -46.03), Extents: (1.35, 0.20, 0.36) visible=True active=True
+FIXTURE Safe exit gorge corridor step 2 bounds=Center: (-82.30, -12.35, -45.38), Extents: (1.35, 0.20, 0.36) visible=True active=True
+FIXTURE Safe exit gorge corridor step 3 bounds=Center: (-82.30, -12.45, -44.73), Extents: (1.35, 0.20, 0.36) visible=True active=True
+FIXTURE Safe exit gorge corridor step 4 bounds=Center: (-82.30, -12.55, -44.08), Extents: (1.35, 0.20, 0.36) visible=True active=True
+FIXTURE Safe exit gorge corridor step 5 bounds=Center: (-82.30, -12.66, -43.44), Extents: (1.35, 0.20, 0.36) visible=True active=True
+FIXTURE Safe exit gorge corridor step 6 bounds=Center: (-82.30, -12.76, -42.79), Extents: (1.35, 0.20, 0.36) visible=True active=True
+FIXTURE Safe exit gorge corridor step 7 bounds=Center: (-82.30, -12.86, -42.14), Extents: (1.35, 0.20, 0.36) visible=True active=True
+FIXTURE Safe exit gorge corridor step 8 bounds=Center: (-82.30, -12.96, -41.49), Extents: (1.35, 0.20, 0.36) visible=True active=True
+FIXTURE Safe exit gorge corridor step 9 bounds=Center: (-82.30, -13.06, -40.84), Extents: (1.35, 0.20, 0.36) visible=True active=True
+FIXTURE Safe exit gorge corridor step 10 bounds=Center: (-82.30, -13.16, -40.19), Extents: (1.35, 0.20, 0.36) visible=True active=True
+FIXTURE Safe exit gorge corridor step 11 bounds=Center: (-82.30, -13.26, -39.55), Extents: (1.35, 0.20, 0.36) visible=True active=True
+FIXTURE Safe exit gorge corridor step 12 bounds=Center: (-82.30, -13.36, -38.90), Extents: (1.35, 0.20, 0.36) visible=True active=True
+FIXTURE Safe exit gorge corridor step 13 bounds=Center: (-82.30, -13.46, -38.25), Extents: (1.35, 0.20, 0.36) visible=True active=True
+FIXTURE Safe exit gorge corridor step 14 bounds=Center: (-82.30, -13.56, -37.60), Extents: (1.35, 0.20, 0.36) visible=True active=True
+FIXTURE Safe exit gorge corridor step 15 bounds=Center: (-82.30, -13.66, -36.95), Extents: (1.35, 0.20, 0.36) visible=True active=True
+FIXTURE Safe exit gorge corridor step 16 bounds=Center: (-82.30, -13.77, -36.31), Extents: (1.35, 0.20, 0.36) visible=True active=True
+FIXTURE Safe exit gorge corridor step 17 bounds=Center: (-82.30, -13.87, -35.66), Extents: (1.35, 0.20, 0.36) visible=True active=True
+FIXTURE Safe exit gorge corridor step 18 bounds=Center: (-82.30, -13.97, -35.01), Extents: (1.35, 0.20, 0.36) visible=True active=True
+FIXTURE Safe exit gorge corridor step 19 bounds=Center: (-82.30, -14.07, -34.36), Extents: (1.35, 0.20, 0.36) visible=True active=True
+FIXTURE Safe exit gorge corridor step 20 bounds=Center: (-82.30, -14.17, -33.71), Extents: (1.35, 0.20, 0.36) visible=True active=True
+FIXTURE Safe exit gorge corridor step 21 bounds=Center: (-82.30, -14.27, -33.06), Extents: (1.35, 0.20, 0.36) visible=True active=True
+FIXTURE Safe exit gorge corridor step 22 bounds=Center: (-82.30, -14.37, -32.42), Extents: (1.35, 0.20, 0.36) visible=True active=True
+FIXTURE Safe exit gorge corridor step 23 bounds=Center: (-82.30, -14.47, -31.77), Extents: (1.35, 0.20, 0.36) visible=True active=True
+FIXTURE Safe exit gorge corridor step 24 bounds=Center: (-82.30, -14.57, -31.12), Extents: (1.35, 0.20, 0.36) visible=True active=True
+FIXTURE Safe exit gorge corridor step 25 bounds=Center: (-82.30, -14.67, -30.47), Extents: (1.35, 0.20, 0.36) visible=True active=True
+FIXTURE Safe exit gorge corridor step 26 bounds=Center: (-82.30, -14.77, -29.82), Extents: (1.35, 0.20, 0.36) visible=True active=True
+FIXTURE Safe exit gorge corridor step 27 bounds=Center: (-82.30, -14.88, -29.18), Extents: (1.35, 0.20, 0.36) visible=True active=True
+FIXTURE Safe exit gorge corridor step 28 bounds=Center: (-82.30, -14.98, -28.53), Extents: (1.35, 0.20, 0.36) visible=True active=True
+FIXTURE Safe exit gorge corridor step 29 bounds=Center: (-82.30, -15.08, -27.88), Extents: (1.35, 0.20, 0.36) visible=True active=True
+FIXTURE Safe exit gorge corridor step 30 bounds=Center: (-82.30, -15.18, -27.23), Extents: (1.35, 0.20, 0.36) visible=True active=True
+FIXTURE Safe exit gorge corridor step 31 bounds=Center: (-82.30, -15.28, -26.58), Extents: (1.35, 0.20, 0.36) visible=True active=True
+FIXTURE Safe exit gorge corridor step 32 bounds=Center: (-82.30, -15.38, -25.94), Extents: (1.35, 0.20, 0.36) visible=True active=True
+FIXTURE Safe exit gorge corridor step 33 bounds=Center: (-82.30, -15.48, -25.29), Extents: (1.35, 0.20, 0.36) visible=True active=True
+FIXTURE Safe exit gorge corridor step 34 bounds=Center: (-82.30, -15.58, -24.64), Extents: (1.35, 0.20, 0.36) visible=True active=True
+FIXTURE Safe exit gorge corridor step 35 bounds=Center: (-82.30, -15.68, -23.99), Extents: (1.35, 0.20, 0.36) visible=True active=True
+FIXTURE Safe exit gorge corridor step 36 bounds=Center: (-82.30, -15.78, -23.34), Extents: (1.35, 0.20, 0.36) visible=True active=True
+FIXTURE Safe exit gorge corridor step 37 bounds=Center: (-82.30, -15.88, -22.69), Extents: (1.35, 0.20, 0.36) visible=True active=True
+FIXTURE Safe exit gorge corridor step 38 bounds=Center: (-82.30, -15.99, -22.05), Extents: (1.35, 0.20, 0.36) visible=True active=True
+FIXTURE Safe exit gorge corridor step 39 bounds=Center: (-82.30, -16.09, -21.40), Extents: (1.35, 0.20, 0.36) visible=True active=True
+FIXTURE Safe exit gorge corridor step 40 bounds=Center: (-82.30, -16.19, -20.75), Extents: (1.35, 0.20, 0.36) visible=True active=True
+FIXTURE Safe exit gorge corridor step 41 bounds=Center: (-82.30, -16.29, -20.10), Extents: (1.35, 0.20, 0.36) visible=True active=True
+FIXTURE Safe exit gorge corridor step 42 bounds=Center: (-82.30, -16.39, -19.45), Extents: (1.35, 0.20, 0.36) visible=True active=True
+FIXTURE Safe exit gorge corridor step 43 bounds=Center: (-82.30, -16.49, -18.81), Extents: (1.35, 0.20, 0.36) visible=True active=True
+FIXTURE Safe exit gorge corridor step 44 bounds=Center: (-82.30, -16.59, -18.16), Extents: (1.35, 0.20, 0.36) visible=True active=True
+FIXTURE Safe exit gorge corridor step 45 bounds=Center: (-82.30, -16.69, -17.51), Extents: (1.35, 0.20, 0.36) visible=True active=True
+FIXTURE Safe exit gorge corridor step 46 bounds=Center: (-82.30, -16.79, -16.86), Extents: (1.35, 0.20, 0.36) visible=True active=True
+FIXTURE Safe exit gorge corridor step 47 bounds=Center: (-82.30, -16.89, -16.21), Extents: (1.35, 0.20, 0.36) visible=True active=True
+FIXTURE Safe exit gorge corridor step 48 bounds=Center: (-82.30, -16.99, -15.56), Extents: (1.35, 0.20, 0.36) visible=True active=True
+FIXTURE Safe exit gorge corridor step 49 bounds=Center: (-82.30, -17.10, -14.92), Extents: (1.35, 0.20, 0.36) visible=True active=True
+FIXTURE Safe exit gorge corridor step 50 bounds=Center: (-82.30, -17.20, -14.27), Extents: (1.35, 0.20, 0.36) visible=True active=True
+FIXTURE Safe exit gorge corridor step 51 bounds=Center: (-82.30, -17.30, -13.62), Extents: (1.35, 0.20, 0.36) visible=True active=True
+FIXTURE Safe exit gorge corridor step 52 bounds=Center: (-82.30, -17.40, -12.97), Extents: (1.35, 0.20, 0.36) visible=True active=True
+FIXTURE Safe exit gorge corridor step 53 bounds=Center: (-82.30, -17.50, -12.32), Extents: (1.35, 0.20, 0.36) visible=True active=True
+FIXTURE Corridor guard bounds=Center: (-83.76, -11.39, -46.75), Extents: (0.09, 0.55, 0.28) visible=True active=True
+FIXTURE Corridor guard bounds=Center: (-80.84, -11.39, -46.75), Extents: (0.09, 0.55, 0.28) visible=True active=True
+FIXTURE Corridor guard bounds=Center: (-83.76, -11.47, -46.25), Extents: (0.09, 0.55, 0.28) visible=True active=True
+FIXTURE Corridor guard bounds=Center: (-80.84, -11.47, -46.25), Extents: (0.09, 0.55, 0.28) visible=True active=True
+FIXTURE Corridor guard bounds=Center: (-83.76, -11.54, -45.75), Extents: (0.09, 0.55, 0.28) visible=True active=True
+FIXTURE Corridor guard bounds=Center: (-80.84, -11.54, -45.75), Extents: (0.09, 0.55, 0.28) visible=True active=True
+FIXTURE Corridor guard bounds=Center: (-83.76, -11.62, -45.25), Extents: (0.09, 0.55, 0.28) visible=True active=True
+FIXTURE Corridor guard bounds=Center: (-80.84, -11.62, -45.25), Extents: (0.09, 0.55, 0.28) visible=True active=True
+FIXTURE Corridor guard bounds=Center: (-83.76, -11.70, -44.75), Extents: (0.09, 0.55, 0.28) visible=True active=True
+FIXTURE Corridor guard bounds=Center: (-80.84, -11.70, -44.75), Extents: (0.09, 0.55, 0.28) visible=True active=True
+FIXTURE Corridor guard bounds=Center: (-83.76, -11.78, -44.25), Extents: (0.09, 0.55, 0.28) visible=True active=True
+FIXTURE Corridor guard bounds=Center: (-80.84, -11.78, -44.25), Extents: (0.09, 0.55, 0.28) visible=True active=True
+FIXTURE Corridor guard bounds=Center: (-83.76, -11.86, -43.75), Extents: (0.09, 0.55, 0.28) visible=True active=True
+FIXTURE Corridor guard bounds=Center: (-80.84, -11.86, -43.75), Extents: (0.09, 0.55, 0.28) visible=True active=True
+FIXTURE Corridor guard bounds=Center: (-83.76, -11.93, -43.25), Extents: (0.09, 0.55, 0.28) visible=True active=True
+FIXTURE Corridor guard bounds=Center: (-80.84, -11.93, -43.25), Extents: (0.09, 0.55, 0.28) visible=True active=True
+FIXTURE Corridor guard bounds=Center: (-83.76, -12.01, -42.75), Extents: (0.09, 0.55, 0.28) visible=True active=True
+FIXTURE Corridor guard bounds=Center: (-80.84, -12.01, -42.75), Extents: (0.09, 0.55, 0.28) visible=True active=True
+FIXTURE Corridor guard bounds=Center: (-83.76, -12.09, -42.25), Extents: (0.09, 0.55, 0.28) visible=True active=True
+FIXTURE Corridor guard bounds=Center: (-80.84, -12.09, -42.25), Extents: (0.09, 0.55, 0.28) visible=True active=True
+FIXTURE Corridor guard bounds=Center: (-83.76, -12.17, -41.75), Extents: (0.09, 0.55, 0.28) visible=True active=True
+FIXTURE Corridor guard bounds=Center: (-80.84, -12.17, -41.75), Extents: (0.09, 0.55, 0.28) visible=True active=True
+FIXTURE Corridor guard bounds=Center: (-83.76, -12.25, -41.25), Extents: (0.09, 0.55, 0.28) visible=True active=True
+FIXTURE Corridor guard bounds=Center: (-80.84, -12.25, -41.25), Extents: (0.09, 0.55, 0.28) visible=True active=True
+FIXTURE Corridor guard bounds=Center: (-83.76, -12.32, -40.75), Extents: (0.09, 0.55, 0.28) visible=True active=True
+FIXTURE Corridor guard bounds=Center: (-80.84, -12.32, -40.75), Extents: (0.09, 0.55, 0.28) visible=True active=True
+FIXTURE Corridor guard bounds=Center: (-83.76, -12.40, -40.25), Extents: (0.09, 0.55, 0.28) visible=True active=True
+FIXTURE Corridor guard bounds=Center: (-80.84, -12.40, -40.25), Extents: (0.09, 0.55, 0.28) visible=True active=True
+FIXTURE Corridor guard bounds=Center: (-83.76, -12.48, -39.75), Extents: (0.09, 0.55, 0.28) visible=True active=True
+FIXTURE Corridor guard bounds=Center: (-80.84, -12.48, -39.75), Extents: (0.09, 0.55, 0.28) visible=True active=True
+FIXTURE Corridor guard bounds=Center: (-83.76, -12.56, -39.25), Extents: (0.09, 0.55, 0.28) visible=True active=True
+FIXTURE Corridor guard bounds=Center: (-80.84, -12.56, -39.25), Extents: (0.09, 0.55, 0.28) visible=True active=True
+FIXTURE Corridor guard bounds=Center: (-83.76, -12.63, -38.75), Extents: (0.09, 0.55, 0.28) visible=True active=True
+FIXTURE Corridor guard bounds=Center: (-80.84, -12.63, -38.75), Extents: (0.09, 0.55, 0.28) visible=True active=True
+FIXTURE Corridor guard bounds=Center: (-83.76, -12.71, -38.25), Extents: (0.09, 0.55, 0.28) visible=True active=True
+FIXTURE Corridor guard bounds=Center: (-80.84, -12.71, -38.25), Extents: (0.09, 0.55, 0.28) visible=True active=True
+FIXTURE Corridor guard bounds=Center: (-83.76, -12.79, -37.75), Extents: (0.09, 0.55, 0.28) visible=True active=True
+FIXTURE Corridor guard bounds=Center: (-80.84, -12.79, -37.75), Extents: (0.09, 0.55, 0.28) visible=True active=True
+FIXTURE Corridor guard bounds=Center: (-83.76, -12.87, -37.25), Extents: (0.09, 0.55, 0.28) visible=True active=True
+FIXTURE Corridor guard bounds=Center: (-80.84, -12.87, -37.25), Extents: (0.09, 0.55, 0.28) visible=True active=True
+FIXTURE Corridor guard bounds=Center: (-83.76, -12.95, -36.75), Extents: (0.09, 0.55, 0.28) visible=True active=True
+FIXTURE Corridor guard bounds=Center: (-80.84, -12.95, -36.75), Extents: (0.09, 0.55, 0.28) visible=True active=True
+FIXTURE Corridor guard bounds=Center: (-83.76, -13.02, -36.25), Extents: (0.09, 0.55, 0.28) visible=True active=True
+FIXTURE Corridor guard bounds=Center: (-80.84, -13.02, -36.25), Extents: (0.09, 0.55, 0.28) visible=True active=True
+FIXTURE Corridor guard bounds=Center: (-83.76, -13.10, -35.75), Extents: (0.09, 0.55, 0.28) visible=True active=True
+FIXTURE Corridor guard bounds=Center: (-80.84, -13.10, -35.75), Extents: (0.09, 0.55, 0.28) visible=True active=True
+FIXTURE Corridor guard bounds=Center: (-83.76, -13.18, -35.25), Extents: (0.09, 0.55, 0.28) visible=True active=True
+FIXTURE Corridor guard bounds=Center: (-80.84, -13.18, -35.25), Extents: (0.09, 0.55, 0.28) visible=True active=True
+FIXTURE Corridor guard bounds=Center: (-83.76, -13.26, -34.75), Extents: (0.09, 0.55, 0.28) visible=True active=True
+FIXTURE Corridor guard bounds=Center: (-80.84, -13.26, -34.75), Extents: (0.09, 0.55, 0.28) visible=True active=True
+FIXTURE Corridor guard bounds=Center: (-83.76, -13.34, -34.25), Extents: (0.09, 0.55, 0.28) visible=True active=True
+FIXTURE Corridor guard bounds=Center: (-80.84, -13.34, -34.25), Extents: (0.09, 0.55, 0.28) visible=True active=True
+FIXTURE Corridor guard bounds=Center: (-83.76, -13.41, -33.75), Extents: (0.09, 0.55, 0.28) visible=True active=True
+FIXTURE Corridor guard bounds=Center: (-80.84, -13.41, -33.75), Extents: (0.09, 0.55, 0.28) visible=True active=True
+FIXTURE Corridor guard bounds=Center: (-83.76, -13.49, -33.25), Extents: (0.09, 0.55, 0.28) visible=True active=True
+FIXTURE Corridor guard bounds=Center: (-80.84, -13.49, -33.25), Extents: (0.09, 0.55, 0.28) visible=True active=True
+FIXTURE Corridor guard bounds=Center: (-83.76, -13.57, -32.75), Extents: (0.09, 0.55, 0.28) visible=True active=True
+FIXTURE Corridor guard bounds=Center: (-80.84, -13.57, -32.75), Extents: (0.09, 0.55, 0.28) visible=True active=True
+FIXTURE Corridor guard bounds=Center: (-83.76, -13.65, -32.25), Extents: (0.09, 0.55, 0.28) visible=True active=True
+FIXTURE Corridor guard bounds=Center: (-80.84, -13.65, -32.25), Extents: (0.09, 0.55, 0.28) visible=True active=True
+FIXTURE Corridor guard bounds=Center: (-83.76, -13.72, -31.75), Extents: (0.09, 0.55, 0.28) visible=True active=True
+FIXTURE Corridor guard bounds=Center: (-80.84, -13.72, -31.75), Extents: (0.09, 0.55, 0.28) visible=True active=True
+FIXTURE Corridor guard bounds=Center: (-83.76, -13.80, -31.25), Extents: (0.09, 0.55, 0.28) visible=True active=True
+FIXTURE Corridor guard bounds=Center: (-80.84, -13.80, -31.25), Extents: (0.09, 0.55, 0.28) visible=True active=True
+FIXTURE Corridor guard bounds=Center: (-83.76, -13.88, -30.75), Extents: (0.09, 0.55, 0.28) visible=True active=True
+FIXTURE Corridor guard bounds=Center: (-80.84, -13.88, -30.75), Extents: (0.09, 0.55, 0.28) visible=True active=True
+FIXTURE Corridor guard bounds=Center: (-83.76, -13.96, -30.25), Extents: (0.09, 0.55, 0.28) visible=True active=True
+FIXTURE Corridor guard bounds=Center: (-80.84, -13.96, -30.25), Extents: (0.09, 0.55, 0.28) visible=True active=True
+FIXTURE Corridor guard bounds=Center: (-83.76, -14.04, -29.75), Extents: (0.09, 0.55, 0.28) visible=True active=True
+FIXTURE Corridor guard bounds=Center: (-80.84, -14.04, -29.75), Extents: (0.09, 0.55, 0.28) visible=True active=True
+FIXTURE Corridor guard bounds=Center: (-83.76, -14.11, -29.25), Extents: (0.09, 0.55, 0.28) visible=True active=True
+FIXTURE Corridor guard bounds=Center: (-80.84, -14.11, -29.25), Extents: (0.09, 0.55, 0.28) visible=True active=True
+FIXTURE Corridor guard bounds=Center: (-83.76, -14.19, -28.75), Extents: (0.09, 0.55, 0.28) visible=True active=True
+FIXTURE Corridor guard bounds=Center: (-80.84, -14.19, -28.75), Extents: (0.09, 0.55, 0.28) visible=True active=True
+FIXTURE Corridor guard bounds=Center: (-83.76, -14.27, -28.25), Extents: (0.09, 0.55, 0.28) visible=True active=True
+FIXTURE Corridor guard bounds=Center: (-80.84, -14.27, -28.25), Extents: (0.09, 0.55, 0.28) visible=True active=True
+FIXTURE Corridor guard bounds=Center: (-83.76, -14.35, -27.75), Extents: (0.09, 0.55, 0.28) visible=True active=True
+FIXTURE Corridor guard bounds=Center: (-80.84, -14.35, -27.75), Extents: (0.09, 0.55, 0.28) visible=True active=True
+FIXTURE Corridor guard bounds=Center: (-83.76, -14.43, -27.25), Extents: (0.09, 0.55, 0.28) visible=True active=True
+FIXTURE Corridor guard bounds=Center: (-80.84, -14.43, -27.25), Extents: (0.09, 0.55, 0.28) visible=True active=True
+FIXTURE Corridor guard bounds=Center: (-83.76, -14.50, -26.75), Extents: (0.09, 0.55, 0.28) visible=True active=True
+FIXTURE Corridor guard bounds=Center: (-80.84, -14.50, -26.75), Extents: (0.09, 0.55, 0.28) visible=True active=True
+FIXTURE Corridor guard bounds=Center: (-83.76, -14.58, -26.25), Extents: (0.09, 0.55, 0.28) visible=True active=True
+FIXTURE Corridor guard bounds=Center: (-80.84, -14.58, -26.25), Extents: (0.09, 0.55, 0.28) visible=True active=True
+FIXTURE Corridor guard bounds=Center: (-83.76, -14.66, -25.75), Extents: (0.09, 0.55, 0.28) visible=True active=True
+FIXTURE Corridor guard bounds=Center: (-80.84, -14.66, -25.75), Extents: (0.09, 0.55, 0.28) visible=True active=True
+FIXTURE Corridor guard bounds=Center: (-83.76, -14.74, -25.25), Extents: (0.09, 0.55, 0.28) visible=True active=True
+FIXTURE Corridor guard bounds=Center: (-80.84, -14.74, -25.25), Extents: (0.09, 0.55, 0.28) visible=True active=True
+FIXTURE Corridor guard bounds=Center: (-83.76, -14.81, -24.75), Extents: (0.09, 0.55, 0.28) visible=True active=True
+FIXTURE Corridor guard bounds=Center: (-80.84, -14.81, -24.75), Extents: (0.09, 0.55, 0.28) visible=True active=True
+FIXTURE Corridor guard bounds=Center: (-83.76, -14.89, -24.25), Extents: (0.09, 0.55, 0.28) visible=True active=True
+FIXTURE Corridor guard bounds=Center: (-80.84, -14.89, -24.25), Extents: (0.09, 0.55, 0.28) visible=True active=True
+FIXTURE Corridor guard bounds=Center: (-83.76, -14.97, -23.75), Extents: (0.09, 0.55, 0.28) visible=True active=True
+FIXTURE Corridor guard bounds=Center: (-80.84, -14.97, -23.75), Extents: (0.09, 0.55, 0.28) visible=True active=True
+FIXTURE Corridor guard bounds=Center: (-83.76, -15.05, -23.25), Extents: (0.09, 0.55, 0.28) visible=True active=True
+FIXTURE Corridor guard bounds=Center: (-80.84, -15.05, -23.25), Extents: (0.09, 0.55, 0.28) visible=True active=True
+FIXTURE Corridor guard bounds=Center: (-83.76, -15.13, -22.75), Extents: (0.09, 0.55, 0.28) visible=True active=True
+FIXTURE Corridor guard bounds=Center: (-80.84, -15.13, -22.75), Extents: (0.09, 0.55, 0.28) visible=True active=True
+FIXTURE Corridor guard bounds=Center: (-83.76, -15.20, -22.25), Extents: (0.09, 0.55, 0.28) visible=True active=True
+FIXTURE Corridor guard bounds=Center: (-80.84, -15.20, -22.25), Extents: (0.09, 0.55, 0.28) visible=True active=True
+FIXTURE Corridor guard bounds=Center: (-83.76, -15.28, -21.75), Extents: (0.09, 0.55, 0.28) visible=True active=True
+FIXTURE Corridor guard bounds=Center: (-80.84, -15.28, -21.75), Extents: (0.09, 0.55, 0.28) visible=True active=True
+FIXTURE Corridor guard bounds=Center: (-83.76, -15.36, -21.25), Extents: (0.09, 0.55, 0.28) visible=True active=True
+FIXTURE Corridor guard bounds=Center: (-80.84, -15.36, -21.25), Extents: (0.09, 0.55, 0.28) visible=True active=True
+FIXTURE Corridor guard bounds=Center: (-83.76, -15.44, -20.75), Extents: (0.09, 0.55, 0.28) visible=True active=True
+FIXTURE Corridor guard bounds=Center: (-80.84, -15.44, -20.75), Extents: (0.09, 0.55, 0.28) visible=True active=True
+FIXTURE Corridor guard bounds=Center: (-83.76, -15.52, -20.25), Extents: (0.09, 0.55, 0.28) visible=True active=True
+FIXTURE Corridor guard bounds=Center: (-80.84, -15.52, -20.25), Extents: (0.09, 0.55, 0.28) visible=True active=True
+FIXTURE Corridor guard bounds=Center: (-83.76, -15.59, -19.75), Extents: (0.09, 0.55, 0.28) visible=True active=True
+FIXTURE Corridor guard bounds=Center: (-80.84, -15.59, -19.75), Extents: (0.09, 0.55, 0.28) visible=True active=True
+FIXTURE Corridor guard bounds=Center: (-83.76, -15.67, -19.25), Extents: (0.09, 0.55, 0.28) visible=True active=True
+FIXTURE Corridor guard bounds=Center: (-80.84, -15.67, -19.25), Extents: (0.09, 0.55, 0.28) visible=True active=True
+FIXTURE Corridor guard bounds=Center: (-83.76, -15.75, -18.75), Extents: (0.09, 0.55, 0.28) visible=True active=True
+FIXTURE Corridor guard bounds=Center: (-80.84, -15.75, -18.75), Extents: (0.09, 0.55, 0.28) visible=True active=True
+FIXTURE Corridor guard bounds=Center: (-83.76, -15.83, -18.25), Extents: (0.09, 0.55, 0.28) visible=True active=True
+FIXTURE Corridor guard bounds=Center: (-80.84, -15.83, -18.25), Extents: (0.09, 0.55, 0.28) visible=True active=True
+FIXTURE Corridor guard bounds=Center: (-83.76, -15.90, -17.75), Extents: (0.09, 0.55, 0.28) visible=True active=True
+FIXTURE Corridor guard bounds=Center: (-80.84, -15.90, -17.75), Extents: (0.09, 0.55, 0.28) visible=True active=True
+FIXTURE Corridor guard bounds=Center: (-83.76, -15.98, -17.25), Extents: (0.09, 0.55, 0.28) visible=True active=True
+FIXTURE Corridor guard bounds=Center: (-80.84, -15.98, -17.25), Extents: (0.09, 0.55, 0.28) visible=True active=True
+FIXTURE Corridor guard bounds=Center: (-83.76, -16.06, -16.75), Extents: (0.09, 0.55, 0.28) visible=True active=True
+FIXTURE Corridor guard bounds=Center: (-80.84, -16.06, -16.75), Extents: (0.09, 0.55, 0.28) visible=True active=True
+FIXTURE Corridor guard bounds=Center: (-83.76, -16.14, -16.25), Extents: (0.09, 0.55, 0.28) visible=True active=True
+FIXTURE Corridor guard bounds=Center: (-80.84, -16.14, -16.25), Extents: (0.09, 0.55, 0.28) visible=True active=True
+FIXTURE Corridor guard bounds=Center: (-83.76, -16.22, -15.75), Extents: (0.09, 0.55, 0.28) visible=True active=True
+FIXTURE Corridor guard bounds=Center: (-80.84, -16.22, -15.75), Extents: (0.09, 0.55, 0.28) visible=True active=True
+FIXTURE Corridor guard bounds=Center: (-83.76, -16.29, -15.25), Extents: (0.09, 0.55, 0.28) visible=True active=True
+FIXTURE Corridor guard bounds=Center: (-80.84, -16.29, -15.25), Extents: (0.09, 0.55, 0.28) visible=True active=True
+FIXTURE Corridor guard bounds=Center: (-83.76, -16.37, -14.75), Extents: (0.09, 0.55, 0.28) visible=True active=True
+FIXTURE Corridor guard bounds=Center: (-80.84, -16.37, -14.75), Extents: (0.09, 0.55, 0.28) visible=True active=True
+FIXTURE Garden threshold bridge bounds=Center: (-82.85, -17.53, -13.30), Extents: (1.50, 0.18, 1.30) visible=True active=True
+FIXTURE Garden east wheel walkway bounds=Center: (-83.40, -17.53, -7.40), Extents: (0.90, 0.18, 6.25) visible=True active=True
+FIXTURE Restored garden viewpoint bounds=Center: (-84.00, -17.50, 0.00), Extents: (2.00, 0.18, 2.50) visible=True active=True
+FIXTURE Safe landing / RESTORED GARDEN bounds=Center: (-84.00, -17.46, 0.00), Extents: (1.50, 0.18, 1.50) visible=False active=True
+FIXTURE SIGN / RESTORED GARDEN bounds=Center: (-84.02, -15.02, -0.01), Extents: (0.36, 0.06, 0.49) visible=False active=True
+FIXTURE SIGN / W  /  THE WATERWHEEL bounds=Center: (-84.08, -14.47, 0.94), Extents: (0.95, 0.23, 1.27) visible=False active=True
+FIXTURE Centered original leaf mesh bounds=Center: (-85.40, -17.19, 1.80), Extents: (0.09, 0.10, 0.12) visible=True active=True
+FIXTURE Garden sprout stem bounds=Center: (-85.40, -17.24, 1.80), Extents: (0.01, 0.05, 0.01) visible=True active=True
+FIXTURE Centered original leaf mesh bounds=Center: (-84.50, -17.19, 1.80), Extents: (0.14, 0.10, 0.15) visible=True active=True
+FIXTURE Garden sprout stem bounds=Center: (-84.50, -17.24, 1.80), Extents: (0.01, 0.05, 0.01) visible=True active=True
+FIXTURE Centered original leaf mesh bounds=Center: (-83.60, -17.19, 1.80), Extents: (0.14, 0.10, 0.12) visible=True active=True
+FIXTURE Garden sprout stem bounds=Center: (-83.60, -17.24, 1.80), Extents: (0.01, 0.05, 0.01) visible=True active=True
+FIXTURE Centered original leaf mesh bounds=Center: (-82.70, -17.19, 1.80), Extents: (0.14, 0.10, 0.13) visible=True active=True
+FIXTURE Garden sprout stem bounds=Center: (-82.70, -17.24, 1.80), Extents: (0.01, 0.05, 0.01) visible=True active=True
+FIXTURE Centered original leaf mesh bounds=Center: (-85.40, -17.19, -1.80), Extents: (0.14, 0.10, 0.15) visible=True active=True
+FIXTURE Garden sprout stem bounds=Center: (-85.40, -17.24, -1.80), Extents: (0.01, 0.05, 0.01) visible=True active=True
+FIXTURE Centered original leaf mesh bounds=Center: (-84.50, -17.19, -1.80), Extents: (0.10, 0.10, 0.13) visible=True active=True
+FIXTURE Garden sprout stem bounds=Center: (-84.50, -17.24, -1.80), Extents: (0.01, 0.05, 0.01) visible=True active=True
+FIXTURE Centered original leaf mesh bounds=Center: (-83.60, -17.19, -1.80), Extents: (0.15, 0.10, 0.15) visible=True active=True
+FIXTURE Garden sprout stem bounds=Center: (-83.60, -17.24, -1.80), Extents: (0.01, 0.05, 0.01) visible=True active=True
+FIXTURE Centered original leaf mesh bounds=Center: (-82.70, -17.19, -1.80), Extents: (0.13, 0.10, 0.11) visible=True active=True
+FIXTURE Garden sprout stem bounds=Center: (-82.70, -17.24, -1.80), Extents: (0.01, 0.05, 0.01) visible=True active=True
+FIXTURE ONE V2 Bloom ORB bounds=Center: (-45.70, 2.37, -6.30), Extents: (0.13, 0.13, 0.13) visible=True active=True
+FIXTURE ONE V2 Freeze ORB bounds=Center: (-46.00, 2.37, -6.00), Extents: (0.13, 0.13, 0.13) visible=True active=True
+FIXTURE ONE V2 Flow ORB bounds=Center: (-46.30, 2.37, -5.70), Extents: (0.13, 0.13, 0.13) visible=True active=True

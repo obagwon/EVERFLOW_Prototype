@@ -1,0 +1,12 @@
+{
+  "bloom-demo.mp4": {
+    "duration_seconds": 173.16663333333332,
+    "audio_track": true,
+    "bytes": 73529057
+  },
+  "continuous-demo.mp4": {
+    "duration_seconds": 180.6,
+    "audio_track": true,
+    "bytes": 76022811
+  }
+}

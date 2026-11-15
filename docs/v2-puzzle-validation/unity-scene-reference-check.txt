@@ -1,0 +1,2 @@
+2026-11-09T12:25:22.7255623Z
+PASS imported scene references, unique asset GUID, missing scripts and camera/input ownership. NOT traversal or Play.

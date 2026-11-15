@@ -1,0 +1,9 @@
+PASS (-45.80, 5.00, -50.00) outside C cut unchanged ground, hit=True delta=0
+PASS (-43.00, 5.00, -43.80) outside C cut unchanged ground, hit=True delta=0
+PASS (-35.00, 5.00, -39.00) outside C cut unchanged ground, hit=True delta=0
+PASS (-35.00, 2.00, -27.00) outside C cut unchanged ground, hit=True delta=0
+PASS (-49.00, 5.00, -50.00) outside C cut unchanged ground, hit=True delta=0
+PASS (-40.00, 5.00, -47.00) outside C cut unchanged ground, hit=False delta=-1
+PASS (-44.00, 8.00, -40.00) outside C cut unchanged ground, hit=True delta=0
+PASS (-25.00, 9.00, -42.00) outside C cut unchanged ground, hit=True delta=0
+TOTAL 8/8
