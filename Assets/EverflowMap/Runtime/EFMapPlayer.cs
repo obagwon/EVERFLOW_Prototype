@@ -47,6 +47,8 @@ namespace EverflowMap
         public float VerticalSpeed => velocity.y;
         public bool Grounded => controller!=null&&controller.isGrounded&&velocity.y<=.1f&&airGrace<=0;
         public int TeleportVersion {get;private set;}
+        public bool Traversing { get; private set; }
+        public event System.Action<bool> TraversalFinished;
         public Vector3 CameraTravelTarget => ride == null ? transform.position + transform.forward * 5 :
             ride.kind == MapKind.Vine && ride.launchTarget != null ? ride.launchTarget.position :
             ride.ridePath.Length > 0 ? ride.ridePath[Mathf.Min(rideSegment + 2, ride.ridePath.Length - 1)].position : ride.HandlePosition;
@@ -56,6 +58,8 @@ namespace EverflowMap
         Transform supportTransform;
         Vector3 supportLocal, supportWorld;
         Vector3 velocity, momentum;
+        Vector3 traversalStart, traversalEnd;
+        float traversalTime, traversalDuration, traversalArc;
         float rideDistance, rideSpeed, airGrace;
         int rideSegment;
         void Awake() { controller = GetComponent<CharacterController>(); }
@@ -66,6 +70,7 @@ namespace EverflowMap
             if (EFInput.KeyDown(KeyCode.Alpha1)) selected = Ability.Bloom;
             if (EFInput.KeyDown(KeyCode.Alpha2)) selected = Ability.Freeze;
             if (EFInput.KeyDown(KeyCode.Alpha3)) selected = Ability.Pulse;
+            if (Traversing) { Traverse(); return; }
             if (ride != null) Ride();
             else { if (!puzzleLabLocomotion && EFInput.KeyDown(KeyCode.E)) TryRide(); if (ride == null) Walk(); }
             if (!puzzleLabLocomotion && transform.position.y < world.FallFloor) world.Respawn();
@@ -269,10 +274,46 @@ namespace EverflowMap
             transform.rotation = Quaternion.Slerp(transform.rotation, Quaternion.LookRotation(planar, Vector3.up),
                 1 - Mathf.Exp(-turnSharpness * Time.deltaTime));
         }
+        public bool BeginTraversal(Vector3 destination, float seconds, float arc)
+        {
+            if (Traversing || controller == null || !controller.enabled || seconds <= 0) return false;
+            traversalStart = transform.position;
+            traversalEnd = destination;
+            traversalTime = 0;
+            traversalDuration = seconds;
+            traversalArc = arc;
+            velocity = momentum = Vector3.zero;
+            supportTransform = null;
+            Traversing = true;
+            return true;
+        }
+
+        void Traverse()
+        {
+            float dt = Time.deltaTime;
+            if (dt <= 0) return;
+            traversalTime += dt;
+            float t = Mathf.Clamp01(traversalTime / traversalDuration);
+            Vector3 next = Vector3.Lerp(traversalStart, traversalEnd, t) +
+                Vector3.up * (Mathf.Sin(t * Mathf.PI) * traversalArc);
+            Vector3 before = transform.position;
+            controller.Move(next - before);
+            Vector3 motion = transform.position - before;
+            velocity.y = motion.y / dt;
+            LocomotionSpeed = Vector3.ProjectOnPlane(motion, Vector3.up).magnitude / dt;
+            FaceMotion(motion);
+            bool blocked = Vector3.Distance(transform.position, next) > .25f;
+            if (!blocked && t < 1) return;
+            Traversing = false;
+            velocity = Vector3.down * 2;
+            TraversalFinished?.Invoke(!blocked);
+        }
+
         public void Teleport(Vector3 point)
         {
             TeleportVersion++;LocomotionSpeed=0;
             if (controller == null) controller = GetComponent<CharacterController>();
+            Traversing = false;
             ride = ground = null; supportTransform = null; controller.enabled = false;
             transform.position = point; velocity = momentum = Vector3.zero; airGrace = 0;
             controller.enabled = true; if (follow != null) follow.Snap(true);
