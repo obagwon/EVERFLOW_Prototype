@@ -184,7 +184,7 @@ namespace EverflowMap
             }
             return target!=null;
         }
-        static bool Triangle(Vector3 origin,Vector3 direction,Vector3 a,Vector3 b,Vector3 c,out float distance)
+        internal static bool Triangle(Vector3 origin,Vector3 direction,Vector3 a,Vector3 b,Vector3 c,out float distance)
         {
             distance=0;var e1=b-a;var e2=c-a;var p=Vector3.Cross(direction,e2);float det=Vector3.Dot(e1,p);
             if(Mathf.Abs(det)<.0000001f)return false;

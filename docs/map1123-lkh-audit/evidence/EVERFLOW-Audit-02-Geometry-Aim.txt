@@ -1,0 +1,138 @@
+0.03  STAGED READ-ONLY PLAY: poses temporarily applied in memory; player body height=2.000, radius=0.400, stepOffset=0.550, move=6.00, jump=1.35.
+0.37  AIM 전망대 뿌리|station|onGround=True|pos=(53.030, 37.042, 10.800)|cam=(49.456, 39.046, 6.351)|3D=3.806|station=0.000/5.00|hover=True|cast=True|avatarRay=clear|cameraRay=clear|glow=1|HUD=전망대 뿌리  ·  왼쪽 클릭|reason=
+0.68  AIM 전망대 뿌리|left|onGround=True|pos=(52.523, 37.042, 11.207)|cam=(48.248, 39.046, 7.428)|3D=3.861|station=0.650/5.00|hover=True|cast=True|avatarRay=clear|cameraRay=clear|glow=1|HUD=전망대 뿌리  ·  왼쪽 클릭|reason=
+1.00  AIM 전망대 뿌리|right|onGround=True|pos=(53.537, 37.042, 10.393)|cam=(50.767, 39.046, 5.404)|3D=3.861|station=0.650/5.00|hover=True|cast=True|avatarRay=clear|cameraRay=clear|glow=1|HUD=전망대 뿌리  ·  왼쪽 클릭|reason=
+1.27  WALK pre-gimmick B 수조와 정원 (107.10, 26.10, 41.55)
+8.27  PROBE blocked: Walk blocked pre-gimmick B 수조와 정원 (104.23, 25.04, 41.57) 뿌리 길이 열렸습니다. 내려가서 중앙 표지판으로 가세요.
+8.27  BYPASS B 수조와 정원 directJumpReached=False feet=(104.229, 24.037, 41.567) stars=0->0
+8.27  ROOM B garden reward back/return firstRoomCollider=Collection return gate castDist=1.240
+8.27  ROOM B garden reward front firstRoomCollider=Puzzle access gate castDist=1.240
+8.27  ROOM B garden reward right firstRoomCollider=Reward east wall castDist=1.975
+8.27  ROOM B garden reward left firstRoomCollider=Reward west wall castDist=1.975
+8.52  WALK pre-gimmick E 상부 착지턱 (105.40, 39.91, 84.30)
+15.52  PROBE blocked: Walk blocked pre-gimmick E 상부 착지턱 (102.43, 40.89, 83.17) 뿌리 길이 열렸습니다. 내려가서 중앙 표지판으로 가세요.
+15.52  BYPASS E 상부 착지턱 directJumpReached=False feet=(102.435, 39.890, 83.168) stars=0->0
+15.52  ROOM E high shelf reward back/return firstRoomCollider=Collection return gate castDist=1.090
+15.52  ROOM E high shelf reward front firstRoomCollider=Puzzle access gate castDist=1.090
+15.52  ROOM E high shelf reward right firstRoomCollider=Reward east wall castDist=2.000
+15.52  ROOM E high shelf reward left firstRoomCollider=Reward west wall castDist=2.000
+15.77  WALK pre-gimmick D 씨앗 골짜기 (60.00, 32.16, 66.65)
+22.77  PROBE blocked: Walk blocked pre-gimmick D 씨앗 골짜기 (61.22, 31.47, 63.68) 뿌리 길이 열렸습니다. 내려가서 중앙 표지판으로 가세요.
+22.77  BYPASS D 씨앗 골짜기 directJumpReached=False feet=(61.222, 30.473, 63.675) stars=0->0
+22.77  ROOM D valley reward back/return firstRoomCollider=Collection return gate castDist=1.140
+22.77  ROOM D valley reward front firstRoomCollider=Puzzle access gate castDist=1.140
+22.78  ROOM D valley reward right firstRoomCollider=Reward east wall castDist=1.875
+22.78  ROOM D valley reward left firstRoomCollider=Reward west wall castDist=1.875
+23.56  DROP D valley reward roofTop=36.060 feet=36.110 grounded=True stars=0->0
+23.81  WALK pre-gimmick C 동쪽 바깥섬 (130.40, 26.94, 62.90)
+29.18  PROBE blocked: Walk blocked pre-gimmick C 동쪽 바깥섬 (71.61, 25.06, 26.08) 안전한 곳으로 돌아왔습니다. 획득한 별은 유지됩니다.
+29.18  BYPASS C 동쪽 바깥섬 directJumpReached=False feet=(71.611, 24.057, 26.076) stars=0->0
+29.43  WALK pre-gimmick W 정비 발코니 (72.22, 41.03, 84.50)
+36.43  PROBE blocked: Walk blocked pre-gimmick W 정비 발코니 (75.05, 41.87, 84.50) 안전한 곳으로 돌아왔습니다. 획득한 별은 유지됩니다.
+36.43  BYPASS W 정비 발코니 directJumpReached=False feet=(75.047, 40.868, 84.500) stars=0->0
+36.43  ROOM W balcony reward back/return firstRoomCollider=Collection return gate castDist=1.240
+36.43  ROOM W balcony reward front firstRoomCollider=Puzzle access gate castDist=1.240
+36.43  ROOM W balcony reward right firstRoomCollider=Reward east wall castDist=2.250
+36.43  ROOM W balcony reward left firstRoomCollider=Reward west wall castDist=2.250
+36.68  WALK pre-gimmick 서쪽 채광실 (61.50, 34.29, 79.85)
+42.48  PROBE blocked: Walk blocked pre-gimmick 서쪽 채광실 (61.50, 35.15, 77.22) 안전한 곳으로 돌아왔습니다. 획득한 별은 유지됩니다.
+42.48  BYPASS 서쪽 채광실 directJumpReached=False feet=(61.500, 34.150, 77.223) stars=0->0
+42.48  ROOM F lens reward back/return firstRoomCollider=Sealed back wall castDist=1.425
+42.49  ROOM F lens reward front firstRoomCollider=Puzzle access gate castDist=1.440
+42.49  ROOM F lens reward right firstRoomCollider=Collection side gate castDist=1.555
+42.49  ROOM F lens reward left firstRoomCollider=Reward west wall castDist=1.550
+43.27  DROP F lens reward roofTop=38.110 feet=38.160 grounded=True stars=0->0
+43.27  W lift object status PH_9_Lift=False
+43.56  AIM 잎 물받이|station|onGround=True|pos=(84.400, 25.057, 37.650)|cam=(78.702, 27.061, 37.342)|3D=1.931|station=0.000/4.50|hover=True|cast=True|avatarRay=clear|cameraRay=Terrain|glow=2|HUD=잎 물받이  ·  왼쪽 클릭|reason=
+43.88  AIM 잎 물받이|left|onGround=True|pos=(84.365, 25.057, 38.299)|cam=(78.886, 27.061, 39.895)|3D=2.037|station=0.650/4.50|hover=True|cast=True|avatarRay=clear|cameraRay=Terrain|glow=2|HUD=잎 물받이  ·  왼쪽 클릭|reason=
+44.19  AIM 잎 물받이|right|onGround=True|pos=(84.435, 25.057, 37.001)|cam=(79.160, 27.061, 34.824)|3D=2.037|station=0.650/4.50|hover=True|cast=True|avatarRay=clear|cameraRay=B_Wall_E1|glow=2|HUD=잎 물받이  ·  왼쪽 클릭|reason=
+44.55  AIM PH_B_Leak · 누수구|station|onGround=True|pos=(84.400, 25.057, 37.650)|cam=(78.707, 27.061, 37.262)|3D=4.123|station=0.000/6.60|hover=False|cast=True|avatarRay=clear|cameraRay=Terrain|glow=1|HUD=잎 물받이  ·  BLOOM 대상입니다.|reason=
+44.96  AIM PH_B_Leak · 누수구|left|onGround=True|pos=(84.356, 25.057, 38.299)|cam=(78.672, 27.061, 38.803)|3D=4.174|station=0.650/6.60|hover=True|cast=True|avatarRay=clear|cameraRay=Terrain|glow=1|HUD=PH_B_Leak · 누수구  ·  왼쪽 클릭|reason=
+45.32  AIM PH_B_Leak · 누수구|right|onGround=True|pos=(84.444, 25.057, 37.002)|cam=(78.881, 27.061, 35.731)|3D=4.174|station=0.650/6.60|hover=False|cast=True|avatarRay=clear|cameraRay=Terrain|glow=1|HUD=잎 물받이  ·  BLOOM 대상입니다.|reason=
+45.33  DECK Floating leaf 1 center=(97.450, 22.200, 41.550) sides=2.260x2.650 highest=22.200 lowest=22.200
+45.34  DECK Floating leaf 2 center=(100.190, 22.200, 41.550) sides=2.260x2.650 highest=22.200 lowest=22.200
+45.34  DECK Floating leaf 3 center=(102.930, 22.200, 41.550) sides=2.260x2.650 highest=22.200 lowest=22.200
+45.34  DECK B shore dock center=(94.650, 25.700, 41.550) sides=2.900x2.950 highest=25.700 lowest=25.700
+45.68  AIM PH_B_Leak · 누수구|known-route|onGround=True|pos=(84.020, 25.057, 37.420)|cam=(78.350, 27.061, 36.776)|3D=4.522|station=0.444/6.60|hover=False|cast=True|avatarRay=clear|cameraRay=Terrain|glow=1|HUD=잎 물받이  ·  BLOOM 대상입니다.|reason=
+45.71  BOUNDARY PH_B_Leak · 누수구 root=(77.915, 25.070, 37.208) 3D=10.621 station=6.500 can=True reason=
+45.71  BOUNDARY PH_B_Leak · 누수구 root=(77.716, 25.070, 37.195) 3D=10.821 station=6.700 can=False reason=조작 발판 가까이에서 능력을 사용하세요.
+45.71  BOUNDARY PH_B_Leak · 누수구 root=(70.651, 25.220, 36.713) 3D=17.900 station=13.780 can=False reason=조작 발판 가까이에서 능력을 사용하세요.
+45.71  BOUNDARY PH_B_Leak · 누수구 root=(70.452, 25.220, 36.700) 3D=18.100 station=13.980 can=False reason=사거리 밖입니다. 가까이 이동하세요.
+48.55  B RIDE leafTop=22.200->26.110; feet=22.250->24.057; grounded=True; retries=1
+48.55  DECK Floating leaf 1 center=(97.450, 26.110, 41.550) sides=2.260x2.650 highest=26.110 lowest=26.110
+48.55  DECK Floating leaf 2 center=(100.190, 26.110, 41.550) sides=2.260x2.650 highest=26.110 lowest=26.110
+48.55  DECK Floating leaf 3 center=(102.930, 26.110, 41.550) sides=2.260x2.650 highest=26.110 lowest=26.110
+48.55  EDGE B shore dock -> Floating leaf 1 axis gap=0.220 dy=0.410 from=(96.100, 25.700, 41.550) to=(96.320, 26.110, 41.550)
+48.56  EDGE Floating leaf 1 -> Floating leaf 2 axis gap=0.480 dy=0.000 from=(98.580, 26.110, 41.550) to=(99.060, 26.110, 41.550)
+48.56  EDGE Floating leaf 2 -> Floating leaf 3 axis gap=0.480 dy=0.000 from=(101.320, 26.110, 41.550) to=(101.800, 26.110, 41.550)
+48.56  EDGE last B leaf -> reward floor axis gap=0.565 dy=0.070 from=(104.060, 26.110, 41.550) to=(104.625, 26.180, 41.550)
+48.84  AIM 석판 뿌리|station|onGround=True|pos=(92.500, 36.044, 82.200)|cam=(87.639, 38.048, 79.211)|3D=1.624|station=0.000/4.80|hover=True|cast=True|avatarRay=clear|cameraRay=E_SlabAxle|glow=2|HUD=석판 뿌리  ·  왼쪽 클릭|reason=
+49.14  AIM 석판 뿌리|left|onGround=True|pos=(92.160, 36.036, 82.754)|cam=(87.711, 38.040, 81.978)|3D=1.751|station=0.650/4.80|hover=True|cast=True|avatarRay=clear|cameraRay=E_SlabAxle|glow=2|HUD=석판 뿌리  ·  왼쪽 클릭|reason=
+49.44  AIM 석판 뿌리|right|onGround=True|pos=(92.840, 36.036, 81.646)|cam=(89.477, 38.040, 77.036)|3D=1.751|station=0.650/4.80|hover=True|cast=True|avatarRay=clear|cameraRay=Terrain|glow=2|HUD=석판 뿌리  ·  왼쪽 클릭|reason=
+49.75  AIM 회전 잎의 축|station|onGround=True|pos=(97.800, 38.562, 84.300)|cam=(93.457, 40.566, 88.001)|3D=1.275|station=0.000/2.15|hover=True|cast=True|avatarRay=clear|cameraRay=clear|glow=0|HUD=회전 잎의 축  ·  잎이 빗나갔어요. Esc로 풀고 착지턱과 맞을 때 다시 조준하세요.|reason=
+50.06  AIM 회전 잎의 축|left|onGround=True|pos=(98.139, 38.570, 84.785)|cam=(96.178, 40.574, 90.142)|3D=1.449|station=0.592/2.15|hover=True|cast=True|avatarRay=clear|cameraRay=clear|glow=0|HUD=회전 잎의 축  ·  잎이 빗나갔어요. Esc로 풀고 착지턱과 맞을 때 다시 조준하세요.|reason=
+50.36  AIM 회전 잎의 축|right|onGround=True|pos=(97.378, 38.562, 83.805)|cam=(91.779, 40.566, 84.904)|3D=1.431|station=0.650/2.15|hover=True|cast=True|avatarRay=clear|cameraRay=Terrain|glow=0|HUD=회전 잎의 축  ·  잎이 빗나갔어요. Esc로 풀고 착지턱과 맞을 때 다시 조준하세요.|reason=
+50.38  E timing period=4.400s maxAngles=(30.000, 38.000, 0.000) tolerance=18.000
+51.04  E wrong timing hover=True, wasRejected=True, HUD=잎이 착지턱과 맞는 순간 다시 얼리세요., aimNow=False
+51.06  E after R (97.800, 38.570, 84.300), stage=1
+51.06  DECK PH_E_Slab - growing stone center=(95.190, 36.295, 84.300) sides=2.600x5.069 highest=37.532 lowest=35.058
+51.06  DECK E middle ledge center=(97.800, 37.520, 84.300) sides=1.400x2.700 highest=37.520 lowest=37.520
+51.06  DECK Rotate leaf bridge support center=(100.750, 38.786, 84.300) sides=2.150x5.142 highest=40.021 lowest=37.551
+51.06  EDGE PH_E_Slab - growing stone -> E middle ledge axis gap=-0.302 dy=-0.012 from=(97.402, 37.532, 84.300) to=(97.100, 37.520, 84.300)
+51.06  EDGE E middle ledge -> Rotate leaf bridge support axis gap=-0.005 dy=0.031 from=(98.500, 37.520, 84.300) to=(98.495, 37.551, 84.300)
+51.06  EDGE E leaf -> room axis gap=-0.230 dy=0.009 from=(103.005, 40.021, 84.300) to=(102.775, 40.030, 84.300)
+51.35  AIM 꽃가루에 덮인 문 장치|station|onGround=True|pos=(60.450, 27.053, 52.550)|cam=(63.874, 29.057, 47.985)|3D=1.539|station=0.000/3.60|hover=True|cast=True|avatarRay=clear|cameraRay=PH_D_Gate - working gate|glow=2|HUD=꽃가루에 덮인 문 장치  ·  클릭해 바람의 대상 선택|reason=
+51.66  AIM 꽃가루에 덮인 문 장치|left|onGround=True|pos=(59.930, 27.053, 52.160)|cam=(60.862, 29.057, 46.530)|3D=1.670|station=0.650/3.60|hover=True|cast=True|avatarRay=clear|cameraRay=PH_D_Gate - working gate|glow=2|HUD=꽃가루에 덮인 문 장치  ·  클릭해 바람의 대상 선택|reason=
+51.96  AIM 꽃가루에 덮인 문 장치|right|onGround=True|pos=(60.970, 27.113, 52.893)|cam=(66.114, 29.117, 50.423)|3D=1.657|station=0.623/3.60|hover=True|cast=True|avatarRay=clear|cameraRay=PH_D_Gate - working gate|glow=2|HUD=꽃가루에 덮인 문 장치  ·  클릭해 바람의 대상 선택|reason=
+52.27  AIM 받침 위 씨앗|station|onGround=True|pos=(59.920, 29.162, 58.240)|cam=(54.506, 31.166, 56.436)|3D=1.069|station=0.000/3.10|hover=True|cast=True|avatarRay=clear|cameraRay=Terrain|glow=2|HUD=받침 위 씨앗  ·  클릭해 바람의 대상 선택|reason=
+52.59  AIM 받침 위 씨앗|left|onGround=True|pos=(59.714, 29.162, 58.857)|cam=(54.584, 31.166, 61.354)|3D=1.251|station=0.650/3.10|hover=True|cast=True|avatarRay=clear|cameraRay=Terrain|glow=2|HUD=받침 위 씨앗  ·  클릭해 바람의 대상 선택|reason=
+52.89  AIM 받침 위 씨앗|right|onGround=True|pos=(60.126, 29.162, 57.623)|cam=(57.519, 31.166, 52.547)|3D=1.251|station=0.650/3.10|hover=True|cast=True|avatarRay=clear|cameraRay=Flower pad foundation|glow=2|HUD=받침 위 씨앗  ·  클릭해 바람의 대상 선택|reason=
+52.93  D immediately after seed launch at approach canBLOOM=False elapsedPose=False reason=씨앗이 흙받이에 안착할 때까지 기다리세요.
+54.84  AIM 도착한 씨앗|station|onGround=True|pos=(59.920, 29.162, 58.240)|cam=(59.123, 31.166, 52.590)|3D=4.894|station=0.000/3.10|hover=True|cast=True|avatarRay=clear|cameraRay=Terrain|glow=1|HUD=도착한 씨앗  ·  왼쪽 클릭|reason=
+55.15  AIM 도착한 씨앗|left|onGround=True|pos=(59.276, 29.162, 58.331)|cam=(57.706, 31.166, 52.845)|3D=4.937|station=0.650/3.10|hover=True|cast=True|avatarRay=clear|cameraRay=Terrain|glow=1|HUD=도착한 씨앗  ·  왼쪽 클릭|reason=
+55.46  AIM 도착한 씨앗|right|onGround=True|pos=(60.564, 29.162, 58.149)|cam=(60.556, 31.166, 52.443)|3D=4.937|station=0.650/3.10|hover=True|cast=True|avatarRay=clear|cameraRay=Terrain|glow=1|HUD=도착한 씨앗  ·  왼쪽 클릭|reason=
+55.77  AIM 잎 나룻배|station|onGround=True|pos=(106.050, 25.122, 50.580)|cam=(106.367, 27.126, 56.278)|3D=0.876|station=0.000/1.30|hover=True|cast=True|avatarRay=clear|cameraRay=Terrain|glow=3|HUD=잎 나룻배  ·  클릭해 바람의 대상 선택|reason=
+56.08  AIM 잎 나룻배|left|onGround=True|pos=(106.699, 25.122, 50.544)|cam=(111.835, 27.126, 53.031)|3D=1.091|station=0.650/1.30|hover=True|cast=True|avatarRay=clear|cameraRay=Terrain|glow=3|HUD=잎 나룻배  ·  클릭해 바람의 대상 선택|reason=
+56.38  AIM 잎 나룻배|right|onGround=True|pos=(105.401, 25.122, 50.616)|cam=(100.572, 27.126, 53.657)|3D=1.091|station=0.650/1.30|hover=True|cast=True|avatarRay=clear|cameraRay=Terrain|glow=3|HUD=잎 나룻배  ·  클릭해 바람의 대상 선택|reason=
+56.40  DECK C departure dock center=(104.100, 24.070, 49.750) sides=2.750x2.400 highest=24.070 lowest=24.070
+56.40  DECK C lake landing center=(112.700, 24.070, 52.700) sides=2.800x2.250 highest=24.070 lowest=24.070
+56.40  DECK Leaf ferry center=(106.050, 24.080, 50.580) sides=2.540x2.150 highest=24.080 lowest=24.080
+56.40  EDGE C departure dock -> Leaf ferry axis gap=-0.695 dy=0.010 from=(105.475, 24.070, 49.750) to=(104.780, 24.080, 50.580)
+56.40  DECK Leaf ferry center=(112.250, 24.070, 52.100) sides=2.540x2.150 highest=24.070 lowest=24.070
+56.40  EDGE Leaf ferry -> C lake landing axis gap=-1.600 dy=0.000 from=(112.250, 24.070, 53.175) to=(112.700, 24.070, 51.575)
+56.70  AIM 바람막이 잎|station|onGround=True|pos=(114.000, 28.362, 60.230)|cam=(118.413, 30.366, 56.612)|3D=1.334|station=0.000/3.40|hover=True|cast=True|avatarRay=clear|cameraRay=C one-way cliff gate|glow=2|HUD=바람막이 잎  ·  왼쪽 클릭|reason=
+57.01  AIM 바람막이 잎|left|onGround=True|pos=(113.588, 28.362, 59.727)|cam=(115.905, 30.366, 54.513)|3D=1.484|station=0.650/3.40|hover=True|cast=True|avatarRay=clear|cameraRay=Turbulent air face|glow=2|HUD=바람막이 잎  ·  왼쪽 클릭|reason=
+57.32  AIM 바람막이 잎|right|onGround=True|pos=(114.402, 28.393, 60.707)|cam=(115.341, 30.397, 59.462)|3D=1.474|station=0.624/3.40|hover=True|cast=True|avatarRay=clear|cameraRay=C one-way cliff gate|glow=2|HUD=바람막이 잎  ·  왼쪽 클릭|reason=
+57.62  AIM 꽃씨의 순풍|station|onGround=True|pos=(115.200, 29.882, 64.180)|cam=(112.605, 31.886, 63.315)|3D=1.228|station=0.000/2.30|hover=True|cast=True|avatarRay=clear|cameraRay=clear|glow=1|HUD=꽃씨의 순풍  ·  클릭해 바람의 대상 선택|reason=
+57.91  AIM 꽃씨의 순풍|left|onGround=True|pos=(115.101, 29.882, 64.822)|cam=(109.791, 31.886, 66.914)|3D=1.389|station=0.650/2.30|hover=True|cast=True|avatarRay=clear|cameraRay=clear|glow=1|HUD=꽃씨의 순풍  ·  클릭해 바람의 대상 선택|reason=
+58.20  AIM 꽃씨의 순풍|right|onGround=True|pos=(115.299, 29.882, 63.538)|cam=(110.869, 31.886, 59.941)|3D=1.389|station=0.650/2.30|hover=True|cast=True|avatarRay=clear|cameraRay=clear|glow=1|HUD=꽃씨의 순풍  ·  클릭해 바람의 대상 선택|reason=
+58.22  DECK C glider launch deck center=(115.200, 28.840, 64.180) sides=2.150x1.850 highest=28.840 lowest=28.840
+58.22  DECK C wide landing center=(128.070, 27.290, 63.020) sides=3.400x3.200 highest=27.290 lowest=27.290
+58.22  C path center horizontal=12.922 dy=-1.550 from=(115.200, 28.840, 64.180) to=(128.070, 27.290, 63.020)
+58.22  EDGE C glider launch deck -> C wide landing axis gap=10.095 dy=-1.550 from=(116.275, 28.840, 64.180) to=(126.370, 27.290, 63.020)
+58.52  AIM 수문 덩굴|station|onGround=True|pos=(82.800, 36.029, 79.100)|cam=(87.400, 38.033, 75.723)|3D=1.356|station=0.000/4.00|hover=True|cast=True|avatarRay=clear|cameraRay=W left quay wall|glow=3|HUD=수문 덩굴  ·  왼쪽 클릭|reason=
+58.83  AIM 수문 덩굴|left|onGround=True|pos=(82.406, 35.840, 78.551)|cam=(84.780, 37.844, 73.362)|3D=1.615|station=0.676/4.00|hover=True|cast=True|avatarRay=clear|cameraRay=Maintenance sluice|glow=3|HUD=수문 덩굴  ·  왼쪽 클릭|reason=
+59.14  AIM 수문 덩굴|right|onGround=True|pos=(83.185, 36.044, 79.624)|cam=(87.492, 38.047, 79.029)|3D=1.497|station=0.650/4.00|hover=True|cast=True|avatarRay=clear|cameraRay=W left quay wall|glow=3|HUD=수문 덩굴  ·  왼쪽 클릭|reason=
+59.45  AIM 정비 풍차의 날개|station|onGround=True|pos=(80.050, 42.012, 84.500)|cam=(83.086, 44.016, 79.668)|3D=1.550|station=0.000/2.00|hover=True|cast=True|avatarRay=clear|cameraRay=W_Wheel|glow=2|HUD=정비 풍차의 날개  ·  클릭해 바람의 대상 선택|reason=
+59.75  AIM 정비 풍차의 날개|left|onGround=True|pos=(79.500, 42.012, 84.154)|cam=(80.113, 44.016, 78.481)|3D=1.681|station=0.650/2.00|hover=True|cast=True|avatarRay=clear|cameraRay=Service windmill bearing|glow=2|HUD=정비 풍차의 날개  ·  클릭해 바람의 대상 선택|reason=
+60.06  AIM 정비 풍차의 날개|right|onGround=True|pos=(80.600, 42.012, 84.846)|cam=(85.445, 44.016, 81.831)|3D=1.681|station=0.650/2.00|hover=True|cast=True|avatarRay=clear|cameraRay=clear|glow=2|HUD=정비 풍차의 날개  ·  클릭해 바람의 대상 선택|reason=
+61.92  AIM 도약 꽃|station|onGround=True|pos=(64.042, 29.355, 68.601)|cam=(69.294, 31.359, 66.369)|3D=0.952|station=0.064/3.80|hover=True|cast=True|avatarRay=clear|cameraRay=Terrain|glow=2|HUD=도약 꽃  ·  왼쪽 클릭|reason=
+62.23  AIM 도약 꽃|left|onGround=True|pos=(63.746, 29.252, 68.052)|cam=(66.615, 31.256, 63.119)|3D=1.131|station=0.650/3.80|hover=True|cast=True|avatarRay=clear|cameraRay=Terrain|glow=2|HUD=도약 꽃  ·  왼쪽 클릭|reason=
+62.54  AIM 도약 꽃|right|onGround=True|pos=(64.268, 29.585, 69.232)|cam=(69.811, 31.588, 70.590)|3D=1.095|station=0.641/3.80|hover=True|cast=True|avatarRay=clear|cameraRay=Terrain|glow=2|HUD=도약 꽃  ·  왼쪽 클릭|reason=
+62.85  AIM 렌즈 틀|station|onGround=True|pos=(61.500, 34.092, 74.200)|cam=(64.686, 36.096, 69.466)|3D=1.511|station=0.000/3.10|hover=True|cast=True|avatarRay=clear|cameraRay=F west side wall|glow=1|HUD=렌즈 틀  ·  왼쪽 클릭|reason=
+63.16  AIM 렌즈 틀|left|onGround=True|pos=(60.961, 34.092, 73.837)|cam=(61.643, 36.061, 69.331)|3D=1.645|station=0.650/3.10|hover=True|cast=True|avatarRay=clear|cameraRay=Puzzle access gate|glow=1|HUD=렌즈 틀  ·  왼쪽 클릭|reason=
+63.47  AIM 렌즈 틀|right|onGround=True|pos=(62.039, 34.092, 74.563)|cam=(63.519, 36.096, 72.826)|3D=1.645|station=0.650/3.10|hover=True|cast=True|avatarRay=clear|cameraRay=F west side wall|glow=1|HUD=렌즈 틀  ·  왼쪽 클릭|reason=
+63.49  STAIR Stem and leaf treads count=18 maxRise=0.229
+63.49  STAIR W service stairs count=14 maxRise=0.224
+63.49  STAIR W upper service stairs count=12 maxRise=0.228
+63.49  DECK W operator deck center=(80.050, 40.970, 84.500) sides=2.100x2.600 highest=40.970 lowest=40.970
+63.49  DECK Bridge planks collision center=(76.820, 40.970, 84.500) sides=4.550x2.030 highest=40.970 lowest=40.970
+63.49  EDGE W operator deck -> Bridge planks collision axis gap=-0.095 dy=0.000 from=(79.000, 40.970, 84.500) to=(79.095, 40.970, 84.500)
+63.49  EDGE W bridge -> room axis gap=-0.150 dy=0.000
+63.49  W sluice lower edge=38.470; floorUnder=34.994; vertical clearance=3.476
+63.49  DECK Flower pad foundation center=(64.000, 28.210, 68.650) sides=2.450x2.420 highest=28.210 lowest=28.210
+63.49  DECK F window and lens chamber floor center=(61.500, 33.050, 75.250) sides=4.500x5.800 highest=33.050 lowest=33.050
+63.49  F viewed centers distance=6.087, dy=4.840, from=(64.000, 28.210, 68.650), to=(61.500, 33.050, 74.200)
+63.50  F window free X=60.260..63.210, width=2.950, bottomLintel=36.005, floor=33.050
+63.50  PASS staged aim, closed gate and geometry measured
+63.50  PASS no new Unity Console errors

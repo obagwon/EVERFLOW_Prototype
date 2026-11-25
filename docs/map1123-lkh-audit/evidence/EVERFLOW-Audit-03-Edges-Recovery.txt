@@ -1,0 +1,67 @@
+0.03  CAST 전망대 뿌리 from (53.030, 37.050, 10.800)
+0.75  WALK Upper root terraces Step 1 (56.91, 35.90, 14.23)
+1.62  WALK Upper root terraces Step 8 (58.50, 34.27, 16.81)
+2.15  WALK Upper root terraces Step 15 (60.08, 32.63, 19.38)
+2.70  WALK Upper root terraces Step 22 (61.66, 31.00, 21.95)
+3.23  WALK Upper root terraces end (61.89, 30.77, 22.32)
+3.28  WALK Lower root terraces Step 1 (62.11, 30.53, 22.60)
+3.38  WALK Lower root terraces Step 8 (63.61, 28.89, 24.07)
+3.74  WALK Lower root terraces Step 15 (65.11, 27.24, 25.53)
+4.13  WALK Lower root terraces Step 22 (66.61, 25.60, 26.99)
+4.51  WALK Lower root terraces end (67.89, 24.19, 28.25)
+4.82  WALK 01 Central crossing (74.00, 24.02, 35.00)
+6.41  WALK independent lower hub (78.50, 24.01, 44.50)
+8.24  WALK outside B without using its abilities (82.50, 24.01, 47.60)
+9.13  WALK C public trail entrance (95.00, 24.03, 47.65)
+11.29  WALK C dock trail from the hub (104.10, 24.04, 46.15)
+12.96  WALK C low departure access Step 1 (104.10, 24.04, 46.45)
+12.99  WALK C low departure access Step 6 (104.10, 24.07, 49.45)
+13.50  WALK C low departure access end (104.10, 24.07, 49.45)
+13.51  WALK C01 West dock (104.10, 24.07, 49.75)
+13.54  PASS reachable at 0/6 without course unlocks or teleport: C01 West dock
+13.54  WALK C low departure access Step 6 (104.10, 24.07, 49.45)
+13.54  WALK C low departure access Step 1 (104.10, 24.04, 46.45)
+13.99  WALK C low departure access end (104.10, 24.04, 46.45)
+13.99  WALK C public trail back toward the hub (95.00, 24.03, 47.65)
+15.56  WALK valley floor before D (90.50, 24.01, 53.00)
+16.80  WALK public route to the shared stair (83.00, 24.01, 58.00)
+18.49  WALK shared stairs base before collecting (76.90, 24.02, 65.60)
+20.22  WALK Shared switchback - lower Step 1 (77.39, 24.17, 65.97)
+20.31  WALK Shared switchback - lower Step 7 (76.02, 25.59, 67.98)
+20.73  WALK Shared switchback - lower Step 13 (74.65, 27.02, 70.00)
+21.18  WALK Shared switchback - lower Step 19 (73.28, 28.45, 72.02)
+21.62  WALK Shared switchback - lower Step 25 (71.91, 29.88, 74.03)
+23.90  WALK Shared switchback - lower end (71.91, 29.88, 74.03)
+23.90  WALK Shared switchback - upper Step 1 (71.70, 30.12, 74.35)
+23.96  WALK Shared switchback - upper Step 6 (70.74, 31.28, 75.85)
+24.29  WALK Shared switchback - upper Step 11 (69.77, 32.43, 77.35)
+24.61  WALK Shared switchback - upper Step 16 (68.81, 33.59, 78.85)
+24.99  WALK Shared switchback - upper Step 21 (67.84, 34.75, 80.35)
+26.92  WALK Shared switchback - upper end (67.65, 34.98, 80.65)
+26.95  WALK 02 Upper junction (67.55, 35.10, 80.80)
+26.98  PASS reachable at 0/6 without course unlocks or teleport: 02 Upper junction
+26.98  STAGED POSITIONS FOLLOW: temporary player placements for repeatable tests; normal movement, E, mouse, R and Space after positioning.
+27.21  WALK C board ferry for displaced passenger trial (106.05, 24.08, 50.58)
+27.52  CAST 잎 나룻배 from (105.641, 25.130, 50.414)
+28.47  C ferry R trial: stage=0; player=(104.100, 25.120, 49.750); ferry=(106.050, 23.870, 50.580); from=(106.050, 23.870, 50.580); retries=1
+28.70  WALK C board ferry for displaced passenger trial (106.05, 24.08, 50.58)
+29.01  CAST 잎 나룻배 from (105.627, 25.130, 50.401)
+32.80  C ferry carried while riding: player (106.184, 25.129, 50.537)->(111.801, 25.120, 51.914), ferry (106.618, 23.869, 50.719)->(112.250, 23.860, 52.100); deck center offset=0.486
+32.80  WALK C actual low landing from ferry (112.70, 24.07, 52.70)
+34.15  C actual step-off retries=1, returned=(115.220, 29.890, 64.180), launchCenter=(115.200, 28.840, 64.180), stage=2
+37.32  C launch offset=0.00 start=(115.200, 29.885, 64.180) grounded=True E=True hover=True landing=(128.070, 28.340, 63.020) reached=True groundedAfter=True
+40.49  C launch offset=-0.65 start=(115.200, 29.885, 63.530) grounded=True E=True hover=True landing=(128.070, 28.340, 63.020) reached=True groundedAfter=True
+43.66  C launch offset=0.65 start=(115.200, 29.885, 64.830) grounded=True E=True hover=True landing=(128.070, 28.340, 63.020) reached=True groundedAfter=True
+46.82  C launch offset=-0.90 start=(115.200, 29.885, 63.280) grounded=True E=True hover=True landing=(128.070, 28.340, 63.020) reached=True groundedAfter=True
+49.99  C launch offset=0.90 start=(115.200, 29.885, 65.080) grounded=True E=True hover=True landing=(128.070, 28.340, 63.020) reached=True groundedAfter=True
+52.11  F jump offset=(0.00, 0.00, 0.00) start=(64.039, 29.355, 68.605) grounded=True autoLaunch=True reachedWindow=True final=(61.500, 34.100, 74.200)
+54.18  F jump offset=(0.82, 0.00, 0.00) start=(64.820, 29.255, 68.650) grounded=True autoLaunch=True reachedWindow=True final=(61.500, 34.100, 74.199)
+56.25  F jump offset=(-0.82, 0.00, 0.00) start=(63.180, 29.255, 68.650) grounded=True autoLaunch=True reachedWindow=True final=(61.500, 34.100, 74.200)
+58.31  F jump offset=(0.00, 0.00, 0.88) start=(64.061, 29.800, 69.459) grounded=True autoLaunch=True reachedWindow=True final=(61.500, 34.100, 74.200)
+60.38  F jump offset=(0.00, 0.00, -0.88) start=(64.000, 29.255, 67.770) grounded=True autoLaunch=True reachedWindow=True final=(61.500, 34.100, 74.200)
+62.45  F jump offset=(1.02, 0.00, 0.00) start=(65.020, 29.255, 68.650) grounded=True autoLaunch=False reachedWindow=False final=(65.020, 29.260, 68.650)
+62.68  WALK G closed-door approach step (57.67, 35.17, 82.27)
+62.69  WALK G closed-door approach step (56.87, 35.88, 83.00)
+62.84  WALK G closed-door approach step (56.07, 36.60, 83.72)
+65.59  G staged 5/6, wing open=False,False, deepest=-0.572, ended=False, root=(54.174, 38.633, 83.726)
+65.67  PASS no new Unity Console errors

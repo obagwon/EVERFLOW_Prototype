@@ -1,0 +1,12 @@
+0.26  WALK B oblique northern edge leaf (97.45, 26.11, 42.56)
+0.72  WALK B oblique northern edge leaf (100.19, 26.11, 42.56)
+1.18  WALK B oblique northern edge leaf (102.93, 26.11, 42.56)
+1.64  B PASS walk along leaves 1.01m north of center, no automatic recovery, grounded=True pos=(102.516, 27.160, 42.386)
+1.89  WALK B first leaf before deliberate water fall (97.45, 26.11, 41.55)
+2.90  B water fall retries=1, player=(94.649, 26.750, 41.530), stage=2, leafTop=26.110
+2.90  SIGN Korean trail text 중앙 갈림길 / B 수조  ·  D 골짜기 / C 선착장  ·  상층 보행로, pos=(74.014, 25.400, 35.880), forward=(-0.174, 0.000, -0.985)
+2.90  SIGN Korean trail text 상층 / E 회전 잎  ·  W 정비 발코니 / 채광실  ·  풍차, pos=(66.350, 36.500, 81.681), forward=(0.000, 0.000, -1.000)
+2.90  SIGN Korean trail text B  잎 물받이와 얼음 수조, pos=(83.091, 25.220, 38.070), forward=(-0.500, 0.000, -0.866)
+2.90  SIGN Korean trail text C  나룻배와 바람길, pos=(102.400, 25.500, 49.581), forward=(0.000, 0.000, -1.000)
+2.90  SIGN Korean trail text W  정비 수문, pos=(84.200, 36.200, 79.781), forward=(0.000, 0.000, -1.000)
+2.97  PASS no new Unity Console errors

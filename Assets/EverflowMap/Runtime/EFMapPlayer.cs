@@ -167,7 +167,7 @@ namespace EverflowMap
             airGrace = Mathf.Max(0, airGrace - Time.deltaTime);
             if (controller.isGrounded && airGrace <= 0)
             {
-                if (supportTransform != null) controller.Move(supportTransform.TransformPoint(supportLocal) - supportWorld);
+                FollowGroundSupport();
                 velocity.y = -2;
                 momentum = Vector3.MoveTowards(momentum, Vector3.zero, Time.deltaTime * 35);
                 if (EFInput.KeyDown(KeyCode.Space))
@@ -185,8 +185,28 @@ namespace EverflowMap
             LocomotionSpeed=Vector3.ProjectOnPlane(transform.position-beforeMove,Vector3.up).magnitude/Mathf.Max(.0001f,Time.deltaTime);
             if (input.sqrMagnitude > .001f || momentum.sqrMagnitude > .05f) FaceMotion(transform.position - beforeMove);
             if ((flags & CollisionFlags.Above) != 0 && velocity.y > 0) velocity.y = 0;
-            if (supportTransform != null)
-            { supportWorld = transform.position; supportLocal = supportTransform.InverseTransformPoint(supportWorld); }
+            StoreGroundSupport();
+        }
+
+        void FollowGroundSupport(float groundSnap = 0)
+        {
+            if (supportTransform == null) return;
+            controller.Move(supportTransform.TransformPoint(supportLocal) - supportWorld - Vector3.up * groundSnap);
+        }
+
+        void StoreGroundSupport()
+        {
+            if (supportTransform == null) return;
+            supportWorld = transform.position;
+            supportLocal = supportTransform.InverseTransformPoint(supportWorld);
+        }
+
+        internal void FollowSupportDuringCutaway()
+        {
+            if (!Grounded || supportTransform == null || !controller.enabled) return;
+            Physics.SyncTransforms();
+            FollowGroundSupport(.08f);
+            StoreGroundSupport();
         }
         void OnControllerColliderHit(ControllerColliderHit hit)
         {

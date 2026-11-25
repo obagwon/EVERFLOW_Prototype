@@ -1,0 +1,21 @@
+0.03  STAGED B trials. Applied the same progression in memory, and explicitly placed the rider. Scene data is unchanged.
+1.32  B projected centerDepth=9.897; ray near stack=잎 물받이:7.155:True > PH_B_Leak · 누수구:9.450:True; actualHover=잎 물받이; HUD=잎 물받이  ·  BLOOM 대상입니다.
+1.44  B before freeze: feet=22.250, leafTop=22.200, waterTop=22.170
+1.44  B rising sample 0: cutaway=True control=False feet=22.250 leafTop=22.200 waterTop=22.170 retries=0
+1.61  B rising sample 1: cutaway=True control=False feet=22.250 leafTop=22.258 waterTop=22.235 retries=0
+1.78  B rising sample 2: cutaway=True control=False feet=22.250 leafTop=22.451 waterTop=22.416 retries=0
+1.96  B rising sample 3: cutaway=True control=False feet=22.250 leafTop=22.712 waterTop=22.690 retries=0
+2.13  B rising sample 4: cutaway=True control=False feet=22.250 leafTop=23.093 waterTop=23.035 retries=0
+2.30  B rising sample 5: cutaway=True control=False feet=22.250 leafTop=23.472 waterTop=23.436 retries=0
+2.47  B rising sample 6: cutaway=True control=False feet=22.250 leafTop=23.946 waterTop=23.866 retries=0
+2.64  B rising sample 7: cutaway=True control=False feet=22.250 leafTop=24.369 waterTop=24.308 retries=0
+2.81  B rising sample 8: cutaway=True control=False feet=22.250 leafTop=24.835 waterTop=24.736 retries=0
+2.99  B rising sample 9: cutaway=True control=False feet=22.250 leafTop=25.267 waterTop=25.126 retries=0
+3.16  B rising sample 10: cutaway=False control=True feet=24.057 leafTop=25.624 waterTop=25.462 retries=1
+3.33  B rising sample 11: cutaway=False control=True feet=24.057 leafTop=25.894 waterTop=25.722 retries=1
+3.50  B rising sample 12: cutaway=False control=True feet=24.057 leafTop=26.063 waterTop=25.885 retries=1
+3.67  B rising sample 13: cutaway=False control=True feet=24.057 leafTop=26.110 waterTop=25.930 retries=1
+3.84  B rising sample 14: cutaway=False control=True feet=24.057 leafTop=26.110 waterTop=25.930 retries=1
+4.01  B rising sample 15: cutaway=False control=True feet=24.057 leafTop=26.110 waterTop=25.930 retries=1
+7.01  B moving support after camera control: feet=23.674->26.136, leaf=23.638->26.110, cutaway=False, retries=0, grounded=True
+7.01  PASS no new Unity Console errors

@@ -17,6 +17,10 @@ namespace EverflowMap
         public Transform flyTo;
         public bool tutorial;
         public Vector3 windDirection = Vector3.forward;
+        [Tooltip("Visible device meshes used for aiming. Leave empty for direction-only devices.")]
+        public Renderer[] aimModels = System.Array.Empty<Renderer>();
+        [Tooltip("Accept wind toward the first motion's destination when wind pushes this object along a path.")]
+        public bool windMovesFirstMotion;
     }
 }
 
