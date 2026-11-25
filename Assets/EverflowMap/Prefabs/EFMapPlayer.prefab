@@ -132,12 +132,14 @@ MonoBehaviour:
   world: {fileID: 0}
   view: {fileID: 0}
   follow: {fileID: 0}
+  cinemachineRig: {fileID: 0}
+  puzzleLabLocomotion: 0
   moveSpeed: 6
   gravity: 24
   jumpHeight: 1.35
   castRange: 10
   turnSharpness: 14
-  selected: 0
+  selectedAbility: 0
   FlowerUsed: 0
   VineUsed: 0
   SlideUsed: 0

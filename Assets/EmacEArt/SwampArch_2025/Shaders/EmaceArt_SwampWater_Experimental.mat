@@ -1,0 +1,107 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!21 &2100000
+Material:
+  serializedVersion: 8
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: EmaceArt_SwampWater_Experimental
+  m_Shader: {fileID: 4800000, guid: 6fa8adf6d58dbf941be6be1606ad6463, type: 3}
+  m_Parent: {fileID: 0}
+  m_ModifiedSerializedProperties: 0
+  m_ValidKeywords:
+  - _BLENDMODE_MULTIPLY
+  - _SWAMP_ALGAE
+  - _SWAMP_BUBBLES
+  - _SWAMP_ON
+  - _SWAMP_SCUM
+  - _SWAMP_SILT
+  m_InvalidKeywords: []
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_LockedProperties: 
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _BlendTex:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Ints: []
+    m_Floats:
+    - _BlendMode: 0
+    - _BlendScale: -4.6
+    - _BlendScrollX: -3.07
+    - _BlendScrollY: 0.01
+    - _BlendStr: 0.39
+    - _CausticsScale: 3.5
+    - _CausticsSpeed: 0.6
+    - _CausticsStr: 0.3
+    - _DarkPatchStr: 0.18
+    - _DarkScale: 1.8
+    - _DarkSpeed: 0.15
+    - _DepthFade: 0.86
+    - _FoamDepth: 0.3
+    - _FoamDistortScale: 1.8
+    - _FoamDistortSpeed: 0.35
+    - _FoamDistortStr: 0.35
+    - _FoamFlowX: 0.3
+    - _FoamFlowZ: 0
+    - _FoamSharpness: 0.7
+    - _FoamVariation: 0.5
+    - _RippleStr: 0.255
+    - _SwampAlgaeOn: 1
+    - _SwampAlgaeStr: 0.443
+    - _SwampBubbleStr: 0.502
+    - _SwampBubblesOn: 1
+    - _SwampOn: 1
+    - _SwampOpacity: 0.153
+    - _SwampScumOn: 1
+    - _SwampScumStr: 0.159
+    - _SwampSiltOn: 1
+    - _SwampSiltStr: 0.316
+    - _SwampTurbidity: 0.564
+    - _UnderwaterDistortScale: 4.75
+    - _UnderwaterDistortSpeed: 0.5
+    - _UnderwaterDistortStr: 0.0234
+    - _UnderwaterVisibility: 0.489
+    - _WaveHeight: 0.01
+    - _WaveScale: 1
+    - _WaveSpeed: 1
+    m_Colors:
+    - _BlendColor: {r: 0.15, g: 0.35, b: 0.12, a: 1}
+    - _CausticsColor: {r: 0.6, g: 1, b: 0.85, a: 1}
+    - _DarkColor: {r: 0.02, g: 0.1, b: 0.22, a: 1}
+    - _DeepColor: {r: 0.05, g: 0.28, b: 0.63, a: 1}
+    - _FoamColor: {r: 0.91, g: 0.96, b: 1, a: 1}
+    - _ShallowColor: {r: 0.11, g: 0.91, b: 0.71, a: 0.6}
+    - _SwampAlgaeColor: {r: 0.11, g: 0.28, b: 0.05, a: 1}
+    - _SwampBubbleColor: {r: 0.48, g: 0.46, b: 0.26, a: 1}
+    - _SwampCausticsColor: {r: 0.35, g: 0.5, b: 0.14, a: 1}
+    - _SwampDarkColor: {r: 0.04, g: 0.06, b: 0.02, a: 1}
+    - _SwampDeepColor: {r: 0.5660378, g: 0.5660378, b: 0.5660378, a: 1}
+    - _SwampFoamColor: {r: 0.62, g: 0.65, b: 0.4, a: 1}
+    - _SwampScumColor: {r: 0.2, g: 0.25, b: 0.08, a: 1}
+    - _SwampShallowColor: {r: 0.4792408, g: 0.6415094, b: 0.28746885, a: 0.85}
+    - _SwampSiltColor: {r: 0.22, g: 0.16, b: 0.07, a: 1}
+    - _SwampTurbidColor: {r: 0.16, g: 0.2, b: 0.09, a: 1}
+  m_BuildTextureStacks: []
+--- !u!114 &5306914763222876447
+MonoBehaviour:
+  m_ObjectHideFlags: 11
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0353a89b1f911e48b9e16bdc9f2e058, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  version: 7
