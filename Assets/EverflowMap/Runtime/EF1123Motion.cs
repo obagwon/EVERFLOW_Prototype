@@ -8,6 +8,7 @@ namespace EverflowMap
     {
         public Vector3 offset, turn, openScale = Vector3.one;
         [Min(.05f)] public float seconds = .8f;
+        [Min(0f)] public float openDelay;
         public Vector3 sway;
         [Min(.2f)] public float period = 3.5f;
         public float alignmentTolerance = 17;
@@ -17,7 +18,7 @@ namespace EverflowMap
 
         Vector3 closedPosition, closedScale;
         Quaternion closedRotation;
-        float value, clock;
+        float value, clock, remainingDelay;
         bool initialized;
 
         public void Initialize()
@@ -35,6 +36,7 @@ namespace EverflowMap
             IsOpen = beginsOpen;
             value = beginsOpen ? 1 : 0;
             clock = 0;
+            remainingDelay = beginsOpen ? 0f : openDelay;
             ApplyPose();
         }
 
@@ -46,6 +48,12 @@ namespace EverflowMap
         public void Tick(float delta)
         {
             if (!IsOpen && sway.sqrMagnitude > 0) clock += delta;
+            if (IsOpen && remainingDelay > 0f)
+            {
+                float waiting = Mathf.Min(delta, remainingDelay);
+                remainingDelay -= waiting;
+                delta -= waiting;
+            }
             value = Mathf.MoveTowards(value, IsOpen ? 1 : 0, delta / seconds);
             ApplyPose();
         }

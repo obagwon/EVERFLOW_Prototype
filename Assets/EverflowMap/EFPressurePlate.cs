@@ -13,26 +13,55 @@ namespace EverflowMap
         public EF1123Motion[] opens = new EF1123Motion[0];
         [Tooltip("켜면 한 번 눌리면 계속 눌린 상태")]
         public bool latch = true;
+        public bool requiresInteraction;
         public float radius = .8f;
         public float sink = .08f;
 
         Vector3 home;
-        bool pressed, done;
+        bool pressed, done, waitForStep;
         float k;
 
-        void Start() { home = transform.localPosition; if (world == null) world = FindAnyObjectByType<EF1123World>(); }
+        public bool NeedsPress => isActiveAndEnabled && (cover == null || !cover.activeInHierarchy) && !done;
+        public bool CanPress => NeedsPress && PlayerInReach;
+
+        bool PlayerInReach
+        {
+            get
+            {
+                if (world == null || world.player == null || !world.player.Grounded) return false;
+                Vector3 delta = world.player.transform.position - transform.position;
+                return delta.x * delta.x + delta.z * delta.z <= radius * radius && Mathf.Abs(delta.y) < 1.6f;
+            }
+        }
+
+        void Start()
+        {
+            home = transform.localPosition;
+            if (world == null) world = FindAnyObjectByType<EF1123World>();
+            waitForStep = !requiresInteraction && cover != null && PlayerInReach;
+        }
+
+        public bool TryPress()
+        {
+            if (!CanPress) return false;
+            done = true;
+            foreach (var motion in opens)
+                if (motion != null) motion.Open();
+            return true;
+        }
 
         void Update()
         {
-            if (world == null || world.player == null) return;
-            Vector3 p = world.player.transform.position, c = transform.position;
-            bool on = (cover == null || !cover.activeInHierarchy) && world.player.Grounded &&
-                      new Vector2(p.x - c.x, p.z - c.z).sqrMagnitude <= radius * radius && Mathf.Abs(p.y - c.y) < 1.6f;
-            pressed = on || (latch && done);
-            if (on && !done)
+            if (requiresInteraction)
+                pressed = done;
+            else
             {
-                done = true;
-                foreach (var m in opens) if (m != null) m.Open();
+                bool inReach = PlayerInReach;
+                bool covered = cover != null && cover.activeInHierarchy;
+                if (covered || !inReach) waitForStep = inReach;
+                bool on = !covered && inReach && !waitForStep;
+                if (on && !done) TryPress();
+                pressed = on || (latch && done);
             }
             k = Mathf.MoveTowards(k, pressed ? 1 : 0, Time.deltaTime * 6);
             transform.localPosition = home - Vector3.up * (sink * k);

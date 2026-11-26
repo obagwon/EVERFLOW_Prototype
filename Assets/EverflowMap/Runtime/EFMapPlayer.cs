@@ -46,6 +46,10 @@ namespace EverflowMap
         public float LocomotionSpeed {get;private set;}
         public float VerticalSpeed => velocity.y;
         public bool Grounded => controller!=null&&controller.isGrounded&&velocity.y<=.1f&&airGrace<=0;
+        internal Collider JumpBoostSurface { get; set; }
+        internal float BoostedJumpHeight { get; set; }
+        internal bool HasJumpBoost => Grounded && JumpBoostSurface != null && JumpBoostSurface.enabled &&
+            supportTransform == JumpBoostSurface.transform;
         public int TeleportVersion {get;private set;}
         public bool Traversing { get; private set; }
         public event System.Action<bool> TraversalFinished;
@@ -167,6 +171,7 @@ namespace EverflowMap
             airGrace = Mathf.Max(0, airGrace - Time.deltaTime);
             if (controller.isGrounded && airGrace <= 0)
             {
+                bool jumpBoost = HasJumpBoost;
                 FollowGroundSupport();
                 velocity.y = -2;
                 momentum = Vector3.MoveTowards(momentum, Vector3.zero, Time.deltaTime * 35);
@@ -174,7 +179,12 @@ namespace EverflowMap
                 {
                     if (ground != null && ground.kind == MapKind.Flower && ground.Done && ground.launchTarget != null)
                     { FlowerUsed = true; LaunchTo(ground.launchTarget.position, 14); }
-                    else { velocity.y = Mathf.Sqrt(2 * gravity * jumpHeight); supportTransform = null; }
+                    else
+                    {
+                        float height = jumpBoost ? BoostedJumpHeight : jumpHeight;
+                        velocity.y = Mathf.Sqrt(2 * gravity * height);
+                        supportTransform = null;
+                    }
                 }
             }
             velocity.y -= gravity * Time.deltaTime;
@@ -199,6 +209,21 @@ namespace EverflowMap
             if (supportTransform == null) return;
             supportWorld = transform.position;
             supportLocal = supportTransform.InverseTransformPoint(supportWorld);
+        }
+
+        internal bool TrackGroundSupport(Collider surface)
+        {
+            if (!Grounded || !surface.enabled) return false;
+            if (supportTransform == surface.transform) return true;
+
+            // When two walkable surfaces overlap, prefer the moving deck directly underfoot.
+            Vector3 feet = transform.TransformPoint(controller.center - Vector3.up * (controller.height * .5f));
+            if (!surface.Raycast(new Ray(feet + Vector3.up * .08f, Vector3.down), out var hit, .20f) ||
+                hit.normal.y < .5f) return false;
+
+            supportTransform = surface.transform;
+            StoreGroundSupport();
+            return true;
         }
 
         internal void FollowSupportDuringCutaway()

@@ -206,10 +206,16 @@ namespace EverflowMap
                 if (!Physics.Raycast(from, to.normalized, to.magnitude - .20f, ~(1 << 2), QueryTriggerInteraction.Ignore))
                     return;
             }
+            ShowCutaway(pose, 1.55f);
+        }
+
+        internal void ShowCutaway(Transform pose, float seconds)
+        {
+            if (cutaway == null || pose == null) return;
             cutaway.transform.SetPositionAndRotation(pose.position, pose.rotation);
             cutaway.PreviousStateIsValid = false;
             cutaway.Priority = 220;
-            cueTime = 1.55f;
+            cueTime = seconds;
             world.SetCinematic(true);
         }
 

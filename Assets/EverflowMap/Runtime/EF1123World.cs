@@ -15,6 +15,9 @@ namespace EverflowMap
         public Transform star;
         public EF1123Motion returnGate;
         public EF1123Motion returnExit;
+        public GameObject revealOnCollect;
+        public EF1123Motion requiredRewardMotion;
+        [Min(.1f)] public float pickupRadius = 1.12f;
         [NonSerialized] public int stage;
         [NonSerialized] public bool collected;
         [NonSerialized] public Vector3 starPosition;
@@ -36,18 +39,29 @@ namespace EverflowMap
         static readonly KeyCode[] WindKeys = {KeyCode.W, KeyCode.D, KeyCode.S, KeyCode.A};
         static readonly Key[] WindArrows = {Key.UpArrow, Key.RightArrow, Key.DownArrow, Key.LeftArrow};
         const float CastRange = 18, RecallRange = 24;
-        const float WindAlignment = .707f, WindDuration = .85f;
+        const float WindAlignment = .707f, WindDuration = .85f, WindRange = 6f, WindOriginHeight = .55f;
         const float HazardGrace = .22f, SafeGroundInterval = .28f;
         const int WalkableMask = ~(1 << 2);
         public EFMapPlayer player;
         public Transform jumpPad, jumpDestination, flowerTuft;
+        public EFMapAnimation jumpFlowerGrowth;
+        public Collider jumpFlowerSurface;
+        [Min(.1f)] public float jumpFlowerHeight = 5f;
+        public EF1123WindChimes windChimes;
+        public bool showGliderAtRest;
+        public bool grabGliderByProximity;
+        public bool collectRewardsOnApproach;
         public EF1123SafePoint[] checkpoints;
         public EF1123Course[] courses;
         public EF1123Target[] tutorials;
+        public EF1123Target[] optionalTargets = Array.Empty<EF1123Target>();
         public EF1123Motion[] motions;
         public EF1123Motion[] windmillDoors;
         public Transform[] orbs;
         public Renderer[] water;
+        public EF1123WaterPresentation waterPresentation;
+        public EF1123EastSpring eastSpring;
+        public EF1123EastBubble eastBubble;
         public Renderer[] deepWater;
         public Material windTrailMaterial;
         public EFV2FallRecovery fallRecovery;
@@ -55,9 +69,12 @@ namespace EverflowMap
         public Vector3 finishCenter;
         public EF1123PlayUI playUI;
         public EF1123Effects effects;
+        public EFPressurePlate gateButton;
         public EFWindmillInterior interior;
         public EFV2TargetMeshCache modelAimMeshes;
         public Shader windArrowShader;
+        public bool directModelCasting;
+        public bool automaticRecovery = true;
 
         public int Count => collectedStars.Count;
         public string CollectibleName => playUI == null ? "별" : "숨결 조각";
@@ -72,21 +89,25 @@ namespace EverflowMap
         public int TutorialStage => tutorialStage;
         public bool HoldingFlower => held != null;
         public EF1123Target PendingFlow => pendingFlow;
-        public bool ChoosingWind => AbilityMode && Selected == LabAbility.Flow && windCompass != null;
+        public bool ChoosingWind => AbilityMode && Selected == LabAbility.Flow && UsesWindCompass;
+        internal bool UsesWindCompass => windCompass != null;
         public bool UsesModelAim => modelAim != null;
         public int HoveredWindDirection { get; private set; } = -1;
         public float MessageUntil { get; private set; }
         public string AimNotice => Time.unscaledTime < aimNoticeUntil ? aimNotice : null;
         public bool HasWindReceiver { get; private set; }
-        public bool CanGrabFlower => flowerTuft != null && courses[3].stage == 2 && held == null &&
-            !player.Traversing && player.Grounded && Near(courses[3].steps[2].station.position + Vector3.up, 1.4f, 1);
-        public bool CanLaunchJumpFlower => jumpPad != null && courses[5].stage == 1 && player.Grounded &&
+        public bool CanGrabFlower => flowerTarget != null && IsCurrentTarget(flowerTarget) && held == null &&
+            !player.Traversing && (grabGliderByProximity ? Near(tuftRest, 1.65f, 1.85f) :
+                player.Grounded && Near(flowerTarget.station.position + Vector3.up, 1.4f, 1f));
+        public bool CanLaunchJumpFlower => jumpFlowerSurface != null ? player.HasJumpBoost :
+            jumpPad != null && jumpDestination != null && courses[5].stage == 1 && player.Grounded &&
             Near(jumpPad.position + Vector3.up, .95f, .8f);
 
         readonly EFV2OrbSlot<EF1123Target>[] slots = {new(), new(), new()};
         readonly EF1123ModelAim.Contact?[] orbContacts = new EF1123ModelAim.Contact?[3];
         readonly EF1123Target[] windPreview = new EF1123Target[4];
         readonly HashSet<string> collectedStars = new(StringComparer.Ordinal);
+        readonly HashSet<EF1123Target> completedOptionalTargets = new();
         EF1123ModelAim modelAim;
         EF1123ModelAim.Contact? hoverContact;
         EF1123WindCompass windCompass;
@@ -94,7 +115,7 @@ namespace EverflowMap
         Pose startingPose;
         Pose? recentSafeGround;
         CharacterController body;
-        EF1123Target pendingFlow, held, flight;
+        EF1123Target pendingFlow, held, flight, flowerTarget;
         Font font;
         MaterialPropertyBlock properties;
         bool paused;
@@ -111,12 +132,17 @@ namespace EverflowMap
         {
             startingPose = new Pose(player.transform.position, player.transform.rotation);
             body = player.GetComponent<CharacterController>();
-            if (modelAimMeshes != null) modelAim = new EF1123ModelAim(this, modelAimMeshes);
-            if (playUI != null && windArrowShader != null) windCompass = new EF1123WindCompass(transform, windArrowShader);
+            player.JumpBoostSurface = jumpFlowerSurface;
+            player.BoostedJumpHeight = jumpFlowerHeight;
+            if (directModelCasting || modelAimMeshes != null)
+                modelAim = new EF1123ModelAim(this, modelAimMeshes);
+            if (playUI != null && windArrowShader != null)
+                windCompass = new EF1123WindCompass(transform, windArrowShader);
             foreach (var motion in motions) motion.Initialize();
             if (interior == null)
                 foreach (var course in courses) course.starPosition = course.star.position;
             properties = new MaterialPropertyBlock();
+            waterPresentation?.Apply(0f);
             font = LabSignFont.Get();
             var trail = new GameObject("FLOW gust trail");
             trail.transform.SetParent(transform, false);
@@ -127,7 +153,11 @@ namespace EverflowMap
             windTrail.endWidth = .015f;
             windTrail.enabled = false;
             foreach (var sign in GetComponentsInChildren<TextMesh>(true)) LabSignFont.Apply(sign);
-            if (flowerTuft != null) tuftRest = flowerTuft.position;
+            if (flowerTuft != null)
+            {
+                tuftRest = flowerTuft.position;
+                flowerTarget = Array.Find(courses[3].steps, target => target.grabFirst);
+            }
             player.TraversalFinished += EndTraversal;
             player.cinemachineRig.ResetView(true);
             SetInput();
@@ -198,26 +228,40 @@ namespace EverflowMap
                 if (EFMapInput.KeyDown(KeyCode.Alpha2)) Select(LabAbility.Freeze);
                 if (EFMapInput.KeyDown(KeyCode.Alpha3)) Select(LabAbility.Flow);
             }
-            if (AbilityMode) return;
-
             float dt = Time.deltaTime;
+            if (AbilityMode)
+            {
+                if (eastBubble != null) eastBubble.Tick(this, dt);
+                return;
+            }
             motionTime += dt;
             foreach (var motion in motions) motion.Tick(dt);
+            if (jumpFlowerSurface != null && !jumpFlowerSurface.enabled && jumpFlowerGrowth.Complete)
+                jumpFlowerSurface.enabled = true;
+            if (eastSpring != null) eastSpring.Tick(this, dt);
+            if (eastBubble != null) eastBubble.Tick(this, dt);
             TickOrbs(dt);
             TickWind(dt);
-            foreach (var r in water)
+            if (waterPresentation != null)
             {
-                r.GetPropertyBlock(properties);
-                properties.SetFloat("_WaterTime", motionTime);
-                properties.SetVector("_FlowOffset", new Vector4(motionTime * .12f, motionTime * .025f, 0, 0));
-                r.SetPropertyBlock(properties);
+                waterPresentation.Apply(motionTime);
+            }
+            else
+            {
+                foreach (var r in water)
+                {
+                    r.GetPropertyBlock(properties);
+                    properties.SetFloat("_WaterTime", motionTime);
+                    properties.SetVector("_FlowOffset", new Vector4(motionTime * .12f, motionTime * .025f, 0, 0));
+                    r.SetPropertyBlock(properties);
+                }
             }
             if (Cinematic)
             {
                 player.FollowSupportDuringCutaway();
                 return;
             }
-            if (UpdateRecovery(dt)) return;
+            if (automaticRecovery && UpdateRecovery(dt)) return;
             UpdateStations();
             if (interior != null)
             {
@@ -236,9 +280,18 @@ namespace EverflowMap
             }
             if (held == null && !player.Traversing)
             {
-                if (EFMapInput.KeyDown(KeyCode.E)) TryGrab();
+                if (EFMapInput.KeyDown(KeyCode.E))
+                {
+                    if (gateButton != null && gateButton.requiresInteraction && gateButton.TryPress())
+                        Report("돌 버튼을 눌러 나무 성문을 열었습니다.");
+                    else
+                        TryGrab();
+                }
                 if (EFMapInput.KeyDown(KeyCode.Space) && CanLaunchJumpFlower)
-                    LaunchFlower();
+                {
+                    if (jumpFlowerSurface == null) LaunchFlower();
+                    else effects?.Jump();
+                }
             }
         }
 
@@ -248,7 +301,10 @@ namespace EverflowMap
             {
                 bool carrying = flight != null || held != null;
                 flowerTuft.position = carrying ? player.transform.position + Vector3.up * 1.9f : tuftRest;
-                flowerTuft.gameObject.SetActive(carrying || courses[3].stage == 2);
+                bool available = flowerTarget != null && (showGliderAtRest
+                    ? courses[flowerTarget.course].stage <= flowerTarget.order
+                    : IsCurrentTarget(flowerTarget));
+                flowerTuft.gameObject.SetActive(carrying || available);
             }
             if (!AbilityMode) return;
             Physics.SyncTransforms();
@@ -282,6 +338,11 @@ namespace EverflowMap
                 }
                 return;
             }
+            UpdateTargetAim(ray);
+        }
+
+        void UpdateTargetAim(Ray ray)
+        {
             var previousTarget = Hovered;
             hoverContact = null;
             if (UsesModelAim)
@@ -298,7 +359,7 @@ namespace EverflowMap
                 return;
             }
             if (!CanCast(Hovered, out string reason)) { RejectAim(reason); return; }
-            if (Selected == LabAbility.Flow && pendingFlow != Hovered)
+            if (!directModelCasting && Selected == LabAbility.Flow && pendingFlow != Hovered)
             {
                 pendingFlow = Hovered;
                 effects?.ChooseFlow();
@@ -341,36 +402,50 @@ namespace EverflowMap
 
         public string WindSetupHint()
         {
+            if (grabGliderByProximity && held != null)
+                return "Esc로 나와 착지할 곳 쪽을 바라보세요.";
             EF1123Target nearby = null;
             float nearest = 81f;
             foreach (var course in courses)
                 for (int step = course.stage; step < course.steps.Length; step++)
-                {
-                    var target = course.steps[step];
-                    if (target.ability != LabAbility.Flow || !target.isActiveAndEnabled) continue;
-                    var anchor = target.station != null ? target.station.position + Vector3.up : target.transform.position;
-                    float distance = (anchor - player.transform.position).sqrMagnitude;
-                    if (distance >= nearest) continue;
-                    nearby = target;
-                    nearest = distance;
-                }
+                    Consider(course.steps[step]);
+            foreach (var target in optionalTargets)
+                if (IsCurrentTarget(target)) Consider(target);
             if (nearby == null) return "근처에 반응할 장치가 없어요.";
             if (!CanCast(nearby, out string reason)) return reason;
             return "Esc로 나와 " + (nearby.grabFirst ? "착지할 곳" : "장치") + " 쪽을 바라보세요.";
+
+            void Consider(EF1123Target target)
+            {
+                if (target.ability != LabAbility.Flow || !target.isActiveAndEnabled) return;
+                var anchor = target.station != null ? target.station.position + Vector3.up : target.transform.position;
+                float distance = (anchor - player.transform.position).sqrMagnitude;
+                if (distance >= nearest) return;
+                nearby = target;
+                nearest = distance;
+            }
         }
 
         public EF1123Target WindReceiver(int choice)
         {
             Vector3 direction = WindDirection(choice);
+            if (grabGliderByProximity && held != null)
+            {
+                Vector3 towardLanding = Horizontal(held.flyTo.position - player.transform.position);
+                return Vector3.Dot(direction, towardLanding.normalized) >= WindAlignment && CanCast(held, out _) ? held : null;
+            }
             EF1123Target receiver = null;
             float nearest = float.PositiveInfinity;
             foreach (var course in courses)
+                if (course.stage < course.steps.Length) Consider(course.steps[course.stage]);
+            foreach (var target in optionalTargets) Consider(target);
+            return receiver;
+
+            void Consider(EF1123Target target)
             {
-                if (course.stage >= course.steps.Length) continue;
-                var target = course.steps[course.stage];
-                if (target.ability != LabAbility.Flow || !target.isActiveAndEnabled) continue;
+                if (target.ability != LabAbility.Flow || !target.isActiveAndEnabled) return;
                 Vector3 toward = Horizontal(target.transform.position - player.transform.position);
-                if (toward.sqrMagnitude >= nearest) continue;
+                if (toward.sqrMagnitude >= nearest) return;
                 Vector3 travel = toward;
                 if (target.flyTo != null)
                     travel = Horizontal(target.flyTo.position - player.transform.position);
@@ -381,14 +456,26 @@ namespace EverflowMap
                     travel = Horizontal(parent == null ? motion.offset : parent.TransformVector(motion.offset));
                     // Objects within arm's reach can be pushed along their track from the side.
                     if (toward.sqrMagnitude > 1.25f * 1.25f && Vector3.Dot(direction, toward.normalized) < WindAlignment)
-                        continue;
+                        return;
                 }
                 if (travel.sqrMagnitude < .0025f) travel = Horizontal(target.windDirection);
-                if (Vector3.Dot(direction, travel.normalized) < WindAlignment || !CanCast(target, out _)) continue;
+                if (target.windLaneRadius > 0 ? !WindReachesLane(target, direction) :
+                    Vector3.Dot(direction, travel.normalized) < WindAlignment) return;
+                if (!CanCast(target, out _)) return;
                 receiver = target;
                 nearest = toward.sqrMagnitude;
             }
-            return receiver;
+        }
+
+        bool WindReachesLane(EF1123Target target, Vector3 direction)
+        {
+            if (!player.Grounded || Vector3.Dot(direction, target.transform.forward) < .90f) return false;
+            Vector3 origin = player.transform.position + Vector3.up * WindOriginHeight;
+            Vector3 offset = target.transform.position - origin;
+            float distance = Vector3.Dot(offset, direction);
+            return distance > 0 && distance <= WindRange &&
+                (offset - direction * distance).sqrMagnitude <= target.windLaneRadius * target.windLaneRadius &&
+                !Physics.Raycast(origin, direction, Mathf.Max(0, distance - .04f), WalkableMask, QueryTriggerInteraction.Ignore);
         }
 
         public void SendWind(int choice)
@@ -397,10 +484,11 @@ namespace EverflowMap
             Physics.SyncTransforms();
             var direction = WindDirection(choice);
             var target = WindReceiver(choice);
-            var origin = player.transform.position + Vector3.up * .55f;
-            const float visibleRange = 6f;
-            float length = Physics.Raycast(origin, direction, out var wall, visibleRange,
-                WalkableMask, QueryTriggerInteraction.Ignore) ? wall.distance : visibleRange;
+            var origin = player.transform.position + Vector3.up * WindOriginHeight;
+            float range = target != null && target.windLaneRadius > 0
+                ? Vector3.Dot(target.transform.position - origin, direction) : WindRange;
+            float length = Physics.Raycast(origin, direction, out var wall, range,
+                WalkableMask, QueryTriggerInteraction.Ignore) ? wall.distance : range;
             nextCast = Time.time + .2f;
             LeaveAbility();
             StartWind(origin, direction, length);
@@ -414,21 +502,40 @@ namespace EverflowMap
 
         static Vector3 Horizontal(Vector3 vector) => Vector3.ProjectOnPlane(vector, Vector3.up);
 
+        internal bool IsCurrentTarget(EF1123Target target) =>
+            eastBubble != null && eastBubble.target == target ? eastBubble.IsAvailable :
+                target.tutorial ? tutorialStage == target.order :
+                IsOptional(target) ? !completedOptionalTargets.Contains(target) :
+                grabGliderByProximity && target == flowerTarget ? courses[target.course].stage <= target.order :
+                courses[target.course].stage == target.order;
+
+        bool IsOptional(EF1123Target target) => Array.IndexOf(optionalTargets, target) >= 0;
+
         public bool CanCast(EF1123Target target, out string reason)
         {
-            bool pickModel = UsesModelAim && target.aimModels.Length > 0 && target.ability != LabAbility.Flow;
+            bool pickModel = directModelCasting ||
+                (UsesModelAim && target.aimModels.Length > 0 && target.ability != LabAbility.Flow);
             Vector3? hitPoint = pickModel && target == Hovered ? hoverContact?.Point : null;
             if (target.ability != Selected)
                 reason = AbilityLabels[(int)target.ability] + " 대상입니다.";
+            else if (grabGliderByProximity && target == flowerTarget)
+                reason = held == target ? null : "꽃씨 가까이에서 E를 눌러 잡으세요.";
             else if ((!pickModel || hitPoint.HasValue) &&
                      Vector3.Distance(player.transform.position, hitPoint ?? target.transform.position) > CastRange)
                 reason = "사거리 밖입니다. 가까이 이동하세요.";
-            else if (target.tutorial ? tutorialStage != target.order : courses[target.course].stage != target.order)
+            else if (!IsCurrentTarget(target))
                 reason = "앞 단계의 장치를 먼저 작동시키세요.";
+            else if (eastBubble != null && eastBubble.target == target && eastBubble.IsFrozen)
+                reason = "물방울이 얼어 있어요. 녹으면 다시 떠오릅니다.";
+            else if (waterPresentation?.overflowBasin?.WaitingForFerryWater(target) == true)
+                reason = "수조에서 물이 들어와 잎 나룻배가 뜰 때까지 기다리세요.";
             else if (target.requiredMotion != null && !target.requiredMotion.AtOpenPose)
-                reason = interior != null ? "수조에 물이 찰 때까지 기다리세요." : "씨앗이 흙받이에 안착할 때까지 기다리세요.";
+                reason = target.windLaneRadius > 0 ? "회전 가림막을 돌려 바람길을 여세요." :
+                    GateButtonControls(target.requiredMotion) ? (gateButton.requiresInteraction
+                    ? "잎 아래 드러난 돌 버튼으로 성문을 여세요." : "잎 아래 드러난 돌 버튼 위에 올라서세요.") :
+                    interior != null ? "수조에 물이 찰 때까지 기다리세요." : "씨앗이 흙받이에 안착할 때까지 기다리세요.";
             else if (target.station != null && !Near(target.station.position + Vector3.up, target.stationRadius, 2.1f))
-                reason = "조작 발판 가까이에서 능력을 사용하세요.";
+                reason = directModelCasting ? "장치를 조작할 수 있는 위치로 가까이 오세요." : "조작 발판 가까이에서 능력을 사용하세요.";
             else if (target.grabFirst && held != target)
                 reason = "꽃씨 옆에서 E로 손잡이를 잡으세요.";
             else
@@ -447,6 +554,9 @@ namespace EverflowMap
             }
             return reason == null;
         }
+
+        internal bool GateButtonControls(EF1123Motion motion) =>
+            motion != null && gateButton != null && Array.IndexOf(gateButton.opens, motion) >= 0;
 
         void Select(LabAbility next)
         {
@@ -499,8 +609,18 @@ namespace EverflowMap
         void Apply(EF1123Target target, bool startWindAtTarget = true, Vector3? hitPoint = null)
         {
             effects?.ProjectileArrived(target.ability);
+            if (eastBubble != null && eastBubble.target == target)
+            {
+                if (eastBubble.TryFreeze())
+                {
+                    effects?.Impact(target, hitPoint);
+                    Report(target.solution);
+                }
+                return;
+            }
             if (target.ability == LabAbility.Flow && startWindAtTarget)
-                StartWind(target.transform.position, target.windDirection.normalized, 5.4f);
+                StartWind(directModelCasting && hitPoint.HasValue ? hitPoint.Value : target.transform.position,
+                    target.windDirection.normalized, 5.4f);
             if (target.timedPlatform != null && !target.timedPlatform.IsAligned)
             {
                 Report("잎이 착지턱과 맞는 순간 다시 얼리세요.");
@@ -525,21 +645,27 @@ namespace EverflowMap
         void Advance(EF1123Target target, Vector3? hitPoint = null)
         {
             if (target.tutorial) tutorialStage++;
+            else if (IsOptional(target)) completedOptionalTargets.Add(target);
+            else if (grabGliderByProximity && target == flowerTarget) courses[target.course].stage = target.order + 1;
             else courses[target.course].stage++;
             foreach (var motion in target.motions) motion.Open();
             foreach (var item in target.hide) item.SetActive(false);
             foreach (var item in target.reveal) item.SetActive(true);
             Report(target.solution);
             if (target.flyTo == null) effects?.Impact(target, hitPoint);
+            if (jumpFlowerGrowth != null && target == courses[5].steps[0])
+                jumpFlowerGrowth.Begin();
+            windChimes?.Ring(target);
         }
 
         void TryGrab()
         {
             if (!CanGrabFlower) return;
-            held = courses[3].steps[2];
+            held = flowerTarget;
             SetInput();
             effects?.ChooseFlow();
-            Report(windCompass != null ? "꽃씨를 잡았습니다. 3 → 섬 쪽으로 바람 보내기." :
+            Report(UsesWindCompass ? "꽃씨를 잡았습니다. 3 → 섬 쪽으로 바람 보내기." :
+                directModelCasting ? "꽃씨를 잡았습니다. 3 → 꽃씨 모델을 클릭하세요." :
                 "꽃씨를 잡았습니다. 3 → FLOW 표식 두 번 클릭.");
         }
 
@@ -556,7 +682,11 @@ namespace EverflowMap
         {
             var target = flight;
             flight = null;
-            if (!reached) { RecoverFromFall(); return; }
+            if (!reached)
+            {
+                if (automaticRecovery) RecoverFromFall();
+                return;
+            }
             if (target != null) Advance(target);
         }
 
@@ -597,12 +727,15 @@ namespace EverflowMap
                 if (course.collected) continue;
                 course.star.Rotate(Vector3.up, 42 * Time.deltaTime, Space.World);
                 course.star.position = course.starPosition + Vector3.up * (Mathf.Sin(motionTime * 2.5f) * .12f);
-                if (course.stage != course.steps.Length || !Near(course.starPosition, 1.12f, 1.05f)) continue;
+                if (!collectRewardsOnApproach && (course.stage != course.steps.Length ||
+                    (course.requiredRewardMotion != null && !course.requiredRewardMotion.AtOpenPose))) continue;
+                if (!Near(course.starPosition, course.pickupRadius, 1.05f)) continue;
                 if (!collectedStars.Add(course.starId)) continue;
                 course.collected = true;
                 course.star.gameObject.SetActive(false);
                 if (course.returnGate != null) course.returnGate.Open();
                 if (course.returnExit != null) course.returnExit.Open();
+                if (course.revealOnCollect != null) course.revealOnCollect.SetActive(true);
                 effects?.Reward(course.starPosition, Count == courses.Length);
                 if (Count == courses.Length)
                 {

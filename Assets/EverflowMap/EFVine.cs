@@ -34,6 +34,8 @@ namespace EverflowMap
         [Range(0, 1)] public float witheredLeaf = 1;
         [Min(.05f)] public float seconds = 1.2f;
         [Min(0)] public float delay;
+        [Tooltip("이 오브젝트의 MeshCollider. 덩굴이 다 자라면 줄기 표면을 밟을 수 있어요.")]
+        public MeshCollider walkSurface;
 
         [Header("잎")]
         public Transform[] leaves = new Transform[0];
@@ -64,6 +66,7 @@ namespace EverflowMap
 
         void OnDisable()
         {
+            if (walkSurface != null) walkSurface.sharedMesh = null;
             // 편집 중 잎 크기가 바뀐 채로 저장되지 않게
             if (leafScale != null)
                 for (int i = 0; i < leaves.Length && i < leafScale.Length; i++)
@@ -94,11 +97,14 @@ namespace EverflowMap
         void Apply(float v)
         {
             float s = Mathf.SmoothStep(0, 1, v);
-            if (Mathf.Approximately(s, applied)) return;
+            if (s == applied) return;
             applied = s;
             float length = grow ? s : 1;
             float thick = grow ? 1 : Mathf.Lerp(witheredThickness, 1, s);
+            if (walkSurface != null) walkSurface.sharedMesh = null;
             Build(length, thick);
+            if (walkSurface != null && s >= 1f && mesh.vertexCount > 0)
+                walkSurface.sharedMesh = mesh;
 
             for (int i = 0; i < leaves.Length; i++)
             {

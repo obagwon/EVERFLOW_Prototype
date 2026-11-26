@@ -5,7 +5,7 @@ namespace EverflowMap
     public enum EF1123Sound
     {
         Select, Launch, Bloom, Freeze, Gust, Mechanism, Star, Step, Jump, Land, Fall, Recovery,
-        MenuChoice, Confirm, Door
+        MenuChoice, Confirm, Door, ChimeLow, ChimeHigh, ChimeThird
     }
 
     [DisallowMultipleComponent]
@@ -22,7 +22,7 @@ namespace EverflowMap
         public AudioClip windAmbience, waterAmbience;
 
         readonly AudioClip[] music = new AudioClip[3];
-        readonly AudioClip[] sounds = new AudioClip[15];
+        readonly AudioClip[] sounds = new AudioClip[(int)EF1123Sound.ChimeThird + 1];
         readonly System.Collections.Generic.List<AudioClip> generated = new();
         AudioSource musicSource, effectsSource, windSource, waterSource;
         float waterLevel;
@@ -132,12 +132,16 @@ namespace EverflowMap
                 EF1123Sound.Recovery => (.42f, 392f, 116f, .02f),
                 EF1123Sound.MenuChoice => (.11f, 500f, 66f, .02f),
                 EF1123Sound.Confirm => (.24f, 580f, 124f, .015f),
+                EF1123Sound.ChimeLow => (1.33f, 515f, 0f, 0f),
+                EF1123Sound.ChimeHigh => (1.23f, 687f, 0f, 0f),
+                EF1123Sound.ChimeThird => (1.24f, 822f, 0f, 0f),
                 _ => (1.16f, 261.63f, 0f, .045f)
             };
             var (duration, pitch, sweep, noiseGain) = settings;
             var samples = new float[(int)(duration * SampleRate)];
             var random = new System.Random(1123 + (int)sound);
             float phase = 0, noise = 0;
+            bool chime = sound == EF1123Sound.ChimeLow || sound == EF1123Sound.ChimeHigh || sound == EF1123Sound.ChimeThird;
             for (int i = 0; i < samples.Length; i++)
             {
                 float t = i / (float)SampleRate, x = t / duration;
@@ -148,7 +152,11 @@ namespace EverflowMap
                 phase += Tau * note / SampleRate;
                 float attack = Mathf.Clamp01(t / .012f);
                 float envelope = attack * Mathf.Pow(1 - x, 1.7f);
-                samples[i] = envelope * (.17f * Mathf.Sin(phase) + .04f * Mathf.Sin(phase * 2) + noise * noiseGain);
+                samples[i] = chime
+                    ? attack * (.27f * Mathf.Sin(phase) * Mathf.Exp(-3.8f * t) +
+                        .14f * Mathf.Sin(phase * 2.76f) * Mathf.Exp(-8f * t) +
+                        .08f * Mathf.Sin(phase * 5.34f) * Mathf.Exp(-15f * t))
+                    : envelope * (.17f * Mathf.Sin(phase) + .04f * Mathf.Sin(phase * 2) + noise * noiseGain);
             }
             return Clip(sound.ToString(), samples);
         }

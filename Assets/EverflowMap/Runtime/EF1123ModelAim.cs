@@ -32,13 +32,18 @@ namespace EverflowMap
         }
 
         readonly List<Surface> surfaces = new();
+        readonly EF1123World world;
 
         public EF1123ModelAim(EF1123World world, EFV2TargetMeshCache cache)
         {
+            this.world = world;
             var geometry = new Dictionary<Mesh, (Vector3[] vertices, int[] triangles)>();
-            foreach (var entry in cache.entries)
-                geometry[entry.source] = (entry.vertices, entry.triangles);
+            if (cache != null)
+                foreach (var entry in cache.entries)
+                    if (entry.source != null)
+                        geometry[entry.source] = (entry.vertices, entry.triangles);
             foreach (var tutorial in world.tutorials) Add(tutorial, geometry);
+            foreach (var target in world.optionalTargets) Add(target, geometry);
             foreach (var course in world.courses)
                 foreach (var target in course.steps) Add(target, geometry);
         }
@@ -70,6 +75,8 @@ namespace EverflowMap
             {
                 if (!surface.Visible || !surface.model.bounds.IntersectRay(ray, out float entry) ||
                     entry > nearest + SurfaceTolerance) continue;
+                if (world.directModelCasting &&
+                    (surface.target.ability != selected || !world.IsCurrentTarget(surface.target))) continue;
                 if (!Intersect(ray, surface.model.transform, surface.vertices, surface.triangles,
                         nearest + SurfaceTolerance, out float distance)) continue;
                 if (best != null && distance >= nearest - SurfaceTolerance &&
@@ -102,14 +109,16 @@ namespace EverflowMap
             return false;
         }
 
-        static bool Blocked(EF1123Target target, RaycastHit[] obstacles, float distance)
+        bool Blocked(EF1123Target target, RaycastHit[] obstacles, float distance)
         {
             foreach (var hit in obstacles)
             {
                 if (hit.distance >= distance - SurfaceTolerance) continue;
+                if (world.directModelCasting && hit.transform == world.player.transform) continue;
                 bool ownSurface = false;
                 foreach (var model in target.aimModels)
-                    if (model != null && hit.transform == model.transform)
+                    if (model != null && (hit.transform == model.transform ||
+                        (world.directModelCasting && model.transform.IsChildOf(hit.transform))))
                     {
                         ownSurface = true;
                         break;

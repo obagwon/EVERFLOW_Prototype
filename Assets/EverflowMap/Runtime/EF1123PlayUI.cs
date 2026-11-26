@@ -155,24 +155,34 @@ namespace EverflowMap
             }
             var (heading, instruction) = CurrentGuide();
             objective.text = heading;
-            bool readyForInput = world.CanGrabFlower || world.CanLaunchJumpFlower;
+            bool readyForInput = world.CanGrabFlower || world.CanLaunchJumpFlower ||
+                                 (world.gateButton != null && world.gateButton.NeedsPress);
             action.text = !readyForInput && Time.unscaledTime < world.MessageUntil && !string.IsNullOrEmpty(world.Message)
                 ? world.Message : instruction;
         }
 
-        static string AbilityDescription(LabAbility ability) => ability switch
+        string AbilityDescription(LabAbility ability) => ability switch
         {
             LabAbility.Bloom => "식물을 성장시켜 길을 만듭니다",
             LabAbility.Freeze => "물을 얼리거나 움직이는 구조물을 고정합니다",
-            _ => "FLOW · 같은 표식을 두 번 클릭"
+            _ => world.directModelCasting ? "FLOW · 대상 모델을 클릭해 바람 보내기" : "FLOW · 같은 표식을 두 번 클릭"
         };
+
+        string GliderInstruction()
+        {
+            if (world.HoldingFlower) return world.directModelCasting && !world.UsesWindCompass ?
+                "꽃씨를 잡았어요  ·  3을 누른 뒤 꽃씨 모델을 클릭하세요." :
+                "꽃씨를 잡았어요  ·  3으로 섬 쪽에 바람을 보내세요.";
+            return world.CanGrabFlower ? "잡기 준비 완료  ·  E로 꽃씨 손잡이를 잡으세요." :
+                "꽃씨 가까이로 이동하세요.";
+        }
 
         string AimInstruction(EF1123Target target)
         {
             if (!world.CanCast(target, out string reason)) return reason;
             if (target.timedPlatform != null && !target.timedPlatform.IsAligned)
                 return "잎이 빗나갔어요. Esc로 풀고 착지턱과 맞을 때 다시 조준하세요.";
-            if (world.Selected != LabAbility.Flow) return "왼쪽 클릭";
+            if (world.Selected != LabAbility.Flow || world.directModelCasting) return "왼쪽 클릭";
             return world.PendingFlow == target ? "한 번 더 클릭해 바람 보내기" : "클릭해 바람의 대상 선택";
         }
 
@@ -185,7 +195,7 @@ namespace EverflowMap
                 return WindDirectionNames[direction] + (receiver != null ?
                     "  ·  " + receiver.title + "에 닿아요" : "  ·  이 방향에 반응할 장치가 없어요");
             }
-            return world.HasWindReceiver ? "금빛 화살표가 장치에 닿는 방향이에요." : world.WindSetupHint();
+            return world.HasWindReceiver ? "주황색 화살표가 장치에 닿는 방향이에요." : world.WindSetupHint();
         }
 
         (string, string) CurrentGuide()
@@ -198,42 +208,65 @@ namespace EverflowMap
             Vector3 position = world.player.transform.position;
             if (world.Count == world.courses.Length)
                 return ("풍차 문 개방", "돌계단을 올라 풍차 안으로 들어가세요.");
+            var gateButton = world.gateButton;
+            if (gateButton != null && gateButton.NeedsPress && Vector3.Distance(position, gateButton.transform.position) < 10)
+                return ("D 씨앗 골짜기", gateButton.requiresInteraction
+                    ? "E · 돌 버튼을 눌러 성문을 여세요." : "드러난 돌 버튼을 밟아 성문을 여세요.");
             var tutorial = world.tutorials[0];
+            if (world.directModelCasting && world.TutorialStage == 0 &&
+                Vector2.Distance(new Vector2(position.x, position.z),
+                    new Vector2(tutorial.station.position.x, tutorial.station.position.z)) < 10)
+                return ("석탑의 마른 덩굴", world.player.transform.position.y > tutorial.station.position.y + 3f ?
+                    "석탑 계단을 내려가 마른 덩굴을 찾으세요." : "1을 누른 뒤 마른 덩굴을 클릭하세요.");
             if (world.TutorialStage == 0 && Vector3.Distance(position, tutorial.station.position) < 9)
                 return ("멈춘 계곡", "WASD 이동 · 마우스 시점 · 1로 뿌리 성장");
             if (world.TutorialStage == 1 && position.y > 27 && position.z < 30)
-                return ("중앙 갈림길로 내려가기", "뿌리 계단을 따라 내려가 코스 입구를 찾으세요.");
+                return ("중앙 갈림길로 내려가기", world.directModelCasting ?
+                    "탑의 계단과 덩굴 다리를 따라 내려가세요." : "뿌리 계단을 따라 내려가 코스 입구를 찾으세요.");
             if (jumpHint != null && !world.courses[0].collected && Vector3.Distance(position, jumpHint.position) < 4)
                 return ("B 수조와 정원", "Space 점프 · 수위가 오르면 잎 발판을 밟아 건너세요.");
-            if (world.courses[5].stage == 1 && Vector3.Distance(position, world.jumpPad.position) < 3)
-                return ("서쪽 채광실", world.CanLaunchJumpFlower ?
-                    "도약 준비 완료  ·  Space로 창턱까지 뛰세요." : "꽃 중앙으로 이동하면 Space로 도약할 수 있어요.");
+            if (world.jumpPad != null && world.courses[5].stage == 1 && Vector3.Distance(position, world.jumpPad.position) < 3)
+                return (world.courses[5].title, world.CanLaunchJumpFlower ?
+                    "Space로 높이 뛰고 이동 키로 착지 방향을 잡으세요." : "꽃 중앙에 올라가 Space를 누르세요.");
+            var garden = world.courses[0];
+            if (!world.collectRewardsOnApproach && world.waterPresentation != null && !garden.collected && garden.stage == 1 &&
+                Vector3.Distance(position, garden.star.position) < 4f)
+                return (garden.title, "숨결 조각을 얻으려면 수조의 누수구를 FREEZE로 막으세요.");
+
+            if (world.grabGliderByProximity && (world.CanGrabFlower || world.HoldingFlower))
+                return (world.courses[3].title, GliderInstruction());
+
+            foreach (var target in world.optionalTargets)
+                if (world.IsCurrentTarget(target) && Vector3.Distance(position, target.station.position + Vector3.up) < target.stationRadius)
+                    return (world.courses[target.course].title, $"{(int)target.ability + 1}  {target.ability.ToString().ToUpperInvariant()}   ·   {target.title}");
 
             EF1123Course nearest = null;
             float best = 11;
             foreach (var course in world.courses)
             {
                 if (course.collected) continue;
-                var step = course.stage < course.steps.Length ? course.steps[course.stage] : course.steps[^1];
-                float distance = Vector3.Distance(position, step.station.position + Vector3.up);
+                Vector3 approach = course.steps.Length == 0 ? course.star.position :
+                    course.steps[Mathf.Min(course.stage, course.steps.Length - 1)].station.position + Vector3.up;
+                float distance = Vector3.Distance(position, approach);
                 if (distance < best) { best = distance; nearest = course; }
             }
             if (nearest == null)
-                return ("계곡의 숨결 모으기", "표지판을 따라 원하는 코스 입구로 가세요.   ·   R 체크포인트");
+                return ("계곡의 숨결 모으기", world.directModelCasting ? "R · 최근 체크포인트로 돌아가기" :
+                    "표지판을 따라 원하는 코스 입구로 가세요.   ·   R 체크포인트");
+            if (nearest.steps.Length == 0)
+                return (nearest.title, "숨결 조각에 가까이 가세요.");
             if (nearest.stage == nearest.steps.Length)
                 return (nearest.title, nearest.steps[^1].solution);
             var active = nearest.steps[nearest.stage];
             if (active.grabFirst)
-            {
-                if (world.HoldingFlower) return (nearest.title, "꽃씨를 잡았어요  ·  3으로 섬 쪽에 바람을 보내세요.");
-                return (nearest.title, world.CanGrabFlower ?
-                    "잡기 준비 완료  ·  E로 꽃씨 손잡이를 잡으세요." : "발사턱에서 꽃씨 가까이로 이동하세요.");
-            }
+                return (nearest.title, GliderInstruction());
             if (active.timedPlatform != null && best <= active.stationRadius)
                 return (nearest.title, active.timedPlatform.IsAligned ?
                     "잎이 착지턱과 맞았어요  ·  2로 얼리세요." : "잎이 착지턱과 나란해질 때까지 기다리세요.");
             if (active.requiredMotion != null && !active.requiredMotion.AtOpenPose)
-                return (nearest.title, "씨앗이 흙받이에 안착하면 BLOOM을 사용할 수 있어요.");
+                return (nearest.title, world.GateButtonControls(active.requiredMotion) ?
+                    (world.gateButton.requiresInteraction ? "잎 밑의 돌 버튼을 눌러 성문을 여세요." : "돌 버튼을 밟아 성문을 여세요.") :
+                    "씨앗이 흙받이에 안착하면 BLOOM을 사용할 수 있어요.");
             return (nearest.title, $"{(int)active.ability + 1}  {active.ability.ToString().ToUpperInvariant()}   ·   {active.title}");
         }
     }
