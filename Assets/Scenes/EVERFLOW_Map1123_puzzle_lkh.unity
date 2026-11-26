@@ -26407,8 +26407,8 @@ GameObject:
   - component: {fileID: 860461173}
   - component: {fileID: 860461172}
   - component: {fileID: 860461170}
-  - component: {fileID: 860461167}
   - component: {fileID: 860461174}
+  - component: {fileID: 860461167}
   m_Layer: 0
   m_Name: FreeLook Camera - 1123
   m_TagString: Untagged
