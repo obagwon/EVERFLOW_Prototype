@@ -20,30 +20,35 @@ namespace EverflowMap
         public Chime third;
         public EF1123Target shutterControl;
         public EF1123Motion gate;
+        public Transform gateCameraPose;
         public EF1123Audio audioFeedback;
 
-        internal void Ring(EF1123Target target)
+        internal void Ring(EF1123Target target, EF1123Effects effects)
         {
-            if (target == left.target) Ring(left, EF1123Sound.ChimeLow);
-            else if (target == right.target) Ring(right, EF1123Sound.ChimeHigh);
-            else if (target == third?.target) Ring(third, EF1123Sound.ChimeThird);
+            bool rung;
+            if (target == left.target) rung = Ring(left, EF1123Sound.ChimeLow);
+            else if (target == right.target) rung = Ring(right, EF1123Sound.ChimeHigh);
+            else if (target == third?.target) rung = Ring(third, EF1123Sound.ChimeThird);
             else if (target == shutterControl)
             {
                 audioFeedback?.Play(EF1123Sound.Mechanism);
                 return;
             }
             else return;
-            if (left.rung && right.rung && (third?.target == null || third.rung)) gate.Open();
+            if (!rung || !left.rung || !right.rung || (third?.target != null && !third.rung)) return;
+            if (effects != null) effects.ShowDoorOpening(gateCameraPose, gate);
+            else gate.Open();
         }
 
-        void Ring(Chime chime, EF1123Sound note)
+        bool Ring(Chime chime, EF1123Sound note)
         {
-            if (chime.rung) return;
+            if (chime.rung) return false;
             chime.rung = true;
             chime.litMarker.SetActive(true);
             if (chime.gateMarker != null) chime.gateMarker.SetActive(true);
             audioFeedback?.Play(note);
             StartCoroutine(Swing(chime));
+            return true;
         }
 
         static IEnumerator Swing(Chime chime)

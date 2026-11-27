@@ -112,7 +112,8 @@ namespace EverflowMap
             }
             if (finished && !previousEnd)
             {
-                endingStars.text = world.CollectibleName + "   " + world.Count + " / " + world.courses.Length;
+                endingStars.text = world.interior != null ? "수직 정원 회복   3 / 3" :
+                    world.CollectibleName + "   " + world.Count + " / " + world.courses.Length;
                 if (EventSystem.current != null) EventSystem.current.SetSelectedGameObject(endingTitle.gameObject);
             }
             previousPause = showPause;
@@ -203,7 +204,7 @@ namespace EverflowMap
             if (world.interior != null)
             {
                 var course = world.courses[0];
-                return (world.interior.Restored ? "물길 회복" : "풍차 내부", world.interior.Instruction(course.stage, course.steps[2].requiredMotion.AtOpenPose));
+                return (world.interior.Restored ? "바람 회복" : "풍차 내부", world.interior.Instruction(course.stage));
             }
             Vector3 position = world.player.transform.position;
             if (world.Count == world.courses.Length)
@@ -237,7 +238,8 @@ namespace EverflowMap
                 return (world.courses[3].title, GliderInstruction());
 
             foreach (var target in world.optionalTargets)
-                if (world.IsCurrentTarget(target) && Vector3.Distance(position, target.station.position + Vector3.up) < target.stationRadius)
+                if (target.station != null && world.IsCurrentTarget(target) &&
+                    Vector3.Distance(position, target.station.position + Vector3.up) < EF1123World.CastStationRadius(target))
                     return (world.courses[target.course].title, $"{(int)target.ability + 1}  {target.ability.ToString().ToUpperInvariant()}   ·   {target.title}");
 
             EF1123Course nearest = null;
@@ -260,7 +262,7 @@ namespace EverflowMap
             var active = nearest.steps[nearest.stage];
             if (active.grabFirst)
                 return (nearest.title, GliderInstruction());
-            if (active.timedPlatform != null && best <= active.stationRadius)
+            if (active.timedPlatform != null && best <= EF1123World.CastStationRadius(active))
                 return (nearest.title, active.timedPlatform.IsAligned ?
                     "잎이 착지턱과 맞았어요  ·  2로 얼리세요." : "잎이 착지턱과 나란해질 때까지 기다리세요.");
             if (active.requiredMotion != null && !active.requiredMotion.AtOpenPose)
