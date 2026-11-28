@@ -23,8 +23,6 @@ MonoBehaviour:
   - m_enabled: 1
     m_path: Assets/Scenes/EVERFLOW_Title_lkh.unity
   - m_enabled: 1
-    m_path: Assets/Scenes/EVERFLOW_Map1123_puzzle_lkh.unity
-  - m_enabled: 1
     m_path: Assets/Scenes/inside_fan.unity
   m_HasScriptingDefines: 0
   m_ScriptingDefines: []
