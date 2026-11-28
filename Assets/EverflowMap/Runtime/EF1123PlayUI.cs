@@ -22,6 +22,9 @@ namespace EverflowMap
         public Button resume, retry, pauseTitle, endingTitle, closeControls;
         public Slider music, effects;
         public Transform jumpHint;
+        public bool showAbilityGuides;
+
+        EF1123AbilityGuide abilityGuide;
 
         bool loadedTitle, previousPause, previousEnd, resumeAfterControls;
         static readonly Color AbilityInk = new(.94f, .97f, .95f);
@@ -32,6 +35,7 @@ namespace EverflowMap
 
         void Start()
         {
+            if (showAbilityGuides) abilityGuide = new EF1123AbilityGuide(this);
             var font = LabSignFont.Get();
             if (font != null)
                 foreach (var label in GetComponentsInChildren<Text>(true)) label.font = font;
@@ -101,7 +105,8 @@ namespace EverflowMap
         {
             bool paused = world.Paused, finished = world.Finished;
             bool showPause = paused && !finished && !ControlsOpen;
-            gameHUD.SetActive(!paused && !finished);
+            abilityGuide?.Tick();
+            gameHUD.SetActive(!paused && !finished && !(abilityGuide?.IsOpen ?? false));
             pauseMenu.SetActive(showPause);
             ending.SetActive(finished);
             cinematicBars.SetActive(world.Cinematic && !paused && !finished);

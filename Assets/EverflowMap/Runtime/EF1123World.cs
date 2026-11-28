@@ -52,6 +52,7 @@ namespace EverflowMap
         public bool showGliderAtRest;
         public bool grabGliderByProximity;
         public bool collectRewardsOnApproach;
+        public bool showFeatherRewards;
         public EF1123SafePoint[] checkpoints;
         public EF1123Course[] courses;
         public EF1123Target[] tutorials;
@@ -113,6 +114,7 @@ namespace EverflowMap
         readonly HashSet<string> collectedStars = new(StringComparer.Ordinal);
         readonly HashSet<EF1123Target> completedOptionalTargets = new();
         EF1123ModelAim modelAim;
+        EF1123FeatherReward featherReward;
         EF1123ModelAim.Contact? hoverContact;
         EF1123WindCompass windCompass;
         EF1123SafePoint checkpoint;
@@ -123,6 +125,7 @@ namespace EverflowMap
         Font font;
         MaterialPropertyBlock properties;
         bool paused, enteringWindmill;
+        float? timeScaleBeforeGuide;
         float? timeScaleBeforeAim;
         int tutorialStage;
         float motionTime, nextCast, hazardTime, safeGroundTime;
@@ -146,6 +149,11 @@ namespace EverflowMap
             foreach (var motion in motions) motion.Initialize();
             if (interior == null)
                 foreach (var course in courses) course.starPosition = course.star.position;
+            if (showFeatherRewards && interior == null)
+            {
+                featherReward = gameObject.AddComponent<EF1123FeatherReward>();
+                featherReward.Attach(courses);
+            }
             properties = new MaterialPropertyBlock();
             waterPresentation?.Apply(0f);
             font = LabSignFont.Get();
@@ -185,7 +193,12 @@ namespace EverflowMap
             windCompass?.Dispose();
         }
 
-        void OnDisable() => ResumeAimTime();
+        void OnDisable()
+        {
+            ResumeAimTime();
+            if (timeScaleBeforeGuide.HasValue) Time.timeScale = timeScaleBeforeGuide.Value;
+            timeScaleBeforeGuide = null;
+        }
 
         void ResumeAimTime()
         {
@@ -196,15 +209,36 @@ namespace EverflowMap
 
         void SetInput()
         {
+            bool guideOpen = timeScaleBeforeGuide.HasValue;
             bool ended = Finished && playUI != null;
-            bool walking = !paused && !AbilityMode && !Cinematic && !ended && held == null;
+            bool walking = !guideOpen && !paused && !AbilityMode && !Cinematic && !ended && held == null;
             player.enabled = walking;
-            player.cinemachineRig.SetInputActive(!paused && !AbilityMode && !Cinematic && !ended);
-            player.cinemachineRig.SetViewFrozen(paused || AbilityMode || ended);
-            bool showCursor = paused || AbilityMode || ended;
+            player.cinemachineRig.SetInputActive(!guideOpen && !paused && !AbilityMode && !Cinematic && !ended);
+            player.cinemachineRig.SetViewFrozen(guideOpen || paused || AbilityMode || ended);
+            bool showCursor = guideOpen || paused || AbilityMode || ended;
             Cursor.lockState = showCursor ? CursorLockMode.None : CursorLockMode.Locked;
             Cursor.visible = showCursor;
         }
+
+        internal void SetAbilityGuideOpen(bool open)
+        {
+            if (open == timeScaleBeforeGuide.HasValue) return;
+            if (open)
+            {
+                timeScaleBeforeGuide = Time.timeScale;
+                Time.timeScale = 0f;
+            }
+            else
+            {
+                Time.timeScale = timeScaleBeforeGuide.Value;
+                timeScaleBeforeGuide = null;
+            }
+            SetInput();
+        }
+
+        internal bool CanOpenStartingAbilityGuide =>
+            interior == null && !paused && !Finished && !Cinematic &&
+            !AbilityMode && !player.Traversing && player.Grounded;
 
         public void SetPaused(bool value)
         {
@@ -240,7 +274,7 @@ namespace EverflowMap
 
         void Update()
         {
-            if (enteringWindmill || (Finished && playUI != null)) return;
+            if (timeScaleBeforeGuide.HasValue || enteringWindmill || (Finished && playUI != null)) return;
             if (playUI != null && playUI.HasControls && !Cinematic && EFMapInput.KeyDown(KeyCode.F1))
             {
                 if (AbilityMode) LeaveAbility();
@@ -793,6 +827,7 @@ namespace EverflowMap
                 if (!Near(course.starPosition, course.pickupRadius, 1.05f)) continue;
                 if (!collectedStars.Add(course.starId)) continue;
                 course.collected = true;
+                featherReward?.PlayPickup(course.star.position);
                 course.star.gameObject.SetActive(false);
                 if (course.returnGate != null) course.returnGate.Open();
                 if (course.returnExit != null) course.returnExit.Open();
@@ -804,7 +839,13 @@ namespace EverflowMap
                     else foreach (var gate in windmillDoors) gate.Open();
                     Report(CollectibleName + " 6/6 · 풍차 문이 열렸습니다.");
                 }
-                else Report(course.title + " · " + CollectibleName + " " + Count + "/6 · 복귀로 열림");
+                else
+                {
+                    bool hasReturnRoute = course.returnGate != null || course.returnExit != null ||
+                        course.revealOnCollect != null;
+                    Report(course.title + " · " + CollectibleName + " " + Count + "/6" +
+                        (hasReturnRoute ? " · 복귀로 열림" : ""));
+                }
             }
         }
 

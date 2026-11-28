@@ -217,6 +217,8 @@ namespace EverflowMap
         static readonly int FoamId = Shader.PropertyToID("_FoamAmount");
         static readonly int ImpactId = Shader.PropertyToID("_Impact0");
         static readonly int ArrivalId = Shader.PropertyToID("_Arrival");
+        static readonly int SpringProfileId = Shader.PropertyToID("_SpringProfile");
+        static readonly int SpringContactId = Shader.PropertyToID("_SpringContact");
 
         public Surface[] surfaces = Array.Empty<Surface>();
         public OverflowBasin overflowBasin;
@@ -248,6 +250,20 @@ namespace EverflowMap
                 var point = renderer.transform.TransformPoint(surface.localImpactPoint);
                 float strength = Visible(surface.impactSource) ? surface.impactStrength : 0f;
                 properties.SetVector(ImpactId, new Vector4(point.x, point.y, point.z, strength));
+                if (eastSpring != null && eastSpring.wheelSpray != null)
+                {
+                    bool falling = renderer == eastSpring.spring;
+                    bool race = renderer == eastSpring.tailrace;
+                    if (falling || race || renderer == eastSpring.basin)
+                    {
+                        properties.SetVector(SpringProfileId, new Vector4(1f, falling ? 7.3f : race ? 2.72f : 0f, 0f, 0f));
+                        if (falling && eastSpring.wheelSpray.isPlaying)
+                        {
+                            var contact = eastSpring.wheelSpray.transform.position;
+                            properties.SetVector(SpringContactId, new Vector4(contact.x, contact.y, contact.z, 1f));
+                        }
+                    }
+                }
                 renderer.SetPropertyBlock(properties);
             }
         }

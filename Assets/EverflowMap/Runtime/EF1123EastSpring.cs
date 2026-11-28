@@ -20,6 +20,7 @@ namespace EverflowMap
         public Transform wheel;
         public Vector3 wheelAxis = Vector3.right;
         public Renderer tailrace;
+        public ParticleSystem wheelSpray;
         public Transform cameraPose, seesaw;
         [FormerlySerializedAs("floatBody")] public Transform floatWaterContact;
         public Transform[] pondLeaves;
@@ -78,6 +79,7 @@ namespace EverflowMap
                 {
                     wheelSpeed = Mathf.MoveTowards(wheelSpeed, 32f, 24f * delta);
                     wheel.Rotate(wheelAxis, wheelSpeed * delta, Space.Self);
+                    if (wheelSpray != null && !wheelSpray.isPlaying) wheelSpray.Play();
                 }
                 tailrace.enabled = flowTime >= RaceStart;
                 if (flowTime < PondStart) return;

@@ -16,6 +16,8 @@ namespace EverflowMap
         public GameObject[] leafSurfaces;
         public Transform[] seedRoute;
         public ParticleSystem crownWind;
+        [SerializeField] Light restoredCrownLight;
+        [SerializeField] Transform restoredDriveWheel;
         [Min(1)] public float freezeSeconds = 5f;
         const float TravelSeconds = 2.35f, ShowcaseSeconds = 3.9f, SwingPeriod = 5.2f;
         const float OpenAngle = 90f, OpenThreshold = 45f;
@@ -73,6 +75,7 @@ namespace EverflowMap
             shut = vent.localRotation;
             ventFrost.SetActive(false);
             foreach (var leaf in leafSurfaces) leaf.SetActive(false);
+            if (restoredCrownLight != null) restoredCrownLight.intensity = 0f;
         }
 
         internal bool IsVentAvailable(int stage) => stage >= 1 && stage < 3;
@@ -139,6 +142,12 @@ namespace EverflowMap
                         crownWind.Play();
                         world.Report("수관이 피어났습니다. 바람이 풍차 밖으로 이어집니다.");
                     }
+                }
+                if (Restored)
+                {
+                    float restart = Mathf.Clamp01((harvestTime - TravelSeconds) / 1.4f);
+                    if (restoredCrownLight != null) restoredCrownLight.intensity = 3.2f * restart;
+                    if (restoredDriveWheel != null) restoredDriveWheel.Rotate(Vector3.forward, 38f * restart * dt);
                 }
                 if (harvestTime >= TravelSeconds + ShowcaseSeconds) Complete();
                 return;

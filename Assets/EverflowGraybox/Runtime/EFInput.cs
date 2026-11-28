@@ -33,6 +33,9 @@ namespace EverflowGraybox
                 case KeyCode.R: input = Key.R; break;
                 case KeyCode.Space: input = Key.Space; break;
                 case KeyCode.Return: input = Key.Enter; break;
+                case KeyCode.Tab: input = Key.Tab; break;
+                case KeyCode.LeftArrow: input = Key.LeftArrow; break;
+                case KeyCode.RightArrow: input = Key.RightArrow; break;
                 case KeyCode.Alpha1: input = Key.Digit1; break;
                 case KeyCode.Alpha2: input = Key.Digit2; break;
                 case KeyCode.Alpha3: input = Key.Digit3; break;

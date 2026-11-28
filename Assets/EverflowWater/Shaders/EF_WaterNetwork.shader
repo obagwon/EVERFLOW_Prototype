@@ -12,6 +12,8 @@ Shader "EVERFLOW/Water/Continuous Network"
         _NormalMap("Normal",2D)="bump"{}
         _Tint("Water tint",Color)=(.10,.36,.37,1)
         _Foam("Foam tint",Color)=(.68,.85,.81,1)
+        [HideInInspector] _SpringProfile("Spring shading and path length",Vector)=(0,0,0,0)
+        [HideInInspector] _SpringContact("Wheel impact",Vector)=(0,0,0,0)
     }
     SubShader
     {
@@ -33,6 +35,7 @@ Shader "EVERFLOW/Water/Continuous Network"
             CBUFFER_START(UnityPerMaterial)
                 float _WaterTime,_Wet,_Arrival,_Frozen,_WorldUV,_FoamAmount;
                 float4 _FlowOffset,_Tint,_Foam,_Impact0,_Impact1,_Impact2;
+                float4 _SpringProfile,_SpringContact;
             CBUFFER_END
             struct A {float4 positionOS:POSITION;float3 normalOS:NORMAL;float4 tangentOS:TANGENT;float2 uv:TEXCOORD0;float2 progress:TEXCOORD1;float4 color:COLOR;};
             struct V {float4 pos:SV_POSITION;float3 ws:TEXCOORD0;float3 n:TEXCOORD1;float3 t:TEXCOORD2;float2 uv:TEXCOORD3;float4 color:COLOR;float2 progress:TEXCOORD4;};
@@ -64,7 +67,9 @@ Shader "EVERFLOW/Water/Continuous Network"
                 clip(_Wet-.5);
                 if(_WorldUV<.5)clip(_Arrival>=.999?1:_Arrival-i.progress.x);
                 float t=_WaterTime;
-                float2 flow=lerp(float2(i.uv.x,i.uv.y-t*.72),(i.ws-_FlowOffset.xyz).xz,_WorldUV);
+                float tuned=_SpringProfile.x;
+                float along=lerp(i.uv.y, i.progress.x*_SpringProfile.y, tuned*(1-_WorldUV));
+                float2 flow=lerp(float2(i.uv.x,along-t*lerp(.72,.96,tuned)),(i.ws-_FlowOffset.xyz).xz,_WorldUV);
                 // Only bounded ripples animate standing pools; they have no false downstream current.
                 flow+=float2(sin(t*.7+flow.y),cos(t*.6+flow.x))*.015;
                 flow*=lerp(1,.25,_WorldUV);
@@ -102,6 +107,25 @@ Shader "EVERFLOW/Water/Continuous Network"
                 edge*=lerp(1,smoothstep(.02,.12,edge+noise(float2(i.uv.y*5-t*2,3))*.08),fall);
                 float alpha=(.79+fres*.12+impact*.08)*edge;
                 alpha=lerp(alpha,.9*edge,body);
+                if(tuned>.5)
+                {
+                    float poolDepth=max(0,i.ws.y-ground.y);
+                    float absorption=smoothstep(.07,1.65,poolDepth);
+                    float3 shallow=float3(.13,.35,.30), deep=float3(.052,.23,.245);
+                    float3 pool=lerp(shallow,deep,absorption);
+                    half3 poolColor=lerp(back,pool,lerp(.26,.80,absorption));
+                    poolColor+=float3(.055,.103,.10)*fres;
+                    poolColor+=sun.color*spec*.25;
+                    col=lerp(col,poolColor,_WorldUV);
+                    alpha=lerp(alpha,(lerp(.50,.87,absorption)+fres*.07)*edge,_WorldUV);
+
+                    float ribbon=smoothstep(.57,.81,noise(flow*float2(9,2.1)+4.2)*.64+
+                        noise(flow*float2(4,8.5)+12)*.36);
+                    col+=float3(.12,.20,.19)*ribbon*(1-_WorldUV);
+                    float wheelFoam=exp(-2.8*distance(i.ws,_SpringContact.xyz))*_SpringContact.w;
+                    float brokenFoam=saturate(wheelFoam*(.35+.57*b)+ring*.46);
+                    col=lerp(col,half3(.78,.93,.90),brokenFoam);
+                }
                 float ice=noise(i.ws.xz*2);
                 col=lerp(col,lerp(float3(.46,.73,.80),float3(.62,.85,.90),smoothstep(.7,.9,ice)),_Frozen*.95);
                 alpha=lerp(alpha,.96*edge,_Frozen);
