@@ -65,6 +65,13 @@ public class EFDryGround : EditorWindow
             if (GUILayout.Button("② 초록으로 보기 (편집용)")) Swap(dry, green);
             if (GUILayout.Button("③ 마른 바닥으로 덮기")) Swap(green, dry);
             EditorGUILayout.EndHorizontal();
+            GUILayout.Space(8);
+            int di = System.Array.IndexOf(ls, dry);
+            if (di != 0)
+            {
+                EditorGUILayout.HelpBox("경계에 초록이 남으면: 이 셰이더는 0번 칸을 '바탕'으로 깔아서, 다른 레이어가 섞이는 경계에 0번 칸 색이 비쳐요. 마른 바닥을 0번 칸으로 옮기면 해결돼요.", MessageType.Warning);
+                if (GUILayout.Button("마른 바닥을 0번 칸으로 옮기기 (칠한 건 그대로)")) MoveToSlot0(dry);
+            }
         }
     }
 
@@ -105,6 +112,27 @@ public class EFDryGround : EditorWindow
         }
         AssetDatabase.SaveAssets();
         ShowNotification(new GUIContent($"{to.name}(으)로 {n}칸"));
+    }
+
+    // 레이어 칸 순서만 바꿈 (칠한 무게도 같이 옮겨서 화면 결과는 그대로)
+    static void MoveToSlot0(TerrainLayer layer)
+    {
+        foreach (var t in Terrain.activeTerrains)
+        {
+            var td = t.terrainData; var ls = td.terrainLayers;
+            int i = System.Array.IndexOf(ls, layer);
+            if (i <= 0) continue;
+            Undo.RegisterCompleteObjectUndo(td, "마른 바닥 0번 칸으로");
+            int res = td.alphamapResolution;
+            var a = td.GetAlphamaps(0, 0, res, res);
+            for (int z = 0; z < res; z++) for (int x = 0; x < res; x++)
+            { float v = a[z, x, 0]; a[z, x, 0] = a[z, x, i]; a[z, x, i] = v; }
+            (ls[0], ls[i]) = (ls[i], ls[0]);
+            td.terrainLayers = ls;
+            td.SetAlphamaps(0, 0, a);
+            EditorUtility.SetDirty(td);
+        }
+        AssetDatabase.SaveAssets();
     }
 
     static int Transfer(TerrainData td, int from, int to)
