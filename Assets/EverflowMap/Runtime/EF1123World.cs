@@ -281,7 +281,7 @@ namespace EverflowMap
             TickWind(dt);
             if (waterPresentation != null)
             {
-                waterPresentation.Apply(motionTime);
+                waterPresentation.Apply(motionTime, eastSpring);
             }
             else
             {
@@ -325,6 +325,8 @@ namespace EverflowMap
                 {
                     if (gateButton != null && gateButton.requiresInteraction && gateButton.TryPress())
                         Report("돌 버튼을 눌러 나무 성문을 열었습니다.");
+                    else if (eastSpring != null && eastSpring.TryUseLever(this))
+                        Report("수문을 열었습니다. 물레방아로 물이 흐릅니다.");
                     else
                         TryGrab();
                 }

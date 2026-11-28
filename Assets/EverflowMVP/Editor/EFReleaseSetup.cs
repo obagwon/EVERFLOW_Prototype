@@ -16,6 +16,7 @@ namespace EverflowMVP.Editor
     public static class EFReleaseSetup
     {
         public const string TitleScene = "Assets/EverflowMVP/Scenes/Everflow_Title.unity";
+        const string LkhProfilePath = "Assets/Settings/Build Profiles/Windows LKH.asset";
         const string LogoPath = "Assets/logo/EVERFLOW_main.png";
         const string IconPath = "Assets/logo/EVERFLOW_icon.png";
 
@@ -24,6 +25,12 @@ namespace EverflowMVP.Editor
         {
             if (EditorApplication.isPlayingOrWillChangePlaymode)
                 throw new InvalidOperationException("Stop Play mode first.");
+            var profile = BuildProfile.GetActiveBuildProfile();
+            if (IsLkhProfile(profile))
+            {
+                ValidateLkhBuildScenes(profile);
+                return;
+            }
             if (AssetDatabase.LoadAssetAtPath<SceneAsset>(EFTitleScreen.GameplayScene) == null)
                 throw new InvalidOperationException("The configured gameplay scene is missing.");
             ImportTexture(LogoPath, true);
@@ -38,7 +45,6 @@ namespace EverflowMVP.Editor
 
             var scenes = CreateReleaseScenes(EditorBuildSettings.globalScenes);
             EditorBuildSettings.globalScenes = scenes;
-            var profile = BuildProfile.GetActiveBuildProfile();
             if (profile != null && profile.overrideGlobalScenes)
             {
                 profile.scenes = scenes;
@@ -47,6 +53,23 @@ namespace EverflowMVP.Editor
             AssetDatabase.SaveAssets();
             ValidateScenes();
             Debug.Log("EVERFLOW setup complete. Existing title/gameplay scene contents preserved. Version: " + PlayerSettings.bundleVersion);
+        }
+
+        internal static bool IsLkhProfile(BuildProfile profile) =>
+            profile != null && AssetDatabase.GetAssetPath(profile) == LkhProfilePath;
+
+        internal static void ValidateLkhBuildScenes(BuildProfile profile)
+        {
+            string[] expected =
+            {
+                EverflowMap.EF1123PlayUI.TitleScene,
+                "Assets/Scenes/EVERFLOW_Map1123_puzzle_lkh.unity",
+                "Assets/Scenes/inside_fan.unity"
+            };
+            Require(profile.overrideGlobalScenes &&
+                profile.scenes.Where(scene => scene.enabled).Select(scene => scene.path).SequenceEqual(expected) &&
+                expected.All(path => AssetDatabase.LoadAssetAtPath<SceneAsset>(path) != null),
+                "Windows LKH must contain the LKH title, main map and windmill interior, in that order.");
         }
 
         // Reapplying Release must preserve utility scenes without enabling them in the player.

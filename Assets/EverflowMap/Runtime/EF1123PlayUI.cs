@@ -157,6 +157,7 @@ namespace EverflowMap
             var (heading, instruction) = CurrentGuide();
             objective.text = heading;
             bool readyForInput = world.CanGrabFlower || world.CanLaunchJumpFlower ||
+                                 (world.eastSpring != null && world.eastSpring.NearLever(world.player.transform.position)) ||
                                  (world.gateButton != null && world.gateButton.NeedsPress);
             action.text = !readyForInput && Time.unscaledTime < world.MessageUntil && !string.IsNullOrEmpty(world.Message)
                 ? world.Message : instruction;
@@ -209,6 +210,13 @@ namespace EverflowMap
             Vector3 position = world.player.transform.position;
             if (world.Count == world.courses.Length)
                 return ("풍차 문 개방", "돌계단을 올라 풍차 안으로 들어가세요.");
+            var east = world.eastSpring;
+            if (east != null && east.NearLever(position))
+            {
+                if (east.CanUseLever) return ("E 바위 샘과 나무", "E · 수문 열기");
+                if (east.IsFull) return ("E 바위 샘과 나무", "2 FREEZE · 분홍 수정 옆 물방울");
+                if (east.WaterReleased) return ("E 바위 샘과 나무", "물레방아 아래로 물이 흐르고 있어요.");
+            }
             var gateButton = world.gateButton;
             if (gateButton != null && gateButton.NeedsPress && Vector3.Distance(position, gateButton.transform.position) < 10)
                 return ("D 씨앗 골짜기", gateButton.requiresInteraction

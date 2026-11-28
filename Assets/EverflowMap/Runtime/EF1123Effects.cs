@@ -45,8 +45,7 @@ namespace EverflowMap
         MaterialPropertyBlock properties;
         bool heldParticles, grounded;
         int nextBurst, teleports, cueStartFrame;
-        float cueTime, effectTime, mechanismDelay, steps;
-        Vector3 lastPosition;
+        float cueTime, effectTime, mechanismDelay;
         public int HighlightCount { get; private set; }
         internal bool ShowingDoor { get; private set; }
 
@@ -87,7 +86,6 @@ namespace EverflowMap
             for (int i = 0; i < world.orbs.Length; i++)
                 trails[world.orbs[i]] = MakeTrail(world.orbs[i], Colors[i]);
             for (int i = 0; i < bursts.Length; i++) bursts[i] = CreateBurst();
-            lastPosition = world.player.transform.position;
             teleports = world.player.TeleportVersion;
         }
 
@@ -331,29 +329,17 @@ namespace EverflowMap
         void UpdateMovementAudio(bool stopped)
         {
             var player = world.player;
-            var position = player.transform.position;
             if (teleports != player.TeleportVersion)
             {
                 foreach (var trail in trails.Values) { trail.emitting = false; trail.Clear(); }
                 teleports = player.TeleportVersion;
-                steps = 0;
-                lastPosition = position;
                 grounded = player.Grounded;
                 return;
             }
-            var horizontal = position - lastPosition;
-            horizontal.y = 0;
-            lastPosition = position;
             if (stopped) return;
             if (player.Grounded)
             {
                 if (!grounded) audio.Play(EF1123Sound.Land, .63f);
-                steps += horizontal.magnitude;
-                if (player.LocomotionSpeed > .20f && steps > 1.55f)
-                {
-                    steps = 0;
-                    audio.Play(EF1123Sound.Step, .53f);
-                }
             }
             else if (grounded && player.VerticalSpeed > 1 && !player.Traversing) Jump();
             grounded = player.Grounded;

@@ -7,9 +7,19 @@ namespace EverflowMap
     public sealed class EF1123EastSpring : MonoBehaviour
     {
         const float ShotSeconds = 3f;
+        const float FallSeconds = .52f;
+        const float WheelDrainSeconds = .42f;
+        const float RaceSeconds = .72f;
+        const float RaceStart = FallSeconds + WheelDrainSeconds;
+        const float PondStart = RaceStart + RaceSeconds;
 
         public EFVine completedBridge;
         public Renderer spring, basin;
+        public EFPressurePlate lever;
+        public EF1123Motion sluice;
+        public Transform wheel;
+        public Vector3 wheelAxis = Vector3.right;
+        public Renderer tailrace;
         public Transform cameraPose, seesaw;
         [FormerlySerializedAs("floatBody")] public Transform floatWaterContact;
         public Transform[] pondLeaves;
@@ -22,8 +32,21 @@ namespace EverflowMap
         Quaternion dryRotation;
         float dryContactHeight;
         Vector3[] dryLeaves;
+        float flowTime, wheelSpeed;
 
         public bool IsFull => released && elapsed >= fillSeconds;
+        internal bool CanUseLever => lever != null && lever.CanPress;
+        internal bool WaterReleased => lever != null && sluice.IsOpen;
+
+        internal bool NearLever(Vector3 position) => lever != null &&
+            (position - lever.transform.position).sqrMagnitude < 16f;
+
+        internal bool TryUseLever(EF1123World world)
+        {
+            if (lever == null || !lever.TryPress()) return false;
+            world.effects?.ShowCutaway(cameraPose, sluice.seconds + PondStart + Mathf.Max(ShotSeconds, fillSeconds));
+            return true;
+        }
 
         void Awake()
         {
@@ -33,18 +56,31 @@ namespace EverflowMap
             dryLeaves = new Vector3[pondLeaves.Length];
             for (int i = 0; i < pondLeaves.Length; i++) dryLeaves[i] = pondLeaves[i].position;
             spring.enabled = basin.enabled = false;
+            if (tailrace != null) tailrace.enabled = false;
         }
 
         internal void Tick(EF1123World world, float delta)
         {
             if (!released)
             {
-                // The walk mesh is assigned only when the vine reaches its complete length.
-                if (!completedBridge.source.IsOpen || completedBridge.walkSurface.sharedMesh == null) return;
+                bool sourceOpen = lever != null ? sluice.AtOpenPose :
+                    completedBridge != null && completedBridge.source.IsOpen && completedBridge.walkSurface.sharedMesh != null;
+                if (!sourceOpen) return;
                 released = true;
                 spring.enabled = true;
-                world.effects?.ShowCutaway(cameraPose, ShotSeconds);
+                if (lever == null) world.effects?.ShowCutaway(cameraPose, ShotSeconds);
                 return;
+            }
+            if (lever != null)
+            {
+                flowTime = Mathf.Min(flowTime + delta, PondStart);
+                if (flowTime >= FallSeconds)
+                {
+                    wheelSpeed = Mathf.MoveTowards(wheelSpeed, 32f, 24f * delta);
+                    wheel.Rotate(wheelAxis, wheelSpeed * delta, Space.Self);
+                }
+                tailrace.enabled = flowTime >= RaceStart;
+                if (flowTime < PondStart) return;
             }
             if (IsFull) return;
 
@@ -61,6 +97,14 @@ namespace EverflowMap
 
             for (int i = 0; i < pondLeaves.Length; i++)
                 pondLeaves[i].position = dryLeaves[i] + Vector3.up * rise;
+        }
+
+        internal float ArrivalFor(Renderer renderer, float existing)
+        {
+            if (lever == null) return existing;
+            if (renderer == spring) return Mathf.Clamp01(flowTime / RaceStart);
+            if (renderer == tailrace) return Mathf.Clamp01((flowTime - RaceStart) / RaceSeconds);
+            return existing;
         }
     }
 }
