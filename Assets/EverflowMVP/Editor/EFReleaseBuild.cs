@@ -150,6 +150,12 @@ namespace EverflowMVP.Editor
         {
             try
             {
+                var profile = BuildProfile.GetActiveBuildProfile();
+                if (EFReleaseSetup.IsLkhProfile(profile))
+                {
+                    EFReleaseSetup.ValidateLkhBuildScenes(profile);
+                    return;
+                }
                 EFReleaseSetup.ValidateBuildScenes(EditorBuildSettings.scenes);
                 EFReleaseSetup.ValidateScenes();
             }

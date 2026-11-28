@@ -30,6 +30,7 @@ namespace EverflowMap
             public Renderer feed, inlet, tank, spill, pond;
             public Renderer catchmentStem, openLeak;
             public GameObject uncaughtFall;
+            public Transform catchmentFallTail, catchmentFallContact;
             [Min(.01f)] public float catchmentStemHeight;
             public Transform floatingLeaves;
             public Transform ferryBuoyancy;
@@ -47,12 +48,21 @@ namespace EverflowMap
             float bloomTime = -1f, spillTime = -1f, sealTime = -1f;
             float dryTank, dryPond, dryLeaves;
             Vector3 dryFerry;
+            Mesh curvedFall;
+            Vector3[] fallVertices;
+            Vector2[] fallUv;
+            Vector3 lastFallContact;
+
+            const int FallRows = 33;
+            const int FallColumns = 5;
 
             internal bool WaitingForFerryWater(EF1123Target target) => target == ferryTarget && ferryBuoyancy &&
                 (!Visible(pond) || pond.transform.position.y < pondLevel - .05f);
 
             public void Apply(float time)
             {
+                bool followsLeaf = catchmentFallTail && catchmentFallContact;
+                if (followsLeaf) UpdateCatchmentFall();
                 if (!catchment || !catchment.IsOpen) return;
                 if (catchmentStem != null)
                 {
@@ -73,8 +83,9 @@ namespace EverflowMap
                 }
 
                 float elapsed = time - bloomTime;
-                feed.enabled = elapsed >= .22f;
-                if (feed.enabled && uncaughtFall != null && uncaughtFall.activeSelf)
+                bool redirected = elapsed >= .22f;
+                feed.enabled = !followsLeaf && redirected;
+                if (!followsLeaf && redirected && uncaughtFall != null && uncaughtFall.activeSelf)
                     uncaughtFall.SetActive(false);
                 inlet.enabled = elapsed >= .56f;
                 bool sealedDrain = iceSeal.activeInHierarchy;
@@ -106,6 +117,89 @@ namespace EverflowMap
                 }
             }
 
+            void UpdateCatchmentFall()
+            {
+                Vector3 contact = catchmentFallContact.position;
+                if (curvedFall == null)
+                {
+                    fallVertices = new Vector3[FallRows * FallColumns];
+                    fallUv = new Vector2[fallVertices.Length];
+                    curvedFall = CreateCatchmentFall(catchmentFallTail, contact, fallVertices, fallUv);
+                    curvedFall.hideFlags = HideFlags.DontSave;
+                    curvedFall.MarkDynamic();
+                    catchmentFallTail.GetComponent<MeshFilter>().sharedMesh = curvedFall;
+                    lastFallContact = contact;
+                }
+                else if ((contact - lastFallContact).sqrMagnitude > .0000001f)
+                {
+                    ShapeFall(curvedFall, catchmentFallTail, contact, fallVertices, fallUv);
+                    lastFallContact = contact;
+                }
+            }
+
+            internal void DisposeFall()
+            {
+                if (curvedFall != null) UnityEngine.Object.Destroy(curvedFall);
+            }
+
+            internal static Mesh CreateCatchmentFall(Transform outlet, Vector3 contact,
+                Vector3[] vertices = null, Vector2[] uv = null)
+            {
+                vertices ??= new Vector3[FallRows * FallColumns];
+                uv ??= new Vector2[vertices.Length];
+                var mesh = new Mesh { name = "B curved catchment fall" };
+                var colors = new Color[vertices.Length];
+                var triangles = new int[(FallRows - 1) * (FallColumns - 1) * 6];
+                int i = 0;
+                for (int row = 0; row < FallRows; row++)
+                for (int col = 0; col < FallColumns; col++)
+                {
+                    int index = row * FallColumns + col;
+                    colors[index] = new Color(1f, 0f, 0f, col == 0 || col == FallColumns - 1 ? 0f : .94f);
+                    if (row == FallRows - 1 || col == FallColumns - 1) continue;
+                    triangles[i++] = index; triangles[i++] = index + FallColumns; triangles[i++] = index + 1;
+                    triangles[i++] = index + 1; triangles[i++] = index + FallColumns; triangles[i++] = index + FallColumns + 1;
+                }
+                mesh.vertices = vertices;
+                mesh.colors = colors;
+                mesh.triangles = triangles;
+                ShapeFall(mesh, outlet, contact, vertices, uv);
+                return mesh;
+            }
+
+            static void ShapeFall(Mesh mesh, Transform outlet, Vector3 contact, Vector3[] vertices, Vector2[] uv)
+            {
+                Vector3 start = outlet.position;
+                Vector3 horizontal = Vector3.ProjectOnPlane(contact - start, Vector3.up);
+                Vector3 side = Vector3.Cross(Vector3.up, horizontal.normalized);
+                Vector3 controlA = start + horizontal * .52f - Vector3.up * .085f;
+                Vector3 controlB = contact + Vector3.up * ((start.y - contact.y) * .54f);
+                Vector3 previous = start;
+                float distance = 0f;
+                for (int row = 0; row < FallRows; row++)
+                {
+                    float t = row / (float)(FallRows - 1);
+                    float u = 1f - t;
+                    Vector3 center = u * u * u * start + 3f * u * u * t * controlA +
+                                     3f * u * t * t * controlB + t * t * t * contact;
+                    distance += Vector3.Distance(center, previous);
+                    previous = center;
+                    for (int col = 0; col < FallColumns; col++)
+                    {
+                        int index = row * FallColumns + col;
+                        float across = col / (float)(FallColumns - 1) * 2f - 1f;
+                        Vector3 point = center + side * (across * Mathf.Lerp(.17f, .105f, t));
+                        vertices[index] = outlet.InverseTransformPoint(point);
+                        uv[index] = new Vector2(across * .15f, distance * .5f);
+                    }
+                }
+                mesh.vertices = vertices;
+                mesh.uv = uv;
+                mesh.RecalculateNormals();
+                mesh.RecalculateTangents();
+                mesh.RecalculateBounds();
+            }
+
             static float Fill(float elapsed, float duration) => Mathf.SmoothStep(0f, 1f, elapsed / duration);
 
             static void SetHeight(Transform target, float height)
@@ -128,7 +222,9 @@ namespace EverflowMap
         public OverflowBasin overflowBasin;
         MaterialPropertyBlock properties;
 
-        internal void Apply(float time)
+        void OnDestroy() => overflowBasin?.DisposeFall();
+
+        internal void Apply(float time, EF1123EastSpring eastSpring = null)
         {
             overflowBasin?.Apply(time);
             properties ??= new MaterialPropertyBlock();
@@ -142,10 +238,11 @@ namespace EverflowMap
                 properties.SetVector(FlowId, Vector4.zero);
                 properties.SetFloat(WorldUvId, surface.standingWater ? 1f : 0f);
                 properties.SetFloat(FoamId, surface.foam);
-                properties.SetFloat(ArrivalId, Visible(surface.tailReceiver)
+                float arrival = Visible(surface.tailReceiver)
                     ? Mathf.Lerp(surface.tailStartProgress, 1f, Mathf.InverseLerp(
                         surface.tailHeights.x, surface.tailHeights.y, surface.tailReceiver.bounds.center.y - .018f))
-                    : 1f);
+                    : 1f;
+                properties.SetFloat(ArrivalId, eastSpring != null ? eastSpring.ArrivalFor(renderer, arrival) : arrival);
 
                 // The impact follows the receiving surface when the B basin rises.
                 var point = renderer.transform.TransformPoint(surface.localImpactPoint);

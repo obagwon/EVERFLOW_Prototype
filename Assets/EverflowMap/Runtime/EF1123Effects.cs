@@ -40,13 +40,34 @@ namespace EverflowMap
         readonly List<Surface> surfaces = new();
         readonly Dictionary<EF1123Target, EF1123DeviceFeedback> bindings = new();
         readonly Dictionary<Transform, TrailRenderer> trails = new();
+        readonly Queue<CutawayShot> pendingShots = new();
         readonly ParticleSystem[] bursts = new ParticleSystem[3];
         MaterialPropertyBlock properties;
         bool heldParticles, grounded;
-        int nextBurst, teleports;
-        float cueTime, effectTime, mechanismDelay, steps;
-        Vector3 lastPosition;
+        int nextBurst, teleports, cueStartFrame;
+        float cueTime, effectTime, mechanismDelay;
         public int HighlightCount { get; private set; }
+        internal bool ShowingDoor { get; private set; }
+
+        readonly struct CutawayShot
+        {
+            public readonly Transform pose;
+            public readonly float seconds;
+            public readonly EF1123Motion[] doors;
+
+            public CutawayShot(Transform pose, float seconds, EF1123Motion[] doors = null)
+            {
+                this.pose = pose;
+                this.seconds = seconds;
+                this.doors = doors;
+            }
+
+            public void OpenDoors()
+            {
+                if (doors == null) return;
+                foreach (var door in doors) door.Open();
+            }
+        }
 
         void Start()
         {
@@ -65,7 +86,6 @@ namespace EverflowMap
             for (int i = 0; i < world.orbs.Length; i++)
                 trails[world.orbs[i]] = MakeTrail(world.orbs[i], Colors[i]);
             for (int i = 0; i < bursts.Length; i++) bursts[i] = CreateBurst();
-            lastPosition = world.player.transform.position;
             teleports = world.player.TeleportVersion;
         }
 
@@ -197,7 +217,7 @@ namespace EverflowMap
 
         void StartCue(Transform pose, Transform focus)
         {
-            if (cutaway == null || world.player.Traversing) return;
+            if (cutaway == null || world.player.Traversing || ShowingDoor) return;
             Vector3 view = world.player.view.WorldToViewportPoint(focus.position);
             if (view.z > 0 && view.x > .16f && view.x < .84f && view.y > .15f && view.y < .82f)
             {
@@ -210,20 +230,37 @@ namespace EverflowMap
         }
 
         internal void ShowCutaway(Transform pose, float seconds)
+            => ScheduleCutaway(new CutawayShot(pose, seconds));
+
+        internal void ShowDoorOpening(Transform pose, params EF1123Motion[] doors)
+            => ScheduleCutaway(new CutawayShot(pose, 3f, doors));
+
+        void ScheduleCutaway(CutawayShot shot)
         {
-            if (cutaway == null || pose == null) return;
-            cutaway.transform.SetPositionAndRotation(pose.position, pose.rotation);
+            if (cutaway == null || shot.pose == null) { shot.OpenDoors(); return; }
+            if (cueTime > 0f) pendingShots.Enqueue(shot);
+            else StartCutaway(shot);
+        }
+
+        void StartCutaway(CutawayShot shot)
+        {
+            cutaway.transform.SetPositionAndRotation(shot.pose.position, shot.pose.rotation);
             cutaway.PreviousStateIsValid = false;
             cutaway.Priority = 220;
-            cueTime = seconds;
+            cueTime = shot.seconds;
+            cueStartFrame = Time.frameCount;
+            ShowingDoor = shot.doors != null;
             world.SetCinematic(true);
+            shot.OpenDoors();
         }
 
         public void CancelCue()
         {
+            while (pendingShots.TryDequeue(out var shot)) shot.OpenDoors();
             if (!world.Cinematic) return;
             cueTime = 0;
-            cutaway.Priority = -40;
+            ShowingDoor = false;
+            if (cutaway != null) cutaway.Priority = -40;
             world.player.cinemachineRig.ResetView();
             world.SetCinematic(false);
         }
@@ -234,7 +271,11 @@ namespace EverflowMap
             if (!stopped)
             {
                 effectTime += Time.deltaTime;
-                if (cueTime > 0 && (cueTime -= Time.deltaTime) <= 0) CancelCue();
+                if (cueTime > 0 && Time.frameCount != cueStartFrame && (cueTime -= Time.deltaTime) <= 0)
+                {
+                    if (pendingShots.TryDequeue(out var shot)) StartCutaway(shot);
+                    else CancelCue();
+                }
                 if (mechanismDelay > 0 && (mechanismDelay -= Time.deltaTime) <= 0)
                     audio.Play(EF1123Sound.Mechanism, .54f);
             }
@@ -288,29 +329,17 @@ namespace EverflowMap
         void UpdateMovementAudio(bool stopped)
         {
             var player = world.player;
-            var position = player.transform.position;
             if (teleports != player.TeleportVersion)
             {
                 foreach (var trail in trails.Values) { trail.emitting = false; trail.Clear(); }
                 teleports = player.TeleportVersion;
-                steps = 0;
-                lastPosition = position;
                 grounded = player.Grounded;
                 return;
             }
-            var horizontal = position - lastPosition;
-            horizontal.y = 0;
-            lastPosition = position;
             if (stopped) return;
             if (player.Grounded)
             {
                 if (!grounded) audio.Play(EF1123Sound.Land, .63f);
-                steps += horizontal.magnitude;
-                if (player.LocomotionSpeed > .20f && steps > 1.55f)
-                {
-                    steps = 0;
-                    audio.Play(EF1123Sound.Step, .53f);
-                }
             }
             else if (grounded && player.VerticalSpeed > 1 && !player.Traversing) Jump();
             grounded = player.Grounded;
