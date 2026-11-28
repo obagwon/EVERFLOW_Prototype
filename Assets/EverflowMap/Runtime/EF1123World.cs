@@ -564,6 +564,7 @@ namespace EverflowMap
                 (UsesModelAim && target.aimModels.Length > 0 && target.ability != LabAbility.Flow);
             Vector3? hitPoint = pickModel && target == Hovered ? hoverContact?.Point : null;
             string interiorBlock = interior?.CastBlock(target);
+            string chimeBlock = windChimes?.CastBlock(target);
             if (target.ability != Selected)
                 reason = AbilityLabels[(int)target.ability] + " 대상입니다.";
             else if (grabGliderByProximity && target == flowerTarget)
@@ -573,6 +574,8 @@ namespace EverflowMap
                 reason = "사거리 밖입니다. 가까이 이동하세요.";
             else if (!IsCurrentTarget(target))
                 reason = "앞 단계의 장치를 먼저 작동시키세요.";
+            else if (chimeBlock != null)
+                reason = chimeBlock;
             else if (eastBubble != null && eastBubble.target == target && eastBubble.IsFrozen)
                 reason = "물방울이 얼어 있어요. 녹으면 다시 떠오릅니다.";
             else if (waterPresentation?.overflowBasin?.WaitingForFerryWater(target) == true)
@@ -709,8 +712,8 @@ namespace EverflowMap
             foreach (var item in target.hide) item.SetActive(false);
             foreach (var item in target.reveal) item.SetActive(true);
             Report(target.solution);
-            windChimes?.Ring(target, effects);
-            if (target.flyTo == null) effects?.Impact(target, hitPoint);
+            bool chimeHasCutaway = windChimes?.Ring(target, effects) == true;
+            if (target.flyTo == null) effects?.Impact(target, hitPoint, showCutaway: !chimeHasCutaway);
             if (jumpFlowerGrowth != null && target == courses[5].steps[0])
                 jumpFlowerGrowth.Begin();
         }
@@ -784,6 +787,7 @@ namespace EverflowMap
                 if (course.collected) continue;
                 course.star.Rotate(Vector3.up, 42 * Time.deltaTime, Space.World);
                 course.star.position = course.starPosition + Vector3.up * (Mathf.Sin(motionTime * 2.5f) * .12f);
+                if (windChimes?.BlocksReward(course.star) == true) continue;
                 if (!collectRewardsOnApproach && (course.stage != course.steps.Length ||
                     (course.requiredRewardMotion != null && !course.requiredRewardMotion.AtOpenPose))) continue;
                 if (!Near(course.starPosition, course.pickupRadius, 1.05f)) continue;

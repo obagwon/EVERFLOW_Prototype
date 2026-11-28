@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>EVERFLOW D·F 콘셉트 이미지 비교</title>
+<style>
+*{box-sizing:border-box}body{margin:0;background:#f3f5ed;color:#26382e;font:16px/1.6 'Malgun Gothic',system-ui,sans-serif}
+main{max-width:1800px;margin:auto;padding:clamp(20px,3.5vw,56px)}
+h1,h2,h3{letter-spacing:-.045em;line-height:1.2}
+h1{font-size:clamp(28px,4vw,47px);margin:0 0 10px}
+h2{font-size:24px;margin:28px 0 10px}h3{font-size:21px;margin:15px 0 4px}
+header{margin-bottom:23px}header p{max-width:65ch;margin:0;color:#435b4c}
+.gallery{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:clamp(12px,1.6vw,24px)}
+figure{margin:0;min-width:0}figure a{display:block;border-radius:8px;overflow:hidden;background:#d5dfca}
+img{width:100%;height:auto;display:block}a{color:#285a4a}
+figcaption p{margin:4px 0 0}.hook{font-weight:700;color:#3a6957}
+section{border-top:1px solid #c7d3c3;margin-top:27px;padding-top:1px;max-width:80ch}
+section p{margin:8px 0}details{margin:5px 0;color:#4a6054;font-size:14px}
+summary{cursor:pointer}.prompt{white-space:pre-wrap}
+a:focus-visible,summary:focus-visible{outline:3px solid #937135;outline-offset:4px}
+@media(max-width:850px){.gallery{grid-template-columns:1fr;gap:25px}}
+</style>
+</head>
+<body>
+<main>
+<header><h1>EVERFLOW D·F 콘셉트 이미지 비교</h1><p>동일한 방향에서 본 세 가지 배치다. 이미지에서 오른쪽 위의 꽃과 착지턱은 별을 얻기 전 상태다. 이미지를 선택하면 원본 크기로 볼 수 있다.</p></header>
+<div class="gallery">
+<figure>
+<a href="01-bell-gate-garden-v2.png" aria-label="1안 종문 정원 원본 이미지"><img src="01-bell-gate-garden-v2.png" width="1602" height="982" alt="종문 정원 · 중앙 종문과 짧은 오른쪽 연결로"></a>
+<figcaption><h3>1안 · 종문 정원</h3><p class="hook">중앙 종문과 짧은 오른쪽 연결로</p><p>종문 앞의 넓은 돌바닥이 종 세 곳의 기준점이 된다. 종문 오른쪽을 따라 꽃까지 짧게 이어진다. 중앙은 시야가 트이고 바위와 식재는 경계에 모인다.</p></figcaption>
+</figure>
+<figure>
+<a href="02-cliff-terrace-trail-v2.png" aria-label="2안 절벽 선반길 원본 이미지"><img src="02-cliff-terrace-trail-v2.png" width="1602" height="982" alt="절벽 선반길 · 오른쪽 외곽의 단차와 오름길"></a>
+<figcaption><h3>2안 · 절벽 선반길</h3><p class="hook">오른쪽 외곽의 단차와 오름길</p><p>목재 데크를 지나 오른쪽 옹벽을 따라 꽃까지 크게 돌아간다. 높낮이와 이동 경로가 또렷하고, 경사로와 절벽이 만나는 지점의 작업량이 가장 크다.</p></figcaption>
+</figure>
+<figure>
+<a href="03-three-stone-courts-v2.png" aria-label="3안 바위 사이 세 뜰 원본 이미지"><img src="03-three-stone-courts-v2.png" width="1602" height="982" alt="바위 사이 세 뜰 · 돌기둥 입구와 왼쪽 굽이"></a>
+<figcaption><h3>3안 · 바위 사이 세 뜰</h3><p class="hook">돌기둥 입구와 왼쪽 굽이</p><p>입구의 두 돌기둥과 큰 바위들이 종 구역을 여러 뜰로 나눈다. 종문 왼편을 돌아 꽃 뜰이 열리는 순간이 있으며, 바위 사이의 시야 조정이 중요하다.</p></figcaption>
+</figure>
+</div>
+<section>
+<h2>먼저 만들 안</h2>
+<p>1안의 종문과 짧은 연결로를 기준으로 첫 프로토타입을 잡는다. 식재를 보강할 때 3안처럼 바위와 덩굴을 작은 무리로 묶어 외곽에 배치하면, 1안의 열린 시야와 3안의 풍성한 경계를 함께 얻을 수 있다.</p>
+<p>그림은 생성형 콘셉트 이미지다. Unity에서 배치할 때는 기존 D 풍차·셔터, F 도약 거리, 별을 얻은 뒤 나타나는 복귀 계단을 기준으로 삼는다.</p>
+<p><a href="../EVERFLOW_DF_Layout_Proposals.html">배치 탑뷰와 원본 씬 오버레이</a></p>
+</section>
+<section>
+<h2>이미지 생성 기록</h2>
+<p>Codex 내장 이미지 생성 도구를 사용했다. 첨부 Unity 화면을 기준으로 세 안을 생성하고, 각 안의 절벽 착지턱을 아래 프롬프트로 다듬었다.</p>
+<details><summary>1안 최종 이미지 생성 프롬프트</summary><p class="prompt" lang="en">Use case: precise-object-edit. This is a pre-completion game environment concept for EVERFLOW. Keep the supplied image's camera, framing, day lighting, scale, material treatment, wood stairs to the middle-right D BELL DECK, gate, vegetation masses, and scene positions. Correct the upper-right F jump mechanic only as specified. A bright yellow launch flower sits on the lower walkable floor in front of an upper landing shelf. There is a continuous near-vertical band of natural cliff directly behind the flower and across the ENTIRE shelf front and ends; absolutely no stairs, ramp, climbable steps, or connection from this floor or side routes to the UPPER shelf. The post-reward return stairs are hidden in this pre-completion view. Let the existing upper shelf be visibly elevated and prominently readable, with a clean flat lip and a single small warm gold star reward on the landing surface. Keep the air between the flower and landing lip completely open. Do only the following local fixes, preserve the unchanged areas closely. No text, UI, arrows or extra devices.
+Remove the small visible stone stair that currently ascends beside the flower on the LEFT END of the upper right shelf, and replace its entire run with a natural steep rock face matching neighboring gray strata. Preserve the path from the central reward courtyard to the flower and keep its walkable endpoint below the landing shelf.</p></details>
+<details><summary>2안 최종 이미지 생성 프롬프트</summary><p class="prompt" lang="en">Use case: precise-object-edit. This is a pre-completion game environment concept for EVERFLOW. Keep the supplied image's camera, framing, day lighting, scale, material treatment, wood stairs to the middle-right D BELL DECK, gate, vegetation masses, and scene positions. Correct the upper-right F jump mechanic only as specified. A bright yellow launch flower sits on the lower walkable floor in front of an upper landing shelf. There is a continuous near-vertical band of natural cliff directly behind the flower and across the ENTIRE shelf front and ends; absolutely no stairs, ramp, climbable steps, or connection from this floor or side routes to the UPPER shelf. The post-reward return stairs are hidden in this pre-completion view. Let the existing upper shelf be visibly elevated and prominently readable, with a clean flat lip and a single small warm gold star reward on the landing surface. Keep the air between the flower and landing lip completely open. Do only the following local fixes, preserve the unchanged areas closely. No text, UI, arrows or extra devices.
+Remove the visible stone stair at the far RIGHT END of the upper-right flower landing shelf. Replace the whole stair up to its top with the same unbroken near-vertical grey strata. Remove the tiny roof and its posts on the landing shelf, leaving the flat clear surface with a small subtle gold star reward. Preserve the big sweeping C-shaped path from foreground around the right timber bell deck to the flower and preserve its low retaining walls. The C-shaped path ends at flower height, with a continuous distinct rock riser between that path and the reward shelf.</p></details>
+<details><summary>3안 최종 이미지 생성 프롬프트</summary><p class="prompt" lang="en">Use case: precise-object-edit. This is a pre-completion game environment concept for EVERFLOW. Keep the supplied image's camera, framing, day lighting, scale, material treatment, wood stairs to the middle-right D BELL DECK, gate, vegetation masses, and scene positions. Correct the upper-right F jump mechanic only as specified. A bright yellow launch flower sits on the lower walkable floor in front of an upper landing shelf. There is a continuous near-vertical band of natural cliff directly behind the flower and across the ENTIRE shelf front and ends; absolutely no stairs, ramp, climbable steps, or connection from this floor or side routes to the UPPER shelf. The post-reward return stairs are hidden in this pre-completion view. Let the existing upper shelf be visibly elevated and prominently readable, with a clean flat lip and a single small warm gold star reward on the landing surface. Keep the air between the flower and landing lip completely open. Do only the following local fixes, preserve the unchanged areas closely. No text, UI, arrows or extra devices.
+Remove the visible stone stair at the LEFT END of the upper-right landing shelf and replace it with natural steep rock face. Preserve the S-shaped path behind the reward courtyard and its entry from the left; that walking path opens beside the flower at its base height. Near the shutter at far left, restore the third small hanging bronze bell visible just to the right of the shutter mechanism on its existing narrow post, framed by rocks, with open air below its clapper. Keep the other two bells.</p></details>
+</section>
+</main>
+</body>
+</html>

@@ -46,6 +46,7 @@ namespace EverflowMap
         bool heldParticles, grounded;
         int nextBurst, teleports, cueStartFrame;
         float cueTime, effectTime, mechanismDelay;
+        CutawayShot activeShot;
         public int HighlightCount { get; private set; }
         internal bool ShowingDoor { get; private set; }
 
@@ -54,12 +55,16 @@ namespace EverflowMap
             public readonly Transform pose;
             public readonly float seconds;
             public readonly EF1123Motion[] doors;
+            public readonly Action onStart, onFinish;
 
-            public CutawayShot(Transform pose, float seconds, EF1123Motion[] doors = null)
+            public CutawayShot(Transform pose, float seconds, EF1123Motion[] doors = null,
+                Action onStart = null, Action onFinish = null)
             {
                 this.pose = pose;
                 this.seconds = seconds;
                 this.doors = doors;
+                this.onStart = onStart;
+                this.onFinish = onFinish;
             }
 
             public void OpenDoors()
@@ -172,7 +177,7 @@ namespace EverflowMap
             audio.Play(EF1123Sound.Recovery, .70f);
         }
 
-        public void Impact(EF1123Target target, Vector3? hitPoint = null)
+        public void Impact(EF1123Target target, Vector3? hitPoint = null, bool showCutaway = true)
         {
             int ability = (int)target.ability;
             bindings.TryGetValue(target, out var device);
@@ -186,7 +191,7 @@ namespace EverflowMap
             Emit(point, Colors[ability], 21);
             audio.Play(ability == 0 ? EF1123Sound.Bloom : ability == 1 ? EF1123Sound.Freeze : EF1123Sound.Gust, .85f);
             if (target.motions.Length > 0) mechanismDelay = .18f;
-            if (device != null && device.cameraPose != null && device.focus != null)
+            if (showCutaway && device != null && device.cameraPose != null && device.focus != null)
                 StartCue(device.cameraPose, device.focus);
         }
 
@@ -229,21 +234,29 @@ namespace EverflowMap
             ShowCutaway(pose, 1.55f);
         }
 
-        internal void ShowCutaway(Transform pose, float seconds)
-            => ScheduleCutaway(new CutawayShot(pose, seconds));
+        internal void ShowCutaway(Transform pose, float seconds, Action onStart = null, Action onFinish = null)
+            => ScheduleCutaway(new CutawayShot(pose, seconds, onStart: onStart, onFinish: onFinish));
+
+        internal void WindmillSparks(Vector3 point, int count) => Emit(point, Colors[(int)LabAbility.Flow], count);
 
         internal void ShowDoorOpening(Transform pose, params EF1123Motion[] doors)
             => ScheduleCutaway(new CutawayShot(pose, 3f, doors));
 
         void ScheduleCutaway(CutawayShot shot)
         {
-            if (cutaway == null || shot.pose == null) { shot.OpenDoors(); return; }
+            if (cutaway == null || shot.pose == null)
+            {
+                shot.OpenDoors();
+                shot.onFinish?.Invoke();
+                return;
+            }
             if (cueTime > 0f) pendingShots.Enqueue(shot);
             else StartCutaway(shot);
         }
 
         void StartCutaway(CutawayShot shot)
         {
+            activeShot = shot;
             cutaway.transform.SetPositionAndRotation(shot.pose.position, shot.pose.rotation);
             cutaway.PreviousStateIsValid = false;
             cutaway.Priority = 220;
@@ -252,11 +265,24 @@ namespace EverflowMap
             ShowingDoor = shot.doors != null;
             world.SetCinematic(true);
             shot.OpenDoors();
+            shot.onStart?.Invoke();
+        }
+
+        void FinishActiveShot()
+        {
+            var finished = activeShot;
+            activeShot = default;
+            finished.onFinish?.Invoke();
         }
 
         public void CancelCue()
         {
-            while (pendingShots.TryDequeue(out var shot)) shot.OpenDoors();
+            FinishActiveShot();
+            while (pendingShots.TryDequeue(out var shot))
+            {
+                shot.OpenDoors();
+                shot.onFinish?.Invoke();
+            }
             if (!world.Cinematic) return;
             cueTime = 0;
             ShowingDoor = false;
@@ -273,7 +299,11 @@ namespace EverflowMap
                 effectTime += Time.deltaTime;
                 if (cueTime > 0 && Time.frameCount != cueStartFrame && (cueTime -= Time.deltaTime) <= 0)
                 {
-                    if (pendingShots.TryDequeue(out var shot)) StartCutaway(shot);
+                    if (pendingShots.TryDequeue(out var shot))
+                    {
+                        FinishActiveShot();
+                        StartCutaway(shot);
+                    }
                     else CancelCue();
                 }
                 if (mechanismDelay > 0 && (mechanismDelay -= Time.deltaTime) <= 0)
